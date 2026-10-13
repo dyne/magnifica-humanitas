@@ -11,7 +11,7 @@
       "sha256": "8b24a42fdcc29be2d8abd785db61a7799a928de9dce63862f43ed57a5a5ad8d5",
       "pages": 47,
       "printedCaptureDate": "2026-07-22",
-      "notes": "User supplied. pdftotext -layout detects contiguous numbered paragraph starts 1 through 245. Running headers, headings and footnotes still require editorial structural verification."
+      "notes": "Owner supplied, unchanged. Re-ingestion verifies PDF SHA-256 and exact Poppler 25.03.0 layout extraction."
     },
     {
       "workspacePath": "www_vatican_va_content_leo_xiv_en_encyclicals_documents_20260515_magnifica_humanitas_html.txt",
@@ -19,9 +19,66 @@
       "notes": "User supplied. Contains mojibake; do not silently normalize or use as final reader copy."
     }
   ],
-  "sourceParagraphRange": [1, 245],
+  "sourceParagraphRange": [
+    1,
+    245
+  ],
   "lastFootnoteNumberObserved": 224,
-  "verificationStatus": "research inventory; complete sentence-level editorial verification pending",
-  "onlineEdition": "Official URL reachable during research; byte-for-byte comparison with saved edition not yet performed.",
-  "attribution": "Source PDF credits Dicastery for Communication - Libreria Editrice Vaticana. Source text and original site commentary must retain separate attribution."
+  "verificationStatus": "verified structured PDF edition; all 245 bodies compared with dated official HTML",
+  "onlineEdition": "Compared all 245 numbered bodies on 2026-10-13. Current HTML adds [10] after [110] in paragraph 82. No PDF wording replaced; see content/source/en/comparison.json.",
+  "attribution": "Source PDF credits Dicastery for Communication - Libreria Editrice Vaticana. Source text and original site commentary must retain separate attribution.",
+  "editionId": "mh-en-owner-2026",
+  "extraction": {
+    "tool": "pdftotext",
+    "version": "25.03.0",
+    "arguments": [
+      "-layout"
+    ],
+    "reproduce": "python3 scripts/ingest-source.py --pdf /explicit/path/to/owner.pdf --check",
+    "cleanClone": "npm test; npm run source:check",
+    "normalization": [
+      "Remove only known print header/footer lines and blank layout lines",
+      "Separate verified headings, numbered bodies, terminal signature and endnotes",
+      "Join wrapped lines with spaces, except after a printed hyphen; retain the hyphen",
+      "Preserve all source wording, quotations, punctuation and numbered note markers"
+    ],
+    "notIncludedInNumberedCorpus": [
+      "Table of contents and document title",
+      "Terminal date and papal signature",
+      "Website navigation and copyright footer"
+    ]
+  },
+  "verification": {
+    "paragraphs": 245,
+    "footnotes": 224,
+    "headings": 81,
+    "onlineParagraphMatchesIgnoringWhitespaceAndFiFlLigatures": 244,
+    "onlineDifferences": [
+      "p082"
+    ],
+    "reviewDate": "2026-10-13",
+    "samples": "research/source-verification.json"
+  },
+  "artifacts": [
+    {
+      "path": "content/source/en/comparison.json",
+      "sha256": "3fa1491865177b7ff09914384c50e2bbc49f9ca0e3f73d162a2f7a82c7944384"
+    },
+    {
+      "path": "content/source/en/corpus.json",
+      "sha256": "503933d4ec2243ecc5cc4423294e400291f12513ab5330470b3f22a5db8e13f6"
+    },
+    {
+      "path": "content/source/en/official-2026-10-13.html",
+      "sha256": "ea5c30bc8d155e8bc11e59d7a6a50e048a2ff6abdc7abffeed874f8b6bdab9b2"
+    },
+    {
+      "path": "content/source/en/pdf-layout.txt",
+      "sha256": "db606ad408d57470f77f2932657cc905326ccf65903d2fd813ba7563c8f02ace"
+    },
+    {
+      "path": "content/source/en/structure.json",
+      "sha256": "879a8f1a0d1c8f43166dd951529c2eb7cf176cf568ee8a10468f6ab17a9e5df7"
+    }
+  ]
 }

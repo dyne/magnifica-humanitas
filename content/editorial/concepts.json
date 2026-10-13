@@ -1,0 +1,1086 @@
+{
+  "schemaVersion": 1,
+  "language": "en",
+  "concepts": [
+    {
+      "id": "dignity",
+      "locale": "en",
+      "title": "Human dignity",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Intrinsic human worth, in the encyclical, belongs to every person before usefulness, achievement, social recognition or moral success.",
+        "sourceRefs": [
+          "p050",
+          "p051",
+          "p052",
+          "p053",
+          "p058",
+          "p154"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Moral conduct, social conditions and experienced worth can change; ontological dignity cannot be lost. The source grounds it in divine creation and love.",
+        "sourceRefs": [
+          "p050",
+          "p051",
+          "p052",
+          "p053",
+          "p058",
+          "p154"
+        ]
+      },
+      "foundationRefs": [
+        "p050",
+        "p052",
+        "p053"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p052",
+        "start": 457,
+        "end": 512,
+        "text": "These aspects of dignity can be enhanced or diminished."
+      }
+    },
+    {
+      "id": "rights",
+      "locale": "en",
+      "title": "Human rights",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "The source treats universal and inalienable rights as concrete demands of intrinsic dignity, requiring practical respect and institutions that protect them.",
+        "sourceRefs": [
+          "p054",
+          "p055",
+          "p056",
+          "p057",
+          "p081"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Its life-from-conception-to-natural-end position, including abortion and euthanasia, is explicitly the Church's normative position; formal declarations or manipulated consensus do not establish actual protection.",
+        "sourceRefs": [
+          "p054",
+          "p055",
+          "p056",
+          "p057",
+          "p081"
+        ]
+      },
+      "foundationRefs": [
+        "p054"
+      ]
+    },
+    {
+      "id": "common-good",
+      "locale": "en",
+      "title": "Common good",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Shared social conditions enable persons and groups to flourish together; the common good gives institutional expression to the dignity of each person.",
+        "sourceRefs": [
+          "p059",
+          "p060",
+          "p061",
+          "p062",
+          "p063",
+          "p064"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "It is neither a mere sum of preferences nor permission to sacrifice a person for the whole. Contribution is within a person's abilities, and institutions must enable participation.",
+        "sourceRefs": [
+          "p059",
+          "p060",
+          "p061",
+          "p062",
+          "p063",
+          "p064"
+        ]
+      },
+      "foundationRefs": [
+        "p059"
+      ]
+    },
+    {
+      "id": "shared-goods",
+      "locale": "en",
+      "title": "Universal destination of goods",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "The source holds that the earth's material, cultural and informational goods are intended to benefit the whole human family, across generations.",
+        "sourceRefs": [
+          "p065",
+          "p066",
+          "p067",
+          "p108",
+          "p178"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Private property is recognized but subordinate to this social purpose; access, environmental care and power over data use matter, not distribution of copies alone.",
+        "sourceRefs": [
+          "p065",
+          "p066",
+          "p067",
+          "p108",
+          "p178"
+        ]
+      },
+      "foundationRefs": [
+        "p065",
+        "p066"
+      ]
+    },
+    {
+      "id": "subsidiarity",
+      "locale": "en",
+      "title": "Subsidiarity",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Decisions and initiative belong as close as possible to affected people, with higher institutions protecting, promoting and coordinating their agency.",
+        "sourceRefs": [
+          "p068",
+          "p069",
+          "p070",
+          "p071",
+          "p072",
+          "p087"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Neither permanent takeover nor State withdrawal meets the principle. Platform power, supporting resources, meaningful participation and wider safeguards all matter.",
+        "sourceRefs": [
+          "p068",
+          "p069",
+          "p070",
+          "p071",
+          "p072",
+          "p087"
+        ]
+      },
+      "foundationRefs": []
+    },
+    {
+      "id": "solidarity",
+      "locale": "en",
+      "title": "Solidarity",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Interdependence becomes solidarity when people and institutions deliberately assume responsibility for one another and the common good.",
+        "sourceRefs": [
+          "p073",
+          "p074",
+          "p075",
+          "p076",
+          "p088",
+          "p187"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "The source calls it both a social principle and a personal virtue. Digital interconnection alone does not fulfill it, and duties extend across peoples and future generations.",
+        "sourceRefs": [
+          "p073",
+          "p074",
+          "p075",
+          "p076",
+          "p088",
+          "p187"
+        ]
+      },
+      "foundationRefs": [
+        "p073",
+        "p088",
+        "p234"
+      ]
+    },
+    {
+      "id": "justice",
+      "locale": "en",
+      "title": "Social justice",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Fair social structures and decisions make dignified life possible for everyone, especially people excluded or harmed, while addressing historical wrongs.",
+        "sourceRefs": [
+          "p077",
+          "p078",
+          "p079",
+          "p080",
+          "p081",
+          "p109",
+          "p162",
+          "p215",
+          "p244"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Justice includes individual conduct, prevention, fair initial design, reparation and support for those still affected; charity after harm cannot substitute for fair institutions.",
+        "sourceRefs": [
+          "p077",
+          "p078",
+          "p079",
+          "p080",
+          "p081",
+          "p109",
+          "p162",
+          "p215",
+          "p244"
+        ]
+      },
+      "foundationRefs": [
+        "p077",
+        "p079",
+        "p244"
+      ]
+    },
+    {
+      "id": "development",
+      "locale": "en",
+      "title": "Integral development",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "The source evaluates progress by the growth of each person and the whole person across life's dimensions, peoples and generations.",
+        "sourceRefs": [
+          "p082",
+          "p083",
+          "p084",
+          "p085",
+          "p129",
+          "p159",
+          "p180"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Material growth or technical capacity alone is insufficient; diverse ways of life, environmental conditions, disadvantaged communities and future generations remain part of the test.",
+        "sourceRefs": [
+          "p082",
+          "p083",
+          "p084",
+          "p085",
+          "p129",
+          "p159",
+          "p180"
+        ]
+      },
+      "foundationRefs": [
+        "p126",
+        "p129"
+      ]
+    },
+    {
+      "id": "institutional-accountability",
+      "locale": "en",
+      "title": "Institutional accountability",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Institutions must make responsibility visible, explain decisions, permit scrutiny and learn through correction, including the Church applying its own principles internally.",
+        "sourceRefs": [
+          "p086",
+          "p087",
+          "p089",
+          "p105",
+          "p138",
+          "p176",
+          "p177",
+          "p200"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "The source names abuse, reparations, genuine participation, journalists' role and past complicity in slavery; religious mission cannot erase these duties, and nominal oversight is insufficient.",
+        "sourceRefs": [
+          "p086",
+          "p087",
+          "p089",
+          "p105",
+          "p138",
+          "p176",
+          "p177",
+          "p200"
+        ]
+      },
+      "foundationRefs": [
+        "p086",
+        "p089",
+        "p176"
+      ]
+    },
+    {
+      "id": "technology-power",
+      "locale": "en",
+      "title": "Technological power",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Technology embodies purposes and institutional choices, while control of infrastructure, platforms, data and expertise shapes other people's options.",
+        "sourceRefs": [
+          "p004",
+          "p005",
+          "p009",
+          "p092",
+          "p093",
+          "p094",
+          "p095",
+          "p104",
+          "p136"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Tools can help or harm; criticism of a technocratic paradigm concerns reduction of persons to performance and exploitation, not rejection of every innovation.",
+        "sourceRefs": [
+          "p004",
+          "p005",
+          "p009",
+          "p092",
+          "p093",
+          "p094",
+          "p095",
+          "p104",
+          "p136"
+        ]
+      },
+      "foundationRefs": []
+    },
+    {
+      "id": "ai-limits",
+      "locale": "en",
+      "title": "Human and artificial intelligence",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "The encyclical distinguishes effective computational/statistical performance from embodied experience, relational growth and moral responsibility.",
+        "sourceRefs": [
+          "p097",
+          "p098",
+          "p099",
+          "p100",
+          "p116",
+          "p128",
+          "p198",
+          "p233"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Its categorical claims that AI lacks experience, understanding and conscience are source claims, not scientific-consensus certification; its author acknowledges fast technical change and limited scope.",
+        "sourceRefs": [
+          "p097",
+          "p098",
+          "p099",
+          "p100",
+          "p116",
+          "p128",
+          "p198",
+          "p233"
+        ]
+      },
+      "foundationRefs": [
+        "p128",
+        "p233"
+      ]
+    },
+    {
+      "id": "ai-governance",
+      "locale": "en",
+      "title": "Governing AI",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Designers, trainers, funders, authorizers, users and institutions bear traceable responsibilities for AI's ends, deployment, explanation, challenge and remedy.",
+        "sourceRefs": [
+          "p071",
+          "p072",
+          "p104",
+          "p105",
+          "p106",
+          "p107",
+          "p109",
+          "p164",
+          "p197",
+          "p198",
+          "p199",
+          "p200"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Alignment or a final operator alone is insufficient. Justice begins in design, affected communities need a voice, and human control must be effective in irreversible decisions.",
+        "sourceRefs": [
+          "p071",
+          "p072",
+          "p104",
+          "p105",
+          "p106",
+          "p107",
+          "p109",
+          "p164",
+          "p197",
+          "p198",
+          "p199",
+          "p200"
+        ]
+      },
+      "foundationRefs": []
+    },
+    {
+      "id": "embodiment",
+      "locale": "en",
+      "title": "Embodied and limited persons",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "The source describes human beings as bodily, relational, vulnerable and finite, whose lives cannot be exhausted by performance or technical optimization.",
+        "sourceRefs": [
+          "p099",
+          "p112",
+          "p113",
+          "p116",
+          "p117",
+          "p118",
+          "p120",
+          "p122",
+          "p232",
+          "p239"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Relieving suffering is right. Transhumanism and posthumanism include diverse currents, and the philosophical value attributed to limits must not become clinical advice or permission to neglect care.",
+        "sourceRefs": [
+          "p099",
+          "p112",
+          "p113",
+          "p116",
+          "p117",
+          "p118",
+          "p120",
+          "p122",
+          "p232",
+          "p239"
+        ]
+      },
+      "foundationRefs": [
+        "p118",
+        "p127",
+        "p232",
+        "p239"
+      ]
+    },
+    {
+      "id": "care",
+      "locale": "en",
+      "title": "Care and human presence",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "A civilization is judged by the care it offers and recognition of other persons as subjects of relationships and decisions, not merely by powerful tools.",
+        "sourceRefs": [
+          "p114",
+          "p117",
+          "p118",
+          "p119",
+          "p126",
+          "p152",
+          "p231",
+          "p239"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Assistance can relieve arduous work or suffering; the argument protects relationship and agency rather than declaring every mediated connection false or glorifying untreated pain.",
+        "sourceRefs": [
+          "p114",
+          "p117",
+          "p118",
+          "p119",
+          "p126",
+          "p152",
+          "p231",
+          "p239"
+        ]
+      },
+      "foundationRefs": [
+        "p119",
+        "p126",
+        "p231",
+        "p239"
+      ]
+    },
+    {
+      "id": "truth",
+      "locale": "en",
+      "title": "Truth and communication",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Factual veracity, honest inquiry and accountable communication enable judgment, democracy and public trust in the source's argument.",
+        "sourceRefs": [
+          "p132",
+          "p134",
+          "p135",
+          "p136",
+          "p137",
+          "p138",
+          "p214",
+          "p237"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Truthful communication can denounce injustice without humiliating people. The Church must confront its own abuses, and the source's theological revealed truth is distinct from fact checking.",
+        "sourceRefs": [
+          "p132",
+          "p134",
+          "p135",
+          "p136",
+          "p137",
+          "p138",
+          "p214",
+          "p237"
+        ]
+      },
+      "foundationRefs": [
+        "p237"
+      ]
+    },
+    {
+      "id": "education",
+      "locale": "en",
+      "title": "Education and formation",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Education develops understanding, judgment, inner freedom and responsible relationships through patient work with others, including in digital environments.",
+        "sourceRefs": [
+          "p139",
+          "p140",
+          "p141",
+          "p142",
+          "p143",
+          "p144",
+          "p145",
+          "p146",
+          "p147",
+          "p238"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Devices and quick answers cannot alone provide shared time, trust or intellectual discipline. Formation spans beliefs; current source diagnoses of digital exposure must be dated and attributed.",
+        "sourceRefs": [
+          "p139",
+          "p140",
+          "p141",
+          "p142",
+          "p143",
+          "p144",
+          "p145",
+          "p146",
+          "p147",
+          "p238"
+        ]
+      },
+      "foundationRefs": [
+        "p238"
+      ]
+    },
+    {
+      "id": "work",
+      "locale": "en",
+      "title": "Dignity of work",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Work can sustain income, expression, relationships, participation and development, making its conditions central to evaluating technological change.",
+        "sourceRefs": [
+          "p148",
+          "p149",
+          "p150",
+          "p151",
+          "p152",
+          "p153",
+          "p154",
+          "p156",
+          "p157"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "The source welcomes relief from dangerous tasks and emergency aid, rejects one universal transition model, and requires civic participation even without employment; intrinsic dignity never depends on having a job.",
+        "sourceRefs": [
+          "p148",
+          "p149",
+          "p150",
+          "p151",
+          "p152",
+          "p153",
+          "p154",
+          "p156",
+          "p157"
+        ]
+      },
+      "foundationRefs": [
+        "p148"
+      ]
+    },
+    {
+      "id": "distribution",
+      "locale": "en",
+      "title": "Economic justice and distribution",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "The economy, finance and distribution of innovation's gains are evaluated by their service to people, fair opportunity and the common good.",
+        "sourceRefs": [
+          "p158",
+          "p159",
+          "p160",
+          "p161",
+          "p162",
+          "p163",
+          "p164"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Redistribution is necessary alongside justice in production and consumption. GDP growth, market automatism and speculative gain are not sufficient measures of humane development.",
+        "sourceRefs": [
+          "p158",
+          "p159",
+          "p160",
+          "p161",
+          "p162",
+          "p163",
+          "p164"
+        ]
+      },
+      "foundationRefs": []
+    },
+    {
+      "id": "family",
+      "locale": "en",
+      "title": "Families and a possible future",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "The source connects household stability and young people's long-term commitments to dignified work, protection and public choices during technological change.",
+        "sourceRefs": [
+          "p165",
+          "p166",
+          "p167",
+          "p168",
+          "p169"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "It defines family as founded on an enduring union of a man and a woman; that definition must be preserved as the source's contested position rather than silently broadened or presented as unanimous agreement.",
+        "sourceRefs": [
+          "p165",
+          "p166",
+          "p167",
+          "p168",
+          "p169"
+        ]
+      },
+      "foundationRefs": []
+    },
+    {
+      "id": "freedom",
+      "locale": "en",
+      "title": "Freedom and agency",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "People must retain the capacity to judge, choose, form relationships and participate without being reduced to profiles or exploited through dependence and control.",
+        "sourceRefs": [
+          "p128",
+          "p136",
+          "p146",
+          "p154",
+          "p170",
+          "p171",
+          "p172",
+          "p178"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Protection requires supportive institutions and limits on manipulative environments, not blaming vulnerable users. Data return must include power over its uses and benefits.",
+        "sourceRefs": [
+          "p128",
+          "p136",
+          "p146",
+          "p154",
+          "p170",
+          "p171",
+          "p172",
+          "p178"
+        ]
+      },
+      "foundationRefs": [
+        "p128"
+      ]
+    },
+    {
+      "id": "exploitation",
+      "locale": "en",
+      "title": "Hidden labor and extraction",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Digital systems depend on workers, supply chains, resources and data that may conceal coercion, trafficking and colonial forms of extraction.",
+        "sourceRefs": [
+          "p101",
+          "p173",
+          "p174",
+          "p175",
+          "p176",
+          "p177",
+          "p178",
+          "p179",
+          "p240"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "The source admits Church complicity in slavery. Responsibility spans firms, investors, platforms, authorities and civil society; efficiency cannot excuse hidden subordination.",
+        "sourceRefs": [
+          "p101",
+          "p173",
+          "p174",
+          "p175",
+          "p176",
+          "p177",
+          "p178",
+          "p179",
+          "p240"
+        ]
+      },
+      "foundationRefs": [
+        "p176",
+        "p177",
+        "p240"
+      ]
+    },
+    {
+      "id": "peace",
+      "locale": "en",
+      "title": "Peace beyond domination",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "The source proposes peace built through justice, responsibility, civilian protection, dialogue and institutions, rather than domination or a mere pause in fighting.",
+        "sourceRefs": [
+          "p182",
+          "p186",
+          "p197",
+          "p198",
+          "p199",
+          "p200",
+          "p205",
+          "p212",
+          "p215",
+          "p218",
+          "p224",
+          "p228"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "It retains legitimate self-defense as a last-resort condition, rigorous AI-weapons limits and effective human control. Small acts contribute without replacing public responsibility; peace is possible, not guaranteed.",
+        "sourceRefs": [
+          "p182",
+          "p186",
+          "p197",
+          "p198",
+          "p199",
+          "p200",
+          "p205",
+          "p212",
+          "p215",
+          "p218",
+          "p224",
+          "p228"
+        ]
+      },
+      "foundationRefs": [
+        "p227",
+        "p228"
+      ]
+    },
+    {
+      "id": "memory",
+      "locale": "en",
+      "title": "Memory and victims' perspectives",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Historical memory and listening to those harmed challenge normalized violence and orient the source's calls for responsibility, reparation and prevention.",
+        "sourceRefs": [
+          "p121",
+          "p122",
+          "p123",
+          "p124",
+          "p176",
+          "p191",
+          "p216",
+          "p217",
+          "p244"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "History recounts facts while memory bears witness to lived experience. Recognizing suffering must support justice and peace rather than retaliation, and historical qualification must not excuse Church complicity.",
+        "sourceRefs": [
+          "p121",
+          "p122",
+          "p123",
+          "p124",
+          "p176",
+          "p191",
+          "p216",
+          "p217",
+          "p244"
+        ]
+      },
+      "foundationRefs": [
+        "p121",
+        "p244"
+      ]
+    },
+    {
+      "id": "dialogue",
+      "locale": "en",
+      "title": "Dialogue and participation",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "People and institutions deliberate and negotiate across differences, making affected communities participants in decisions rather than recipients of fixed solutions.",
+        "sourceRefs": [
+          "p002",
+          "p023",
+          "p070",
+          "p071",
+          "p072",
+          "p107",
+          "p218",
+          "p219",
+          "p220",
+          "p221",
+          "p223",
+          "p224"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Dialogue needs real voice, safeguards, verifiable guarantees and patient institutions; it neither requires unanimous belief nor promises every conflict an immediate honorable outcome.",
+        "sourceRefs": [
+          "p002",
+          "p023",
+          "p070",
+          "p071",
+          "p072",
+          "p107",
+          "p218",
+          "p219",
+          "p220",
+          "p221",
+          "p223",
+          "p224"
+        ]
+      },
+      "foundationRefs": [
+        "p002",
+        "p223"
+      ]
+    },
+    {
+      "id": "hope",
+      "locale": "en",
+      "title": "Hope and practical responsibility",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "The source connects hope with institutions, witnesses, daily fidelity and organized action rather than passive optimism during technological and political change.",
+        "sourceRefs": [
+          "p123",
+          "p124",
+          "p125",
+          "p126",
+          "p211",
+          "p212",
+          "p236",
+          "p241",
+          "p243",
+          "p245"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Its explicitly theological hope does not magically eliminate conflict. Grace and salvation history remain attributed faith premises, while sharing, care and responsibility remain substantive tasks.",
+        "sourceRefs": [
+          "p123",
+          "p124",
+          "p125",
+          "p126",
+          "p211",
+          "p212",
+          "p236",
+          "p241",
+          "p243",
+          "p245"
+        ]
+      },
+      "foundationRefs": [
+        "p125",
+        "p126",
+        "p211",
+        "p243",
+        "p245"
+      ]
+    },
+    {
+      "id": "faith-foundations",
+      "locale": "en",
+      "title": "Theological foundations",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Creation in God's image, Incarnation, Trinity, grace, Eucharistic communion and eschatological hope provide the source's Christian reasons for human dignity and social responsibility.",
+        "sourceRefs": [
+          "p001",
+          "p011",
+          "p048",
+          "p049",
+          "p050",
+          "p052",
+          "p088",
+          "p127",
+          "p128",
+          "p231",
+          "p232",
+          "p233",
+          "p234",
+          "p235",
+          "p242",
+          "p243",
+          "p244",
+          "p245"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "These are optional attributed foundations, not secular equivalents, empirical AI predictions or agreement requirements. Direct prayer and liturgical formulas are excluded without erasing arguments beside them.",
+        "sourceRefs": [
+          "p001",
+          "p011",
+          "p048",
+          "p049",
+          "p050",
+          "p052",
+          "p088",
+          "p127",
+          "p128",
+          "p231",
+          "p232",
+          "p233",
+          "p234",
+          "p235",
+          "p242",
+          "p243",
+          "p244",
+          "p245"
+        ]
+      },
+      "foundationRefs": [
+        "p001",
+        "p011",
+        "p048",
+        "p049",
+        "p050",
+        "p052",
+        "p088",
+        "p127",
+        "p128",
+        "p231",
+        "p232",
+        "p233",
+        "p234",
+        "p235",
+        "p242",
+        "p243",
+        "p244",
+        "p245"
+      ]
+    },
+    {
+      "id": "history",
+      "locale": "en",
+      "title": "A developing social tradition",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "The source presents social doctrine as historical discernment shaped by Gospel reception, sciences, cultures and responses to changing social conditions.",
+        "sourceRefs": [
+          "p017",
+          "p020",
+          "p021",
+          "p023",
+          "p027",
+          "p029",
+          "p030",
+          "p031",
+          "p032",
+          "p033",
+          "p034",
+          "p035",
+          "p037",
+          "p038",
+          "p039",
+          "p040",
+          "p041",
+          "p042",
+          "p043",
+          "p044",
+          "p045",
+          "p176"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "The selected papal chronology is not comprehensive history or proof of flawless institutions; continuing core claims coexist with the explicit admission of delayed condemnation of slavery.",
+        "sourceRefs": [
+          "p017",
+          "p020",
+          "p021",
+          "p023",
+          "p027",
+          "p029",
+          "p030",
+          "p031",
+          "p032",
+          "p033",
+          "p034",
+          "p035",
+          "p037",
+          "p038",
+          "p039",
+          "p040",
+          "p041",
+          "p042",
+          "p043",
+          "p044",
+          "p045",
+          "p176"
+        ]
+      },
+      "foundationRefs": [
+        "p017",
+        "p020",
+        "p021",
+        "p023",
+        "p027",
+        "p029",
+        "p033",
+        "p034",
+        "p042",
+        "p044",
+        "p045",
+        "p176"
+      ]
+    }
+  ],
+  "editionId": "mh-en-owner-2026"
+}

@@ -6,3 +6,5 @@ output/
 research/source-pdf.txt
 .gestalt/
 *.tgz
+__pycache__/
+*.pyc

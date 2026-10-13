@@ -2,7 +2,8 @@
 
 ## Current stage
 
-Research and Org plan authoring. Read research/ANALYSIS.md,
+Supervised implementation with a verified source and editorial contract. Read
+content/editorial/CONTRACT.md, research/ANALYSIS.md,
 research/EXPERIENCE.md and research/DECISIONS.md before making product choices.
 Do not treat proposed choices as owner decisions. The active plan is supplied
 by the supervisor; use that exact workspace-local path and its state machine.
@@ -45,6 +46,12 @@ mandatory quizzes, infinite feeds, streak pressure, autoplay or engagement track
 Session endings and an easy return are part of the product.
 
 ## Implementation and verification
+
+`npm test` runs the current content suite; `npm run source:check` verifies
+deterministic source reconstruction and `npm run content:check` validates editorial
+references, exact spans and relationship types. These are content checks, not UI
+verification. Public adaptation must preserve the coverage ledger's qualifications
+and separate exact quotation from paraphrase and interpretation.
 
 Use the owner-confirmed Vite stack. Pin the theme to a reproducible revision;
 a clean clone must not depend on a sibling checkout or unpublished registry package.

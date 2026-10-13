@@ -1,0 +1,786 @@
+{
+  "schemaVersion": 1,
+  "language": "en",
+  "relations": [
+    {
+      "id": "rel-001",
+      "from": "faith-foundations",
+      "to": "dignity",
+      "type": "provides-source-foundation-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "The source grounds intrinsic worth in creation and divine love; this religious justification is available as optional foundations.",
+        "sourceRefs": [
+          "p050",
+          "p052",
+          "p053"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-002",
+      "from": "dignity",
+      "to": "rights",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "The source derives rights inherent in being human from intrinsic dignity, rather than granting them as rewards for performance.",
+        "sourceRefs": [
+          "p051",
+          "p054",
+          "p055"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-003",
+      "from": "dignity",
+      "to": "common-good",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "The common good is described as the social expression of the dignity recognized in each person.",
+        "sourceRefs": [
+          "p059",
+          "p060"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-004",
+      "from": "common-good",
+      "to": "shared-goods",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "The universal destination of goods is presented as an immediate implication of common-good responsibility.",
+        "sourceRefs": [
+          "p065",
+          "p066"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-005",
+      "from": "shared-goods",
+      "to": "distribution",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Recognized private ownership is constrained by the social destination of goods; accumulated wealth is evaluated by shared benefit.",
+        "sourceRefs": [
+          "p066",
+          "p067",
+          "p161",
+          "p162"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-006",
+      "from": "subsidiarity",
+      "to": "common-good",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Local initiative is supported and coordinated by wider institutions so that contributions can serve the common good.",
+        "sourceRefs": [
+          "p068",
+          "p069",
+          "p070"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-007",
+      "from": "subsidiarity",
+      "to": "dialogue",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Decisions close to affected people must include meaningful participation before choices are already fixed.",
+        "sourceRefs": [
+          "p070",
+          "p071",
+          "p072"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-008",
+      "from": "solidarity",
+      "to": "subsidiarity",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Support and shared responsibility across communities complement local agency; neither isolation nor institutional abandonment follows from subsidiarity.",
+        "sourceRefs": [
+          "p068",
+          "p069",
+          "p073",
+          "p075",
+          "p076"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-009",
+      "from": "common-good",
+      "to": "development",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Integral development evaluates whether social conditions enable each person and the whole person to grow across life's dimensions.",
+        "sourceRefs": [
+          "p059",
+          "p060",
+          "p082",
+          "p083",
+          "p085"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-010",
+      "from": "justice",
+      "to": "development",
+      "type": "provides-test-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Progress fails the integral-development test when it excludes disadvantaged communities or transfers harms to future people.",
+        "sourceRefs": [
+          "p079",
+          "p083",
+          "p084",
+          "p085"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-011",
+      "from": "justice",
+      "to": "ai-governance",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Justice must be designed into data and computational processes rather than applied only as repair after deployment.",
+        "sourceRefs": [
+          "p080",
+          "p109",
+          "p164"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-012",
+      "from": "shared-goods",
+      "to": "ai-governance",
+      "type": "applies-to",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "The social destination of goods extends to patents, algorithms, data and computing resources and affects who benefits from AI.",
+        "sourceRefs": [
+          "p067",
+          "p108",
+          "p109"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-013",
+      "from": "technology-power",
+      "to": "ai-governance",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Concentrated platform and infrastructure power calls for safeguards, oversight and meaningful deliberation over ends.",
+        "sourceRefs": [
+          "p005",
+          "p071",
+          "p095",
+          "p105",
+          "p106",
+          "p107"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-014",
+      "from": "dignity",
+      "to": "ai-governance",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "People cannot be reduced to unanswerable profiles; decisions affecting them require reasons, challenge and remedies.",
+        "sourceRefs": [
+          "p102",
+          "p103",
+          "p105",
+          "p164"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-015",
+      "from": "ai-limits",
+      "to": "ai-governance",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "The source denies that computational effectiveness makes AI a responsible moral subject, leaving human accountability in place.",
+        "sourceRefs": [
+          "p099",
+          "p105",
+          "p198"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-016",
+      "from": "embodiment",
+      "to": "ai-limits",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "The source's account of bodily, experiential and relational life shapes its distinction between human growth and statistical adaptation.",
+        "sourceRefs": [
+          "p099",
+          "p112",
+          "p118",
+          "p128"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-017",
+      "from": "care",
+      "to": "embodiment",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Acknowledging finitude must remain compatible with the explicit legitimacy of relieving suffering.",
+        "sourceRefs": [
+          "p114",
+          "p117",
+          "p118",
+          "p126"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-018",
+      "from": "care",
+      "to": "work",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Technology can relieve dangerous or arduous tasks while work's human agency and employment opportunities remain protected.",
+        "sourceRefs": [
+          "p152",
+          "p153",
+          "p154"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-019",
+      "from": "technology-power",
+      "to": "dignity",
+      "type": "puts-in-tension",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "A technocratic outlook can reduce people to performance and resources, conflicting with intrinsic worth; this does not make every tool harmful.",
+        "sourceRefs": [
+          "p092",
+          "p094",
+          "p095",
+          "p112"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-020",
+      "from": "truth",
+      "to": "dialogue",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Factual veracity and non-humiliating speech support just communication, collective judgment and patient dialogue across differences.",
+        "sourceRefs": [
+          "p132",
+          "p134",
+          "p214",
+          "p219"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-021",
+      "from": "truth",
+      "to": "education",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Amid manipulative information, people need patient study, verification and intellectual discipline to form judgment.",
+        "sourceRefs": [
+          "p137",
+          "p139",
+          "p140",
+          "p146"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-022",
+      "from": "education",
+      "to": "freedom",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Shared formation develops the ability to recognize manipulation and cultivate inner freedom rather than passively accepting convenient answers.",
+        "sourceRefs": [
+          "p142",
+          "p145",
+          "p146",
+          "p147",
+          "p238"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-023",
+      "from": "technology-power",
+      "to": "freedom",
+      "type": "puts-in-tension",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Attention markets and extensive profiling can exploit vulnerability or enable social control; not every data use is declared coercive.",
+        "sourceRefs": [
+          "p136",
+          "p170",
+          "p171",
+          "p172"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-024",
+      "from": "work",
+      "to": "family",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Work conditions shape household stability and young people's capacity to form long-term commitments, calling for public support during transitions.",
+        "sourceRefs": [
+          "p165",
+          "p166",
+          "p167",
+          "p168",
+          "p169"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-025",
+      "from": "dignity",
+      "to": "work",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Work can express human dignity, but intrinsic worth is not earned by employment; citizenship and participation must remain possible where work diminishes.",
+        "sourceRefs": [
+          "p052",
+          "p149",
+          "p154"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-026",
+      "from": "work",
+      "to": "distribution",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Humane labor transitions require fair opportunities, enabling support and distribution of innovation's gains; no universal transition model is prescribed.",
+        "sourceRefs": [
+          "p151",
+          "p153",
+          "p156",
+          "p161",
+          "p164"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-027",
+      "from": "distribution",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Widespread, inclusive and sustainable prosperity contributes to peace, while militarized spending can deprive the poorest of services.",
+        "sourceRefs": [
+          "p163",
+          "p204"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-028",
+      "from": "exploitation",
+      "to": "ai-governance",
+      "type": "provides-test-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Hidden labor, forced work and extractive data practices test whether AI governance protects people rather than celebrating efficiency alone.",
+        "sourceRefs": [
+          "p173",
+          "p174",
+          "p178",
+          "p179"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-029",
+      "from": "shared-goods",
+      "to": "freedom",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Restoring people's decision power over data use and benefit makes shared knowledge less available as an instrument of dominance.",
+        "sourceRefs": [
+          "p178"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-030",
+      "from": "institutional-accountability",
+      "to": "justice",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Church self-examination entails victims' voices, harm acknowledgment, reparation, prevention, shared goods and corrective evaluation.",
+        "sourceRefs": [
+          "p086",
+          "p089",
+          "p138"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-031",
+      "from": "institutional-accountability",
+      "to": "history",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "The source's historical claim of development must be read alongside its admission of slave ownership, legitimation and delayed condemnation.",
+        "sourceRefs": [
+          "p029",
+          "p045",
+          "p176",
+          "p177"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-032",
+      "from": "memory",
+      "to": "institutional-accountability",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Admitted past complicity requires present vigilance and practical prevention rather than retrospective regret alone.",
+        "sourceRefs": [
+          "p176",
+          "p177"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-033",
+      "from": "memory",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Witnesses and victims' perspectives resist normalized violence and direct cries of suffering toward peace rather than retaliation.",
+        "sourceRefs": [
+          "p191",
+          "p216",
+          "p217",
+          "p244"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-034",
+      "from": "justice",
+      "to": "peace",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "The peace sought is the fruit of justice, not domination or a mere pause imposed by power.",
+        "sourceRefs": [
+          "p205",
+          "p215"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-035",
+      "from": "ai-governance",
+      "to": "peace",
+      "type": "applies-to",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "AI in war requires identifiable decision chains, moral judgment time, civilian distinction and effective human control, with rigorous last-resort constraints.",
+        "sourceRefs": [
+          "p197",
+          "p198",
+          "p199",
+          "p200"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-036",
+      "from": "institutional-accountability",
+      "to": "ai-governance",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Accountability requires visible chains of responsibility and contestable decisions, rather than collapsing blame into a machine.",
+        "sourceRefs": [
+          "p105",
+          "p164",
+          "p199",
+          "p200"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-037",
+      "from": "dialogue",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Negotiation, verifiable guarantees and multilateral institutions offer patient alternatives to force; honorable outcomes remain possibilities rather than promises.",
+        "sourceRefs": [
+          "p218",
+          "p219",
+          "p221",
+          "p224",
+          "p226"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-038",
+      "from": "solidarity",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Digital proximity becomes a shared future only through mutual care, rights and duties rather than armed coexistence.",
+        "sourceRefs": [
+          "p186",
+          "p187"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-039",
+      "from": "hope",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Everyday choices and sustained witness support peacebuilding; theological hope explicitly does not magically remove conflict.",
+        "sourceRefs": [
+          "p211",
+          "p212",
+          "p213"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-040",
+      "from": "faith-foundations",
+      "to": "hope",
+      "type": "provides-source-foundation-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Grace, Incarnation and promised redemption sustain the source's hope, which remains a faith premise alongside practical action.",
+        "sourceRefs": [
+          "p126",
+          "p127",
+          "p211",
+          "p242",
+          "p245"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-041",
+      "from": "faith-foundations",
+      "to": "solidarity",
+      "type": "provides-source-foundation-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "The source locates Christian solidarity in sacramental communion, not in digital connection alone.",
+        "sourceRefs": [
+          "p088",
+          "p234",
+          "p235"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-042",
+      "from": "care",
+      "to": "faith-foundations",
+      "type": "has-source-foundation-in",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "The Incarnation is the source's religious reason to attend to vulnerable flesh and concrete human faces; the premise is optional and attributed.",
+        "sourceRefs": [
+          "p231",
+          "p232",
+          "p233",
+          "p239"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-043",
+      "from": "history",
+      "to": "dialogue",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "The source describes a tradition that develops through historical situations, sciences, cultures and expert debate while maintaining its Gospel commitments.",
+        "sourceRefs": [
+          "p020",
+          "p023",
+          "p024",
+          "p025",
+          "p027",
+          "p045"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-044",
+      "from": "hope",
+      "to": "development",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Just institutions, credible witnesses and daily fidelity provide direction for technological progress while protecting relationship and love.",
+        "sourceRefs": [
+          "p123",
+          "p124",
+          "p125",
+          "p126",
+          "p236",
+          "p241",
+          "p245"
+        ]
+      },
+      "placement": "main"
+    }
+  ],
+  "editionId": "mh-en-owner-2026"
+}

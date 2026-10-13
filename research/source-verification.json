@@ -1,0 +1,152 @@
+{
+  "method": "Opening and closing numbered bodies of every chapter checked against the saved PDF layout; complete bodies also compared with official HTML. Samples record source evidence, not adapted prose. No visual typography verification is claimed.",
+  "chapters": [
+    {
+      "chapterId": "introduction",
+      "opening": {
+        "paragraphId": "p001",
+        "pages": [
+          3
+        ],
+        "firstWords": "Humanity, created by God in all its grandeur, is today facing a",
+        "lastWords": "Life, opening the path for each of us to grow toward fullness.",
+        "sha256": "8cd8b915631aa4c37594d1f981b85e19bed88ce7d2f769fa9c11070c87aec43d"
+      },
+      "closing": {
+        "paragraphId": "p016",
+        "pages": [
+          5
+        ],
+        "firstWords": "I address this heartfelt appeal to all the Catholic faithful, to all",
+        "lastWords": "recognize the human heart as the place where God desires to dwell.",
+        "sha256": "54d133e1ca643034d1e1160b81e15e8fc006149d3b79ff76d5aa822385dd4a5d"
+      }
+    },
+    {
+      "chapterId": "chapter-1",
+      "opening": {
+        "paragraphId": "p017",
+        "pages": [
+          5
+        ],
+        "firstWords": "In this first chapter, I intend to present synthetically how the Social",
+        "lastWords": "from within, calling for their further development in fidelity to the Gospel.",
+        "sha256": "bbfdd9f4c14ec9893ef713a630bea40a99465864e055bd4436eb6822f741dc62"
+      },
+      "closing": {
+        "paragraphId": "p045",
+        "pages": [
+          11
+        ],
+        "firstWords": "Considering this historical overview, it is clear that the Church’s Social Doctrine",
+        "lastWords": "grasp more effectively their internal coherence and capacity to guide our times.",
+        "sha256": "040bdf6bbf86ddd78d6fd526bd0044edba50b307c27e0e766ec3a2aaaeca3697"
+      }
+    },
+    {
+      "chapterId": "chapter-2",
+      "opening": {
+        "paragraphId": "p046",
+        "pages": [
+          11
+        ],
+        "firstWords": "The Social Doctrine of the Church is a living reality, in dialogue",
+        "lastWords": "that it becomes clear how they relate to and complement each other.",
+        "sha256": "6ace93f985b45e06861a2276d4f1d546e09b4987bd6f443a3754c49f9ed7981e"
+      },
+      "closing": {
+        "paragraphId": "p089",
+        "pages": [
+          17
+        ],
+        "firstWords": "Living out justice in the Church means purifying ecclesial relationships and structures",
+        "lastWords": "responsibility and fraternity, is not a utopia, but a real possibility. [117]",
+        "sha256": "a61b3b0e5bfc51ffb0d925a7659000167b276de6a6003474017b2f5534be5ee4"
+      }
+    },
+    {
+      "chapterId": "chapter-3",
+      "opening": {
+        "paragraphId": "p090",
+        "pages": [
+          17
+        ],
+        "firstWords": "Having recalled the principles that shine a light on Social Doctrine, I",
+        "lastWords": "intelligence and other emerging technologies are already part of our daily lives.",
+        "sha256": "5d760641f68df7a7c7332702237bd745cba3fce9238ad472dd5489c5d45a63de"
+      },
+      "closing": {
+        "paragraphId": "p130",
+        "pages": [
+          23
+        ],
+        "firstWords": "Questioning this alternative path of progress and how we interpret and live",
+        "lastWords": "Babel or the rebuilding of Jerusalem begins within each one of us.",
+        "sha256": "a31fcaa5edecdd7bf1d7a9686ba1909f176a01562fb7f2d46681fed55af73d73"
+      }
+    },
+    {
+      "chapterId": "chapter-4",
+      "opening": {
+        "paragraphId": "p131",
+        "pages": [
+          23
+        ],
+        "firstWords": "Having outlined the context in which the challenge of technological transformation is",
+        "lastWords": "work and to safeguard freedom against all forms of dependence and commercialization.",
+        "sha256": "aa2e388e039b4990affd77ee17d3c94ab10462ac4214d38a291b31d579bfc293"
+      },
+      "closing": {
+        "paragraphId": "p181",
+        "pages": [
+          31
+        ],
+        "firstWords": "From this perspective, the Social Doctrine of the Church calls for a",
+        "lastWords": "it is measured against the inviolable dignity of every man and woman.",
+        "sha256": "f3001e9841b1d67f359e50e3afa8436af1ce3b08121cab104aeee3675475e54b"
+      }
+    },
+    {
+      "chapterId": "chapter-5",
+      "opening": {
+        "paragraphId": "p182",
+        "pages": [
+          31
+        ],
+        "firstWords": "Having considered how AI is transforming certain aspects of life and society,",
+        "lastWords": "moral maturity of peoples, especially of those who bear responsibility for governing.",
+        "sha256": "42cccd5b50f0d2339643cc8480872d1aeda877891392f95017e0932ed22f68f3"
+      },
+      "closing": {
+        "paragraphId": "p228",
+        "pages": [
+          37
+        ],
+        "firstWords": "These avenues for exercising responsibility are sustained by prayer, and in turn",
+        "lastWords": "of committing ourselves to achieving it in our relationships and in society.",
+        "sha256": "fdbc759b0591f56dc090eb004af74062a070fcde0c3fe552c42d7ae79f172ad0"
+      }
+    },
+    {
+      "chapterId": "conclusion",
+      "opening": {
+        "paragraphId": "p229",
+        "pages": [
+          37
+        ],
+        "firstWords": "“Let each builder choose with care how to build” (1 Cor 3:10).",
+        "lastWords": "the common good and praying in union with the Blessed Virgin Mary.",
+        "sha256": "c11ad2a68ccfc2e5a1fc74d6aa12785c1797915b08505c4a52ba837a4b7ed3e5"
+      },
+      "closing": {
+        "paragraphId": "p245",
+        "pages": [
+          40
+        ],
+        "firstWords": "With the same faith as Mary, let us become “weavers of hope”",
+        "lastWords": "to the grandeur of humanity, in which God has made his dwelling.",
+        "sha256": "54e44b9a40ee9e20860e7fff39b98366052af700fee22543574aa4f8970b98b2"
+      }
+    }
+  ]
+}

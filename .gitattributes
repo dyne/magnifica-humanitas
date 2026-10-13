@@ -1,0 +1,3 @@
+# Preserve frozen source bytes, including original print/HTML whitespace.
+content/source/en/official-2026-10-13.html -whitespace
+content/source/en/pdf-layout.txt -whitespace

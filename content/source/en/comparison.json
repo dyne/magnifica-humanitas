@@ -1,0 +1,14 @@
+{
+  "comparedOn": "2026-10-13",
+  "method": "All 245 numbered bodies; ignore whitespace and fi/fl print ligatures only. PDF wording never replaced.",
+  "officialHtmlSha256": "ea5c30bc8d155e8bc11e59d7a6a50e048a2ff6abdc7abffeed874f8b6bdab9b2",
+  "paragraphsCompared": 245,
+  "differences": [
+    {
+      "paragraphId": "p082",
+      "pdfText": "In his Encyclical Populorum Progressio, Paul VI affirmed that development is authentic only if it is “integral,” meaning that it can “foster the development of each man and of the whole man.”[110] In the decades that followed, the Social Doctrine of the Church reprised and reflected on this expression in order to indicate the practical ways in which the noble principles — dignity, the common good, the universal destination of goods, subsidiarity, solidarity and social justice — are implemented in real life. By “integral human development,” we mean a process in which the growth of individuals and peoples encompasses all dimensions of existence and opens the future to subsequent generations as well.",
+      "officialHtmlText": "In his Encyclical Populorum Progressio, Paul VI affirmed that development is authentic only if it is “integral,” meaning that it can “foster the development of each man and of the whole man.”[110] [10] In the decades that followed, the Social Doctrine of the Church reprised and reflected on this expression in order to indicate the practical ways in which the noble principles — dignity, the common good, the universal destination of goods, subsidiarity, solidarity and social justice — are implemented in real life. By “integral human development,” we mean a process in which the growth of individuals and peoples encompasses all dimensions of existence and opens the future to subsequent generations as well.",
+      "status": "PDF authoritative; difference requires explicit review before adopting web wording"
+    }
+  ]
+}

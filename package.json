@@ -1,0 +1,15 @@
+{
+  "name": "magnifica-humanitas",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "source:check": "python3 scripts/ingest-source.py --check",
+    "source:ingest": "python3 scripts/ingest-source.py",
+    "content:check": "node scripts/validate-editorial.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
