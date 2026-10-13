@@ -1,0 +1,63 @@
+# Working on Magnifica Humanitas
+
+## Current stage
+
+Research and Org plan authoring. Read research/ANALYSIS.md,
+research/EXPERIENCE.md and research/DECISIONS.md before making product choices.
+Do not treat proposed choices as owner decisions. The active plan is supplied
+by the supervisor; use that exact workspace-local path and its state machine.
+
+## Source and editorial fidelity
+
+- Preserve the owner's source files at workspace root. Source paragraphs are
+  numbered 1–245. Refer to paragraphs, not extraction line numbers or guessed
+  web anchors.
+- The saved text has mojibake. PDF extraction is cleaner but has running
+  headers, page breaks, footnotes and headings that need structural handling.
+  A regex splitting on paragraph numbers alone is not a finished parser.
+- Apply Humanizer's semantic preservation gate to adaptations: preserve
+  agency, causal relationships, scope, qualifications, polarity and certainty.
+- Remove prayers and liturgical formulas from the adapted experience as
+  requested. Do not erase a theological premise, ethical argument or criticism
+  of Church institutions merely because it uses religious language. Follow the
+  owner's selected editorial policy once recorded.
+- Label quotation, paraphrase, interpretation and invented scenario separately.
+  Keep source references with every substantive explanation. Never fabricate
+  quotations or merge several paragraphs into an apparent quotation.
+- Do not present the source's normative positions or claims about AI
+  consciousness as scientific consensus. Do not silently update historical or
+  empirical claims. Any external context requires its own attribution and date.
+- Every paragraph needs a coverage disposition and rationale; mixed passages
+  need a record of which material was excluded. Full original text remains
+  accessible through a clearly labelled external source link.
+- Never make comprehension checks into tests of political or religious
+  agreement. A reader may understand and disagree.
+
+## Product and design
+
+Use Impeccable for product context, design and bounded finish review. Write
+PRODUCT.md after the decision interview; use Dyne vite-theme as visual authority.
+Its documentation-site composition is not the layout for this product.
+
+Use visible controls, normal scrolling, meaningful links and browser history.
+Every visual relationship needs an equivalent text path. No swipe-only actions,
+mandatory quizzes, infinite feeds, streak pressure, autoplay or engagement tracking.
+Session endings and an easy return are part of the product.
+
+## Implementation and verification
+
+Use the owner-confirmed Vite stack. Pin the theme to a reproducible revision;
+a clean clone must not depend on a sibling checkout or unpublished registry package.
+Keep core content authored and deterministic; do not substitute runtime generated
+answers for the source-reviewed corpus.
+
+Implement meaningful content-contract tests, route and persistence tests, and
+production browser checks. Verify phone layouts, 200% text, keyboard navigation,
+reduced motion and root/subpath deployment. Automated accessibility scans do
+not prove accessibility. Record real checks and their limits.
+
+Use Conventional Commits. During supervised Org execution, the supervisor
+owns review acceptance and commits. Exclude generated files, credentials and
+workspace coordination files from commits. Keep source attribution distinct
+from the license selected for original code and commentary. A remote push or
+site deployment requires a user-authorized destination.

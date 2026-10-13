@@ -1,0 +1,27 @@
+{
+  "document": "Magnifica Humanitas",
+  "attributedAuthor": "Leo XIV",
+  "documentDate": "2026-05-15",
+  "language": "en",
+  "officialUrl": "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html",
+  "researchDate": "2026-10-13",
+  "inputs": [
+    {
+      "workspacePath": "Encyclical Letter of His Holiness Leo XIV Magnifica Humanitas (15 May 2026).pdf",
+      "sha256": "8b24a42fdcc29be2d8abd785db61a7799a928de9dce63862f43ed57a5a5ad8d5",
+      "pages": 47,
+      "printedCaptureDate": "2026-07-22",
+      "notes": "User supplied. pdftotext -layout detects contiguous numbered paragraph starts 1 through 245. Running headers, headings and footnotes still require editorial structural verification."
+    },
+    {
+      "workspacePath": "www_vatican_va_content_leo_xiv_en_encyclicals_documents_20260515_magnifica_humanitas_html.txt",
+      "sha256": "cb42ac2c9878fc0870ecc5312f89d6beb1080368c960f44a504144a50585e059",
+      "notes": "User supplied. Contains mojibake; do not silently normalize or use as final reader copy."
+    }
+  ],
+  "sourceParagraphRange": [1, 245],
+  "lastFootnoteNumberObserved": 224,
+  "verificationStatus": "research inventory; complete sentence-level editorial verification pending",
+  "onlineEdition": "Official URL reachable during research; byte-for-byte comparison with saved edition not yet performed.",
+  "attribution": "Source PDF credits Dicastery for Communication - Libreria Editrice Vaticana. Source text and original site commentary must retain separate attribution."
+}
