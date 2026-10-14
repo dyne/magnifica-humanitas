@@ -11,5 +11,5 @@ import ReadingLink from '../components/ReadingLink.vue'
     <ol><li v-for="s in t.steps" :key="s.id"><ReadingLink :id="`${t.id}-overview-${s.id}`" :to="`/en/trails/${t.id}/steps/${s.id}`">{{ concept(s.conceptId)?.title }}</ReadingLink></li></ol>
     <ReadingLink :id="`${t.id}-start`" :to="`/en/trails/${t.id}/steps/${t.steps[0].id}`">Start {{ t.title }}</ReadingLink>
   </section>
-  <p>This two-step trail is available now. More concepts and trails are in preparation.</p>
+  <p>You can choose any of these six paths, return to a source or stop without finishing a trail.</p>
 </template>

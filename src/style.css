@@ -13,7 +13,7 @@ main { padding-block: 1rem 3rem; min-height: 55vh; }
 h1, h2, h3 { font-family: var(--dyne-font-display); font-weight: 700; line-height: 1.15; letter-spacing: -.025em; text-wrap: balance; overflow-wrap: anywhere; }
 h1 { font-size: clamp(2rem, 4vw, 3.5rem); max-width: 22ch; margin: 1rem 0; }
 h2 { font-size: clamp(1.5rem, 2.5vw, 2.25rem); margin: 2rem 0 .75rem; }
-p, blockquote, article { max-width: var(--dyne-measure); }
+p, blockquote, article { max-width: var(--dyne-measure); overflow-wrap: anywhere; }
 .idea { font-size: 1.25rem; line-height: 1.6; max-width: 52ch; }
 .regions { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: 1rem 3rem; }
 .region { border-top: 1px solid var(--dyne-border); padding-bottom: 1rem; }

@@ -70,15 +70,19 @@ test('finite authored trail reaches a real ending with optional exits and skip',
   await page.setViewportSize({ width: 1440, height: 1000 })
   await page.goto('./#/en/trails')
   await page.getByRole('link', { name: 'Start Why is worth not a reward?', exact: true }).click()
-  await expect(page.getByText('Step 1 of 2 · Why is worth not a reward?', { exact: true })).toBeVisible()
+  await expect(page.getByText('Step 1 of 5 · Why is worth not a reward?', { exact: true })).toBeVisible()
   await page.screenshot({ path: `output/trail-${baseKind}-1440.png`, fullPage: true })
   await page.getByRole('link', { name: 'Open full concept: Human dignity', exact: true }).click()
   await page.getByRole('link', { name: 'Return to Human dignity', exact: true }).click()
   await expect(page).toHaveURL(/\/steps\/intrinsic-worth$/)
   await page.getByRole('link', { name: 'Skip this step', exact: true }).click()
-  await expect(page.getByText('Step 2 of 2 · Why is worth not a reward?', { exact: true })).toBeVisible()
+  await expect(page.getByText('Step 2 of 5 · Why is worth not a reward?', { exact: true })).toBeVisible()
   await page.getByRole('link', { name: 'Previous: Human dignity', exact: true }).click()
   await page.getByRole('link', { name: 'Next: Human rights', exact: true }).click()
+  for (const id of ['embodiment', 'care', 'work']) {
+    const title = reading.concepts.find(c => c.id === id)!.title
+    await page.getByRole('link', { name: `Next: ${title}`, exact: true }).click()
+  }
   await page.getByRole('link', { name: 'Reach the trail ending', exact: true }).click()
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('A place to stop')
   await expect(page.getByRole('link', { name: 'Human dignity', exact: true })).toBeVisible()
@@ -86,6 +90,23 @@ test('finite authored trail reaches a real ending with optional exits and skip',
   await expect(page.getByText(/Visits are not evidence of understanding/)).toBeVisible()
   await expect(page.getByRole('link', { name: 'Restart this trail', exact: true })).toBeVisible()
 })
+
+for (const trail of reading.trails) {
+  test(`finite trail ${trail.id} has all authored transitions and an accessible ending`, async ({ page }) => {
+    await page.setViewportSize({ width: 360, height: 800 })
+    await page.goto('./#/en/trails')
+    await expect(page.getByText(trail.introduction.text, { exact: true })).toBeVisible()
+    await page.getByRole('link', { name: `Start ${trail.title}`, exact: true }).click()
+    for (const [index, step] of trail.steps.entries()) {
+      await expect(page.getByText(`Step ${index + 1} of ${trail.steps.length} · ${trail.title}`, { exact: true })).toBeVisible()
+      await expect(page.getByText(step.transition.text, { exact: true })).toBeAttached()
+      await page.getByRole('link', { name: 'Skip this step', exact: true }).click()
+    }
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText('A place to stop')
+    await expect(page.getByText(trail.ending.text, { exact: true })).toBeVisible()
+    await expect(page.getByRole('link', { name: 'Restart this trail', exact: true })).toBeVisible()
+  })
+}
 
 test('continuous reading stable blocks and invalid links recover without substitution', async ({ page }) => {
   await page.goto('./#/en/read?at=rights-protection')
@@ -144,6 +165,7 @@ for (const viewport of [{ width: 360, height: 800 }, { width: 1440, height: 1000
 
 
 test('every published paragraph reference has reviewed context and reachable source notes', async ({ page }) => {
+  test.setTimeout(180_000)
   for (const context of reading.contexts) {
     await page.goto(`./#/en/source/${context.paragraphId}`)
     await expect(page.getByRole('heading', { level: 1 })).toHaveText(`Source context · §${Number(context.paragraphId.slice(1))}`)
@@ -154,12 +176,31 @@ test('every published paragraph reference has reviewed context and reachable sou
       const label = await notes.nth(i).textContent()
       await notes.nth(i).click()
       await expect(page.getByRole('heading', { level: 1 })).toHaveText(label!)
-      await expect(page.getByText('Exact source quotation · bibliographic note', { exact: true })).toBeVisible()
+      const id = page.url().split('/').at(-1)
+      const classification = reading.reviewedNotes.find(n => n.id === id)?.classification
+      await expect(page.getByText(`Exact source quotation · ${classification === 'source-argument-and-citation' ? 'argument and citation' : 'bibliographic note'}`, { exact: true })).toBeVisible()
       await page.goBack()
       await expect(notes.nth(i)).toBeFocused()
     }
   }
 })
+
+for (const concept of reading.concepts) {
+  test(`complete library deep link renders ${concept.id} with its distinction and evidence`, async ({ page }) => {
+    await page.setViewportSize({ width: 360, height: 800 })
+    await page.emulateMedia({ reducedMotion: 'reduce' })
+    await page.goto(`./#/en/concepts/${concept.id}`)
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText(concept.title)
+    await expect(page.getByText(concept.necessaryDistinction.text, { exact: true })).toBeVisible()
+    for (const block of concept.reasoning) {
+      await expect(page.getByText(block.text, { exact: true })).toBeAttached()
+    }
+    await page.getByLabel('Text size', { exact: true }).selectOption('200')
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
+    await page.reload()
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText(concept.title)
+  })
+}
 
 
 test('deferred orientation preserves deliberate keyboard recovery focus', async ({ page }) => {

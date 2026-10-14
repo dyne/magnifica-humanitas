@@ -27,11 +27,11 @@ watch(current, n => { document.title = `${n ? `Source note ${n.number}` : 'Sourc
 <template>
   <nav class="breadcrumbs" aria-label="Breadcrumb"><RouterLink to="/en/atlas">Atlas</RouterLink><span aria-current="page">Source note</span></nav>
   <h1 id="page-heading" tabindex="-1">{{ loading ? 'Opening source note' : failed ? 'Source note could not load' : current ? `Source note ${current.number}` : 'This link is unavailable' }}</h1>
-  <template v-if="loading"><p role="status">Loading the reviewed bibliographic note.</p></template>
+  <template v-if="loading"><p role="status">Loading the reviewed source note.</p></template>
   <template v-else-if="failed"><p role="alert">The note is unavailable. Retry, return to your reading, or use the full-original link below.</p><button class="dyne-button" @click="reload">Retry source note</button><ReturnLink /></template>
   <template v-else-if="current">
     <p>Leo XIV, <cite>Magnifica Humanitas</cite>, 15 May 2026 · {{ edition }} · Original PDF {{ current.pages.length === 1 ? 'page' : 'pages' }} {{ current.pages.join(', ') }}.</p>
-    <p class="kind">Exact source quotation · bibliographic note</p><blockquote><p>{{ current.text }}</p></blockquote>
+    <p class="kind">Exact source quotation · {{ current.classification === 'source-argument-and-citation' ? 'argument and citation' : 'bibliographic note' }}</p><blockquote><p>{{ current.text }}</p></blockquote>
     <p v-if="previous">Bibliographic context: “ibid.” refers to the preceding citation. <ReadingLink :id="`${current.id}-previous`" :to="`/en/notes/${previous.id}`">Open source note {{ previous.number }}</ReadingLink>.</p>
     <h2>Referring paragraphs in this reading</h2><ul><li v-for="id in current.paragraphIds" :key="id"><ReadingLink :id="`${current.id}-paragraph-${id}`" :to="`/en/source/${id}`">Source {{ paragraphLabel(id) }}</ReadingLink></li></ul>
     <ReturnLink />

@@ -17,7 +17,7 @@ watch(current, t => { document.title = `${t ? `Trail ending · ${t.title}` : 'Li
     <h1 tabindex="-1">A place to stop</h1><p>{{ current.title }} · End of this {{ current.steps.length }}-step trail.</p>
     <ProseBlock :block="current.ending" :scope="`${current.id}-ending`" />
     <h2>Places opened in this tab</h2>
-    <p v-if="!visited.length">No trail steps have been opened in this tab. This trail moves from Human dignity to Human rights.</p>
+    <p v-if="!visited.length">No trail steps have been opened in this tab. You can restart this trail or explore its source-linked concepts.</p>
     <ul v-else><li v-for="s in visited" :key="s.id"><ReadingLink :id="`end-${s.id}`" :to="`/en/concepts/${s.conceptId}`">{{ concept(s.conceptId)?.title }}</ReadingLink></li></ul>
     <p>Visits are not evidence of understanding. This list lasts for this tab; saving a place is in preparation.</p>
     <p class="actions"><ReadingLink :id="`${current.id}-restart`" :to="`/en/trails/${current.id}/steps/${current.steps[0].id}`">Restart this trail</ReadingLink><RouterLink to="/en/atlas">Return to the atlas</RouterLink></p>
