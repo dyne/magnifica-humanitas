@@ -60,14 +60,14 @@ Source re-ingestion is a separate authoring operation, not a build requirement.
 - [Content schema](docs/CONTENT-SCHEMA.md): stable IDs, file responsibilities and validators.
 - [Attribution](docs/ATTRIBUTION.md): original source, theme, fonts and licensing boundaries.
 - [Deployment](docs/DEPLOYMENT.md): portable static output, root/subpath hosting,
-  manually gated GitHub Pages release and rollback.
+  automatic GitHub Pages release and rollback.
 - [Production verification](verification/L6.1.md): measured checks, screenshot matrix,
   accessibility and performance limits.
 
 CI validates content, deterministic source reconstruction, types, unit tests,
-production builds and Chromium journeys at both bases. Pages is a separate,
-manual workflow; pushing code does not deploy it. Publication requires the
-terminally reviewed revision. The intended destination is
+production builds and Chromium journeys at both bases. Pages automatically
+deploys pushes to `main` after its checks pass; it can also be run manually
+on `main`. The intended destination is
 `dyne/magnifica-humanitas`; local production verification is not evidence of a
 published site. Current capability and local setup results are recorded in
 [release preparation](verification/L6.2.md).

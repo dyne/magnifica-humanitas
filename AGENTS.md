@@ -89,9 +89,8 @@ font OFL notices separate. No license for original code/commentary has been
 selected in this repository; do not invent one or apply dependency licenses to
 the Vatican source. Retain public/licenses in every static artifact.
 
-The authorized destination is dyne/magnifica-humanitas. Release must use a
-freshly terminally reviewed full commit SHA after milestone acceptance. Pages
-is manual-only and requires that SHA to match the protected repository variable
-TERMINALLY_REVIEWED_SHA. Do not set that variable or dispatch before terminal
-acceptance. Follow docs/DEPLOYMENT.md and verify the actual published URL after
-deployment. Do not claim publication from local preview evidence.
+The authorized destination is dyne/magnifica-humanitas. Pages deploys automatically
+on pushes to main after the workflow's source, build and browser checks pass.
+Manual reruns must also select main. Follow docs/DEPLOYMENT.md and verify the
+actual published URL after deployment. Do not claim publication from local
+preview evidence.

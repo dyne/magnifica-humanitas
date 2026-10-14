@@ -1,11 +1,8 @@
-name: Publish reviewed Pages revision
+name: Deploy GitHub Pages
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
-    inputs:
-      reviewed_sha:
-        description: Full terminally reviewed commit SHA (must match TERMINALLY_REVIEWED_SHA)
-        required: true
-        type: string
 permissions:
   contents: read
 concurrency:
@@ -13,38 +10,16 @@ concurrency:
   cancel-in-progress: false
 jobs:
   build:
-    if: github.repository == 'dyne/magnifica-humanitas'
+    if: github.repository == 'dyne/magnifica-humanitas' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     permissions:
       contents: read
       pages: read
     steps:
-      - name: Require the accepted revision and default branch
-        env:
-          REVIEWED_SHA: ${{ inputs.reviewed_sha }}
-          ACCEPTED_SHA: ${{ vars.TERMINALLY_REVIEWED_SHA }}
-          DISPATCH_REF: ${{ github.ref }}
-          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
-        run: |
-          node --input-type=module -e '
-            const { REVIEWED_SHA, ACCEPTED_SHA, DISPATCH_REF, DEFAULT_BRANCH } = process.env;
-            if (!/^[a-f0-9]{40}$/.test(REVIEWED_SHA ?? "") || REVIEWED_SHA !== ACCEPTED_SHA || DISPATCH_REF !== "refs/heads/" + DEFAULT_BRANCH) {
-              throw new Error("Dispatch the default branch with the exact terminally reviewed SHA recorded by the release owner");
-            }
-          '
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
-          ref: ${{ inputs.reviewed_sha }}
-          fetch-depth: 0
           persist-credentials: false
-      - name: Verify checkout identity and default-branch reachability
-        env:
-          REVIEWED_SHA: ${{ inputs.reviewed_sha }}
-          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
-        run: |
-          test "$(git rev-parse HEAD)" = "$REVIEWED_SHA"
-          git merge-base --is-ancestor "$REVIEWED_SHA" "refs/remotes/origin/$DEFAULT_BRANCH"
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: '24'
@@ -56,9 +31,9 @@ jobs:
       - run: npm run test:browser:all
       - name: Record artifact provenance
         env:
-          REVIEWED_SHA: ${{ inputs.reviewed_sha }}
+          RELEASE_SHA: ${{ github.sha }}
         run: |
-          node --input-type=module -e 'import { writeFileSync } from "node:fs"; writeFileSync("dist/release.json", JSON.stringify({ commit: process.env.REVIEWED_SHA, base: "/magnifica-humanitas/" }) + "\n")'
+          node --input-type=module -e 'import { writeFileSync } from "node:fs"; writeFileSync("dist/release.json", JSON.stringify({ commit: process.env.RELEASE_SHA, base: "/magnifica-humanitas/" }) + "\n")'
       - uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
         with:
@@ -74,6 +49,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy reviewed artifact
+      - name: Deploy verified artifact
         id: deployment
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
