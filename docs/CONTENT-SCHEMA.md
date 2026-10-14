@@ -34,6 +34,17 @@ exclusions and preservation instructions. `sourceSha256` binds each decision
 to its source body. Historical/theological context retains thought outside the
 secular primary path, with a reachable labelled destination.
 
+Exclusion `scope` describes grammatical form. Optional `matchScope` separately
+controls matching reach: absent or `global` rejects the exact form everywhere;
+`source-location` rejects it in authored blocks citing the excluded paragraph
+and source notes linked to that paragraph. Unknown, empty or invalid location
+references fail closed. Only reviewed incomplete clause fragments may use
+`source-location`; a `clause` scope alone does not authorize it. Complete
+invocations, blessings and responses remain global. This lets an unrelated
+bibliographic title contain an ordinary fragment without treating the title as
+a performed prayer. Exact source offsets, hashes and quotation/exclusion
+intersection checks always apply, regardless of matching reach.
+
 Relation types: `grounds`, `requires`, `supports`, `qualifies`, `applies-to`,
 `puts-in-tension`, `provides-test-for`, `provides-source-foundation-for` and
 `has-source-foundation-in`. `from`/`to` must exist and retain direction;

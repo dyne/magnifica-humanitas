@@ -10561,6 +10561,7 @@
             "text": "prayer and"
           },
           "scope": "clause",
+          "matchScope": "source-location",
           "reason": "Reader-facing call to unite prayer with present responsibility.",
           "preserve": {
             "kind": "editorial-instruction",

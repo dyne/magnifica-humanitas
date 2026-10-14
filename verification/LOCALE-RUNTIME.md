@@ -131,3 +131,41 @@ still offers only English, and its artifact contains only English library,
 messages, sequence and context chunks. The fixture build remains isolated in
 `/tmp/magnifica-locale-fixture-dist`. No additional implementation correction
 was needed during this verification pass.
+
+## Dependency correction: incomplete devotional fragments
+
+On 15 October 2026, Italian authoring exposed a false positive: §241's excluded
+fragment `preghiera e` also occurs in official note 223's bibliographic title.
+The original English validator had a literal exception for `prayer and` in
+authored blocks, but no equivalent rule for source notes. Exclusions now carry
+optional reviewed matching reach, independent of grammatical scope; only the
+English and Italian §241 fragments are marked `source-location`. Complete forms
+remain global by default. Prose references and note backlinks use one common
+predicate, which fails closed for unknown locations. Exact quotations, exclusion
+intersections, source hashes and frozen source text are unchanged.
+
+Regression evidence: the first nine standalone cases reproduced three failures
+(unrelated English/Italian titles and missing metadata validation); the final
+ten cases pass, including complete invocations/blessings/responses, relevant
+fragment locations, unknown locations and exact-span/hash checks. An archive
+of committed parent `62519e62f56b258c78b82558366f7f1ef38bc589` plus only the
+correction passed 30 English/fixture tests without Italian authoring files.
+The current focused suite passed 60 tests including the Italian draft; all
+current unit tests passed 90/90, without failures or skips. Source reproduction
+passed for all ten editions, with four acquisition and ten parser tests.
+Logs: `/tmp/magnifica-fragment-{red,green,standalone,focused,unit,source}.log`;
+the Italian draft's original 8-pass/2-fail reproduction is
+`/tmp/magnifica-fragment-italian-red.log`.
+
+After the correction child checkpoint, sequential parent gates also passed:
+`npm run check` (typecheck, editorial/index validation, 90 unit tests and
+production build), `npm run source:check` (all ten deterministic editions,
+four acquisition and ten parser tests), and
+`PLAYWRIGHT_BROWSERS_PATH=/tmp/magnifica-playwright npm run test:browser:all`
+(84 browser cases at each hosting base). No tests failed or skipped; browser
+reports contain no flakes. The current 90 unit tests include the suspended
+Italian draft's 16 tests; standalone correction evidence above excludes those
+files. Parent logs are `/tmp/magnifica-fragment-parent-{check,source,browser}.log`;
+reports are `output/hosting/{root,subpath}-browser-results.json`. Production
+continues to publish only English. The seven-file correction scope excludes
+all suspended Italian files, including their bounded metadata integration.

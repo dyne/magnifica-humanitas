@@ -57,19 +57,20 @@ export function validateReading({ reading, corpus, coverage, concepts, relations
   for (const [list, key] of [[reading.concepts, 'id'], [reading.contexts, 'paragraphId'], [reading.relations, 'id'], [reading.trails, 'id']]) {
     check(new Set(list.map(x => x[key])).size === list.length, 'Duplicate published identity')
   }
+  // Matching reach is reviewed independently from grammatical scope. Complete
+  // forms remain global by default; only explicitly marked incomplete fragments
+  // use their source location. Unknown locations must not bypass the check.
+  const containsExcludedForm = (text, sourceRefs) => coverage.records.some(record => record.exclusions.some(excluded => {
+    const inScope = excluded.matchScope !== 'source-location' || !Array.isArray(sourceRefs) ||
+      sourceRefs.length === 0 || sourceRefs.some(id => !source.has(id)) || sourceRefs.includes(record.paragraphId)
+    return inScope && text?.includes(excluded.sourceSpan.text)
+  }))
   function block(b, label, kinds = ['paraphrase', 'editorial-interpretation']) {
     check(kinds.includes(b?.kind), `${label}: prose must have a separate editorial kind`)
     check(typeof b?.text === 'string' && b.text.trim().length > 0, `${label}: empty prose`)
     check(Array.isArray(b?.sourceRefs) && b.sourceRefs.length > 0, `${label}: source references required`)
     for (const id of b?.sourceRefs ?? []) check(source.has(id) && contexts.has(id), `${label}: inaccessible source ${id}`)
-    for (const r of coverage.records) for (const e of r.exclusions) {
-      // §241's two-word connective is an exact location-specific fragment,
-      // also used by the accepted model to explain what is excluded. It is
-      // not a globally forbidden formula. Keep its check at that source;
-      // complete invocations, blessings and responses remain global checks.
-      const inScope = e.sourceSpan.text !== 'prayer and' || b?.sourceRefs?.includes(r.paragraphId)
-      check(!inScope || !b?.text?.includes(e.sourceSpan.text), `${label}: prose contains an excluded devotional form`)
-    }
+    check(!containsExcludedForm(b?.text, b?.sourceRefs), `${label}: prose contains an excluded devotional form`)
   }
   for (const c of reading.concepts) {
     const model = concepts.concepts.find(m => m.id === c.id)
@@ -120,9 +121,7 @@ export function validateReading({ reading, corpus, coverage, concepts, relations
     check(approved?.sourceSha256 === note.sha256 && note.sha256 === createHash('sha256').update(note.text).digest('hex'), `${note.id}: exact source note requires reader review`)
     check(!approved?.previousNoteId || corpus.footnotes.some(n => n.id === approved.previousNoteId && n.number < note.number), `${note.id}: unavailable preceding note context`)
     check(['bibliographic-citation', 'source-argument-and-citation'].includes(approved?.classification), `${note.id}: note review classification missing`)
-    for (const record of coverage.records) for (const excluded of record.exclusions) {
-      check(!note.text.includes(excluded.sourceSpan.text), `${note.id}: note contains an excluded devotional form`)
-    }
+    check(!containsExcludedForm(note.text, note.paragraphIds), `${note.id}: note contains an excluded devotional form`)
   }
   check([...approvedNotes.keys()].every(id => corpus.footnotes.some(n => n.id === id)), 'Unknown note review identity')
   for (const r of reading.relations) {
