@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { localePath } from '../locale'
+import { t as msg } from '../messages'
 import { ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { readCaller, savePosition } from '../navigation'
@@ -18,6 +20,6 @@ function returnTo(event: MouseEvent) {
 }
 </script>
 <template>
-  <p v-if="caller" class="return"><a id="return-to-reading" :href="router.resolve(caller.route).href" @click="returnTo">Return to {{ caller.label }}</a></p>
-  <p v-else class="return"><RouterLink to="/en/atlas">Explore the atlas</RouterLink> · <RouterLink to="/en/read">Open the continuous reading</RouterLink></p>
+  <p v-if="caller" class="return"><a id="return-to-reading" :href="router.resolve(caller.route).href" @click="returnTo">{{ msg('returnlink.return_to_value', { value1: caller.label }) }}</a></p>
+  <p v-else class="return"><RouterLink :to="localePath('/atlas')">{{ msg('note.explore_the_atlas') }}</RouterLink> · <RouterLink :to="localePath('/read')">{{ msg('returnlink.open_the_continuous_reading') }}</RouterLink></p>
 </template>

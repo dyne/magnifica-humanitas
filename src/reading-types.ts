@@ -21,7 +21,7 @@ export interface ContextParagraph {
   paragraphId: string; number: number; pages: number[]; footnoteIds: string[]; sourceSha256: string;
   explanation: Prose; disposition: string; placementExplanation: string; exclusionCount: number; quotations: Quotation[];
 }
-export interface ContextNote { id: string; number: number; text: string; pages: number[]; paragraphIds: string[]; kind: string; classification: string }
+export interface ContextNote { id: string; number: number; text: string; pages: number[]; paragraphIds: string[]; kind: string; classification: string; previousNoteId?: string }
 export interface ReadingContextIndex { editionId: string; paragraphs: ContextParagraph[]; notes: ContextNote[] }
 export interface Caller { route: string; label: string; focusId: string; top: number }
 export interface ReadingEntry {

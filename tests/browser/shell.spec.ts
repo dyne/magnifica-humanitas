@@ -40,10 +40,25 @@ test('root redirect, keyboard skip and unsupported locale recovery', async ({ pa
   await page.keyboard.press('Enter')
   await expect(page.locator('main')).toBeFocused()
   await page.goto('./#/it/atlas')
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText('This link is unavailable')
-  await page.getByRole('link', { name: 'Explore the atlas', exact: true }).focus()
-  await page.keyboard.press('Enter')
   await expect(page).toHaveURL(/#\/en\/atlas$/)
+})
+
+test('locale routing retains explicit English, query, anchor and unavailable content identities', async ({ page }) => {
+  await page.addInitScript(() => {
+    Object.defineProperty(navigator, 'languages', { get: () => ['ar-EG', 'it-IT'] })
+    Object.defineProperty(navigator, 'language', { get: () => 'pt-BR' })
+    localStorage.setItem('mh-language', 'it')
+  })
+  await page.goto('./')
+  await expect(page).toHaveURL(/#\/en\/atlas$/)
+  await page.goto('./#/en/read?chapter=2')
+  await expect(page).toHaveURL(/#\/en\/read\?chapter=2$/)
+  await page.goto('./#/xx/concepts/not-authored?at=stable-block#source-anchor')
+  await expect(page).toHaveURL(/#\/en\/concepts\/not-authored\?at=stable-block#source-anchor$/)
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('This link is unavailable')
+  await page.goto('./#/ar/source/not-a-paragraph')
+  await expect(page).toHaveURL(/#\/en\/source\/not-a-paragraph$/)
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('This link is unavailable')
 })
 
 test('no-JavaScript source access', async ({ browser, baseURL }) => {

@@ -3,10 +3,10 @@ export interface ReadingState { schemaVersion: number; contentRevision: string; 
 export type LocationCatalog = Record<string, { id: string; blocks?: string[]; steps?: string[] }[]>
 export const STORAGE_KEY: string
 export const LIMITS: { saved: number; recent: number; visited: number; offset: number; bytes: number }
-export function newReadingState(revision: string, edition: string): ReadingState
+export function newReadingState(revision: string, edition: string, locale?: string): ReadingState
 export function locationKey(location: ReaderLocation, includeBlock?: boolean): string
 export function validLocationShape(location: unknown): boolean
 export function isAvailable(location: ReaderLocation, catalog: LocationCatalog): boolean
 export function hasBlock(location: ReaderLocation, catalog: LocationCatalog): boolean
-export function decodeReadingState(raw: string | null, revision: string, edition: string, catalog: LocationCatalog): { state: ReadingState; notice: string }
-export function locationRoute(location: ReaderLocation): string
+export function decodeReadingState(raw: string | null, revision: string, edition: string, catalog: LocationCatalog, locale?: string, messages?: Record<string, string>): { state: ReadingState; notice: string }
+export function locationRoute(location: ReaderLocation, locale?: string): string

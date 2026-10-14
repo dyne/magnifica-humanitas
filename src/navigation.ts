@@ -1,3 +1,5 @@
+import { activeLocale, localePath } from './locale'
+import { t } from './messages'
 import { nextTick } from 'vue'
 import type { RouterScrollBehavior } from 'vue-router'
 import type { Caller } from './reading-types'
@@ -8,7 +10,13 @@ let traversing = false
 let navigating = false
 let navigationVersion = 0
 let navigationFocus: Element | null = null
-window.addEventListener('popstate', () => { traversing = true })
+window.addEventListener('popstate', () => {
+  traversing = true
+  const version = navigationVersion
+  // Vue Router may roll an aborted traversal back with a silent history.go().
+  // That popstate has no guard/scroll callback to clear our traversal flag.
+  requestAnimationFrame(() => { if (version === navigationVersion) traversing = false })
+})
 
 export function savePosition(focusId?: string, force = false) {
   if (!force && (traversing || navigating)) return
@@ -29,6 +37,15 @@ export function beginNavigation(initial: boolean) {
   navigationVersion++
   navigationFocus = document.activeElement
   navigating = true
+  return navigationVersion
+}
+
+export function cancelNavigation(version = navigationVersion) {
+  if (version !== navigationVersion) return
+  clearTimeout(scrollTimer)
+  traversing = false
+  navigating = false
+  navigationVersion++
 }
 
 export const scrollBehavior: RouterScrollBehavior = async (to, _from, savedPosition) => {
@@ -39,14 +56,14 @@ export const scrollBehavior: RouterScrollBehavior = async (to, _from, savedPosit
   const wasTraversal = traversing
   traversing = false
   await nextTick()
-  if (to.path.startsWith('/en/source/') || to.path.startsWith('/en/notes/')) { await waitForContext(); await nextTick() }
-  if (to.path === '/en/read' || to.path === '/en/search') { await waitForSequence(); await nextTick() }
+  if (to.path.startsWith(localePath('/source/')) || to.path.startsWith(localePath('/notes/'))) { await waitForContext(); await nextTick() }
+  if (to.path === localePath('/read') || to.path === localePath('/search')) { await waitForSequence(); await nextTick() }
   await new Promise<void>(resolve => requestAnimationFrame(() => resolve()))
   if (version !== navigationVersion) return false
   navigating = false
   // Editing an in-place query or neighborhood retains the control and scroll.
   // History traversal still restores its recorded destination below.
-  if (!wasTraversal && to.path === _from.path && ['/en/search', '/en/atlas'].includes(to.path)) return false
+  if (!wasTraversal && to.path === _from.path && [localePath('/search'), localePath('/atlas')].includes(to.path)) return false
   const active = document.activeElement
   // A reader may have deliberately focused a control while orientation waited.
   // Preserve that choice rather than moving focus or scroll after their action.
@@ -63,7 +80,7 @@ export const scrollBehavior: RouterScrollBehavior = async (to, _from, savedPosit
   if (resume && available(resume) && destination && locationKey(destination, false) === locationKey(resume, false)) {
     const target = (resume.blockId ? document.getElementById(resume.blockId) : null) ?? heading
     target?.focus({ preventScroll: true })
-    localStatus.value = `Returned to ${describeLocation(resume)}.`
+    localStatus.value = t('state.returned', { place: describeLocation(resume) })
     await nextTick()
     const offset = target && resume.blockId ? Math.min(resume.offset, Math.max(0, target.offsetHeight - 1)) : 0
     return { top: Math.max(0, (target?.getBoundingClientRect().top ?? 0) + window.scrollY + offset - 16) }
@@ -85,7 +102,7 @@ export const scrollBehavior: RouterScrollBehavior = async (to, _from, savedPosit
 
 export function readCaller(): Caller | undefined {
   const caller = history.state?.mhCaller
-  if (!caller || typeof caller.route !== 'string' || !caller.route.startsWith('/en/') ||
+  if (!caller || typeof caller.route !== 'string' || !caller.route.startsWith(`/${activeLocale.value}/`) ||
       typeof caller.label !== 'string' || typeof caller.focusId !== 'string' ||
       !Number.isFinite(caller.top) || caller.top < 0) return undefined
   return caller

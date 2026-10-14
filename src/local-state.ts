@@ -1,72 +1,93 @@
+import { formatSavedBlock } from '../scripts/messages.mjs'
+import { activeLocale, localePath, number } from './locale'
+import { t, messages } from './messages'
 import { reactive, ref } from 'vue'
 import type { RouteLocationNormalized } from 'vue-router'
-import { concepts, relations, trails, edition, revision, concept, relation, trail } from './reading'
-import { STORAGE_KEY, LIMITS, decodeReadingState, isAvailable, locationKey, locationRoute, newReadingState } from '../scripts/reading-state.mjs'
+import { concepts, relations, trails, edition, revision, concept, relation, trail, relationLabel } from './reading'
+import { STORAGE_KEY, LIMITS, decodeReadingState, isAvailable, locationKey, locationRoute as savedLocationRoute, newReadingState } from '../scripts/reading-state.mjs'
 import type { ReaderLocation, LocationCatalog } from '../scripts/reading-state.mjs'
 export type { ReaderLocation }
 const conceptBlocks = (id: string) => { const c = concept(id)!; return [`${id}-idea`, `${id}-distinction`, `${id}-connections`, ...c.reasoning.map(b => b.id!)] }
-const readBlocks = [...Array.from({ length: 245 }, (_, i) => `read-p${String(i + 1).padStart(3, '0')}`), ...concepts.flatMap(c => conceptBlocks(c.id))]
-export const catalog: LocationCatalog = {
+export let catalog: LocationCatalog = {}
+function createCatalog(): LocationCatalog { return {
   concept: concepts.map(c => ({ id: c.id, blocks: conceptBlocks(c.id) })),
   foundation: concepts.filter(c => c.foundation).map(c => ({ id: c.id })),
   relation: relations.map(r => ({ id: r.id })),
   source: Array.from({ length: 245 }, (_, i) => ({ id: `p${String(i + 1).padStart(3, '0')}` })),
   note: Array.from({ length: 224 }, (_, i) => ({ id: `n${String(i + 1).padStart(3, '0')}` })),
-  read: [{ id: 'continuous', blocks: readBlocks }],
+  read: [{ id: 'continuous', blocks: [...Array.from({ length: 245 }, (_, i) => `read-p${String(i + 1).padStart(3, '0')}`), ...concepts.flatMap(c => conceptBlocks(c.id))] }],
   trail: trails.flatMap(t => t.steps.map(s => ({ id: t.id, steps: [s.id], blocks: conceptBlocks(s.conceptId) }))),
   trailEnd: trails.map(t => ({ id: t.id })),
+} }
+
+export const localData = reactive(newReadingState('', ''))
+export const storageUnavailable = ref(false)
+export const dataNotice = ref('')
+let stateLocale = ''
+const storageKey = () => activeLocale.value === 'en' ? STORAGE_KEY : `${STORAGE_KEY}-${activeLocale.value}`
+export function initializeReadingState() {
+  if (stateLocale === activeLocale.value) return
+  catalog = createCatalog()
+  stateLocale = activeLocale.value
+  try {
+    const initial = decodeReadingState(localStorage.getItem(storageKey()), revision, edition, catalog, activeLocale.value, messages.value)
+    Object.assign(localData, initial.state)
+    dataNotice.value = initial.notice
+    storageUnavailable.value = false
+  } catch {
+    Object.assign(localData, newReadingState(revision, edition, activeLocale.value))
+    storageUnavailable.value = true
+    dataNotice.value = t('state.temporary')
+  }
+  if (dataNotice.value && !storageUnavailable.value) persist()
+  undoSaved.value = null
+  localStatus.value = ''
 }
-let initial = { state: newReadingState(revision, edition), notice: '' }
-let storageFailed = false
-try { initial = decodeReadingState(localStorage.getItem(STORAGE_KEY), revision, edition, catalog) }
-catch { storageFailed = true; initial.notice = 'Reading data is temporary in this tab because device storage is unavailable.' }
-export const localData = reactive(initial.state)
-export const storageUnavailable = ref(storageFailed)
-export const dataNotice = ref(initial.notice)
 export const localStatus = ref('')
 export const activeLocation = ref<ReaderLocation | null>(null)
 export const undoSaved = ref<{ location: ReaderLocation; index: number } | null>(null)
 export const available = (location: ReaderLocation) => isAvailable(location, catalog)
-export { locationKey, locationRoute }
+export { locationKey }
+export const locationRoute = (location: ReaderLocation) => savedLocationRoute(location, activeLocale.value)
 const blocksFor = (location: ReaderLocation) => catalog[location.kind]?.find(entry => entry.id === location.entityId && (location.kind !== 'trail' || entry.steps?.includes(location.stepId ?? '')))?.blocks ?? []
 function persist() {
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(localData))
+    localStorage.setItem(storageKey(), JSON.stringify(localData))
     storageUnavailable.value = false
     return true
   } catch {
     storageUnavailable.value = true
-    localStatus.value = 'This place could not be saved on this device. Reading data is temporary in this tab.'
+    localStatus.value = t('state.save_failed')
     return false
   }
 }
-if (initial.notice && !storageFailed) persist()
+
 export function retryStorage() {
   if (persist()) {
-    if (dataNotice.value === 'Reading data is temporary in this tab because device storage is unavailable.') dataNotice.value = ''
-    localStatus.value = 'Reading data saved on this device.'
+    if (dataNotice.value === t('state.temporary')) dataNotice.value = ''
+    localStatus.value = t('state.persisted')
   }
 }
 export function setAppearance(value: string) { localData.appearance = value; persist() }
 export function describeLocation(location: ReaderLocation) {
-  if (!available(location)) return `Unavailable saved place · ${location.entityId}${location.stepId ? ` / ${location.stepId}` : ''}`
+  if (!available(location)) return t('state.unavailable', { id: location.entityId, step: location.stepId ? ` / ${location.stepId}` : '' })
   const labels = {
     concept: concept(location.entityId)?.title,
-    foundation: `Optional foundations · ${concept(location.entityId)?.title}`,
-    relation: relation(location.entityId) ? `${concept(relation(location.entityId)!.from)?.title} ${relation(location.entityId)!.type.replaceAll('-', ' ')} ${concept(relation(location.entityId)!.to)?.title}` : '',
-    source: `Source context · §${Number(location.entityId.slice(1))}`,
-    note: `Source note ${Number(location.entityId.slice(1))}`,
-    read: 'Continuous reading',
+    foundation: t('state.foundation', { title: concept(location.entityId)?.title }),
+    relation: relation(location.entityId) ? `${concept(relation(location.entityId)!.from)?.title} ${relationLabel(relation(location.entityId)!.type)} ${concept(relation(location.entityId)!.to)?.title}` : '',
+    source: t('state.source', { number: number(Number(location.entityId.slice(1))) }),
+    note: t('state.note', { number: number(Number(location.entityId.slice(1))) }),
+    read: t('state.read'),
     trail: `${trail(location.entityId)?.title} · ${concept(trail(location.entityId)?.steps.find(s => s.id === location.stepId)?.conceptId)?.title}`,
-    trailEnd: `${trail(location.entityId)?.title} · ending`,
+    trailEnd: t('state.end', { title: trail(location.entityId)?.title }),
   }
-  const block = location.blockId?.startsWith('read-p') ? ` · §${Number(location.blockId.slice(6))}` : location.blockId ? ` · ${location.blockId.replaceAll('-', ' ')}` : ''
+  const block = location.blockId ? ` · ${formatSavedBlock(location.blockId, concepts, activeLocale.value, messages.value)}` : ''
   return `${labels[location.kind]}${block}`
 }
 export function routeLocation(route: RouteLocationNormalized): ReaderLocation | null {
   let location: ReaderLocation | null = null
   const base = { offset: 0 }
-  if (route.path === '/en/read') location = { ...base, kind: 'read', entityId: 'continuous', ...(typeof route.query.at === 'string' ? { blockId: route.query.at } : {}) }
+  if (route.path === localePath('/read')) location = { ...base, kind: 'read', entityId: 'continuous', ...(typeof route.query.at === 'string' ? { blockId: route.query.at } : {}) }
   else if (route.params.conceptId) location = { ...base, kind: route.path.includes('/foundations/') ? 'foundation' : 'concept', entityId: String(route.params.conceptId) }
   else if (route.params.relationId) location = { ...base, kind: 'relation', entityId: String(route.params.relationId) }
   else if (route.params.paragraphId) location = { ...base, kind: 'source', entityId: String(route.params.paragraphId) }
@@ -109,19 +130,19 @@ export function toggleSaved(blockId?: string) {
   if (!location) return
   const index = savedIndex(location)
   if (index >= 0) { removeSaved(index); return }
-  if (localData.saved.length >= LIMITS.saved) { localStatus.value = 'You have 50 saved places. Remove a place before saving another.'; return }
+  if (localData.saved.length >= LIMITS.saved) { localStatus.value = t('state.limit'); return }
   undoSaved.value = null
   localData.saved.unshift(location)
   localData.last = location
   const stored = persist()
-  if (stored) localStatus.value = 'Saved on this device.'
+  if (stored) localStatus.value = t('state.saved')
 }
 export function removeSaved(index: number) {
   const [location] = localData.saved.splice(index, 1)
   if (!location) return
   undoSaved.value = { location, index }
   const stored = persist()
-  if (stored) localStatus.value = 'Saved place removed. You can Undo this removal.'
+  if (stored) localStatus.value = t('state.removed')
 }
 export function undoRemoval() {
   if (!undoSaved.value) return
@@ -129,15 +150,15 @@ export function undoRemoval() {
   localData.saved.splice(index, 0, location)
   undoSaved.value = null
   const stored = persist()
-  if (stored) localStatus.value = 'Saved place restored.'
+  if (stored) localStatus.value = t('state.restored')
 }
 export function clearLocalData() {
-  Object.assign(localData, newReadingState(revision, edition))
+  Object.assign(localData, newReadingState(revision, edition, activeLocale.value))
   undoSaved.value = null
   dataNotice.value = ''
   activeLocation.value = null
-  try { localStorage.removeItem(STORAGE_KEY); storageUnavailable.value = false; localStatus.value = 'Local reading data cleared.' }
-  catch { storageUnavailable.value = true; localStatus.value = 'Temporary reading data cleared. Device storage is unavailable.' }
+  try { localStorage.removeItem(storageKey()); storageUnavailable.value = false; localStatus.value = t('state.cleared') }
+  catch { storageUnavailable.value = true; localStatus.value = t('state.cleared_temporary') }
 }
 export function wasVisited(kind: ReaderLocation['kind'], entityId: string, stepId?: string) {
   return localData.visited.some(item => item.kind === kind && item.entityId === entityId && item.stepId === stepId)

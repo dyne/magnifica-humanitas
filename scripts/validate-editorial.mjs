@@ -1,13 +1,16 @@
 import { readFileSync } from 'node:fs';
+import { localeRegistry } from './locales.mjs';
 import { pathToFileURL } from 'node:url';
 
-export function loadContent() {
+export function loadContent(locale = 'en') {
+  if (!localeRegistry.some(entry => entry.id === locale)) throw new Error(`Unknown locale ${locale}`);
+  const editorial = locale === 'en' ? 'content/editorial' : `content/editorial/${locale}`;
   const read = path => JSON.parse(readFileSync(new URL(`../${path}`, import.meta.url)));
   return {
-    corpus: read('content/source/en/corpus.json'),
-    coverage: read('content/editorial/coverage.json'),
-    concepts: read('content/editorial/concepts.json'),
-    relations: read('content/editorial/relations.json'),
+    corpus: read(`content/source/${locale}/corpus.json`),
+    coverage: read(`${editorial}/coverage.json`),
+    concepts: read(`${editorial}/concepts.json`),
+    relations: read(`${editorial}/relations.json`),
   };
 }
 
@@ -26,7 +29,7 @@ export function validateContent({corpus,coverage,concepts,relations}) {
   for (const [name,data] of Object.entries({coverage,concepts,relations})) {
     check(data.schemaVersion===1,name,'unsupported schema version');
     check(data.editionId===corpus.editionId,name,'source edition mismatch');
-    check(data.language==='en',name,'official-language alignment required');
+    check(data.language===(corpus.language ?? 'en') && localeRegistry.some(locale => locale.id === data.language),name,'official-language alignment required');
   }
   function refs(values,path,allowEmpty=false) {
     check(Array.isArray(values),path,'reference array required');
@@ -108,7 +111,7 @@ export function validateContent({corpus,coverage,concepts,relations}) {
   for (const c of concepts.concepts) {
     const path=`concept.${c.id}`;
     check(/^[a-z][a-z0-9-]*$/.test(c.id),path,'stable concept ID required');
-    check(c.locale==='en' && !blank(c.title),path,'localized display title required');
+    check(c.locale===(corpus.language ?? 'en') && !blank(c.title),path,'localized display title required');
     block(c.definition,`${path}.definition`,'paraphrase');
     block(c.necessaryDistinction,`${path}.distinction`,'editorial-interpretation');
     refs(c.foundationRefs,`${path}.foundationRefs`,true);
