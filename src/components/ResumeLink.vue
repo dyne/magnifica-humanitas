@@ -12,4 +12,4 @@ function resume(event: MouseEvent) {
   router.push({ path: destination.path, query: destination.query, state: { mhResume: { ...props.location } } })
 }
 </script>
-<template><a v-if="available(location)" :id="id" :href="router.resolve(locationRoute(location)).href" @click="resume"><slot>{{ describeLocation(location) }}</slot></a><span v-else>{{ describeLocation(location) }}</span></template>
+<template><a v-if="available(location)" :id="id" :href="router.resolve(locationRoute(location)).href" @click="resume"><bdi><slot>{{ describeLocation(location) }}</slot></bdi></a><span v-else><bdi>{{ describeLocation(location) }}</bdi></span></template>

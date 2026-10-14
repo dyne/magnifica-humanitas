@@ -5,15 +5,15 @@ button, select, input { font: inherit; max-width: 100%; }
 button, input { background: var(--dyne-surface); color: var(--dyne-text); border: 1px solid var(--dyne-control-border); border-radius: var(--dyne-radius-control); padding: .5rem .75rem; min-height: 44px; }
 button { cursor: pointer; }
 input { min-width: 0; width: min(100%, 30rem); caret-color: var(--dyne-focus); }
-.search-results { padding-left: 1.5rem; max-width: var(--dyne-measure); }
-.search-results li { padding-block: 1rem; border-bottom: 1px solid var(--dyne-border); }
+.search-results { padding-inline-start: 1.5rem; max-width: var(--dyne-measure); }
+.search-results li { padding-block: 1rem; border-block-end: 1px solid var(--dyne-border); }
 .search-results li > a { display: inline-block; font-size: 1.25rem; min-height: 44px; padding-block: .5rem; }
 .save-place { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; margin-block: 1rem; max-width: var(--dyne-measure); }
 .save-place span { color: var(--dyne-muted); font-size: .875rem; }
-.saved-places { padding-left: 1.25rem; max-width: var(--dyne-measure); }
+.saved-places { padding-inline-start: 1.25rem; max-width: var(--dyne-measure); }
 .saved-places li { padding-block: .75rem; }
-.saved-places button { margin: .5rem 0 .5rem 1rem; }
-.reflection { margin-block: 2rem; border-top: 1px solid var(--dyne-border); }
+.saved-places button { margin-block: .5rem; margin-inline: 1rem 0; }
+.reflection { margin-block: 2rem; border-block-start: 1px solid var(--dyne-border); }
 .local-status:empty { margin: 0; }
 .neighborhood-diagram { margin-block: 1.5rem; max-width: 60rem; }
 .neighborhood-diagram summary { cursor: pointer; min-height: 44px; }
@@ -21,7 +21,7 @@ input { min-width: 0; width: min(100%, 30rem); caret-color: var(--dyne-focus); }
 .neighborhood-diagram text { fill: currentColor; font: 18px var(--dyne-font-body); }
 @media (max-width: 48rem) { .neighborhood-diagram { display: none; } }
 header, main, footer { width: min(76rem, calc(100% - 2rem)); margin-inline: auto; }
-header { display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: center; padding-block: 1rem; border-bottom: 1px solid var(--dyne-border); }
+header { display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: center; padding-block: 1rem; border-block-end: 1px solid var(--dyne-border); }
 .brand { font: 700 1.25rem/1.2 var(--dyne-font-display); text-decoration: none; }
 nav, .actions, .breadcrumbs { display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: center; }
 nav a, .actions a, button, select { min-height: 44px; padding-block: .5rem; }
@@ -34,27 +34,43 @@ h2 { font-size: clamp(1.5rem, 2.5vw, 2.25rem); margin: 2rem 0 .75rem; }
 p, blockquote, article { max-width: var(--dyne-measure); overflow-wrap: anywhere; }
 .idea { font-size: 1.25rem; line-height: 1.6; max-width: 52ch; }
 .regions { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: 1rem 3rem; }
-.region { border-top: 1px solid var(--dyne-border); padding-bottom: 1rem; }
-.region h2 { margin-top: 1rem; }
+.region { border-block-start: 1px solid var(--dyne-border); padding-block-end: 1rem; }
+.region h2 { margin-block-start: 1rem; }
 .concept-links { padding: 0; list-style: none; }
 .concept-links li { margin-block: .5rem; }
 .concept-links a { display: inline-block; min-height: 44px; padding-block: .5rem; font-size: 1.25rem; }
 .edition-note, footer, .breadcrumbs { color: var(--dyne-muted); font-size: .875rem; }
-footer { padding-block: 1.5rem; border-top: 1px solid var(--dyne-border); }
-.skip { position: absolute; left: 1rem; top: -10rem; padding: .75rem; background: var(--dyne-surface); z-index: 1; }
-.skip:focus { top: 1rem; }
+footer { padding-block: 1.5rem; border-block-start: 1px solid var(--dyne-border); }
+.skip { position: absolute; inset-inline-start: 1rem; inset-block-start: -10rem; padding: .75rem; background: var(--dyne-surface); z-index: 1; }
+.skip:focus { inset-block-start: 1rem; }
 :focus-visible, [tabindex='-1']:focus { outline: 3px solid var(--dyne-focus); outline-offset: 4px; }
 ::selection { color: var(--dyne-text); background: var(--dyne-selection); }
 :root { scrollbar-color: var(--dyne-control-border) var(--dyne-bg); }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto; transition: none !important; animation: none !important; } }
 .kind, .sources { color: var(--dyne-muted); font-size: .875rem; }
 .kind { margin-block: 1rem .25rem; }
-.sources { margin-top: .5rem; }
+.sources { margin-block-start: .5rem; }
 .sources a { display: inline-block; min-height: 44px; min-width: 44px; padding-block: .5rem; text-align: center; }
-.relationships { padding-left: 1.25rem; max-width: var(--dyne-measure); }
+.relationships { padding-inline-start: 1.25rem; max-width: var(--dyne-measure); }
 .relationships li { padding-block: .75rem; }
 blockquote { margin-inline: 0; padding: 1rem; background: var(--dyne-surface); border: 1px solid var(--dyne-border); border-radius: var(--dyne-radius); }
-blockquote p { margin-top: 0; }
-article + article { margin-top: 3rem; border-top: 1px solid var(--dyne-border); }
-.return, .actions { margin-top: 2rem; }
+blockquote p { margin-block-start: 0; }
+article + article { margin-block-start: 3rem; border-block-start: 1px solid var(--dyne-border); }
+.return, .actions { margin-block-start: 2rem; }
 [tabindex='-1'] { scroll-margin-block: 1rem; }
+
+/* Latin theme fonts fall through to locally installed script fonts; no extra font download. */
+:root { --reader-body: var(--dyne-font-body), "Noto Sans", "DejaVu Sans", Arial, sans-serif; --reader-display: var(--dyne-font-display), "Noto Sans", "DejaVu Sans", Arial, sans-serif; }
+body, button, select, input { font-family: var(--reader-body); }
+h1, h2, h3, .brand { font-family: var(--reader-display); }
+:lang(ar) { --reader-body: "Noto Sans Arabic", "Noto Naskh Arabic", "DejaVu Sans", Arial, sans-serif; --reader-display: "Noto Sans Arabic", "Noto Naskh Arabic", "DejaVu Sans", Arial, sans-serif; }
+:lang(ar) h1, :lang(ar) h2, :lang(ar) h3 { letter-spacing: normal; line-height: 1.5; }
+bdi, .source-identity, .sources a { unicode-bidi: isolate; }
+.source-identity { direction: ltr; }
+header > *, .appearance > * { min-inline-size: 0; }
+.language-control select { max-inline-size: min(100%, 24rem); }
+.language-status, .fixture-notice { inline-size: min(76rem, calc(100% - 2rem)); margin-inline: auto; }
+.fixture-notice { border: 1px solid var(--dyne-border); padding: 1rem; }
+[dir="rtl"] .neighborhood-diagram { direction: ltr; }
+
+:lang(be), :lang(ru) { --reader-body: "Inter Variable", "Noto Sans", "DejaVu Sans", Arial, sans-serif; --reader-display: "Syne", "Noto Sans", "DejaVu Sans", Arial, sans-serif; }

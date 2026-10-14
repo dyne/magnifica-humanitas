@@ -89,3 +89,55 @@ Local heading IDs and section contexts belong to the edition; alignment to
 English chapter-heading groups does not imply identical heading block counts.
 These source corpora provide inputs for future localized editorial content;
 they do not themselves certify or enable a translated public experience.
+
+## Localized authoring and publication
+
+`content/messages/en.json` is the complete interface key schema. Every localized
+`content/messages/<locale>.json` must contain exactly those nonempty keys, with
+identical named-placeholder occurrences. `src/messages.ts` checks keys at compile
+time; `validateMessages()` rejects missing/extra keys and placeholder differences
+at build time. Values are rendered as text, never translated HTML. Several
+messages surround semantic inline elements, so preserve their sentence context.
+The catalog includes About, region questions, route titles, source attribution,
+accessibility labels, failure/retry text, saved-state notices and search labels.
+Reading estimates and other authored content metadata stay in the reading JSON.
+
+A new edition supplies `content/reading/<locale>.json` and
+`content/editorial/<locale>/{coverage,concepts,relations}.json`, based on its
+frozen `content/source/<locale>/corpus.json`. Editorial `language`, concept
+`locale`, reading `locale` and every `editionId` must match that edition. Quote
+coordinates, coverage hashes, exact exclusions and note reviews belong to its
+own source. The original English paths and revision contract are unchanged.
+Non-English readings with fictional scenarios also supply
+`localeMetadata.scenarioPrefix`: the translated visible fictional attribution
+that each scenario must begin with. Optional-context link labels, trail questions,
+estimate labels and estimate-method descriptions must be authored in that locale.
+Reviewed notes may supply `previousNoteId` for a preceding bibliographic context;
+this avoids recognizing a translated abbreviation through an English regex.
+
+Stable concept, reasoning-block, relation/endpoint/type, trail/step/reflection
+and sequential identities remain aligned with English. Translated display text
+never becomes identity. Both editorial and public validators run before Vite
+publishes any bundle. A source snapshot alone never makes a locale available:
+`scripts/locales.mjs` additionally requires complete reading, messages and review
+flags. Enable those flags only after the locale milestone's fidelity and interface
+review; do not insert English placeholder bundles to satisfy a gate.
+
+Vite emits distinct lazy library, sequence, context and message modules for each
+published locale. Only the active library is needed at entry; sequence/context
+remain deferred until their routes need them. Cache keys include both locale
+and resource. A rejected request is evicted for retry without disturbing another
+locale; a superseded activation cannot publish content or failure state. UI
+instances remount per active locale and invalidate unfinished view requests.
+
+Browser language is resolved afresh for neutral entries. Explicit locale links
+win; a selector change must use equivalent stable routes, retain query/anchor
+state and discard old caller labels. No saved preference changes the next neutral
+entry's browser default. Search uses the active catalog, locale casing/sorting,
+localized paragraph keyword and digit recognition; numeric UI values use `Intl`.
+
+English device storage retains `mh-reading-v1`, schema 1 and its existing
+revision migration. Other editions use `mh-reading-v1-<locale>` with their own
+edition/revision, isolating progress and unavailable destinations. Navigation
+and saved URLs are generated for the active locale; stored places retain stable
+identities and never store localized labels. Storage does not select a language.

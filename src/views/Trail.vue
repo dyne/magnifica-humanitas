@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { activeLocale, localePath } from '../locale'
+import { t as msg } from '../messages'
 import SavePlace from '../components/SavePlace.vue'
 import { computed, watch } from 'vue'
 import { useRoute } from 'vue-router'
@@ -14,29 +16,29 @@ const stepIndex = computed(() => currentTrail.value?.steps.findIndex(s => s.id =
 const step = computed(() => currentTrail.value?.steps[stepIndex.value])
 const current = computed(() => concept(step.value?.conceptId))
 watch(() => route.fullPath, () => {
-  document.title = `${current.value?.title ?? 'Link unavailable'} · Magnifica Humanitas`
+  document.title = msg('concept.value_magnifica_humanitas', { value1: current.value?.title ?? msg('route.link_unavailable') })
 }, { immediate: true })
 const nextRoute = computed(() => {
   const t = currentTrail.value!
   const next = t.steps[stepIndex.value + 1]
-  return next ? `/en/trails/${t.id}/steps/${next.id}` : `/en/trails/${t.id}/end`
+  return next ? `/${activeLocale.value}/trails/${t.id}/steps/${next.id}` : `/${activeLocale.value}/trails/${t.id}/end`
 })
 </script>
 <template>
   <template v-if="currentTrail && step && current">
-    <nav class="breadcrumbs" aria-label="Breadcrumb"><RouterLink to="/en/trails">Trails</RouterLink><span>{{ currentTrail.title }}</span><span aria-current="page">{{ current.title }}</span></nav>
+    <nav class="breadcrumbs" :aria-label="msg('about.breadcrumb')"><RouterLink :to="localePath('/trails')">{{ msg('app.trails') }}</RouterLink><span>{{ currentTrail.title }}</span><span aria-current="page">{{ current.title }}</span></nav>
     <h1 tabindex="-1">{{ current.title }}</h1><SavePlace />
-    <p>Step {{ stepIndex + 1 }} of {{ currentTrail.steps.length }} · {{ currentTrail.title }}</p>
+    <p>{{ msg('trail.step_value_of_value_value', { value1: stepIndex + 1, value2: currentTrail.steps.length, value3: currentTrail.title }) }}</p>
     <ConceptBody :concept="current" :scope="`trail-${step.id}`" />
-    <h2>{{ stepIndex + 1 === currentTrail.steps.length ? 'Bring the distinction together' : 'Where the argument leads' }}</h2>
+    <h2>{{ stepIndex + 1 === currentTrail.steps.length ? msg('trail.bring_the_distinction_together') : msg('trail.where_the_argument_leads') }}</h2>
     <ProseBlock :block="step.transition" :scope="`${step.id}-transition`" />
-    <nav class="actions" aria-label="Trail steps">
-      <ReadingLink v-if="stepIndex > 0" :id="`${step.id}-previous`" :to="`/en/trails/${currentTrail.id}/steps/${currentTrail.steps[stepIndex-1].id}`">Previous: {{ concept(currentTrail.steps[stepIndex-1].conceptId)?.title }}</ReadingLink>
-      <ReadingLink :id="`${step.id}-next`" :to="nextRoute">{{ stepIndex + 1 === currentTrail.steps.length ? 'Reach the trail ending' : `Next: ${concept(currentTrail.steps[stepIndex+1].conceptId)?.title}` }}</ReadingLink>
-      <ReadingLink :id="`${step.id}-skip`" :to="nextRoute">Skip this step</ReadingLink>
-      <ReadingLink :id="`${step.id}-concept`" :to="`/en/concepts/${current.id}`">Open full concept: {{ current.title }}</ReadingLink>
+    <nav class="actions" :aria-label="msg('trail.trail_steps')">
+      <ReadingLink v-if="stepIndex > 0" :id="`${step.id}-previous`" :to="`/${activeLocale}/trails/${currentTrail.id}/steps/${currentTrail.steps[stepIndex-1].id}`">{{ msg('trail.previous_value', { value1: concept(currentTrail.steps[stepIndex-1].conceptId)?.title }) }}</ReadingLink>
+      <ReadingLink :id="`${step.id}-next`" :to="nextRoute">{{ stepIndex + 1 === currentTrail.steps.length ? msg('trail.reach_the_trail_ending') : msg('trail.next_value', { value1: concept(currentTrail.steps[stepIndex+1].conceptId)?.title }) }}</ReadingLink>
+      <ReadingLink :id="`${step.id}-skip`" :to="nextRoute">{{ msg('trail.skip_this_step') }}</ReadingLink>
+      <ReadingLink :id="`${step.id}-concept`" :to="`/${activeLocale}/concepts/${current.id}`">{{ msg('trail.open_full_concept_value', { value1: current.title }) }}</ReadingLink>
     </nav>
-    <ReturnLink /><RouterLink to="/en/trails">Return to trails</RouterLink>
+    <ReturnLink /><RouterLink :to="localePath('/trails')">{{ msg('trail.return_to_trails') }}</RouterLink>
   </template>
   <Unavailable v-else />
 </template>

@@ -5,5 +5,5 @@
     "skipLibCheck": true, "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "types": ["vite/client", "node"], "noEmit": true
   },
-  "include": ["src/**/*.ts", "src/**/*.vue", "vite.config.ts", "playwright.config.ts", "tests/browser/**/*.ts"]
+  "include": ["src/**/*.ts", "src/**/*.vue", "vite.config.ts", "playwright.config.ts", "playwright.locale.config.ts", "tests/browser/**/*.ts", "tests/locale-browser/**/*.ts"]
 }

@@ -31,3 +31,11 @@ NOTICE and all three font OFL texts in the static artifact. When dependency
 revisions change, review provenance and update these copies from the pinned
 packages. Do not remove notices while packaging `dist/`; serving only the
 HTML/JS and fonts without notices is an incomplete artifact.
+
+Script-aware layout retains the bundled Latin fonts and uses **installed system
+fonts** for Arabic and missing Cyrillic glyphs: Noto Sans Arabic/Noto Naskh Arabic,
+Noto Sans, DejaVu Sans, then platform Arial/sans-serif. These fallbacks are not
+redistributed or downloaded by the application; their availability and licenses
+belong to the host operating system. The existing bundled OFL notices remain
+unchanged. The nonshipping RTL test records Chromium's actual painted font and
+screenshots; this is environment-specific evidence, not a universal glyph guarantee.

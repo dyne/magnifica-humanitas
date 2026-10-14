@@ -1,9 +1,13 @@
 import { readFileSync } from 'node:fs'
 import { createHash } from 'node:crypto'
+import { validateContent } from './validate-editorial.mjs'
+import { localeRegistry } from './locales.mjs'
 import { pathToFileURL } from 'node:url'
 const read = path => JSON.parse(readFileSync(new URL(`../${path}`, import.meta.url), 'utf8'))
-export function loadReadingInputs() {
-  return { reading: read('content/reading/en.json'), corpus: read('content/source/en/corpus.json'), coverage: read('content/editorial/coverage.json'), concepts: read('content/editorial/concepts.json'), relations: read('content/editorial/relations.json') }
+export function loadReadingInputs(locale = 'en') {
+  if (!localeRegistry.some(entry => entry.id === locale)) throw new Error(`Unknown locale ${locale}`)
+  const editorial = locale === 'en' ? 'content/editorial' : `content/editorial/${locale}`
+  return { reading: read(`content/reading/${locale}.json`), corpus: read(`content/source/${locale}/corpus.json`), coverage: read(`${editorial}/coverage.json`), concepts: read(`${editorial}/concepts.json`), relations: read(`${editorial}/relations.json`) }
 }
 
 /** Count whitespace-separated words in the authored prose, not navigation or source pages.
@@ -28,15 +32,28 @@ export function estimateTrailReading(trail, reading) {
 }
 
 export function validateReading({ reading, corpus, coverage, concepts, relations }) {
-  const errors = []
+  const errors = validateContent({ corpus, coverage, concepts, relations })
   const check = (condition, message) => { if (!condition) errors.push(message) }
+  if (reading.locale !== 'en') {
+    const canonical = read('content/reading/en.json')
+    const same = (a, b, label) => check(JSON.stringify(a) === JSON.stringify(b), `Stable localized ${label} identities required`)
+    same(reading.concepts.map(c => [c.id, c.reasoning.map(b => b.id)]), canonical.concepts.map(c => [c.id, c.reasoning.map(b => b.id)]), 'concept/block')
+    same(reading.relations.map(r => [r.id, r.from, r.to, r.type, r.placement]), canonical.relations.map(r => [r.id, r.from, r.to, r.type, r.placement]), 'relation')
+    same(reading.trails.map(t => [t.id, t.steps.map(s => [s.id, s.conceptId]), t.reflection.id]), canonical.trails.map(t => [t.id, t.steps.map(s => [s.id, s.conceptId]), t.reflection.id]), 'trail/step/reflection')
+    same(reading.readingSequence.map(b => [b.id, b.contextId, b.placement]), canonical.readingSequence.map(b => [b.id, b.contextId, b.placement]), 'sequential reading')
+  }
   const source = new Map(corpus.paragraphs.map(p => [p.id, p]))
+  check([coverage, concepts, relations].every(data => data.editionId === corpus.editionId), 'Editorial inputs must match active source edition')
+  for (const record of coverage.records) {
+    const p = source.get(record.paragraphId)
+    check(p && record.sourceSha256 === p.sha256 && createHash('sha256').update(p.text).digest('hex') === p.sha256, `${record.paragraphId}: active source hash mismatch`)
+  }
   const contexts = new Set(reading.contexts.map(c => c.paragraphId))
   const conceptIds = new Set(reading.concepts.map(c => c.id))
   check(concepts.concepts.every(c => conceptIds.has(c.id)), 'Complete concept library required')
   check(relations.relations.every(r => reading.relations.some(p => p.id === r.id)), 'Complete relationship library required')
   check(contexts.size === source.size && [...source.keys()].every(id => contexts.has(id)), 'Complete paragraph adaptation required')
-  check(reading.editionId === corpus.editionId && reading.locale === 'en' && reading.schemaVersion === 1, 'Reading edition must match source')
+  check(reading.editionId === corpus.editionId && localeRegistry.some(locale => locale.id === reading.locale) && reading.locale === (corpus.locale ?? corpus.language ?? 'en') && reading.schemaVersion === 1, 'Reading edition must match source')
   for (const [list, key] of [[reading.concepts, 'id'], [reading.contexts, 'paragraphId'], [reading.relations, 'id'], [reading.trails, 'id']]) {
     check(new Set(list.map(x => x[key])).size === list.length, 'Duplicate published identity')
   }
@@ -92,7 +109,7 @@ export function validateReading({ reading, corpus, coverage, concepts, relations
     check(JSON.stringify(entry.conceptIds) === JSON.stringify(ledger?.conceptIds), `${entry.id}: coverage concepts changed`)
     check(entry.conceptIds?.every(id => conceptIds.has(id)), `${entry.id}: unpublished concept`)
     if (entry.placement === 'main') block(entry.explanation, entry.id)
-    else check(!entry.explanation && entry.contextLinkLabel?.startsWith('Optional source context'), `${entry.id}: context must remain a labelled optional destination`)
+    else check(!entry.explanation && (reading.locale === 'en' ? entry.contextLinkLabel?.startsWith('Optional source context') : typeof entry.contextLinkLabel === 'string' && entry.contextLinkLabel.trim().length > 0), `${entry.id}: context must remain a labelled optional destination`)
     check(!ledger?.faithPremises.length || entry.foundationContextId === entry.contextId, `${entry.id}: theological premise context missing`)
     check(!entry.foundationContextId || contexts.has(entry.foundationContextId), `${entry.id}: inaccessible theological premise`)
   }
@@ -101,6 +118,7 @@ export function validateReading({ reading, corpus, coverage, concepts, relations
   for (const note of corpus.footnotes) {
     const approved = approvedNotes.get(note.id)
     check(approved?.sourceSha256 === note.sha256 && note.sha256 === createHash('sha256').update(note.text).digest('hex'), `${note.id}: exact source note requires reader review`)
+    check(!approved?.previousNoteId || corpus.footnotes.some(n => n.id === approved.previousNoteId && n.number < note.number), `${note.id}: unavailable preceding note context`)
     check(['bibliographic-citation', 'source-argument-and-citation'].includes(approved?.classification), `${note.id}: note review classification missing`)
     for (const record of coverage.records) for (const excluded of record.exclusions) {
       check(!note.text.includes(excluded.sourceSpan.text), `${note.id}: note contains an excluded devotional form`)
@@ -117,7 +135,7 @@ export function validateReading({ reading, corpus, coverage, concepts, relations
   const reflectionIds = new Set()
   for (const t of reading.trails) {
     block(t.introduction, t.id); block(t.qualification, t.id); block(t.ending, t.id)
-    check(typeof t.question === 'string' && t.question.endsWith('?'), `${t.id}: guiding question required`)
+    check(typeof t.question === 'string' && (reading.locale === 'en' ? t.question.endsWith('?') : t.question.trim().length > 0), `${t.id}: guiding question required`)
     check(t.steps.length > 0 && new Set(t.steps.map(s => s.id)).size === t.steps.length, `${t.id}: finite unique steps required`)
     for (const s of t.steps) {
       check(typeof s.id === 'string' && /^[a-z][a-z0-9-]*$/.test(s.id), `${t.id}: stable step identity required`)
@@ -134,9 +152,9 @@ export function validateReading({ reading, corpus, coverage, concepts, relations
     block(r?.prompt, `${t.id}: reflection prompt`); block(r?.feedback, `${t.id}: reflection feedback`)
     if (r?.scenario) {
       block(r.scenario, `${t.id}: scenario`, ['editorial-scenario'])
-      check(r.scenario.text?.startsWith('Editorial scenario — fictional:'), `${t.id}: invented situation must be explicitly fictional`)
+      check(r.scenario.text?.startsWith(reading.locale === 'en' ? 'Editorial scenario — fictional:' : reading.localeMetadata?.scenarioPrefix) && (reading.locale === 'en' || Boolean(reading.localeMetadata?.scenarioPrefix)), `${t.id}: invented situation must be explicitly fictional`)
     }
-    check(JSON.stringify(t.readingEstimate) === JSON.stringify(estimateTrailReading(t, reading)), `${t.id}: reading estimate must derive from displayed authored prose`)
+    check(JSON.stringify(reading.locale === 'en' ? t.readingEstimate : { ...t.readingEstimate, label: 'Estimated reading time', method: estimateTrailReading(t, reading).method }) === JSON.stringify(estimateTrailReading(t, reading)), `${t.id}: reading estimate must derive from displayed authored prose`)
   }
   return errors
 }
@@ -157,7 +175,7 @@ export function buildReadingIndex(inputs = loadReadingInputs()) {
   // The explicit review manifest binds every screened note to its frozen wording.
   const approved = new Map(reading.reviewedNotes.map(n => [n.id, n]))
   for (const id of noteIds) if (!approved.has(id)) throw new Error(`Source note ${id} requires reader review`)
-  const notes = corpus.footnotes.filter(n => noteIds.has(n.id)).map(n => ({ ...n, paragraphIds: n.paragraphIds.filter(id => paragraphs.some(p => p.paragraphId === id)), kind: 'quotation', classification: approved.get(n.id).classification }))
+  const notes = corpus.footnotes.filter(n => noteIds.has(n.id)).map(n => ({ ...n, paragraphIds: n.paragraphIds.filter(id => paragraphs.some(p => p.paragraphId === id)), kind: 'quotation', classification: approved.get(n.id).classification, ...(approved.get(n.id).previousNoteId ? { previousNoteId: approved.get(n.id).previousNoteId } : {}) }))
   return { editionId: corpus.editionId, paragraphs, notes }
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {

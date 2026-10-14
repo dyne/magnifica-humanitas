@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { t as msg } from '../messages'
 import { useRoute, useRouter } from 'vue-router'
 import { savePosition } from '../navigation'
 const props = defineProps<{ to: string; id: string }>()
@@ -10,8 +11,8 @@ function follow(event: MouseEvent) {
   savePosition(props.id, true)
   const destination = router.resolve(props.to)
   router.push({ path: destination.path, query: destination.query, hash: destination.hash,
-    state: { mhCaller: { route: route.fullPath, label: document.querySelector('main h1')?.textContent ?? 'your reading', focusId: props.id, top: window.scrollY } },
+    state: { mhCaller: { route: route.fullPath, label: document.querySelector('main h1')?.textContent ?? msg('readinglink.your_reading'), focusId: props.id, top: window.scrollY } },
   })
 }
 </script>
-<template><RouterLink :to="to" custom v-slot="{ href }"><a :id="id" :href="href" @click="follow"><slot /></a></RouterLink></template>
+<template><RouterLink :to="to" custom v-slot="{ href }"><a :id="id" :href="href" @click="follow"><bdi><slot /></bdi></a></RouterLink></template>

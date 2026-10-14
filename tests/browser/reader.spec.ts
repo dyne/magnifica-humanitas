@@ -210,7 +210,7 @@ test('deferred orientation preserves deliberate keyboard recovery focus', async 
   })
   await page.goto('./#/en/atlas')
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Explore the ideas in Magnifica Humanitas')
-  await page.goto('./#/it/atlas')
+  await page.goto('./#/en/concepts/not-published')
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('This link is unavailable')
   const recovery = page.getByRole('link', { name: 'Explore the atlas', exact: true })
   await recovery.focus()
