@@ -1,0 +1,21 @@
+Magnifica Humanitas — independent editorial reading
+
+Source: Leo XIV, Magnifica Humanitas, 15 May 2026, owner English edition
+mh-en-owner-2026. Copyright © Dicastery for Communication – Libreria Editrice
+Vaticana. Source quotations and notes retain that separate notice. Full original:
+https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html
+
+Original editorial explanations, fictional scenarios and application code are
+distinct from the source. No license for original project code/commentary has
+been selected; this notice grants no blanket license or official endorsement.
+
+Theme: Dyne vite-theme, revision c485943e103fc1e7a50c6f45853d190f16f57583,
+MIT. See licenses/dyne-vite-theme-MIT.txt and licenses/dyne-vite-theme-NOTICE.md.
+
+Locally bundled fonts: Syne, Inter and JetBrains Mono, each from Fontsource
+5.3.0 packages under SIL Open Font License 1.1. Full copyright and license
+texts: licenses/Syne-OFL.txt, licenses/Inter-OFL.txt,
+licenses/JetBrains-Mono-OFL.txt.
+
+No Dyne logo asset or raster illustration is shipped. The relationship diagram
+uses original SVG geometry derived from the authored content.

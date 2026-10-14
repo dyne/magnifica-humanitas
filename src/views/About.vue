@@ -8,7 +8,8 @@
   <p>Main paths begin with human questions. Necessary qualifications stay visible. Theological premises remain attributed and available as optional depth. Prayers and liturgical formulas are excluded from adapted prose; arguments and institutional criticism are preserved.</p>
   <h2>Read the original</h2>
   <p><a href="https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html">Read the full original at the Holy See</a>. It includes material excluded from the adaptation. The original source has its own Vatican copyright; editorial explanations are distinct from it.</p>
+  <p><a href="NOTICE.txt">Source and asset notices</a> include the locally served fonts and theme.</p>
   <h2>Your reading</h2>
-  <p>No accounts, profiling or engagement tracking. Appearance and text size currently apply to this tab. Four opening concepts, one finite trail, reviewed source contexts and exact bibliographic notes are available. Saved places and the complete reviewed library are in preparation.</p>
+  <p>No accounts, profiling or engagement tracking. The complete reading includes 27 concepts, six finite trails and a source-ordered adaptation of all 245 paragraphs, with reviewed source contexts and notes. Saved places, recent reading positions and appearance preferences stay on this device; text size applies to this tab. When device storage is unavailable, reading places remain temporary in the current tab. Visits do not measure understanding.</p>
   <RouterLink to="/en/atlas">Return to the atlas</RouterLink>
 </template>

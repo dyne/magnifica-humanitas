@@ -14,7 +14,8 @@
     "build": "vite build",
     "check": "npm run typecheck && npm run content:check && npm test && npm run build",
     "test:browser": "playwright test",
-    "test:browser:all": "node scripts/check-hosting.mjs"
+    "test:browser:all": "node scripts/check-hosting.mjs",
+    "test:published": "node scripts/check-published.mjs"
   },
   "engines": {
     "node": ">=22.12.0"
@@ -28,6 +29,7 @@
     "@playwright/test": "1.64.0",
     "@types/node": "24.10.0",
     "@vitejs/plugin-vue": "6.0.10",
+    "axe-core": "4.11.0",
     "typescript": "5.9.3",
     "vite": "8.3.4",
     "vue-tsc": "3.3.13"

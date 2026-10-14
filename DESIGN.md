@@ -1,26 +1,25 @@
 # Magnifica Humanitas reading design
 
-L2 design contract, documented from the development storyboard. This is not a
-claim that the production application, accessibility review or library exists.
-The owner chose Question regions within the existing Dyne world and a code-led
-build. `design/INTERACTION-SPEC.md` is the complete behavior specification;
-`design/QUESTION-REGIONS-BRIEF.md` records the surface direction.
+Reading design, established through the L2 storyboard and implemented in the
+Vue production application. The owner chose Question regions within the existing
+Dyne world and a code-led build. `design/INTERACTION-SPEC.md` is the behavior
+specification; `design/QUESTION-REGIONS-BRIEF.md` records the surface direction.
+`verification/L6.1.md` records current production review and its limits.
 
 ## Visual authority
 
 Inherit `dyne/vite-theme` at `c485943e103fc1e7a50c6f45853d190f16f57583`.
 Use Syne headings, Inter body text, warm semantic light/dark surfaces, pill
 actions and visible purple focus. Import the package's exported CSS and local
-licensed fonts in L3; the demo and VitePress composition are not inherited.
+licensed fonts; the demo and VitePress composition are not inherited.
 `design/INHERITANCE.md` records the semantic roles and package boundary.
 
 ## Question regions and reading
 
 The atlas starts with human questions, labelled editorial groupings. Each
 question exposes direct concept links; choosing a group is never a mandatory
-intermediate action. The worked regions ask what makes a person worthy and how
-people live well together. The release adds the complete concept set rather
-than pretending this four-concept demonstration is complete.
+intermediate action. Regions ask what makes a person worthy and how people live
+well together, among other human questions. All 27 concepts are available.
 
 At desktop width, question regions share a wrapping grid. At phone width and
 large text, they stack in the same DOM order. Articles use ordinary page scroll,
@@ -56,10 +55,11 @@ scores, autoplay or infinite reading feed.
 
 ## Verified scope and remaining gates
 
-`design/STORYBOARD-VERIFICATION.md` records the current 80-case layout and native
-keyboard matrix. This verifies the development composition and demonstrates
-entry, concept detail, trail step, §52 context and saved return. It does not
-prove learning efficacy, full screen-reader compatibility or production history
-and persistence. L3/L5 implement those contracts; L6 performs the production
-Impeccable finish review, documentation refresh and complete accessibility and
-deployment checks. Root reviews the L2 contract through the supervised L1 gate.
+`design/STORYBOARD-VERIFICATION.md` retains the historical 80-case storyboard
+matrix. Production verification in `verification/L6.1.md` covers 13 surfaces at
+four sizes, both appearances and 100%/200% text, plus 320px reflow, source
+reachability, history, local persistence, automated accessibility and throttled
+loading. Bounded Impeccable audit/polish found no unresolved P0/P1 in that scope.
+Physical-device/screen-reader testing and reader efficacy remain unmeasured.
+Local verification does not establish publication; `docs/DEPLOYMENT.md` requires
+a terminally reviewed revision and checks on the actual published origin.

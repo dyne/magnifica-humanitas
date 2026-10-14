@@ -2,7 +2,7 @@
 
 ## Current stage
 
-Supervised implementation with a verified source and editorial contract. Read
+Complete local application with a verified source and editorial contract. Read
 content/editorial/CONTRACT.md, research/ANALYSIS.md,
 research/EXPERIENCE.md and research/DECISIONS.md before making product choices.
 Do not treat proposed choices as owner decisions. The active plan is supplied
@@ -68,3 +68,30 @@ owns review acceptance and commits. Exclude generated files, credentials and
 workspace coordination files from commits. Keep source attribution distinct
 from the license selected for original code and commentary. A remote push or
 site deployment requires a user-authorized destination.
+
+## Contributor and release operations
+
+Read docs/EDITORIAL.md and docs/CONTENT-SCHEMA.md before content changes.
+Content JSON is authored input; virtual Vite modules and `dist/` are generated.
+Keep stable IDs and preserve saved-location compatibility. After material prose
+changes update the content revision, semantic review evidence and source anchors.
+Never rewrite frozen source files to make a validator pass.
+
+Install with `npm ci`; run `npm run check`, `npm run source:check` and
+`npm run test:browser:all`. Python 3 and the matching Playwright Chromium binary
+are required for those separate checks. Build/test does not require an external
+PDF. The hosting runner rebuilds sequentially: do not run a concurrent build.
+Document observable results and environment; automated checks do not establish
+learning efficacy or comprehensive accessibility.
+
+docs/ATTRIBUTION.md and public/NOTICE.txt keep source copyright, theme MIT and
+font OFL notices separate. No license for original code/commentary has been
+selected in this repository; do not invent one or apply dependency licenses to
+the Vatican source. Retain public/licenses in every static artifact.
+
+The authorized destination is dyne/magnifica-humanitas. Release must use a
+freshly terminally reviewed full commit SHA after milestone acceptance. Pages
+is manual-only and requires that SHA to match the protected repository variable
+TERMINALLY_REVIEWED_SHA. Do not set that variable or dispatch before terminal
+acceptance. Follow docs/DEPLOYMENT.md and verify the actual published URL after
+deployment. Do not claim publication from local preview evidence.

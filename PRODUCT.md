@@ -77,8 +77,10 @@ adaptation and Impeccable for product and interface design.
 - Owner-supplied saved English text and official source URL.
 - `research/ANALYSIS.md` maps the whole argument. The accepted editorial model
   accounts for all 245 paragraphs, 18 exact mixed-passage exclusions, 27
-  concepts and 44 typed relationships. Public explanations and trail prose
-  remain to be authored and reviewed; the ledger is not the public library.
+  concepts and 44 typed relationships. The public library now contains reviewed
+  explanations, six finite trails and all 245 source-ordered adaptation entries.
+  Semantic comparison is recorded in content/reading/SEMANTIC-REVIEW.md and
+  TRAIL-REVIEW.md; the ledger remains distinct from the public prose.
 - `../vite-theme` and https://github.com/dyne/vite-theme, current revision
   `c485943e103fc1e7a50c6f45853d190f16f57583`.
 - No real reader-usability study has yet been conducted for this site.
