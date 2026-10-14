@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "locale": "ar",
+  "document": "Magnifica Humanitas",
+  "author": "Leo XIV",
+  "documentDate": "2026-05-15",
+  "discoveredFrom": "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html",
+  "canonicalUrl": "http://www.vatican.va/content/leo-xiv/ar/encyclicals/documents/20260515-magnifica-humanitas.html",
+  "copyright": "Copyright © Dicastery for Communication – Libreria Editrice Vaticana",
+  "selectedFormat": "HTML",
+  "artifacts": [
+    {
+      "requestedUrl": "https://www.vatican.va/content/leo-xiv/ar/encyclicals/documents/20260515-magnifica-humanitas.html",
+      "finalUrl": "https://www.vatican.va/content/leo-xiv/ar/encyclicals/documents/20260515-magnifica-humanitas.html",
+      "httpStatus": 200,
+      "retrievedAt": "2026-10-14T16:48:11.770304+00:00",
+      "bytes": 503973,
+      "sha256": "71716c0d5d7cc0fe74c60d972749bd61de2976f04e7d220a7acbb933bbc404e9",
+      "contentType": "text/html",
+      "path": "official.html"
+    },
+    {
+      "requestedUrl": "https://www.vatican.va/content/dam/leo-xiv/pdf/encyclicals/رسالة بابويّة عامّة الإنسانيّة الرّائعة MAGNIFICA HUMANITAS لقداسة البابا لاوُن الرّابع عشر، 15 أيّار_مايو 2026.pdf",
+      "finalUrl": "https://www.vatican.va/content/dam/leo-xiv/pdf/encyclicals/%D8%B1%D8%B3%D8%A7%D9%84%D8%A9%20%D8%A8%D8%A7%D8%A8%D9%88%D9%8A%D9%91%D8%A9%20%D8%B9%D8%A7%D9%85%D9%91%D8%A9%20%D8%A7%D9%84%D8%A5%D9%86%D8%B3%D8%A7%D9%86%D9%8A%D9%91%D8%A9%20%D8%A7%D9%84%D8%B1%D9%91%D8%A7%D8%A6%D8%B9%D8%A9%20MAGNIFICA%20HUMANITAS%20%D9%84%D9%82%D8%AF%D8%A7%D8%B3%D8%A9%20%D8%A7%D9%84%D8%A8%D8%A7%D8%A8%D8%A7%20%D9%84%D8%A7%D9%88%D9%8F%D9%86%20%D8%A7%D9%84%D8%B1%D9%91%D8%A7%D8%A8%D8%B9%20%D8%B9%D8%B4%D8%B1%D8%8C%2015%20%D8%A3%D9%8A%D9%91%D8%A7%D8%B1_%D9%85%D8%A7%D9%8A%D9%88%202026.pdf",
+      "httpStatus": 200,
+      "retrievedAt": "2026-10-14T16:48:12.241274+00:00",
+      "bytes": 2087857,
+      "sha256": "cf0912157b6c87b44c1c7b5613c4d38f1c1b2acce4382dbda7fca56638ae66d6",
+      "contentType": "application/pdf",
+      "path": "comparison.pdf"
+    }
+  ],
+  "acquisitionTool": {
+    "name": "Python urllib.request",
+    "version": "3.13.5"
+  },
+  "extractionTool": {
+    "name": "Python html.parser.HTMLParser",
+    "version": "3.13.5"
+  },
+  "linkedPdfUrls": [
+    "https://www.vatican.va/content/dam/leo-xiv/pdf/encyclicals/رسالة بابويّة عامّة الإنسانيّة الرّائعة MAGNIFICA HUMANITAS لقداسة البابا لاوُن الرّابع عشر، 15 أيّار_مايو 2026.pdf"
+  ],
+  "sourceLanguage": {
+    "code": "ar",
+    "name": "Arabic",
+    "script": "Arabic",
+    "htmlLang": "ar",
+    "openingWitness": "الإنسانيّة الرّائعة"
+  },
+  "inspection": {
+    "method": "Direct inspection of native-language opening, middle and ending; heading and first/last note boundaries. Script and distinctive wording checked, not native-speaker proofreading. Detailed complete-structure validation follows in source-parsing.",
+    "htmlSamples": {
+      "p001": {
+        "sha256": "d139e6b6c59c6274d2c69cbaf479ad8c96938f5e5aecaacd527dc7d4d7976a6a",
+        "opening": "1. الإنسانيّة الرّائعة التي خلقها الله تقِفُ اليومَ عند مفترَقِ طرُقٍ وعليها أن تختار: إمّا أن تبني برجَ بابل جديدًا وإمّا أن تبني المدينة حيث يسكن الله والإنسانيّة معًا. كلّ جيل ي",
+        "closing": " الحقّة على سرّ الإنسان إلّا بسرّ الكلمة المتجسّد\" [1]. هذه الإنسانيّة الرّائعة، في يسوع المسيح، تصير الطّريق والحقّ والحياة، وتفتح لكلّ واحدٍ منّا الطّريق للنموّ وبلوغ ملء الحياة."
+      },
+      "p123": {
+        "sha256": "00ea2335449eceac7f4e1df66cff88299a233bb7c42fa976dd2eb7f29890d5f1",
+        "opening": "123. لا يظهر التّاريخ فقط كفهرس لأعمال العنف التي ارتكبناها، بل أيضًا كدليل على أنّ الإنسان يعرف أن ينشئ مؤسّسات قادرة على حماية الحياة المشتركة. في القرنَين الأخيرَين، نرى ذلك في ",
+        "closing": "نتكاسات: لنفكّر في عمليّات السّلام المتوقّفة أو الالتزامات البيئيّة التي يتمّ تطبيقها ببطء. ومع ذلك، فإنّ ضعف هذه النّتائج يُبَيِّن مدى أهمّيّة مسؤوليّة الذين يُطلقونها ويعزّزونها."
+      },
+      "p245": {
+        "sha256": "054630f3d0e6def75bd55a28578f99fa77d3da0271e73e0557fb0b6ad3a10c42",
+        "opening": "245. بمِثلِ إيمان مريم العذراء، لِنَكُنْ ناسِجين للرجاء في عالمنا، ولْنَتَشارَك في ما نحن عليه وما لدينا، حتّى ينمو حضور يسوع بيننا ويتكوّن ملكوته. في الأمانة المتواضعة كلّ يوم، يم",
+        "closing": "أمّ المسيح، إلى سيِّدة نشيد ”تعظّم نفسي الرّبّ“، لكي ترافق خطواتنا في الحاضر المتغيّر وتحفظ في كلّ واحدٍ منّا الثّقة بالإنجيل، حتّى نستطيع أن نشهد لجمال إنسانيّة رائعة يسكنها الله."
+      },
+      "openingHeading": "المقدّمة",
+      "n001": {
+        "sha256": "b1b93ced7af381b840b9fc1cd90404f422642cda21cdcd8f948249aa0882d49a",
+        "opening": "[1] المجمع المسكونيّ الفاتيكانيّ الثّاني، دستور رعائي في الكنيسة في عالم اليوم، فرح ورجاء، 22: أعمال الكرسيّ الرّسوليّ 58 (1966)، 1042.",
+        "closing": "[1] المجمع المسكونيّ الفاتيكانيّ الثّاني، دستور رعائي في الكنيسة في عالم اليوم، فرح ورجاء، 22: أعمال الكرسيّ الرّسوليّ 58 (1966)، 1042."
+      },
+      "n224": {
+        "sha256": "db14163ee94e592766769d313acb10a5723478140ac99dbfd6e36b05946ba893",
+        "opening": "[224] القدّيس بولس السّادس، عظة في مزار سيّدة بوناريا المريميّ (24 نيسان/أبريل 1970): أعمال الكرسيّ الرّسوليّ 62 (1970)، 301.",
+        "closing": "[224] القدّيس بولس السّادس، عظة في مزار سيّدة بوناريا المريميّ (24 نيسان/أبريل 1970): أعمال الكرسيّ الرّسوليّ 62 (1970)، 301."
+      }
+    },
+    "selectionReason": "HTML preserves Arabic in logical Unicode order and intact combining marks, plus explicit headings and note/reference anchors. Poppler PDF layout adds 13,720 directional controls, visual line arrangement and detached diacritics; HTML is the safer deterministic text source. The Arabic PDF is retained only for comparison.",
+    "pdfComparison": {
+      "tool": "pdftotext -layout",
+      "version": "25.03.0",
+      "textSha256": "8c3d934ffb7f2df82279ecbadd518102c6423ae822f91dbb4d56cf169eedef34",
+      "characters": 242859,
+      "replacementCharacters": 0,
+      "directionalControls": 13720,
+      "opening": "‫‪22/07/26, 13:44‬‬                            ‫لقداسة البابا الُو ن الّر ابع عشر‪ 15 ،‬أّيار‪/‬مايو ‪ MAGNIFICA HUMANITAS 2026‬رسالة بابوّية عاّم ة اإلنسانّية الّر ائعة‬\n\n\n\n\n                                                                                                                           ‫الكرسّي الَّر سولّي‬\n                              ",
+      "actualLanguage": "ar"
+    }
+  }
+}

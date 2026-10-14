@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "locale": "it",
+  "document": "Magnifica Humanitas",
+  "author": "Leo XIV",
+  "documentDate": "2026-05-15",
+  "discoveredFrom": "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html",
+  "canonicalUrl": "http://www.vatican.va/content/leo-xiv/it/encyclicals/documents/20260515-magnifica-humanitas.html",
+  "copyright": "Copyright © Dicastery for Communication – Libreria Editrice Vaticana",
+  "selectedFormat": "HTML",
+  "artifacts": [
+    {
+      "requestedUrl": "https://www.vatican.va/content/leo-xiv/it/encyclicals/documents/20260515-magnifica-humanitas.html",
+      "finalUrl": "https://www.vatican.va/content/leo-xiv/it/encyclicals/documents/20260515-magnifica-humanitas.html",
+      "httpStatus": 200,
+      "retrievedAt": "2026-10-14T16:48:12.502044+00:00",
+      "bytes": 405720,
+      "sha256": "155c4d56c4682cfab341e38b219cf566d41c352d669ce4fc75c5f58ac568530b",
+      "contentType": "text/html",
+      "path": "official.html"
+    },
+    {
+      "requestedUrl": "https://www.vatican.va/content/dam/leo-xiv/pdf/encyclicals/Lettera Enciclica _Magnifica Humanitas_ di Papa Leone XIV sulla custodia della persona umana nel tempo dell’intelligenza artificiale (15 maggio 2026).pdf",
+      "finalUrl": "https://www.vatican.va/content/dam/leo-xiv/pdf/encyclicals/Lettera%20Enciclica%20_Magnifica%20Humanitas_%20di%20Papa%20Leone%20XIV%20sulla%20custodia%20della%20persona%20umana%20nel%20tempo%20dell%E2%80%99intelligenza%20artificiale%20%2815%20maggio%202026%29.pdf",
+      "httpStatus": 200,
+      "retrievedAt": "2026-10-14T16:48:12.857322+00:00",
+      "bytes": 1699311,
+      "sha256": "72122c1abd7ab2cd5b7b45669735f939d34e030ff64a35ddc88c236ad9cc9e63",
+      "contentType": "application/pdf",
+      "path": "comparison.pdf"
+    }
+  ],
+  "acquisitionTool": {
+    "name": "Python urllib.request",
+    "version": "3.13.5"
+  },
+  "extractionTool": {
+    "name": "Python html.parser.HTMLParser",
+    "version": "3.13.5"
+  },
+  "linkedPdfUrls": [
+    "https://www.vatican.va/content/dam/leo-xiv/pdf/encyclicals/Lettera Enciclica _Magnifica Humanitas_ di Papa Leone XIV sulla custodia della persona umana nel tempo dell’intelligenza artificiale (15 maggio 2026).pdf"
+  ],
+  "sourceLanguage": {
+    "code": "it",
+    "name": "Italian",
+    "script": "Latin",
+    "htmlLang": "it",
+    "openingWitness": "La magnifica umanità"
+  },
+  "inspection": {
+    "method": "Direct inspection of native-language opening, middle and ending; heading and first/last note boundaries. Script and distinctive wording checked, not native-speaker proofreading. Detailed complete-structure validation follows in source-parsing.",
+    "htmlSamples": {
+      "p001": {
+        "sha256": "6a20613ed3eae2b0ddb8c7508a279b87be20bace3f40c1a24e7be0937d6f0bdf",
+        "opening": "1. La magnifica umanità creata da Dio si trova oggi di fronte ad una scelta decisiva: innalzare una nuova torre di Babele o edificare la città dove Dio e l’umanità abitano insieme.",
+        "closing": "a luce il mistero dell’uomo». [1] Questa magnifica umanità in Gesù Cristo diventa la Via, la Verità e la Vita, aprendo per ciascuno di noi la strada per crescere verso la pienezza."
+      },
+      "p123": {
+        "sha256": "783a81a0851dd4fd6b7a3ff6ae94932736ac546c6cb76aaf519fedbfcd735abe",
+        "opening": "123. La storia non appare solo come il catalogo delle nostre violenze, ma anche come la prova che l’umano sa generare istituzioni capaci di proteggere la vita comune. Negli ultimi ",
+        "closing": "rotti o agli impegni ambientali applicati con lentezza. Eppure, proprio la fragilità di questi risultati mostra quanto sia preziosa la responsabilità di chi li avvia e li sostiene."
+      },
+      "p245": {
+        "sha256": "c877b97a77c4e77903e64161ff0d057a3011e89fd9cdf6360049210476ef9128",
+        "opening": "245. Con la stessa fede di Maria, diventiamo tessitori di speranza nel nostro mondo, condividendo ciò che siamo e ciò che abbiamo, così che la presenza di Gesù cresca in mezzo a no",
+        "closing": "i i nostri passi nel presente che cambia e custodisca in ciascuno di noi la fiducia nel Vangelo, così che possiamo testimoniare la bellezza di una magnifica umanità abitata da Dio."
+      },
+      "openingHeading": "INTRODUZIONE",
+      "n001": {
+        "sha256": "e967b25efba5d6b6668ee0ec48307c0f0c3cc83b01a2b8b3db20de967f05478d",
+        "opening": "[1] Conc. Ecum. Vat. II, Cost. past. Gaudium et spes, 22: AAS 58 (1966), 1042.",
+        "closing": "[1] Conc. Ecum. Vat. II, Cost. past. Gaudium et spes, 22: AAS 58 (1966), 1042."
+      },
+      "n224": {
+        "sha256": "92827822666b31fb9f312ab0392de9f667743903110c646aa304d31657bf7b2b",
+        "opening": "[224] S. Paolo VI, Omelia al Santuario mariano di Nostra Signora di Bonaria (24 aprile 1970): AAS 62 (1970), 301.",
+        "closing": "[224] S. Paolo VI, Omelia al Santuario mariano di Nostra Signora di Bonaria (24 aprile 1970): AAS 62 (1970), 301."
+      }
+    },
+    "selectionReason": "HTML preserves native Unicode text, numbered blocks, explicit heading markup and note/reference anchors without PDF running headers, page breaks and wrapped lines. The linked PDF is the same language and is retained for comparison, not used for extraction.",
+    "pdfComparison": {
+      "tool": "pdftotext -layout",
+      "version": "25.03.0",
+      "textSha256": "f2281c1fd35bf80cc81daa5fc735eeba0f870b049e5456caf429fbd8283e5ae4",
+      "characters": 293040,
+      "replacementCharacters": 0,
+      "directionalControls": 0,
+      "opening": "22/07/26, 13:47        Lettera Enciclica \"Magnifica Humanitas\" di Papa Leone XIV sulla custodia della persona umana nel tempo dell’intelligenza artific…\n\n\n\n\n       La SANTA SEDE\n       LEONE XIV ENCICLICHE                                                                                                   ITALIANO\n\n\n\n\n                                 ",
+      "actualLanguage": "it"
+    }
+  }
+}

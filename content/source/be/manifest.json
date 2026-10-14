@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "locale": "be",
+  "document": "Magnifica Humanitas",
+  "author": "Leo XIV",
+  "documentDate": "2026-05-15",
+  "discoveredFrom": "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html",
+  "canonicalUrl": "http://www.vatican.va/content/leo-xiv/be/encyclicals/documents/20260515-magnifica-humanitas.html",
+  "copyright": "Copyright © Dicastery for Communication – Libreria Editrice Vaticana",
+  "selectedFormat": "HTML",
+  "artifacts": [
+    {
+      "requestedUrl": "https://www.vatican.va/content/leo-xiv/be/encyclicals/documents/20260515-magnifica-humanitas.html",
+      "finalUrl": "https://www.vatican.va/content/leo-xiv/be/encyclicals/documents/20260515-magnifica-humanitas.html",
+      "httpStatus": 200,
+      "retrievedAt": "2026-10-14T16:48:11.349341+00:00",
+      "bytes": 491729,
+      "sha256": "6bd1bfd518c50716a4b655404c06b6cb5df57946bedbf48268b93d443d38f0ec",
+      "contentType": "text/html",
+      "path": "official.html"
+    },
+    {
+      "requestedUrl": "https://www.vatican.va/content/dam/leo-xiv/pdf/encyclicals/Encyclical Letter of His Holiness Leo XIV Magnifica Humanitas (15 May 2026).pdf",
+      "finalUrl": "https://www.vatican.va/content/dam/leo-xiv/pdf/encyclicals/Encyclical%20Letter%20of%20His%20Holiness%20Leo%20XIV%20Magnifica%20Humanitas%20%2815%20May%202026%29.pdf",
+      "httpStatus": 200,
+      "retrievedAt": "2026-10-14T16:48:11.731548+00:00",
+      "bytes": 1796742,
+      "sha256": "8b24a42fdcc29be2d8abd785db61a7799a928de9dce63862f43ed57a5a5ad8d5",
+      "contentType": "application/pdf",
+      "path": "comparison.pdf"
+    }
+  ],
+  "acquisitionTool": {
+    "name": "Python urllib.request",
+    "version": "3.13.5"
+  },
+  "extractionTool": {
+    "name": "Python html.parser.HTMLParser",
+    "version": "3.13.5"
+  },
+  "linkedPdfUrls": [
+    "https://www.vatican.va/content/dam/leo-xiv/pdf/encyclicals/Encyclical Letter of His Holiness Leo XIV Magnifica Humanitas (15 May 2026).pdf"
+  ],
+  "sourceLanguage": {
+    "code": "be",
+    "name": "Belarusian",
+    "script": "Cyrillic",
+    "htmlLang": "be",
+    "openingWitness": "Чалавецтва, створанае Богам"
+  },
+  "inspection": {
+    "method": "Direct inspection of native-language opening, middle and ending; heading and first/last note boundaries. Script and distinctive wording checked, not native-speaker proofreading. Detailed complete-structure validation follows in source-parsing.",
+    "htmlSamples": {
+      "p001": {
+        "sha256": "124b4589c695f2efe911259bc432c9bc217675772886da1a34acdb1bdba01c8c",
+        "opening": "1. Чалавецтва, створанае Богам ва ўсёй сваёй велічы, стаіць сёння перад вырашальным выбарам: узвесці новую Бабілёнскую вежу ці будаваць горад, у якім Бог і чалавецтва жывуць разам.",
+        "closing": "олькі ў таямніцы ўцелаўлёнага Слова» [1]. У Езусе Хрысце гэтая поўная велічы чалавечнасць становіцца Дарогай, Праўдай і Жыццём, адкрываючы кожнаму з нас шлях узрастання да паўнаты."
+      },
+      "p123": {
+        "sha256": "ab814c1206ba76b5101291502f9cccc887bedda6972a63bdda2e81bf0e050086",
+        "opening": "123. Гісторыя выступае не толькі як каталог актаў насілля, але і як доказ таго, што чалавецтва здольнае ствараць інстытуты для абароны нашага сумеснага жыцця. За апошнія два стагод",
+        "closing": "рацэсы або павольнае выкананне экалагічных абавязацельстваў. Сама крохкасць гэтых дасягненняў паказвае, наколькі каштоўнай з’яўляецца адказнасць тых, хто іх ініцыюе і падтрымлівае."
+      },
+      "p245": {
+        "sha256": "13fb6b065ecbf82489dccfb8f0995f2ae464bf87d538e2d80b7923740d180366",
+        "opening": "245. З верай, якую мела Марыя, станем жа «ткачамі надзеі» ў нашым свеце, дзелячыся тым, кім з’яўляемся і што маем, каб прысутнасць Езуса сярод нас узрастала, а Ягонае Валадарства р",
+        "closing": "ificat, каб Яна накіроўвала нашыя крокі ў гэты час перамен і захоўвала ў кожным з нас сапраўдную веру ў Евангелле, каб мы маглі сведчыць пра веліч чалавецтва, у якім пасяліўся Бог."
+      },
+      "openingHeading": "УВОДЗІНЫ",
+      "n001": {
+        "sha256": "80d2823e1f88eb3f3c82b5be240d080d2bfd39f542be3ffe4f8392c0183d4465",
+        "opening": "[1] Другі Ватыканскі Сабор, Пастырская канст. Gaudium et spes, 22.",
+        "closing": "[1] Другі Ватыканскі Сабор, Пастырская канст. Gaudium et spes, 22."
+      },
+      "n224": {
+        "sha256": "3c9e06fd2e656b965272a1f65bc890b59d8362df075320964c45a8c83d0d2a4b",
+        "opening": "[224] Святы Павел VI, Гамілія у марыйным санктуарыі Маці Божай у Банарыі (24 красавіка 1970): AAS 62 (1970), 301.",
+        "closing": "[224] Святы Павел VI, Гамілія у марыйным санктуарыі Маці Божай у Банарыі (24 красавіка 1970): AAS 62 (1970), 301."
+      }
+    },
+    "selectionReason": "The linked PDF is English, not Belarusian (its opening is Humanity, created by God). Reject it as a Belarusian source. HTML contains Belarusian from beginning through final paragraph and notes, with explicit structure; it is the only linked usable Belarusian edition.",
+    "pdfComparison": {
+      "tool": "pdftotext -layout",
+      "version": "25.03.0",
+      "textSha256": "db606ad408d57470f77f2932657cc905326ccf65903d2fd813ba7563c8f02ace",
+      "characters": 293297,
+      "replacementCharacters": 0,
+      "directionalControls": 0,
+      "opening": "22/07/26, 13:46                                 Encyclical Letter of His Holiness Leo XIV Magnifica Humanitas (15 May 2026)\n\n\n\n\n       The HOLY SEE\n       LEO XIV ENCYCLICALS                                                                                                    ENGLISH\n\n\n\n\n                                                             ENC",
+      "actualLanguage": "en"
+    }
+  }
+}

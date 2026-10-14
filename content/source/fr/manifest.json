@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "locale": "fr",
+  "document": "Magnifica Humanitas",
+  "author": "Leo XIV",
+  "documentDate": "2026-05-15",
+  "discoveredFrom": "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html",
+  "canonicalUrl": "http://www.vatican.va/content/leo-xiv/fr/encyclicals/documents/20260515-magnifica-humanitas.html",
+  "copyright": "Copyright © Dicastery for Communication – Libreria Editrice Vaticana",
+  "selectedFormat": "HTML",
+  "artifacts": [
+    {
+      "requestedUrl": "https://www.vatican.va/content/leo-xiv/fr/encyclicals/documents/20260515-magnifica-humanitas.html",
+      "finalUrl": "https://www.vatican.va/content/leo-xiv/fr/encyclicals/documents/20260515-magnifica-humanitas.html",
+      "httpStatus": 200,
+      "retrievedAt": "2026-10-14T16:48:12.201852+00:00",
+      "bytes": 459537,
+      "sha256": "27ba5cee5b65c7e2fb5aab9ea822248b564c075496f2aeb479817ef820f023a0",
+      "contentType": "text/html",
+      "path": "official.html"
+    },
+    {
+      "requestedUrl": "https://www.vatican.va/content/dam/leo-xiv/pdf/encyclicals/Lettre encyclique du Saint-Père Léon XIV Magnifica Humanitas (15 mai 2026).pdf",
+      "finalUrl": "https://www.vatican.va/content/dam/leo-xiv/pdf/encyclicals/Lettre%20encyclique%20du%20Saint-P%C3%A8re%20L%C3%A9on%20XIV%20Magnifica%20Humanitas%20%2815%20mai%202026%29.pdf",
+      "httpStatus": 200,
+      "retrievedAt": "2026-10-14T16:48:12.604751+00:00",
+      "bytes": 1673966,
+      "sha256": "6b5d5f8a90f3d6ff8b0d026e8be800809ff1a3e8b815db894c0a238f1ab0b845",
+      "contentType": "application/pdf",
+      "path": "comparison.pdf"
+    }
+  ],
+  "acquisitionTool": {
+    "name": "Python urllib.request",
+    "version": "3.13.5"
+  },
+  "extractionTool": {
+    "name": "Python html.parser.HTMLParser",
+    "version": "3.13.5"
+  },
+  "linkedPdfUrls": [
+    "https://www.vatican.va/content/dam/leo-xiv/pdf/encyclicals/Lettre encyclique du Saint-Père Léon XIV Magnifica Humanitas (15 mai 2026).pdf"
+  ],
+  "sourceLanguage": {
+    "code": "fr",
+    "name": "French",
+    "script": "Latin",
+    "htmlLang": "fr",
+    "openingWitness": "La magnifique humanité"
+  },
+  "inspection": {
+    "method": "Direct inspection of native-language opening, middle and ending; heading and first/last note boundaries. Script and distinctive wording checked, not native-speaker proofreading. Detailed complete-structure validation follows in source-parsing.",
+    "htmlSamples": {
+      "p001": {
+        "sha256": "6cb59ddf15d42e263181702a161d6ebe08318302f9d0a8a3b625ef574d9d566c",
+        "opening": "1. La magnifique humanité créée par Dieu se trouve aujourd’hui face à un choix décisif : ériger une nouvelle tour de Babel ou bâtir la cité où Dieu et l’humanité habitent ensemble.",
+        "closing": "nt que dans le mystère du Verbe incarné ». [1] Cette magnifique humanité devient en Jésus-Christ le Chemin, la Vérité et la Vie, ouvrant à chacun de nous la voie vers la plénitude."
+      },
+      "p123": {
+        "sha256": "33543128a1f423b1fd3ebd4955745136d403732f7273ff75925531f1f7274bc2",
+        "opening": "123. L’histoire n’apparaît pas seulement comme un catalogue de nos violences, mais aussi comme la preuve que l’être humain sait créer des institutions capables de protéger la vie e",
+        "closing": "n œuvre avec lenteur. Pourtant, c’est précisément la fragilité de ces résultats qui montre à quel point la responsabilité de ceux qui les initient et les soutiennent est précieuse."
+      },
+      "p245": {
+        "sha256": "3f477c63a8388e6f56d2aebaaddd652a059be76c8253860ae703caf9daec54d4",
+        "opening": "245. Avec la même foi que Marie, devenons des tisseurs d’espérance dans notre monde, en partageant ce que nous sommes et ce que nous avons, afin que la présence de Jésus grandisse ",
+        "closing": "os pas dans ce présent en mutation et garde en chacun de nous la confiance en l’Évangile, afin que nous puissions témoigner de la beauté d’une magnifique humanité habitée par Dieu."
+      },
+      "openingHeading": "INTRODUCTION",
+      "n001": {
+        "sha256": "c861df8b1ae1136833f6f4a91242e4bec392470e84916d0c4f3b1a169e259dfc",
+        "opening": "[1] Conc. Œcum. Vat. II, Const. past. Gaudium et spes, n. 22 : AAS 58 (1966), p. 1042.",
+        "closing": "[1] Conc. Œcum. Vat. II, Const. past. Gaudium et spes, n. 22 : AAS 58 (1966), p. 1042."
+      },
+      "n224": {
+        "sha256": "434a0232e1de9062d5ea3ecc3d184027202edfd2f729395af9d28a951413cea2",
+        "opening": "[224] Saint Paul VI, Homélie au sanctuaire marial de Notre-Dame de Bonaria (24 avril 1970) : AAS 62 (1970), p. 301.",
+        "closing": "[224] Saint Paul VI, Homélie au sanctuaire marial de Notre-Dame de Bonaria (24 avril 1970) : AAS 62 (1970), p. 301."
+      }
+    },
+    "selectionReason": "HTML preserves native Unicode text, numbered blocks, explicit heading markup and note/reference anchors without PDF running headers, page breaks and wrapped lines. The linked PDF is the same language and is retained for comparison, not used for extraction.",
+    "pdfComparison": {
+      "tool": "pdftotext -layout",
+      "version": "25.03.0",
+      "textSha256": "b4761b5a34244d59ceb8a80fcefe1002b8e2a1ea1d7b736a69322a24b25d05d6",
+      "characters": 313822,
+      "replacementCharacters": 0,
+      "directionalControls": 0,
+      "opening": "22/07/26, 13:47                                  Lettre encyclique du Saint-Père Léon XIV Magnifica Humanitas (15 mai 2026)\n\n\n\n\n       Le SAINT-SIÈGE\n       LÉON XIV ENCYCLIQUES                                                                                                   FRANÇAIS\n\n\n\n\n                                                             ",
+      "actualLanguage": "fr"
+    }
+  }
+}

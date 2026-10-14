@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "test": "node --test tests/*.test.mjs",
-    "source:check": "python3 scripts/ingest-source.py --check",
+    "source:check": "python3 scripts/ingest-source.py --check && python3 scripts/ingest-official-sources.py --check && python3 tests/official-snapshots.py && python3 tests/official-parser.py",
     "source:ingest": "python3 scripts/ingest-source.py",
+    "source:ingest:official": "python3 scripts/ingest-official-sources.py",
     "content:check": "node scripts/validate-editorial.mjs && node scripts/reading-content.mjs",
     "dev": "vite",
     "preview": "vite preview",
