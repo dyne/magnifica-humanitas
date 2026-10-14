@@ -1,0 +1,2396 @@
+{
+  "editionId": "mh-es-official-html-2026-10-14",
+  "sourceHtmlSha256": "ec4d2111320f638412d3bc5373bc5306ef182407a22a80a94ffdc2add97df643",
+  "method": "Block inventory and exact-text boundary comparison against saved official HTML; opening and closing witnesses for all requested paragraph samples and every note. Automated structural evidence, not native-speaker proofreading.",
+  "sourceBlockCount": 598,
+  "accountedBlockCount": 598,
+  "blockRoles": {
+    "blank": 5,
+    "closing": 2,
+    "front-matter": 42,
+    "heading": 80,
+    "note": 224,
+    "paragraph": 245
+  },
+  "pdfBoundaryReview": {
+    "sourceHtmlSha256": "ec4d2111320f638412d3bc5373bc5306ef182407a22a80a94ffdc2add97df643",
+    "pdfSha256": "a123df44b56669452060299369964409f8f70d861a6dd91d1edda62e30f155b6",
+    "tool": "pdftotext version 25.03.0",
+    "extractedTextSha256": "678868bad89702c038a9be43ac1d887d85bcd4bcabc6f9a9b1a634a63a4e85ce",
+    "method": "Compare first/last 100 characters of HTML paragraphs 1, 123, 245 against full PDF layout text; ignore whitespace and fi/fl print ligatures only. Matches establish boundary witnesses, not complete edition equality.",
+    "samples": [
+      {
+        "paragraphId": "p001",
+        "sha256": "f4fdeae173dca2363f42256d0bea64f91616fafa316e753a9b004669ca698ec3",
+        "openingMatchesPdf": true,
+        "closingMatchesPdf": true
+      },
+      {
+        "paragraphId": "p123",
+        "sha256": "2e2ce9991fb5027a9fa174a02213186a7f6421ff1a5f735c09a79221351847b0",
+        "openingMatchesPdf": true,
+        "closingMatchesPdf": true
+      },
+      {
+        "paragraphId": "p245",
+        "sha256": "15fe18b03736d97edb2b3c469f17936f94ccaff0fd3b76567fb8d067d4a76b2d",
+        "openingMatchesPdf": true,
+        "closingMatchesPdf": true
+      }
+    ]
+  },
+  "paragraphSamples": [
+    {
+      "paragraphId": "p001",
+      "sourceBlockIds": [
+        "b0045"
+      ],
+      "sha256": "f4fdeae173dca2363f42256d0bea64f91616fafa316e753a9b004669ca698ec3",
+      "opening": "La magnífica humanidad que Dios ha creado se encuentra hoy ante una elección decisiva: levantar una nueva torre de Babel o edificar la ciudad donde Dios y la humanidad habiten junt",
+      "closing": "io del Verbo encarnado». [1] En Jesucristo, esta magnífica humanidad encuentra el camino, la verdad y la vida, abriendo a cada uno de nosotros la vía para crecer hacia la plenitud.",
+      "previousItem": "heading",
+      "nextItem": "paragraph"
+    },
+    {
+      "paragraphId": "p052",
+      "sourceBlockIds": [
+        "b0115"
+      ],
+      "sha256": "910668414f6198fb157642447b550d7fbe7f7afa6c2f4163b2b8a5fad97887b6",
+      "opening": "Cuando hablamos de dignidad no siempre usamos la palabra de la misma manera; en ocasiones nos referimos a la dignidad moral, es decir, al modo en el que la persona orienta sus prop",
+      "closing": "ado por Dios; [60] ningún pecado, ningún fracaso, ninguna humillación, ninguna exclusión puede afectar el valor profundo de una vida humana que Él ha querido y llamado al ser. [61]",
+      "previousItem": "paragraph",
+      "nextItem": "paragraph"
+    },
+    {
+      "paragraphId": "p099",
+      "sourceBlockIds": [
+        "b0175"
+      ],
+      "sha256": "88084b0dad1470b0f8d74cfdb3868a86fa98c3c8c105c095a1d1e3c2e55ed8e0",
+      "opening": "No es posible dar una definición única y completa de la IA. Lo que podemos decir es que hay que evitar el equívoco de equiparar esta “inteligencia” a la humana. Estos sistemas imit",
+      "closing": "nes, errores, perdón y fidelidad; es más bien una adaptación estadística a partir de datos y retroalimentaciones, que puede ser muy eficaz, pero no implica un crecimiento interior.",
+      "previousItem": "paragraph",
+      "nextItem": "heading"
+    },
+    {
+      "paragraphId": "p176",
+      "sourceBlockIds": [
+        "b0275"
+      ],
+      "sha256": "4fc00e21d9400a87503c9ad96c04019f99dbdb15bbcfe81a0f56b23260fe6cb5",
+      "opening": "La Iglesia, a medida que su doctrina fue madurando, fue tomando conciencia, progresivamente, de la gravedad de estas realidades. Es cierto que los acontecimientos del pasado no pue",
+      "closing": " para tantas personas, en contraste con la dignidad sin límites de cada una de ellas, amadas infinitamente por el Señor. Por eso, en nombre de la Iglesia, pido sinceramente perdón.",
+      "previousItem": "paragraph",
+      "nextItem": "paragraph"
+    },
+    {
+      "paragraphId": "p197",
+      "sourceBlockIds": [
+        "b0304"
+      ],
+      "sha256": "a5c0f803f7bc998ced48d036165bf664ca983f2a59a9387766f72c22aef0d89a",
+      "opening": "A este panorama se suma el desarrollo incesante de los sistemas de armas y en particular de las armas relacionadas con la IA. La Santa Sede ha señalado recientemente que la crecien",
+      "closing": "bito bélico deben estar sujetos a las restricciones éticas más rigurosas, y al respeto de la dignidad humana y de la sacralidad de la vida, evitando una carrera armamentista. [184]",
+      "previousItem": "heading",
+      "nextItem": "paragraph"
+    },
+    {
+      "paragraphId": "p198",
+      "sourceBlockIds": [
+        "b0305"
+      ],
+      "sha256": "e5afd7bfcf9a27a575648a51884ca66e323385c45910c11f2bcbcbeaa58819cf",
+      "opening": "A veces se habla de “agentes morales artificiales”, como si una máquina pudiera garantizar, con mayor coherencia que un ser humano, la distinción entre el bien y el mal. Pero el ju",
+      "closing": " contribuir a un ecosistema moral en el que los seres humanos estén mejor preparados para escuchar su propia conciencia y en el que los modelos de IA establezcan límites adecuados.",
+      "previousItem": "paragraph",
+      "nextItem": "paragraph"
+    },
+    {
+      "paragraphId": "p199",
+      "sourceBlockIds": [
+        "b0306"
+      ],
+      "sha256": "cd7f34f6997369aacc720d7a501a43bd1d549ac9a097d89a0f52d22846aaa77e",
+      "opening": "No es suficiente invocar la ética de manera genérica: es necesario indicar criterios precisos de discernimiento. El primero se refiere a la responsabilidad personal. Cuando la deci",
+      "closing": "l moral del conflicto. La selección de objetivos y el uso de la fuerza no pueden confundir a combatientes y no combatientes, ni ignorar el impacto sobre las poblaciones indefensas.",
+      "previousItem": "paragraph",
+      "nextItem": "paragraph"
+    },
+    {
+      "paragraphId": "p200",
+      "sourceBlockIds": [
+        "b0307"
+      ],
+      "sha256": "947eaf90837edc998f4a2dc71c66581f543d6bf50e974c5dda04e51b2ff12e30",
+      "opening": "De estos criterios se derivan algunas exigencias ineludibles. En primer lugar, para cada sistema empleado en el ámbito bélico deben garantizarse la trazabilidad y la posibilidad de",
+      "closing": " a nivel internacional, que frenen la carrera armamentística tecnológica y aseguren una protección especial a los civiles y a las infraestructuras esenciales para su supervivencia.",
+      "previousItem": "paragraph",
+      "nextItem": "heading"
+    },
+    {
+      "paragraphId": "p228",
+      "sourceBlockIds": [
+        "b0346"
+      ],
+      "sha256": "1c247fca526d030cf56c4138a6931de00bdeb2e025e62df0f7ba3e39a82ae825",
+      "opening": "Estas vías de compromiso se nutren de la oración y la alimentan. Para nosotros, en efecto, la paz, ante todo, «proviene de Dios, Dios que nos ama a todos incondicionalmente». [203]",
+      "closing": " Pedro, y deseo repetirlas para invitar a todos a pedir este don. No nos cansemos de orar por la paz y de comprometernos a hacerla realidad en nuestras relaciones y en la sociedad.",
+      "previousItem": "heading",
+      "nextItem": "heading"
+    },
+    {
+      "paragraphId": "p245",
+      "sourceBlockIds": [
+        "b0368"
+      ],
+      "sha256": "15fe18b03736d97edb2b3c469f17936f94ccaff0fd3b76567fb8d067d4a76b2d",
+      "opening": "Con la misma fe de María, convirtámonos en tejedores de esperanza en nuestro mundo, compartiendo lo que somos y lo que tenemos, para que la presencia de Jesús crezca entre nosotros",
+      "closing": " en el presente que cambia y custodie en cada uno de nosotros la confianza en el Evangelio, de modo que podamos testimoniar la belleza de una magnífica humanidad habitada por Dios.",
+      "previousItem": "paragraph",
+      "nextItem": "closing"
+    }
+  ],
+  "noteBoundaries": [
+    {
+      "noteId": "n001",
+      "sourceBlockIds": [
+        "b0373"
+      ],
+      "sourceMarker": "[1]",
+      "opening": "Conc. Ecum. Vat. II, Const. past. Gaudium et spes, 22: AAS 58 (1966), 1042.",
+      "closing": "Conc. Ecum. Vat. II, Const. past. Gaudium et spes, 22: AAS 58 (1966), 1042.",
+      "sha256": "6ce83fd8314c03af82c3cc402fa051601aebbdef7b6d1f6bb4a8ce3ff06f554f"
+    },
+    {
+      "noteId": "n002",
+      "sourceBlockIds": [
+        "b0374"
+      ],
+      "sourceMarker": "[2]",
+      "opening": "Cf. ibíd., 11: AAS 58 (1966), 1033-1034.",
+      "closing": "Cf. ibíd., 11: AAS 58 (1966), 1033-1034.",
+      "sha256": "ca12b8aa2ec72995c4bf9e310322741d0251010f639b944a0f168b337f98e471"
+    },
+    {
+      "noteId": "n003",
+      "sourceBlockIds": [
+        "b0375"
+      ],
+      "sourceMarker": "[3]",
+      "opening": "Id., Const. dogm. Lumen gentium, 1: AAS 57 (1965), 5.",
+      "closing": "Id., Const. dogm. Lumen gentium, 1: AAS 57 (1965), 5.",
+      "sha256": "e66a9a136ba7702abc21ce6188291785bf45794df0a6804e06288962798dfe16"
+    },
+    {
+      "noteId": "n004",
+      "sourceBlockIds": [
+        "b0376"
+      ],
+      "sourceMarker": "[4]",
+      "opening": "Cf. León XIII,Carta enc. Rerum novarum (15 mayo 1891), 22: ASS 23 (1890-1891), 653.",
+      "closing": "Cf. León XIII,Carta enc. Rerum novarum (15 mayo 1891), 22: ASS 23 (1890-1891), 653.",
+      "sha256": "1398e7b104eadbf681cb4c220ce615313288dd1a152f6817610f70291a5609cf"
+    },
+    {
+      "noteId": "n005",
+      "sourceBlockIds": [
+        "b0377"
+      ],
+      "sourceMarker": "[5]",
+      "opening": "Benedicto XVI, Carta enc. Caritas in veritate (29 junio 2009), 69: AAS 101 (2009), 702.",
+      "closing": "Benedicto XVI, Carta enc. Caritas in veritate (29 junio 2009), 69: AAS 101 (2009), 702.",
+      "sha256": "9b8b1705198498e7d97e472683f747f7256f7c666c4493b7a838cd5f71788d2e"
+    },
+    {
+      "noteId": "n006",
+      "sourceBlockIds": [
+        "b0378"
+      ],
+      "sourceMarker": "[6]",
+      "opening": "Francisco, Carta enc. Laudato si’ (24 mayo 2015), 104: AAS 107 (2015), 888.",
+      "closing": "Francisco, Carta enc. Laudato si’ (24 mayo 2015), 104: AAS 107 (2015), 888.",
+      "sha256": "3a4f7971a455ca099fd685b8dea7490d5fdd36db00d332ccdb1b92faf932f8e2"
+    },
+    {
+      "noteId": "n007",
+      "sourceBlockIds": [
+        "b0379"
+      ],
+      "sourceMarker": "[7]",
+      "opening": "Ibíd.",
+      "closing": "Ibíd.",
+      "sha256": "ab789cdc4f78b8904d6ee2fadeba1b7d9b66634c26d0218b544e461e915a662a"
+    },
+    {
+      "noteId": "n008",
+      "sourceBlockIds": [
+        "b0380"
+      ],
+      "sourceMarker": "[8]",
+      "opening": "S. Agustín, Confesiones, I, 1, 1: CCSL 27, Turnhout 1981, 1.",
+      "closing": "S. Agustín, Confesiones, I, 1, 1: CCSL 27, Turnhout 1981, 1.",
+      "sha256": "d41a8eb17636f8effdd23373686693940cb9b55cd1a32af58f0ff11b3aa3e8be"
+    },
+    {
+      "noteId": "n009",
+      "sourceBlockIds": [
+        "b0381"
+      ],
+      "sourceMarker": "[9]",
+      "opening": "Francisco, Exhort. ap. Evangelii gaudium (24 noviembre 2013), 183: AAS 105 (2013), 1097.",
+      "closing": "Francisco, Exhort. ap. Evangelii gaudium (24 noviembre 2013), 183: AAS 105 (2013), 1097.",
+      "sha256": "9832c9a1f638283562ae8a967bb343e4061f6b899846e2fc215f0733986b2548"
+    },
+    {
+      "noteId": "n010",
+      "sourceBlockIds": [
+        "b0382"
+      ],
+      "sourceMarker": "[10]",
+      "opening": "Conc. Ecum. Vat. II, Const. past. Gaudium et spes, 36: AAS 58 (1966), 1054; cf. id., Decr. Apostolic",
+      "closing": "t spes, 36: AAS 58 (1966), 1054; cf. id., Decr. Apostolicam actuositatem, 7: AAS 58 (1966), 843-844.",
+      "sha256": "0b625dac682e6f0ce0b2d60d1ac39ab2d5b0a97397ced51dabba448db24b4a46"
+    },
+    {
+      "noteId": "n011",
+      "sourceBlockIds": [
+        "b0383"
+      ],
+      "sourceMarker": "[11]",
+      "opening": "Conc. Ecum. Vat. II, Const. past. Gaudium et spes, 44: AAS 58 (1966), 1065.",
+      "closing": "Conc. Ecum. Vat. II, Const. past. Gaudium et spes, 44: AAS 58 (1966), 1065.",
+      "sha256": "c9bf16035ffedd74402839e6737e7b60455c0deb534dc4c065f20ea16b44c47f"
+    },
+    {
+      "noteId": "n012",
+      "sourceBlockIds": [
+        "b0384"
+      ],
+      "sourceMarker": "[12]",
+      "opening": "Francisco, Exhort. ap. Evangelii gaudium (24 noviembre 2013), 257: AAS 105 (2013), 1123.",
+      "closing": "Francisco, Exhort. ap. Evangelii gaudium (24 noviembre 2013), 257: AAS 105 (2013), 1123.",
+      "sha256": "565665cd4fe4f9c786d8d0143fa2af08513a724b3ce56e74dbc484c51520724c"
+    },
+    {
+      "noteId": "n013",
+      "sourceBlockIds": [
+        "b0385"
+      ],
+      "sourceMarker": "[13]",
+      "opening": "S. Juan Pablo II, Carta ap. en forma de “Motu proprio” Socialium scientiarum (1 enero 1994): AAS 86 ",
+      "closing": "o II, Carta ap. en forma de “Motu proprio” Socialium scientiarum (1 enero 1994): AAS 86 (1994), 209.",
+      "sha256": "45871937667960bd11afec567849afe6563c9969ac7a3600b59bcc90d7ef0212"
+    },
+    {
+      "noteId": "n014",
+      "sourceBlockIds": [
+        "b0386"
+      ],
+      "sourceMarker": "[14]",
+      "opening": "Francisco, Carta enc. Laudato si’ (24 mayo 2015), 61: AAS 107 (2015), 871.",
+      "closing": "Francisco, Carta enc. Laudato si’ (24 mayo 2015), 61: AAS 107 (2015), 871.",
+      "sha256": "04114e45d4cb9094dc48ff772e5400b77389ab55703d2ee8347499bb4f60c9f0"
+    },
+    {
+      "noteId": "n015",
+      "sourceBlockIds": [
+        "b0387"
+      ],
+      "sourceMarker": "[15]",
+      "opening": "Cf. S. Juan Pablo II, Carta enc. Sollicitudo rei socialis (30 diciembre 1987), 41: AAS 80 (1988), 57",
+      "closing": " Juan Pablo II, Carta enc. Sollicitudo rei socialis (30 diciembre 1987), 41: AAS 80 (1988), 570-572.",
+      "sha256": "964794d5273cb99bfc27372909ab06c6d996f540fa8966556056a244e8625fbc"
+    },
+    {
+      "noteId": "n016",
+      "sourceBlockIds": [
+        "b0388"
+      ],
+      "sourceMarker": "[16]",
+      "opening": "Id., Carta ap. Tertio millennio adveniente (10 noviembre 1994), 35: AAS 87 (1995), 27.",
+      "closing": "Id., Carta ap. Tertio millennio adveniente (10 noviembre 1994), 35: AAS 87 (1995), 27.",
+      "sha256": "773e9ac1b06a16ef400d4360e98460b03aa906f3bc88f9c6c27087a838769fa1"
+    },
+    {
+      "noteId": "n017",
+      "sourceBlockIds": [
+        "b0389"
+      ],
+      "sourceMarker": "[17]",
+      "opening": "Discurso a la Fundación Centesimus Annus Pro Pontifice (17 mayo 2025): AAS 117 (2025), 696.",
+      "closing": "Discurso a la Fundación Centesimus Annus Pro Pontifice (17 mayo 2025): AAS 117 (2025), 696.",
+      "sha256": "75a7f6a48b6e32fd4934904005c729cbe1590d4015cc5b8138c67030c9481840"
+    },
+    {
+      "noteId": "n018",
+      "sourceBlockIds": [
+        "b0390"
+      ],
+      "sourceMarker": "[18]",
+      "opening": "Francisco, Exhort. ap. Evangelii gaudium (24 noviembre 2013), 222: AAS 105 (2013), 1111.",
+      "closing": "Francisco, Exhort. ap. Evangelii gaudium (24 noviembre 2013), 222: AAS 105 (2013), 1111.",
+      "sha256": "0615bdc9c2fe99acc5124bc6a107795b6ef1967b4b9cc7bace29062f7ecd542b"
+    },
+    {
+      "noteId": "n019",
+      "sourceBlockIds": [
+        "b0391"
+      ],
+      "sourceMarker": "[19]",
+      "opening": "Cf. ibíd., 236: AAS 105 (2013), 1115; id., Carta enc. Fratelli tutti (3 octubre 2020), 215: AAS 112 ",
+      "closing": "S 105 (2013), 1115; id., Carta enc. Fratelli tutti (3 octubre 2020), 215: AAS 112 (2020), 1045-1046.",
+      "sha256": "9fc943b9d3812859538312a809df9d48a6e5878e8aad460d4a9f754e41974296"
+    },
+    {
+      "noteId": "n020",
+      "sourceBlockIds": [
+        "b0392"
+      ],
+      "sourceMarker": "[20]",
+      "opening": "Conc. Ecum. Vat. II, Const. dogm. Lumen gentium, 13: AAS 57 (1965), 17.",
+      "closing": "Conc. Ecum. Vat. II, Const. dogm. Lumen gentium, 13: AAS 57 (1965), 17.",
+      "sha256": "6a7f99bea5e063227591d207c9e80aba20009c8de23e64788d59d88a27043346"
+    },
+    {
+      "noteId": "n021",
+      "sourceBlockIds": [
+        "b0393"
+      ],
+      "sourceMarker": "[21]",
+      "opening": "S. Pablo VI, Carta ap. Octogesima adveniens (14 mayo 1971), 4: AAS 63 (1971), 403.",
+      "closing": "S. Pablo VI, Carta ap. Octogesima adveniens (14 mayo 1971), 4: AAS 63 (1971), 403.",
+      "sha256": "0be2dc2b38c89666cd90fe7ae316c1ed7aa213dd259b3c5a2dde99dceb143783"
+    },
+    {
+      "noteId": "n022",
+      "sourceBlockIds": [
+        "b0394"
+      ],
+      "sourceMarker": "[22]",
+      "opening": "Cf. Francisco, Exhort. ap. Evangelii gaudium (24 noviembre 2013), 243: AAS 105 (2013), 1118.",
+      "closing": "Cf. Francisco, Exhort. ap. Evangelii gaudium (24 noviembre 2013), 243: AAS 105 (2013), 1118.",
+      "sha256": "dd7c64392645af25032beedc4ef6a4ca3b0bb3f6e7e00a7e7d06a379e7f2db55"
+    },
+    {
+      "noteId": "n023",
+      "sourceBlockIds": [
+        "b0395"
+      ],
+      "sourceMarker": "[23]",
+      "opening": "Cf. Pío XII, Exhort. ap. Menti Nostrae (23 septiembre 1950): AAS 42 (1950), 657-702.",
+      "closing": "Cf. Pío XII, Exhort. ap. Menti Nostrae (23 septiembre 1950): AAS 42 (1950), 657-702.",
+      "sha256": "10070e7e0e9cb1d482862c1ee3272d03d28cb151555f1fb0b3b129c90534783e"
+    },
+    {
+      "noteId": "n024",
+      "sourceBlockIds": [
+        "b0396"
+      ],
+      "sourceMarker": "[24]",
+      "opening": "S. Juan Pablo II, Carta enc. Centesimus annus (1 mayo 1991), 5: AAS 83 (1991), 799.",
+      "closing": "S. Juan Pablo II, Carta enc. Centesimus annus (1 mayo 1991), 5: AAS 83 (1991), 799.",
+      "sha256": "012d49f86f61ccd4ac8846642ad4adc014609c0a2de3c3c1d5d489dba7332a35"
+    },
+    {
+      "noteId": "n025",
+      "sourceBlockIds": [
+        "b0397"
+      ],
+      "sourceMarker": "[25]",
+      "opening": "Pío XI, Carta enc. Quadragesimo anno (15 mayo 1931), 39: AAS 23 (1931), 189; cf. Pío XII, Radiomensa",
+      "closing": "31), 189; cf. Pío XII, Radiomensaje en el 50° aniversario de la “Rerum novarum”: AAS 33 (1941), 198.",
+      "sha256": "051df654d515c42369e45705e784afd130bf9f4abbe1cfbc5aa6185a5fdd3573"
+    },
+    {
+      "noteId": "n026",
+      "sourceBlockIds": [
+        "b0398"
+      ],
+      "sourceMarker": "[26]",
+      "opening": "Cf. id., Discurso al Sacro Colegio de Cardenales y a la Prelatura Romana (24 diciembre 1940): AAS 33",
+      "closing": "curso al Sacro Colegio de Cardenales y a la Prelatura Romana (24 diciembre 1940): AAS 33 (1941), 13.",
+      "sha256": "9fbf5a657db67da0e542435a570aaa37223e906b65ecb0067311bf39ec6402dc"
+    },
+    {
+      "noteId": "n027",
+      "sourceBlockIds": [
+        "b0399"
+      ],
+      "sourceMarker": "[27]",
+      "opening": "Cf. S. Juan XXIII, Carta enc. Mater et magistra (15 mayo 1961), 2-3: AAS 53 (1961), 402.",
+      "closing": "Cf. S. Juan XXIII, Carta enc. Mater et magistra (15 mayo 1961), 2-3: AAS 53 (1961), 402.",
+      "sha256": "e99c39a821a7bce3986aa603bf5450e026a56010921d8ea0df78c58bfda54139"
+    },
+    {
+      "noteId": "n028",
+      "sourceBlockIds": [
+        "b0400"
+      ],
+      "sourceMarker": "[28]",
+      "opening": "Cf. id ., Carta enc. Pacem in terris (11 abril 1963), 163: AAS 55 (1963), 301.",
+      "closing": "Cf. id ., Carta enc. Pacem in terris (11 abril 1963), 163: AAS 55 (1963), 301.",
+      "sha256": "b6f6f062eb044eca11dda3ec8ed647eaf57597c6a2f008d53d05c0ac697a3f58"
+    },
+    {
+      "noteId": "n029",
+      "sourceBlockIds": [
+        "b0401"
+      ],
+      "sourceMarker": "[29]",
+      "opening": "Cf. Conc. Ecum. Vat. II, Const. past. Gaudium et spes, 26: AAS 58 (1966), 1046-1047.",
+      "closing": "Cf. Conc. Ecum. Vat. II, Const. past. Gaudium et spes, 26: AAS 58 (1966), 1046-1047.",
+      "sha256": "73c649e8e117796466e49f017e31bbce1ddde861111760c5b65063ba8853d949"
+    },
+    {
+      "noteId": "n030",
+      "sourceBlockIds": [
+        "b0402"
+      ],
+      "sourceMarker": "[30]",
+      "opening": "Cf. id., Decl. Dignitatis humanae, 2: AAS 58 (1966), 930-931.",
+      "closing": "Cf. id., Decl. Dignitatis humanae, 2: AAS 58 (1966), 930-931.",
+      "sha256": "1fa49bd1410d90508112dc9fee03e6fba66e636f1e8ad16f4f0329e4216b2132"
+    },
+    {
+      "noteId": "n031",
+      "sourceBlockIds": [
+        "b0403"
+      ],
+      "sourceMarker": "[31]",
+      "opening": "S. Pablo VI, Carta enc. Populorum progressio (26 marzo 1967), 14: AAS 59 (1967), 264.",
+      "closing": "S. Pablo VI, Carta enc. Populorum progressio (26 marzo 1967), 14: AAS 59 (1967), 264.",
+      "sha256": "95c8d3fd274b4cd2a411779a8c18a3d0802024bdfea274d58a7152506d799790"
+    },
+    {
+      "noteId": "n032",
+      "sourceBlockIds": [
+        "b0404"
+      ],
+      "sourceMarker": "[32]",
+      "opening": "Ibíd., 87: AAS 59 (1967), 299.",
+      "closing": "Ibíd., 87: AAS 59 (1967), 299.",
+      "sha256": "3894b0b06774f955ff49ec535c27d5086081ad9450e5a2deefdacd7e48281e8c"
+    },
+    {
+      "noteId": "n033",
+      "sourceBlockIds": [
+        "b0405"
+      ],
+      "sourceMarker": "[33]",
+      "opening": "Cf. id., Carta ap. Octogesima adveniens (14 mayo 1971), 4-7: AAS 63 (1971), 404-406.",
+      "closing": "Cf. id., Carta ap. Octogesima adveniens (14 mayo 1971), 4-7: AAS 63 (1971), 404-406.",
+      "sha256": "0a726d5187504d6e518a08ba9ada205603b051f418fa276a154f953ac3f648b3"
+    },
+    {
+      "noteId": "n034",
+      "sourceBlockIds": [
+        "b0406"
+      ],
+      "sourceMarker": "[34]",
+      "opening": "S. Juan Pablo II, Carta enc. Sollicitudo rei socialis (30 diciembre 1987), 36: AAS 80 (1988), 561.",
+      "closing": "S. Juan Pablo II, Carta enc. Sollicitudo rei socialis (30 diciembre 1987), 36: AAS 80 (1988), 561.",
+      "sha256": "05e01466a1177115b142dca1d5341edb15831aec65c84bbc76be2b318f8411eb"
+    },
+    {
+      "noteId": "n035",
+      "sourceBlockIds": [
+        "b0407"
+      ],
+      "sourceMarker": "[35]",
+      "opening": "Cf. id., Carta enc. Laborem exercens (14 septiembre 1981), 19: AAS 73 (1981), 625-629.",
+      "closing": "Cf. id., Carta enc. Laborem exercens (14 septiembre 1981), 19: AAS 73 (1981), 625-629.",
+      "sha256": "71f1fc0d67ecbee71d879296c9b930bf1be08863bff8638d54ae8662815751e1"
+    },
+    {
+      "noteId": "n036",
+      "sourceBlockIds": [
+        "b0408"
+      ],
+      "sourceMarker": "[36]",
+      "opening": "Cf. ibíd., 10: AAS 73 (1981), 600-602.",
+      "closing": "Cf. ibíd., 10: AAS 73 (1981), 600-602.",
+      "sha256": "60db09c50aaf68cfc106720fb455b8ad56fe8d4008f3106c5ad076b707d8d082"
+    },
+    {
+      "noteId": "n037",
+      "sourceBlockIds": [
+        "b0409"
+      ],
+      "sourceMarker": "[37]",
+      "opening": "Cf. id., Carta enc. Sollicitudo rei socialis (30 diciembre 1987), 14: AAS 80 (1988), 526-528.",
+      "closing": "Cf. id., Carta enc. Sollicitudo rei socialis (30 diciembre 1987), 14: AAS 80 (1988), 526-528.",
+      "sha256": "a3ab549f9a68d30cf448ca479db2f08dbe410224e1709c22c3287350015be41c"
+    },
+    {
+      "noteId": "n038",
+      "sourceBlockIds": [
+        "b0410"
+      ],
+      "sourceMarker": "[38]",
+      "opening": "Cf. ibíd., 16: AAS 80 (1988), 531.",
+      "closing": "Cf. ibíd., 16: AAS 80 (1988), 531.",
+      "sha256": "7f23ec11f7b2dbbfe7ff3872308b75d203d238563747d03996bb71598c3f414b"
+    },
+    {
+      "noteId": "n039",
+      "sourceBlockIds": [
+        "b0411"
+      ],
+      "sourceMarker": "[39]",
+      "opening": "Cf. ibíd., 31-33: AAS 80 (1988), 555-559.",
+      "closing": "Cf. ibíd., 31-33: AAS 80 (1988), 555-559.",
+      "sha256": "e473b473344af9ac0af9ffe4d6f55ecedf820424f71f4dd17746215754c890af"
+    },
+    {
+      "noteId": "n040",
+      "sourceBlockIds": [
+        "b0412"
+      ],
+      "sourceMarker": "[40]",
+      "opening": "Cf. id., Carta enc. Centesimus annus (1 mayo 1991), 46: AAS 83 (1991), 850-851.",
+      "closing": "Cf. id., Carta enc. Centesimus annus (1 mayo 1991), 46: AAS 83 (1991), 850-851.",
+      "sha256": "b503c123908f7a746b8b799ff55c758e7590d9c5d0cdb529952ea9f4ae4f4d74"
+    },
+    {
+      "noteId": "n041",
+      "sourceBlockIds": [
+        "b0413"
+      ],
+      "sourceMarker": "[41]",
+      "opening": "Cf. ibíd., 42: AAS 83 (1991), 845-846.",
+      "closing": "Cf. ibíd., 42: AAS 83 (1991), 845-846.",
+      "sha256": "08b352919d957de4295aa2eb8acd7ce3949f9437796daae4b2ba1c7d5e71541b"
+    },
+    {
+      "noteId": "n042",
+      "sourceBlockIds": [
+        "b0414"
+      ],
+      "sourceMarker": "[42]",
+      "opening": "Benedicto XVI, Carta enc. Caritas in veritate (29 junio 2009), 21: AAS 101 (2009), 656.",
+      "closing": "Benedicto XVI, Carta enc. Caritas in veritate (29 junio 2009), 21: AAS 101 (2009), 656.",
+      "sha256": "e8638ccbbd4b32c7a57bb22db7a3535edefa12faf8425359720245a2ec8c4557"
+    },
+    {
+      "noteId": "n043",
+      "sourceBlockIds": [
+        "b0415"
+      ],
+      "sourceMarker": "[43]",
+      "opening": "Cf. ibíd., 22: AAS 101 (2009), 657.",
+      "closing": "Cf. ibíd., 22: AAS 101 (2009), 657.",
+      "sha256": "5cc97746df2c287427dcc69660b1a3d4f0fa421a905b18301f90b3cb32229860"
+    },
+    {
+      "noteId": "n044",
+      "sourceBlockIds": [
+        "b0416"
+      ],
+      "sourceMarker": "[44]",
+      "opening": "Cf. ibíd., 24: AAS 101 (2009), 658-659.",
+      "closing": "Cf. ibíd., 24: AAS 101 (2009), 658-659.",
+      "sha256": "0967307ca637e2ccad76f03feef4092515dd202daa669efd36891d8a32a98b2b"
+    },
+    {
+      "noteId": "n045",
+      "sourceBlockIds": [
+        "b0417"
+      ],
+      "sourceMarker": "[45]",
+      "opening": "Cf. ibíd., 36: AAS 101 (2009), 671-672.",
+      "closing": "Cf. ibíd., 36: AAS 101 (2009), 671-672.",
+      "sha256": "25f65ebf42a0e6b12357baa2fa581610ce0061dacd1cd35702b64386051bfdf8"
+    },
+    {
+      "noteId": "n046",
+      "sourceBlockIds": [
+        "b0418"
+      ],
+      "sourceMarker": "[46]",
+      "opening": "Ibíd., 2: AAS 101 (2009), 642.",
+      "closing": "Ibíd., 2: AAS 101 (2009), 642.",
+      "sha256": "4047e9fd5fa8086b950d9f2af41681c5564ce69e6a5fcf510111c149649bfa9c"
+    },
+    {
+      "noteId": "n047",
+      "sourceBlockIds": [
+        "b0419"
+      ],
+      "sourceMarker": "[47]",
+      "opening": "Cf. Francisco, Exhort. ap. Evangelii gaudium (24 noviembre 2013), 198: AAS 105 (2013), 1103.",
+      "closing": "Cf. Francisco, Exhort. ap. Evangelii gaudium (24 noviembre 2013), 198: AAS 105 (2013), 1103.",
+      "sha256": "a2af3f2ce02873d4294718568614f3b3b67cba8700a73bc90e2a50f001043403"
+    },
+    {
+      "noteId": "n048",
+      "sourceBlockIds": [
+        "b0420"
+      ],
+      "sourceMarker": "[48]",
+      "opening": "Id., Carta enc. Laudato si’ (24 mayo 2015), 49: AAS 107 (2015), 866.",
+      "closing": "Id., Carta enc. Laudato si’ (24 mayo 2015), 49: AAS 107 (2015), 866.",
+      "sha256": "338b7a91310e1adbce381427cccfa71a52f5cbf4809f2d5e97566e44b2d66fdf"
+    },
+    {
+      "noteId": "n049",
+      "sourceBlockIds": [
+        "b0421"
+      ],
+      "sourceMarker": "[49]",
+      "opening": "Id., Carta enc. Fratelli tutti (3 octubre 2020), 127: AAS 112 (2020), 1013.",
+      "closing": "Id., Carta enc. Fratelli tutti (3 octubre 2020), 127: AAS 112 (2020), 1013.",
+      "sha256": "cab64159db3e3b541a82c4eac73f2c8e23bf331cf75315ef073d8d2e1be366cc"
+    },
+    {
+      "noteId": "n050",
+      "sourceBlockIds": [
+        "b0422"
+      ],
+      "sourceMarker": "[50]",
+      "opening": "Id., Carta enc. Dilexit nos (24 octubre 2024), 167: AAS 116 (2024), 1421.",
+      "closing": "Id., Carta enc. Dilexit nos (24 octubre 2024), 167: AAS 116 (2024), 1421.",
+      "sha256": "b8fa4f222baf64e0c019f130016c7312343bc435c0ed9319edf3320f9d55e9c4"
+    },
+    {
+      "noteId": "n051",
+      "sourceBlockIds": [
+        "b0423"
+      ],
+      "sourceMarker": "[51]",
+      "opening": "Cf. Pontificio Consejo Justicia y Paz, Compendio de la doctrina social de la Iglesia, 32.",
+      "closing": "Cf. Pontificio Consejo Justicia y Paz, Compendio de la doctrina social de la Iglesia, 32.",
+      "sha256": "d79e55cf4fc0a94f98272587cddc0149e33ad9c8c4807350f7c307dbec70ce43"
+    },
+    {
+      "noteId": "n052",
+      "sourceBlockIds": [
+        "b0424"
+      ],
+      "sourceMarker": "[52]",
+      "opening": "Conc. Ecum. Vat. II, Const. past. Gaudium et spes, 24: AAS 58 (1966), 1045.",
+      "closing": "Conc. Ecum. Vat. II, Const. past. Gaudium et spes, 24: AAS 58 (1966), 1045.",
+      "sha256": "7840bd83024f9f883aa913bd7da2a411b174c7da277d35a31a8c3ba5fcf5b265"
+    },
+    {
+      "noteId": "n053",
+      "sourceBlockIds": [
+        "b0425"
+      ],
+      "sourceMarker": "[53]",
+      "opening": "Ibíd., 22: AAS 58 (1966), 1042.",
+      "closing": "Ibíd., 22: AAS 58 (1966), 1042.",
+      "sha256": "0dda44c863b216a195574add3f697a2b967fcfe02ab5bce98687ffcb58020b01"
+    },
+    {
+      "noteId": "n054",
+      "sourceBlockIds": [
+        "b0426"
+      ],
+      "sourceMarker": "[54]",
+      "opening": "Cf. Pontificio Consejo Justicia y Paz, Compendio de la doctrina social de la Iglesia, 38.",
+      "closing": "Cf. Pontificio Consejo Justicia y Paz, Compendio de la doctrina social de la Iglesia, 38.",
+      "sha256": "00c1d37d103c1e0c84cd177c27234d2a591517b825f2ab625dcaf169d6fc1fe4"
+    },
+    {
+      "noteId": "n055",
+      "sourceBlockIds": [
+        "b0427"
+      ],
+      "sourceMarker": "[55]",
+      "opening": "S. Juan Pablo II, Carta enc. Redemptor hominis (4 marzo 1979), 14: AAS 71 (1979), 284.",
+      "closing": "S. Juan Pablo II, Carta enc. Redemptor hominis (4 marzo 1979), 14: AAS 71 (1979), 284.",
+      "sha256": "39c7b6084abaec6a0647ec29ffa1cbbbd83b3f19445d2743694714d8d1781477"
+    },
+    {
+      "noteId": "n056",
+      "sourceBlockIds": [
+        "b0428"
+      ],
+      "sourceMarker": "[56]",
+      "opening": "Cf. Benedicto XVI, Carta enc. Caritas in veritate (29 junio 2009), 11: AAS 101 (2009), 647-648.",
+      "closing": "Cf. Benedicto XVI, Carta enc. Caritas in veritate (29 junio 2009), 11: AAS 101 (2009), 647-648.",
+      "sha256": "1178fda38c25d553120ffdbe003b60c8e6529ca01a590759782b3c90e7f77892"
+    },
+    {
+      "noteId": "n057",
+      "sourceBlockIds": [
+        "b0429"
+      ],
+      "sourceMarker": "[57]",
+      "opening": "S. Juan Pablo II, Carta enc. Veritatis splendor (6 agosto 1993), 31: AAS 85 (1993), 1159.",
+      "closing": "S. Juan Pablo II, Carta enc. Veritatis splendor (6 agosto 1993), 31: AAS 85 (1993), 1159.",
+      "sha256": "1e8bc0215a553ed51bc48688984c0361a7f4c37547496f7c8a1e7e9cd785115a"
+    },
+    {
+      "noteId": "n058",
+      "sourceBlockIds": [
+        "b0430"
+      ],
+      "sourceMarker": "[58]",
+      "opening": "Cf. Conc. Ecum. Vat. II, Const. past. Gaudium et spes, 26: AAS 58 (1966), 1046-1047.",
+      "closing": "Cf. Conc. Ecum. Vat. II, Const. past. Gaudium et spes, 26: AAS 58 (1966), 1046-1047.",
+      "sha256": "73c649e8e117796466e49f017e31bbce1ddde861111760c5b65063ba8853d949"
+    },
+    {
+      "noteId": "n059",
+      "sourceBlockIds": [
+        "b0431"
+      ],
+      "sourceMarker": "[59]",
+      "opening": "Cf. S. Juan Pablo II, Carta enc. Centesimus annus (1 mayo 1991), 11: AAS 83 (1991), 806-807.",
+      "closing": "Cf. S. Juan Pablo II, Carta enc. Centesimus annus (1 mayo 1991), 11: AAS 83 (1991), 806-807.",
+      "sha256": "40951769f2383ed30a80d6e330684b5fcecc02bbf5a0b27f85929bd6e5424d92"
+    },
+    {
+      "noteId": "n060",
+      "sourceBlockIds": [
+        "b0432"
+      ],
+      "sourceMarker": "[60]",
+      "opening": "Cf. Dicasterio para la Doctrina de la Fe, Decl. Dignitas infinita (2 abril 2024), 7: AAS 116 (2024),",
+      "closing": "terio para la Doctrina de la Fe, Decl. Dignitas infinita (2 abril 2024), 7: AAS 116 (2024), 592-593.",
+      "sha256": "4544180853c4207606e04607b46cf4431a073f0989450ff19d566fb56567ac88"
+    },
+    {
+      "noteId": "n061",
+      "sourceBlockIds": [
+        "b0433"
+      ],
+      "sourceMarker": "[61]",
+      "opening": "Cf. ibíd., 8: AAS 116 (2024), 593-594.",
+      "closing": "Cf. ibíd., 8: AAS 116 (2024), 593-594.",
+      "sha256": "a43cf1b6980fc2f7a832911ef848785bd9ef8fc8b23d31f3dec066c9bfc119d7"
+    },
+    {
+      "noteId": "n062",
+      "sourceBlockIds": [
+        "b0434"
+      ],
+      "sourceMarker": "[62]",
+      "opening": "Ibíd., 1: AAS 116 (2024), 589-590.",
+      "closing": "Ibíd., 1: AAS 116 (2024), 589-590.",
+      "sha256": "93eb66da04a478c51cc6b3a12fba79cbccbd4916bc58645b929890efcecb22eb"
+    },
+    {
+      "noteId": "n063",
+      "sourceBlockIds": [
+        "b0435"
+      ],
+      "sourceMarker": "[63]",
+      "opening": "Cf. S. Juan Pablo II, Ángelus (Osnabrück, 16 noviembre 1980): L’Osservatore Romano, ed. en lengua es",
+      "closing": " (Osnabrück, 16 noviembre 1980): L’Osservatore Romano, ed. en lengua española, 23 noviembre 1980, 9.",
+      "sha256": "3d4ea67975dcbbca46a07a35aad97abd7f886aad7a5c8d62fc2b679fe42cb43b"
+    },
+    {
+      "noteId": "n064",
+      "sourceBlockIds": [
+        "b0436"
+      ],
+      "sourceMarker": "[64]",
+      "opening": "Pontificio Consejo Justicia y Paz, Compendio de la doctrina social de la Iglesia, 152.",
+      "closing": "Pontificio Consejo Justicia y Paz, Compendio de la doctrina social de la Iglesia, 152.",
+      "sha256": "99c05c1a2724d8df6d2d197173a6338a575dcc0dad1484412a27f7f941015f1a"
+    },
+    {
+      "noteId": "n065",
+      "sourceBlockIds": [
+        "b0437"
+      ],
+      "sourceMarker": "[65]",
+      "opening": "Cf. S. Juan Pablo II, Discurso a la 50ª Asamblea General de las Naciones Unidas (5 octubre 1995), 2:",
+      "closing": "ciones Unidas (5 octubre 1995), 2: L’Osservatore Romano, ed. en lengua española, 13 octubre 1995, 7.",
+      "sha256": "66511e9147b4fbbe313ada03d139752c6a21ce25f154efc2764fb9bec334710a"
+    },
+    {
+      "noteId": "n066",
+      "sourceBlockIds": [
+        "b0438"
+      ],
+      "sourceMarker": "[66]",
+      "opening": "Id., Discurso a la 34ª Asamblea General de las Naciones Unidas (2 octubre 1979), 7: AAS 71 (1979), 1",
+      "closing": " Discurso a la 34ª Asamblea General de las Naciones Unidas (2 octubre 1979), 7: AAS 71 (1979), 1148.",
+      "sha256": "17da278047bd8e6a69d1e598efaaed481ee5ce5e111b8e8cec555f68d9463862"
+    },
+    {
+      "noteId": "n067",
+      "sourceBlockIds": [
+        "b0439"
+      ],
+      "sourceMarker": "[67]",
+      "opening": "Id., Mensaje para la 32ª Jornada Mundial de la Paz (1 enero 1999), 3: AAS 91 (1999), 379.",
+      "closing": "Id., Mensaje para la 32ª Jornada Mundial de la Paz (1 enero 1999), 3: AAS 91 (1999), 379.",
+      "sha256": "7f21ea0ed430f39b4c25fa4127696ec2ed16f8ca57093b013fef7f708553ad36"
+    },
+    {
+      "noteId": "n068",
+      "sourceBlockIds": [
+        "b0440"
+      ],
+      "sourceMarker": "[68]",
+      "opening": "Cf. S. Juan XXIII, Carta enc. Pacem in terris (11 abril 1963), 5: AAS 55 (1963), 259.",
+      "closing": "Cf. S. Juan XXIII, Carta enc. Pacem in terris (11 abril 1963), 5: AAS 55 (1963), 259.",
+      "sha256": "038183fb3f160e6a9fbd430aaf85758ec383763c0534202b14bea8c4ea33ce6d"
+    },
+    {
+      "noteId": "n069",
+      "sourceBlockIds": [
+        "b0441"
+      ],
+      "sourceMarker": "[69]",
+      "opening": "S. Pablo VI, Mensaje a la Conferencia Internacional de los Derechos del Hombre (15 abril 1968): AAS ",
+      "closing": "nsaje a la Conferencia Internacional de los Derechos del Hombre (15 abril 1968): AAS 60 (1968), 285.",
+      "sha256": "17cf7c7048874e139fb6ebd2f1a204112aa06ca5ba9356e2ff2f1e1f2f7b7688"
+    },
+    {
+      "noteId": "n070",
+      "sourceBlockIds": [
+        "b0442"
+      ],
+      "sourceMarker": "[70]",
+      "opening": "Cf. S. Juan Pablo II, Carta enc. Evangelium vitae (25 marzo 1995), 2: AAS 87 (1995), 402.",
+      "closing": "Cf. S. Juan Pablo II, Carta enc. Evangelium vitae (25 marzo 1995), 2: AAS 87 (1995), 402.",
+      "sha256": "e0695f6c9ba83127aed1d6eef2e20dfc0cbe8c4e6ab3859e7c9187a973feba2a"
+    },
+    {
+      "noteId": "n071",
+      "sourceBlockIds": [
+        "b0443"
+      ],
+      "sourceMarker": "[71]",
+      "opening": "Cf. Conc. Ecum. Vat. II, Const. past. Gaudium et spes, 27: AAS 58 (1966), 1047-1048; S. Juan Pablo I",
+      "closing": "5 (1993), 1197-1198; Id., Carta enc. Evangelium vitae (25 marzo 1995), 7-28: AAS 87 (1995), 408-427.",
+      "sha256": "4504d7b6c5e43929c7d277989df9f48a72ad0d3dae22f12390104fb0013dfa44"
+    },
+    {
+      "noteId": "n072",
+      "sourceBlockIds": [
+        "b0444"
+      ],
+      "sourceMarker": "[72]",
+      "opening": "Francisco, Carta enc. Fratelli tutti (3 octubre 2020), 208: AAS 112 (2020), 1043.",
+      "closing": "Francisco, Carta enc. Fratelli tutti (3 octubre 2020), 208: AAS 112 (2020), 1043.",
+      "sha256": "68e98bb9cd9f41cae9e5b764257ded6bd9ba5295aa0464a70ed9f8ec1ff82a14"
+    },
+    {
+      "noteId": "n073",
+      "sourceBlockIds": [
+        "b0445"
+      ],
+      "sourceMarker": "[73]",
+      "opening": "Cf. ibíd., 209: AAS 112 (2020), 1043-1044.",
+      "closing": "Cf. ibíd., 209: AAS 112 (2020), 1043-1044.",
+      "sha256": "4ad41a0bf8fd466a949366250eca22c62ba26f72a3fb95f1060a5efe1c534ca0"
+    },
+    {
+      "noteId": "n074",
+      "sourceBlockIds": [
+        "b0446"
+      ],
+      "sourceMarker": "[74]",
+      "opening": "Ibíd., 23: AAS 112 (2020), 977. Cf. id., Exhort. ap. Evangelii gaudium (24 noviembre 2013), 212: AAS",
+      "closing": " (2020), 977. Cf. id., Exhort. ap. Evangelii gaudium (24 noviembre 2013), 212: AAS 105 (2013), 1108.",
+      "sha256": "67a9f8d642132371cb42120fd31eb7a55efce41e1f78e97ac4926f12606388f3"
+    },
+    {
+      "noteId": "n075",
+      "sourceBlockIds": [
+        "b0447"
+      ],
+      "sourceMarker": "[75]",
+      "opening": "Benedicto XVI, Exhort. ap. Sacramentum caritatis (22 febrero 2007), 83: AAS 99 (2007), 169.",
+      "closing": "Benedicto XVI, Exhort. ap. Sacramentum caritatis (22 febrero 2007), 83: AAS 99 (2007), 169.",
+      "sha256": "85a50dc3d84bb2810efb01cc6a6fde650e0c413243c84734ad830dc323dd3100"
+    },
+    {
+      "noteId": "n076",
+      "sourceBlockIds": [
+        "b0448"
+      ],
+      "sourceMarker": "[76]",
+      "opening": "Conc. Ecum. Vat. II, Const. past. Gaudium et spes, 26: AAS 58 (1966), 1046-1047.",
+      "closing": "Conc. Ecum. Vat. II, Const. past. Gaudium et spes, 26: AAS 58 (1966), 1046-1047.",
+      "sha256": "55957a4c85b693fe4af3bbf23b10ce73d8ffbd2242c5e6a3537351aa07205094"
+    },
+    {
+      "noteId": "n077",
+      "sourceBlockIds": [
+        "b0449"
+      ],
+      "sourceMarker": "[77]",
+      "opening": "Cf. Pontificio Consejo Justicia y Paz, Compendio de la doctrina social de la Iglesia, 164.",
+      "closing": "Cf. Pontificio Consejo Justicia y Paz, Compendio de la doctrina social de la Iglesia, 164.",
+      "sha256": "dd5c06be51e454c4eece4d1cf7c63174a84187c8b9b3b68a60ad8c2c89ca44a6"
+    },
+    {
+      "noteId": "n078",
+      "sourceBlockIds": [
+        "b0450"
+      ],
+      "sourceMarker": "[78]",
+      "opening": "Francisco, Exhort. ap. Evangelii gaudium (24 noviembre 2013), 235: AAS 105 (2013), 1115.",
+      "closing": "Francisco, Exhort. ap. Evangelii gaudium (24 noviembre 2013), 235: AAS 105 (2013), 1115.",
+      "sha256": "e2b2661bdc82dc6ee4617ff2aed3820d22a8150672ce819ed43513872323aa09"
+    },
+    {
+      "noteId": "n079",
+      "sourceBlockIds": [
+        "b0451"
+      ],
+      "sourceMarker": "[79]",
+      "opening": "Id., Carta enc. Fratelli tutti (3 octubre 2020), 105: AAS 112 (2020), 1005.",
+      "closing": "Id., Carta enc. Fratelli tutti (3 octubre 2020), 105: AAS 112 (2020), 1005.",
+      "sha256": "51a3bbf0399597630a733e8aca1cdc7647c43e471ef4fc284a37bbd8077cb636"
+    },
+    {
+      "noteId": "n080",
+      "sourceBlockIds": [
+        "b0452"
+      ],
+      "sourceMarker": "[80]",
+      "opening": "S. Juan Pablo II, Carta enc. Sollicitudo rei socialis (30 diciembre 1987), 38: AAS 80 (1988), 564.",
+      "closing": "S. Juan Pablo II, Carta enc. Sollicitudo rei socialis (30 diciembre 1987), 38: AAS 80 (1988), 564.",
+      "sha256": "153cfbe341e918d6cd4d6c6989b58005b1543dabfbf3560406084e54911b0cb3"
+    },
+    {
+      "noteId": "n081",
+      "sourceBlockIds": [
+        "b0453"
+      ],
+      "sourceMarker": "[81]",
+      "opening": "Francisco, Exhort. ap. Evangelii gaudium (24 noviembre 2013), 220: AAS 105 (2013), 1110.",
+      "closing": "Francisco, Exhort. ap. Evangelii gaudium (24 noviembre 2013), 220: AAS 105 (2013), 1110.",
+      "sha256": "2750860c74513bd400bf9a324946297bbd5b81a3bc14b777dcec9c41e9629331"
+    },
+    {
+      "noteId": "n082",
+      "sourceBlockIds": [
+        "b0454"
+      ],
+      "sourceMarker": "[82]",
+      "opening": "Pontificio Consejo Justicia y Paz, Compendio de la doctrina social de la Iglesia, 169.",
+      "closing": "Pontificio Consejo Justicia y Paz, Compendio de la doctrina social de la Iglesia, 169.",
+      "sha256": "7d61e352032428c87de67388d0e37e7260d3d281a24adf3323342b299496ac0f"
+    },
+    {
+      "noteId": "n083",
+      "sourceBlockIds": [
+        "b0455"
+      ],
+      "sourceMarker": "[83]",
+      "opening": "Francisco, Carta enc. Fratelli tutti (3 octubre 2020), 16: AAS 112 (2020), 974.",
+      "closing": "Francisco, Carta enc. Fratelli tutti (3 octubre 2020), 16: AAS 112 (2020), 974.",
+      "sha256": "bc737dfc47d0697b0c9a8cb6588c1cd9873d1bc2382ec1f97ee3cbb49767895d"
+    },
+    {
+      "noteId": "n084",
+      "sourceBlockIds": [
+        "b0456"
+      ],
+      "sourceMarker": "[84]",
+      "opening": "Cf. S. Juan Pablo II, Discurso a la 50ª Asamblea General de las Naciones Unidas (5 octubre 1995), 8:",
+      "closing": "ciones Unidas (5 octubre 1995), 8: L’Osservatore Romano, ed. en lengua española, 13 octubre 1995, 8.",
+      "sha256": "940e1330940b342dac8372ce0e4492f92aecf40e59e566e60ebc4afb412ea4a8"
+    },
+    {
+      "noteId": "n085",
+      "sourceBlockIds": [
+        "b0457"
+      ],
+      "sourceMarker": "[85]",
+      "opening": "Pontificio Consejo Justicia y Paz, Compendio de la doctrina social de la Iglesia, 171.",
+      "closing": "Pontificio Consejo Justicia y Paz, Compendio de la doctrina social de la Iglesia, 171.",
+      "sha256": "be21c9a2255a9b0ef4ff828dc2b559744f0d051b1ac85792d71d99349730684e"
+    },
+    {
+      "noteId": "n086",
+      "sourceBlockIds": [
+        "b0458"
+      ],
+      "sourceMarker": "[86]",
+      "opening": "S. Juan Pablo II, Carta enc. Centesimus annus (1 mayo 1991), 31: AAS 83 (1991), 831.",
+      "closing": "S. Juan Pablo II, Carta enc. Centesimus annus (1 mayo 1991), 31: AAS 83 (1991), 831.",
+      "sha256": "d04702457fe3b39c871dd9314e1fbdc6a0f5de7c7dec330cd761d2fe49b110eb"
+    },
+    {
+      "noteId": "n087",
+      "sourceBlockIds": [
+        "b0459"
+      ],
+      "sourceMarker": "[87]",
+      "opening": "Id., Homilía durante la Misa celebrada para los agricultores en Recife, Brasil (7 julio 1980), 4: AA",
+      "closing": "nte la Misa celebrada para los agricultores en Recife, Brasil (7 julio 1980), 4: AAS 72 (1980), 926.",
+      "sha256": "3280b570e3ec14ad23904166735870d6cdd10f1c25e416461e6c22fa7269522a"
+    },
+    {
+      "noteId": "n088",
+      "sourceBlockIds": [
+        "b0460"
+      ],
+      "sourceMarker": "[88]",
+      "opening": "Id., Carta enc. Laborem exercens (14 septiembre 1981), 19: AAS 73 (1981), 626.",
+      "closing": "Id., Carta enc. Laborem exercens (14 septiembre 1981), 19: AAS 73 (1981), 626.",
+      "sha256": "f73d3acd020dd7fc8199e24d3d175b321a8852cf5954670d65dd90f24b49cd45"
+    },
+    {
+      "noteId": "n089",
+      "sourceBlockIds": [
+        "b0461"
+      ],
+      "sourceMarker": "[89]",
+      "opening": "Francisco, Carta enc. Laudato si’ (24 mayo 2015), 93: AAS 107 (2015), 884; cf. id., Carta enc. Frate",
+      "closing": "AAS 107 (2015), 884; cf. id., Carta enc. Fratelli tutti (3 octubre 2020), 120: AAS 112 (2020), 1010.",
+      "sha256": "233c565d3edef06e14f4954d13f3c1854ad8c7a6707257cf2cf18194f32ed686"
+    },
+    {
+      "noteId": "n090",
+      "sourceBlockIds": [
+        "b0462"
+      ],
+      "sourceMarker": "[90]",
+      "opening": "Id., Exhort. ap. Evangelii gaudium (24 noviembre 2013), 189: AAS 105 (2013), 1099.",
+      "closing": "Id., Exhort. ap. Evangelii gaudium (24 noviembre 2013), 189: AAS 105 (2013), 1099.",
+      "sha256": "f4a92db396fa3a64848b7ac1ef82dd8a6eeb52a0ff0501d54e49d3ff709af773"
+    },
+    {
+      "noteId": "n091",
+      "sourceBlockIds": [
+        "b0463"
+      ],
+      "sourceMarker": "[91]",
+      "opening": "Cf. Pontificio Consejo Justicia y Paz, Compendio de la doctrina social de la Iglesia, 187.",
+      "closing": "Cf. Pontificio Consejo Justicia y Paz, Compendio de la doctrina social de la Iglesia, 187.",
+      "sha256": "beede793e51a1bf4e278dd698c2dcc2e003f6e53800dd3a4a469123db55cdbfe"
+    },
+    {
+      "noteId": "n092",
+      "sourceBlockIds": [
+        "b0464"
+      ],
+      "sourceMarker": "[92]",
+      "opening": "Cf. León XIII, Carta enc. Rerum novarum (15 mayo 1891), 26: ASS 23 (1890-1891), 656.",
+      "closing": "Cf. León XIII, Carta enc. Rerum novarum (15 mayo 1891), 26: ASS 23 (1890-1891), 656.",
+      "sha256": "56d9a60fbe6b25d1b54f47105b22b00fed6563e107237f7253b1db302be0cccf"
+    },
+    {
+      "noteId": "n093",
+      "sourceBlockIds": [
+        "b0465"
+      ],
+      "sourceMarker": "[93]",
+      "opening": "Cf. S. Juan Pablo II, Carta enc. Centesimus annus (1 mayo 1991), 11: AAS 83 (1991), 806-807.",
+      "closing": "Cf. S. Juan Pablo II, Carta enc. Centesimus annus (1 mayo 1991), 11: AAS 83 (1991), 806-807.",
+      "sha256": "40951769f2383ed30a80d6e330684b5fcecc02bbf5a0b27f85929bd6e5424d92"
+    },
+    {
+      "noteId": "n094",
+      "sourceBlockIds": [
+        "b0466"
+      ],
+      "sourceMarker": "[94]",
+      "opening": "Cf. ibíd.",
+      "closing": "Cf. ibíd.",
+      "sha256": "7780a84340acc1376cd15abc4d7c9b8fc46206e5553a71337a9a91ed27395bdd"
+    },
+    {
+      "noteId": "n095",
+      "sourceBlockIds": [
+        "b0467"
+      ],
+      "sourceMarker": "[95]",
+      "opening": "Cf. ibíd., 48: AAS 83 (1991), 852-854.",
+      "closing": "Cf. ibíd., 48: AAS 83 (1991), 852-854.",
+      "sha256": "d88671552509af3a72284b3717405cfc6aaebff2cf52b3513d8cb7f32bc49843"
+    },
+    {
+      "noteId": "n096",
+      "sourceBlockIds": [
+        "b0468"
+      ],
+      "sourceMarker": "[96]",
+      "opening": "Cf. Francisco, Carta enc. Fratelli tutti (3 octubre 2020), 169: AAS 112 (2020), 1028.",
+      "closing": "Cf. Francisco, Carta enc. Fratelli tutti (3 octubre 2020), 169: AAS 112 (2020), 1028.",
+      "sha256": "40786df4d5b639121f40cdfdac5c9a01fa6512259ceaee75995a309f3ef06da6"
+    },
+    {
+      "noteId": "n097",
+      "sourceBlockIds": [
+        "b0469"
+      ],
+      "sourceMarker": "[97]",
+      "opening": "Cf. ibíd., 168: AAS 112 (2020), 1027-1028.",
+      "closing": "Cf. ibíd., 168: AAS 112 (2020), 1027-1028.",
+      "sha256": "93485641606459e331f735f6cb8030fdcd2c6b6da695ff01000bcc3cc60e2439"
+    },
+    {
+      "noteId": "n098",
+      "sourceBlockIds": [
+        "b0470"
+      ],
+      "sourceMarker": "[98]",
+      "opening": "Cf. S. Pablo VI, Carta enc. Populorum progressio (26 marzo 1967), 17: AAS 59 (1967), 265-266.",
+      "closing": "Cf. S. Pablo VI, Carta enc. Populorum progressio (26 marzo 1967), 17: AAS 59 (1967), 265-266.",
+      "sha256": "3a632d7c7f1fa516c78f4e49e964de5f5e7a26d889ea811c1ced64c62cb2cd7c"
+    },
+    {
+      "noteId": "n099",
+      "sourceBlockIds": [
+        "b0471"
+      ],
+      "sourceMarker": "[99]",
+      "opening": "Francisco, Carta enc. Fratelli tutti (3 octubre 2020), 32 y 54: AAS 112 (2020), 980 y 988.",
+      "closing": "Francisco, Carta enc. Fratelli tutti (3 octubre 2020), 32 y 54: AAS 112 (2020), 980 y 988.",
+      "sha256": "611dcb9e7bc4cc24e9095d091dbf0bc492b441327602b809f65a39d715b46394"
+    },
+    {
+      "noteId": "n100",
+      "sourceBlockIds": [
+        "b0472"
+      ],
+      "sourceMarker": "[100]",
+      "opening": "Cf. Benedicto XVI, Carta enc. Caritas in veritate (29 junio 2009), 58: AAS 101 (2009), 693-694.",
+      "closing": "Cf. Benedicto XVI, Carta enc. Caritas in veritate (29 junio 2009), 58: AAS 101 (2009), 693-694.",
+      "sha256": "4cf089eccbd13c70d8e462a47e511c920c7ad3ba902db00a024af064ba5d70cd"
+    },
+    {
+      "noteId": "n101",
+      "sourceBlockIds": [
+        "b0473"
+      ],
+      "sourceMarker": "[101]",
+      "opening": "Francisco, Carta enc. Fratelli tutti (3 octubre 2020), 116: AAS 112 (2020), 1009.",
+      "closing": "Francisco, Carta enc. Fratelli tutti (3 octubre 2020), 116: AAS 112 (2020), 1009.",
+      "sha256": "148fd12b2b9a358454c518b82a9976089a37db58798bade2bb6a20064365e8e0"
+    },
+    {
+      "noteId": "n102",
+      "sourceBlockIds": [
+        "b0474"
+      ],
+      "sourceMarker": "[102]",
+      "opening": "S. Juan Pablo II, Carta enc. Sollicitudo rei socialis (30 diciembre 1987), 38: AAS 80 (1988), 564.",
+      "closing": "S. Juan Pablo II, Carta enc. Sollicitudo rei socialis (30 diciembre 1987), 38: AAS 80 (1988), 564.",
+      "sha256": "153cfbe341e918d6cd4d6c6989b58005b1543dabfbf3560406084e54911b0cb3"
+    },
+    {
+      "noteId": "n103",
+      "sourceBlockIds": [
+        "b0475"
+      ],
+      "sourceMarker": "[103]",
+      "opening": "Francisco, Carta enc. Fratelli tutti (3 octubre 2020), 116: AAS 112 (2020), 1009.",
+      "closing": "Francisco, Carta enc. Fratelli tutti (3 octubre 2020), 116: AAS 112 (2020), 1009.",
+      "sha256": "148fd12b2b9a358454c518b82a9976089a37db58798bade2bb6a20064365e8e0"
+    },
+    {
+      "noteId": "n104",
+      "sourceBlockIds": [
+        "b0476"
+      ],
+      "sourceMarker": "[104]",
+      "opening": "Cf. Benedicto XVI, Carta enc. Caritas in veritate (29 junio 2009), 48: AAS 101 (2009), 685.",
+      "closing": "Cf. Benedicto XVI, Carta enc. Caritas in veritate (29 junio 2009), 48: AAS 101 (2009), 685.",
+      "sha256": "ae325b6400a73d3125b35ad07632a64ddaeb44f0de8a531895bdc21d4e6c7142"
+    },
+    {
+      "noteId": "n105",
+      "sourceBlockIds": [
+        "b0477"
+      ],
+      "sourceMarker": "[105]",
+      "opening": "Cf. Conc. Ecum. Vat. II, Const. past. Gaudium et spes, 25: AAS 58 (1966), 1045-1046.",
+      "closing": "Cf. Conc. Ecum. Vat. II, Const. past. Gaudium et spes, 25: AAS 58 (1966), 1045-1046.",
+      "sha256": "5b1801eb539c3c04748886ad7fd05d61d57f02e0d6821a1e25972f5783c4e369"
+    },
+    {
+      "noteId": "n106",
+      "sourceBlockIds": [
+        "b0478"
+      ],
+      "sourceMarker": "[106]",
+      "opening": "Cf. S. Juan Pablo II, Carta enc. Sollicitudo rei socialis (30 diciembre 1987), 42: AAS 80 (1988), 57",
+      "closing": " Juan Pablo II, Carta enc. Sollicitudo rei socialis (30 diciembre 1987), 42: AAS 80 (1988), 572-574.",
+      "sha256": "1f8637481e879f8043244dd47c3367de2bad672ee8848a566e4e8eb4aa15c61c"
+    },
+    {
+      "noteId": "n107",
+      "sourceBlockIds": [
+        "b0479"
+      ],
+      "sourceMarker": "[107]",
+      "opening": "Francisco, Exhort. ap. Evangelii gaudium (24 noviembre 2013), 53: AAS 105 (2013), 1042.",
+      "closing": "Francisco, Exhort. ap. Evangelii gaudium (24 noviembre 2013), 53: AAS 105 (2013), 1042.",
+      "sha256": "014b83e71e3a50c2d41412c478a5edac647d0aaa8dd0977725b8695d4be79ee3"
+    },
+    {
+      "noteId": "n108",
+      "sourceBlockIds": [
+        "b0480"
+      ],
+      "sourceMarker": "[108]",
+      "opening": "Cf. S. Juan Pablo II, Carta enc . Sollicitudo rei socialis (30 diciembre 1987), 36-37: AAS 80 (1988)",
+      "closing": "n Pablo II, Carta enc . Sollicitudo rei socialis (30 diciembre 1987), 36-37: AAS 80 (1988), 561-564.",
+      "sha256": "1e79ba5531450e6721ea56b1eb2638a46c439f883965254a5a095481025e97c3"
+    },
+    {
+      "noteId": "n109",
+      "sourceBlockIds": [
+        "b0481"
+      ],
+      "sourceMarker": "[109]",
+      "opening": "Francisco, Mensaje para la 110ª Jornada Mundial del Migrante y del Refugiado (29 septiembre 2024): A",
+      "closing": "para la 110ª Jornada Mundial del Migrante y del Refugiado (29 septiembre 2024): AAS 116 (2024), 735.",
+      "sha256": "8658747dcdc211b8378bb5b191452150deff360361de245de0f451a2937a0af6"
+    },
+    {
+      "noteId": "n110",
+      "sourceBlockIds": [
+        "b0482"
+      ],
+      "sourceMarker": "[110]",
+      "opening": "S. Pablo VI, Carta enc. Populorum progressio (26 marzo 1967), 14: AAS 59 (1967), 264.",
+      "closing": "S. Pablo VI, Carta enc. Populorum progressio (26 marzo 1967), 14: AAS 59 (1967), 264.",
+      "sha256": "95c8d3fd274b4cd2a411779a8c18a3d0802024bdfea274d58a7152506d799790"
+    },
+    {
+      "noteId": "n111",
+      "sourceBlockIds": [
+        "b0483"
+      ],
+      "sourceMarker": "[111]",
+      "opening": "Cf. ibíd., 17: AAS 59 (1967), 265-266; Francisco, Carta enc. Fratelli tutti (3 octubre 2020), 125-12",
+      "closing": " 265-266; Francisco, Carta enc. Fratelli tutti (3 octubre 2020), 125-127: AAS 112 (2020), 1012-1013.",
+      "sha256": "47f78e45bb637cf19144d367de0ba693953b23cfd4cdcdb47e5a47414f9b1904"
+    },
+    {
+      "noteId": "n112",
+      "sourceBlockIds": [
+        "b0484"
+      ],
+      "sourceMarker": "[112]",
+      "opening": "Cf. S. Pablo VI, Carta enc. Populorum progressio (26 marzo 1967), 14: AAS 59 (1967), 264; Benedicto ",
+      "closing": "vocado por el Fondo Internacional de Desarrollo Agrícola (15 febrero 2017): AAS 109 (2017), 244-245.",
+      "sha256": "dbad60fbea8420cd8c7e29d5f4006480b3d46ee5074b31272592aa6a978576b4"
+    },
+    {
+      "noteId": "n113",
+      "sourceBlockIds": [
+        "b0485"
+      ],
+      "sourceMarker": "[113]",
+      "opening": "Documento Final de la Segunda Sesión de la XVI Asamblea General Ordinaria del Sínodo de los Obispos ",
+      "closing": "Segunda Sesión de la XVI Asamblea General Ordinaria del Sínodo de los Obispos (26 octubre 2024), 17.",
+      "sha256": "9043d61b9f35e1b94491974e6d840aabceda38576b09b571177e8ba48e02d274"
+    },
+    {
+      "noteId": "n114",
+      "sourceBlockIds": [
+        "b0486"
+      ],
+      "sourceMarker": "[114]",
+      "opening": "Cf. ibíd., 11.",
+      "closing": "Cf. ibíd., 11.",
+      "sha256": "ae6b9d949d73dfa83d2bc9d0f6e5249ecf9418b440d3d03f5179bedd27b8af67"
+    },
+    {
+      "noteId": "n115",
+      "sourceBlockIds": [
+        "b0487"
+      ],
+      "sourceMarker": "[115]",
+      "opening": "Cf. ibíd., 103-108.",
+      "closing": "Cf. ibíd., 103-108.",
+      "sha256": "45b3f47c87ff8c254bc4ac231c6c4795e601063ed7acea293dcbe49e4a900ec4"
+    },
+    {
+      "noteId": "n116",
+      "sourceBlockIds": [
+        "b0488"
+      ],
+      "sourceMarker": "[116]",
+      "opening": "Cf. ibíd., 100-101.",
+      "closing": "Cf. ibíd., 100-101.",
+      "sha256": "19a3748e55f4a35cba303f23956a494c414c83b7085b0b865d4c2d11cffe6ec1"
+    },
+    {
+      "noteId": "n117",
+      "sourceBlockIds": [
+        "b0489"
+      ],
+      "sourceMarker": "[117]",
+      "opening": "Cf. Francisco, Carta enc. Fratelli tutti (3 octubre 2020), 94: AAS 112 (2020), 1001.",
+      "closing": "Cf. Francisco, Carta enc. Fratelli tutti (3 octubre 2020), 94: AAS 112 (2020), 1001.",
+      "sha256": "978f26ad758189f23372fad8cec7d978935fc179e56b8cf94c27f9c2129f6329"
+    },
+    {
+      "noteId": "n118",
+      "sourceBlockIds": [
+        "b0490"
+      ],
+      "sourceMarker": "[118]",
+      "opening": "Cf. Pontificio Consejo Justicia y Paz, Compendio de la doctrina social de la Iglesia, 53.",
+      "closing": "Cf. Pontificio Consejo Justicia y Paz, Compendio de la doctrina social de la Iglesia, 53.",
+      "sha256": "ca3b42ac58ab7e536fac9393b48dd4dac7bc0629dca846222de15b12ff464dd8"
+    },
+    {
+      "noteId": "n119",
+      "sourceBlockIds": [
+        "b0491"
+      ],
+      "sourceMarker": "[119]",
+      "opening": "Cf. Francisco, Carta enc. Laudato si’ (24 mayo 2015), 106-109: AAS 107 (2015), 889-891.",
+      "closing": "Cf. Francisco, Carta enc. Laudato si’ (24 mayo 2015), 106-109: AAS 107 (2015), 889-891.",
+      "sha256": "51f25c7b0414b9d9dc3b050d608983fa90d2f77f6b0eea2632050b5dff238fbd"
+    },
+    {
+      "noteId": "n120",
+      "sourceBlockIds": [
+        "b0492"
+      ],
+      "sourceMarker": "[120]",
+      "opening": "R. Guardini, El ocaso de la edad moderna, Madrid 1963, 111.",
+      "closing": "R. Guardini, El ocaso de la edad moderna, Madrid 1963, 111.",
+      "sha256": "df1abd084c6759dd36f6d2b536e02b18d97423e73403758e65410eebcb84396c"
+    },
+    {
+      "noteId": "n121",
+      "sourceBlockIds": [
+        "b0493"
+      ],
+      "sourceMarker": "[121]",
+      "opening": "S. Pablo VI, Discurso en el 25º aniversario de la FAO (16 noviembre 1970): AAS 62 (1970), 833.",
+      "closing": "S. Pablo VI, Discurso en el 25º aniversario de la FAO (16 noviembre 1970): AAS 62 (1970), 833.",
+      "sha256": "becd3051b5a0f6c7e8ef7b6d7893fef7303479058f7fb8ee3eb1025db3aac0c2"
+    },
+    {
+      "noteId": "n122",
+      "sourceBlockIds": [
+        "b0494"
+      ],
+      "sourceMarker": "[122]",
+      "opening": "Cf. Francisco, Discurso al Consejo para un capitalismo inclusivo (11 noviembre 2019): L’Osservatore ",
+      "closing": "jo para un capitalismo inclusivo (11 noviembre 2019): L’Osservatore Romano, 11-12 noviembre 2019, 8.",
+      "sha256": "e8d108a43dc33c7576d9010f33f5850748a907a6b198ad2d79e3332e83b6c887"
+    },
+    {
+      "noteId": "n123",
+      "sourceBlockIds": [
+        "b0495"
+      ],
+      "sourceMarker": "[123]",
+      "opening": "Cf. Dicasterio para la Doctrina de la Fe – Dicasterio para la Cultura y la Educación, Nota Antiqua e",
+      "closing": "aciones Sociales (24 enero 2026): L’Osservatore Romano, ed. en lengua española, febrero 2026, 63-67.",
+      "sha256": "956a993df05615a494c3959252d1a4adefa21f7a84b90ec40fd3c634eee7973a"
+    },
+    {
+      "noteId": "n124",
+      "sourceBlockIds": [
+        "b0496"
+      ],
+      "sourceMarker": "[124]",
+      "opening": "Cf. Dicasterio para la Doctrina de la Fe – Dicasterio para la Cultura y la Educación, Nota Antiqua e",
+      "closing": "terio para la Cultura y la Educación, Nota Antiqua et nova (14 enero 2025), 96: AAS 117 (2025), 201.",
+      "sha256": "90f3ca5d60a6066280cd6ba3dfa0bdddde459d22509e7bceffef3654f73b2892"
+    },
+    {
+      "noteId": "n125",
+      "sourceBlockIds": [
+        "b0497"
+      ],
+      "sourceMarker": "[125]",
+      "opening": "Francisco, Discurso en los “Minerva Dialogues” organizados por el Dicasterio para la Cultura y la Ed",
+      "closing": "” organizados por el Dicasterio para la Cultura y la Educación (27 marzo 2023): AAS 115 (2023), 465.",
+      "sha256": "3f1b906ccebe61a92227165ca907f48f4c12fc038a30e83edad071e5f36f2f7b"
+    },
+    {
+      "noteId": "n126",
+      "sourceBlockIds": [
+        "b0498"
+      ],
+      "sourceMarker": "[126]",
+      "opening": "Cf. Dicasterio para la Doctrina de la Fe – Dicasterio para la Cultura y la Educación, Nota Antiqua e",
+      "closing": "terio para la Cultura y la Educación, Nota Antiqua et nova (14 enero 2025), 41: AAS 117 (2025), 178.",
+      "sha256": "afbc9d7e1d51a1874a291dea9536b56592ac508351397f39028f7cef0ca8ed78"
+    },
+    {
+      "noteId": "n127",
+      "sourceBlockIds": [
+        "b0499"
+      ],
+      "sourceMarker": "[127]",
+      "opening": "Cf. ibíd., 44-45: AAS 117 (2025), 179-180.",
+      "closing": "Cf. ibíd., 44-45: AAS 117 (2025), 179-180.",
+      "sha256": "fd47c20b46bc990afb4bb57572fdeffb521723829b4d85748ee5bf623730b891"
+    },
+    {
+      "noteId": "n128",
+      "sourceBlockIds": [
+        "b0500"
+      ],
+      "sourceMarker": "[128]",
+      "opening": "Cf. S. Juan Pablo II, Carta enc. Centesimus annus (1 mayo 1991), 40: AAS 83 (1991), 843.",
+      "closing": "Cf. S. Juan Pablo II, Carta enc. Centesimus annus (1 mayo 1991), 40: AAS 83 (1991), 843.",
+      "sha256": "3c937b4306f3aabdb11c5e2faef215f2e02023d25bdc4ef0655c776a4777f16e"
+    },
+    {
+      "noteId": "n129",
+      "sourceBlockIds": [
+        "b0501"
+      ],
+      "sourceMarker": "[129]",
+      "opening": "Cf. Comisión Teológica Internacional, Quo vadis, humanitas? Pensar la antropología cristiana ante al",
+      "closing": "nsar la antropología cristiana ante algunos escenarios futuros de la humanidad (9 febrero 2026), 63.",
+      "sha256": "eba75541d5ed971ca3fbb1f3a72378339961caf243ff07283cfe09a7203600cb"
+    },
+    {
+      "noteId": "n130",
+      "sourceBlockIds": [
+        "b0502"
+      ],
+      "sourceMarker": "[130]",
+      "opening": "Cf. S. Pablo VI, Discurso en el 25º aniversario de la FAO (16 noviembre 1970): AAS 62 (1970), 833.",
+      "closing": "Cf. S. Pablo VI, Discurso en el 25º aniversario de la FAO (16 noviembre 1970): AAS 62 (1970), 833.",
+      "sha256": "682beca71844fe481ce76d501f8c4c0cbe0f403c789f55026f7585c90da23651"
+    },
+    {
+      "noteId": "n131",
+      "sourceBlockIds": [
+        "b0503"
+      ],
+      "sourceMarker": "[131]",
+      "opening": "Comisión Teológica Internacional, Quo vadis, humanitas? Pensar la antropología cristiana ante alguno",
+      "closing": "ensar la antropología cristiana ante algunos escenarios futuros de la humanidad (9 febrero 2026), 3.",
+      "sha256": "29af4817b351f6deffb27cd71f24d4669e404dec0ca6ff71f8de9f4aefe85755"
+    },
+    {
+      "noteId": "n132",
+      "sourceBlockIds": [
+        "b0504"
+      ],
+      "sourceMarker": "[132]",
+      "opening": "«Si el corazón está devaluado también se devalúa lo que significa hablar desde el corazón, actuar co",
+      "closing": "da contará sólo eso»: Francisco, Carta enc. Dilexit nos (24 octubre 2024), 11: AAS 116 (2024), 1372.",
+      "sha256": "869c6f67f348462c86e25e67ece6d0dbffe7498d26260d1d99f1c2636ad8c607"
+    },
+    {
+      "noteId": "n133",
+      "sourceBlockIds": [
+        "b0505"
+      ],
+      "sourceMarker": "[133]",
+      "opening": "V. Frankl, El hombre en busca de sentido, Barcelona 1991, 74.",
+      "closing": "V. Frankl, El hombre en busca de sentido, Barcelona 1991, 74.",
+      "sha256": "e71fb0dfa65e24957dbe2ae63069666127956cab0f459405d07cf81ec79e4507"
+    },
+    {
+      "noteId": "n134",
+      "sourceBlockIds": [
+        "b0506"
+      ],
+      "sourceMarker": "[134]",
+      "opening": "Sto. Tomás de Aquino, Summa Theologiae, I-II, q. 112, a. 1, co.; q. 114, a. 5, co.: ed. Leonina, VII",
+      "closing": "umma Theologiae, I-II, q. 112, a. 1, co.; q. 114, a. 5, co.: ed. Leonina, VII, Roma 1892, 323 y 349.",
+      "sha256": "10ac089970e28e7c105d91cb2947219e96d0e0d4c3f6a7c0ee318dd9371445c9"
+    },
+    {
+      "noteId": "n135",
+      "sourceBlockIds": [
+        "b0507"
+      ],
+      "sourceMarker": "[135]",
+      "opening": "Cf. ibíd., q. 114, a. 1, co.: ed. Leonina, VII, 344.",
+      "closing": "Cf. ibíd., q. 114, a. 1, co.: ed. Leonina, VII, 344.",
+      "sha256": "0b03a4589089e1a8a49adcd485d28c04c3e894fb0852302f2a525c03a88a1b39"
+    },
+    {
+      "noteId": "n136",
+      "sourceBlockIds": [
+        "b0508"
+      ],
+      "sourceMarker": "[136]",
+      "opening": "Cf. id., Super Boetium De Trinitate, q. 1, a. 2, ad 3: ed. Leonina, L, Roma 1992, 96; Summa Theologi",
+      "closing": "d. Leonina, L, Roma 1992, 96; Summa Theologiae, I, q. 7, a. 1, ad 3: ed. Leonina, IV, Roma 1888, 72.",
+      "sha256": "ebdbf9e51881ddac9d013e7491a79cc471051a42b318b740537c3de1c11e91e8"
+    },
+    {
+      "noteId": "n137",
+      "sourceBlockIds": [
+        "b0509"
+      ],
+      "sourceMarker": "[137]",
+      "opening": "Francisco, Exhort. ap. Evangelii gaudium (24 noviembre 2013), 8: AAS 105 (2013), 1022.",
+      "closing": "Francisco, Exhort. ap. Evangelii gaudium (24 noviembre 2013), 8: AAS 105 (2013), 1022.",
+      "sha256": "bd9184da4130dc03621282e0531c51de14b266482641ef6e6472a55888f00be1"
+    },
+    {
+      "noteId": "n138",
+      "sourceBlockIds": [
+        "b0510"
+      ],
+      "sourceMarker": "[138]",
+      "opening": "S. Juan Pablo II, Carta enc. Redemptor hominis (4 marzo 1979), 15: AAS 71 (1979), 286-287.",
+      "closing": "S. Juan Pablo II, Carta enc. Redemptor hominis (4 marzo 1979), 15: AAS 71 (1979), 286-287.",
+      "sha256": "c1e5bb9a1249d03b1b5117c53bede5a10a1f261f6d2aa2bc3dbbef1a618966f8"
+    },
+    {
+      "noteId": "n139",
+      "sourceBlockIds": [
+        "b0511"
+      ],
+      "sourceMarker": "[139]",
+      "opening": "S. Agustín, La ciudad de Dios, XIV, 28: CCSL 48, Turnhout 1955, 451.",
+      "closing": "S. Agustín, La ciudad de Dios, XIV, 28: CCSL 48, Turnhout 1955, 451.",
+      "sha256": "f6178a8f1101c10e8eccc8045a965e09b5cf1051cc6fe2d21c208ee7870950d1"
+    },
+    {
+      "noteId": "n140",
+      "sourceBlockIds": [
+        "b0512"
+      ],
+      "sourceMarker": "[140]",
+      "opening": "Benedicto XVI, Carta enc. Caritas in veritate (29 junio 2009), 34: AAS 101 (2009), 668-669.",
+      "closing": "Benedicto XVI, Carta enc. Caritas in veritate (29 junio 2009), 34: AAS 101 (2009), 668-669.",
+      "sha256": "16a57611d412a548b868973637db4e4616fca7aa68c3da9232594934192441de"
+    },
+    {
+      "noteId": "n141",
+      "sourceBlockIds": [
+        "b0513"
+      ],
+      "sourceMarker": "[141]",
+      "opening": "S. Juan Pablo II, Carta enc. Veritatis splendor (6 agosto 1993), 32: AAS 85 (1993), 1159.",
+      "closing": "S. Juan Pablo II, Carta enc. Veritatis splendor (6 agosto 1993), 32: AAS 85 (1993), 1159.",
+      "sha256": "316127da7307e8eaf4c546eebeae74d99cb48e1e78f3d399d6631592c8075322"
+    },
+    {
+      "noteId": "n142",
+      "sourceBlockIds": [
+        "b0514"
+      ],
+      "sourceMarker": "[142]",
+      "opening": "Francisco, Carta enc. Fratelli tutti (3 octubre 2020), 207: AAS 112 (2020), 1043.",
+      "closing": "Francisco, Carta enc. Fratelli tutti (3 octubre 2020), 207: AAS 112 (2020), 1043.",
+      "sha256": "844f373c2efb7dc46342ed13dd8593745f63860f858546cdd7bbb6b6439ba8fe"
+    },
+    {
+      "noteId": "n143",
+      "sourceBlockIds": [
+        "b0515"
+      ],
+      "sourceMarker": "[143]",
+      "opening": "H. Arendt, Los orígenes del totalitarismo, Madrid 2014, 634.",
+      "closing": "H. Arendt, Los orígenes del totalitarismo, Madrid 2014, 634.",
+      "sha256": "be7811bdd2298d837464e947baa3ab3177794436a3264045d86d1a3c1feb3e9c"
+    },
+    {
+      "noteId": "n144",
+      "sourceBlockIds": [
+        "b0516"
+      ],
+      "sourceMarker": "[144]",
+      "opening": "Discurso a los representantes de los medios de comunicación (12 mayo 2025): AAS 117 (2025), 682.",
+      "closing": "Discurso a los representantes de los medios de comunicación (12 mayo 2025): AAS 117 (2025), 682.",
+      "sha256": "477bc98cfc76fa4023e788ca80fd77c428c84da751328808e6e9f583c7c507bd"
+    },
+    {
+      "noteId": "n145",
+      "sourceBlockIds": [
+        "b0517"
+      ],
+      "sourceMarker": "[145]",
+      "opening": "Benedicto XVI, Mensaje para la 47ª Jornada Mundial de las Comunicaciones Sociales (24 enero 2013): A",
+      "closing": "aje para la 47ª Jornada Mundial de las Comunicaciones Sociales (24 enero 2013): AAS 105 (2013), 183.",
+      "sha256": "3b2208444a8bb527072b331d0021570a2eab58c3a66e3526c176dc47a434d382"
+    },
+    {
+      "noteId": "n146",
+      "sourceBlockIds": [
+        "b0518"
+      ],
+      "sourceMarker": "[146]",
+      "opening": "Francisco, Discurso con motivo de la concesión de la insignia de la Orden de Piano al Sr. Philip Pul",
+      "closing": "lla y a la Sra. Valentina Alazraki (13 noviembre 2021): L’Osservatore Romano, 13 noviembre 2021, 12.",
+      "sha256": "1300b6e217a643df57d1dcea2c3d2a7c53c584bfa9efb3f90ae203e3b649a063"
+    },
+    {
+      "noteId": "n147",
+      "sourceBlockIds": [
+        "b0519"
+      ],
+      "sourceMarker": "[147]",
+      "opening": "Cf. Platón, Carta VII, 344b-c, Madrid 1970, 92.",
+      "closing": "Cf. Platón, Carta VII, 344b-c, Madrid 1970, 92.",
+      "sha256": "bd6e2e1b360496237057ad921159040f21c02eb26801f22b5a48924076522975"
+    },
+    {
+      "noteId": "n148",
+      "sourceBlockIds": [
+        "b0520"
+      ],
+      "sourceMarker": "[148]",
+      "opening": "Cf. Discurso en la Conferencia “La dignidad de los niños y adolescentes en la era de la IA” (13 novi",
+      "closing": " y adolescentes en la era de la IA” (13 noviembre 2025): L’Osservatore Romano, 13 noviembre 2025, 3.",
+      "sha256": "2d8736abaf4f75cb1ce1d557833f8d00b10c363fd6710f2c9a38f7a1ed4ca920"
+    },
+    {
+      "noteId": "n149",
+      "sourceBlockIds": [
+        "b0521"
+      ],
+      "sourceMarker": "[149]",
+      "opening": "Cf. Discurso al Consejo Asesor de la RCS Academy (7 noviembre 2025): L’Osservatore Romano, 7 noviemb",
+      "closing": "o al Consejo Asesor de la RCS Academy (7 noviembre 2025): L’Osservatore Romano, 7 noviembre 2025, 4.",
+      "sha256": "3b85567655add9578275344bdcbc0a9578f824c1ba899745928eeed4ed39bdf0"
+    },
+    {
+      "noteId": "n150",
+      "sourceBlockIds": [
+        "b0522"
+      ],
+      "sourceMarker": "[150]",
+      "opening": "S. Juan Pablo II, Carta enc. Laborem exercens (14 septiembre 1981), 3: AAS 73 (1981), 584.",
+      "closing": "S. Juan Pablo II, Carta enc. Laborem exercens (14 septiembre 1981), 3: AAS 73 (1981), 584.",
+      "sha256": "55383b7e3df0576ce33487b6a10dae315884c7d95537724962c325685406b596"
+    },
+    {
+      "noteId": "n151",
+      "sourceBlockIds": [
+        "b0523"
+      ],
+      "sourceMarker": "[151]",
+      "opening": "Cf. Francisco, Carta enc. Laudato si’ (24 mayo 2015), 128: AAS 107 (2015), 898.",
+      "closing": "Cf. Francisco, Carta enc. Laudato si’ (24 mayo 2015), 128: AAS 107 (2015), 898.",
+      "sha256": "69ea02d2117cd9149b3636f4afbac92918a093a4e19a168e490da8c3d2312f62"
+    },
+    {
+      "noteId": "n152",
+      "sourceBlockIds": [
+        "b0524"
+      ],
+      "sourceMarker": "[152]",
+      "opening": "Dicasterio para la Doctrina de la Fe – Dicasterio para la Cultura y la Educación, Nota Antiqua et no",
+      "closing": "o para la Cultura y la Educación, Nota Antiqua et nova (14 enero 2025), 67: AAS 117 (2025), 188-189.",
+      "sha256": "63705322f0eda4afbbb41b05e4d9e5db9a6352929334fac00a64c0a8109221a8"
+    },
+    {
+      "noteId": "n153",
+      "sourceBlockIds": [
+        "b0525"
+      ],
+      "sourceMarker": "[153]",
+      "opening": "Cf. S. Juan Pablo II, Carta enc. Laborem exercens (14 septiembre 1981), 18: AAS 73 (1981), 622-625.",
+      "closing": "Cf. S. Juan Pablo II, Carta enc. Laborem exercens (14 septiembre 1981), 18: AAS 73 (1981), 622-625.",
+      "sha256": "522d5e2f473456f610117f209cb8db5da214674ef68f4487f8802b0567091163"
+    },
+    {
+      "noteId": "n154",
+      "sourceBlockIds": [
+        "b0526"
+      ],
+      "sourceMarker": "[154]",
+      "opening": "Cf. Francisco, Carta enc. Laudato si’ (24 mayo 2015), 109: AAS 107 (2015), 891.",
+      "closing": "Cf. Francisco, Carta enc. Laudato si’ (24 mayo 2015), 109: AAS 107 (2015), 891.",
+      "sha256": "847e8636af22afcadd9b2ccd30540ed4a3228faa73c39800f7d0dc1e1326f8ed"
+    },
+    {
+      "noteId": "n155",
+      "sourceBlockIds": [
+        "b0527"
+      ],
+      "sourceMarker": "[155]",
+      "opening": "Cf. Benedicto XVI, Carta enc. Caritas in veritate (29 junio 2009), 32: AAS 101 (2009), 666.",
+      "closing": "Cf. Benedicto XVI, Carta enc. Caritas in veritate (29 junio 2009), 32: AAS 101 (2009), 666.",
+      "sha256": "da9a26031c35022729688ec6397e47a03831d31b4e40e2cc05135752ad09eef4"
+    },
+    {
+      "noteId": "n156",
+      "sourceBlockIds": [
+        "b0528"
+      ],
+      "sourceMarker": "[156]",
+      "opening": "Cf. Pontificio Consejo Justicia y Paz, Compendio de la doctrina social de la Iglesia, 268.",
+      "closing": "Cf. Pontificio Consejo Justicia y Paz, Compendio de la doctrina social de la Iglesia, 268.",
+      "sha256": "c593aab5cd2ff4e3d34f740692b9c36c5541d1436064394eaf9fb5f482f0cd1b"
+    },
+    {
+      "noteId": "n157",
+      "sourceBlockIds": [
+        "b0529"
+      ],
+      "sourceMarker": "[157]",
+      "opening": "Cf. Benedicto XVI, Carta enc. Caritas in veritate (29 junio 2009), 64: AAS 101 (2009), 698.",
+      "closing": "Cf. Benedicto XVI, Carta enc. Caritas in veritate (29 junio 2009), 64: AAS 101 (2009), 698.",
+      "sha256": "8a9670f72130ef0370ecf7a42cd2db898ead844f8d1e4a89f14558a1ae72e41a"
+    },
+    {
+      "noteId": "n158",
+      "sourceBlockIds": [
+        "b0530"
+      ],
+      "sourceMarker": "[158]",
+      "opening": "Cf. Francisco, Carta enc. Laudato si’ (24 mayo 2015), 129: AAS 107 (2015), 899.",
+      "closing": "Cf. Francisco, Carta enc. Laudato si’ (24 mayo 2015), 129: AAS 107 (2015), 899.",
+      "sha256": "4a81ed2fa3e7eeb95718fda8eee63aa326df500346cbcafe411a0046a96a8e32"
+    },
+    {
+      "noteId": "n159",
+      "sourceBlockIds": [
+        "b0531"
+      ],
+      "sourceMarker": "[159]",
+      "opening": "Cf. ibíd.",
+      "closing": "Cf. ibíd.",
+      "sha256": "7780a84340acc1376cd15abc4d7c9b8fc46206e5553a71337a9a91ed27395bdd"
+    },
+    {
+      "noteId": "n160",
+      "sourceBlockIds": [
+        "b0532"
+      ],
+      "sourceMarker": "[160]",
+      "opening": "Cf. id., Carta enc. Fratelli tutti (3 octubre 2020), 108: AAS 112 (2020), 1006.",
+      "closing": "Cf. id., Carta enc. Fratelli tutti (3 octubre 2020), 108: AAS 112 (2020), 1006.",
+      "sha256": "9ab07373875e26d41edc69202c3c0d926869078e892c5e8792f9cc3bf44f3232"
+    },
+    {
+      "noteId": "n161",
+      "sourceBlockIds": [
+        "b0533"
+      ],
+      "sourceMarker": "[161]",
+      "opening": "Cf. Congregación para la Doctrina de la Fe – Dicasterio para el Servicio del Desarrollo Humano Integ",
+      "closing": "e algunos aspectos del actual sistema económico y financiero (6 enero 2018), 6: AAS 110 (2018), 772.",
+      "sha256": "e1506d0b75adf01758f6482a046ca22d33ef8eb0edf5ac2d116533c4c4693693"
+    },
+    {
+      "noteId": "n162",
+      "sourceBlockIds": [
+        "b0534"
+      ],
+      "sourceMarker": "[162]",
+      "opening": "Francisco, Discurso al personal del Fondo Internacional para el Desarrollo Agrícola (FIDA) (14 febre",
+      "closing": "9), 309. Cf. Benedicto XVI, Carta enc. Caritas in veritate (29 junio 2009), 22: AAS 101 (2009), 657.",
+      "sha256": "973df463965cdb0b18940fd889726dc9202051708baf2c6e6555121a4e78e4ef"
+    },
+    {
+      "noteId": "n163",
+      "sourceBlockIds": [
+        "b0535"
+      ],
+      "sourceMarker": "[163]",
+      "opening": "Cf. ibíd., 36: AAS 101 (2009), 671-672.",
+      "closing": "Cf. ibíd., 36: AAS 101 (2009), 671-672.",
+      "sha256": "25f65ebf42a0e6b12357baa2fa581610ce0061dacd1cd35702b64386051bfdf8"
+    },
+    {
+      "noteId": "n164",
+      "sourceBlockIds": [
+        "b0536"
+      ],
+      "sourceMarker": "[164]",
+      "opening": "Cf. Francisco, Exhort. ap. Evangelii gaudium (24 noviembre 2013), 204: AAS 105 (2013), 1105-1106.",
+      "closing": "Cf. Francisco, Exhort. ap. Evangelii gaudium (24 noviembre 2013), 204: AAS 105 (2013), 1105-1106.",
+      "sha256": "c23ef5c8fcb24dadda1da210c77c4516f11396bf4b82ee6eb6ff0b717e64b251"
+    },
+    {
+      "noteId": "n165",
+      "sourceBlockIds": [
+        "b0537"
+      ],
+      "sourceMarker": "[165]",
+      "opening": "Cf. S. Pablo VI, Carta enc. Populorum progressio (26 marzo 1967), 87: AAS 59 (1967), 299.",
+      "closing": "Cf. S. Pablo VI, Carta enc. Populorum progressio (26 marzo 1967), 87: AAS 59 (1967), 299.",
+      "sha256": "9fd6ed9bcb4fa257fbd10a824c16e6fa60d79d6534bd8a4b3669d3e7431173c9"
+    },
+    {
+      "noteId": "n166",
+      "sourceBlockIds": [
+        "b0538"
+      ],
+      "sourceMarker": "[166]",
+      "opening": "Cf. S. Juan Pablo II, Carta enc. Centesimus annus (1 mayo 1991), 39: AAS 83 (1991), 841.",
+      "closing": "Cf. S. Juan Pablo II, Carta enc. Centesimus annus (1 mayo 1991), 39: AAS 83 (1991), 841.",
+      "sha256": "e67aa602b5b35d28f00ea91c87f94fa668e42445989fe25fc9c15ce1b1dbfbfd"
+    },
+    {
+      "noteId": "n167",
+      "sourceBlockIds": [
+        "b0539"
+      ],
+      "sourceMarker": "[167]",
+      "opening": "Cf.Pontificio Consejo Justicia y Paz, Compendio de la doctrina social de la Iglesia, 211.",
+      "closing": "Cf.Pontificio Consejo Justicia y Paz, Compendio de la doctrina social de la Iglesia, 211.",
+      "sha256": "e4d92ead3c3205790195a09cd8231e4ce4da7bc588a07d1eaa5c3d62cf4c8fee"
+    },
+    {
+      "noteId": "n168",
+      "sourceBlockIds": [
+        "b0540"
+      ],
+      "sourceMarker": "[168]",
+      "opening": "Cf. S. Juan Pablo II, Carta Gratissimam sane (2 febrero 1994), 17: AAS 86 (1994), 903-906.",
+      "closing": "Cf. S. Juan Pablo II, Carta Gratissimam sane (2 febrero 1994), 17: AAS 86 (1994), 903-906.",
+      "sha256": "0eb8768aa7688740808d90e7ab72c27d493866b8866e8ea134e9d62f9bbdf54a"
+    },
+    {
+      "noteId": "n169",
+      "sourceBlockIds": [
+        "b0541"
+      ],
+      "sourceMarker": "[169]",
+      "opening": "Cf. Conferencia de Obispos Católicos de los Estados Unidos, Hijos e Hijas de la Luz: Plan Pastoral p",
+      "closing": "lan Pastoral para el Ministerio con Jóvenes Adultos (12 noviembre 1996), Washington D.C. 1996, I, 3.",
+      "sha256": "dee0da6c1fe6bf61c87219f8bd3f3b85b647e90cdbb668546986754a9a09109f"
+    },
+    {
+      "noteId": "n170",
+      "sourceBlockIds": [
+        "b0542"
+      ],
+      "sourceMarker": "[170]",
+      "opening": "Cf. Pontificio Consejo Justicia y Paz, Compendio de la doctrina social de la Iglesia, 290.",
+      "closing": "Cf. Pontificio Consejo Justicia y Paz, Compendio de la doctrina social de la Iglesia, 290.",
+      "sha256": "282faceb85fc00d2b27f12d4d54bc72f30f74debc3ba54fcccbab5ee24b61d28"
+    },
+    {
+      "noteId": "n171",
+      "sourceBlockIds": [
+        "b0543"
+      ],
+      "sourceMarker": "[171]",
+      "opening": "Cf. ibíd., 214.",
+      "closing": "Cf. ibíd., 214.",
+      "sha256": "adbad1c51721f75f50953457d8d065230758f14660bbc1fdc491aa0ac250ae75"
+    },
+    {
+      "noteId": "n172",
+      "sourceBlockIds": [
+        "b0544"
+      ],
+      "sourceMarker": "[172]",
+      "opening": "Cf. Francisco, Mensaje para la 48ª Jornada Mundial de la Paz (8 diciembre 2014), 4: AAS 107 (2015), ",
+      "closing": "ancisco, Mensaje para la 48ª Jornada Mundial de la Paz (8 diciembre 2014), 4: AAS 107 (2015), 70-71.",
+      "sha256": "9d860283e234f9d291dc2573fffdc66ac88c9c58ef012be36226a269474377f6"
+    },
+    {
+      "noteId": "n173",
+      "sourceBlockIds": [
+        "b0545"
+      ],
+      "sourceMarker": "[173]",
+      "opening": "Cf. Comisión Teológica Internacional, Memoria y reconciliación. La Iglesia y las culpas del pasado (",
+      "closing": "moria y reconciliación. La Iglesia y las culpas del pasado (7 marzo 2000), V. 3, Madrid 2000, 67-68.",
+      "sha256": "22a9c97dd452b6713cdf7c9d6b293f51d71c20e2f1bc658e606c429e8981df41"
+    },
+    {
+      "noteId": "n174",
+      "sourceBlockIds": [
+        "b0546"
+      ],
+      "sourceMarker": "[174]",
+      "opening": "Como en las Bulas Sicut dudum (13 enero 1435) y Etsi suscepti (9 enero 1442) de Eugenio IV, y en las",
+      "closing": " poderes temporales, relativizando la incompatibilidad de la esclavitud con la conciencia cristiana.",
+      "sha256": "fb01bd2d6d507e84e960d318ec51f903f62d18e6ac2277b6136ee543434073e3"
+    },
+    {
+      "noteId": "n175",
+      "sourceBlockIds": [
+        "b0547"
+      ],
+      "sourceMarker": "[175]",
+      "opening": "Cf. León XIII, Carta enc. In plurimis (5 mayo 1888): Acta Leonis XIII, VIII, Roma 1889, 169-192. Con",
+      "closing": "eñor Massaia, Vicario apostólico en el país de los Galla, abril 1866, respuesta a la pregunta n. 15.",
+      "sha256": "0625a37fcebf63f6dd4f4281a82248f995261cfb3f4d0fadf76f444d6ff1f8d8"
+    },
+    {
+      "noteId": "n176",
+      "sourceBlockIds": [
+        "b0548"
+      ],
+      "sourceMarker": "[176]",
+      "opening": "Cf. S. Juan Pablo II, Bula Incarnationis mysterium (29 noviembre 1998), 11: AAS 91 (1999), 139-141.",
+      "closing": "Cf. S. Juan Pablo II, Bula Incarnationis mysterium (29 noviembre 1998), 11: AAS 91 (1999), 139-141.",
+      "sha256": "16bfc81be22b15d427f5e4b152688dcf94e513e8a1917ee7eb27ca8a8f565b34"
+    },
+    {
+      "noteId": "n177",
+      "sourceBlockIds": [
+        "b0549"
+      ],
+      "sourceMarker": "[177]",
+      "opening": "Cf. S. Pablo VI, Regina caeli (17 mayo 1970): Insegnamenti di Paolo VI, VIII, Ciudad del Vaticano 19",
+      "closing": "ablo VI, Regina caeli (17 mayo 1970): Insegnamenti di Paolo VI, VIII, Ciudad del Vaticano 1971, 506.",
+      "sha256": "ef689865fe8c24a317147a65f8ede00f31db9d2893695fa1f8354126e3461f41"
+    },
+    {
+      "noteId": "n178",
+      "sourceBlockIds": [
+        "b0550"
+      ],
+      "sourceMarker": "[178]",
+      "opening": "Cf. Francisco, Carta enc. Fratelli tutti (3 octubre 2020), 183: AAS 112 (2020), 1033-1034.",
+      "closing": "Cf. Francisco, Carta enc. Fratelli tutti (3 octubre 2020), 183: AAS 112 (2020), 1033-1034.",
+      "sha256": "64215cc8f7723d61fdf3461b701b531a4cb27e103f1fb07cbe2703f3cbbf8eed"
+    },
+    {
+      "noteId": "n179",
+      "sourceBlockIds": [
+        "b0551"
+      ],
+      "sourceMarker": "[179]",
+      "opening": "Cf. Conc. Ecum. Vat. II, Const. past. Gaudium et spes, 26: AAS 58 (1966), 1046-1047.",
+      "closing": "Cf. Conc. Ecum. Vat. II, Const. past. Gaudium et spes, 26: AAS 58 (1966), 1046-1047.",
+      "sha256": "73c649e8e117796466e49f017e31bbce1ddde861111760c5b65063ba8853d949"
+    },
+    {
+      "noteId": "n180",
+      "sourceBlockIds": [
+        "b0552"
+      ],
+      "sourceMarker": "[180]",
+      "opening": "S. Pablo VI, Discurso a la 20ª Asamblea General de las Naciones Unidas (4 octubre 1965): AAS 57 (196",
+      "closing": " VI, Discurso a la 20ª Asamblea General de las Naciones Unidas (4 octubre 1965): AAS 57 (1965), 881.",
+      "sha256": "0cfb5c0ead2686a0b8b328563e88be0f265bf9a155448ddd9955839990fd12c4"
+    },
+    {
+      "noteId": "n181",
+      "sourceBlockIds": [
+        "b0553"
+      ],
+      "sourceMarker": "[181]",
+      "opening": "Organización de las Naciones Unidas, Carta de las Naciones Unidas (26 junio 1945), San Francisco 194",
+      "closing": "de las Naciones Unidas, Carta de las Naciones Unidas (26 junio 1945), San Francisco 1945, Preámbulo.",
+      "sha256": "bd16e0c1da9d18ebe4668b425fad9e6d60aa934c4d5acdbd14c6e68111f850fb"
+    },
+    {
+      "noteId": "n182",
+      "sourceBlockIds": [
+        "b0554"
+      ],
+      "sourceMarker": "[182]",
+      "opening": "Cf. Francisco, Carta enc. Fratelli tutti (3 octubre 2020), 258: AAS 112 (2020), 1061: «De hecho, en ",
+      "closing": "rdenes más graves que el mal que se pretende eliminar”»; cf. Catecismo de la Iglesia Católica, 2309.",
+      "sha256": "ac71283a7358ec37c044fc8359dfbc738d1e03cfeef40c6a8026734f4158c9c2"
+    },
+    {
+      "noteId": "n183",
+      "sourceBlockIds": [
+        "b0555"
+      ],
+      "sourceMarker": "[183]",
+      "opening": "Cf. Dicasterio para la Doctrina de la Fe – Dicasterio para la Cultura y la Educación, Nota Antiqua e",
+      "closing": "o para la Cultura y la Educación, Nota Antiqua et nova (14 enero 2025), 99: AAS 117 (2025), 202-203.",
+      "sha256": "495e16271582c0bcf8ed63c2e0f6312a7b72de745e7cff41ce0cb83d1bd5878e"
+    },
+    {
+      "noteId": "n184",
+      "sourceBlockIds": [
+        "b0556"
+      ],
+      "sourceMarker": "[184]",
+      "opening": "Cf. ibíd., 103: AAS 117 (2025), 204.",
+      "closing": "Cf. ibíd., 103: AAS 117 (2025), 204.",
+      "sha256": "97f85d882f554bce8b4367ec78bd7a6f7ed6cd542a649991b5433b665578f08d"
+    },
+    {
+      "noteId": "n185",
+      "sourceBlockIds": [
+        "b0557"
+      ],
+      "sourceMarker": "[185]",
+      "opening": "Cf. Discurso en la Asamblea Plenaria de la Reunión de las Obras para la Ayuda a las Iglesias Orienta",
+      "closing": " las Obras para la Ayuda a las Iglesias Orientales (ROACO) (26 junio 2025): AAS 117 (2025), 847-849.",
+      "sha256": "a68d631f2d014123cac8223738362966a70be50eb70cdce4e883033a290e3b5d"
+    },
+    {
+      "noteId": "n186",
+      "sourceBlockIds": [
+        "b0558"
+      ],
+      "sourceMarker": "[186]",
+      "opening": "Cf. Francisco, Mensaje para la 53ª Jornada Mundial de la Paz (8 diciembre 2019): AAS 112 (2020), 54-",
+      "closing": " Francisco, Mensaje para la 53ª Jornada Mundial de la Paz (8 diciembre 2019): AAS 112 (2020), 54-61.",
+      "sha256": "28df56e9f3c6a6579e2dc0d2781593af42e00bf591c1c0ebb439ab523ac57813"
+    },
+    {
+      "noteId": "n187",
+      "sourceBlockIds": [
+        "b0559"
+      ],
+      "sourceMarker": "[187]",
+      "opening": "J.R.R. Tolkien, El señor de los anillos, III: El retorno del rey, Barcelona 1991, 194.",
+      "closing": "J.R.R. Tolkien, El señor de los anillos, III: El retorno del rey, Barcelona 1991, 194.",
+      "sha256": "0f8b2ca447a651441103c93cb1273a300fd53d9ba57940768b165eed83a65f95"
+    },
+    {
+      "noteId": "n188",
+      "sourceBlockIds": [
+        "b0560"
+      ],
+      "sourceMarker": "[188]",
+      "opening": "Discurso a los representantes de los medios de comunicación (12 mayo 2025): AAS 117 (2025), 682.",
+      "closing": "Discurso a los representantes de los medios de comunicación (12 mayo 2025): AAS 117 (2025), 682.",
+      "sha256": "477bc98cfc76fa4023e788ca80fd77c428c84da751328808e6e9f583c7c507bd"
+    },
+    {
+      "noteId": "n189",
+      "sourceBlockIds": [
+        "b0561"
+      ],
+      "sourceMarker": "[189]",
+      "opening": "Ibíd.",
+      "closing": "Ibíd.",
+      "sha256": "ab789cdc4f78b8904d6ee2fadeba1b7d9b66634c26d0218b544e461e915a662a"
+    },
+    {
+      "noteId": "n190",
+      "sourceBlockIds": [
+        "b0562"
+      ],
+      "sourceMarker": "[190]",
+      "opening": "S. Juan Pablo II, Mensaje para la 31ª Jornada Mundial de la Paz (1 enero 1998), 1: AAS 90 (1998), 14",
+      "closing": " Juan Pablo II, Mensaje para la 31ª Jornada Mundial de la Paz (1 enero 1998), 1: AAS 90 (1998), 147.",
+      "sha256": "8353590f5c5fbadc1514a6ed9f522bfcee256197a1813489d9c455dc68b5c445"
+    },
+    {
+      "noteId": "n191",
+      "sourceBlockIds": [
+        "b0563"
+      ],
+      "sourceMarker": "[191]",
+      "opening": "S. Agustín, Comentarios a los Salmos, 84, 12: CCSL 39, Turnhout 1956, 1172-1173.",
+      "closing": "S. Agustín, Comentarios a los Salmos, 84, 12: CCSL 39, Turnhout 1956, 1172-1173.",
+      "sha256": "fcf716249ea27c0fcfef23f57ba7f4492fb7cf28e9676577c1c57026ac0f00bf"
+    },
+    {
+      "noteId": "n192",
+      "sourceBlockIds": [
+        "b0564"
+      ],
+      "sourceMarker": "[192]",
+      "opening": "Cf. Francisco, Carta enc. Dilexit nos (24 octubre 2024), 22: AAS 116 (2024), 1375-1376.",
+      "closing": "Cf. Francisco, Carta enc. Dilexit nos (24 octubre 2024), 22: AAS 116 (2024), 1375-1376.",
+      "sha256": "28067be17ca9604ec4bc73a4bad084cc5bb1279fe7e7c9e15c86bf01fd1e881e"
+    },
+    {
+      "noteId": "n193",
+      "sourceBlockIds": [
+        "b0565"
+      ],
+      "sourceMarker": "[193]",
+      "opening": "Cf. id., Carta enc. Fratelli tutti (3 octubre 2020), 115: AAS 112 (2020), 1008-1009.",
+      "closing": "Cf. id., Carta enc. Fratelli tutti (3 octubre 2020), 115: AAS 112 (2020), 1008-1009.",
+      "sha256": "7c7164f550f8a2980a2e8327d1a52f02e38d451384e942d0b18db20776b63cde"
+    },
+    {
+      "noteId": "n194",
+      "sourceBlockIds": [
+        "b0566"
+      ],
+      "sourceMarker": "[194]",
+      "opening": "Cf. ibíd., 261: AAS 112 (2020), 1062.",
+      "closing": "Cf. ibíd., 261: AAS 112 (2020), 1062.",
+      "sha256": "4051e77c1c69b1ac36f9f0961c28609e1d3415d65fd917ec1798bd1a6be753b3"
+    },
+    {
+      "noteId": "n195",
+      "sourceBlockIds": [
+        "b0567"
+      ],
+      "sourceMarker": "[195]",
+      "opening": "Cf. S. Pablo VI, Discurso a la 20ª Asamblea General de las Naciones Unidas (4 octubre 1965): AAS 57 ",
+      "closing": " Discurso a la 20ª Asamblea General de las Naciones Unidas (4 octubre 1965): AAS 57 (1965), 878-879.",
+      "sha256": "0701051183938abcc829bb14006a1a6e1612522255a7679863fa030bca5b60f0"
+    },
+    {
+      "noteId": "n196",
+      "sourceBlockIds": [
+        "b0568"
+      ],
+      "sourceMarker": "[196]",
+      "opening": "Cf. Pío XII, Radiomensaje dirigido a los gobernantes y a los pueblos ante el inminente peligro de la",
+      "closing": "rnantes y a los pueblos ante el inminente peligro de la guerra (24 agosto 1939): AAS 31 (1939), 334.",
+      "sha256": "2a4923f3e02627d31d1d8cdb21b4985ab7b86490b8b51810919361c95ce83efd"
+    },
+    {
+      "noteId": "n197",
+      "sourceBlockIds": [
+        "b0569"
+      ],
+      "sourceMarker": "[197]",
+      "opening": "G. La Pira, Reflexiones sobre el Concilio. Discurso del Prof. Giorgio La Pira, Alcalde de Florencia,",
+      "closing": " La Pira, Alcalde de Florencia, a las Guides de France (Roma, 4 septiembre 1962), Florencia 1962, 6.",
+      "sha256": "e212e9331d7bbcc0bafb674ef987bd28b7775f31be40acea676c9d10d88dfb3a"
+    },
+    {
+      "noteId": "n198",
+      "sourceBlockIds": [
+        "b0570"
+      ],
+      "sourceMarker": "[198]",
+      "opening": "Discurso en el Jubileo de las Iglesias Orientales (14 mayo 2025): AAS 117 (2025), 686.",
+      "closing": "Discurso en el Jubileo de las Iglesias Orientales (14 mayo 2025): AAS 117 (2025), 686.",
+      "sha256": "578a9ac253a6df6f4fcb230ecc13219f439364d5e16b0eed78fdcc718433072b"
+    },
+    {
+      "noteId": "n199",
+      "sourceBlockIds": [
+        "b0571"
+      ],
+      "sourceMarker": "[199]",
+      "opening": "Cf. Francisco, Carta enc. Fratelli tutti (3 octubre 2020), 271: AAS 112 (2020), 1066.",
+      "closing": "Cf. Francisco, Carta enc. Fratelli tutti (3 octubre 2020), 271: AAS 112 (2020), 1066.",
+      "sha256": "da179771c3f1cf3b4c8ddc3f05749997183865d450153b31616d9c6d5490ae6f"
+    },
+    {
+      "noteId": "n200",
+      "sourceBlockIds": [
+        "b0572"
+      ],
+      "sourceMarker": "[200]",
+      "opening": "Cf. id., Llamamiento de paz en Asís para la Jornada Mundial de Oración por la Paz. “Sed de paz. Reli",
+      "closing": "r la Paz. “Sed de paz. Religiones y culturas en diálogo” (20 septiembre 2016): AAS 108 (2016), 1124.",
+      "sha256": "7834f949d5157e57e80f3a78f12d9d5c8b51774cd07f0b54fd267673f1afa9ee"
+    },
+    {
+      "noteId": "n201",
+      "sourceBlockIds": [
+        "b0573"
+      ],
+      "sourceMarker": "[201]",
+      "opening": "Id., Discurso al Cuerpo Diplomático acreditado ante la Santa Sede para la presentación de las felici",
+      "closing": "ta Sede para la presentación de las felicitaciones de año nuevo (9 enero 2025): AAS 117 (2025), 110.",
+      "sha256": "ec7d276e27ca0c685861c77f40d56e5cdef8756bb87f6532308412f8cf1d0cae"
+    },
+    {
+      "noteId": "n202",
+      "sourceBlockIds": [
+        "b0574"
+      ],
+      "sourceMarker": "[202]",
+      "opening": "Cf. id., Discurso en la 38ª Sesión de la FAO ( 20 junio 2013): AAS 105 (2013), 616-617.",
+      "closing": "Cf. id., Discurso en la 38ª Sesión de la FAO ( 20 junio 2013): AAS 105 (2013), 616-617.",
+      "sha256": "8bd84caf6d9344b2d5b91ebd0a75e936d776dad77f1bfb5a4b4de1250c1eca5e"
+    },
+    {
+      "noteId": "n203",
+      "sourceBlockIds": [
+        "b0575"
+      ],
+      "sourceMarker": "[203]",
+      "opening": "Primera Bendición “Urbi et Orbi” (8 mayo 2025): AAS 117 (2025), 660.",
+      "closing": "Primera Bendición “Urbi et Orbi” (8 mayo 2025): AAS 117 (2025), 660.",
+      "sha256": "ca8cc589045dc7ed4dd620538f5ebfd8aa00ee20ce31646d495c5a57dc38956c"
+    },
+    {
+      "noteId": "n204",
+      "sourceBlockIds": [
+        "b0576"
+      ],
+      "sourceMarker": "[204]",
+      "opening": "Ibíd.",
+      "closing": "Ibíd.",
+      "sha256": "ab789cdc4f78b8904d6ee2fadeba1b7d9b66634c26d0218b544e461e915a662a"
+    },
+    {
+      "noteId": "n205",
+      "sourceBlockIds": [
+        "b0577"
+      ],
+      "sourceMarker": "[205]",
+      "opening": "Cf. Homilía en las Primeras Vísperas de la Solemnidad de Santa María Madre de Dios (31 diciembre 202",
+      "closing": " Madre de Dios (31 diciembre 2025): L’Osservatore Romano, ed. en lengua española, enero 2026, 26-27.",
+      "sha256": "23ddf815fe73951fec97c0e5df7317e7c224b1b6d93e4fa2252d79d9e649fb6d"
+    },
+    {
+      "noteId": "n206",
+      "sourceBlockIds": [
+        "b0578"
+      ],
+      "sourceMarker": "[206]",
+      "opening": "Cf. Homilía de la Misa del día en la Solemnidad de la Natividad del Señor (25 diciembre 2025): L’Oss",
+      "closing": "idad del Señor (25 diciembre 2025): L’Osservatore Romano, ed. en lengua española, enero 2026, 17-18.",
+      "sha256": "e1d5a7020683442cfe96915d191cfe7b8347ebee21c181b7ab7edbf78b612139"
+    },
+    {
+      "noteId": "n207",
+      "sourceBlockIds": [
+        "b0579"
+      ],
+      "sourceMarker": "[207]",
+      "opening": "Cf. ibíd.",
+      "closing": "Cf. ibíd.",
+      "sha256": "7780a84340acc1376cd15abc4d7c9b8fc46206e5553a71337a9a91ed27395bdd"
+    },
+    {
+      "noteId": "n208",
+      "sourceBlockIds": [
+        "b0580"
+      ],
+      "sourceMarker": "[208]",
+      "opening": "Cf. Ángelus en la Solemnidad de la Epifanía (6 enero 2026): L’Osservatore Romano, ed. en lengua espa",
+      "closing": "idad de la Epifanía (6 enero 2026): L’Osservatore Romano, ed. en lengua española, enero 2026, 34-35.",
+      "sha256": "ccdd6b01c65ecd255ee68143fbd207de38b175ef0cd0162628a176919d81cf2e"
+    },
+    {
+      "noteId": "n209",
+      "sourceBlockIds": [
+        "b0581"
+      ],
+      "sourceMarker": "[209]",
+      "opening": "Cf. Homilía de la Santa Misa de la noche en la Solemnidad de la Natividad del Señor (24 diciembre 20",
+      "closing": "idad del Señor (24 diciembre 2025): L’Osservatore Romano, ed. en lengua española, enero 2026, 14-16.",
+      "sha256": "ed3af5f95863fd23a82ec51faa1caa514e6352de1e70d3313a0179c69cbe80c6"
+    },
+    {
+      "noteId": "n210",
+      "sourceBlockIds": [
+        "b0582"
+      ],
+      "sourceMarker": "[210]",
+      "opening": "P. de Bérulle, Discursos y elevaciones: Discursos sobre el estado y las grandezas de Jesús, Elevació",
+      "closing": "randezas de Jesús, Elevación sobre la gracia de Dios en Magdalena, Escritos breves, Madrid 2003, 77.",
+      "sha256": "5588381e340912914cf60efeb11bbab610ab618c7704fcf05a48e4c28e8bbdad"
+    },
+    {
+      "noteId": "n211",
+      "sourceBlockIds": [
+        "b0583"
+      ],
+      "sourceMarker": "[211]",
+      "opening": "Ibíd.",
+      "closing": "Ibíd.",
+      "sha256": "ab789cdc4f78b8904d6ee2fadeba1b7d9b66634c26d0218b544e461e915a662a"
+    },
+    {
+      "noteId": "n212",
+      "sourceBlockIds": [
+        "b0584"
+      ],
+      "sourceMarker": "[212]",
+      "opening": "Cf. Discurso en la Conferencia “Inteligencia artificial y cuidado de la Casa común” (5 diciembre 202",
+      "closing": "rtificial y cuidado de la Casa común” (5 diciembre 2025): L’Osservatore Romano, 5 diciembre 2025, 2.",
+      "sha256": "115e7a1b4639014456109c429e177e3831047e722084a8e315f889ec72109868"
+    },
+    {
+      "noteId": "n213",
+      "sourceBlockIds": [
+        "b0585"
+      ],
+      "sourceMarker": "[213]",
+      "opening": "Benedicto XVI, Carta enc. Deus caritas est (25 diciembre 2005), 14: AAS 98 (2006), 228.",
+      "closing": "Benedicto XVI, Carta enc. Deus caritas est (25 diciembre 2005), 14: AAS 98 (2006), 228.",
+      "sha256": "3be0376103d7555133693887a4a8969d9fbf0551d245f94d9277e50cc0ec0936"
+    },
+    {
+      "noteId": "n214",
+      "sourceBlockIds": [
+        "b0586"
+      ],
+      "sourceMarker": "[214]",
+      "opening": "S. Agustín, Sermón 272, Alocución a los neófitos: PL 38, París 1865, col. 1247.",
+      "closing": "S. Agustín, Sermón 272, Alocución a los neófitos: PL 38, París 1865, col. 1247.",
+      "sha256": "c7abdf9b642fbdabf92b1496ff4ec62edd76cf1d7617a2c0f0f8bcefcaedbbec"
+    },
+    {
+      "noteId": "n215",
+      "sourceBlockIds": [
+        "b0587"
+      ],
+      "sourceMarker": "[215]",
+      "opening": "Benedicto XVI, Homilía en la Misa de la Cena del Señor (21 abril 2011): AAS 103 (2011), 321.",
+      "closing": "Benedicto XVI, Homilía en la Misa de la Cena del Señor (21 abril 2011): AAS 103 (2011), 321.",
+      "sha256": "342ddd33fbe5d8b31dfba7afe78155e7b29f1520022b4d3c368a72f242157577"
+    },
+    {
+      "noteId": "n216",
+      "sourceBlockIds": [
+        "b0588"
+      ],
+      "sourceMarker": "[216]",
+      "opening": "Discurso a la Curia Romana en ocasión del saludo de Navidad (22 diciembre 2025): L’Osservatore Roman",
+      "closing": "saludo de Navidad (22 diciembre 2025): L’Osservatore Romano, ed. en lengua española, enero 2026, 10.",
+      "sha256": "33dc6ec1a5bc4e7ca04defd0dfa2d987005fd66496fdf507d3b52187189db266"
+    },
+    {
+      "noteId": "n217",
+      "sourceBlockIds": [
+        "b0589"
+      ],
+      "sourceMarker": "[217]",
+      "opening": "Cf. supra, nn. 11-14.",
+      "closing": "Cf. supra, nn. 11-14.",
+      "sha256": "fbb86f7d093f651d3ced364aae126bf7edd5c825cd6a6ad52b683cf0a7c82475"
+    },
+    {
+      "noteId": "n218",
+      "sourceBlockIds": [
+        "b0590"
+      ],
+      "sourceMarker": "[218]",
+      "opening": "Cf. Discurso en la Conferencia “La dignidad de los niños y adolescentes en la era de la IA” (13 novi",
+      "closing": " y adolescentes en la era de la IA” (13 noviembre 2025): L’Osservatore Romano, 13 noviembre 2025, 3.",
+      "sha256": "2d8736abaf4f75cb1ce1d557833f8d00b10c363fd6710f2c9a38f7a1ed4ca920"
+    },
+    {
+      "noteId": "n219",
+      "sourceBlockIds": [
+        "b0591"
+      ],
+      "sourceMarker": "[219]",
+      "opening": "Cf. Benedicto XVI, Carta enc. Caritas in veritate (29 junio 2009), 34: AAS 101 (2009), 668-670.",
+      "closing": "Cf. Benedicto XVI, Carta enc. Caritas in veritate (29 junio 2009), 34: AAS 101 (2009), 668-670.",
+      "sha256": "e0874ac450a053086e5741a928ab4db0a5e7b380d47bbdf9deaa501f09718a8b"
+    },
+    {
+      "noteId": "n220",
+      "sourceBlockIds": [
+        "b0592"
+      ],
+      "sourceMarker": "[220]",
+      "opening": "Francisco, Exhort. ap. Laudate Deum (4 octubre 2023), 67: AAS 115 (2023), 1059.",
+      "closing": "Francisco, Exhort. ap. Laudate Deum (4 octubre 2023), 67: AAS 115 (2023), 1059.",
+      "sha256": "878df602ee63990165cd2af413fbe6175a2420be6cc610588198918c4fa4c9db"
+    },
+    {
+      "noteId": "n221",
+      "sourceBlockIds": [
+        "b0593"
+      ],
+      "sourceMarker": "[221]",
+      "opening": "Ángelus en la Solemnidad de la Epifanía (6 enero 2026): L’Osservatore Romano, ed. en lengua española",
+      "closing": "idad de la Epifanía (6 enero 2026): L’Osservatore Romano, ed. en lengua española, enero 2026, 34-35.",
+      "sha256": "0e71779d87da36f1f79e749e050ea6fcbe814f7cfd59192d508617604815ecb5"
+    },
+    {
+      "noteId": "n222",
+      "sourceBlockIds": [
+        "b0594"
+      ],
+      "sourceMarker": "[222]",
+      "opening": "Benedicto XVI, Catequesis (15 febrero 2006): L’Osservatore Romano, ed. en lengua española, 7-17 febr",
+      "closing": ", Catequesis (15 febrero 2006): L’Osservatore Romano, ed. en lengua española, 7-17 febrero 2006, 12.",
+      "sha256": "cec1d0432c0e3e2af1c847903ca407c4aab4e7c5363129028b316a083817143c"
+    },
+    {
+      "noteId": "n223",
+      "sourceBlockIds": [
+        "b0595"
+      ],
+      "sourceMarker": "[223]",
+      "opening": "Meditación del Rosario por la paz durante el Jubileo de la Espiritualidad Mariana (11 octubre 2025):",
+      "closing": "idad Mariana (11 octubre 2025): L’Osservatore Romano, ed. en lengua española, noviembre 2025, 19-20.",
+      "sha256": "c59f545597b9e114247698acaccd7199dd1de7cce4b394678e3fb0d67cba8131"
+    },
+    {
+      "noteId": "n224",
+      "sourceBlockIds": [
+        "b0596"
+      ],
+      "sourceMarker": "[224]",
+      "opening": "S. Pablo VI, Homilía en el Santuario mariano de Nuestra Señora de Bonaria (24 abril 1970): AAS 62 (1",
+      "closing": "I, Homilía en el Santuario mariano de Nuestra Señora de Bonaria (24 abril 1970): AAS 62 (1970), 301.",
+      "sha256": "221993c8cebc5ad9c73de72ff2fd1c22d6341a3091b97e77c889b6e56376abd2"
+    }
+  ]
+}

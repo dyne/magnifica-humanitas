@@ -35,3 +35,36 @@ export interface SourceSection {
   /** Synthetic opening label; it is not a printed source heading. */
   editorialLabel?: true;
 }
+
+/** Saved source link metadata; defects are retained, never guessed or repaired. */
+export interface OfficialSourceLink {
+  text: string;
+  name?: string;
+  id?: string;
+  href?: string;
+  [attribute: string]: string | undefined;
+}
+export interface OfficialSourceParagraph extends SourceParagraph {
+  sourceBlockIds: string[];
+  sourceLinks: OfficialSourceLink[];
+  /** UTF-16 indices into normalized text, with an exclusive end. */
+  noteReferences: { noteId: FootnoteId; start: number; end: number; text: string }[];
+}
+export interface OfficialSourceFootnote extends SourceFootnote {
+  sourceBlockIds: string[];
+  sourceLinks: OfficialSourceLink[];
+  sourceMarker: string;
+}
+export interface OfficialSourceCorpus extends SourceCorpus {
+  language: string;
+  sourceHtmlSha256: string;
+  paragraphs: OfficialSourceParagraph[];
+  footnotes: OfficialSourceFootnote[];
+  ancillary: {
+    role: 'front-matter' | 'closing' | 'separator' | 'blank' | 'copyright';
+    sourceBlockId: string;
+    text: string;
+    sourceLinks: OfficialSourceLink[];
+    sha256: string;
+  }[];
+}

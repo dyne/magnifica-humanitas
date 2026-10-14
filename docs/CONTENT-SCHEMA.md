@@ -76,3 +76,16 @@ Tests reject missing coverage, stale hashes, changed exact spans, dangling
 identities, excluded forms, lost protected arguments and incomplete trails.
 They cannot independently prove semantic fidelity; compare prose with the
 source using the [editorial workflow](EDITORIAL.md).
+
+The nine additional official editions live in `content/source/<locale>/` for
+`ar`, `be` (Belarusian), `de`, `es`, `fr`, `it`, `pl`, `pt` and `ru`.
+Each has its own frozen HTML/PDF provenance manifest, reviewed structural block
+inventory, complete corpus, explicit paragraph/note alignment and boundary
+verification. English files retain their existing authority and shape.
+`OfficialSourceCorpus` in `content/source/types.d.ts` adds source block/link
+metadata, complete ancillary records and UTF-16 note-reference coordinates.
+HTML editions have empty `pages` arrays; source block IDs supply provenance.
+Local heading IDs and section contexts belong to the edition; alignment to
+English chapter-heading groups does not imply identical heading block counts.
+These source corpora provide inputs for future localized editorial content;
+they do not themselves certify or enable a translated public experience.

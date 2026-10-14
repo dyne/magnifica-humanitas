@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "locale": "de",
+  "document": "Magnifica Humanitas",
+  "author": "Leo XIV",
+  "documentDate": "2026-05-15",
+  "discoveredFrom": "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html",
+  "canonicalUrl": "http://www.vatican.va/content/leo-xiv/de/encyclicals/documents/20260515-magnifica-humanitas.html",
+  "copyright": "Copyright © Dicastery for Communication – Libreria Editrice Vaticana",
+  "selectedFormat": "HTML",
+  "artifacts": [
+    {
+      "requestedUrl": "https://www.vatican.va/content/leo-xiv/de/encyclicals/documents/20260515-magnifica-humanitas.html",
+      "finalUrl": "https://www.vatican.va/content/leo-xiv/de/encyclicals/documents/20260515-magnifica-humanitas.html",
+      "httpStatus": 200,
+      "retrievedAt": "2026-10-14T16:48:11.355006+00:00",
+      "bytes": 411384,
+      "sha256": "39e1494d45c04d58834b61d677b5ebbaa8e24010937ebb8050ae8bb3e59da69a",
+      "contentType": "text/html",
+      "path": "official.html"
+    },
+    {
+      "requestedUrl": "https://www.vatican.va/content/dam/leo-xiv/pdf/encyclicals/Enzyklika von Papst Leo XIV. „Magnifica Humanitas“ (15. Mai 2026).pdf",
+      "finalUrl": "https://www.vatican.va/content/dam/leo-xiv/pdf/encyclicals/Enzyklika%20von%20Papst%20Leo%20XIV.%20%E2%80%9EMagnifica%20Humanitas%E2%80%9C%20%2815.%20Mai%202026%29.pdf",
+      "httpStatus": 200,
+      "retrievedAt": "2026-10-14T16:48:11.930727+00:00",
+      "bytes": 1724421,
+      "sha256": "b6d13bc9d9e5b938deb064c5b0b6370e4da8f42b80b8318c4e166d3369db3a7a",
+      "contentType": "application/pdf",
+      "path": "comparison.pdf"
+    }
+  ],
+  "acquisitionTool": {
+    "name": "Python urllib.request",
+    "version": "3.13.5"
+  },
+  "extractionTool": {
+    "name": "Python html.parser.HTMLParser",
+    "version": "3.13.5"
+  },
+  "linkedPdfUrls": [
+    "https://www.vatican.va/content/dam/leo-xiv/pdf/encyclicals/Enzyklika von Papst Leo XIV. „Magnifica Humanitas“ (15. Mai 2026).pdf"
+  ],
+  "sourceLanguage": {
+    "code": "de",
+    "name": "German",
+    "script": "Latin",
+    "htmlLang": "de",
+    "openingWitness": "Die von Gott geschaffene"
+  },
+  "inspection": {
+    "method": "Direct inspection of native-language opening, middle and ending; heading and first/last note boundaries. Script and distinctive wording checked, not native-speaker proofreading. Detailed complete-structure validation follows in source-parsing.",
+    "htmlSamples": {
+      "p001": {
+        "sha256": "ce77b42afa1a9544480acfce7d599459a327452501c69328c57b34fd3d853a7d",
+        "opening": "1. Die von Gott geschaffene grossartige Menschheit steht heute vor einer entscheidenden Wahl: Entweder sie errichtet einen neuen Turm zu Babel oder sie erbaut die Stadt, in der Got",
+        "closing": "eimnis des Menschen wahrhaft« [1] aufklärt. Diese großartige Menschheit wird in Jesus Christus zum Weg, zur Wahrheit und zum Leben und eröffnet jedem von uns den Weg zur Erfüllung."
+      },
+      "p123": {
+        "sha256": "f624de35f6364a808362e7986338e364f7112befe9dae40b53a787ce0e0ee308",
+        "opening": "123. Die Geschichte bietet nicht nur eine Auflistung unserer Gewalttaten, sondern auch den Beweis dafür, dass die Menschheit in der Lage ist, Institutionen zum Schutz des gemeinsam",
+        "closing": "nur langsam umgesetzte Umweltschutzverpflichtungen. Doch gerade die Fragilität dieser Ergebnisse zeigt, wie wertvoll die Verantwortung derer ist, die sie anstoßen und unterstützen."
+      },
+      "p245": {
+        "sha256": "1fb907e1e32ca09560a82f685d0943cdd2d04af8f0000ffd6f007a8ca3b996df",
+        "opening": "245. Durchwirken wir mit demselben Glauben wie Maria unsere Welt mit Hoffnung und teilen wir das, was wir sind und was wir haben, damit Jesu Gegenwart unter uns wächst und sein Rei",
+        "closing": "t begleite und in jedem von uns das Vertrauen in das Evangelium bewahre, damit wir Zeugnis geben können von der Schönheit einer großartigen Menschheit, in der Gott gegenwärtig ist."
+      },
+      "openingHeading": "EINLEITUNG",
+      "n001": {
+        "sha256": "4bf92db085b64f5fd74eb1c6c9ed45a6f9cd0842974c7da5358ac688ecfa6140",
+        "opening": "[1] Zweites Vatikanisches Konzil, Pastoralkonstitution Gaudium et spes, 22: AAS 58 (1966), 1042.",
+        "closing": "[1] Zweites Vatikanisches Konzil, Pastoralkonstitution Gaudium et spes, 22: AAS 58 (1966), 1042."
+      },
+      "n224": {
+        "sha256": "29181b93b49cd182ca3879d692e89281d2b0ad2acadb500221a467516be9612f",
+        "opening": "[224] Paul VI., Predigt im Marienheiligtum Unserer Lieben Frau von Bonaria (24. April 1970): AAS 62 (1970), 301.",
+        "closing": "[224] Paul VI., Predigt im Marienheiligtum Unserer Lieben Frau von Bonaria (24. April 1970): AAS 62 (1970), 301."
+      }
+    },
+    "selectionReason": "HTML preserves native Unicode text, numbered blocks, explicit heading markup and note/reference anchors without PDF running headers, page breaks and wrapped lines. The linked PDF is the same language and is retained for comparison, not used for extraction.",
+    "pdfComparison": {
+      "tool": "pdftotext -layout",
+      "version": "25.03.0",
+      "textSha256": "967170e34e60608ea967b8d5b0c4da278fa9558afeee355346ff722167122761",
+      "characters": 327823,
+      "replacementCharacters": 0,
+      "directionalControls": 0,
+      "opening": "22/07/26, 13:44                                       Enzyklika von Papst Leo XIV. „Magnifica Humanitas“ (15. Mai 2026)\n\n\n\n\n       Der HEILIGE STUHL\n       LEO XIV. ENZYKLIKEN                                                                                                DEUTSCH\n\n\n\n\n                                                                   ",
+      "actualLanguage": "de"
+    }
+  }
+}

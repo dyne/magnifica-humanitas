@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "locale": "pl",
+  "document": "Magnifica Humanitas",
+  "author": "Leo XIV",
+  "documentDate": "2026-05-15",
+  "discoveredFrom": "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html",
+  "canonicalUrl": "http://www.vatican.va/content/leo-xiv/pl/encyclicals/documents/20260515-magnifica-humanitas.html",
+  "copyright": "Copyright © Dicastery for Communication – Libreria Editrice Vaticana",
+  "selectedFormat": "HTML",
+  "artifacts": [
+    {
+      "requestedUrl": "https://www.vatican.va/content/leo-xiv/pl/encyclicals/documents/20260515-magnifica-humanitas.html",
+      "finalUrl": "https://www.vatican.va/content/leo-xiv/pl/encyclicals/documents/20260515-magnifica-humanitas.html",
+      "httpStatus": 200,
+      "retrievedAt": "2026-10-14T16:48:12.820535+00:00",
+      "bytes": 392035,
+      "sha256": "bc8550940ee57ee0d1c2ae70b64694eeeb71a29ba12bcdd93c40074c1db8efb8",
+      "contentType": "text/html",
+      "path": "official.html"
+    },
+    {
+      "requestedUrl": "https://www.vatican.va/content/dam/leo-xiv/pdf/encyclicals/Encyklika Magnifica humanitas Ojca Świętego Leona XIV o trosce o sobę ludzką w dobie sztucznej inteligencji (15 maja 2026 r.).pdf",
+      "finalUrl": "https://www.vatican.va/content/dam/leo-xiv/pdf/encyclicals/Encyklika%20Magnifica%20humanitas%20Ojca%20%C5%9Awi%C4%99tego%20Leona%20XIV%20o%20trosce%20o%20sob%C4%99%20ludzk%C4%85%20w%20dobie%20sztucznej%20inteligencji%20%2815%20maja%202026%20r.%29.pdf",
+      "httpStatus": 200,
+      "retrievedAt": "2026-10-14T16:48:13.239188+00:00",
+      "bytes": 1748754,
+      "sha256": "ecf4bbef1d9bacd96e3626b968fb53730a2d16d6f9c8775606d201c550ff4711",
+      "contentType": "application/pdf",
+      "path": "comparison.pdf"
+    }
+  ],
+  "acquisitionTool": {
+    "name": "Python urllib.request",
+    "version": "3.13.5"
+  },
+  "extractionTool": {
+    "name": "Python html.parser.HTMLParser",
+    "version": "3.13.5"
+  },
+  "linkedPdfUrls": [
+    "https://www.vatican.va/content/dam/leo-xiv/pdf/encyclicals/Encyklika Magnifica humanitas Ojca Świętego Leona XIV o trosce o sobę ludzką w dobie sztucznej inteligencji (15 maja 2026 r.).pdf"
+  ],
+  "sourceLanguage": {
+    "code": "pl",
+    "name": "Polish",
+    "script": "Latin",
+    "htmlLang": "pl",
+    "openingWitness": "Wspaniałe człowieczeństwo"
+  },
+  "inspection": {
+    "method": "Direct inspection of native-language opening, middle and ending; heading and first/last note boundaries. Script and distinctive wording checked, not native-speaker proofreading. Detailed complete-structure validation follows in source-parsing.",
+    "htmlSamples": {
+      "p001": {
+        "sha256": "9724008c98f64352cbc94d3dd76da37b712f30a7c71fdc2ba8029d689aa37541",
+        "opening": "1. Wspaniałe człowieczeństwo stworzone przez Boga staje dziś wobec decydującego wyboru: wznieść nową wieżę Babel albo budować miasto, w którym Bóg i ludzkość zamieszkują razem. Każ",
+        "closing": "e jedynie w misterium Słowa Wcielonego” [1]. To wspaniałe człowieczeństwo w Jezusie Chrystusie staje się Drogą, Prawdą i Życiem, otwierając każdemu z nas drogę wzrastania ku pełni."
+      },
+      "p123": {
+        "sha256": "54bc41e043d48a764c2d79f1d5f0780f2ab115ee31e71ac9621c2f410fc74004",
+        "opening": "123. Historia jawi się nie tylko jako katalog naszych aktów przemocy, lecz także jako dowód, że człowiek potrafi tworzyć instytucje zdolne chronić wspólne życie. W ostatnich dwóch ",
+        "closing": "czy o powolnie wdrażanych zobowiązaniach ekologicznych. A przecież właśnie kruchość tych osiągnięć ukazuje, jak cenna jest odpowiedzialność tych, którzy je inicjują i je wspierają."
+      },
+      "p245": {
+        "sha256": "12a2319cab5b5f50fa0bbe40a13e5e4d366f6bb3a85f448c538fb34830b54c5b",
+        "opening": "245. Z tą samą wiarą, jaką miała Maryja, stańmy się tkaczami nadziei w naszym świecie, dzieląc się tym, kim jesteśmy i co posiadamy, tak aby pośród nas wzrastała obecność Jezusa i ",
+        "closing": "iającej się teraźniejszości i strzegła w każdym z nas ufności pokładanej w Ewangelii, tak abyśmy mogli dawać świadectwo o pięknie wspaniałego człowieczeństwa, w którym mieszka Bóg."
+      },
+      "openingHeading": "WPROWADZENIE",
+      "n001": {
+        "sha256": "6d831214c2952070d52007f5121522d905746b3e208db2466757b9b24196a605",
+        "opening": "[1] Sobór Watykański II, Konst. duszp. Gaudium et spes, 22: AAS 58 (1966), s. 1042.",
+        "closing": "[1] Sobór Watykański II, Konst. duszp. Gaudium et spes, 22: AAS 58 (1966), s. 1042."
+      },
+      "n224": {
+        "sha256": "bde93f4d1c6cb3d5419c8216ddc7272995c4c72be073c45c0f357dd304660cf0",
+        "opening": "[224] Św. Paweł VI, Homilia w sanktuarium Matki Bożej w Bonarii (24 kwietnia 1970): AAS 62 (1970), s. 301.",
+        "closing": "[224] Św. Paweł VI, Homilia w sanktuarium Matki Bożej w Bonarii (24 kwietnia 1970): AAS 62 (1970), s. 301."
+      }
+    },
+    "selectionReason": "HTML preserves native Unicode text, numbered blocks, explicit heading markup and note/reference anchors without PDF running headers, page breaks and wrapped lines. The linked PDF is the same language and is retained for comparison, not used for extraction.",
+    "pdfComparison": {
+      "tool": "pdftotext -layout",
+      "version": "25.03.0",
+      "textSha256": "56f62d7a57d39da81517cdb9ed4b85b2e57c8a486a5dce78e33d57a47e1e444e",
+      "characters": 301977,
+      "replacementCharacters": 0,
+      "directionalControls": 0,
+      "opening": "22/07/26, 13:48         Encyklika Magnifica humanitas Ojca Świętego Leona XIV o trosce o sobę ludzką w dobie sztucznej inteligencji (15 maja 2026 r.)\n\n\n\n\n       STOLICA APOSTOLSKA\n       LEON XIV ENCYKLIKI                                                                                                   POLSKI\n\n\n\n\n                                   ",
+      "actualLanguage": "pl"
+    }
+  }
+}

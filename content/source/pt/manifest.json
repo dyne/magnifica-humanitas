@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "locale": "pt",
+  "document": "Magnifica Humanitas",
+  "author": "Leo XIV",
+  "documentDate": "2026-05-15",
+  "discoveredFrom": "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html",
+  "canonicalUrl": "http://www.vatican.va/content/leo-xiv/pt/encyclicals/documents/20260515-magnifica-humanitas.html",
+  "copyright": "Copyright © Dicastery for Communication – Libreria Editrice Vaticana",
+  "selectedFormat": "HTML",
+  "artifacts": [
+    {
+      "requestedUrl": "https://www.vatican.va/content/leo-xiv/pt/encyclicals/documents/20260515-magnifica-humanitas.html",
+      "finalUrl": "https://www.vatican.va/content/leo-xiv/pt/encyclicals/documents/20260515-magnifica-humanitas.html",
+      "httpStatus": 200,
+      "retrievedAt": "2026-10-14T16:48:12.917495+00:00",
+      "bytes": 416027,
+      "sha256": "16e1ed0f5bff74b3cb3f149cdf81a080caef96582c5fbd8d76779d0f5cd5cada",
+      "contentType": "text/html",
+      "path": "official.html"
+    },
+    {
+      "requestedUrl": "https://www.vatican.va/content/dam/leo-xiv/pdf/encyclicals/Carta Encíclica do Santo Padre Leão XIV Magnifica Humanitas (15 de maio de 2026).pdf",
+      "finalUrl": "https://www.vatican.va/content/dam/leo-xiv/pdf/encyclicals/Carta%20Enc%C3%ADclica%20do%20Santo%20Padre%20Le%C3%A3o%20XIV%20Magnifica%20Humanitas%20%2815%20de%20maio%20de%202026%29.pdf",
+      "httpStatus": 200,
+      "retrievedAt": "2026-10-14T16:48:13.140014+00:00",
+      "bytes": 1638373,
+      "sha256": "5c099fac5d3325efa325c5472c9842b7b8b5bb2f41443c87714e0f92234e088a",
+      "contentType": "application/pdf",
+      "path": "comparison.pdf"
+    }
+  ],
+  "acquisitionTool": {
+    "name": "Python urllib.request",
+    "version": "3.13.5"
+  },
+  "extractionTool": {
+    "name": "Python html.parser.HTMLParser",
+    "version": "3.13.5"
+  },
+  "linkedPdfUrls": [
+    "https://www.vatican.va/content/dam/leo-xiv/pdf/encyclicals/Carta Encíclica do Santo Padre Leão XIV Magnifica Humanitas (15 de maio de 2026).pdf"
+  ],
+  "sourceLanguage": {
+    "code": "pt",
+    "name": "Portuguese",
+    "script": "Latin",
+    "htmlLang": "pt",
+    "openingWitness": "A Magnífica Humanidade"
+  },
+  "inspection": {
+    "method": "Direct inspection of native-language opening, middle and ending; heading and first/last note boundaries. Script and distinctive wording checked, not native-speaker proofreading. Detailed complete-structure validation follows in source-parsing.",
+    "htmlSamples": {
+      "p001": {
+        "sha256": "c8caa084f3f91e0d017bc5660f26c77cacf1604fea03d3a1a8c8962577f8248e",
+        "opening": "1. A Magnífica Humanidade criada por Deus encontra-se hoje perante uma escolha decisiva: erguer uma nova torre de Babel ou construir a cidade onde Deus e a humanidade habitam junto",
+        "closing": "e esclarece verdadeiramente». [1] Em Jesus Cristo, esta magnífica humanidade torna-se o Caminho, a Verdade e a Vida, abrindo a cada um de nós a via para crescermos até à plenitude."
+      },
+      "p123": {
+        "sha256": "13cfd9403acb0861d746cc6f9d2e9dff47123b1dd841921d448f8aca5050e672",
+        "opening": "123. A história não se apresenta apenas como o catálogo das nossas violências, mas como a prova de que o ser humano é capaz de criar instituições capazes de proteger a vida em comu",
+        "closing": "entais aplicados com lentidão. E, no entanto, é precisamente a fragilidade destes resultados que demonstra o quão preciosa é a responsabilidade daqueles que os iniciam e sustentam."
+      },
+      "p245": {
+        "sha256": "cbd02acdc7c791d73e1f945968e589940a84f40e35569694c3e64393d1ac9e3a",
+        "opening": "245. Com a mesma fé de Maria, tornemo-nos tecelões de esperança no nosso mundo, partilhando o que somos e o que temos, de modo que a presença de Jesus cresça entre nós e o seu Rein",
+        "closing": " os nossos passos no presente em mudança e guarde em cada um de nós a confiança no Evangelho, de modo que possamos testemunhar a beleza duma magnifica humanidade habitada por Deus."
+      },
+      "openingHeading": "INTRODUÇÃO",
+      "n001": {
+        "sha256": "e956713e15e263ebca8d26fb1b6247141e76e0f047e307014059b1837b34af29",
+        "opening": "[1] Conc. Ecum. Vaticano II, Const. past. Gaudium et spes, 22: AAS 58 (1966), 1042.",
+        "closing": "[1] Conc. Ecum. Vaticano II, Const. past. Gaudium et spes, 22: AAS 58 (1966), 1042."
+      },
+      "n224": {
+        "sha256": "f23fc6c91aa2b983876595b69443b48aaf63f9d352ad89f8f61c946da51c4767",
+        "opening": "[224] S. Paulo VI, Homilia na Peregrinação ao Santuário Mariano de Nossa Senhora de Bonária na Ilha da Sardenha (24 de abril de 1970): AAS 62 (1970), 301.",
+        "closing": "[224] S. Paulo VI, Homilia na Peregrinação ao Santuário Mariano de Nossa Senhora de Bonária na Ilha da Sardenha (24 de abril de 1970): AAS 62 (1970), 301."
+      }
+    },
+    "selectionReason": "HTML preserves native Unicode text, numbered blocks, explicit heading markup and note/reference anchors without PDF running headers, page breaks and wrapped lines. The linked PDF is the same language and is retained for comparison, not used for extraction.",
+    "pdfComparison": {
+      "tool": "pdftotext -layout",
+      "version": "25.03.0",
+      "textSha256": "6389de0f1889ff815167dbe20c51f717dd0d14327f1d5eef83dd17649f10cc3f",
+      "characters": 290233,
+      "replacementCharacters": 0,
+      "directionalControls": 0,
+      "opening": "22/07/26, 13:48                              Carta Encíclica do Santo Padre Leão XIV Magnifica Humanitas (15 de maio de 2026)\n\n\n\n\n       A SANTA SÉ\n       LEÃO XIV ENCÍCLICAS                                                                                               PORTUGUÊS\n\n\n\n\n                                                               CART",
+      "actualLanguage": "pt"
+    }
+  }
+}

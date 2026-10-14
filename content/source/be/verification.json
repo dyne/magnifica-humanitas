@@ -1,0 +1,2397 @@
+{
+  "editionId": "mh-be-official-html-2026-10-14",
+  "sourceHtmlSha256": "6bd1bfd518c50716a4b655404c06b6cb5df57946bedbf48268b93d443d38f0ec",
+  "method": "Block inventory and exact-text boundary comparison against saved official HTML; opening and closing witnesses for all requested paragraph samples and every note. Automated structural evidence, not native-speaker proofreading.",
+  "sourceBlockCount": 598,
+  "accountedBlockCount": 598,
+  "blockRoles": {
+    "blank": 3,
+    "closing": 2,
+    "front-matter": 42,
+    "heading": 81,
+    "note": 224,
+    "paragraph": 245,
+    "separator": 1
+  },
+  "pdfBoundaryReview": {
+    "sourceHtmlSha256": "6bd1bfd518c50716a4b655404c06b6cb5df57946bedbf48268b93d443d38f0ec",
+    "pdfSha256": "8b24a42fdcc29be2d8abd785db61a7799a928de9dce63862f43ed57a5a5ad8d5",
+    "tool": "pdftotext version 25.03.0",
+    "extractedTextSha256": "db606ad408d57470f77f2932657cc905326ccf65903d2fd813ba7563c8f02ace",
+    "method": "Compare first/last 100 characters of HTML paragraphs 1, 123, 245 against full PDF layout text; ignore whitespace and fi/fl print ligatures only. Matches establish boundary witnesses, not complete edition equality.",
+    "samples": [
+      {
+        "paragraphId": "p001",
+        "sha256": "228045d1ab10778c15127093e9b1d403d692f668bf6e99df239572c61017b13e",
+        "openingMatchesPdf": false,
+        "closingMatchesPdf": false
+      },
+      {
+        "paragraphId": "p123",
+        "sha256": "7edc14cc29ac694fc8349c251e4e6e995dd4a14075b20ccc7b3d4f1bc2febf37",
+        "openingMatchesPdf": false,
+        "closingMatchesPdf": false
+      },
+      {
+        "paragraphId": "p245",
+        "sha256": "24fc15eedf231f76e4a82c3e320476d98cf82abdc8f728b83c48fe686fcfff02",
+        "openingMatchesPdf": false,
+        "closingMatchesPdf": false
+      }
+    ]
+  },
+  "paragraphSamples": [
+    {
+      "paragraphId": "p001",
+      "sourceBlockIds": [
+        "b0044"
+      ],
+      "sha256": "228045d1ab10778c15127093e9b1d403d692f668bf6e99df239572c61017b13e",
+      "opening": "Чалавецтва, створанае Богам ва ўсёй сваёй велічы, стаіць сёння перад вырашальным выбарам: узвесці новую Бабілёнскую вежу ці будаваць горад, у якім Бог і чалавецтва жывуць разам. Ко",
+      "closing": "олькі ў таямніцы ўцелаўлёнага Слова» [1]. У Езусе Хрысце гэтая поўная велічы чалавечнасць становіцца Дарогай, Праўдай і Жыццём, адкрываючы кожнаму з нас шлях узрастання да паўнаты.",
+      "previousItem": "heading",
+      "nextItem": "paragraph"
+    },
+    {
+      "paragraphId": "p052",
+      "sourceBlockIds": [
+        "b0114"
+      ],
+      "sha256": "9827704ada704948c20a93cd038fdd28620a755ba15235b0e92cf9c9032911be",
+      "opening": "Калі мы гаворым пра годнасць, мы не заўсёды выкарыстоўваем гэтае слова ў аднолькавым значэнні. Часам мы маем на ўвазе маральную годнасць, а менавіта, на што арыентуецца чалавек у с",
+      "closing": "алюбіў Бог [60]. Ніякі грэх, няўдача, прыніжэнне або дыскрымінацыя не могуць паменшыць непарушнай каштоўнасці чалавечага жыцця, якога захацеў Бог і якое паклікаў да існавання [61].",
+      "previousItem": "paragraph",
+      "nextItem": "paragraph"
+    },
+    {
+      "paragraphId": "p099",
+      "sourceBlockIds": [
+        "b0174"
+      ],
+      "sha256": "d38fff24f489217d9970e9642c7dcfc9dbf8fd24c78967442b6b941e65083b91",
+      "opening": "Немагчыма даць адзінае і поўнае азначэнне штучнага інтэлекту. Аднак можна сказаць, што мы павінны пазбягаць памылковага атаясамлівання гэтага тыпу «інтэлекту» з чалавечым. Сістэмы ",
+      "closing": "ачэнне і вернасць. Хутчэй, гэта форма статыстычнай адаптацыі, заснаваная на дадзеных і зваротнай сувязі, якая можа быць надзвычай эфектыўнай, але не прадугледжвае ўнутранага росту.",
+      "previousItem": "paragraph",
+      "nextItem": "heading"
+    },
+    {
+      "paragraphId": "p176",
+      "sourceBlockIds": [
+        "b0275"
+      ],
+      "sha256": "81a270fe8a36c5ad6622281cd1ef545c4428cfa3de79cf3062c0314dfc60a29f",
+      "opening": "Развіваючы сваё вучэнне, Касцёл паступова прыйшоў да глыбейшага ўсведамлення сур’ёзнасці гэтых пытанняў. Гэта праўда, што падзеі мінулага нельга ацэньваць анахранічна, так, быццам ",
+      "closing": "і прыніжэнне, якія рабства прынесла столькім людзям, у супярэчнасці з іх бязмежнай годнасцю як асобаў, бясконца ўмілаваных Панам. За гэта, ад імя Касцёла, я шчыра прашу прабачэння.",
+      "previousItem": "paragraph",
+      "nextItem": "paragraph"
+    },
+    {
+      "paragraphId": "p197",
+      "sourceBlockIds": [
+        "b0304"
+      ],
+      "sha256": "cbf5a00f1ab71251ef27de2f87461a21951cf0cab85836a28f6af1542bcfbde0",
+      "opening": "Такі сцэнар суправаджаецца няўмольным развіццём сістэм узбраення, у прыватнасці тых, якія ўключаюць штучны інтэлект. Апостальская Сталіца нядаўна зазначыла, што ўсё большая лёгкасц",
+      "closing": "ваенных дзеяннях павінны падпарадкоўвацца самым строгім этычным абмежаванням, каб гарантаваць павагу да чалавечай годнасці і святасці жыцця і не стымуляваць гонку ўзбраенняў [184].",
+      "previousItem": "heading",
+      "nextItem": "paragraph"
+    },
+    {
+      "paragraphId": "p198",
+      "sourceBlockIds": [
+        "b0305"
+      ],
+      "sha256": "3927e2cdddde5e1338cbc8b8ec5859cd511e4c930a0ed2c8a34301bf947a8e5b",
+      "opening": "Часам ідзе гаворка пра «штучных маральных агентаў», быццам бы машыны здольныя адрозніваць дабро ад зла з большай паслядоўнасцю, чым чалавек. Аднак маральнае меркаванне нельга звесц",
+      "closing": " ствараем, каб яны маглі зрабіць свой унёсак у маральную экасістэму, у якой людзі лепш прыслухоўваюцца да свайго сумлення, а мадэлі штучнага інтэлекту маюць адпаведныя абмежаванні.",
+      "previousItem": "paragraph",
+      "nextItem": "paragraph"
+    },
+    {
+      "paragraphId": "p199",
+      "sourceBlockIds": [
+        "b0306"
+      ],
+      "sha256": "8fbab0e58c06d9606526a492acf6c12641ee5b29cde00b14b4b634a87f52f71a",
+      "opening": "Недастаткова спасылацца на этыку ў цэлым: неабходна ўказаць канкрэтныя крытэрыі распазнавання. Першы такі крытэрый датычыцца асабістай адказнасці. Калі рашэнне аб удары становіцца ",
+      "closing": "ка ў твар, зніжае маральны парог канфлікту. Пры выбары мэты і пры ўжыванні сілы нельга блытаць камбатантаў і некамбатантаў, а таксама ігнараваць уплыў на безабароннае насельніцтва.",
+      "previousItem": "paragraph",
+      "nextItem": "paragraph"
+    },
+    {
+      "paragraphId": "p200",
+      "sourceBlockIds": [
+        "b0307"
+      ],
+      "sha256": "d599eef88a4f140fa085995706fc6c89d77e209028ea7763da5f1db9d18b44a2",
+      "opening": "З прыведзеных крытэрыяў вынікаюць пэўныя безумоўныя патрабаванні. Па-першае, усе сістэмы, якія выкарыстоўваюцца ў ваенных мэтах, павінны гарантаваць магчымасць адсочвання і рэканст",
+      "closing": "тым ліку на міжнародным узроўні, каб стрымліваць гонку тэхналагічных узбраенняў і гарантаваць надзейную абарону мірнага насельніцтва і інфраструктуру, неабходную для яго выжывання.",
+      "previousItem": "paragraph",
+      "nextItem": "heading"
+    },
+    {
+      "paragraphId": "p228",
+      "sourceBlockIds": [
+        "b0346"
+      ],
+      "sha256": "29e06bc7017327278965d8578e6e6a6117daed96bd6d4c71b8d85eba4927aa05",
+      "opening": "Гэтыя шляхі ўгрунтавання справядлівасці чэрпаюць сілы з малітвы і, у сваю чаргу, сілкуюць малітву. Для кожнага з нас спакой паходзіць у першую чаргу «ад Бога, Бога, які любіць нас ",
+      "closing": "эдру Пятра. Я хачу паўтарыць іх і папрасіць усіх маліцца аб гэтым дары. Давайце ніколі не стамляцца маліцца аб спакоі і самааддана імкнуцца да яго ў нашых адносінах і ў грамадстве.",
+      "previousItem": "heading",
+      "nextItem": "heading"
+    },
+    {
+      "paragraphId": "p245",
+      "sourceBlockIds": [
+        "b0368"
+      ],
+      "sha256": "24fc15eedf231f76e4a82c3e320476d98cf82abdc8f728b83c48fe686fcfff02",
+      "opening": "З верай, якую мела Марыя, станем жа «ткачамі надзеі» ў нашым свеце, дзелячыся тым, кім з’яўляемся і што маем, каб прысутнасць Езуса сярод нас узрастала, а Ягонае Валадарства развів",
+      "closing": "ificat, каб Яна накіроўвала нашыя крокі ў гэты час перамен і захоўвала ў кожным з нас сапраўдную веру ў Евангелле, каб мы маглі сведчыць пра веліч чалавецтва, у якім пасяліўся Бог.",
+      "previousItem": "paragraph",
+      "nextItem": "closing"
+    }
+  ],
+  "noteBoundaries": [
+    {
+      "noteId": "n001",
+      "sourceBlockIds": [
+        "b0373"
+      ],
+      "sourceMarker": "[1]",
+      "opening": "Другі Ватыканскі Сабор, Пастырская канст. Gaudium et spes, 22.",
+      "closing": "Другі Ватыканскі Сабор, Пастырская канст. Gaudium et spes, 22.",
+      "sha256": "528146c7bbc2cd1f4ecc8012487af7f600f6a4336cf434d90a6eba635396ce76"
+    },
+    {
+      "noteId": "n002",
+      "sourceBlockIds": [
+        "b0374"
+      ],
+      "sourceMarker": "[2]",
+      "opening": "Пар. тамсама, 11.",
+      "closing": "Пар. тамсама, 11.",
+      "sha256": "22fc689e850648f232252b46639940c2bbca6022f05fa0e3261c846c829df5b5"
+    },
+    {
+      "noteId": "n003",
+      "sourceBlockIds": [
+        "b0375"
+      ],
+      "sourceMarker": "[3]",
+      "opening": "Той жа, Дагматычная канст. Lumen gentium, 1.",
+      "closing": "Той жа, Дагматычная канст. Lumen gentium, 1.",
+      "sha256": "15fc1981d817b3bd67c3a262fef966e447a0ad5442a0d5b334d89a816cdbbaa8"
+    },
+    {
+      "noteId": "n004",
+      "sourceBlockIds": [
+        "b0376"
+      ],
+      "sourceMarker": "[4]",
+      "opening": "Пар. Леў XIII, Энц. Rerum novarum (15 мая 1891), 22: ASS 23 (1890-1891), 653.",
+      "closing": "Пар. Леў XIII, Энц. Rerum novarum (15 мая 1891), 22: ASS 23 (1890-1891), 653.",
+      "sha256": "3a8a0b78885f8cba9704a242ce9e1ec60c37d61f5d6ba79f3aca4924504a96a6"
+    },
+    {
+      "noteId": "n005",
+      "sourceBlockIds": [
+        "b0377"
+      ],
+      "sourceMarker": "[5]",
+      "opening": "Бэнэдыкт XVI, Энц. Caritas in veritate (29 чэрвеня 2009), 69.",
+      "closing": "Бэнэдыкт XVI, Энц. Caritas in veritate (29 чэрвеня 2009), 69.",
+      "sha256": "829809e3b8b653d366bf491ccf0e8cb02f5f6087b7ed08823934e1458a307f03"
+    },
+    {
+      "noteId": "n006",
+      "sourceBlockIds": [
+        "b0378"
+      ],
+      "sourceMarker": "[6]",
+      "opening": "Францішак, Энц. Laudato si’ (24 мая 2015), 104.",
+      "closing": "Францішак, Энц. Laudato si’ (24 мая 2015), 104.",
+      "sha256": "0e1f54fdceafbc0d8e7a0bfe6589fed8cb15bd80563ae94061c215239b2137f9"
+    },
+    {
+      "noteId": "n007",
+      "sourceBlockIds": [
+        "b0379"
+      ],
+      "sourceMarker": "[7]",
+      "opening": "Тамсама.",
+      "closing": "Тамсама.",
+      "sha256": "91c195fa392aa147a945b43518471a136d3ba23ecc5e9c2c521659306c3eecdf"
+    },
+    {
+      "noteId": "n008",
+      "sourceBlockIds": [
+        "b0380"
+      ],
+      "sourceMarker": "[8]",
+      "opening": "Святы Аўгустын, Confessiones, I, 1, 1: CCSL 27, Turnhout, 1.",
+      "closing": "Святы Аўгустын, Confessiones, I, 1, 1: CCSL 27, Turnhout, 1.",
+      "sha256": "3ed625eeb4ce0dcc6985d2e8744d4e0ad58f980cb50e45b442a05ffa392a916f"
+    },
+    {
+      "noteId": "n009",
+      "sourceBlockIds": [
+        "b0381"
+      ],
+      "sourceMarker": "[9]",
+      "opening": "Францішак, Апост. адг. Evangelii gaudium (24 лістапада 2013), 183.",
+      "closing": "Францішак, Апост. адг. Evangelii gaudium (24 лістапада 2013), 183.",
+      "sha256": "a3e6f6df0e8fea519fec36070c83bdb9f9399754bdad2b34b5c255f716e63b80"
+    },
+    {
+      "noteId": "n010",
+      "sourceBlockIds": [
+        "b0382"
+      ],
+      "sourceMarker": "[10]",
+      "opening": "Другі Ватыканскі Сабор, Пастырская канст. Gaudium et spes, 36; пар. Той жа, Дэкрэт Apostolicam actuo",
+      "closing": "анскі Сабор, Пастырская канст. Gaudium et spes, 36; пар. Той жа, Дэкрэт Apostolicam actuositatem, 7.",
+      "sha256": "12d00c7431fbd01a0c25245ffecf913c0b6aeb7ffa8176bf42689981a650b3c9"
+    },
+    {
+      "noteId": "n011",
+      "sourceBlockIds": [
+        "b0383"
+      ],
+      "sourceMarker": "[11]",
+      "opening": "Другі Ватыканскі Сабор, Gaudium et spes, 44.",
+      "closing": "Другі Ватыканскі Сабор, Gaudium et spes, 44.",
+      "sha256": "fcd1b53f4c0895a8bace7320f85ecd3ca8d4a0700cd3a4d77c07718d0c0af70c"
+    },
+    {
+      "noteId": "n012",
+      "sourceBlockIds": [
+        "b0384"
+      ],
+      "sourceMarker": "[12]",
+      "opening": "Францішак, Апост. адг. Evangelii gaudium (24 лістапада 2013), 257.",
+      "closing": "Францішак, Апост. адг. Evangelii gaudium (24 лістапада 2013), 257.",
+      "sha256": "36f48e184a07337c908abf7ce7907576f462564cc0a54171eddc5a2dfa959000"
+    },
+    {
+      "noteId": "n013",
+      "sourceBlockIds": [
+        "b0385"
+      ],
+      "sourceMarker": "[13]",
+      "opening": "Святы Ян Павел ІІ, Апостальскі ліст у форме Motu proprio Socialium scientiarum (1 студзеня 1994): AA",
+      "closing": ", Апостальскі ліст у форме Motu proprio Socialium scientiarum (1 студзеня 1994): AAS 86 (1994), 209.",
+      "sha256": "45f05ab012ebe2411c8277f4ef174002d352d27e9f070a1e1d6e72f0585a42fb"
+    },
+    {
+      "noteId": "n014",
+      "sourceBlockIds": [
+        "b0386"
+      ],
+      "sourceMarker": "[14]",
+      "opening": "Францішак, Энц. Laudato si’ (24 мая 2015), 61.",
+      "closing": "Францішак, Энц. Laudato si’ (24 мая 2015), 61.",
+      "sha256": "919dc8f2bba13bde1451ae8e5670cc9af00f940bcd9913ae0ad942737ffc1e2f"
+    },
+    {
+      "noteId": "n015",
+      "sourceBlockIds": [
+        "b0387"
+      ],
+      "sourceMarker": "[15]",
+      "opening": "Пар. Святы Ян Павел ІІ, Энц. Sollicitudo rei socialis (30 снежня 1987), 41: AAS 80 (1988), 570-572.",
+      "closing": "Пар. Святы Ян Павел ІІ, Энц. Sollicitudo rei socialis (30 снежня 1987), 41: AAS 80 (1988), 570-572.",
+      "sha256": "d38f9dd10dc250cc2997e786f9a1c2dab0ff20b9754482a5857164d9dfaea656"
+    },
+    {
+      "noteId": "n016",
+      "sourceBlockIds": [
+        "b0388"
+      ],
+      "sourceMarker": "[16]",
+      "opening": "Той жа, Апост. ліст Tertio millennio adveniente (10 лістапада 1994), 35: AAS 87 (1995), 27.",
+      "closing": "Той жа, Апост. ліст Tertio millennio adveniente (10 лістапада 1994), 35: AAS 87 (1995), 27.",
+      "sha256": "8066a324bf343ce0ee45359360b4db3e8dbc2d5bd1c8a2d5148438dc1a2f1408"
+    },
+    {
+      "noteId": "n017",
+      "sourceBlockIds": [
+        "b0389"
+      ],
+      "sourceMarker": "[17]",
+      "opening": "Прамова да членаў Папскага фонду «Centesimus annus Pro Pontifice» (17 мая 2025): AAS 117 (2025), 696",
+      "closing": "рамова да членаў Папскага фонду «Centesimus annus Pro Pontifice» (17 мая 2025): AAS 117 (2025), 696.",
+      "sha256": "78e4ff7326dd3be7ed2e1a18eea4b5a451213457c863090037a8fa47fb7e04da"
+    },
+    {
+      "noteId": "n018",
+      "sourceBlockIds": [
+        "b0390"
+      ],
+      "sourceMarker": "[18]",
+      "opening": "Францішак, Апост. адг. Evangelii gaudium (24 лістапада 2013), 222.",
+      "closing": "Францішак, Апост. адг. Evangelii gaudium (24 лістапада 2013), 222.",
+      "sha256": "645a0c7ffac4f0907533c53371cb406c8d867d3b7ce389672fbf1b9d3f06b51c"
+    },
+    {
+      "noteId": "n019",
+      "sourceBlockIds": [
+        "b0391"
+      ],
+      "sourceMarker": "[19]",
+      "opening": "Пар. тамсама, 236; той жа, Энц. Fratelli tutti (3 кастрычніка 2020), 215.",
+      "closing": "Пар. тамсама, 236; той жа, Энц. Fratelli tutti (3 кастрычніка 2020), 215.",
+      "sha256": "c14fe8ec14d9ebf591d5e500d07221b02fcc0923766e12d4ff9d13492c786978"
+    },
+    {
+      "noteId": "n020",
+      "sourceBlockIds": [
+        "b0392"
+      ],
+      "sourceMarker": "[20]",
+      "opening": "Другі Ватыканскі Сабор, Дагматычная канст. Lumen gentium, 13.",
+      "closing": "Другі Ватыканскі Сабор, Дагматычная канст. Lumen gentium, 13.",
+      "sha256": "28267ebe4c0fbfb9b0325bbc9bafe42a244f9a3a807669df6ceb5a4953084069"
+    },
+    {
+      "noteId": "n021",
+      "sourceBlockIds": [
+        "b0393"
+      ],
+      "sourceMarker": "[21]",
+      "opening": "Пар. Святы Павел VI, Апостальскі ліст Octogesima adveniens (14 мая 1971), 4: AAS 63 (1971), 403.",
+      "closing": "Пар. Святы Павел VI, Апостальскі ліст Octogesima adveniens (14 мая 1971), 4: AAS 63 (1971), 403.",
+      "sha256": "6afbd614a45457034be19be2adcfec529617fea049a416d27c4a5b53bba2ff93"
+    },
+    {
+      "noteId": "n022",
+      "sourceBlockIds": [
+        "b0394"
+      ],
+      "sourceMarker": "[22]",
+      "opening": "Пар. Францішак, Апост. адг. Evangelii gaudium (24 лістапада 2013), 243.",
+      "closing": "Пар. Францішак, Апост. адг. Evangelii gaudium (24 лістапада 2013), 243.",
+      "sha256": "fe3c00a467cbbb6f9cd782336fbfef6781536cd4601dabd82782e8cff78b35fb"
+    },
+    {
+      "noteId": "n023",
+      "sourceBlockIds": [
+        "b0395"
+      ],
+      "sourceMarker": "[23]",
+      "opening": "Пар. Пій XII, Апост. адг. Menti nostrae (23 верасня 1950): AAS 42 (1950), 657-702.",
+      "closing": "Пар. Пій XII, Апост. адг. Menti nostrae (23 верасня 1950): AAS 42 (1950), 657-702.",
+      "sha256": "6c87467a5a2504dc7a0d76c456664fc82d8bbf5f78f821ef211c695fbe396464"
+    },
+    {
+      "noteId": "n024",
+      "sourceBlockIds": [
+        "b0396"
+      ],
+      "sourceMarker": "[24]",
+      "opening": "Святы Ян Павел II, Энц. Centesimus annus (1 мая 1991), 5: AAS 83 (1991), 799.",
+      "closing": "Святы Ян Павел II, Энц. Centesimus annus (1 мая 1991), 5: AAS 83 (1991), 799.",
+      "sha256": "11860bde25187c69f724d6335714708013b0e4b77d65fe52b36dc7fd2bd2a06c"
+    },
+    {
+      "noteId": "n025",
+      "sourceBlockIds": [
+        "b0397"
+      ],
+      "sourceMarker": "[25]",
+      "opening": "Пій XI, Энц. Quadragesimo anno (15 мая 1931), 39: AAS 23 (1931), 189; гл. Пій XII, Messaggio radiofo",
+      "closing": "89; гл. Пій XII, Messaggio radiofonico nel L anniversario della «Rerum novarum»: AAS 33 (1941), 198.",
+      "sha256": "25c43b80ca199d1f178493bf071e96a950544a5f111fc50cda9b901b5cd8abaa"
+    },
+    {
+      "noteId": "n026",
+      "sourceBlockIds": [
+        "b0398"
+      ],
+      "sourceMarker": "[26]",
+      "opening": "Пар. Пій ХІІ, Discorso al Sacro Collegio dei Cardinali e alla Prelatura Romana (24 снежня 1940): AAS",
+      "closing": "iscorso al Sacro Collegio dei Cardinali e alla Prelatura Romana (24 снежня 1940): AAS 33 (1941), 13.",
+      "sha256": "d4e9591a9cfeb3796017cc430eb1b2324b992acf4e6a5b0b6ae716edf291b6a7"
+    },
+    {
+      "noteId": "n027",
+      "sourceBlockIds": [
+        "b0399"
+      ],
+      "sourceMarker": "[27]",
+      "opening": "Пар. Святы Ян XXIII, Энц. Mater et magistra (15 мая 1961), 2-3: AAS 53 (1961), 402.",
+      "closing": "Пар. Святы Ян XXIII, Энц. Mater et magistra (15 мая 1961), 2-3: AAS 53 (1961), 402.",
+      "sha256": "ecd8c5c955edee4add713a7b3943d6dd3b642c044b3324ba791044c8cbb9a0d5"
+    },
+    {
+      "noteId": "n028",
+      "sourceBlockIds": [
+        "b0400"
+      ],
+      "sourceMarker": "[28]",
+      "opening": "Пар. той жа, Энц. Pacem in terris (11 красавіка 1963), 87: AAS 55 (1963), 301.",
+      "closing": "Пар. той жа, Энц. Pacem in terris (11 красавіка 1963), 87: AAS 55 (1963), 301.",
+      "sha256": "4f3535a640f9bf66b743a9e7f564f2c15d5edfcb733a90d0c1fa1ee2cc8c840c"
+    },
+    {
+      "noteId": "n029",
+      "sourceBlockIds": [
+        "b0401"
+      ],
+      "sourceMarker": "[29]",
+      "opening": "Пар. Другі Ватыканскі Сабор, Пастырская канст. Gaudium et spes, 26.",
+      "closing": "Пар. Другі Ватыканскі Сабор, Пастырская канст. Gaudium et spes, 26.",
+      "sha256": "8d3bf37f3fe7b9ede00caee99a8d90f55d1f13f77ff2f08a5a2bdf0d5f98561d"
+    },
+    {
+      "noteId": "n030",
+      "sourceBlockIds": [
+        "b0402"
+      ],
+      "sourceMarker": "[30]",
+      "opening": "Пар. той жа, Дэкл. Dignitatis humanae, 2.",
+      "closing": "Пар. той жа, Дэкл. Dignitatis humanae, 2.",
+      "sha256": "86977198b776a9d2f67443edcb7ea293b58df61deb41661ee9a642396db141e1"
+    },
+    {
+      "noteId": "n031",
+      "sourceBlockIds": [
+        "b0403"
+      ],
+      "sourceMarker": "[31]",
+      "opening": "Пар. Святы Павел VI, Энц. Populorum progressio (26 сакавіка 1967), 14: AAS 59 (1967), 264.",
+      "closing": "Пар. Святы Павел VI, Энц. Populorum progressio (26 сакавіка 1967), 14: AAS 59 (1967), 264.",
+      "sha256": "e3bfc397e1e43e016cedf4f9cee11475fae4d1634ae806d3832e5f96668e6ec1"
+    },
+    {
+      "noteId": "n032",
+      "sourceBlockIds": [
+        "b0404"
+      ],
+      "sourceMarker": "[32]",
+      "opening": "Тамсама, 87: AAS 59 (1967), 299.",
+      "closing": "Тамсама, 87: AAS 59 (1967), 299.",
+      "sha256": "f620cc5c08a46e53bc18195ce023b4eeba706a9dccf42df653400f81048e7995"
+    },
+    {
+      "noteId": "n033",
+      "sourceBlockIds": [
+        "b0405"
+      ],
+      "sourceMarker": "[33]",
+      "opening": "Пар. той жа, Апостальскі ліст Octogesima adveniens (14 мая 1971), 4-7: AAS 63 (1971), 404-406.",
+      "closing": "Пар. той жа, Апостальскі ліст Octogesima adveniens (14 мая 1971), 4-7: AAS 63 (1971), 404-406.",
+      "sha256": "3e4791754998b677daa8fbefb79a02e29136a188c28e47d188c6d8f224e00ab4"
+    },
+    {
+      "noteId": "n034",
+      "sourceBlockIds": [
+        "b0406"
+      ],
+      "sourceMarker": "[34]",
+      "opening": "Святы Ян Павел ІІ, Энц. Sollicitudo rei socialis (30 снежня 1987), 36: AAS 80 (1988), 561.",
+      "closing": "Святы Ян Павел ІІ, Энц. Sollicitudo rei socialis (30 снежня 1987), 36: AAS 80 (1988), 561.",
+      "sha256": "7264c50ae4837b5ab735c50910aba2666ade39361559c29e952f85c9f9a126d8"
+    },
+    {
+      "noteId": "n035",
+      "sourceBlockIds": [
+        "b0407"
+      ],
+      "sourceMarker": "[35]",
+      "opening": "Пар. той жа, Энц. Laborem exercens (14 верасня 1981), 19: AAS 73 (1981), 625-629.",
+      "closing": "Пар. той жа, Энц. Laborem exercens (14 верасня 1981), 19: AAS 73 (1981), 625-629.",
+      "sha256": "f7286d6138debdb3c64c6260707f4c12124025e7758b5ff1ff6ecd0b56ebea0a"
+    },
+    {
+      "noteId": "n036",
+      "sourceBlockIds": [
+        "b0408"
+      ],
+      "sourceMarker": "[36]",
+      "opening": "Пар. тамсама, 10: AAS 73 (1981), 600-602.",
+      "closing": "Пар. тамсама, 10: AAS 73 (1981), 600-602.",
+      "sha256": "92c7ed03c53f6bd8af7bae9d787d890d57214d806f1197c57622598bf311bab8"
+    },
+    {
+      "noteId": "n037",
+      "sourceBlockIds": [
+        "b0409"
+      ],
+      "sourceMarker": "[37]",
+      "opening": "Пар. той жа, Энц. Sollicitudo rei socialis (30 снежня 1987), 14: AAS 80 (1988), 526-528.",
+      "closing": "Пар. той жа, Энц. Sollicitudo rei socialis (30 снежня 1987), 14: AAS 80 (1988), 526-528.",
+      "sha256": "12c603c18bfbea90ef0c3aa735f02e68f72146ea03f78ddbce22ba7205dbfd39"
+    },
+    {
+      "noteId": "n038",
+      "sourceBlockIds": [
+        "b0410"
+      ],
+      "sourceMarker": "[38]",
+      "opening": "Пар. тамсама, 16: AAS 80 (1988), 531.",
+      "closing": "Пар. тамсама, 16: AAS 80 (1988), 531.",
+      "sha256": "79ab7a878bb16968f20233cc45faf8c4d99315d1d771f00441d7021d81fc9804"
+    },
+    {
+      "noteId": "n039",
+      "sourceBlockIds": [
+        "b0411"
+      ],
+      "sourceMarker": "[39]",
+      "opening": "Пар. тамсама, 31-33: AAS 80 (1988), 555-559.",
+      "closing": "Пар. тамсама, 31-33: AAS 80 (1988), 555-559.",
+      "sha256": "ea36412328bd76ac41efb5366bf87c5be5a5da1d1c9bee04c1bcc67b8dbdf0eb"
+    },
+    {
+      "noteId": "n040",
+      "sourceBlockIds": [
+        "b0412"
+      ],
+      "sourceMarker": "[40]",
+      "opening": "Пар. той жа, Энц. Centesimus annus (1 мая 1991), 46: AAS 83 (1991), 850-851.",
+      "closing": "Пар. той жа, Энц. Centesimus annus (1 мая 1991), 46: AAS 83 (1991), 850-851.",
+      "sha256": "9d2b0d12ed1edfce1e751291c01df605370ebf40522709e6990b5c472cf8da01"
+    },
+    {
+      "noteId": "n041",
+      "sourceBlockIds": [
+        "b0413"
+      ],
+      "sourceMarker": "[41]",
+      "opening": "Пар. тамсама, 42: AAS 83 (1991), 845-846.",
+      "closing": "Пар. тамсама, 42: AAS 83 (1991), 845-846.",
+      "sha256": "ca3af7225f923ed011e42ef54016f66fe75d70079ab3f3cd60af47a96280801d"
+    },
+    {
+      "noteId": "n042",
+      "sourceBlockIds": [
+        "b0414"
+      ],
+      "sourceMarker": "[42]",
+      "opening": "Бэнэдыкт XVI, Энц. Caritas in veritate (29 чэрвеня 2009), 21.",
+      "closing": "Бэнэдыкт XVI, Энц. Caritas in veritate (29 чэрвеня 2009), 21.",
+      "sha256": "5f40be92b77e316483815e6f545ef5de741559a73b58a0a194e30ef260d07faa"
+    },
+    {
+      "noteId": "n043",
+      "sourceBlockIds": [
+        "b0415"
+      ],
+      "sourceMarker": "[43]",
+      "opening": "Пар. тамсама, 22.",
+      "closing": "Пар. тамсама, 22.",
+      "sha256": "2fdfac2c47ed3b13d17e6d9f9c5e3b92d0b5bea60a0b782b016d4f5058fe37ea"
+    },
+    {
+      "noteId": "n044",
+      "sourceBlockIds": [
+        "b0416"
+      ],
+      "sourceMarker": "[44]",
+      "opening": "Пар. тамсама, 24.",
+      "closing": "Пар. тамсама, 24.",
+      "sha256": "de01732796fdf4271650e6ecdd4adcfa1538498840e4c6f68802cf4f62a8599c"
+    },
+    {
+      "noteId": "n045",
+      "sourceBlockIds": [
+        "b0417"
+      ],
+      "sourceMarker": "[45]",
+      "opening": "Пар. тамсама, 36.",
+      "closing": "Пар. тамсама, 36.",
+      "sha256": "e17d95c0e23a938eb253da727c7df7c32bea3a236869f1dcfcc47838423f8e3a"
+    },
+    {
+      "noteId": "n046",
+      "sourceBlockIds": [
+        "b0418"
+      ],
+      "sourceMarker": "[46]",
+      "opening": "Тамсама, 2.",
+      "closing": "Тамсама, 2.",
+      "sha256": "32472118f6d04b80dbd5da0312fa35cda6cee3d157ce94060d48ef5cef00fc7d"
+    },
+    {
+      "noteId": "n047",
+      "sourceBlockIds": [
+        "b0419"
+      ],
+      "sourceMarker": "[47]",
+      "opening": "Пар. Францішак, Апост. адг. Evangelii gaudium (24 лістапада 2013), 198.",
+      "closing": "Пар. Францішак, Апост. адг. Evangelii gaudium (24 лістапада 2013), 198.",
+      "sha256": "eae7c41840eee98ce31c71a0a45571bb4526c39a8b5951c9b8aa5e675ec9324c"
+    },
+    {
+      "noteId": "n048",
+      "sourceBlockIds": [
+        "b0420"
+      ],
+      "sourceMarker": "[48]",
+      "opening": "Той жа, Энц. Laudato si' (24 мая 2015), 49.",
+      "closing": "Той жа, Энц. Laudato si' (24 мая 2015), 49.",
+      "sha256": "1775348f519bb844143e3885aecaa98249542f959c5752b41506990c9ef762fa"
+    },
+    {
+      "noteId": "n049",
+      "sourceBlockIds": [
+        "b0421"
+      ],
+      "sourceMarker": "[49]",
+      "opening": "Той жа, Энц. Fratelli tutti (3 кастрычніка 2020), 127.",
+      "closing": "Той жа, Энц. Fratelli tutti (3 кастрычніка 2020), 127.",
+      "sha256": "e8a4f98747cb68ce222a299885bb8afbcb19b4b2de5c2ff45f6af7ef3e07f526"
+    },
+    {
+      "noteId": "n050",
+      "sourceBlockIds": [
+        "b0422"
+      ],
+      "sourceMarker": "[50]",
+      "opening": "Той жа, Энц. Dilexit nos (24 кастрычніка 2024), 167.",
+      "closing": "Той жа, Энц. Dilexit nos (24 кастрычніка 2024), 167.",
+      "sha256": "2dbea1bc9282c7ce7146445a003634236428359ba6ccb8a822b6df7037cf5560"
+    },
+    {
+      "noteId": "n051",
+      "sourceBlockIds": [
+        "b0423"
+      ],
+      "sourceMarker": "[51]",
+      "opening": "Пар.: Папская Рада Iustitia et Pax, Кампендый сацыяльнага вучэння Касцёла, Мінск, 2011, 32.",
+      "closing": "Пар.: Папская Рада Iustitia et Pax, Кампендый сацыяльнага вучэння Касцёла, Мінск, 2011, 32.",
+      "sha256": "faad653f6981bfd9782a75eb86b735946c5378a240af5e300023f8c1ecff8128"
+    },
+    {
+      "noteId": "n052",
+      "sourceBlockIds": [
+        "b0424"
+      ],
+      "sourceMarker": "[52]",
+      "opening": "Другі Ватыканскі Сабор, Пастырская канст. Gaudium et spes, 24.",
+      "closing": "Другі Ватыканскі Сабор, Пастырская канст. Gaudium et spes, 24.",
+      "sha256": "a3e3e96018ed6b003dbebab1443a88bde6e4d2b8c46a51a01e6434cd5ab28f31"
+    },
+    {
+      "noteId": "n053",
+      "sourceBlockIds": [
+        "b0425"
+      ],
+      "sourceMarker": "[53]",
+      "opening": "Тамсама, 22.",
+      "closing": "Тамсама, 22.",
+      "sha256": "cd826296ffd33ea86c2e031abbdc0a41d66e4f6bc5ab42d6469b3136dc0db237"
+    },
+    {
+      "noteId": "n054",
+      "sourceBlockIds": [
+        "b0426"
+      ],
+      "sourceMarker": "[54]",
+      "opening": "Пар. Папская Рада Iustitia et Pax, Кампендый сацыяльнага вучэння Касцёла, Мінск, 2011, 38.",
+      "closing": "Пар. Папская Рада Iustitia et Pax, Кампендый сацыяльнага вучэння Касцёла, Мінск, 2011, 38.",
+      "sha256": "e32ef5c5d7e020ef2f743ca539e266034fdad82b8d4ed9756864bac80ebf9c33"
+    },
+    {
+      "noteId": "n055",
+      "sourceBlockIds": [
+        "b0427"
+      ],
+      "sourceMarker": "[55]",
+      "opening": "Святы Ян Павел ІІ, Энц. Redemptor hominis (4 сакавіка 1979), 14: AAS 71 (1979), 284.",
+      "closing": "Святы Ян Павел ІІ, Энц. Redemptor hominis (4 сакавіка 1979), 14: AAS 71 (1979), 284.",
+      "sha256": "77fac51daea7eb6f299ea6a3255498945ce37fb5be1a367d8ea77f77b410b501"
+    },
+    {
+      "noteId": "n056",
+      "sourceBlockIds": [
+        "b0428"
+      ],
+      "sourceMarker": "[56]",
+      "opening": "Пар. Бэнэдыкт XVI, Энц. Caritas in veritate (29 чэрвеня 2009), 11.",
+      "closing": "Пар. Бэнэдыкт XVI, Энц. Caritas in veritate (29 чэрвеня 2009), 11.",
+      "sha256": "8537b01423d4d606ef44f93a30f197fbe373637856791ed9305f1135d0bf530f"
+    },
+    {
+      "noteId": "n057",
+      "sourceBlockIds": [
+        "b0429"
+      ],
+      "sourceMarker": "[57]",
+      "opening": "Святы Ян Павел ІІ, Энц. Veritatis splendor (6 жніўня 1993), 31: AAS 85 (1993), 1159.",
+      "closing": "Святы Ян Павел ІІ, Энц. Veritatis splendor (6 жніўня 1993), 31: AAS 85 (1993), 1159.",
+      "sha256": "c045cf1def59e7333c518724657de84317cc526284f8dd128ce686bcce8fd60d"
+    },
+    {
+      "noteId": "n058",
+      "sourceBlockIds": [
+        "b0430"
+      ],
+      "sourceMarker": "[58]",
+      "opening": "Пар. Другі Ватыканскі Сабор, Пастырская канст. Gaudium et spes, 26.",
+      "closing": "Пар. Другі Ватыканскі Сабор, Пастырская канст. Gaudium et spes, 26.",
+      "sha256": "8d3bf37f3fe7b9ede00caee99a8d90f55d1f13f77ff2f08a5a2bdf0d5f98561d"
+    },
+    {
+      "noteId": "n059",
+      "sourceBlockIds": [
+        "b0431"
+      ],
+      "sourceMarker": "[59]",
+      "opening": "Пар. Святы Ян Павел ІІ, Энц. Centesimus annus (1 мая 1991), 11: AAS 83 (1991), 806-807.",
+      "closing": "Пар. Святы Ян Павел ІІ, Энц. Centesimus annus (1 мая 1991), 11: AAS 83 (1991), 806-807.",
+      "sha256": "c68b3d7f5b9c99fc3d98259c286db29733f8860b5d458bd10385e7e3ab4e7614"
+    },
+    {
+      "noteId": "n060",
+      "sourceBlockIds": [
+        "b0432"
+      ],
+      "sourceMarker": "[60]",
+      "opening": "Пар. Дыкастэрыя веравучэння, Дэкл. Dignitas infinita (2 красавіка 2024), 7: AAS 116 (2024), 592-593.",
+      "closing": "Пар. Дыкастэрыя веравучэння, Дэкл. Dignitas infinita (2 красавіка 2024), 7: AAS 116 (2024), 592-593.",
+      "sha256": "70c036448d40118c9efc7bfc119f699060ef480da2868de9e7a24739217d7a1e"
+    },
+    {
+      "noteId": "n061",
+      "sourceBlockIds": [
+        "b0433"
+      ],
+      "sourceMarker": "[61]",
+      "opening": "Пар. тамсама, 8: AAS 116 (2024), 593-594.",
+      "closing": "Пар. тамсама, 8: AAS 116 (2024), 593-594.",
+      "sha256": "dcb48e09f73b7aa26e45d53b05b0ba805f16fed94773ee3a6518341ddf37a3fe"
+    },
+    {
+      "noteId": "n062",
+      "sourceBlockIds": [
+        "b0434"
+      ],
+      "sourceMarker": "[62]",
+      "opening": "Тамсама, 1: AAS 116 (2024), 589-590.",
+      "closing": "Тамсама, 1: AAS 116 (2024), 589-590.",
+      "sha256": "a22913de60773f27a12b22a0dd26357bbceb275a1ea85ffb6f5476a52631544e"
+    },
+    {
+      "noteId": "n063",
+      "sourceBlockIds": [
+        "b0435"
+      ],
+      "sourceMarker": "[63]",
+      "opening": "Пар. Святы Ян Павел ІІ, Анёл Панскі з інвалідамі ў катэдры Аснабрук (16 лістапада 1980): Insegnament",
+      "closing": "тэдры Аснабрук (16 лістапада 1980): Insegnamenti di Giovanni Paolo II, t. III/2, Ватыкан 1980, 1232.",
+      "sha256": "a8c6ae4489dfbfbab54856b143b7f0730a00a3854642ce850a750952d716fcdd"
+    },
+    {
+      "noteId": "n064",
+      "sourceBlockIds": [
+        "b0436"
+      ],
+      "sourceMarker": "[64]",
+      "opening": "Папская Рада Iustitia et Pax, Кампендый сацыяльнага вучэння Касцёла, Мінск, 2011, 152.",
+      "closing": "Папская Рада Iustitia et Pax, Кампендый сацыяльнага вучэння Касцёла, Мінск, 2011, 152.",
+      "sha256": "fb197c9a4df18d28be2f8da5162af3aab20ffa403663d8c499cdb37ee1f8ca50"
+    },
+    {
+      "noteId": "n065",
+      "sourceBlockIds": [
+        "b0437"
+      ],
+      "sourceMarker": "[65]",
+      "opening": "Пар. Святы Ян Павел II, Прамова да 50-й Генеральнай Асамблеі Арганізацыі Аб’яднаных Нацый (5 кастрыч",
+      "closing": "кастрычніка 1995), 2: Insegnamenti di Giovanni Paolo II, vol. XVIII/2, Città del Vaticano 1998, 731.",
+      "sha256": "6f3cecfdf48e93c52d6af1dab6fa8c89f44fdb20ac99245977a519a6e723100e"
+    },
+    {
+      "noteId": "n066",
+      "sourceBlockIds": [
+        "b0438"
+      ],
+      "sourceMarker": "[66]",
+      "opening": "Тамсама, Прамова да 34-й Генеральнай Асамблеі Арганізацыі Аб'яднаных Нацый (2 кастрычніка 1979), 7: ",
+      "closing": "34-й Генеральнай Асамблеі Арганізацыі Аб'яднаных Нацый (2 кастрычніка 1979), 7: AAS 71 (1979), 1148.",
+      "sha256": "e5dfd643fe19100830aaba5ea58b9880091a871b901e1b5611d44a3db2b85288"
+    },
+    {
+      "noteId": "n067",
+      "sourceBlockIds": [
+        "b0439"
+      ],
+      "sourceMarker": "[67]",
+      "opening": "Тамсама, Пасланне на 32-і Сусветны дзень міру (1 студзеня 1999), 3: AAS 91 (1999), 379.",
+      "closing": "Тамсама, Пасланне на 32-і Сусветны дзень міру (1 студзеня 1999), 3: AAS 91 (1999), 379.",
+      "sha256": "0427df7818f9c5dcef3a7b32538041d97abba1577376817df286f175727b7fd3"
+    },
+    {
+      "noteId": "n068",
+      "sourceBlockIds": [
+        "b0440"
+      ],
+      "sourceMarker": "[68]",
+      "opening": "Пар. Святы Ян XXIII, Энц. Pacem in terris (11 красавіка 1963) 5: AAS 55 (1963), 259.",
+      "closing": "Пар. Святы Ян XXIII, Энц. Pacem in terris (11 красавіка 1963) 5: AAS 55 (1963), 259.",
+      "sha256": "397dcd556b530d860bc1b7f64d1fe47071a5699d9e3ea16e25d3ffd95b22cbe3"
+    },
+    {
+      "noteId": "n069",
+      "sourceBlockIds": [
+        "b0441"
+      ],
+      "sourceMarker": "[69]",
+      "opening": "Святы Павел VI, Пасланне да Міжнароднай канферэнцыі па правах чалавека (15 красавіка 1968): AAS 60 (",
+      "closing": " VI, Пасланне да Міжнароднай канферэнцыі па правах чалавека (15 красавіка 1968): AAS 60 (1968), 285.",
+      "sha256": "49d64edaa41f97dbba24fe6254244efda0db571fd0e774842794837278bbe21f"
+    },
+    {
+      "noteId": "n070",
+      "sourceBlockIds": [
+        "b0442"
+      ],
+      "sourceMarker": "[70]",
+      "opening": "Пар. Святы Ян Павел ІІ, Энц. Evangelium vitae (25 сакавіка 1995), 2.",
+      "closing": "Пар. Святы Ян Павел ІІ, Энц. Evangelium vitae (25 сакавіка 1995), 2.",
+      "sha256": "2e0e85909c4e822d4c71547efe2a327c15942d894a84bf2da384e5d799a1bec4"
+    },
+    {
+      "noteId": "n071",
+      "sourceBlockIds": [
+        "b0443"
+      ],
+      "sourceMarker": "[71]",
+      "opening": "Пар. Другі Ватыканскі Сабор, Пастырская канст. Gaudium et spes, 27; Святы Ян Павел ІІ, Энц. Veritati",
+      "closing": " жніўня 1993), 80: AAS 85 (1993), 1197-1198; той жа, Энц. Evangelium vitae (25 сакавіка 1995), 7-28.",
+      "sha256": "eff8e04a9dc69648bc2e4ca8709269143874a704e16bc9b00e9a186aa6877dd1"
+    },
+    {
+      "noteId": "n072",
+      "sourceBlockIds": [
+        "b0444"
+      ],
+      "sourceMarker": "[72]",
+      "opening": "Францішак, Энц. Fratelli tutti (3 кастрычніка 2020), 208.",
+      "closing": "Францішак, Энц. Fratelli tutti (3 кастрычніка 2020), 208.",
+      "sha256": "6844d92af433f8abf8e87ddee16e986755565a2a5920a3c31f17a0d0323b46d2"
+    },
+    {
+      "noteId": "n073",
+      "sourceBlockIds": [
+        "b0445"
+      ],
+      "sourceMarker": "[73]",
+      "opening": "Пар. тамсама, 209.",
+      "closing": "Пар. тамсама, 209.",
+      "sha256": "1302e95f827cdefef94392a12ae038071a3388e983f7b3916d25c8f1e61d4ce3"
+    },
+    {
+      "noteId": "n074",
+      "sourceBlockIds": [
+        "b0446"
+      ],
+      "sourceMarker": "[74]",
+      "opening": "Тамсама, 23. Пар. той жа, Апост. адг. Evangelii gaudium (24 лістапада 2013), 212.",
+      "closing": "Тамсама, 23. Пар. той жа, Апост. адг. Evangelii gaudium (24 лістапада 2013), 212.",
+      "sha256": "a14013d22eb1aeb5f4d3fe824cc648fb1ac13955b08f15eae52a5ff455d30b7f"
+    },
+    {
+      "noteId": "n075",
+      "sourceBlockIds": [
+        "b0447"
+      ],
+      "sourceMarker": "[75]",
+      "opening": "Бэнэдыкт XVI, Апост. адг. Sacramentum caritatis (22 лютага 2007), 83.",
+      "closing": "Бэнэдыкт XVI, Апост. адг. Sacramentum caritatis (22 лютага 2007), 83.",
+      "sha256": "c3726bb5f34e73113bc3d975ba347ec13f980840cbaede2f893d822b5ed7ffbc"
+    },
+    {
+      "noteId": "n076",
+      "sourceBlockIds": [
+        "b0448"
+      ],
+      "sourceMarker": "[76]",
+      "opening": "Другі Ватыканскі Сабор, Пастырская канст. Gaudium et spes, 26.",
+      "closing": "Другі Ватыканскі Сабор, Пастырская канст. Gaudium et spes, 26.",
+      "sha256": "4a6c0cb4c254888ca5d1c0b5db328a1c5d401840ff2b4adc87ba913d7e70c30a"
+    },
+    {
+      "noteId": "n077",
+      "sourceBlockIds": [
+        "b0449"
+      ],
+      "sourceMarker": "[77]",
+      "opening": "Пар. Папская Рада Iustitia et Pax, Кампендый сацыяльнага вучэння Касцёла, Мінск, 2011, 164.",
+      "closing": "Пар. Папская Рада Iustitia et Pax, Кампендый сацыяльнага вучэння Касцёла, Мінск, 2011, 164.",
+      "sha256": "c6fea4ca91ab45069799eb205b3be544c930384ca014b6bb4d24df279e59306d"
+    },
+    {
+      "noteId": "n078",
+      "sourceBlockIds": [
+        "b0450"
+      ],
+      "sourceMarker": "[78]",
+      "opening": "Францішак, Апост. адг. Evangelii gaudium (24 лістапада 2013), 235.",
+      "closing": "Францішак, Апост. адг. Evangelii gaudium (24 лістапада 2013), 235.",
+      "sha256": "15d7aa94a3ebe8fe8432c5bc534825bbca28b6d5401ac238eb5663650460a1e9"
+    },
+    {
+      "noteId": "n079",
+      "sourceBlockIds": [
+        "b0451"
+      ],
+      "sourceMarker": "[79]",
+      "opening": "Той жа, Энц. Fratelli tutti (3 кастрычніка 2020), 105.",
+      "closing": "Той жа, Энц. Fratelli tutti (3 кастрычніка 2020), 105.",
+      "sha256": "1928e653ee6ced9c06e14104e69cd017d9291e12207d9e5e2cee125e9304eef5"
+    },
+    {
+      "noteId": "n080",
+      "sourceBlockIds": [
+        "b0452"
+      ],
+      "sourceMarker": "[80]",
+      "opening": "Святы Ян Павел ІІ, Энц. Sollicitudo rei socialis (30 снежня 1987), 38: AAS 80 (1988), 564.",
+      "closing": "Святы Ян Павел ІІ, Энц. Sollicitudo rei socialis (30 снежня 1987), 38: AAS 80 (1988), 564.",
+      "sha256": "b9be352c5c5ac646ea8dd8563473c1fb8f31bb19c6288b8de82d57681f98729b"
+    },
+    {
+      "noteId": "n081",
+      "sourceBlockIds": [
+        "b0453"
+      ],
+      "sourceMarker": "[81]",
+      "opening": "Францішак, Апост. адг. Evangelii gaudium (24 лістапада 2013), 220.",
+      "closing": "Францішак, Апост. адг. Evangelii gaudium (24 лістапада 2013), 220.",
+      "sha256": "6c28fa1d96c59e80d1f73ffb87cf250f6b4bcd201964f2729fcdb2b54def3a23"
+    },
+    {
+      "noteId": "n082",
+      "sourceBlockIds": [
+        "b0454"
+      ],
+      "sourceMarker": "[82]",
+      "opening": "Папская Рада Iustitia et Pax, Кампендый сацыяльнага вучэння Касцёла, Мінск, 2011, 169.",
+      "closing": "Папская Рада Iustitia et Pax, Кампендый сацыяльнага вучэння Касцёла, Мінск, 2011, 169.",
+      "sha256": "c6a14136c17e225d9a1842a047914006d4bdfb6045fc66a6a67d9b8687b1086e"
+    },
+    {
+      "noteId": "n083",
+      "sourceBlockIds": [
+        "b0455"
+      ],
+      "sourceMarker": "[83]",
+      "opening": "Францішак, Энц. Fratelli tutti (3 кастрычніка 2020), 16.",
+      "closing": "Францішак, Энц. Fratelli tutti (3 кастрычніка 2020), 16.",
+      "sha256": "c23893399c9bc3b2f2700f3ecbb2965861907664accd5d3bd3d26063e32c59b6"
+    },
+    {
+      "noteId": "n084",
+      "sourceBlockIds": [
+        "b0456"
+      ],
+      "sourceMarker": "[84]",
+      "opening": "Пар. Святы Ян Павел ІІ, Прамова да 50-й Генеральнай Асамблеі Арганізацыі Аб’яднаных Нацый (5 кастрыч",
+      "closing": "ацыі Аб’яднаных Нацый (5 кастрычніка 1995), 8: Insegnamenti di Giovanni Paolo II, vol. XVIII/2, 735.",
+      "sha256": "99bebbd74a1316815e3f9ae9bf90a79d32fcefb8e1621c26993c39c19da4ffa7"
+    },
+    {
+      "noteId": "n085",
+      "sourceBlockIds": [
+        "b0457"
+      ],
+      "sourceMarker": "[85]",
+      "opening": "Папская Рада Iustitia et Pax, Кампендый сацыяльнага вучэння Касцёла, Мінск, 2011, 171.",
+      "closing": "Папская Рада Iustitia et Pax, Кампендый сацыяльнага вучэння Касцёла, Мінск, 2011, 171.",
+      "sha256": "a38124a04327fc39aff1b4a333847d4a237e6f1b2505744e7af298deb367cb32"
+    },
+    {
+      "noteId": "n086",
+      "sourceBlockIds": [
+        "b0458"
+      ],
+      "sourceMarker": "[86]",
+      "opening": "Св. Ян Павел II, Энц. Centesimus annus (1 мая 1991), 31: AAS 83 (1991), 831.",
+      "closing": "Св. Ян Павел II, Энц. Centesimus annus (1 мая 1991), 31: AAS 83 (1991), 831.",
+      "sha256": "df4a697e5b7d429a5ca2a48e50f1222d3d51c48ff21d6d4a58800f4b79504aad"
+    },
+    {
+      "noteId": "n087",
+      "sourceBlockIds": [
+        "b0459"
+      ],
+      "sourceMarker": "[87]",
+      "opening": "Той жа, Гамілія падчас Імшы для земляробаў у Рэсіфі (7 ліпеня 1980), 4: AAS 72 (1980), 926.",
+      "closing": "Той жа, Гамілія падчас Імшы для земляробаў у Рэсіфі (7 ліпеня 1980), 4: AAS 72 (1980), 926.",
+      "sha256": "6c0c4e826adb4ba403a0eb09105c034514f4de82e121a53adf12770f4ed718c6"
+    },
+    {
+      "noteId": "n088",
+      "sourceBlockIds": [
+        "b0460"
+      ],
+      "sourceMarker": "[88]",
+      "opening": "Той жа, Энц. Laborem exercens (14 верасня 1981), 19: AAS 73 (1981), 626.",
+      "closing": "Той жа, Энц. Laborem exercens (14 верасня 1981), 19: AAS 73 (1981), 626.",
+      "sha256": "3a45842ad4ac01f0f496e7e2a9a0912997c05391cff0417a865803e917687fa9"
+    },
+    {
+      "noteId": "n089",
+      "sourceBlockIds": [
+        "b0461"
+      ],
+      "sourceMarker": "[89]",
+      "opening": "Францішак, Энц. Laudato si’ (24 мая 2015), 93; пар. той жа, Энц. Fratelli tutti (3 кастрычніка 2020)",
+      "closing": "шак, Энц. Laudato si’ (24 мая 2015), 93; пар. той жа, Энц. Fratelli tutti (3 кастрычніка 2020), 120.",
+      "sha256": "97f29e53b527c1b4bd10e88d81876045d8b8338cca72d279d6084b996ce6fbc2"
+    },
+    {
+      "noteId": "n090",
+      "sourceBlockIds": [
+        "b0462"
+      ],
+      "sourceMarker": "[90]",
+      "opening": "Той жа, Апост. адг. Evangelii gaudium (24 лістапада 2013), 189.",
+      "closing": "Той жа, Апост. адг. Evangelii gaudium (24 лістапада 2013), 189.",
+      "sha256": "4f437bff3e30313082ec1d4ef6cb114ecffca698888196f683e89d9133cea0dc"
+    },
+    {
+      "noteId": "n091",
+      "sourceBlockIds": [
+        "b0463"
+      ],
+      "sourceMarker": "[91]",
+      "opening": "Пар. Папская рада Iustitia et Pax, Кампендый сацыяльнага вучэння Касцёла, Мінск, 2011, 187.",
+      "closing": "Пар. Папская рада Iustitia et Pax, Кампендый сацыяльнага вучэння Касцёла, Мінск, 2011, 187.",
+      "sha256": "70c9b1c79592820c80cde3732e26ebf3abf9eb575a9f09e29cfe58c81fb3ccff"
+    },
+    {
+      "noteId": "n092",
+      "sourceBlockIds": [
+        "b0464"
+      ],
+      "sourceMarker": "[92]",
+      "opening": "Пар. Леў XIII, Энц. Rerum novarum (15 мая 1891), 26: ASS 23 (1890-1891), 656.",
+      "closing": "Пар. Леў XIII, Энц. Rerum novarum (15 мая 1891), 26: ASS 23 (1890-1891), 656.",
+      "sha256": "217d654a33b9043e758270b6e16a5662bfd742fc9dd9f5d87e59a6aa65008e30"
+    },
+    {
+      "noteId": "n093",
+      "sourceBlockIds": [
+        "b0465"
+      ],
+      "sourceMarker": "[93]",
+      "opening": "Пар. Святы Ян Павел ІІ, Энц. Centesimus annus (1 мая 1991), 11: AAS 83 (1991), 806-807.",
+      "closing": "Пар. Святы Ян Павел ІІ, Энц. Centesimus annus (1 мая 1991), 11: AAS 83 (1991), 806-807.",
+      "sha256": "c68b3d7f5b9c99fc3d98259c286db29733f8860b5d458bd10385e7e3ab4e7614"
+    },
+    {
+      "noteId": "n094",
+      "sourceBlockIds": [
+        "b0466"
+      ],
+      "sourceMarker": "[94]",
+      "opening": "Пар. тамсама.",
+      "closing": "Пар. тамсама.",
+      "sha256": "6d87ca9cc8c046e9230056cc23f996b01b8d7b6364fbdba7b2260005f4dc615e"
+    },
+    {
+      "noteId": "n095",
+      "sourceBlockIds": [
+        "b0467"
+      ],
+      "sourceMarker": "[95]",
+      "opening": "Пар. тамсама, 48: AAS 83 (1991), 852-854.",
+      "closing": "Пар. тамсама, 48: AAS 83 (1991), 852-854.",
+      "sha256": "f60b25a391bfb56044a2613b5fe46f42b6b77099b6bc68bb2c3000e4e9dde7e0"
+    },
+    {
+      "noteId": "n096",
+      "sourceBlockIds": [
+        "b0468"
+      ],
+      "sourceMarker": "[96]",
+      "opening": "Пар. Францішак, Энц. Fratelli tutti (3 кастрычніка 2020), 169.",
+      "closing": "Пар. Францішак, Энц. Fratelli tutti (3 кастрычніка 2020), 169.",
+      "sha256": "be8cde7c412e528bccbb9c43f6ef9553a23645033c73684d7e864a2c1a72a465"
+    },
+    {
+      "noteId": "n097",
+      "sourceBlockIds": [
+        "b0469"
+      ],
+      "sourceMarker": "[97]",
+      "opening": "Пар. тамсама, 168.",
+      "closing": "Пар. тамсама, 168.",
+      "sha256": "2a9e4b55c9cfef4219baae471da27762146155bb21caec021b3227f26b5180cb"
+    },
+    {
+      "noteId": "n098",
+      "sourceBlockIds": [
+        "b0470"
+      ],
+      "sourceMarker": "[98]",
+      "opening": "Пар. Святы Павел VI, Энц. Populorum progressio (26 сакавіка 1967), 17: AAS 59 (1967), 265-266.",
+      "closing": "Пар. Святы Павел VI, Энц. Populorum progressio (26 сакавіка 1967), 17: AAS 59 (1967), 265-266.",
+      "sha256": "8a461bcf0cbee8892646c1955ca4c1929de2e4b92738de8a1a8549cad3b35cc2"
+    },
+    {
+      "noteId": "n099",
+      "sourceBlockIds": [
+        "b0471"
+      ],
+      "sourceMarker": "[99]",
+      "opening": "Францішак, Энц. Fratelli tutti (3 кастрычніка 2020), 32 і 54.",
+      "closing": "Францішак, Энц. Fratelli tutti (3 кастрычніка 2020), 32 і 54.",
+      "sha256": "3b0b8912c033439add482ee70f1b42c0d7567cc4296a6cc91d1136dc029d7d72"
+    },
+    {
+      "noteId": "n100",
+      "sourceBlockIds": [
+        "b0472"
+      ],
+      "sourceMarker": "[100]",
+      "opening": "Пар. Бэнэдыкт XVI, Энц. Caritas in veritate (29 чэрвеня 2009), 58.",
+      "closing": "Пар. Бэнэдыкт XVI, Энц. Caritas in veritate (29 чэрвеня 2009), 58.",
+      "sha256": "5ec3c927b102e3fc2c6e2bd97d5b38662d8cb154610c6cdf0dfe259ec771a208"
+    },
+    {
+      "noteId": "n101",
+      "sourceBlockIds": [
+        "b0473"
+      ],
+      "sourceMarker": "[101]",
+      "opening": "Францішак, Энц. Fratelli tutti (3 кастрычніка 2020), 116.",
+      "closing": "Францішак, Энц. Fratelli tutti (3 кастрычніка 2020), 116.",
+      "sha256": "b7fd9b7721081ec04424157c5b8620fa61c7ff82bcbdcf656e4e6574f5ad19ae"
+    },
+    {
+      "noteId": "n102",
+      "sourceBlockIds": [
+        "b0474"
+      ],
+      "sourceMarker": "[102]",
+      "opening": "Святы Ян Павел ІІ, Энц. Sollicitudo rei socialis (30 снежня 1987), 38: AAS 80 (1988), 564.",
+      "closing": "Святы Ян Павел ІІ, Энц. Sollicitudo rei socialis (30 снежня 1987), 38: AAS 80 (1988), 564.",
+      "sha256": "b9be352c5c5ac646ea8dd8563473c1fb8f31bb19c6288b8de82d57681f98729b"
+    },
+    {
+      "noteId": "n103",
+      "sourceBlockIds": [
+        "b0475"
+      ],
+      "sourceMarker": "[103]",
+      "opening": "Францішак, Энц. Fratelli tutti (3 кастрычніка 2020), 116.",
+      "closing": "Францішак, Энц. Fratelli tutti (3 кастрычніка 2020), 116.",
+      "sha256": "b7fd9b7721081ec04424157c5b8620fa61c7ff82bcbdcf656e4e6574f5ad19ae"
+    },
+    {
+      "noteId": "n104",
+      "sourceBlockIds": [
+        "b0476"
+      ],
+      "sourceMarker": "[104]",
+      "opening": "Пар. Бэнэдыкт XVI, Энц. Caritas in veritate (29 чэрвеня 2009), 48.",
+      "closing": "Пар. Бэнэдыкт XVI, Энц. Caritas in veritate (29 чэрвеня 2009), 48.",
+      "sha256": "310502402a4533a54215bce5ff349da78f72d4899937ad15404852f48cd5f8cc"
+    },
+    {
+      "noteId": "n105",
+      "sourceBlockIds": [
+        "b0477"
+      ],
+      "sourceMarker": "[105]",
+      "opening": "Пар. Другі Ватыканскі Сабор, Пастырская канст. Gaudium et spes, 25.",
+      "closing": "Пар. Другі Ватыканскі Сабор, Пастырская канст. Gaudium et spes, 25.",
+      "sha256": "030aff4eb3f172e1bf80392e5aba4468cbded332de556e3c0dc95d5a933be872"
+    },
+    {
+      "noteId": "n106",
+      "sourceBlockIds": [
+        "b0478"
+      ],
+      "sourceMarker": "[106]",
+      "opening": "Пар. Святы Ян Павел ІІ, Энц. Sollicitudo rei socialis (30 снежня 1987), 42: AAS 80 (1988), 572-574.",
+      "closing": "Пар. Святы Ян Павел ІІ, Энц. Sollicitudo rei socialis (30 снежня 1987), 42: AAS 80 (1988), 572-574.",
+      "sha256": "493188a6000a28bc9fb1d9fef1859a474ea12738d45ddf59dcd4092c5974c7bb"
+    },
+    {
+      "noteId": "n107",
+      "sourceBlockIds": [
+        "b0479"
+      ],
+      "sourceMarker": "[107]",
+      "opening": "Францішак, Апост. адг. Evangelii gaudium (24 лістапада 2013), 53.",
+      "closing": "Францішак, Апост. адг. Evangelii gaudium (24 лістапада 2013), 53.",
+      "sha256": "bd7e846ee7edf760acfc3f31840baf04dfd20f62bff7f26ae2aef1e3198e8e94"
+    },
+    {
+      "noteId": "n108",
+      "sourceBlockIds": [
+        "b0480"
+      ],
+      "sourceMarker": "[108]",
+      "opening": "Пар. Святы Ян Павел ІІ, Энц. Sollicitudo rei socialis (30 снежня 1987), 36-37: AAS 80 (1988), 561-56",
+      "closing": "р. Святы Ян Павел ІІ, Энц. Sollicitudo rei socialis (30 снежня 1987), 36-37: AAS 80 (1988), 561-564.",
+      "sha256": "347f5c11ff2aa8bcc53193bc7945d5b8369044f795c2ecf96c5d9e13877352d7"
+    },
+    {
+      "noteId": "n109",
+      "sourceBlockIds": [
+        "b0481"
+      ],
+      "sourceMarker": "[109]",
+      "opening": "Францішак, Пасланне на 110-ты Сусветны дзень мігрантаў і бежанцаў (29 верасня 2024): AAS 116 (2024),",
+      "closing": "ішак, Пасланне на 110-ты Сусветны дзень мігрантаў і бежанцаў (29 верасня 2024): AAS 116 (2024), 735.",
+      "sha256": "55fd136c7ff48ace2459e507690ae52f4e43fa994a6385d31de17c43aa9359fc"
+    },
+    {
+      "noteId": "n110",
+      "sourceBlockIds": [
+        "b0482"
+      ],
+      "sourceMarker": "[110]",
+      "opening": "Святы Павел VI, Энц. Populorum progressio (26 сакавіка 1967), 14: AAS 59 (1967), 264.",
+      "closing": "Святы Павел VI, Энц. Populorum progressio (26 сакавіка 1967), 14: AAS 59 (1967), 264.",
+      "sha256": "ae6d804fff6e27fe6eee212f2d76639291014a724800fb1814e47568fc01fcbe"
+    },
+    {
+      "noteId": "n111",
+      "sourceBlockIds": [
+        "b0483"
+      ],
+      "sourceMarker": "[111]",
+      "opening": "Пар. тамсама, 17: AAS 59 (1967), 265-266; Францішак, Энц. Fratelli tutti (3 кастрычніка 2020), 125-1",
+      "closing": ". тамсама, 17: AAS 59 (1967), 265-266; Францішак, Энц. Fratelli tutti (3 кастрычніка 2020), 125-127.",
+      "sha256": "fd699998e6e208a9bfdd4be4df329cf49ab2a5df99f36746b0957150e6cea91a"
+    },
+    {
+      "noteId": "n112",
+      "sourceBlockIds": [
+        "b0484"
+      ],
+      "sourceMarker": "[112]",
+      "opening": "Пар. Святы Павел VI, Энц. Populorum progressio (26 сакавіка 1967), 14: AAS 59 (1967), 264; Бэнэдыкт ",
+      "closing": "ючай рады Міжнароднага фонду сельскагаспадарчага развіцця (15 лютага 2017): AAS 109 (2017), 244-245.",
+      "sha256": "d7afbad39306756b00050325858dc98a36d401ad046ec614b7c0563702b730e1"
+    },
+    {
+      "noteId": "n113",
+      "sourceBlockIds": [
+        "b0485"
+      ],
+      "sourceMarker": "[113]",
+      "opening": "Заключны дакумент другой сесіі 16-й Звычайнай Генеральнай Асамблеі Сінода Біскупаў (26 кастрычніка 2",
+      "closing": "дакумент другой сесіі 16-й Звычайнай Генеральнай Асамблеі Сінода Біскупаў (26 кастрычніка 2024), 17.",
+      "sha256": "4e1d4b5e12042df7f99d0fc4ab43f18a3b4b1cc7534fbb9b29dd7ea8ec134c4f"
+    },
+    {
+      "noteId": "n114",
+      "sourceBlockIds": [
+        "b0486"
+      ],
+      "sourceMarker": "[114]",
+      "opening": "Пар. тамсама, 11.",
+      "closing": "Пар. тамсама, 11.",
+      "sha256": "22fc689e850648f232252b46639940c2bbca6022f05fa0e3261c846c829df5b5"
+    },
+    {
+      "noteId": "n115",
+      "sourceBlockIds": [
+        "b0487"
+      ],
+      "sourceMarker": "[115]",
+      "opening": "Пар. тамсама, 103-108.",
+      "closing": "Пар. тамсама, 103-108.",
+      "sha256": "0db12ea75b5a2f54b0420980c2aed112195e7abc3d2db3747ca1cb7fbbcfa076"
+    },
+    {
+      "noteId": "n116",
+      "sourceBlockIds": [
+        "b0488"
+      ],
+      "sourceMarker": "[116]",
+      "opening": "Пар. тамсама, 100-101.",
+      "closing": "Пар. тамсама, 100-101.",
+      "sha256": "342167f34ec5149d5ccb80efaec80fd47c40b05ee375ec76f8c4ef5d1712a0e9"
+    },
+    {
+      "noteId": "n117",
+      "sourceBlockIds": [
+        "b0489"
+      ],
+      "sourceMarker": "[117]",
+      "opening": "Пар. Францішак, Энц. Fratelli tutti (3 кастрычніка 2020), 94: AAS 112 (2020), 1001.",
+      "closing": "Пар. Францішак, Энц. Fratelli tutti (3 кастрычніка 2020), 94: AAS 112 (2020), 1001.",
+      "sha256": "ec13b4a9a42a5430729f29aa3286b15a766ae8aac9da5c8a343c9798bfe16ad8"
+    },
+    {
+      "noteId": "n118",
+      "sourceBlockIds": [
+        "b0490"
+      ],
+      "sourceMarker": "[118]",
+      "opening": "Пар. Папская рада Iustitia et Pax, Кампендый сацыяльнага вучэння Касцёла, Мінск, 2011, 53.",
+      "closing": "Пар. Папская рада Iustitia et Pax, Кампендый сацыяльнага вучэння Касцёла, Мінск, 2011, 53.",
+      "sha256": "a7e3eb697da9579a6102765a0d604cf231534b6bf89af913924d85216bc72371"
+    },
+    {
+      "noteId": "n119",
+      "sourceBlockIds": [
+        "b0491"
+      ],
+      "sourceMarker": "[119]",
+      "opening": "Пар. Францішак, Энц. Laudato si’ (24 мая 2015), 106-109.",
+      "closing": "Пар. Францішак, Энц. Laudato si’ (24 мая 2015), 106-109.",
+      "sha256": "03b68c0b9dca94b68a97abe11b862d1d36f3f9578069b99d9453493c3e4b7d2f"
+    },
+    {
+      "noteId": "n120",
+      "sourceBlockIds": [
+        "b0492"
+      ],
+      "sourceMarker": "[120]",
+      "opening": "R. Guardini, Das Ende der Neuzeit, Würzburg 1951, 89.",
+      "closing": "R. Guardini, Das Ende der Neuzeit, Würzburg 1951, 89.",
+      "sha256": "90db7d5894963a6d2cd4b9669f44f8df28694f1f916a95f2650066eb3ccd8a7c"
+    },
+    {
+      "noteId": "n121",
+      "sourceBlockIds": [
+        "b0493"
+      ],
+      "sourceMarker": "[121]",
+      "opening": "Святы Павел VI, Прамова з нагоды 25-й гадавіны ФАО (16 лістапада 1970): AAS 62 (1970), 833.",
+      "closing": "Святы Павел VI, Прамова з нагоды 25-й гадавіны ФАО (16 лістапада 1970): AAS 62 (1970), 833.",
+      "sha256": "34608db7cc946dc248c50b3f1e499b4a44f821b86da28d1802179b32278bc5f8"
+    },
+    {
+      "noteId": "n122",
+      "sourceBlockIds": [
+        "b0494"
+      ],
+      "sourceMarker": "[122]",
+      "opening": "Пар. Францішак, Прамова да Рады па інклюзіўным капіталізме (11 лістапада 2019): L’Osservatore Romano",
+      "closing": " Рады па інклюзіўным капіталізме (11 лістапада 2019): L’Osservatore Romano, 11-12 лістапада 2019, 8.",
+      "sha256": "fa8edb41b3e289d51d061269a4a50e95d8da884f8067bc42681a614ea2f0d0fd"
+    },
+    {
+      "noteId": "n123",
+      "sourceBlockIds": [
+        "b0495"
+      ],
+      "sourceMarker": "[123]",
+      "opening": "Пар. Дыкастэрыя веравучэння – Дыкастэрыя па культуры і адукацыі, Nota antiqua et nova (14 студзеня 2",
+      "closing": "ы дзень сродкаў масавай камунікацыі (24 студзеня 2026): L’Osservatore Romano, 24 студзеня 2026, 2-3.",
+      "sha256": "192c1f0096fa625eb7e24bf91c475ce77ea10ee00be01400f078b0e1ff751fed"
+    },
+    {
+      "noteId": "n124",
+      "sourceBlockIds": [
+        "b0496"
+      ],
+      "sourceMarker": "[124]",
+      "opening": "Пар. Дыкастэрыя веравучэння – Дыкастэрыя па культуры і адукацыі, Nota antiqua et nova (14 студзеня 2",
+      "closing": "Дыкастэрыя па культуры і адукацыі, Nota antiqua et nova (14 студзеня 2025), 96: AAS 117 (2025), 201.",
+      "sha256": "3671564a6583e3a44be236ae0b3a58e35a511fb724bb873ae8f6d0be56d1619b"
+    },
+    {
+      "noteId": "n125",
+      "sourceBlockIds": [
+        "b0497"
+      ],
+      "sourceMarker": "[125]",
+      "opening": "Францішак, Прамова да ўдзельнікаў сустрэчы «Дыялогі Мінервы», арганізаванай Дыкастэрыяй па культуры ",
+      "closing": " Мінервы», арганізаванай Дыкастэрыяй па культуры і адукацыі (27 сакавіка 2023): AAS 115 (2023), 465.",
+      "sha256": "64e2688865ef8e91ad5a7bd7371720b83a29b144f9b0e4f4936e92007e591adf"
+    },
+    {
+      "noteId": "n126",
+      "sourceBlockIds": [
+        "b0498"
+      ],
+      "sourceMarker": "[126]",
+      "opening": "Пар. Дыкастэрыя веравучэння – Дыкастэрыя па культуры і адукацыі, Nota antiqua et nova (14 студзеня 2",
+      "closing": "Дыкастэрыя па культуры і адукацыі, Nota antiqua et nova (14 студзеня 2025), 41: AAS 117 (2025), 178.",
+      "sha256": "b09e4f0274e5d323e245aee7233a364a4ff861205398a3de79a5a98ee128ab9b"
+    },
+    {
+      "noteId": "n127",
+      "sourceBlockIds": [
+        "b0499"
+      ],
+      "sourceMarker": "[127]",
+      "opening": "Пар. тамсама, 44-45: AAS 117 (2025), 179-180.",
+      "closing": "Пар. тамсама, 44-45: AAS 117 (2025), 179-180.",
+      "sha256": "0ac3ae522b85bdd6333576bc0af0554a047fe4dcf3c22cf359f33f92fdb58a92"
+    },
+    {
+      "noteId": "n128",
+      "sourceBlockIds": [
+        "b0500"
+      ],
+      "sourceMarker": "[128]",
+      "opening": "Пар. Святы Ян Павел ІІ, Энц. Centesimus annus (1 мая 1991), 40: AAS 83 (1991), 843.",
+      "closing": "Пар. Святы Ян Павел ІІ, Энц. Centesimus annus (1 мая 1991), 40: AAS 83 (1991), 843.",
+      "sha256": "41fbbab35b109cb981dd390320a7178f746f617e36c36dc7d682244aa345e28c"
+    },
+    {
+      "noteId": "n129",
+      "sourceBlockIds": [
+        "b0501"
+      ],
+      "sourceMarker": "[129]",
+      "opening": "Пар. Міжнародная тэалагічная камісія, Quo vadis, humanitas? Разважанне пра хрысціянскую антрапалогію",
+      "closing": "рысціянскую антрапалогію перад абліччам некаторых сцэнарыяў будучыні чалавецтва (9 лютага 2026), 63.",
+      "sha256": "c753cd7a09b5fcc0e8fd29d24d05bc509b784e329c069394655c2b8cd5b807e9"
+    },
+    {
+      "noteId": "n130",
+      "sourceBlockIds": [
+        "b0502"
+      ],
+      "sourceMarker": "[130]",
+      "opening": "Пар. Святы Павел VI, Прамова з нагоды 25-й гадавіны ФАО (16 лістапада 1970): AAS 62 (1970), 833.",
+      "closing": "Пар. Святы Павел VI, Прамова з нагоды 25-й гадавіны ФАО (16 лістапада 1970): AAS 62 (1970), 833.",
+      "sha256": "9cbfe0a35237d0087322cf94caf23b8172ad571ffdb71be85cc87bd55b2480b2"
+    },
+    {
+      "noteId": "n131",
+      "sourceBlockIds": [
+        "b0503"
+      ],
+      "sourceMarker": "[131]",
+      "opening": "Міжнародная тэалагічная камісія, Quo vadis, humanitas? Разважанне пра хрысціянскую антрапалогію пера",
+      "closing": "хрысціянскую антрапалогію перад абліччам некаторых сцэнарыяў будучыні чалавецтва (9 лютага 2026), 3.",
+      "sha256": "6124dfff86a82563625635c1ae46ed429f43abc8835990abce6a8f52a61e8d63"
+    },
+    {
+      "noteId": "n132",
+      "sourceBlockIds": [
+        "b0504"
+      ],
+      "sourceMarker": "[132]",
+      "opening": "«Калі сэрца абясцэньваецца, то адначасова абясцэньваецца і тое, што значыць маўленне ад сэрца, дзеян",
+      "closing": "канцы жыцця толькі гэта будзе мець значэнне»: Францішак, Энц. Dilexit nos (24 кастрычніка 2024), 11.",
+      "sha256": "e2630ab073eefa5831b41f186e77c58e3f7202b6df59d473b7cbb49a603a330c"
+    },
+    {
+      "noteId": "n133",
+      "sourceBlockIds": [
+        "b0505"
+      ],
+      "sourceMarker": "[133]",
+      "opening": "V. Frankl, Man’s Search for Meaning. An Introduction to Logotherapy, Boston 1963, 213.",
+      "closing": "V. Frankl, Man’s Search for Meaning. An Introduction to Logotherapy, Boston 1963, 213.",
+      "sha256": "22817e1b447ed82902724285146cebc9953f1767a8611c00713c97cf033227b9"
+    },
+    {
+      "noteId": "n134",
+      "sourceBlockIds": [
+        "b0506"
+      ],
+      "sourceMarker": "[134]",
+      "opening": "Святы Тамаш Аквінскі, Summa Theologiae, I-II, q. 112, a. 1, co.; q. 114, a. 5, co.: ed. Leonina, VII",
+      "closing": "umma Theologiae, I-II, q. 112, a. 1, co.; q. 114, a. 5, co.: ed. Leonina, VII, Roma 1892, 323 e 349.",
+      "sha256": "a79188c45f9ffb402649b74b701eed58c87f038f3ed12d49d7e41967f053dd3a"
+    },
+    {
+      "noteId": "n135",
+      "sourceBlockIds": [
+        "b0507"
+      ],
+      "sourceMarker": "[135]",
+      "opening": "Пар. тамсама, q. 114, a. 1, co.: ed. Leonina, VII, 344.",
+      "closing": "Пар. тамсама, q. 114, a. 1, co.: ed. Leonina, VII, 344.",
+      "sha256": "af43389c841e9cdf793bbb0681d1707dd4549419b03b62f7279f01384fdba480"
+    },
+    {
+      "noteId": "n136",
+      "sourceBlockIds": [
+        "b0508"
+      ],
+      "sourceMarker": "[136]",
+      "opening": "Пар. той жа, Super Boetium De Trinitate, q. 1, a. 2, ad 3: ed. Leonina, L, Roma 1992, 96; Summa Theo",
+      "closing": "d. Leonina, L, Roma 1992, 96; Summa Theologiae, I, q. 7, a. 1, ad 3: ed. Leonina, IV, Roma 1888, 72.",
+      "sha256": "3734a5363f3f0a4de8d6af3c6a0a98f66951ef816a17ddb3a89b52b6d39bda20"
+    },
+    {
+      "noteId": "n137",
+      "sourceBlockIds": [
+        "b0509"
+      ],
+      "sourceMarker": "[137]",
+      "opening": "Францішак, Апост. адг. Evangelii gaudium (24 лістапада 2013), 8: AAS 105 (2013), 1022.",
+      "closing": "Францішак, Апост. адг. Evangelii gaudium (24 лістапада 2013), 8: AAS 105 (2013), 1022.",
+      "sha256": "7d0fd7045724261826c1d79f7241aca711468ed1e178ee8be7100807b0c3afe7"
+    },
+    {
+      "noteId": "n138",
+      "sourceBlockIds": [
+        "b0510"
+      ],
+      "sourceMarker": "[138]",
+      "opening": "Святы Ян Павел ІІ, Энц. Redemptor hominis (4 сакавіка 1979), 15.",
+      "closing": "Святы Ян Павел ІІ, Энц. Redemptor hominis (4 сакавіка 1979), 15.",
+      "sha256": "457ca9a5bacd30dca8b536db0b24cadcf7f47a58d4247a7d53c9d3e619d3f541"
+    },
+    {
+      "noteId": "n139",
+      "sourceBlockIds": [
+        "b0511"
+      ],
+      "sourceMarker": "[139]",
+      "opening": "Святы Аўгустын, De civitate Dei, XIV, 28: CCSL 48, Turnhout 1955, 451.",
+      "closing": "Святы Аўгустын, De civitate Dei, XIV, 28: CCSL 48, Turnhout 1955, 451.",
+      "sha256": "51751d636d56b55d0a94698b88f7b32e3b2e7f183c48d5004f54b72e1d59442b"
+    },
+    {
+      "noteId": "n140",
+      "sourceBlockIds": [
+        "b0512"
+      ],
+      "sourceMarker": "[140]",
+      "opening": "Бэнэдыкт XVI, Энц. Caritas in veritate (29 чэрвеня 2009), 34.",
+      "closing": "Бэнэдыкт XVI, Энц. Caritas in veritate (29 чэрвеня 2009), 34.",
+      "sha256": "f435469a93b3bb660b89d8dc5d0a427e8f9c55dce3e2a680919976c3c910c07e"
+    },
+    {
+      "noteId": "n141",
+      "sourceBlockIds": [
+        "b0513"
+      ],
+      "sourceMarker": "[141]",
+      "opening": "Святы Ян Павел ІІ, Энц. Veritatis splendor (6 жніўня 1993), 32.",
+      "closing": "Святы Ян Павел ІІ, Энц. Veritatis splendor (6 жніўня 1993), 32.",
+      "sha256": "243960058e4871bc7682454a9b738be185bc122aee24c40f1723451bc28e79dc"
+    },
+    {
+      "noteId": "n142",
+      "sourceBlockIds": [
+        "b0514"
+      ],
+      "sourceMarker": "[142]",
+      "opening": "Францішак, Энц. Fratelli tutti (3 кастрычніка 2020), 207.",
+      "closing": "Францішак, Энц. Fratelli tutti (3 кастрычніка 2020), 207.",
+      "sha256": "ff133cbf8f9b01a4746c712ab5e93fd78043656ae068ef962c9e57cffec13d92"
+    },
+    {
+      "noteId": "n143",
+      "sourceBlockIds": [
+        "b0515"
+      ],
+      "sourceMarker": "[143]",
+      "opening": "H. Arendt, The Origins of Totalitarianism, III , New York 1962, 474.",
+      "closing": "H. Arendt, The Origins of Totalitarianism, III , New York 1962, 474.",
+      "sha256": "dfcc078033b6d32da7c432a97ee564a8d005fa207c5f98da9119928b89d05eb9"
+    },
+    {
+      "noteId": "n144",
+      "sourceBlockIds": [
+        "b0516"
+      ],
+      "sourceMarker": "[144]",
+      "opening": "Прамова да прадстаўнікоў сродкаў масавай камунікацыі (12 мая 2025): AAS 117 (2025), 681-682.",
+      "closing": "Прамова да прадстаўнікоў сродкаў масавай камунікацыі (12 мая 2025): AAS 117 (2025), 681-682.",
+      "sha256": "c1546d98af792fc48dcaa6789e4f7f67617aacdd208bac0de6068bd424ead39e"
+    },
+    {
+      "noteId": "n145",
+      "sourceBlockIds": [
+        "b0517"
+      ],
+      "sourceMarker": "[145]",
+      "opening": "Бэнэдыкт XVI, Пасланне на 47-мы Сусветны дзень сродкаў масавай камунікацыі (24 студзеня 2013): AAS 1",
+      "closing": "асланне на 47-мы Сусветны дзень сродкаў масавай камунікацыі (24 студзеня 2013): AAS 105 (2013), 183.",
+      "sha256": "83ce86a09f4788be97f3fd321a4629bc69af0c85370af970e9d2362587cc7049"
+    },
+    {
+      "noteId": "n146",
+      "sourceBlockIds": [
+        "b0518"
+      ],
+      "sourceMarker": "[146]",
+      "opening": "Францішак, Discorso in occasione del conferimento delle insegne dell’Ordine Piano al Sig. Philip Pul",
+      "closing": "a e alla Sig.ra Valentina Alazraki (13 лістапада 2021): L’Osservatore Romano, 13 лістапада 2021, 12.",
+      "sha256": "93aa4776c74a285528f0135f11725b7e7bdf49f1cf84f3025017e20057e1ae94"
+    },
+    {
+      "noteId": "n147",
+      "sourceBlockIds": [
+        "b0519"
+      ],
+      "sourceMarker": "[147]",
+      "opening": "Пар. Платон, Lettera VII, 344b-c: ed. Souilhé, XIII/1, Paris 1931 (CUF, Série grecque 63), 54.",
+      "closing": "Пар. Платон, Lettera VII, 344b-c: ed. Souilhé, XIII/1, Paris 1931 (CUF, Série grecque 63), 54.",
+      "sha256": "1bedb4911bd4776e3ca2683362760ab7255d5585a2deda779b29502754c8f843"
+    },
+    {
+      "noteId": "n148",
+      "sourceBlockIds": [
+        "b0520"
+      ],
+      "sourceMarker": "[148]",
+      "opening": "Пар. Прамова да ўдзельнікаў канферэнцыі «Годнасць дзяцей і падлеткаў у эпоху штучнага інтэлекту» (13",
+      "closing": "длеткаў у эпоху штучнага інтэлекту» (13 лістапада 2025): L’Osservatore Romano, 13 лістапада 2025, 3.",
+      "sha256": "c9c7880f0be4d0933034a89d3b523b98988e6c260d51cb30763e27fd4c459750"
+    },
+    {
+      "noteId": "n149",
+      "sourceBlockIds": [
+        "b0521"
+      ],
+      "sourceMarker": "[149]",
+      "opening": "Пар. Прамова да членаў кансультатыўнай рады Акадэміі RCS (7 лістапада 2025): L’Osservatore Romano, 7",
+      "closing": "наў кансультатыўнай рады Акадэміі RCS (7 лістапада 2025): L’Osservatore Romano, 7 лістапада 2025, 4.",
+      "sha256": "cbcab4ba7dbdc9dff7f312636ed9f134094e45917147102ddf6f0ee434733072"
+    },
+    {
+      "noteId": "n150",
+      "sourceBlockIds": [
+        "b0522"
+      ],
+      "sourceMarker": "[150]",
+      "opening": "Святы Ян Павел II, Энц. Laborem exercens (14 верасня 1981), 3: AAS 73 (1981), 584.",
+      "closing": "Святы Ян Павел II, Энц. Laborem exercens (14 верасня 1981), 3: AAS 73 (1981), 584.",
+      "sha256": "5f06c282fe73266cf1455051089fc58c41a651767c81380b304b0cb62d4e4aa3"
+    },
+    {
+      "noteId": "n151",
+      "sourceBlockIds": [
+        "b0523"
+      ],
+      "sourceMarker": "[151]",
+      "opening": "Пар. Францішак, Энц. Laudato si’ (24 мая 2015), 128.",
+      "closing": "Пар. Францішак, Энц. Laudato si’ (24 мая 2015), 128.",
+      "sha256": "d381e9aae16bd8988f15561d09cc751417ed5fe8588d51402386a430288b20a4"
+    },
+    {
+      "noteId": "n152",
+      "sourceBlockIds": [
+        "b0524"
+      ],
+      "sourceMarker": "[152]",
+      "opening": "Дыкастэрыя веравучэння – Дыкастэрыя па культуры і адукацыі, Nota antiqua et nova (14 студзеня 2025),",
+      "closing": "стэрыя па культуры і адукацыі, Nota antiqua et nova (14 студзеня 2025), 67: AAS 117 (2025), 188-189.",
+      "sha256": "85f55fc6b81991d93e84b365cb846f9be842f46a4103423e7801b16c25cddfe8"
+    },
+    {
+      "noteId": "n153",
+      "sourceBlockIds": [
+        "b0525"
+      ],
+      "sourceMarker": "[153]",
+      "opening": "Пар. Святы Ян Павел ІІ, Энц. Laborem exercens (14 верасня 1981), 18: AAS 73 (1981), 622-625.",
+      "closing": "Пар. Святы Ян Павел ІІ, Энц. Laborem exercens (14 верасня 1981), 18: AAS 73 (1981), 622-625.",
+      "sha256": "a33827574fa00ca06b96a7238d2230c837b1e96315fd07d8cafff59f361a4797"
+    },
+    {
+      "noteId": "n154",
+      "sourceBlockIds": [
+        "b0526"
+      ],
+      "sourceMarker": "[154]",
+      "opening": "Пар. Францішак, Энц. Laudato si’ (24 мая 2015), 109.",
+      "closing": "Пар. Францішак, Энц. Laudato si’ (24 мая 2015), 109.",
+      "sha256": "b7b4a2d7e38295341bb518460e3ba09600049e824c8817b42a922f3d2384d5ba"
+    },
+    {
+      "noteId": "n155",
+      "sourceBlockIds": [
+        "b0527"
+      ],
+      "sourceMarker": "[155]",
+      "opening": "Пар. Бэнэдыкт XVI, Энц. Caritas in veritate (29 чэрвеня 2009), 32.",
+      "closing": "Пар. Бэнэдыкт XVI, Энц. Caritas in veritate (29 чэрвеня 2009), 32.",
+      "sha256": "7f84b0c1d7fdbab48d3362c4df633fdd79f31b32a3df64d5246e6ed67b4aa55f"
+    },
+    {
+      "noteId": "n156",
+      "sourceBlockIds": [
+        "b0528"
+      ],
+      "sourceMarker": "[156]",
+      "opening": "Пар. Папская рада Iustitia et Pax, Кампендый сацыяльнага вучэння Касцёла, Мінск, 2011, 268.",
+      "closing": "Пар. Папская рада Iustitia et Pax, Кампендый сацыяльнага вучэння Касцёла, Мінск, 2011, 268.",
+      "sha256": "a2239c67a760a87273f10e8c75ade9a35b30ee397b735335d42a7afecef1d44c"
+    },
+    {
+      "noteId": "n157",
+      "sourceBlockIds": [
+        "b0529"
+      ],
+      "sourceMarker": "[157]",
+      "opening": "Пар. Бэнэдыкт XVI, Энц. Caritas in veritate (29 чэрвеня 2009), 64.",
+      "closing": "Пар. Бэнэдыкт XVI, Энц. Caritas in veritate (29 чэрвеня 2009), 64.",
+      "sha256": "04bdb33deb839827ec6b8c7ab6b6d91621126317ff53378f7d7ee459e440a6cb"
+    },
+    {
+      "noteId": "n158",
+      "sourceBlockIds": [
+        "b0530"
+      ],
+      "sourceMarker": "[158]",
+      "opening": "Пар. Францішак, Энц. Laudato si’ (24 мая 2015), 129.",
+      "closing": "Пар. Францішак, Энц. Laudato si’ (24 мая 2015), 129.",
+      "sha256": "b1c66850af7b4947ef1bbbbef3381075d2676baeb3b88c3ff85193f6fbdc4ef7"
+    },
+    {
+      "noteId": "n159",
+      "sourceBlockIds": [
+        "b0531"
+      ],
+      "sourceMarker": "[159]",
+      "opening": "Пар. тамсама.",
+      "closing": "Пар. тамсама.",
+      "sha256": "6d87ca9cc8c046e9230056cc23f996b01b8d7b6364fbdba7b2260005f4dc615e"
+    },
+    {
+      "noteId": "n160",
+      "sourceBlockIds": [
+        "b0532"
+      ],
+      "sourceMarker": "[160]",
+      "opening": "Пар. той жа, Энц. Fratelli tutti (3 кастрычніка 2020), 108.",
+      "closing": "Пар. той жа, Энц. Fratelli tutti (3 кастрычніка 2020), 108.",
+      "sha256": "5df7219a3969628cd167fa37af8d21d8254a3c82f1ce7b1db8bc7652838d01be"
+    },
+    {
+      "noteId": "n161",
+      "sourceBlockIds": [
+        "b0533"
+      ],
+      "sourceMarker": "[161]",
+      "opening": "Пар. Кангрэгацыя веравучэння – Дыкастэрыя па спрыянні інтэгральнаму чалавечаму развіццю, Oeconomicae",
+      "closing": "аторых аспектаў сучаснай эканамічнай і фінансавай сістэмы (6 студзеня 2018), 6: AAS 110 (2018), 772.",
+      "sha256": "645818f02c2cd0dc02895baae0486e7725b1a67e96a86901e2eccbae9a5dc423"
+    },
+    {
+      "noteId": "n162",
+      "sourceBlockIds": [
+        "b0534"
+      ],
+      "sourceMarker": "[162]",
+      "opening": "Францішак, Прывітанне персаналу Міжнароднага фонду сельскагаспадарчага развіцця (IFAD) (14 лютага 20",
+      "closing": "ютага 2019): AAS 111 (2019), 309. Пар. Бэнэдыкт XVI, Энц. Caritas in veritate (29 чэрвеня 2009), 22.",
+      "sha256": "63e38be2d002687a9cd95bc2107ebb1ffe907ce7ef215386cbb69553f0d43f8b"
+    },
+    {
+      "noteId": "n163",
+      "sourceBlockIds": [
+        "b0535"
+      ],
+      "sourceMarker": "[163]",
+      "opening": "Пар. тамсама, 36.",
+      "closing": "Пар. тамсама, 36.",
+      "sha256": "e17d95c0e23a938eb253da727c7df7c32bea3a236869f1dcfcc47838423f8e3a"
+    },
+    {
+      "noteId": "n164",
+      "sourceBlockIds": [
+        "b0536"
+      ],
+      "sourceMarker": "[164]",
+      "opening": "Пар. Францішак, Апост. адг. Evangelii gaudium (24 лістапада 2013), 204.",
+      "closing": "Пар. Францішак, Апост. адг. Evangelii gaudium (24 лістапада 2013), 204.",
+      "sha256": "f69fe6dc7428df9082558cf044235702dcd6ce905936078fd54748db19daf52b"
+    },
+    {
+      "noteId": "n165",
+      "sourceBlockIds": [
+        "b0537"
+      ],
+      "sourceMarker": "[165]",
+      "opening": "Пар. Святы Павел VI, Энц. Populorum progressio (26 сакавіка 1967), 87: AAS 59 (1967), 299.",
+      "closing": "Пар. Святы Павел VI, Энц. Populorum progressio (26 сакавіка 1967), 87: AAS 59 (1967), 299.",
+      "sha256": "08cd1f88fc526c8956f51c1fd51f556bf6e1835530fc94caeec73bff1c1db52c"
+    },
+    {
+      "noteId": "n166",
+      "sourceBlockIds": [
+        "b0538"
+      ],
+      "sourceMarker": "[166]",
+      "opening": "Пар. Святы Ян Павел ІІ, Энц. Centesimus annus (1 мая 1991), 39: AAS 83 (1991), 841.",
+      "closing": "Пар. Святы Ян Павел ІІ, Энц. Centesimus annus (1 мая 1991), 39: AAS 83 (1991), 841.",
+      "sha256": "8ad107105d4fe89890b1856b17837403fb98537be40b297cb1ed0229bc46bdd3"
+    },
+    {
+      "noteId": "n167",
+      "sourceBlockIds": [
+        "b0539"
+      ],
+      "sourceMarker": "[167]",
+      "opening": "Пар. Папская рада Iustitia et Pax, Кампендый сацыяльнага вучэння Касцёла, Мінск, 2011, 211.",
+      "closing": "Пар. Папская рада Iustitia et Pax, Кампендый сацыяльнага вучэння Касцёла, Мінск, 2011, 211.",
+      "sha256": "06ea6c2e574cad666e1563fd06ab3d87a007a295f574682edb0cb464edfba23c"
+    },
+    {
+      "noteId": "n168",
+      "sourceBlockIds": [
+        "b0540"
+      ],
+      "sourceMarker": "[168]",
+      "opening": "Пар. Святы Ян Павел II, Ліст Gratissimam sane (2 лютага 1994), 17: AAS 86 (1994), 903-906.",
+      "closing": "Пар. Святы Ян Павел II, Ліст Gratissimam sane (2 лютага 1994), 17: AAS 86 (1994), 903-906.",
+      "sha256": "b7a175f29d85cbe90600288312eab4ff78c2ee91f8295cdc3991d082599be3c2"
+    },
+    {
+      "noteId": "n169",
+      "sourceBlockIds": [
+        "b0541"
+      ],
+      "sourceMarker": "[169]",
+      "opening": "Пар. Канферэнцыя каталіцкіх біскупаў ЗША, Sons and Daughters of the Light: A Pastoral Plan for Minis",
+      "closing": "ght: A Pastoral Plan for Ministry with Young Adults (12 November 1996), Washington D.C., 1996, I, 3.",
+      "sha256": "226cee0404618dc7a8a9bd90adfe6549f26a5a3bba3e265df78dd029c7c5b9ea"
+    },
+    {
+      "noteId": "n170",
+      "sourceBlockIds": [
+        "b0542"
+      ],
+      "sourceMarker": "[170]",
+      "opening": "Пар. Папская рада Iustitia et Pax, Кампендый сацыяльнага вучэння Касцёла, Мінск, 2011, 290.",
+      "closing": "Пар. Папская рада Iustitia et Pax, Кампендый сацыяльнага вучэння Касцёла, Мінск, 2011, 290.",
+      "sha256": "2def7a4105a51196b14355315d50b3b0397ecbf157ad748c751e3c90b38ecd77"
+    },
+    {
+      "noteId": "n171",
+      "sourceBlockIds": [
+        "b0543"
+      ],
+      "sourceMarker": "[171]",
+      "opening": "Пар. тамсама, 214.",
+      "closing": "Пар. тамсама, 214.",
+      "sha256": "324729f8d35df21c178fb9716a031a9a8891ec29d739fe901fddc45c366344e2"
+    },
+    {
+      "noteId": "n172",
+      "sourceBlockIds": [
+        "b0544"
+      ],
+      "sourceMarker": "[172]",
+      "opening": "Пар. Францішак, Пасланне на 48-мы Сусветны дзень міру (8 снежня 2014), 4: AAS 107 (2015), 70-71.",
+      "closing": "Пар. Францішак, Пасланне на 48-мы Сусветны дзень міру (8 снежня 2014), 4: AAS 107 (2015), 70-71.",
+      "sha256": "98f036ac05077e77222295d4fbe333f7f91c6ee2069ecccf3924a5aea0d80191"
+    },
+    {
+      "noteId": "n173",
+      "sourceBlockIds": [
+        "b0545"
+      ],
+      "sourceMarker": "[173]",
+      "opening": "Пар. Міжнародная тэалагічная камісія, Memoria e riconciliazione: la Chiesa e le colpe del passato, C",
+      "closing": " камісія, Memoria e riconciliazione: la Chiesa e le colpe del passato, Città del Vaticano 2000, 5.3.",
+      "sha256": "0412c510e4236f0f1bd1ac27941791a5598efecf11454e0518d7e103b82ec1f5"
+    },
+    {
+      "noteId": "n174",
+      "sourceBlockIds": [
+        "b0546"
+      ],
+      "sourceMarker": "[174]",
+      "opening": "Як і ў папскіх булах Sicut dudum (13 студзеня 1435) і Etsi suscepti (9 студзеня 1442) Яўгена IV, а т",
+      "closing": "анняў свецкіх уладаў, што рэлятывізавала праблему несумяшчальнасці рабства з хрысціянскім сумленнем.",
+      "sha256": "2d0bfc4e0a6f1109c6359b1d794bc2c7e7746fccd6df02f51114f7a06d17930b"
+    },
+    {
+      "noteId": "n175",
+      "sourceBlockIds": [
+        "b0547"
+      ],
+      "sourceMarker": "[175]",
+      "opening": "Пар. Леў XIII, Энц. In plurimis (5 мая 1888): Acta Leonis XIII, VIII, Rome 1889, 169-192. Варта адзн",
+      "closing": "di Monsignor Massaia Vicario Apostolico nel paese dei Galla, aprile 1866, risposta al quesito n. 15.",
+      "sha256": "cbaecf62ea249792ea3f80d20a0916d27c5c2214af24023b4b70295c3b71eca3"
+    },
+    {
+      "noteId": "n176",
+      "sourceBlockIds": [
+        "b0548"
+      ],
+      "sourceMarker": "[176]",
+      "opening": "Пар. Святы Ян Павел ІІ, Була Incarnationis mysterium (29 лістапада 1998), 11: AAS 91 (1999), 139-141",
+      "closing": "ар. Святы Ян Павел ІІ, Була Incarnationis mysterium (29 лістапада 1998), 11: AAS 91 (1999), 139-141.",
+      "sha256": "3e5e303b706a1ded6353a3c3b4d327c17553672b8ef8b6e824443e72de5cd5bc"
+    },
+    {
+      "noteId": "n177",
+      "sourceBlockIds": [
+        "b0549"
+      ],
+      "sourceMarker": "[177]",
+      "opening": "Пар. Святы Павел VI, Regina caeli (17 мая 1970): Insegnamenti di Paolo VI, vol. VIII, 506.",
+      "closing": "Пар. Святы Павел VI, Regina caeli (17 мая 1970): Insegnamenti di Paolo VI, vol. VIII, 506.",
+      "sha256": "24284e3dd7a9d6f2f25a570521801cc7c8b64d11043d076a1f861090e76ed5c7"
+    },
+    {
+      "noteId": "n178",
+      "sourceBlockIds": [
+        "b0550"
+      ],
+      "sourceMarker": "[178]",
+      "opening": "Пар. Францішак, Энц. Fratelli tutti (3 кастрычніка 2020), 183.",
+      "closing": "Пар. Францішак, Энц. Fratelli tutti (3 кастрычніка 2020), 183.",
+      "sha256": "bfc4145786b40c69be520042112216451c4eb4ad060d7832c00e9bcea8416e8b"
+    },
+    {
+      "noteId": "n179",
+      "sourceBlockIds": [
+        "b0551"
+      ],
+      "sourceMarker": "[179]",
+      "opening": "Пар. Другі Ватыканскі Сабор, Пастырская канст. Gaudium et spes, 26.",
+      "closing": "Пар. Другі Ватыканскі Сабор, Пастырская канст. Gaudium et spes, 26.",
+      "sha256": "8d3bf37f3fe7b9ede00caee99a8d90f55d1f13f77ff2f08a5a2bdf0d5f98561d"
+    },
+    {
+      "noteId": "n180",
+      "sourceBlockIds": [
+        "b0552"
+      ],
+      "sourceMarker": "[180]",
+      "opening": "Святы Павел VI, Прамова да 20-й Генеральнай Асамблеі Арганізацыі Аб’яднаных Нацый (4 кастрычніка 196",
+      "closing": " да 20-й Генеральнай Асамблеі Арганізацыі Аб’яднаных Нацый (4 кастрычніка 1965): AAS 57 (1965), 881.",
+      "sha256": "ee67232a82e1dc41f71ea55ca847a47447f0737aae39c7d07f6a0df88b55c2e7"
+    },
+    {
+      "noteId": "n181",
+      "sourceBlockIds": [
+        "b0553"
+      ],
+      "sourceMarker": "[181]",
+      "opening": "Арганізацыя Аб’яднаных Нацый, Статут Арганізацыі Аб’яднаных Нацый (26 чэрвеня 1945), Прэамбула.",
+      "closing": "Арганізацыя Аб’яднаных Нацый, Статут Арганізацыі Аб’яднаных Нацый (26 чэрвеня 1945), Прэамбула.",
+      "sha256": "b7696669c0ec830dddb0e5dfc1ce1abee878279a01ea8feb9928780292f803ba"
+    },
+    {
+      "noteId": "n182",
+      "sourceBlockIds": [
+        "b0554"
+      ],
+      "sourceMarker": "[182]",
+      "opening": "Пар. Францішак, Энц. Fratelli tutti (3 кастрычніка 2020), 258: AAS 112 (2020), 1061: «Фактычна, у ап",
+      "closing": "“большага зла, чым зло, якое трэба спыніць”»; пар. Катэхізіс Каталіцкага Касцёла, Мінск, 2011, 2309.",
+      "sha256": "f65f7966cc321eb43f3051ae3b6dc87151a46295e4e174522cd22d018442267c"
+    },
+    {
+      "noteId": "n183",
+      "sourceBlockIds": [
+        "b0555"
+      ],
+      "sourceMarker": "[183]",
+      "opening": "Пар. ] Дыкастэрыя веравучэння – Дыкастэрыя па культуры і адукацыі, nota antiqua et Nova (14 студзеня",
+      "closing": "стэрыя па культуры і адукацыі, nota antiqua et Nova (14 студзеня 2025), 99: AAS 117 (2025), 202-203.",
+      "sha256": "13f8ba9a0d617692d586fc507892cca50734655165f8a1f13206f865551a9ef2"
+    },
+    {
+      "noteId": "n184",
+      "sourceBlockIds": [
+        "b0556"
+      ],
+      "sourceMarker": "[184]",
+      "opening": "Пар. тамсама, 103: AAS 117 (2025), 204.",
+      "closing": "Пар. тамсама, 103: AAS 117 (2025), 204.",
+      "sha256": "7f46c5d4a55746ef800060df201e1110e5f6866223cc45b8a7baddc4d9f2fda6"
+    },
+    {
+      "noteId": "n185",
+      "sourceBlockIds": [
+        "b0557"
+      ],
+      "sourceMarker": "[185]",
+      "opening": "Пар. Аўдыенцыя з удзельнікамі Пленарнага пасяджэння Асамблеі ініцыятыў дапамогі Усходнім Касцёлам (R",
+      "closing": "ня Асамблеі ініцыятыў дапамогі Усходнім Касцёлам (ROACO) (26 чэрвеня 2025): AAS 117 (2025), 847-849.",
+      "sha256": "5860db33a4681801ce44a0f7ab619c8cdd7e9e97ba6a0ed82312a3058d387f40"
+    },
+    {
+      "noteId": "n186",
+      "sourceBlockIds": [
+        "b0558"
+      ],
+      "sourceMarker": "[186]",
+      "opening": "Пар. Францішак, Пасланне на 53-ці Сусветны дзень міру (8 снежня 2019): AAS 112 (2020), 54-61.",
+      "closing": "Пар. Францішак, Пасланне на 53-ці Сусветны дзень міру (8 снежня 2019): AAS 112 (2020), 54-61.",
+      "sha256": "b55a6ef6d87face2d45726668833a30cf9d61dff43f70c5e35ac37e68fed4217"
+    },
+    {
+      "noteId": "n187",
+      "sourceBlockIds": [
+        "b0559"
+      ],
+      "sourceMarker": "[187]",
+      "opening": "J.R.R. Tolkien, The Lord of the Rings. The Return of the King, Part III, Book Five, Chapter IX, New ",
+      "closing": "ing the evil in the fields that we know, so that those who live after may have clean earth to till.”",
+      "sha256": "2abba980f342979fc5ef80aed8513a5dc9537d95a8fa6aec7285a3ba3739eeb3"
+    },
+    {
+      "noteId": "n188",
+      "sourceBlockIds": [
+        "b0560"
+      ],
+      "sourceMarker": "[188]",
+      "opening": "Прамова да прадстаўнікоў сродкаў масавай камунікацыі (12 мая 2025): AAS 117 (2025), 682.",
+      "closing": "Прамова да прадстаўнікоў сродкаў масавай камунікацыі (12 мая 2025): AAS 117 (2025), 682.",
+      "sha256": "cb100d7e67504e5fb769d3ad6e31581331a4a0b2e6c131fbfceda2d5971c8f37"
+    },
+    {
+      "noteId": "n189",
+      "sourceBlockIds": [
+        "b0561"
+      ],
+      "sourceMarker": "[189]",
+      "opening": "Тамсама.",
+      "closing": "Тамсама.",
+      "sha256": "91c195fa392aa147a945b43518471a136d3ba23ecc5e9c2c521659306c3eecdf"
+    },
+    {
+      "noteId": "n190",
+      "sourceBlockIds": [
+        "b0562"
+      ],
+      "sourceMarker": "[190]",
+      "opening": "Святы Ян Павел II, Пасланне на 31-ы Сусветны дзень міру (1 студзеня 1998), 1: AAS 90 (1998), 147.",
+      "closing": "Святы Ян Павел II, Пасланне на 31-ы Сусветны дзень міру (1 студзеня 1998), 1: AAS 90 (1998), 147.",
+      "sha256": "c5e54b028b4d995b6a1464313d4f48c1b7cbd7f51d5e7dd09efaf9098e60a009"
+    },
+    {
+      "noteId": "n191",
+      "sourceBlockIds": [
+        "b0563"
+      ],
+      "sourceMarker": "[191]",
+      "opening": "Святы Аўгустын, Enarrationes in psalmos, 84, 12: CCSL 39, Turnhout 1956, 1172-1173.",
+      "closing": "Святы Аўгустын, Enarrationes in psalmos, 84, 12: CCSL 39, Turnhout 1956, 1172-1173.",
+      "sha256": "937414c38b47ca8a3281afe594e82dbb6fff32c77b2528ec40fbcffbaa9f7a83"
+    },
+    {
+      "noteId": "n192",
+      "sourceBlockIds": [
+        "b0564"
+      ],
+      "sourceMarker": "[192]",
+      "opening": "Пар. Францішак, Энц. Dilexit nos (24 кастрычніка 2024), 22.",
+      "closing": "Пар. Францішак, Энц. Dilexit nos (24 кастрычніка 2024), 22.",
+      "sha256": "72c4abb955ff7e685ae83d51753ab6e2348c873cb8e415d1294d098d0e2e6695"
+    },
+    {
+      "noteId": "n193",
+      "sourceBlockIds": [
+        "b0565"
+      ],
+      "sourceMarker": "[193]",
+      "opening": "Пар. той жа, Энц. Fratelli tutti (3 кастрычніка 2020), 115.",
+      "closing": "Пар. той жа, Энц. Fratelli tutti (3 кастрычніка 2020), 115.",
+      "sha256": "02de02001d698b2eeee36b10273d559155b389b40522e48bb68a43ae3a6fbd63"
+    },
+    {
+      "noteId": "n194",
+      "sourceBlockIds": [
+        "b0566"
+      ],
+      "sourceMarker": "[194]",
+      "opening": "Пар. тамсама, 261.",
+      "closing": "Пар. тамсама, 261.",
+      "sha256": "c2030064ec683b43445929396f4eb2a0f87e052b46a6a7eb36e5ed2b3ffb1678"
+    },
+    {
+      "noteId": "n195",
+      "sourceBlockIds": [
+        "b0567"
+      ],
+      "sourceMarker": "[195]",
+      "opening": "Пар. Святы Павел VI, Прамова да 20-й Генеральнай Асамблеі Арганізацыі Аб’яднаных Нацый (4 кастрычнік",
+      "closing": "20-й Генеральнай Асамблеі Арганізацыі Аб’яднаных Нацый (4 кастрычніка 1965): AAS 57 (1965), 878-879.",
+      "sha256": "86e241d71dfd76b16629ea9e4b5f599702034736e40b627a36fdf636bddf88d1"
+    },
+    {
+      "noteId": "n196",
+      "sourceBlockIds": [
+        "b0568"
+      ],
+      "sourceMarker": "[196]",
+      "opening": "Пар. Пій XII, Радыёпасланне «Un’ora grave» (24 жніўня 1939): AAS 31 (1939), 334.",
+      "closing": "Пар. Пій XII, Радыёпасланне «Un’ora grave» (24 жніўня 1939): AAS 31 (1939), 334.",
+      "sha256": "3d2e06fc33d4e9b243381b687c9904c70226b253b271d6e28787d08424b90250"
+    },
+    {
+      "noteId": "n197",
+      "sourceBlockIds": [
+        "b0569"
+      ],
+      "sourceMarker": "[197]",
+      "opening": "Giorgio La Pira, Riflessioni sul Concilio. Address of Professor Giorgio La Pira, Mayor of Florence, ",
+      "closing": "io La Pira, Mayor of Florence, to the «Guides de France» (Rome, 4 September 1962), Florence 1962, 6.",
+      "sha256": "2f913aa2b96fce3208559ba22cb5e585d51b5d16646d99eee87dba751c72d2aa"
+    },
+    {
+      "noteId": "n198",
+      "sourceBlockIds": [
+        "b0570"
+      ],
+      "sourceMarker": "[198]",
+      "opening": "Прамова да ўдзельнікаў Юбілею Усходніх Касцёлаў (14 мая 2025): AAS 117 (2025), 686.",
+      "closing": "Прамова да ўдзельнікаў Юбілею Усходніх Касцёлаў (14 мая 2025): AAS 117 (2025), 686.",
+      "sha256": "6346950a01160db2b515b3c144a4a94a85d560e1dda53a664cb51a30e7ae7ef9"
+    },
+    {
+      "noteId": "n199",
+      "sourceBlockIds": [
+        "b0571"
+      ],
+      "sourceMarker": "[199]",
+      "opening": "Пар. Францішак, Энц. Fratelli tutti (3 кастрычніка 2020), 271.",
+      "closing": "Пар. Францішак, Энц. Fratelli tutti (3 кастрычніка 2020), 271.",
+      "sha256": "63f50f954347185160843483a72a30901c68d1f3030a13ee31f93758599c5de7"
+    },
+    {
+      "noteId": "n200",
+      "sourceBlockIds": [
+        "b0572"
+      ],
+      "sourceMarker": "[200]",
+      "opening": "Пар. той жа, Заклік да міру ў Асізі на Сусветны дзень малітвы за мір. «Sete di pace. Religioni e cul",
+      "closing": "ітвы за мір. «Sete di pace. Religioni e culture in dialogo» (20 верасня 2016): AAS 108 (2016), 1124.",
+      "sha256": "9ebb2dabf1caaf349c06939ab733e6ebb526dc6df528a130cf89eeb37d394f50"
+    },
+    {
+      "noteId": "n201",
+      "sourceBlockIds": [
+        "b0573"
+      ],
+      "sourceMarker": "[201]",
+      "opening": "Тамсама, Прамова да дыпламатычнага корпуса, акрэдытаванага пры Апостальскай Сталіцы (9 студзеня 2025",
+      "closing": "ламатычнага корпуса, акрэдытаванага пры Апостальскай Сталіцы (9 студзеня 2025): AAS 117 (2025), 110.",
+      "sha256": "19e0a8ef87ce1805d1f1ac338df703c5ea866ebfed8a2097b7cd9892019d5722"
+    },
+    {
+      "noteId": "n202",
+      "sourceBlockIds": [
+        "b0574"
+      ],
+      "sourceMarker": "[202]",
+      "opening": "Пар. той жа, Прамова да ўдзельнікаў 38-й сесіі ФАО (20 чэрвеня 2013): AAS 105 (2013), 616-617.",
+      "closing": "Пар. той жа, Прамова да ўдзельнікаў 38-й сесіі ФАО (20 чэрвеня 2013): AAS 105 (2013), 616-617.",
+      "sha256": "d2493fc92789102106198e160d10b378ccd382ec3ec6481b3980c872a3d2b93b"
+    },
+    {
+      "noteId": "n203",
+      "sourceBlockIds": [
+        "b0575"
+      ],
+      "sourceMarker": "[203]",
+      "opening": "Першае благаслаўленне «Urbi et Orbi» (8 мая 2025): AAS 117 (2025), 660.",
+      "closing": "Першае благаслаўленне «Urbi et Orbi» (8 мая 2025): AAS 117 (2025), 660.",
+      "sha256": "cc153fcb13b6e0f2a455bd75c861da08f6d23e80fb1be7a146c31eed7b776681"
+    },
+    {
+      "noteId": "n204",
+      "sourceBlockIds": [
+        "b0576"
+      ],
+      "sourceMarker": "[204]",
+      "opening": "Тамсама.",
+      "closing": "Тамсама.",
+      "sha256": "91c195fa392aa147a945b43518471a136d3ba23ecc5e9c2c521659306c3eecdf"
+    },
+    {
+      "noteId": "n205",
+      "sourceBlockIds": [
+        "b0577"
+      ],
+      "sourceMarker": "[205]",
+      "opening": "Пар. Гамілія падчас Нешпараў на ўрачыстасць Найсвяцейшай Багародзіцы Марыі (31 снежня 2025): L’Osser",
+      "closing": "ыстасць Найсвяцейшай Багародзіцы Марыі (31 снежня 2025): L’Osservatore Romano, 2 студзеня 2026, 1-2.",
+      "sha256": "bb77eef87eea8189f864685aac9927f5deec14d3b9524560a2cc22a04594b85b"
+    },
+    {
+      "noteId": "n206",
+      "sourceBlockIds": [
+        "b0578"
+      ],
+      "sourceMarker": "[206]",
+      "opening": "Пар. Гамілія падчас Імшы ва ўрачыстасць Нараджэння Пана (25 снежня 2025): L’Osservatore Romano, 27 с",
+      "closing": "адчас Імшы ва ўрачыстасць Нараджэння Пана (25 снежня 2025): L’Osservatore Romano, 27 снежня 2025, 3.",
+      "sha256": "4e35153891a1c8134994c7d014001dd6a021f04bf97da4eb2f2ec11075f40f4b"
+    },
+    {
+      "noteId": "n207",
+      "sourceBlockIds": [
+        "b0579"
+      ],
+      "sourceMarker": "[207]",
+      "opening": "Пар. тамсама.",
+      "closing": "Пар. тамсама.",
+      "sha256": "6d87ca9cc8c046e9230056cc23f996b01b8d7b6364fbdba7b2260005f4dc615e"
+    },
+    {
+      "noteId": "n208",
+      "sourceBlockIds": [
+        "b0580"
+      ],
+      "sourceMarker": "[208]",
+      "opening": "Пар. Малітва «Анёл Панскі» на ўрачыстасць Аб’яўлення Пана (6 студзеня 2026): L’Osservatore Romano, 7",
+      "closing": " Панскі» на ўрачыстасць Аб’яўлення Пана (6 студзеня 2026): L’Osservatore Romano, 7 студзеня 2026, 3.",
+      "sha256": "f3884ced158ec302095824de8e6094b7827e25160e6779feb8ae20e38a2f7373"
+    },
+    {
+      "noteId": "n209",
+      "sourceBlockIds": [
+        "b0581"
+      ],
+      "sourceMarker": "[209]",
+      "opening": "Пар. Гамілія падчас Імшы ўначы ва ўрачыстасць Нараджэння Пана (24 снежня 2025): L’Osservatore Romano",
+      "closing": "Імшы ўначы ва ўрачыстасць Нараджэння Пана (24 снежня 2025): L’Osservatore Romano, 27 снежня 2025, 2.",
+      "sha256": "1c0499e63a29349859b1dfc583773bf843f95f90f0b4978e55e72a9f55046622"
+    },
+    {
+      "noteId": "n210",
+      "sourceBlockIds": [
+        "b0582"
+      ],
+      "sourceMarker": "[210]",
+      "opening": "P. de Bérulle, Discours de l'état et des grandeurs de Jésus, Discours IV, Unité de Dieu en l'incarna",
+      "closing": "deurs de Jésus, Discours IV, Unité de Dieu en l'incarnation: Œuvres complètes, Paris 1856, col. 218.",
+      "sha256": "aaa30b5a0ebc8ebf50db9e12e3732c1e90146a12c114f7de38d33bedf8446e8b"
+    },
+    {
+      "noteId": "n211",
+      "sourceBlockIds": [
+        "b0583"
+      ],
+      "sourceMarker": "[211]",
+      "opening": "Тамсама.",
+      "closing": "Тамсама.",
+      "sha256": "91c195fa392aa147a945b43518471a136d3ba23ecc5e9c2c521659306c3eecdf"
+    },
+    {
+      "noteId": "n212",
+      "sourceBlockIds": [
+        "b0584"
+      ],
+      "sourceMarker": "[212]",
+      "opening": "Пар. Прамова на канферэнцыі «Штучны інтэлект і клопат пра наш агульны дом» (5 снежня 2025): L’Osserv",
+      "closing": "учны інтэлект і клопат пра наш агульны дом» (5 снежня 2025): L’Osservatore Romano, 5 снежня 2025, 2.",
+      "sha256": "867204d835be37f8bd7fc00333302bf66758a93df8ab2e3b46ae7738bf91707e"
+    },
+    {
+      "noteId": "n213",
+      "sourceBlockIds": [
+        "b0585"
+      ],
+      "sourceMarker": "[213]",
+      "opening": "Бэнэдыкт XVI, Энц. Deus caritas est (25 снежня 2005), 14.",
+      "closing": "Бэнэдыкт XVI, Энц. Deus caritas est (25 снежня 2005), 14.",
+      "sha256": "6f6f2b59568073b064d8cb11ad1046dd0773862549420581be98e8687bd31c7e"
+    },
+    {
+      "noteId": "n214",
+      "sourceBlockIds": [
+        "b0586"
+      ],
+      "sourceMarker": "[214]",
+      "opening": "Св. Аўгустын, Sermones, 272: In die Pentecostes ad infantes de sacramento: PL 38, Parigi 1865, col. ",
+      "closing": "ўгустын, Sermones, 272: In die Pentecostes ad infantes de sacramento: PL 38, Parigi 1865, col. 1247.",
+      "sha256": "ceac6a7e9e3b4af204da2baa89c9e4b5544c7e0e99e9ac8ced3399f0875042b7"
+    },
+    {
+      "noteId": "n215",
+      "sourceBlockIds": [
+        "b0587"
+      ],
+      "sourceMarker": "[215]",
+      "opening": "Бэнэдыкт XVI, Гамілія падчас Імшы Вячэры Пана (21 красавіка 2011): AAS 103 (2011), 321.",
+      "closing": "Бэнэдыкт XVI, Гамілія падчас Імшы Вячэры Пана (21 красавіка 2011): AAS 103 (2011), 321.",
+      "sha256": "6be6e413ec3db41a87904c62500e927cb2fe63999c250f7bb65bdbf4150bab0d"
+    },
+    {
+      "noteId": "n216",
+      "sourceBlockIds": [
+        "b0588"
+      ],
+      "sourceMarker": "[216]",
+      "opening": "Прамова да Рымскай курыі з віншаваннямі на Божае Нараджэнне (22 снежня 2025): L’Osservatore Romano, ",
+      "closing": "урыі з віншаваннямі на Божае Нараджэнне (22 снежня 2025): L’Osservatore Romano, 22 снежня 2025, 6-7.",
+      "sha256": "1d513dffe3c6150a9fc127bdccf6c961383e3f326735edcf32d56d7c4eb25778"
+    },
+    {
+      "noteId": "n217",
+      "sourceBlockIds": [
+        "b0589"
+      ],
+      "sourceMarker": "[217]",
+      "opening": "Пар. вышэйзгаданай энц., 11-14.",
+      "closing": "Пар. вышэйзгаданай энц., 11-14.",
+      "sha256": "c59ad479c95819fd9c5f343b699089f23303ee1d8fc6d37ae30735cd687a9406"
+    },
+    {
+      "noteId": "n218",
+      "sourceBlockIds": [
+        "b0590"
+      ],
+      "sourceMarker": "[218]",
+      "opening": "Пар. Прамова да ўдзельнікаў канферэнцыі «Годнасць дзяцей і падлеткаў у эпоху штучнага інтэлекту» (13",
+      "closing": "длеткаў у эпоху штучнага інтэлекту» (13 лістапада 2025): L’Osservatore Romano, 13 лістапада 2025, 3.",
+      "sha256": "c9c7880f0be4d0933034a89d3b523b98988e6c260d51cb30763e27fd4c459750"
+    },
+    {
+      "noteId": "n219",
+      "sourceBlockIds": [
+        "b0591"
+      ],
+      "sourceMarker": "[219]",
+      "opening": "Пар. Бэнэдыкт XVI, Энц. Caritas in veritate (29 чэрвеня 2009), 34.",
+      "closing": "Пар. Бэнэдыкт XVI, Энц. Caritas in veritate (29 чэрвеня 2009), 34.",
+      "sha256": "40efe0473f40eb5ce8803218081a5504b0190a74c6723b1f7048865071a1cf5c"
+    },
+    {
+      "noteId": "n220",
+      "sourceBlockIds": [
+        "b0592"
+      ],
+      "sourceMarker": "[220]",
+      "opening": "Францішак, Апост. адг. Laudate Deum (4 кастрычніка 2023), 67: AAS 115 (2023), 1059.",
+      "closing": "Францішак, Апост. адг. Laudate Deum (4 кастрычніка 2023), 67: AAS 115 (2023), 1059.",
+      "sha256": "58abb1ed9b3fc9c41259ec92088b2163db7a84c432972e7106e2b47cac1fe024"
+    },
+    {
+      "noteId": "n221",
+      "sourceBlockIds": [
+        "b0593"
+      ],
+      "sourceMarker": "[221]",
+      "opening": "Пар. Малітва «Анёл Панскі» ва ўрачыстасць Аб’яўлення Пана (6 студзеня 2026): L’Osservatore Romano, 7",
+      "closing": " Панскі» ва ўрачыстасць Аб’яўлення Пана (6 студзеня 2026): L’Osservatore Romano, 7 студзеня 2026, 3.",
+      "sha256": "713a0230093e8d1f849a0806434ebfc80da58d7f4f386e5529239c8092e0a967"
+    },
+    {
+      "noteId": "n222",
+      "sourceBlockIds": [
+        "b0594"
+      ],
+      "sourceMarker": "[222]",
+      "opening": "Бэнэдыкт XVI, Генеральная аўдыенцыя (15 лютага 2006): L’Osservatore Romano, 16 лютага 2006, 4.",
+      "closing": "Бэнэдыкт XVI, Генеральная аўдыенцыя (15 лютага 2006): L’Osservatore Romano, 16 лютага 2006, 4.",
+      "sha256": "7d9de5c3c1b5ef3bae25c53515ae51402b5a7bb95cf8009307fc76b8c07861cd"
+    },
+    {
+      "noteId": "n223",
+      "sourceBlockIds": [
+        "b0595"
+      ],
+      "sourceMarker": "[223]",
+      "opening": "Разважанне на малітоўнае чуванне і Ружанец за мір (11 кастрычніка 2025): L’Osservatore Romano, 13 ка",
+      "closing": "тоўнае чуванне і Ружанец за мір (11 кастрычніка 2025): L’Osservatore Romano, 13 кастрычніка 2025, 2.",
+      "sha256": "4d31546547d20a60b74527d26babc7374392be17dd97090606207908b8c5ba8d"
+    },
+    {
+      "noteId": "n224",
+      "sourceBlockIds": [
+        "b0596"
+      ],
+      "sourceMarker": "[224]",
+      "opening": "Святы Павел VI, Гамілія у марыйным санктуарыі Маці Божай у Банарыі (24 красавіка 1970): AAS 62 (1970",
+      "closing": "авел VI, Гамілія у марыйным санктуарыі Маці Божай у Банарыі (24 красавіка 1970): AAS 62 (1970), 301.",
+      "sha256": "1aef51b15d8ecb1d79829ca86df2e7df761a104545ec2c5a8f98703407fab8b0"
+    }
+  ]
+}

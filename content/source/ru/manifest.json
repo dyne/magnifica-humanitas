@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "locale": "ru",
+  "document": "Magnifica Humanitas",
+  "author": "Leo XIV",
+  "documentDate": "2026-05-15",
+  "discoveredFrom": "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html",
+  "canonicalUrl": "http://www.vatican.va/content/leo-xiv/ru/encyclicals/documents/20260515-magnifica-humanitas.html",
+  "copyright": "Copyright © Dicastery for Communication – Libreria Editrice Vaticana",
+  "selectedFormat": "HTML",
+  "artifacts": [
+    {
+      "requestedUrl": "https://www.vatican.va/content/leo-xiv/ru/encyclicals/documents/20260515-magnifica-humanitas.html",
+      "finalUrl": "https://www.vatican.va/content/leo-xiv/ru/encyclicals/documents/20260515-magnifica-humanitas.html",
+      "httpStatus": 200,
+      "retrievedAt": "2026-10-14T16:48:13.218522+00:00",
+      "bytes": 529938,
+      "sha256": "56af0e13af246091991209c63d9e3e00da3f017de07090854e5de69d6a60b3e7",
+      "contentType": "text/html",
+      "path": "official.html"
+    },
+    {
+      "requestedUrl": "https://www.vatican.va/content/dam/leo-xiv/pdf/encyclicals/20260515-magnifica-humanitas_ru.pdf",
+      "finalUrl": "https://www.vatican.va/content/dam/leo-xiv/pdf/encyclicals/20260515-magnifica-humanitas_ru.pdf",
+      "httpStatus": 200,
+      "retrievedAt": "2026-10-14T16:48:13.580891+00:00",
+      "bytes": 1065269,
+      "sha256": "233d81934c2118cdfa8e66685af2a923a94d356d82a8f2b5ee9065b72914b94c",
+      "contentType": "application/pdf",
+      "path": "comparison.pdf"
+    }
+  ],
+  "acquisitionTool": {
+    "name": "Python urllib.request",
+    "version": "3.13.5"
+  },
+  "extractionTool": {
+    "name": "Python html.parser.HTMLParser",
+    "version": "3.13.5"
+  },
+  "linkedPdfUrls": [
+    "https://www.vatican.va/content/dam/leo-xiv/pdf/encyclicals/20260515-magnifica-humanitas_ru.pdf"
+  ],
+  "sourceLanguage": {
+    "code": "ru",
+    "name": "Russian",
+    "script": "Cyrillic",
+    "htmlLang": "ru",
+    "openingWitness": "Исполненный величия человеческий род"
+  },
+  "inspection": {
+    "method": "Direct inspection of native-language opening, middle and ending; heading and first/last note boundaries. Script and distinctive wording checked, not native-speaker proofreading. Detailed complete-structure validation follows in source-parsing.",
+    "htmlSamples": {
+      "p001": {
+        "sha256": "11eddbf218bb5dcd25d9ae01e12d00d1f4b3e528cdc8c252d2c006c48b7f7829",
+        "opening": "1. Исполненный величия человеческий род, сотворенный Богом, стоит сегодня перед решающим выбором: возводить новую Вавилонскую башню или созидать град, где смогут обитать вместе Бог",
+        "closing": "сняется лишь в тайне воплотившегося Слова» [1]. Во Христе эта великая человечность явилась как Путь, Истина и Жизнь и открыла каждому из нас возможность возрастания к совершенству."
+      },
+      "p123": {
+        "sha256": "1dc920aaf8134cea5cab01eb191f921b49b25e062f4649948ebd923a9c9c31de",
+        "opening": "123. История показывает нам не только череду злодеяний, но и доказывает, что человечество способно создавать институты, оберегающие жизнь. В последние два столетия об этом свидетел",
+        "closing": "ких обязательствах, которые исполняются слишком медленно. И всё же именно хрупкость этих результатов показывает, как драгоценна ответственность тех, кто их начинает и поддерживает."
+      },
+      "p245": {
+        "sha256": "6ed764b784a098ac933ac0882b7da379a6edbfd85ee18c745ced70f72e62978a",
+        "opening": "245. Исполнившись верой Марии, станем «ткачами надежды» в нашем мире. Будем делиться тем, кто мы есть и что имеем, чтобы присутствие Иисуса возрастало среди нас и становилось зримы",
+        "closing": "а наш путь в меняющемся настоящем и хранила в каждом из нас доверие к Евангелию, дабы мы могли свидетельствовать о красоте исполненного величия человечества, в котором обитает Бог."
+      },
+      "openingHeading": "ВВЕДЕНИЕ",
+      "n001": {
+        "sha256": "7506d5d93698d1b4dd985a53badc7de7b037a29ba7bbd7c9f9430687def0ee6e",
+        "opening": "[1] ВТОРОЙ ВАТИКАНСКИЙ СОБОР, паст. конст. Gaudium et spes, 22: AAS 58 (1966), 1042.",
+        "closing": "[1] ВТОРОЙ ВАТИКАНСКИЙ СОБОР, паст. конст. Gaudium et spes, 22: AAS 58 (1966), 1042."
+      },
+      "n224": {
+        "sha256": "e8896cb4a99d355f14680b86ace16bde59d887cafebd03497873397a08f0738b",
+        "opening": "[224] С. ПАВЕЛ VI, Проповедь в марианском святилище Богоматери Бонарийской (24 апреля 1970): AAS 62 (1970), 301.",
+        "closing": "[224] С. ПАВЕЛ VI, Проповедь в марианском святилище Богоматери Бонарийской (24 апреля 1970): AAS 62 (1970), 301."
+      }
+    },
+    "selectionReason": "HTML and PDF both contain Russian. PDF layout extraction adds print page breaks, wrapped lines and separates note layout; HTML keeps logical Cyrillic text, heading markup and explicit note/reference anchors. Retain the Russian PDF for comparison and choose HTML.",
+    "pdfComparison": {
+      "tool": "pdftotext -layout",
+      "version": "25.03.0",
+      "textSha256": "c0a65af857d30afa60a46a57327ebdabdc50c676e46960cc5d090e04e34a7ccc",
+      "characters": 262399,
+      "replacementCharacters": 0,
+      "directionalControls": 0,
+      "opening": "ЭНЦИКЛИКА\n                                    MAGNIFICA HUMANITAS\n                                        СВЯТЕЙШЕГО ОТЦА\n                                             ЛЬВА XIV\n                        О ЗАЩИТЕ ЧЕЛОВЕЧЕСКОЙ ЛИЧНОСТИ\n                       В ЭПОХУ ИСКУССТВЕННОГО ИНТЕЛЛЕКТА\n\n\n\n\nВВЕДЕНИЕ\n\n\nRes novae нашего времени\nДве библейские иконы\nС",
+      "actualLanguage": "ru"
+    }
+  }
+}
