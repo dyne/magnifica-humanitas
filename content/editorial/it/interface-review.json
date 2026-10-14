@@ -1,0 +1,1132 @@
+{
+  "schemaVersion": 1,
+  "locale": "it",
+  "reviewDate": "2026-10-15",
+  "readingRevision": "it-2026-10-15-reading-1",
+  "catalogPath": "content/messages/it.json",
+  "catalogSha256": "7ef03b80d2a9a1dacf8cc32344253c54e40af74005f12c52f361f7959dfc5b1b",
+  "catalogKeys": 291,
+  "reviewedCatalogGroups": [
+    "navigation and appearance",
+    "route titles and metadata",
+    "About, attribution and source method",
+    "source and note context",
+    "concept and relation labels",
+    "trail, reflection and endings",
+    "search and empty states",
+    "saved places, storage, return and live announcements",
+    "loading, failure, retry and unavailable destinations"
+  ],
+  "method": "Reviewed all Italian interface values for meaning, terminology, placeholders and sentence composition. Compared the actual localized reading in Chromium at both hosting bases. Inspected the nine-surface screenshots and enlarged phone headings; shortened Atlas/About headings in one bounded correction and confirmed. This is source-led editorial and automated/browser review, not native-speaker proofreading or a user study.",
+  "enabledLocalesAtReview": [
+    "en",
+    "it"
+  ],
+  "otherLocalesRemainUnreviewed": true,
+  "browserReports": [
+    {
+      "path": "output/italian/root-browser-results.json",
+      "sha256": "e9785d3a1f9fa18df970d7db152109d935ba7a8dc1608974a9a34cd699efda5f",
+      "passed": 24,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0
+    },
+    {
+      "path": "output/italian/root-english-layout-results.json",
+      "sha256": "c1e007e442285599fff0d8afb2c5eea21bd10367984a2923dabbdbb0a2c4313c",
+      "passed": 4,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0
+    },
+    {
+      "path": "output/italian/root-additional-results.json",
+      "sha256": "a83c96a7048fe96d98ea1d3604ba007d4ec5be367717e24af86aec58b8c18160",
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0
+    },
+    {
+      "path": "output/italian/subpath-browser-results.json",
+      "sha256": "a7951791dbaef74a06bf62a1ce14b01e599bc8ed5cd3b65de387b435ca27cae4",
+      "passed": 28,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0
+    },
+    {
+      "path": "output/italian/subpath-additional-results.json",
+      "sha256": "2df48abf3eafba8bda1a7bc5830c08a18ab911226c50586c12d184ed01110777",
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "output/italian/root-390-100-atlas.png",
+      "sha256": "33860d15af0e069a7b7d23ff19f5b6fff94531a28c44322e1b46015e9100f6ae",
+      "base": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 100,
+      "surface": "atlas"
+    },
+    {
+      "path": "output/italian/root-390-100-concept.png",
+      "sha256": "b74ba07d1d2a7a9e7f1ec864bd4454e677f7fb3bf067042160e94bae7fac3cae",
+      "base": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 100,
+      "surface": "concept"
+    },
+    {
+      "path": "output/italian/root-390-100-trail.png",
+      "sha256": "4d3d9f6bde1073743a8d5d976cbbe8d7bfa2189d71b4a262192e5f7786ce2232",
+      "base": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 100,
+      "surface": "trail"
+    },
+    {
+      "path": "output/italian/root-390-100-read.png",
+      "sha256": "4ab287e698e6aaf328635783d1e08ab525fc7e7d08b493fb44050e6746e44b13",
+      "base": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 100,
+      "surface": "read"
+    },
+    {
+      "path": "output/italian/root-390-100-source.png",
+      "sha256": "26716891d6f171020ccf4d285ef6f4ebdd997e26820a0bedbaf157f5b19609ee",
+      "base": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 100,
+      "surface": "source"
+    },
+    {
+      "path": "output/italian/root-390-100-note.png",
+      "sha256": "bccdfc9fe8a2507853acc95ae4e72bb5513a7294ac27ef298219654ce5485e1e",
+      "base": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 100,
+      "surface": "note"
+    },
+    {
+      "path": "output/italian/root-390-100-search.png",
+      "sha256": "0e4bd8b4ca78bff06d6b9017fadf951d91767cdb780c38b622faa4a0018a21fd",
+      "base": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 100,
+      "surface": "search"
+    },
+    {
+      "path": "output/italian/root-390-100-saved.png",
+      "sha256": "21f22a132a836085c8ffa77c4a83c80409bf1a3ec822f0b744be5e3d132f2493",
+      "base": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 100,
+      "surface": "saved"
+    },
+    {
+      "path": "output/italian/root-390-100-about.png",
+      "sha256": "0a01478c80214075114096efac731e25023327e0dee3ecdfaa51e95c34acb199",
+      "base": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 100,
+      "surface": "about"
+    },
+    {
+      "path": "output/italian/root-390-100-selector.png",
+      "sha256": "bc78eabfcdee0f0c4dcb4cad280812531293f417f77b538daf1dadbc60ec6808",
+      "base": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 100,
+      "surface": "selector"
+    },
+    {
+      "path": "output/italian/root-390-100-about-dark.png",
+      "sha256": "edc64b28e54e19f69beb70cdaadbf1b871529a00ce80f1c82d9a79c50980dd73",
+      "base": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 100,
+      "surface": "about-dark"
+    },
+    {
+      "path": "output/italian/root-390-200-atlas.png",
+      "sha256": "b97d4782944ab8d5fee449071267a9ace42a5e35b16b4249fd4bc45464bd36cc",
+      "base": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 200,
+      "surface": "atlas"
+    },
+    {
+      "path": "output/italian/root-390-200-concept.png",
+      "sha256": "4a8c6588c1143fae495cd6f85e3c24ad332ab0c29aa60ac893a1040426e79b4b",
+      "base": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 200,
+      "surface": "concept"
+    },
+    {
+      "path": "output/italian/root-390-200-trail.png",
+      "sha256": "07954f7079433fda67cb840d0e21c5e7ece358a3791151463d717db625dc72ce",
+      "base": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 200,
+      "surface": "trail"
+    },
+    {
+      "path": "output/italian/root-390-200-read.png",
+      "sha256": "d66c22e20930643fd8b987b2a7895f338707c2586df56c52a47056563c058619",
+      "base": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 200,
+      "surface": "read"
+    },
+    {
+      "path": "output/italian/root-390-200-source.png",
+      "sha256": "3c2f0435ed5ae04821786c560721cae2c1eeb546c4c93b71446cf4e33481bcfc",
+      "base": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 200,
+      "surface": "source"
+    },
+    {
+      "path": "output/italian/root-390-200-note.png",
+      "sha256": "b186a61849b84cf837b8c729f114025c44c04e1ceb46f1dd377f9ab645d87125",
+      "base": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 200,
+      "surface": "note"
+    },
+    {
+      "path": "output/italian/root-390-200-search.png",
+      "sha256": "40db4864365fd953c626867c401b7a1ec87e8830f37609b6671a36937bc73655",
+      "base": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 200,
+      "surface": "search"
+    },
+    {
+      "path": "output/italian/root-390-200-saved.png",
+      "sha256": "beafbcf5395994267f65ddd5b6aa4f0212ff68337bba12475bb266e1b09f0ee4",
+      "base": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 200,
+      "surface": "saved"
+    },
+    {
+      "path": "output/italian/root-390-200-about.png",
+      "sha256": "1e23927355d4427573d8499aa04f2eb98d0d5f64617eb4d40684f668774596b4",
+      "base": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 200,
+      "surface": "about"
+    },
+    {
+      "path": "output/italian/root-390-200-selector.png",
+      "sha256": "d875af485361e1da45beaf230e9082b4ca4b89a0e48f681c0b7acc4b14715abe",
+      "base": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 200,
+      "surface": "selector"
+    },
+    {
+      "path": "output/italian/root-390-200-about-dark.png",
+      "sha256": "d2b6bc57a8d3b5199c81a9cbff5ffff15687d3a0eb55afb6a09898435b83ed8f",
+      "base": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 200,
+      "surface": "about-dark"
+    },
+    {
+      "path": "output/italian/root-1440-100-atlas.png",
+      "sha256": "e1dd32dbb572a405e97a2003b33e60f1e830920eb59128b9a28c3b6a6d33ecfa",
+      "base": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 100,
+      "surface": "atlas"
+    },
+    {
+      "path": "output/italian/root-1440-100-concept.png",
+      "sha256": "b457c048d5db514769069a4009d0e7618e90f98e44bb612ef3217803507b4858",
+      "base": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 100,
+      "surface": "concept"
+    },
+    {
+      "path": "output/italian/root-1440-100-trail.png",
+      "sha256": "265c94b18e4b1432fefff15ecdb61c6f05bcc87975d690fe7bf4a9dfac51d61e",
+      "base": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 100,
+      "surface": "trail"
+    },
+    {
+      "path": "output/italian/root-1440-100-read.png",
+      "sha256": "47db88573c820f6e9149a2c1d4a45ec313376c15ab50c3e260392a561c12cada",
+      "base": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 100,
+      "surface": "read"
+    },
+    {
+      "path": "output/italian/root-1440-100-source.png",
+      "sha256": "d050648fcdc09c9b8e6db80627f5dc391c54fa588e4246f44abc0421cd0a1cae",
+      "base": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 100,
+      "surface": "source"
+    },
+    {
+      "path": "output/italian/root-1440-100-note.png",
+      "sha256": "479a2cabc24232ddfc3cd993e5c389b075e96997b6b3df156b642791226415f1",
+      "base": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 100,
+      "surface": "note"
+    },
+    {
+      "path": "output/italian/root-1440-100-search.png",
+      "sha256": "b87d2b29dd67a32e58312cfacacb6dab705e55dbc8a109f475a540fe937996e2",
+      "base": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 100,
+      "surface": "search"
+    },
+    {
+      "path": "output/italian/root-1440-100-saved.png",
+      "sha256": "2a16d59108c20b47b6e0a4d14547355e77a93d3fcd26aa4f2d45ed0ae750ff60",
+      "base": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 100,
+      "surface": "saved"
+    },
+    {
+      "path": "output/italian/root-1440-100-about.png",
+      "sha256": "319b85e4612a7e356290a1a84b82112ffc0452fa1989c28a498831194b765f06",
+      "base": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 100,
+      "surface": "about"
+    },
+    {
+      "path": "output/italian/root-1440-100-selector.png",
+      "sha256": "145ad7e536c7691e877af7646e658d90759c78042e4b0807f8f8ba98cf5be7d7",
+      "base": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 100,
+      "surface": "selector"
+    },
+    {
+      "path": "output/italian/root-1440-100-about-dark.png",
+      "sha256": "92814228c5e7c811cbbd27835a30cc24be97fb9423710ae43bf7687e7d0b0999",
+      "base": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 100,
+      "surface": "about-dark"
+    },
+    {
+      "path": "output/italian/root-1440-200-atlas.png",
+      "sha256": "a4302a66a20fe5735c1631815f7f35c143c31ab06e36bb57c55fb57d479da59c",
+      "base": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 200,
+      "surface": "atlas"
+    },
+    {
+      "path": "output/italian/root-1440-200-concept.png",
+      "sha256": "94cdfd3d34b627a0961609e1640b0854fb21e792f5e9f8c39f54114789f47eae",
+      "base": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 200,
+      "surface": "concept"
+    },
+    {
+      "path": "output/italian/root-1440-200-trail.png",
+      "sha256": "96c9500a33b1c2856eb41987971dda47601bf765a9892a201ae1c3558a057545",
+      "base": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 200,
+      "surface": "trail"
+    },
+    {
+      "path": "output/italian/root-1440-200-read.png",
+      "sha256": "cbaccfa1077b27277fde941f664b3f9798606d7d0df2eaa402e77ea7ef316a20",
+      "base": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 200,
+      "surface": "read"
+    },
+    {
+      "path": "output/italian/root-1440-200-source.png",
+      "sha256": "be402db5337ffee310ad69ed9fe788d209893c89170f757e86fde85b9ba9832b",
+      "base": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 200,
+      "surface": "source"
+    },
+    {
+      "path": "output/italian/root-1440-200-note.png",
+      "sha256": "5f9e50c5944db0cad2b0aed2b5e2cb7cb2dca0cccb5b55f271961a666a85a438",
+      "base": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 200,
+      "surface": "note"
+    },
+    {
+      "path": "output/italian/root-1440-200-search.png",
+      "sha256": "7933a0759856c702ece8b944ccf1bd0b7c195bf1f270e20ca225cc1e621d0acb",
+      "base": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 200,
+      "surface": "search"
+    },
+    {
+      "path": "output/italian/root-1440-200-saved.png",
+      "sha256": "537367cd895e9fef90d57fbec63f634af601b58ffb7ac9d0eabb46bee1368237",
+      "base": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 200,
+      "surface": "saved"
+    },
+    {
+      "path": "output/italian/root-1440-200-about.png",
+      "sha256": "457f34d72abd84d86f8e5639f19bfca4cb8d3b64be4a227beea68b044ae3856d",
+      "base": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 200,
+      "surface": "about"
+    },
+    {
+      "path": "output/italian/root-1440-200-selector.png",
+      "sha256": "ccc2e3da6e877f4c6775e9f82d97e013f0dfb6cf2fe0ef363059d7eba356f96b",
+      "base": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 200,
+      "surface": "selector"
+    },
+    {
+      "path": "output/italian/root-1440-200-about-dark.png",
+      "sha256": "dabcd87102efdf011e5737634c02221745287df859ceeaa84423f8364052d3e8",
+      "base": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 200,
+      "surface": "about-dark"
+    },
+    {
+      "path": "output/italian/subpath-390-100-atlas.png",
+      "sha256": "33860d15af0e069a7b7d23ff19f5b6fff94531a28c44322e1b46015e9100f6ae",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 100,
+      "surface": "atlas"
+    },
+    {
+      "path": "output/italian/subpath-390-100-concept.png",
+      "sha256": "b74ba07d1d2a7a9e7f1ec864bd4454e677f7fb3bf067042160e94bae7fac3cae",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 100,
+      "surface": "concept"
+    },
+    {
+      "path": "output/italian/subpath-390-100-trail.png",
+      "sha256": "4d3d9f6bde1073743a8d5d976cbbe8d7bfa2189d71b4a262192e5f7786ce2232",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 100,
+      "surface": "trail"
+    },
+    {
+      "path": "output/italian/subpath-390-100-read.png",
+      "sha256": "4ab287e698e6aaf328635783d1e08ab525fc7e7d08b493fb44050e6746e44b13",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 100,
+      "surface": "read"
+    },
+    {
+      "path": "output/italian/subpath-390-100-source.png",
+      "sha256": "26716891d6f171020ccf4d285ef6f4ebdd997e26820a0bedbaf157f5b19609ee",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 100,
+      "surface": "source"
+    },
+    {
+      "path": "output/italian/subpath-390-100-note.png",
+      "sha256": "bccdfc9fe8a2507853acc95ae4e72bb5513a7294ac27ef298219654ce5485e1e",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 100,
+      "surface": "note"
+    },
+    {
+      "path": "output/italian/subpath-390-100-search.png",
+      "sha256": "0e4bd8b4ca78bff06d6b9017fadf951d91767cdb780c38b622faa4a0018a21fd",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 100,
+      "surface": "search"
+    },
+    {
+      "path": "output/italian/subpath-390-100-saved.png",
+      "sha256": "21f22a132a836085c8ffa77c4a83c80409bf1a3ec822f0b744be5e3d132f2493",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 100,
+      "surface": "saved"
+    },
+    {
+      "path": "output/italian/subpath-390-100-about.png",
+      "sha256": "0a01478c80214075114096efac731e25023327e0dee3ecdfaa51e95c34acb199",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 100,
+      "surface": "about"
+    },
+    {
+      "path": "output/italian/subpath-390-100-selector.png",
+      "sha256": "bc78eabfcdee0f0c4dcb4cad280812531293f417f77b538daf1dadbc60ec6808",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 100,
+      "surface": "selector"
+    },
+    {
+      "path": "output/italian/subpath-390-100-about-dark.png",
+      "sha256": "edc64b28e54e19f69beb70cdaadbf1b871529a00ce80f1c82d9a79c50980dd73",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 100,
+      "surface": "about-dark"
+    },
+    {
+      "path": "output/italian/subpath-390-200-atlas.png",
+      "sha256": "b97d4782944ab8d5fee449071267a9ace42a5e35b16b4249fd4bc45464bd36cc",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 200,
+      "surface": "atlas"
+    },
+    {
+      "path": "output/italian/subpath-390-200-concept.png",
+      "sha256": "4a8c6588c1143fae495cd6f85e3c24ad332ab0c29aa60ac893a1040426e79b4b",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 200,
+      "surface": "concept"
+    },
+    {
+      "path": "output/italian/subpath-390-200-trail.png",
+      "sha256": "07954f7079433fda67cb840d0e21c5e7ece358a3791151463d717db625dc72ce",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 200,
+      "surface": "trail"
+    },
+    {
+      "path": "output/italian/subpath-390-200-read.png",
+      "sha256": "d66c22e20930643fd8b987b2a7895f338707c2586df56c52a47056563c058619",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 200,
+      "surface": "read"
+    },
+    {
+      "path": "output/italian/subpath-390-200-source.png",
+      "sha256": "3c2f0435ed5ae04821786c560721cae2c1eeb546c4c93b71446cf4e33481bcfc",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 200,
+      "surface": "source"
+    },
+    {
+      "path": "output/italian/subpath-390-200-note.png",
+      "sha256": "b186a61849b84cf837b8c729f114025c44c04e1ceb46f1dd377f9ab645d87125",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 200,
+      "surface": "note"
+    },
+    {
+      "path": "output/italian/subpath-390-200-search.png",
+      "sha256": "40db4864365fd953c626867c401b7a1ec87e8830f37609b6671a36937bc73655",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 200,
+      "surface": "search"
+    },
+    {
+      "path": "output/italian/subpath-390-200-saved.png",
+      "sha256": "beafbcf5395994267f65ddd5b6aa4f0212ff68337bba12475bb266e1b09f0ee4",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 200,
+      "surface": "saved"
+    },
+    {
+      "path": "output/italian/subpath-390-200-about.png",
+      "sha256": "1e23927355d4427573d8499aa04f2eb98d0d5f64617eb4d40684f668774596b4",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 200,
+      "surface": "about"
+    },
+    {
+      "path": "output/italian/subpath-390-200-selector.png",
+      "sha256": "d875af485361e1da45beaf230e9082b4ca4b89a0e48f681c0b7acc4b14715abe",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 200,
+      "surface": "selector"
+    },
+    {
+      "path": "output/italian/subpath-390-200-about-dark.png",
+      "sha256": "d2b6bc57a8d3b5199c81a9cbff5ffff15687d3a0eb55afb6a09898435b83ed8f",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textPercent": 200,
+      "surface": "about-dark"
+    },
+    {
+      "path": "output/italian/subpath-1440-100-atlas.png",
+      "sha256": "e1dd32dbb572a405e97a2003b33e60f1e830920eb59128b9a28c3b6a6d33ecfa",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 100,
+      "surface": "atlas"
+    },
+    {
+      "path": "output/italian/subpath-1440-100-concept.png",
+      "sha256": "b457c048d5db514769069a4009d0e7618e90f98e44bb612ef3217803507b4858",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 100,
+      "surface": "concept"
+    },
+    {
+      "path": "output/italian/subpath-1440-100-trail.png",
+      "sha256": "265c94b18e4b1432fefff15ecdb61c6f05bcc87975d690fe7bf4a9dfac51d61e",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 100,
+      "surface": "trail"
+    },
+    {
+      "path": "output/italian/subpath-1440-100-read.png",
+      "sha256": "47db88573c820f6e9149a2c1d4a45ec313376c15ab50c3e260392a561c12cada",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 100,
+      "surface": "read"
+    },
+    {
+      "path": "output/italian/subpath-1440-100-source.png",
+      "sha256": "d050648fcdc09c9b8e6db80627f5dc391c54fa588e4246f44abc0421cd0a1cae",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 100,
+      "surface": "source"
+    },
+    {
+      "path": "output/italian/subpath-1440-100-note.png",
+      "sha256": "479a2cabc24232ddfc3cd993e5c389b075e96997b6b3df156b642791226415f1",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 100,
+      "surface": "note"
+    },
+    {
+      "path": "output/italian/subpath-1440-100-search.png",
+      "sha256": "b87d2b29dd67a32e58312cfacacb6dab705e55dbc8a109f475a540fe937996e2",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 100,
+      "surface": "search"
+    },
+    {
+      "path": "output/italian/subpath-1440-100-saved.png",
+      "sha256": "2a16d59108c20b47b6e0a4d14547355e77a93d3fcd26aa4f2d45ed0ae750ff60",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 100,
+      "surface": "saved"
+    },
+    {
+      "path": "output/italian/subpath-1440-100-about.png",
+      "sha256": "319b85e4612a7e356290a1a84b82112ffc0452fa1989c28a498831194b765f06",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 100,
+      "surface": "about"
+    },
+    {
+      "path": "output/italian/subpath-1440-100-selector.png",
+      "sha256": "145ad7e536c7691e877af7646e658d90759c78042e4b0807f8f8ba98cf5be7d7",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 100,
+      "surface": "selector"
+    },
+    {
+      "path": "output/italian/subpath-1440-100-about-dark.png",
+      "sha256": "92814228c5e7c811cbbd27835a30cc24be97fb9423710ae43bf7687e7d0b0999",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 100,
+      "surface": "about-dark"
+    },
+    {
+      "path": "output/italian/subpath-1440-200-atlas.png",
+      "sha256": "e30d925d62bf59b7a8e072313354892089f491d5b76737b6a56b3da6f53309bc",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 200,
+      "surface": "atlas"
+    },
+    {
+      "path": "output/italian/subpath-1440-200-concept.png",
+      "sha256": "06cacb860c00c4c181985c09c78a3ac0fe5802dbdad1668993b9c4efb7d5774d",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 200,
+      "surface": "concept"
+    },
+    {
+      "path": "output/italian/subpath-1440-200-trail.png",
+      "sha256": "01b2d0b91aaffa05e48090b7adc2dbb6123e440eb012bfd1c52245407c0f373c",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 200,
+      "surface": "trail"
+    },
+    {
+      "path": "output/italian/subpath-1440-200-read.png",
+      "sha256": "cbaccfa1077b27277fde941f664b3f9798606d7d0df2eaa402e77ea7ef316a20",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 200,
+      "surface": "read"
+    },
+    {
+      "path": "output/italian/subpath-1440-200-source.png",
+      "sha256": "be402db5337ffee310ad69ed9fe788d209893c89170f757e86fde85b9ba9832b",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 200,
+      "surface": "source"
+    },
+    {
+      "path": "output/italian/subpath-1440-200-note.png",
+      "sha256": "5f9e50c5944db0cad2b0aed2b5e2cb7cb2dca0cccb5b55f271961a666a85a438",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 200,
+      "surface": "note"
+    },
+    {
+      "path": "output/italian/subpath-1440-200-search.png",
+      "sha256": "7933a0759856c702ece8b944ccf1bd0b7c195bf1f270e20ca225cc1e621d0acb",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 200,
+      "surface": "search"
+    },
+    {
+      "path": "output/italian/subpath-1440-200-saved.png",
+      "sha256": "537367cd895e9fef90d57fbec63f634af601b58ffb7ac9d0eabb46bee1368237",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 200,
+      "surface": "saved"
+    },
+    {
+      "path": "output/italian/subpath-1440-200-about.png",
+      "sha256": "457f34d72abd84d86f8e5639f19bfca4cb8d3b64be4a227beea68b044ae3856d",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 200,
+      "surface": "about"
+    },
+    {
+      "path": "output/italian/subpath-1440-200-selector.png",
+      "sha256": "e31fdbe246b2a9aff030ad102c535852272535c72cdf17a6a9a99fea327df895",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 200,
+      "surface": "selector"
+    },
+    {
+      "path": "output/italian/subpath-1440-200-about-dark.png",
+      "sha256": "dabcd87102efdf011e5737634c02221745287df859ceeaa84423f8364052d3e8",
+      "base": "/magnifica-humanitas/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textPercent": 200,
+      "surface": "about-dark"
+    }
+  ],
+  "accessibility": {
+    "axeScans": 18,
+    "violations": 0,
+    "scope": "Nine surfaces at 390x844, 100% text at each hosting base; WCAG2A/AA and WCAG2.1AA tags. Keyboard selector/appearance order, equivalent-route switching and reflection reveal/return tested. Reduced motion set for the complete layout matrix. No physical-device or screen-reader review claimed."
+  },
+  "fontEvidence": "CDP CSS.getPlatformFontsForNode confirmed self-hosted Syne headings and Inter paragraphs painting real Italian glyphs at every named surface and matrix size. JSON attachments are in the browser reports.",
+  "layoutEvidence": {
+    "namedSurfaceCaptures": 72,
+    "selectorCaptures": 8,
+    "darkAboutCaptures": 8,
+    "horizontalOverflowFailures": 0,
+    "textSizesPercent": [
+      100,
+      200
+    ],
+    "viewports": [
+      [
+        390,
+        844
+      ],
+      [
+        1440,
+        900
+      ]
+    ]
+  },
+  "rtlFixture": {
+    "path": "output/locale-fixture-results.json",
+    "sha256": "cd9f2c99a9177400af01df7553939d0d10952212c041d9e5885e2e798b953885",
+    "passed": 11,
+    "failed": 0,
+    "skipped": 0,
+    "production": false
+  },
+  "detector": {
+    "command": "/home/gestalt-dyne/.agents/skills/impeccable/scripts/impeccable detect --json content/messages/it.json",
+    "findings": 0
+  },
+  "limitations": [
+    "No native-speaker proofreading.",
+    "Chromium emulation, not physical devices or comprehensive assistive-technology testing.",
+    "Automated scans do not establish full accessibility.",
+    "No reader comprehension, efficacy or agreement measurement.",
+    "No deployment or published-origin verification."
+  ],
+  "fullMilestoneGates": {
+    "reviewDate": "2026-10-15",
+    "startingCommit": "62519e62f56b258c78b82558366f7f1ef38bc589",
+    "acceptedDependencyCommit": "a40916d0b81daf86a7fd51cbd81a1ee080c91fde",
+    "execution": "Sequential check, source:check, then test:browser:all; no concurrent builds.",
+    "check": {
+      "command": "npm run check",
+      "log": "/tmp/magnifica-it-final-check.log",
+      "passed": 94,
+      "failed": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    "source": {
+      "command": "npm run source:check",
+      "log": "/tmp/magnifica-it-final-source.log",
+      "editions": 10,
+      "paragraphsPerEdition": 245,
+      "notesPerEdition": 224,
+      "parserFixturesPassed": 10,
+      "failed": 0,
+      "skipped": 0
+    },
+    "browser": {
+      "command": "PLAYWRIGHT_BROWSERS_PATH=/tmp/magnifica-playwright npm run test:browser:all",
+      "log": "/tmp/magnifica-it-final-browser.log",
+      "reports": [
+        {
+          "base": "/",
+          "path": "output/hosting/root-browser-results.json",
+          "sha256": "2c951b430aaf324831b0723a1fc5ac3e355a0d6ac819b8800c23b11f717a3788",
+          "passed": 110,
+          "failed": 0,
+          "skipped": 0,
+          "flaky": 0
+        },
+        {
+          "base": "/magnifica-humanitas/",
+          "path": "output/hosting/subpath-browser-results.json",
+          "sha256": "7d6fc5ef785f15bed7567a8546a78fa435ef4d20fc9a06865409411f5dccb17d",
+          "passed": 110,
+          "failed": 0,
+          "skipped": 0,
+          "flaky": 0
+        }
+      ]
+    },
+    "correction": "First full root run found two obsolete en-only expectations. Updated shell tests to keep pending-French fallback and assert Italian browser preference followed by explicit English. Restarted all required gates, all passed. No runtime correction."
+  }
+}
