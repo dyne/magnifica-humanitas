@@ -24,6 +24,9 @@ export interface EditorialExclusion {
   id: string;
   sourceSpan: SourceQuotation;
   scope: 'clause' | 'sentence' | 'liturgical-formula' | 'ceremonial-address';
+  /** Default global. Source-location requires review as an incomplete clause
+   * fragment; grammatical clause scope alone does not authorize this setting. */
+  matchScope?: 'global' | 'source-location';
   reason: string;
   preserve: EditorialText;
   /** Full sentences containing the exact excluded span; never publish by splicing. */

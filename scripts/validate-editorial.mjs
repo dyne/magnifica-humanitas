@@ -88,6 +88,8 @@ export function validateContent({corpus,coverage,concepts,relations}) {
       span(e.sourceSpan,ep,r.paragraphId);
       check(e.id===`${r.paragraphId}-exclusion-${i+1}`,ep,'stable exclusion ID required');
       check(['clause','sentence','liturgical-formula','ceremonial-address'].includes(e.scope),ep,'explicit exclusion scope required');
+      check(e.matchScope === undefined || ['global','source-location'].includes(e.matchScope),ep,'invalid exclusion match scope');
+      check(e.matchScope !== 'source-location' || e.scope === 'clause',ep,'source-location matching requires a clause fragment');
       check(!blank(e.reason),ep,'individual exclusion reason required');
       block(e.preserve,`${ep}.preserve`,'editorial-instruction');
       check(e.sentenceContexts?.length>0,ep,'sentence-level context required');
