@@ -3,7 +3,8 @@ const pending = { source: true, reading: false, messages: false, reviewed: false
 export const localeRegistry = Object.freeze([
   { id: 'en', autonym: 'English', dir: 'ltr', source: true, reading: true, messages: true, reviewed: true },
   { id: 'it', autonym: 'Italiano', dir: 'ltr', source: true, reading: true, messages: true, reviewed: true },
-  ...[['ar', 'العربية'], ['be', 'Беларуская'], ['de', 'Deutsch'], ['es', 'Español'], ['fr', 'Français'], ['pl', 'Polski'], ['pt', 'Português'], ['ru', 'Русский']]
+  { id: 'de', autonym: 'Deutsch', dir: 'ltr', source: true, reading: true, messages: true, reviewed: true },
+  ...[['ar', 'العربية'], ['be', 'Беларуская'], ['es', 'Español'], ['fr', 'Français'], ['pl', 'Polski'], ['pt', 'Português'], ['ru', 'Русский']]
     .map(([id, autonym]) => ({ id, autonym, dir: id === 'ar' ? 'rtl' : 'ltr', ...pending })),
 ].map(Object.freeze));
 

@@ -1,0 +1,495 @@
+{
+  "schemaVersion": 1,
+  "locale": "de",
+  "reviewDate": "2026-10-15",
+  "readingRevision": "de-2026-10-15-reading-2",
+  "catalogPath": "content/messages/de.json",
+  "catalogSha256": "fbf6a4cf2a482a31863f878ce251d7e08c1535af13a335b1c071f3afff9bfc75",
+  "catalogKeys": 291,
+  "status": "integrated-verification-complete-awaiting-supervisor-review",
+  "method": "All 291 public and assistive interface values reviewed for meaning, official German terminology, placeholder parity and sentence composition. German reading revision 2 and the frozen official source are unchanged. Actual Chromium screenshots were inspected on both hosting bases; automated accessibility and font checks are bounded evidence, not a claim of comprehensive accessibility or native-speaker review.",
+  "enabledLocalesAtReview": [
+    "en",
+    "it",
+    "de"
+  ],
+  "otherLocalesRemainUnavailable": true,
+  "catalogReview": [
+    "Navigation, selector, settings and live announcements",
+    "Titles, About, attribution and source-edition labels",
+    "Empty, unavailable, loading, failure and retry states",
+    "Search, saved locations, caller return and locale formatting",
+    "Exact alignment-map relation labels and official dignity terminology"
+  ],
+  "gatesSequential": [
+    {
+      "command": "npm run check",
+      "exitStatus": 0,
+      "unitTestsPassed": 119,
+      "log": "/tmp/mh-de-final-check.log",
+      "logSha256": "3f8e143aa7f22669be9dcd0a1476ae0db2a0a7bf5116c2cd396620291aff733a"
+    },
+    {
+      "command": "npm run source:check",
+      "exitStatus": 0,
+      "sourceEditions": 10,
+      "paragraphsPerEdition": 245,
+      "notesPerEdition": 224,
+      "log": "/tmp/mh-de-final-source.log",
+      "logSha256": "8b38345d859dc5ef6c31b8117076db9bade27e3f6d2d68de4c13d387a93e8846"
+    },
+    {
+      "command": "PLAYWRIGHT_BROWSERS_PATH=/tmp/magnifica-playwright npm run test:browser:all",
+      "exitStatus": 0,
+      "passedPerBase": 151,
+      "log": "/tmp/mh-de-final-browser.log",
+      "logSha256": "d3b201792e354fd45b476b562b9dddf25c4801f9989a761329c492dabf4bafe4"
+    }
+  ],
+  "browserReports": [
+    {
+      "base": "/",
+      "path": "output/german/root-browser-results.json",
+      "sha256": "3750941429425cd4adb7afd54727519554d6228c48d48f0ea43fcfc470dfb349",
+      "stats": {
+        "startTime": "2026-10-14T23:32:24.423Z",
+        "duration": 33200.138999999996,
+        "expected": 151,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    {
+      "base": "/magnifica-humanitas/",
+      "path": "output/german/subpath-browser-results.json",
+      "sha256": "5b86664196c514290d259e04973a99dc4e29a5f5b7cd6b637038db39ec7599e8",
+      "stats": {
+        "startTime": "2026-10-14T23:32:58.824Z",
+        "duration": 33113.09,
+        "expected": 151,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    }
+  ],
+  "hostingBuildEvidence": {
+    "path": "output/hosting/browser-evidence.json",
+    "sha256": "4253097501aebdfa7b058137011838519b959c791dc3c3df16fac1662ed74f6a"
+  },
+  "isolatedRtlFixture": {
+    "commands": [
+      "MAGNIFICA_RTL_FIXTURE=1 VITE_BASE=/ npx vite build --mode locale-fixture",
+      "VITE_BASE=/ PLAYWRIGHT_BROWSERS_PATH=/tmp/magnifica-playwright npx playwright test --config playwright.locale.config.ts"
+    ],
+    "exitStatus": 0,
+    "stats": {
+      "startTime": "2026-10-14T23:33:51.933Z",
+      "duration": 5577.037,
+      "expected": 11,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "report": "output/german/rtl-fixture-results.json",
+    "sha256": "be9a8810bcdc30dcc95355d1b446dc7d65af2bd690b79f8f5ea6c64491833576"
+  },
+  "browserCoverage": [
+    "41 German cases per hosting base",
+    "Nine actual surfaces: Atlas, Concept, Trail, Read, Source, Note, Search, Saved, About",
+    "390x844 and 1440x900; 100% and 200% text; reduced motion; keyboard selector and reflection paths",
+    "Ordered regional browser preferences, navigator fallback and explicit English/Italian URLs",
+    "Equivalent route switches with queries, anchors and refreshed caller labels",
+    "Exact saved paragraph and caller return; local source quotations and note backlinks",
+    "Failed and cancelled activation preserves exact title and reading state; retry and lazy-loading regressions"
+  ],
+  "visualEvidence": {
+    "surfaceScreenshots": 72,
+    "selectorScreenshots": 8,
+    "darkAboutScreenshots": 8,
+    "screenshots": [
+      {
+        "path": "output/german/root-1440-100-about-dark.png",
+        "sha256": "4d43382f4525fbd12e5c40f190d85ac6aeeec530e5d791e95d4bc17551f60de5"
+      },
+      {
+        "path": "output/german/root-1440-100-about.png",
+        "sha256": "5438d219060884ca664777c52a95507d47a26fe1950fe26608e3f4f9811255b0"
+      },
+      {
+        "path": "output/german/root-1440-100-atlas.png",
+        "sha256": "85713b4bb3d832894baff4c1b59a15c0682ac5297f8e237196165c1469e22052"
+      },
+      {
+        "path": "output/german/root-1440-100-concept.png",
+        "sha256": "f898c62790325a3b3b2dae911e551458b83d6a06850cde7db50512354ba8c1a8"
+      },
+      {
+        "path": "output/german/root-1440-100-note.png",
+        "sha256": "d973b54f8ee22bb213eed91dfb98292a2ac4ca7477d07f64973ada94a2d3d7e0"
+      },
+      {
+        "path": "output/german/root-1440-100-read.png",
+        "sha256": "125b3add6bb9de91587248d74ec60d27b214ba8f20ea002067a1c8f33cdc57ac"
+      },
+      {
+        "path": "output/german/root-1440-100-saved.png",
+        "sha256": "318c2c4e4e94ea38573ee013b70064a3dce4b4c59e73470643a696ad28b16789"
+      },
+      {
+        "path": "output/german/root-1440-100-search.png",
+        "sha256": "7075c44d3f2b09af35accd2fd90858b272a84b0b6aedf5766d38c66b63905bc1"
+      },
+      {
+        "path": "output/german/root-1440-100-selector.png",
+        "sha256": "f482bcc926e5e37351278f8512a11cfb4bf00e06af77f40e35265d28a01c0e1b"
+      },
+      {
+        "path": "output/german/root-1440-100-source.png",
+        "sha256": "80b981a955f1de0207c4210a27750afbff1921b7d3a3c5457819c97ff587f41f"
+      },
+      {
+        "path": "output/german/root-1440-100-trail.png",
+        "sha256": "864b7d99397f2c09a77272b6ee277e159f71c2e4b5a44632e6ad123062e80c10"
+      },
+      {
+        "path": "output/german/root-1440-200-about-dark.png",
+        "sha256": "81e6599a4189a57cbc18cbcf756c1b43f9ea8e3f67912d9453371a972a9744c7"
+      },
+      {
+        "path": "output/german/root-1440-200-about.png",
+        "sha256": "e97b95fd15450d22faf56a2a2554ad5dd89121e36f69007cc3ed063e29999309"
+      },
+      {
+        "path": "output/german/root-1440-200-atlas.png",
+        "sha256": "315ca1bbae14b368edd4b58e1a696ad0ec1b7684d88ab866e2371ab2ea270eb7"
+      },
+      {
+        "path": "output/german/root-1440-200-concept.png",
+        "sha256": "55aaa0da2460e910707caac301671c86e5be11bf504f4955c0f6faf10bac9d4c"
+      },
+      {
+        "path": "output/german/root-1440-200-note.png",
+        "sha256": "5516baa7c3692ed47344ac64b3b8fdfc12defcca848a87e762180e36fcf3c129"
+      },
+      {
+        "path": "output/german/root-1440-200-read.png",
+        "sha256": "9f1a000e4fa627da020316d268fa0f828328a5feb49ccc38e25198c4afcf3687"
+      },
+      {
+        "path": "output/german/root-1440-200-saved.png",
+        "sha256": "cf845ad551cce37ec8a811016a9ee888a97bdb91aaba5ed6279dba0b77f8ae5c"
+      },
+      {
+        "path": "output/german/root-1440-200-search.png",
+        "sha256": "50f01e8f2c0d75e90cbd4c9b916ca9c69526fae233ae7bc11edf6c2f28898e62"
+      },
+      {
+        "path": "output/german/root-1440-200-selector.png",
+        "sha256": "d0cd6a45470c92e0d0bf0a413c825fed48fa3a5ee6e88e3a2f1cc6005e574fa1"
+      },
+      {
+        "path": "output/german/root-1440-200-source.png",
+        "sha256": "e656d2329202ca562c4908371c003a50df8aee89eacdc5cf46fe7e5d6107957f"
+      },
+      {
+        "path": "output/german/root-1440-200-trail.png",
+        "sha256": "4648a3041f8374b1523eff36aa9df3e9eab66a00953c95af513bea2f8d4d3b3b"
+      },
+      {
+        "path": "output/german/root-390-100-about-dark.png",
+        "sha256": "2f5d08f71762846ab22492c84b889109745404558c54c6af2672fb190162bcb3"
+      },
+      {
+        "path": "output/german/root-390-100-about.png",
+        "sha256": "f5e28b405408c801cdd46e151afe5d3ba24b722d8a6c2c7ad92a65404d1d2c5d"
+      },
+      {
+        "path": "output/german/root-390-100-atlas.png",
+        "sha256": "b990a535456e294621ee5bac3cf63a2681acabeef7e383d814d64c95bfaff6a0"
+      },
+      {
+        "path": "output/german/root-390-100-concept.png",
+        "sha256": "a1a9372014b5ba9a4a3d92b1df1ee9dda7d8180b7361e13676c6c32800cb3c32"
+      },
+      {
+        "path": "output/german/root-390-100-note.png",
+        "sha256": "a3374874e8ec026285a2ed84b3eb90c98fab0e1483fb273277cd379672de6f35"
+      },
+      {
+        "path": "output/german/root-390-100-read.png",
+        "sha256": "0b766d7dceaad8752e64d6a4048a24bc586ca00cbb2423b9344afc8fa3a5a1ea"
+      },
+      {
+        "path": "output/german/root-390-100-saved.png",
+        "sha256": "29d6e9851a43691fe55b5ce11ac50dd684379133ed34eb3462ff73f241fc20e1"
+      },
+      {
+        "path": "output/german/root-390-100-search.png",
+        "sha256": "ba25c8e020ba430549bf42107a2b452df982bf0fc5831208cc3e1d1a5198aa03"
+      },
+      {
+        "path": "output/german/root-390-100-selector.png",
+        "sha256": "cdb7b367573187d589305312c79291809b18f92a1310d77ac24fefc509b06503"
+      },
+      {
+        "path": "output/german/root-390-100-source.png",
+        "sha256": "d7874f008e3234bb58a7645106ec3d25ebe0fd2f567181b26cfbadbf09fb5060"
+      },
+      {
+        "path": "output/german/root-390-100-trail.png",
+        "sha256": "cbc0881b0756985dad6334df9bb6098759922f2d65fb421c5889f31fc3a80a3a"
+      },
+      {
+        "path": "output/german/root-390-200-about-dark.png",
+        "sha256": "ff94591e5af5183e13ab8cc88181fd20053ffb9abf2988d0f04620f9129b022d"
+      },
+      {
+        "path": "output/german/root-390-200-about.png",
+        "sha256": "53e85c3d30d26b36a506b8e977009eea7f8e91a167fcb6cecb66c44fc05990d7"
+      },
+      {
+        "path": "output/german/root-390-200-atlas.png",
+        "sha256": "85273677b802e71383be22ed760dfbbbfda1a9b720751fd9c9b5b5505408ad8d"
+      },
+      {
+        "path": "output/german/root-390-200-concept.png",
+        "sha256": "88aab222b6352f5564509e14a98be8be33a7f5ed3b909c71d297c94cfe06b054"
+      },
+      {
+        "path": "output/german/root-390-200-note.png",
+        "sha256": "109249dba839cb2055d55c78a52acdf6b133b3b617bb1064463fb265754d2e6e"
+      },
+      {
+        "path": "output/german/root-390-200-read.png",
+        "sha256": "5d5449746b7f80894ffbf2bbadb3358b4b1ebe8cc839018ebe7665ff875d8a94"
+      },
+      {
+        "path": "output/german/root-390-200-saved.png",
+        "sha256": "8fffe1c9cec6a4664e60f0f1955f46367f1424dfa7ef4076e3bf8b7970f960f9"
+      },
+      {
+        "path": "output/german/root-390-200-search.png",
+        "sha256": "0b602b12f8e004adee621494d036d4a8eec320a1e5542c5d5f599cc27a2e6022"
+      },
+      {
+        "path": "output/german/root-390-200-selector.png",
+        "sha256": "d52ab4389007e7fb37baea28452b01f3948d1c118f842017fa7dd60cabc02d3e"
+      },
+      {
+        "path": "output/german/root-390-200-source.png",
+        "sha256": "85cb6b6b82cc9e97cfd7d2bcb26c58610772fb08ccb03f442febca85805d5504"
+      },
+      {
+        "path": "output/german/root-390-200-trail.png",
+        "sha256": "914b0637258ec88c358bc6ba718405b47df1f7ee4759829393c7c38e2977ab8e"
+      },
+      {
+        "path": "output/german/subpath-1440-100-about-dark.png",
+        "sha256": "4d43382f4525fbd12e5c40f190d85ac6aeeec530e5d791e95d4bc17551f60de5"
+      },
+      {
+        "path": "output/german/subpath-1440-100-about.png",
+        "sha256": "5438d219060884ca664777c52a95507d47a26fe1950fe26608e3f4f9811255b0"
+      },
+      {
+        "path": "output/german/subpath-1440-100-atlas.png",
+        "sha256": "85713b4bb3d832894baff4c1b59a15c0682ac5297f8e237196165c1469e22052"
+      },
+      {
+        "path": "output/german/subpath-1440-100-concept.png",
+        "sha256": "f898c62790325a3b3b2dae911e551458b83d6a06850cde7db50512354ba8c1a8"
+      },
+      {
+        "path": "output/german/subpath-1440-100-note.png",
+        "sha256": "d973b54f8ee22bb213eed91dfb98292a2ac4ca7477d07f64973ada94a2d3d7e0"
+      },
+      {
+        "path": "output/german/subpath-1440-100-read.png",
+        "sha256": "125b3add6bb9de91587248d74ec60d27b214ba8f20ea002067a1c8f33cdc57ac"
+      },
+      {
+        "path": "output/german/subpath-1440-100-saved.png",
+        "sha256": "318c2c4e4e94ea38573ee013b70064a3dce4b4c59e73470643a696ad28b16789"
+      },
+      {
+        "path": "output/german/subpath-1440-100-search.png",
+        "sha256": "7075c44d3f2b09af35accd2fd90858b272a84b0b6aedf5766d38c66b63905bc1"
+      },
+      {
+        "path": "output/german/subpath-1440-100-selector.png",
+        "sha256": "f482bcc926e5e37351278f8512a11cfb4bf00e06af77f40e35265d28a01c0e1b"
+      },
+      {
+        "path": "output/german/subpath-1440-100-source.png",
+        "sha256": "80b981a955f1de0207c4210a27750afbff1921b7d3a3c5457819c97ff587f41f"
+      },
+      {
+        "path": "output/german/subpath-1440-100-trail.png",
+        "sha256": "864b7d99397f2c09a77272b6ee277e159f71c2e4b5a44632e6ad123062e80c10"
+      },
+      {
+        "path": "output/german/subpath-1440-200-about-dark.png",
+        "sha256": "81e6599a4189a57cbc18cbcf756c1b43f9ea8e3f67912d9453371a972a9744c7"
+      },
+      {
+        "path": "output/german/subpath-1440-200-about.png",
+        "sha256": "e97b95fd15450d22faf56a2a2554ad5dd89121e36f69007cc3ed063e29999309"
+      },
+      {
+        "path": "output/german/subpath-1440-200-atlas.png",
+        "sha256": "315ca1bbae14b368edd4b58e1a696ad0ec1b7684d88ab866e2371ab2ea270eb7"
+      },
+      {
+        "path": "output/german/subpath-1440-200-concept.png",
+        "sha256": "55aaa0da2460e910707caac301671c86e5be11bf504f4955c0f6faf10bac9d4c"
+      },
+      {
+        "path": "output/german/subpath-1440-200-note.png",
+        "sha256": "5516baa7c3692ed47344ac64b3b8fdfc12defcca848a87e762180e36fcf3c129"
+      },
+      {
+        "path": "output/german/subpath-1440-200-read.png",
+        "sha256": "9f1a000e4fa627da020316d268fa0f828328a5feb49ccc38e25198c4afcf3687"
+      },
+      {
+        "path": "output/german/subpath-1440-200-saved.png",
+        "sha256": "cf845ad551cce37ec8a811016a9ee888a97bdb91aaba5ed6279dba0b77f8ae5c"
+      },
+      {
+        "path": "output/german/subpath-1440-200-search.png",
+        "sha256": "50f01e8f2c0d75e90cbd4c9b916ca9c69526fae233ae7bc11edf6c2f28898e62"
+      },
+      {
+        "path": "output/german/subpath-1440-200-selector.png",
+        "sha256": "d0cd6a45470c92e0d0bf0a413c825fed48fa3a5ee6e88e3a2f1cc6005e574fa1"
+      },
+      {
+        "path": "output/german/subpath-1440-200-source.png",
+        "sha256": "e656d2329202ca562c4908371c003a50df8aee89eacdc5cf46fe7e5d6107957f"
+      },
+      {
+        "path": "output/german/subpath-1440-200-trail.png",
+        "sha256": "4648a3041f8374b1523eff36aa9df3e9eab66a00953c95af513bea2f8d4d3b3b"
+      },
+      {
+        "path": "output/german/subpath-390-100-about-dark.png",
+        "sha256": "2f5d08f71762846ab22492c84b889109745404558c54c6af2672fb190162bcb3"
+      },
+      {
+        "path": "output/german/subpath-390-100-about.png",
+        "sha256": "f5e28b405408c801cdd46e151afe5d3ba24b722d8a6c2c7ad92a65404d1d2c5d"
+      },
+      {
+        "path": "output/german/subpath-390-100-atlas.png",
+        "sha256": "b990a535456e294621ee5bac3cf63a2681acabeef7e383d814d64c95bfaff6a0"
+      },
+      {
+        "path": "output/german/subpath-390-100-concept.png",
+        "sha256": "a1a9372014b5ba9a4a3d92b1df1ee9dda7d8180b7361e13676c6c32800cb3c32"
+      },
+      {
+        "path": "output/german/subpath-390-100-note.png",
+        "sha256": "a3374874e8ec026285a2ed84b3eb90c98fab0e1483fb273277cd379672de6f35"
+      },
+      {
+        "path": "output/german/subpath-390-100-read.png",
+        "sha256": "0b766d7dceaad8752e64d6a4048a24bc586ca00cbb2423b9344afc8fa3a5a1ea"
+      },
+      {
+        "path": "output/german/subpath-390-100-saved.png",
+        "sha256": "29d6e9851a43691fe55b5ce11ac50dd684379133ed34eb3462ff73f241fc20e1"
+      },
+      {
+        "path": "output/german/subpath-390-100-search.png",
+        "sha256": "ba25c8e020ba430549bf42107a2b452df982bf0fc5831208cc3e1d1a5198aa03"
+      },
+      {
+        "path": "output/german/subpath-390-100-selector.png",
+        "sha256": "cdb7b367573187d589305312c79291809b18f92a1310d77ac24fefc509b06503"
+      },
+      {
+        "path": "output/german/subpath-390-100-source.png",
+        "sha256": "d7874f008e3234bb58a7645106ec3d25ebe0fd2f567181b26cfbadbf09fb5060"
+      },
+      {
+        "path": "output/german/subpath-390-100-trail.png",
+        "sha256": "cbc0881b0756985dad6334df9bb6098759922f2d65fb421c5889f31fc3a80a3a"
+      },
+      {
+        "path": "output/german/subpath-390-200-about-dark.png",
+        "sha256": "ff94591e5af5183e13ab8cc88181fd20053ffb9abf2988d0f04620f9129b022d"
+      },
+      {
+        "path": "output/german/subpath-390-200-about.png",
+        "sha256": "53e85c3d30d26b36a506b8e977009eea7f8e91a167fcb6cecb66c44fc05990d7"
+      },
+      {
+        "path": "output/german/subpath-390-200-atlas.png",
+        "sha256": "85273677b802e71383be22ed760dfbbbfda1a9b720751fd9c9b5b5505408ad8d"
+      },
+      {
+        "path": "output/german/subpath-390-200-concept.png",
+        "sha256": "88aab222b6352f5564509e14a98be8be33a7f5ed3b909c71d297c94cfe06b054"
+      },
+      {
+        "path": "output/german/subpath-390-200-note.png",
+        "sha256": "109249dba839cb2055d55c78a52acdf6b133b3b617bb1064463fb265754d2e6e"
+      },
+      {
+        "path": "output/german/subpath-390-200-read.png",
+        "sha256": "5d5449746b7f80894ffbf2bbadb3358b4b1ebe8cc839018ebe7665ff875d8a94"
+      },
+      {
+        "path": "output/german/subpath-390-200-saved.png",
+        "sha256": "8fffe1c9cec6a4664e60f0f1955f46367f1424dfa7ef4076e3bf8b7970f960f9"
+      },
+      {
+        "path": "output/german/subpath-390-200-search.png",
+        "sha256": "0b602b12f8e004adee621494d036d4a8eec320a1e5542c5d5f599cc27a2e6022"
+      },
+      {
+        "path": "output/german/subpath-390-200-selector.png",
+        "sha256": "d52ab4389007e7fb37baea28452b01f3948d1c118f842017fa7dd60cabc02d3e"
+      },
+      {
+        "path": "output/german/subpath-390-200-source.png",
+        "sha256": "85cb6b6b82cc9e97cfd7d2bcb26c58610772fb08ccb03f442febca85805d5504"
+      },
+      {
+        "path": "output/german/subpath-390-200-trail.png",
+        "sha256": "914b0637258ec88c358bc6ba718405b47df1f7ee4759829393c7c38e2977ab8e"
+      }
+    ],
+    "inspection": "All eight nine-surface review sheets and four selector/dark review sheets inspected. No clipping, horizontal overflow or missing glyphs observed. At 200% on a 390px viewport long words use emergency wrapping and pages require normal vertical scrolling.",
+    "axeScans": 18,
+    "axeViolations": 0,
+    "axeTags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21aa"
+    ],
+    "paintedFonts": [
+      "Inter-Regular",
+      "Syne-Bold"
+    ],
+    "paintedFontEvidence": {
+      "path": "output/german/painted-fonts.json",
+      "sha256": "7f488563c4a6245e64a8d2d76c4e45d6c7494c909f0a6a0f19b178385d3388d0",
+      "matrixAttachments": 8,
+      "surfaceChecks": 72
+    }
+  },
+  "boundedPolish": {
+    "change": "Shortened the German Atlas heading to Ideen erkunden after inspecting the 200% narrow layout.",
+    "impeccableDetectorFindings": 0,
+    "detectorOutput": "/tmp/mh-de-detector.json"
+  },
+  "limitations": [
+    "Long German compounds may wrap within a word at 200% text on narrow screens; inherited wrapping avoids horizontal overflow but does not provide typographic German hyphenation.",
+    "Chromium automation and screenshot review only; no physical-device, screen-reader-user or native-speaker proofreading study.",
+    "Automated accessibility scans do not establish comprehensive accessibility or learning efficacy.",
+    "Local build and preview evidence only; no publication or deployment claimed."
+  ]
+}

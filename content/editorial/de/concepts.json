@@ -1,0 +1,1268 @@
+{
+  "schemaVersion": 1,
+  "language": "de",
+  "editionId": "mh-de-official-html-2026-10-14",
+  "concepts": [
+    {
+      "id": "dignity",
+      "locale": "de",
+      "title": "Menschenwürde",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Nach der Enzyklika besitzt jede Person einen unverlierbaren Wert vor aller Leistung, Nützlichkeit, Anerkennung und moralischen Bewährung.",
+        "sourceRefs": [
+          "p050",
+          "p051",
+          "p052",
+          "p053",
+          "p058",
+          "p154"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Moralische, gesellschaftliche und existenzielle Würde können sich verändern; ontologische Würde geht nicht verloren. Arbeit kann sie ausdrücken, verleiht sie aber nicht. Die Quelle begründet sie mit Schöpfung und göttlicher Liebe.",
+        "sourceRefs": [
+          "p050",
+          "p051",
+          "p052",
+          "p053",
+          "p058",
+          "p154"
+        ]
+      },
+      "foundationRefs": [
+        "p050",
+        "p052",
+        "p053"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p052",
+        "start": 693,
+        "end": 711,
+        "text": "ontologische Würde"
+      }
+    },
+    {
+      "id": "rights",
+      "locale": "de",
+      "title": "Menschenrechte",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Menschenrechte geben der gemeinsamen Würde geschichtlichen und rechtlichen Ausdruck. Sie sollen allen tatsächlich Schutz und Handlungsmöglichkeiten sichern.",
+        "sourceRefs": [
+          "p054",
+          "p055",
+          "p056",
+          "p057",
+          "p081"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Formale Verkündung genügt nicht. Die Kirche vertritt ausdrücklich Leben von der Empfängnis bis zum natürlichen Ende und verurteilt Abtreibung, Tötung Unschuldiger und Euthanasie. Diese normativen Urteile unterscheiden ihren Ansatz von einer bloßen Aufzählung allgemein anerkannter Rechte.",
+        "sourceRefs": [
+          "p054",
+          "p055",
+          "p056",
+          "p057",
+          "p081"
+        ]
+      },
+      "foundationRefs": [
+        "p054"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p055",
+        "start": 0,
+        "end": 35,
+        "text": "Die Menschenrechte sind unantastbar"
+      }
+    },
+    {
+      "id": "common-good",
+      "locale": "de",
+      "title": "Gemeinwohl",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Gemeinwohl bezeichnet die gemeinsamen gesellschaftlichen Bedingungen und Beziehungen, unter denen Personen und Gruppen sich entfalten können.",
+        "sourceRefs": [
+          "p059",
+          "p060",
+          "p061",
+          "p062",
+          "p063",
+          "p064"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Es ist weder die Summe privater Vorteile noch ein Vorwand, einzelne Personen dem Ganzen zu opfern. Öffentliche Verantwortung, Vielfalt und Beteiligung gehören zum Aufbau dieses gemeinsamen Guts.",
+        "sourceRefs": [
+          "p059",
+          "p060",
+          "p061",
+          "p062",
+          "p063",
+          "p064"
+        ]
+      },
+      "foundationRefs": [
+        "p059"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p060",
+        "start": 448,
+        "end": 553,
+        "text": "Es entspricht weder der Summe der Vorteile der Einzelnen noch der Schnittmenge ihrer Partikularinteressen"
+      }
+    },
+    {
+      "id": "shared-goods",
+      "locale": "de",
+      "title": "Allgemeine Bestimmung der Güter",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Die allgemeine Bestimmung der Güter verlangt nach der Quelle, lebensnotwendige materielle, kulturelle und digitale Güter allen Menschen zugänglich und nützlich zu machen.",
+        "sourceRefs": [
+          "p065",
+          "p066",
+          "p067",
+          "p108",
+          "p178"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Privateigentum wird anerkannt und zugleich sozial begrenzt. Der Anspruch betrifft auch Daten, Patente und Plattformen; er schreibt keine bestimmte Softwarelizenz vor und lässt Umwelt- und Ausbeutungsfolgen nicht außer Acht.",
+        "sourceRefs": [
+          "p065",
+          "p066",
+          "p067",
+          "p108",
+          "p178"
+        ]
+      },
+      "foundationRefs": [
+        "p065",
+        "p066"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p065",
+        "start": 59,
+        "end": 103,
+        "text": "Prinzip der allgemeinen Bestimmung der Güter"
+      }
+    },
+    {
+      "id": "subsidiarity",
+      "locale": "de",
+      "title": "Subsidiarität",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Subsidiarität schützt die eigenständige Verantwortung von Personen, Familien, Gemeinschaften und Verbänden und verlangt ihre Unterstützung durch höhere Ebenen.",
+        "sourceRefs": [
+          "p068",
+          "p069",
+          "p070",
+          "p071",
+          "p072",
+          "p087"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Sie rechtfertigt keinen Rückzug des Staates. Schutz, Förderung, Koordination und übergreifende Regeln ermöglichen erst wirksame Beteiligung; die mächtige höhere Ebene kann auch ein Plattformunternehmen sein.",
+        "sourceRefs": [
+          "p068",
+          "p069",
+          "p070",
+          "p071",
+          "p072",
+          "p087"
+        ]
+      },
+      "foundationRefs": [],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p069",
+        "start": 664,
+        "end": 724,
+        "text": "Die Subsidiarität rechtfertigt nicht den Rückzug des Staates"
+      }
+    },
+    {
+      "id": "solidarity",
+      "locale": "de",
+      "title": "Solidarität",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Solidarität entsteht, wenn Menschen tatsächliche Abhängigkeiten in bewusst gewählte Verantwortung, Zusammenarbeit und Fürsorge verwandeln.",
+        "sourceRefs": [
+          "p073",
+          "p074",
+          "p075",
+          "p076",
+          "p088",
+          "p187"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Vernetzung allein ist noch keine Solidarität. Sie ist zugleich gesellschaftliches Prinzip und geübte Tugend und muss mit Subsidiarität verbunden bleiben, damit Unterstützung Eigenverantwortung fördert.",
+        "sourceRefs": [
+          "p073",
+          "p074",
+          "p075",
+          "p076",
+          "p088",
+          "p187"
+        ]
+      },
+      "foundationRefs": [
+        "p073",
+        "p088",
+        "p234"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p074",
+        "start": 379,
+        "end": 469,
+        "text": "noch keine Solidarität im vollen Sinne, wenn es nicht zu einer bewussten Entscheidung wird"
+      }
+    },
+    {
+      "id": "justice",
+      "locale": "de",
+      "title": "Soziale Gerechtigkeit",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Soziale Gerechtigkeit betrifft die Regeln, Strukturen und Beziehungen, durch die alle menschenwürdig leben und an gemeinsamen Gütern teilhaben können.",
+        "sourceRefs": [
+          "p077",
+          "p078",
+          "p079",
+          "p080",
+          "p081",
+          "p109",
+          "p162",
+          "p215",
+          "p244"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Verteilung und Hilfe nach einem Schaden reichen allein nicht. Vorbeugung, Wiedergutmachung, Stimme und Erinnerung gehören dazu. Rechte auf sichere Migration und auf ein sicheres Bleiben in der Heimat ergänzen einander.",
+        "sourceRefs": [
+          "p077",
+          "p078",
+          "p079",
+          "p080",
+          "p081",
+          "p109",
+          "p162",
+          "p215",
+          "p244"
+        ]
+      },
+      "foundationRefs": [
+        "p077",
+        "p079",
+        "p244"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p079",
+        "start": 640,
+        "end": 686,
+        "text": "nimmt auch eine wiedergutmachende Dimension an"
+      }
+    },
+    {
+      "id": "development",
+      "locale": "de",
+      "title": "Ganzheitliche menschliche Entwicklung",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Ganzheitliche menschliche Entwicklung umfasst jeden Menschen und alle Dimensionen seines Lebens, alle Völker, die Umwelt und künftige Generationen.",
+        "sourceRefs": [
+          "p082",
+          "p083",
+          "p084",
+          "p085",
+          "p129",
+          "p159",
+          "p180"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Mehr Gesamtproduktion beweist sie nicht. Entwicklung darf Kosten nicht auf Schwächere oder die Zukunft abwälzen; auch Kultur, Beziehungen, Freiheit und Zugang zu notwendigen Gütern zählen.",
+        "sourceRefs": [
+          "p082",
+          "p083",
+          "p084",
+          "p085",
+          "p129",
+          "p159",
+          "p180"
+        ]
+      },
+      "foundationRefs": [
+        "p126",
+        "p129"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p082",
+        "start": 528,
+        "end": 567,
+        "text": "ganzheitlicher menschlicher Entwicklung"
+      }
+    },
+    {
+      "id": "institutional-accountability",
+      "locale": "de",
+      "title": "Rechenschaft der Institutionen",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Institutionelle Rechenschaft macht Zuständigkeiten, Gründe und Folgen von Entscheidungen prüfbar und eröffnet Kontrolle, Anfechtung und Abhilfe.",
+        "sourceRefs": [
+          "p086",
+          "p087",
+          "p089",
+          "p105",
+          "p138",
+          "p176",
+          "p177",
+          "p200"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Verantwortung reicht von Entwurf und Training bis zu Genehmigung und Anwendung. Eine nominelle Beteiligung oder letzte Bestätigung genügt nicht. Die Quelle wendet diese Maßstäbe ausdrücklich auf die Kirche und ihre eigene Mitschuld an.",
+        "sourceRefs": [
+          "p086",
+          "p087",
+          "p089",
+          "p105",
+          "p138",
+          "p176",
+          "p177",
+          "p200"
+        ]
+      },
+      "foundationRefs": [
+        "p086",
+        "p089",
+        "p176"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p105",
+        "start": 562,
+        "end": 612,
+        "text": "wer für Entscheidungen „Rechenschaft ablegen“ muss"
+      }
+    },
+    {
+      "id": "technology-power",
+      "locale": "de",
+      "title": "Technologische Macht",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Technologische Macht gestaltet durch Infrastruktur, Daten, Modelle und Sichtbarkeit die Bedingungen, unter denen Menschen handeln können.",
+        "sourceRefs": [
+          "p004",
+          "p005",
+          "p009",
+          "p092",
+          "p093",
+          "p094",
+          "p095",
+          "p104",
+          "p136"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Technik ist nicht als solche ein Übel. Kritisiert wird ihre Erhebung zum alleinigen Maßstab von Effizienz, Kontrolle und Profit; Entscheidungen sind bereits im Entwurf wirksam, bevor Nutzer handeln.",
+        "sourceRefs": [
+          "p004",
+          "p005",
+          "p009",
+          "p092",
+          "p093",
+          "p094",
+          "p095",
+          "p104",
+          "p136"
+        ]
+      },
+      "foundationRefs": [],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p092",
+        "start": 84,
+        "end": 111,
+        "text": "technokratischen Paradigmas"
+      }
+    },
+    {
+      "id": "ai-limits",
+      "locale": "de",
+      "title": "Menschliche und künstliche Intelligenz",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Die Quelle unterscheidet die effektiven Rechen- und Nachahmungsleistungen von KI von menschlicher Erfahrung, leiblichem Leben und verantwortlicher Urteilsbildung.",
+        "sourceRefs": [
+          "p097",
+          "p098",
+          "p099",
+          "p100",
+          "p116",
+          "p128",
+          "p198",
+          "p233"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Leo XIV. spricht KI Erfahrung und moralisches Gewissen kategorisch ab. Seine anthropologische Position ist von einem wissenschaftlichen Konsens über diese Fragen zu unterscheiden. §§97–98 begrenzen den Anspruch und warnen vor rasch veraltenden Beschreibungen.",
+        "sourceRefs": [
+          "p097",
+          "p098",
+          "p099",
+          "p100",
+          "p116",
+          "p128",
+          "p198",
+          "p233"
+        ]
+      },
+      "foundationRefs": [
+        "p128",
+        "p233"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p099",
+        "start": 511,
+        "end": 571,
+        "text": "Sogenannte Künstliche Intelligenzen machen keine Erfahrungen"
+      }
+    },
+    {
+      "id": "ai-governance",
+      "locale": "de",
+      "title": "Gestaltung und Kontrolle von KI",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Gestaltung und Kontrolle von KI verbinden gerechtes Design, erkennbare Verantwortung, Aufsicht, Rechtsbehelfe und Mitentscheidung betroffener Gemeinschaften.",
+        "sourceRefs": [
+          "p071",
+          "p072",
+          "p104",
+          "p105",
+          "p106",
+          "p107",
+          "p109",
+          "p164",
+          "p197",
+          "p198",
+          "p199",
+          "p200"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Technische Ausrichtung auf Werte löst nicht die Frage, wer diese Werte bestimmt. Nachträgliche Beschwerden ersetzen keine Beteiligung an Zielen und Standards. Tödliche oder irreversible Entscheidungen dürfen nach der Quelle nicht an Systeme delegiert werden.",
+        "sourceRefs": [
+          "p071",
+          "p072",
+          "p104",
+          "p105",
+          "p106",
+          "p107",
+          "p109",
+          "p164",
+          "p197",
+          "p198",
+          "p199",
+          "p200"
+        ]
+      },
+      "foundationRefs": [],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p109",
+        "start": 1219,
+        "end": 1297,
+        "text": "eine Vorbedingung, die bereits bei deren Konzeption berücksichtigt werden muss"
+      }
+    },
+    {
+      "id": "embodiment",
+      "locale": "de",
+      "title": "Leiblichkeit und Endlichkeit",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Menschen leben leiblich, verletzlich und endlich in Beziehungen. Ihr Wert lässt sich nicht auf eine einzelne Fähigkeit oder ein Optimierungsziel reduzieren.",
+        "sourceRefs": [
+          "p099",
+          "p112",
+          "p113",
+          "p116",
+          "p117",
+          "p118",
+          "p120",
+          "p122",
+          "p232",
+          "p239"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Endlichkeit anzuerkennen bedeutet nicht, Behandlung abzulehnen: Leiden zu lindern bleibt ausdrücklich eine Pflicht. Unterschiedliche Zukunftsströmungen sind nicht gleichzusetzen, und philosophische Aussagen über Schmerz sind keine klinische Anleitung.",
+        "sourceRefs": [
+          "p099",
+          "p112",
+          "p113",
+          "p116",
+          "p117",
+          "p118",
+          "p120",
+          "p122",
+          "p232",
+          "p239"
+        ]
+      },
+      "foundationRefs": [
+        "p118",
+        "p127",
+        "p232",
+        "p239"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p118",
+        "start": 763,
+        "end": 807,
+        "text": "unsere konstitutive Endlichkeit anzuerkennen"
+      }
+    },
+    {
+      "id": "care",
+      "locale": "de",
+      "title": "Fürsorge und menschliche Nähe",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Fürsorge erkennt die andere Person als eigenständiges Gegenüber und antwortet mit Aufmerksamkeit, Hilfe, Nähe und verantwortlichem Handeln.",
+        "sourceRefs": [
+          "p114",
+          "p117",
+          "p118",
+          "p119",
+          "p126",
+          "p152",
+          "p231",
+          "p239"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Technik kann Pflege und Organisation unterstützen, ohne Freiheit und Urteil der Menschen zu verdrängen. Mögliche Reifung in Krisen ist keine Pflicht zum Leiden und keine Garantie heilsamer Folgen.",
+        "sourceRefs": [
+          "p114",
+          "p117",
+          "p118",
+          "p119",
+          "p126",
+          "p152",
+          "p231",
+          "p239"
+        ]
+      },
+      "foundationRefs": [
+        "p119",
+        "p126",
+        "p231",
+        "p239"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p114",
+        "start": 939,
+        "end": 1015,
+        "text": "ohne jedoch die Freiheit und das Urteilsvermögen des Menschen zu beschneiden"
+      }
+    },
+    {
+      "id": "truth",
+      "locale": "de",
+      "title": "Wahrheit und Kommunikation",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Wahrheitsgemäße Kommunikation braucht überprüfbare Tatsachen, verantwortliche Argumente und tragfähige soziale Beziehungen.",
+        "sourceRefs": [
+          "p132",
+          "p134",
+          "p135",
+          "p136",
+          "p137",
+          "p138",
+          "p214",
+          "p237"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Vertrauen ersetzt keine Faktenprüfung; Prüfung eines einzelnen Satzes erklärt umgekehrt nicht seine gesamte kommunikative Umgebung. Macht über Sichtbarkeit macht eine Aussage nicht wahr. Offenbarte Wahrheit bleibt eine zusätzliche religiöse Prämisse.",
+        "sourceRefs": [
+          "p132",
+          "p134",
+          "p135",
+          "p136",
+          "p137",
+          "p138",
+          "p214",
+          "p237"
+        ]
+      },
+      "foundationRefs": [
+        "p237"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p137",
+        "start": 147,
+        "end": 177,
+        "text": "Die Wahrheit ist ein Gemeingut"
+      }
+    },
+    {
+      "id": "education",
+      "locale": "de",
+      "title": "Bildung und Erziehung",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Bildung schafft Zeit und Beziehungen für Fragen, kritisches Urteil, verbundenes Wissen und verantwortliche Freiheit im digitalen Leben.",
+        "sourceRefs": [
+          "p139",
+          "p140",
+          "p141",
+          "p142",
+          "p143",
+          "p144",
+          "p145",
+          "p146",
+          "p147",
+          "p238"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Schnelle Antworten sind nicht schon Verständnis. Zugängliche Schulen, pädagogische Entwicklung und Aufmerksamkeit sind verschiedene Aufgaben. Leo XIV. betont daneben das vorrangige Recht der Eltern auf Bildungswahl nach ihren Überzeugungen.",
+        "sourceRefs": [
+          "p139",
+          "p140",
+          "p141",
+          "p142",
+          "p143",
+          "p144",
+          "p145",
+          "p146",
+          "p147",
+          "p238"
+        ]
+      },
+      "foundationRefs": [
+        "p238"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p140",
+        "start": 332,
+        "end": 377,
+        "text": "wann und wofür man sie nicht einsetzen sollte"
+      }
+    },
+    {
+      "id": "work",
+      "locale": "de",
+      "title": "Würde der Arbeit",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Arbeit kann neben Einkommen Ausdruck, Beziehungen, Verantwortung und Mitwirkung am gemeinsamen Leben ermöglichen.",
+        "sourceRefs": [
+          "p148",
+          "p149",
+          "p150",
+          "p151",
+          "p152",
+          "p153",
+          "p154",
+          "p156",
+          "p157"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Der Wert der Person wird nicht durch Erwerbsarbeit verdient. Nothilfe kann nötig sein, gefährliche Arbeit darf erleichtert werden und Übergänge brauchen unterschiedliche Antworten. Auch ohne Beschäftigung muss soziale Teilhabe erhalten bleiben.",
+        "sourceRefs": [
+          "p148",
+          "p149",
+          "p150",
+          "p151",
+          "p152",
+          "p153",
+          "p154",
+          "p156",
+          "p157"
+        ]
+      },
+      "foundationRefs": [
+        "p148"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p149",
+        "start": 285,
+        "end": 352,
+        "text": "wirtschaftliche Hilfe für die Armen in Notfällen manchmal notwendig"
+      }
+    },
+    {
+      "id": "distribution",
+      "locale": "de",
+      "title": "Wirtschaftliche Gerechtigkeit und Verteilung",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Wirtschaftliche Gerechtigkeit fragt, wer Zugang zu Gütern und Innovationsgewinnen hat und wer die Kosten des Wandels trägt.",
+        "sourceRefs": [
+          "p158",
+          "p159",
+          "p160",
+          "p161",
+          "p162",
+          "p163",
+          "p164"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Steuern und Umverteilung sind notwendig, können aber ungerechte Produktion oder Finanzierung nicht nachträglich rechtfertigen. Finanzvermittlung für reale Entwicklung hat eine andere Funktion als Finanzgeschäfte zum Selbstzweck.",
+        "sourceRefs": [
+          "p158",
+          "p159",
+          "p160",
+          "p161",
+          "p162",
+          "p163",
+          "p164"
+        ]
+      },
+      "foundationRefs": [],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p162",
+        "start": 499,
+        "end": 562,
+        "text": "Die Gerechtigkeit betrifft alle Phasen der Wirtschaftstätigkeit"
+      }
+    },
+    {
+      "id": "family",
+      "locale": "de",
+      "title": "Familien und Zukunftsperspektiven",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Die Quelle verbindet Familie und Zukunftschancen junger Menschen mit verlässlicher Arbeit, Bildung, Unterstützung und sozialen Beziehungen.",
+        "sourceRefs": [
+          "p165",
+          "p166",
+          "p167",
+          "p168",
+          "p169"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Die Definition als beständige Verbindung zwischen einem Mann und einer Frau gehört zur normativen Familienauffassung Leo XIV.s. Seine Sorge um stabile Beziehungen verbindet er mit öffentlicher Unterstützung, Arbeit und Bildung; wirtschaftliche Gefährdung wird dabei nicht als Schuld einzelner Familien erklärt.",
+        "sourceRefs": [
+          "p165",
+          "p166",
+          "p167",
+          "p168",
+          "p169"
+        ]
+      },
+      "foundationRefs": [],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p165",
+        "start": 46,
+        "end": 121,
+        "text": "Gegründet auf der beständigen Verbindung zwischen einem Mann und einer Frau"
+      }
+    },
+    {
+      "id": "freedom",
+      "locale": "de",
+      "title": "Freiheit und Handlungsfähigkeit",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Handlungsfreiheit braucht innere Urteilskraft sowie soziale und rechtliche Bedingungen, die Manipulation, Abhängigkeit und ausschließende Profile begrenzen.",
+        "sourceRefs": [
+          "p128",
+          "p136",
+          "p146",
+          "p154",
+          "p170",
+          "p171",
+          "p172",
+          "p178"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Nicht jede Datennutzung ist Unterdrückung. Wo unsichtbare Auswahl Chancen lenkt, reichen formale Wahlmöglichkeiten jedoch nicht aus; nötig sind Transparenz, Anfechtbarkeit und Entscheidungsmacht über die eigenen Daten.",
+        "sourceRefs": [
+          "p128",
+          "p136",
+          "p146",
+          "p154",
+          "p170",
+          "p171",
+          "p172",
+          "p178"
+        ]
+      },
+      "foundationRefs": [
+        "p128"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p171",
+        "start": 1017,
+        "end": 1085,
+        "text": "Freiheit im digitalen Zeitalter nicht nur eine interne Angelegenheit"
+      }
+    },
+    {
+      "id": "exploitation",
+      "locale": "de",
+      "title": "Verborgene Arbeit und Ausbeutung",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Digitale Bequemlichkeit beruht auf materiellen Ressourcen und oft übersehener Arbeit, deren Bedingungen nach der Quelle ethisch geprüft werden müssen.",
+        "sourceRefs": [
+          "p101",
+          "p173",
+          "p174",
+          "p175",
+          "p176",
+          "p177",
+          "p178",
+          "p179",
+          "p240"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Datenarbeit, Rohstoffgewinnung, Menschenhandel und koloniale Datenaneignung hängen in Leo XIV.s Beschreibung zusammen, sind aber unterschiedliche Formen der Belastung und Unterordnung. Allgemeine Effizienz entschuldigt nach seinem Argument keine von ihnen.",
+        "sourceRefs": [
+          "p101",
+          "p173",
+          "p174",
+          "p175",
+          "p176",
+          "p177",
+          "p178",
+          "p179",
+          "p240"
+        ]
+      },
+      "foundationRefs": [
+        "p176",
+        "p177",
+        "p240"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p173",
+        "start": 173,
+        "end": 228,
+        "text": "Nichts ist in der Welt der KI immateriell oder magisch."
+      }
+    },
+    {
+      "id": "peace",
+      "locale": "de",
+      "title": "Frieden jenseits der Herrschaft",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Frieden bezeichnet nach dem Text ein gemeinsames Leben, das durch Gerechtigkeit, verantwortliche Institutionen, Schutz und geduldigen Dialog aufgebaut wird.",
+        "sourceRefs": [
+          "p182",
+          "p186",
+          "p197",
+          "p198",
+          "p199",
+          "p200",
+          "p205",
+          "p212",
+          "p215",
+          "p218",
+          "p224",
+          "p228"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Er ist mehr als Abwesenheit von Krieg oder Ruhe um jeden Preis. Legitimes Verteidigen bleibt eng begrenzt und letztes Mittel; ziviler Schutz und wirksame menschliche Kontrolle sind unverzichtbar. Verhandlung eröffnet Möglichkeiten, garantiert aber keinen Erfolg.",
+        "sourceRefs": [
+          "p182",
+          "p186",
+          "p197",
+          "p198",
+          "p199",
+          "p200",
+          "p205",
+          "p212",
+          "p215",
+          "p218",
+          "p224",
+          "p228"
+        ]
+      },
+      "foundationRefs": [
+        "p227",
+        "p228"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p218",
+        "start": 912,
+        "end": 987,
+        "text": "glaubwürdige Institutionen, überprüfbare Garantien, geduldige Verhandlungen"
+      }
+    },
+    {
+      "id": "memory",
+      "locale": "de",
+      "title": "Erinnerung und Perspektive der Opfer",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Erinnerung bewahrt die Erfahrungen der Betroffenen und verbindet überprüfbare Geschichte mit Verantwortung für gegenwärtiges Handeln.",
+        "sourceRefs": [
+          "p121",
+          "p122",
+          "p123",
+          "p124",
+          "p176",
+          "p191",
+          "p216",
+          "p217",
+          "p244"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Historischer Kontext hebt eingestandene Mitschuld nicht auf. Die Perspektive von Opfern soll Frieden und Prävention fördern, keine Vergeltung. Operative Neutralität humanitärer Hilfe ist von moralischer Gleichgültigkeit zu unterscheiden.",
+        "sourceRefs": [
+          "p121",
+          "p122",
+          "p123",
+          "p124",
+          "p176",
+          "p191",
+          "p216",
+          "p217",
+          "p244"
+        ]
+      },
+      "foundationRefs": [
+        "p121",
+        "p244"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p217",
+        "start": 0,
+        "end": 35,
+        "text": "Der Sichtweise und Stimme der Opfer"
+      }
+    },
+    {
+      "id": "dialogue",
+      "locale": "de",
+      "title": "Dialog und Teilhabe",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Dialog ermöglicht Beteiligung und gemeinsames Urteil durch Zuhören, begründeten Austausch und geduldige Begegnung im Alltag wie zwischen Staaten.",
+        "sourceRefs": [
+          "p002",
+          "p023",
+          "p070",
+          "p071",
+          "p072",
+          "p107",
+          "p218",
+          "p219",
+          "p220",
+          "p221",
+          "p223",
+          "p224"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Er bedeutet weder erzwungene Einigkeit noch Schweigen zu Unrecht. Echte Mitwirkung beginnt vor fertigen Entscheidungen; diplomatischer Austausch braucht überprüfbare Bedingungen und darf die Stimmen der Opfer nicht verlieren.",
+        "sourceRefs": [
+          "p002",
+          "p023",
+          "p070",
+          "p071",
+          "p072",
+          "p107",
+          "p218",
+          "p219",
+          "p220",
+          "p221",
+          "p223",
+          "p224"
+        ]
+      },
+      "foundationRefs": [
+        "p002",
+        "p223"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p221",
+        "start": 88,
+        "end": 119,
+        "text": "echten „Kultur der Verhandlung“"
+      }
+    },
+    {
+      "id": "hope",
+      "locale": "de",
+      "title": "Hoffnung und konkrete Verantwortung",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Hoffnung richtet Handeln auf mögliche Veränderungen aus, auch wenn Rückschläge und ungleiche Macht die eigenen Möglichkeiten begrenzen.",
+        "sourceRefs": [
+          "p123",
+          "p124",
+          "p125",
+          "p126",
+          "p211",
+          "p212",
+          "p236",
+          "p241",
+          "p243",
+          "p245"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Sie ist keine Zusage automatischen Fortschritts. Die theologische Hoffnung der Quelle ist als solche zugänglich; weder Gnade als magische Lösung noch kleine Alltagstaten als Ersatz für institutionelle Pflichten geben sie richtig wieder.",
+        "sourceRefs": [
+          "p123",
+          "p124",
+          "p125",
+          "p126",
+          "p211",
+          "p212",
+          "p236",
+          "p241",
+          "p243",
+          "p245"
+        ]
+      },
+      "foundationRefs": [
+        "p125",
+        "p126",
+        "p211",
+        "p243",
+        "p245"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p212",
+        "start": 282,
+        "end": 335,
+        "text": "nicht alle den gleichen Einfluss auf die Wirklichkeit"
+      }
+    },
+    {
+      "id": "faith-foundations",
+      "locale": "de",
+      "title": "Theologische Grundlagen",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Die Quelle begründet ihre Ethik ausdrücklich mit Schöpfung, Trinität, Menschwerdung, Gnade, Eucharistie und christlicher Heilshoffnung.",
+        "sourceRefs": [
+          "p001",
+          "p011",
+          "p048",
+          "p049",
+          "p050",
+          "p052",
+          "p088",
+          "p127",
+          "p128",
+          "p231",
+          "p232",
+          "p233",
+          "p234",
+          "p235",
+          "p242",
+          "p243",
+          "p244",
+          "p245"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Gnade ist in dieser Theologie ein empfangenes göttliches Geschenk und keine technische Selbststeigerung. Menschwerdung und eucharistische Einheit begründen für die Quelle konkrete Solidarität. Diese Grundlagen können freiwillig vertieft werden; das ethische Argument lässt sich auch verstehen, wenn man seine Prämissen nicht teilt.",
+        "sourceRefs": [
+          "p001",
+          "p011",
+          "p048",
+          "p049",
+          "p050",
+          "p052",
+          "p088",
+          "p127",
+          "p128",
+          "p231",
+          "p232",
+          "p233",
+          "p234",
+          "p235",
+          "p242",
+          "p243",
+          "p244",
+          "p245"
+        ]
+      },
+      "foundationRefs": [
+        "p001",
+        "p011",
+        "p048",
+        "p049",
+        "p050",
+        "p052",
+        "p088",
+        "p127",
+        "p128",
+        "p231",
+        "p232",
+        "p233",
+        "p234",
+        "p235",
+        "p242",
+        "p243",
+        "p244",
+        "p245"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p127",
+        "start": 998,
+        "end": 1051,
+        "text": "Gott selbst, der den „unendlichen“ Abstand überwindet"
+      }
+    },
+    {
+      "id": "history",
+      "locale": "de",
+      "title": "Eine Soziallehre im Wandel",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Soziallehre wird als geschichtlich gewachsene Auseinandersetzung mit Arbeit, Rechten, Macht, Ökologie und Frieden im Licht des Evangeliums dargestellt.",
+        "sourceRefs": [
+          "p017",
+          "p020",
+          "p021",
+          "p023",
+          "p027",
+          "p029",
+          "p030",
+          "p031",
+          "p032",
+          "p033",
+          "p034",
+          "p035",
+          "p037",
+          "p038",
+          "p039",
+          "p040",
+          "p041",
+          "p042",
+          "p043",
+          "p044",
+          "p045",
+          "p176"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Der von Leo XIV. beanspruchte gemeinsame Kern schließt unterschiedliche Schwerpunkte und Perspektivwechsel ein. Zugleich erkennt er Intoleranz, kirchlichen Sklavenbesitz und verspätete Verurteilung an. Sein Anspruch auf Kontinuität steht damit neben ausdrücklich eingestandenen historischen Verfehlungen.",
+        "sourceRefs": [
+          "p017",
+          "p020",
+          "p021",
+          "p023",
+          "p027",
+          "p029",
+          "p030",
+          "p031",
+          "p032",
+          "p033",
+          "p034",
+          "p035",
+          "p037",
+          "p038",
+          "p039",
+          "p040",
+          "p041",
+          "p042",
+          "p043",
+          "p044",
+          "p045",
+          "p176"
+        ]
+      },
+      "foundationRefs": [
+        "p017",
+        "p020",
+        "p021",
+        "p023",
+        "p027",
+        "p029",
+        "p033",
+        "p034",
+        "p042",
+        "p044",
+        "p045",
+        "p176"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p045",
+        "start": 792,
+        "end": 851,
+        "text": "eine harmonische, wenn auch nicht immer lineare Entwicklung"
+      }
+    }
+  ]
+}

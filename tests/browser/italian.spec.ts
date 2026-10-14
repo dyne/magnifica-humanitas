@@ -24,7 +24,7 @@ for (const width of [390, 1440]) for (const size of ['100', '200']) {
     await page.setViewportSize({ width, height: width === 390 ? 844 : 900 })
     await page.emulateMedia({ reducedMotion: 'reduce' })
     await page.goto('./#/it/atlas')
-    await expect(page.locator('#language option')).toHaveText(['English', 'Italiano'])
+    await expect(page.locator('#language option')).toHaveText(['English', 'Italiano', 'Deutsch'])
     await page.locator('#language').focus()
     await page.keyboard.press('Tab')
     await expect(page.locator('#appearance')).toBeFocused()
@@ -73,7 +73,7 @@ for (const width of [390, 1440]) for (const size of ['100', '200']) {
 }
 
 for (const [preferences, expected] of [
-  [['fr-FR', 'it-IT', 'en-US'], 'it'], [['IT-ch', 'en'], 'it'], [['en-GB', 'it-IT'], 'en'], [['ar', 'de-DE'], 'en'],
+  [['fr-FR', 'it-IT', 'en-US'], 'it'], [['IT-ch', 'en'], 'it'], [['en-GB', 'it-IT'], 'en'], [['ar', 'ru-RU'], 'en'],
 ] as const) {
   test(`browser defaults ${preferences.join(',')} choose ${expected}; explicit English remains stable`, async ({ page }) => {
     await page.addInitScript(languages => {
@@ -92,7 +92,7 @@ for (const [preferences, expected] of [
 test('Italian keyboard switching preserves query, anchor, selector focus and fresh neutral defaults', async ({ page }) => {
   await page.goto('./#/en/search?q=care#stable-anchor')
   await page.locator('#language').focus()
-  await page.keyboard.press('End'); await page.keyboard.press('Enter')
+  await page.keyboard.press('Home'); await page.keyboard.press('ArrowDown'); await page.keyboard.press('Enter')
   await expect(page).toHaveURL(/#\/it\/search\?q=care#stable-anchor$/)
   await expect(page.locator('#language')).toBeFocused()
   await expect(page.locator('h1')).toHaveText('Cerca in questa lettura')
