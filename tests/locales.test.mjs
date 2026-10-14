@@ -6,7 +6,7 @@ import { availableLocales, localeRegistry, primaryLanguage, resolveBrowserLocale
 const fixture = ['en', 'ar', 'pt', 'de'].map(id => ({ id }));
 
 test('only complete reviewed editions ship; official source files alone do not enable a locale', () => {
-  assert.deepEqual(availableLocales.map(locale => locale.id), ['en', 'it']);
+  assert.deepEqual(availableLocales.map(locale => locale.id), ['en', 'it', 'de']);
   assert.equal(localeRegistry.length, 10);
   for (const locale of availableLocales) assert.ok(locale.source && locale.reading && locale.messages && locale.reviewed);
   assert.ok(Object.isFrozen(localeRegistry[0]));

@@ -1,0 +1,786 @@
+{
+  "schemaVersion": 1,
+  "language": "de",
+  "editionId": "mh-de-official-html-2026-10-14",
+  "relations": [
+    {
+      "id": "rel-001",
+      "from": "faith-foundations",
+      "to": "dignity",
+      "type": "provides-source-foundation-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Die Quelle begründet unverlierbare Würde mit Schöpfung und göttlicher Liebe. Der Mensch empfängt diesen Wert, bevor er etwas leistet; moralisches Versagen und gesellschaftlicher Ausschluss können ihn nach diesem Argument nicht aufheben.",
+        "sourceRefs": [
+          "p050",
+          "p052",
+          "p053"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-002",
+      "from": "dignity",
+      "to": "rights",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Wer Menschen einen Wert vor aller Leistung zuschreibt, muss ihnen nach der Quelle Rechte schon aufgrund ihres Menschseins zuerkennen. Praktischer Schutz und die ausdrücklich zugeschriebene Lebensrechtsposition machen diese Folgerung konkret.",
+        "sourceRefs": [
+          "p051",
+          "p054",
+          "p055"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-003",
+      "from": "dignity",
+      "to": "common-good",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Gemeinwohl folgt im Argument aus der Würde jeder Person: Gesellschaftliche Bedingungen müssen Entfaltung ermöglichen. Es ist deshalb weder eine Summe privater Gewinne noch ein Grund, einzelne Menschen für das Ganze zu opfern.",
+        "sourceRefs": [
+          "p059",
+          "p060"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-004",
+      "from": "common-good",
+      "to": "shared-goods",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Ein gemeinsames gutes Leben braucht Zugang zu den Gütern, die es ermöglichen. Die allgemeine Bestimmung dieser Güter begrenzt Eigentum sozial, ohne das anerkannte Recht auf Privateigentum zu leugnen.",
+        "sourceRefs": [
+          "p065",
+          "p066"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-005",
+      "from": "shared-goods",
+      "to": "distribution",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Die Frage nach Verteilung betrifft auch den Zugang zu Daten, Wissen und technischen Möglichkeiten. Eigentumsrechte behalten ihre Funktion, unterliegen aber einem sozialen Zweck; nachträgliche Umverteilung ersetzt keine Gerechtigkeit innerhalb wirtschaftlicher Abläufe.",
+        "sourceRefs": [
+          "p066",
+          "p067",
+          "p161",
+          "p162"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-006",
+      "from": "subsidiarity",
+      "to": "common-good",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Eigenständige Gemeinschaften tragen zum Gemeinwohl bei, wenn sie unterstützt, geschützt und koordiniert werden. Subsidiarität begrenzt Vereinnahmung und verlangt zugleich das Eingreifen, das selbstständiges Handeln erst ermöglicht.",
+        "sourceRefs": [
+          "p068",
+          "p069",
+          "p070"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-007",
+      "from": "subsidiarity",
+      "to": "dialogue",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Entscheidungen nahe an Betroffenen brauchen ihre Mitwirkung vor der Festlegung von Standards. Dialog bedeutet hier eine reale Stimme auch gegenüber Plattformen; bloße Information über fertige Beschlüsse reicht nicht.",
+        "sourceRefs": [
+          "p070",
+          "p071",
+          "p072"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-008",
+      "from": "solidarity",
+      "to": "subsidiarity",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Solidarität verhindert, dass Subsidiarität zum Schutz einzelner Gruppeninteressen schrumpft. Umgekehrt soll gemeinsame Unterstützung Verantwortung vor Ort stärken statt sie zu ersetzen; beide Prinzipien begrenzen und ergänzen einander.",
+        "sourceRefs": [
+          "p068",
+          "p069",
+          "p073",
+          "p075",
+          "p076"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-009",
+      "from": "common-good",
+      "to": "development",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Das Gemeinwohl richtet Entwicklung auf Bedingungen gemeinsamen menschlichen Lebens aus. Ganzheitlich wird Entwicklung, wenn alle Personen und Völker sowie die Zukunft einbezogen werden und nicht nur die Summe wirtschaftlicher Ergebnisse wächst.",
+        "sourceRefs": [
+          "p059",
+          "p060",
+          "p082",
+          "p083",
+          "p085"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-010",
+      "from": "justice",
+      "to": "development",
+      "type": "provides-test-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Gerechtigkeit prüft Entwicklung an Ausgeschlossenen, ökologischen Folgen und früheren Schäden. Eine Zunahme von Möglichkeiten für wenige ist kein ausreichender Fortschritt, wenn Kosten anderen aufgebürdet werden.",
+        "sourceRefs": [
+          "p079",
+          "p083",
+          "p084",
+          "p085"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-011",
+      "from": "justice",
+      "to": "ai-governance",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Digitale Gerechtigkeit verlangt prüfbare, anfechtbare und inklusive Systeme. Sie muss schon die Gestaltung prägen; nachträgliche Korrektur allein kann ungerechte Standards und Machtverhältnisse nicht ausgleichen.",
+        "sourceRefs": [
+          "p080",
+          "p109",
+          "p164"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-012",
+      "from": "shared-goods",
+      "to": "ai-governance",
+      "type": "applies-to",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Die Güterfrage reicht ausdrücklich bis zu Algorithmen, Infrastruktur und Daten. KI-Gestaltung muss deshalb gemeinsamen Zugang, geteilte Entscheidungsmacht und die Beiträge vieler berücksichtigen, statt Eigentum ausschließlich als Verfügung weniger zu behandeln.",
+        "sourceRefs": [
+          "p067",
+          "p108",
+          "p109"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-013",
+      "from": "technology-power",
+      "to": "ai-governance",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Konzentrierte technische Macht kann die Lebensbedingungen anderer setzen. Deshalb verlangt das Argument öffentliche Regeln, unabhängige Prüfung und erkennbare Verantwortlichkeiten, die über freiwilligen guten Gebrauch durch Einzelne hinausgehen.",
+        "sourceRefs": [
+          "p005",
+          "p071",
+          "p095",
+          "p105",
+          "p106",
+          "p107"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-014",
+      "from": "dignity",
+      "to": "ai-governance",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Menschenwürde begrenzt, wie Systeme Personen einstufen dürfen. Wo Chancen betroffen sind, braucht es nachvollziehbare Gründe und Anfechtung; eine Person darf nicht auf ein endgültiges Profil ohne Antwortmöglichkeit reduziert werden.",
+        "sourceRefs": [
+          "p102",
+          "p103",
+          "p105",
+          "p164"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-015",
+      "from": "ai-limits",
+      "to": "ai-governance",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Leo XIV. unterscheidet wirksame Berechnung von menschlichem Gewissen und verantwortlichem Urteil. Daraus leitet er Anforderungen an menschliche Zuständigkeit ab, besonders das Verbot delegierter tödlicher oder irreversibler Entscheidungen. Seine anthropologischen Annahmen sind dabei von einem wissenschaftlichen Konsens zu unterscheiden.",
+        "sourceRefs": [
+          "p099",
+          "p105",
+          "p198"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-016",
+      "from": "embodiment",
+      "to": "ai-limits",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Leibliches, endliches Leben ist im Text mehr als Datenverarbeitung. Diese anthropologische Sicht präzisiert den Vergleich von KI und Person; sie wird als Position der Quelle erklärt, ohne sie als wissenschaftlichen Konsens über Maschinen auszugeben.",
+        "sourceRefs": [
+          "p099",
+          "p112",
+          "p118",
+          "p128"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-017",
+      "from": "care",
+      "to": "embodiment",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Die Pflicht zur Leidenslinderung begrenzt jede Deutung von Endlichkeit. Technik kann Fürsorge unterstützen; der Anerkennung menschlicher Grenzen darf keine Forderung entnommen werden, Krankheit unbehandelt zu lassen oder schwächere Menschen geringer zu achten.",
+        "sourceRefs": [
+          "p114",
+          "p117",
+          "p118",
+          "p126"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-018",
+      "from": "care",
+      "to": "work",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Fürsorge hilft, technische Veränderungen der Arbeit nach ihren menschlichen Folgen zu beurteilen. Gefährliche Aufgaben dürfen erleichtert werden, während Ausdruck, Beziehungen und gesellschaftlicher Beitrag auch im Wandel geschützt bleiben müssen.",
+        "sourceRefs": [
+          "p152",
+          "p153",
+          "p154"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-019",
+      "from": "technology-power",
+      "to": "dignity",
+      "type": "puts-in-tension",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Wenn Effizienz zur Rangordnung menschlicher Werte wird, gerät technologische Macht in Spannung zur unverlierbaren Würde. Die Kritik betrifft ein leitendes Menschenbild und Machtkonzentration, nicht jede technische Leistungssteigerung.",
+        "sourceRefs": [
+          "p092",
+          "p094",
+          "p095",
+          "p112"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-020",
+      "from": "truth",
+      "to": "dialogue",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Wahrheitsbezogene Kommunikation ermöglicht einen Dialog, in dem begründete Fragen und gemeinsame Tatsachen zählen. Sie umfasst auch den Mut, Unrecht auszusprechen; entwaffnete Sprache darf nicht zur Unterdrückung von Kritik werden.",
+        "sourceRefs": [
+          "p132",
+          "p134",
+          "p214",
+          "p219"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-021",
+      "from": "truth",
+      "to": "education",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Wer Tatsachen überprüfen und Macht über Information beurteilen will, braucht Bildung und Zeit. Kritische Nutzung von Werkzeugen und die Fähigkeit, auf schnelle Antworten zu verzichten, ergänzen seriöse Quellen und öffentlichen Austausch.",
+        "sourceRefs": [
+          "p137",
+          "p139",
+          "p140",
+          "p146"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-022",
+      "from": "education",
+      "to": "freedom",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Bildung kann Menschen befähigen, digitale Angebote kritisch und selbstständig zu nutzen. Dafür braucht es zugängliche Einrichtungen, unterstützte Familien und geübte Aufmerksamkeit; diese Freiheit entsteht nicht allein durch mehr Geräte oder Informationen.",
+        "sourceRefs": [
+          "p142",
+          "p145",
+          "p146",
+          "p147",
+          "p238"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-023",
+      "from": "technology-power",
+      "to": "freedom",
+      "type": "puts-in-tension",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Plattformen können Aufmerksamkeit, Sichtbarkeit und Verhalten so lenken, dass Handlungsfreiheit geschwächt wird. Die Spannung betrifft Geschäftsmodelle und Kontrolle ebenso wie innere Gewohnheiten und verlangt mehr als die Aufforderung zu individueller Disziplin.",
+        "sourceRefs": [
+          "p136",
+          "p170",
+          "p171",
+          "p172"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-024",
+      "from": "work",
+      "to": "family",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Verlässliche Arbeit trägt nach der Quelle Familien und Zukunftsmöglichkeiten junger Menschen. Unsicherheit wirkt über das Einkommen hinaus auf Bindungen und Verantwortung; Weiterbildung und öffentliche Unterstützung gehören deshalb zum Zusammenhang.",
+        "sourceRefs": [
+          "p165",
+          "p166",
+          "p167",
+          "p168",
+          "p169"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-025",
+      "from": "dignity",
+      "to": "work",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Die Würde der Person besteht vor Beschäftigung und Leistung. Arbeit kann sie ausdrücken, aber weder moralisches Versagen noch Arbeitslosigkeit heben den grundlegenden Wert auf; Teilhabe muss auch ohne Erwerbsarbeit geschützt werden.",
+        "sourceRefs": [
+          "p052",
+          "p149",
+          "p154"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-026",
+      "from": "work",
+      "to": "distribution",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Technischer Arbeitswandel verteilt Vorteile und Lasten ungleich. Schutz, Qualifizierung und Mitbestimmung müssen seine Kosten fair verteilen, statt sie allein Betroffenen aufzubürden oder erst nach verschwundenen Stellen tätig zu werden.",
+        "sourceRefs": [
+          "p151",
+          "p153",
+          "p156",
+          "p161",
+          "p164"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-027",
+      "from": "distribution",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Breit zugänglicher, inklusiver und nachhaltiger Wohlstand kann Frieden stützen. Wenn Militarisierung dagegen Mittel für Gesundheit, Bildung und soziale Dienste verdrängt, tragen Arme die Kosten und gerechtere Lebensbedingungen werden erschwert.",
+        "sourceRefs": [
+          "p163",
+          "p204"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-028",
+      "from": "exploitation",
+      "to": "ai-governance",
+      "type": "provides-test-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Verborgene Arbeit, Rohstoffbelastung und Datenaneignung prüfen, wem KI tatsächlich dient. Wer Effizienz preist, muss auch Lieferketten, Sorgfaltspflichten und Entscheidungsmacht der Betroffenen prüfen; diese Folgen dürfen nicht unsichtbar bleiben.",
+        "sourceRefs": [
+          "p173",
+          "p174",
+          "p178",
+          "p179"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-029",
+      "from": "shared-goods",
+      "to": "freedom",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Güter gemeinsam zu verantworten kann Freiheit stärken, wenn Menschen über die Verwendung ihrer Daten entscheiden. Eine zurückgegebene Kopie ohne Einfluss auf Zweck, Nutzer und Nutzen erfüllt den geforderten Machtwechsel nicht.",
+        "sourceRefs": [
+          "p178"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-030",
+      "from": "institutional-accountability",
+      "to": "justice",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Institutionen können Rechenschaft nicht auf eine Erklärung reduzieren. Gerechtigkeit verlangt, Schäden anzuerkennen, Betroffene anzuhören, Wiedergutmachung zu ermöglichen und Wiederholung zu verhindern; die Quelle stellt diese Forderung an die Kirche selbst.",
+        "sourceRefs": [
+          "p086",
+          "p089",
+          "p138"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-031",
+      "from": "institutional-accountability",
+      "to": "history",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Der historische Anspruch einer lernenden Soziallehre muss sich an den eigenen Verfehlungen messen lassen. Kirchlicher Sklavenbesitz, Legitimation und verspätete Verurteilung begrenzen eine Erzählung bloß geradlinigen Fortschritts, ohne Entwicklung grundsätzlich zu bestreiten.",
+        "sourceRefs": [
+          "p029",
+          "p045",
+          "p176",
+          "p177"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-032",
+      "from": "memory",
+      "to": "institutional-accountability",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Die Erinnerung an kirchliche Komplizenschaft verpflichtet heute zu Prävention, Schutz, Befreiung und Rehabilitation. Vergangenes Bedauern wird erst dann zu Rechenschaft, wenn es gegenwärtige Verantwortung und überprüfbares Handeln trägt.",
+        "sourceRefs": [
+          "p176",
+          "p177"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-033",
+      "from": "memory",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Erinnerung an Gewalt und die Stimmen von Leidenden erschweren ihre Normalisierung. Sie soll den Ruf nach Schutz und Frieden nähren, statt vergangenes Leid zum Vorwand neuer Vergeltung zu machen.",
+        "sourceRefs": [
+          "p191",
+          "p216",
+          "p217",
+          "p244"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-034",
+      "from": "justice",
+      "to": "peace",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Der angestrebte Frieden ist eine Folge gerechter Beziehungen und sozialer Liebe, kein bloßer Zustand erzwungener Ruhe. Wer Frieden will, muss auch die Unrechtsbedingungen verändern, die Konflikte hervorbringen.",
+        "sourceRefs": [
+          "p205",
+          "p215"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-035",
+      "from": "ai-governance",
+      "to": "peace",
+      "type": "applies-to",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Die Anforderungen an KI werden im Krieg besonders streng: keine Delegation tödlicher oder irreversibler Entscheidungen, genügend Urteilszeit, erkennbare Zuständigkeit und ziviler Schutz. Eine bloße Beschleunigung kann diese Aufgaben nicht erfüllen.",
+        "sourceRefs": [
+          "p197",
+          "p198",
+          "p199",
+          "p200"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-036",
+      "from": "institutional-accountability",
+      "to": "ai-governance",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Erkennbare Verantwortung, anfechtbare Gründe und rekonstruierbare Abläufe sind Voraussetzungen verantwortlicher KI. Im militärischen Bereich müssen sie mit effektiver, bewusster menschlicher Kontrolle verbunden sein; ein letzter Klick ist kein ausreichender Nachweis.",
+        "sourceRefs": [
+          "p105",
+          "p164",
+          "p199",
+          "p200"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-037",
+      "from": "dialogue",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Geduldige Verhandlungen und glaubwürdige gemeinsame Institutionen können Gewalt vermeiden und Vertrauen aufbauen. Dialog ist hier eine politische Praxis mit überprüfbaren Garantien und Reformbedarf, keine Versicherung eines leichten Erfolgs.",
+        "sourceRefs": [
+          "p218",
+          "p219",
+          "p221",
+          "p224",
+          "p226"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-038",
+      "from": "solidarity",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Digitale und wirtschaftliche Abhängigkeit kann Frieden nur stützen, wenn daraus gewählte Solidarität wird. Gemeinsame Rechte und Pflichten sollen bewaffnetes Nebeneinander durch ein verantwortetes Zusammenleben ersetzen.",
+        "sourceRefs": [
+          "p186",
+          "p187"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-039",
+      "from": "hope",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Hoffnung lässt begrenzte Handlungsmöglichkeiten ernst nehmen, ohne ungleiche Macht zu leugnen. Ausdauernde alltägliche Beiträge ergänzen institutionelle Aufgaben; weder sie noch die religiöse Begründung garantieren einen friedlichen Ausgang.",
+        "sourceRefs": [
+          "p211",
+          "p212",
+          "p213"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-040",
+      "from": "faith-foundations",
+      "to": "hope",
+      "type": "provides-source-foundation-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Die christliche Hoffnung der Quelle gründet in Gnade, göttlichem Geschenk und der Verheißung einer erneuerten Gemeinschaft. Sie unterscheidet sich von technisch erzeugter Selbststeigerung und gibt keine Garantie geradlinigen geschichtlichen Fortschritts. Gerade deshalb motiviert sie ausdauerndes gegenwärtiges Handeln.",
+        "sourceRefs": [
+          "p126",
+          "p127",
+          "p211",
+          "p242",
+          "p245"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-041",
+      "from": "faith-foundations",
+      "to": "solidarity",
+      "type": "provides-source-foundation-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Taufe und Eucharistie begründen nach der Quelle eine Gemeinschaft, die zum Teilen und zur Solidarität verpflichtet. Die Verbindung mit Christus bedeutet zugleich Verbindung mit anderen. Zugehörigkeit soll deshalb im sozialen Handeln sichtbar werden und nicht in privater Frömmigkeit aufgehen.",
+        "sourceRefs": [
+          "p088",
+          "p234",
+          "p235"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-042",
+      "from": "care",
+      "to": "faith-foundations",
+      "type": "has-source-foundation-in",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Fürsorge wird im Text auch mit der Menschwerdung und dem religiösen Wert des Leibes begründet. Gottes Teilen menschlicher Verletzlichkeit gibt nach dieser Deutung jedem Menschen Bedeutung; die Quelle verbindet das mit konkreter Nähe, Anerkennung und Hilfe.",
+        "sourceRefs": [
+          "p231",
+          "p232",
+          "p233",
+          "p239"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-043",
+      "from": "history",
+      "to": "dialogue",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Die beschriebene Entwicklung der Soziallehre verbindet Glauben mit Anerkennung weltlicher Autonomie, Wissenschaft und unterschiedlichen Perspektiven. Daraus ergibt sich im Argument eine lernende Dialoghaltung, keine Garantie fehlerloser kirchlicher Praxis.",
+        "sourceRefs": [
+          "p020",
+          "p023",
+          "p024",
+          "p025",
+          "p027",
+          "p045"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-044",
+      "from": "hope",
+      "to": "development",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Hoffnung schöpft aus verletzlichen institutionellen Errungenschaften, glaubwürdigen Vorbildern und täglicher Arbeit. Sie kann ganzheitliche Entwicklung tragen, wenn sie Zusammenarbeit und Teilen ermöglicht, statt den Wandel für automatisch oder unveränderlich zu halten.",
+        "sourceRefs": [
+          "p123",
+          "p124",
+          "p125",
+          "p126",
+          "p236",
+          "p241",
+          "p245"
+        ]
+      },
+      "placement": "main"
+    }
+  ]
+}
