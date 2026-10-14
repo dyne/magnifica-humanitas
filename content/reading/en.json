@@ -1,0 +1,753 @@
+{
+  "schemaVersion": 1,
+  "locale": "en",
+  "editionId": "mh-en-owner-2026",
+  "revision": "reading-foundation-1",
+  "scope": "Four opening concepts and one authored trail; complete library follows separate review.",
+  "concepts": [
+    {
+      "id": "dignity",
+      "locale": "en",
+      "title": "Human dignity",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Intrinsic human worth, in the encyclical, belongs to every person before usefulness, achievement, social recognition or moral success.",
+        "sourceRefs": [
+          "p050",
+          "p051",
+          "p052",
+          "p053",
+          "p058",
+          "p154"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Moral conduct, social conditions and experienced worth can change; ontological dignity cannot be lost. The source grounds it in divine creation and love.",
+        "sourceRefs": [
+          "p050",
+          "p051",
+          "p052",
+          "p053",
+          "p058",
+          "p154"
+        ]
+      },
+      "foundationRefs": [
+        "p050",
+        "p052",
+        "p053"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p052",
+        "start": 457,
+        "end": 512,
+        "text": "These aspects of dignity can be enhanced or diminished."
+      },
+      "reasoning": [
+        {
+          "kind": "paraphrase",
+          "text": "Leo XIV rejects the idea that a person must earn worth by being efficient or useful. If value depended on output, a person could become a resource to exploit rather than an end whose rights must be respected.",
+          "sourceRefs": [
+            "p051"
+          ],
+          "id": "dignity-worth"
+        },
+        {
+          "kind": "paraphrase",
+          "text": "The argument distinguishes what can change from what cannot. Moral dignity concerns choices and actions; social dignity concerns living conditions and respect from others; existential dignity concerns a person’s felt worth and sense of life’s value. Ontological dignity names the intrinsic worth that, in the source’s account, belongs to a person simply by existing.",
+          "sourceRefs": [
+            "p052"
+          ],
+          "id": "dignity-kinds"
+        },
+        {
+          "kind": "editorial-interpretation",
+          "text": "The text’s claim of unconditional worth rests on creation and divine love. This is the author’s theological grounding, available separately below; this edition does not replace it with an invented secular proof.",
+          "sourceRefs": [
+            "p050",
+            "p052",
+            "p053"
+          ],
+          "id": "dignity-grounding"
+        },
+        {
+          "kind": "paraphrase",
+          "text": "Practical recognition is tested by decent work, protections and basic necessities. Work can provide relationships, expression and contribution, but unemployment must not remove citizenship or social participation. It does not make a person less worthy.",
+          "sourceRefs": [
+            "p058",
+            "p154"
+          ],
+          "id": "dignity-participation"
+        }
+      ],
+      "foundation": {
+        "kind": "paraphrase",
+        "text": "Leo XIV grounds dignity in being created in God’s image and willed for relationship with God, others and creation. He describes divine love as infinite and unconditional: no failing, humiliation or exclusion can erase the worth God gives. This theological premise explains the source’s unconditional claim; it is not presented here as a premise every reader shares.",
+        "sourceRefs": [
+          "p050",
+          "p052",
+          "p053"
+        ]
+      }
+    },
+    {
+      "id": "rights",
+      "locale": "en",
+      "title": "Human rights",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "The source treats universal and inalienable rights as concrete demands of intrinsic dignity, requiring practical respect and institutions that protect them.",
+        "sourceRefs": [
+          "p054",
+          "p055",
+          "p056",
+          "p057",
+          "p081"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Its life-from-conception-to-natural-end position, including abortion and euthanasia, is explicitly the Church's normative position; formal declarations or manipulated consensus do not establish actual protection.",
+        "sourceRefs": [
+          "p054",
+          "p055",
+          "p056",
+          "p057",
+          "p081"
+        ]
+      },
+      "foundationRefs": [
+        "p054"
+      ],
+      "reasoning": [
+        {
+          "kind": "paraphrase",
+          "text": "In the encyclical, rights express the dignity that a person already has. The international community has a duty to protect and promote them; declaring them is insufficient without practical respect in all places and for everyone.",
+          "sourceRefs": [
+            "p054",
+            "p055"
+          ],
+          "id": "rights-protection"
+        },
+        {
+          "kind": "paraphrase",
+          "text": "Leo XIV names two dangers: formally declaring rights while allowing violations, and abandoning inquiry into the grounds of their universality. He warns that a frightened or manipulated population’s apparent consensus could let those in power question rights formerly treated as untouchable.",
+          "sourceRefs": [
+            "p056"
+          ],
+          "id": "rights-foundations"
+        },
+        {
+          "kind": "paraphrase",
+          "text": "The source tests equal dignity through concrete treatment. For women, this includes laws, employment, education, responsibilities and whether society values their contributions. For migrants and refugees, it includes safe legal routes and integration alongside the right to remain safely at home through action on displacement’s causes.",
+          "sourceRefs": [
+            "p057",
+            "p081"
+          ],
+          "id": "rights-treatment"
+        },
+        {
+          "kind": "editorial-interpretation",
+          "text": "The Church’s stated right-to-life position extends from conception to natural death and condemns induced abortion, killing the innocent and euthanasia. This is an attributed normative position, rather than a claim that every reader or legal system accepts it.",
+          "sourceRefs": [
+            "p055"
+          ],
+          "id": "rights-life-position"
+        }
+      ],
+      "foundation": {
+        "kind": "paraphrase",
+        "text": "The source’s Christian perspective treats rights as an expression of intrinsic dignity, not an external addition to the person. Its international duty of protection is stated within that understanding.",
+        "sourceRefs": [
+          "p054"
+        ]
+      }
+    },
+    {
+      "id": "common-good",
+      "locale": "en",
+      "title": "Common good",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Shared social conditions enable persons and groups to flourish together; the common good gives institutional expression to the dignity of each person.",
+        "sourceRefs": [
+          "p059",
+          "p060",
+          "p061",
+          "p062",
+          "p063",
+          "p064"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "It is neither a mere sum of preferences nor permission to sacrifice a person for the whole. Contribution is within a person's abilities, and institutions must enable participation.",
+        "sourceRefs": [
+          "p059",
+          "p060",
+          "p061",
+          "p062",
+          "p063",
+          "p064"
+        ]
+      },
+      "foundationRefs": [
+        "p059"
+      ],
+      "reasoning": [
+        {
+          "kind": "paraphrase",
+          "text": "Recognizing each person’s dignity changes how society should organize economic and political choices and shared places. The source calls the common good the social expression of that dignity; each person contributes within the limits of their ability.",
+          "sourceRefs": [
+            "p059"
+          ],
+          "id": "common-good-obligation"
+        },
+        {
+          "kind": "paraphrase",
+          "text": "Shared conditions allow individuals and groups to flourish. Their good depends on collective action and mutual influence, so simply adding private benefits or pursuing individual advancement does not produce the shared good.",
+          "sourceRefs": [
+            "p060",
+            "p061"
+          ],
+          "id": "common-good-shared"
+        },
+        {
+          "kind": "paraphrase",
+          "text": "A shared vision does not require agreement on everything. The source calls for dialogue and basic agreements amid differences. Public authorities must coordinate interests with justice, keep vulnerable people included, and work beyond short-term calculations.",
+          "sourceRefs": [
+            "p062",
+            "p063"
+          ],
+          "id": "common-good-dialogue"
+        },
+        {
+          "kind": "paraphrase",
+          "text": "International cooperation must safeguard the global common good while respecting peoples’ identity and legitimate diversity. Leo XIV rejects plans to eliminate or subjugate a nation.",
+          "sourceRefs": [
+            "p064"
+          ],
+          "id": "common-good-international"
+        }
+      ],
+      "foundation": {
+        "kind": "paraphrase",
+        "text": "For a Christian, the source describes committing to the common good, within one’s ability, as a non-negotiable value alongside promoting life. The public obligation described in this edition remains attributed to that source.",
+        "sourceRefs": [
+          "p059"
+        ]
+      }
+    },
+    {
+      "id": "ai-governance",
+      "locale": "en",
+      "title": "Governing AI",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Designers, trainers, funders, authorizers, users and institutions bear traceable responsibilities for AI's ends, deployment, explanation, challenge and remedy.",
+        "sourceRefs": [
+          "p071",
+          "p072",
+          "p104",
+          "p105",
+          "p106",
+          "p107",
+          "p109",
+          "p164",
+          "p197",
+          "p198",
+          "p199",
+          "p200"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Alignment or a final operator alone is insufficient. Justice begins in design, affected communities need a voice, and human control must be effective in irreversible decisions.",
+        "sourceRefs": [
+          "p071",
+          "p072",
+          "p104",
+          "p105",
+          "p106",
+          "p107",
+          "p109",
+          "p164",
+          "p197",
+          "p198",
+          "p199",
+          "p200"
+        ]
+      },
+      "foundationRefs": [],
+      "reasoning": [
+        {
+          "kind": "paraphrase",
+          "text": "AI systems embody choices in what they measure, ignore and optimize. Their design must be examined alongside their use. Accountability means identifying who must justify decisions, monitor them, answer challenges and remedy harm.",
+          "sourceRefs": [
+            "p104",
+            "p105"
+          ],
+          "id": "ai-governance-design"
+        },
+        {
+          "kind": "paraphrase",
+          "text": "The source applies participation to corporate and platform power as well as governments. It calls for independent checks, algorithm transparency, equitable data access and recourse, with State and transnational safeguards that let communities help decide how data and algorithms are governed.",
+          "sourceRefs": [
+            "p071",
+            "p072"
+          ],
+          "id": "ai-governance-participation"
+        },
+        {
+          "kind": "paraphrase",
+          "text": "Prudence and sometimes slower adoption are presented as responsible progress. Legal frameworks, independent oversight and informed users are needed. Aligning a machine to values does not answer who chose those values: communities must be able to deliberate and question. Justice must shape design from the outset.",
+          "sourceRefs": [
+            "p106",
+            "p107",
+            "p109"
+          ],
+          "id": "ai-governance-deliberation"
+        },
+        {
+          "kind": "paraphrase",
+          "text": "For economic decisions, the text calls for understandable, contestable and overseen decisions; investment in skills, infrastructure and essential services; and taxation, social protection and industrial policies that address concentrated wealth and power.",
+          "sourceRefs": [
+            "p164"
+          ],
+          "id": "ai-governance-economy"
+        },
+        {
+          "kind": "paraphrase",
+          "text": "In warfare, the source preserves armed force as a last resort in legitimate self-defense and demands rigorous constraints on AI weapons. It forbids delegating lethal or otherwise irreversible decisions to artificial systems while still allowing work on values and boundaries in systems. Traceable responsibility, time for moral judgment, civilian protection, effective human control and international safeguards all remain necessary.",
+          "sourceRefs": [
+            "p197",
+            "p198",
+            "p199",
+            "p200"
+          ],
+          "id": "ai-governance-war"
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel-002",
+      "from": "dignity",
+      "to": "rights",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "The source derives rights inherent in being human from intrinsic dignity, rather than granting them as rewards for performance.",
+        "sourceRefs": [
+          "p051",
+          "p054",
+          "p055"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-003",
+      "from": "dignity",
+      "to": "common-good",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "The common good is described as the social expression of the dignity recognized in each person.",
+        "sourceRefs": [
+          "p059",
+          "p060"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-014",
+      "from": "dignity",
+      "to": "ai-governance",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "People cannot be reduced to unanswerable profiles; decisions affecting them require reasons, challenge and remedies.",
+        "sourceRefs": [
+          "p102",
+          "p103",
+          "p105",
+          "p164"
+        ]
+      },
+      "placement": "main"
+    }
+  ],
+  "contexts": [
+    {
+      "paragraphId": "p050",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "The author grounds dignity in creation in God’s image and divine love. Worth does not depend on abilities, wealth, position or right and wrong choices. That theological grounding is retained as attributed context.",
+        "sourceRefs": [
+          "p050"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p051",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "The source rejects earning worth through efficiency or results: persons are ends, not resources to exploit. It identifies rights that belong to everyone by virtue of being human, through the Church’s teaching rather than a claim about every jurisdiction’s law.",
+        "sourceRefs": [
+          "p051"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p052",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "The source distinguishes moral dignity (choices and actions), social dignity (living conditions and respect), existential dignity (felt worth and life’s value), and ontological dignity (intrinsic worth). The first three can change. Ontological dignity cannot be lost through sin, failure, humiliation or exclusion; the author grounds it in creation and divine love.",
+        "sourceRefs": [
+          "p052"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p053",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "Fundamental dignity, in the source’s account, is neither acquired nor earned and needs no justification. It attributes infinite and unconditional worth to God’s love and cites Dignitas Infinita; this is a theological rationale, not an unattributed secular proof.",
+        "sourceRefs": [
+          "p053"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p054",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "The source welcomes the identification and proclamation of human rights and recalls John Paul II’s appreciation of the Universal Declaration. From its Christian perspective, rights express intrinsic dignity, with duties for international protection and promotion.",
+        "sourceRefs": [
+          "p054"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p055",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "The source calls rights universal and inalienable and insists on practical and legal respect. It names a right to life from conception to natural death and the Church’s condemnation of induced abortion, killing the innocent and euthanasia. These are attributed normative positions.",
+        "sourceRefs": [
+          "p055"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p056",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "The author names two dangers: formal declarations coexisting with violations, and abandoning inquiry into rights’ universal foundations. He warns that power could exploit fear or manipulated apparent consensus to deny rights once considered untouchable.",
+        "sourceRefs": [
+          "p056"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p057",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "The source welcomes growing recognition of minority rights but says women’s equal dignity is still not genuinely guaranteed. Equality must appear in laws, employment, education, responsibilities and recognition of women’s contributions, particularly amid exclusion, mistreatment and violence.",
+        "sourceRefs": [
+          "p057"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p058",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "Each person and family is the practical test of political or communal ideals. Praising freedom or enterprise is insufficient if many still lack decent work, protections and basic necessities.",
+        "sourceRefs": [
+          "p058"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p059",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "Recognizing each person’s dignity should shape economic and political life and cities. The author describes the common good as the social expression of dignity. Contribution remains within each person’s ability, with a Christian commitment explained as an attributed premise.",
+        "sourceRefs": [
+          "p059"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p060",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "The source uses the Council’s account of social conditions enabling individuals and groups to flourish. The common good is a shared good sustained by collective action, not a list of institutions, summed individual benefits or intersecting private interests.",
+        "sourceRefs": [
+          "p060"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p061",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "The source argues that interdependence and mutual influence create shared social good beyond a sum of interests. Its metaphor of a “plus” is a claim about relationships, not a numerical metric or permission to disregard individuals.",
+        "sourceRefs": [
+          "p061"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p062",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "A people is described as a shared life with joint responsibility. Differences and disagreements remain; dialogue can establish basic agreements and a shared vision without enforcing unanimity.",
+        "sourceRefs": [
+          "p062"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p063",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "The State should make contribution possible, coordinate sectoral interests with justice, and keep vulnerable people included. The source warns that short-term calculation and sterile polarization undermine common-good claims and worsen division.",
+        "sourceRefs": [
+          "p063"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p064",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "The source calls for cooperation and effective international institutions that safeguard the global common good without compromising peoples’ legitimate diversity, identity or existence. Eliminating or subjugating a nation is explicitly rejected.",
+        "sourceRefs": [
+          "p064"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p071",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "In digital life, concentrated power may belong to platforms and corporations rather than the State. The source calls for transparency, accountability, meaningful participation, independent checks, algorithm transparency, equitable data access and recourse.",
+        "sourceRefs": [
+          "p071"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p072",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "States and transnational institutions should provide fair rules and effective safeguards so varied communities can help govern employment, services, data and digital environments. Cooperation must respect differing levels and joint responsibility; a few actors must not dictate all choices.",
+        "sourceRefs": [
+          "p072"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p081",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "Migrants and refugees are a test of social justice. The source recognizes their dignity, resources, dreams and agency. It pairs safe legal routes, dignified reception and integration with the right to remain safely at home by addressing displacement’s root causes.",
+        "sourceRefs": [
+          "p081"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p102",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "AI affects rights, opportunities, status and freedom in employment, credit, services and reputation. The author warns of harmful uses and of systems that appear neutral while reproducing designers’ stereotypes, allowing exclusion to escape scrutiny.",
+        "sourceRefs": [
+          "p102"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p103",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "Unaccountable algorithmic judgments about who is worthy conceal political choices behind apparent neutrality. The source insists that simulated empathy cannot replace responsibility or real political action for those excluded.",
+        "sourceRefs": [
+          "p103"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p104",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "Technical systems embody priorities through what they measure, ignore, optimize and classify. The source asks how design and models conceive of persons and society, not only whether a user intends good or harm.",
+        "sourceRefs": [
+          "p104"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p105",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "Responsibility should be clear throughout design, development and use. Accountability includes identifiable people who explain and justify decisions, monitor results, enable challenges and remedy harm, even when internal processes are opaque.",
+        "sourceRefs": [
+          "p105"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p106",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "Prudence, evaluation and sometimes slower AI adoption are described as responsible care rather than opposition to progress. Legal frameworks, oversight, informed users and political responsibility must counter an imbalance between technological speed and safeguards.",
+        "sourceRefs": [
+          "p106"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p107",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "Machine alignment is insufficient when a few actors define the moral framework. The source calls for open debate, social justice standards, active political involvement and communities’ continuing ability to participate and ask questions.",
+        "sourceRefs": [
+          "p107"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p109",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "The source applies its social principles to concentrated data, computing and regulatory power. Access and education, community choices and corrections, hidden workers, and the distribution of model-training power matter. Justice must shape design from the outset, not only repair deployed technology.",
+        "sourceRefs": [
+          "p109"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p154",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "Work offers sustenance, expression, relationships and contribution. The source calls for access to work and for rethinking work’s connection to citizenship where technology reduces it. Unemployment must not remove social participation or be treated as reduced intrinsic worth.",
+        "sourceRefs": [
+          "p154"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p164",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "The author proposes three practical criteria: understandable, contestable and overseen decisions; investments in inclusion through skills, infrastructure and services; and taxation, social protection and industrial policies correcting concentrated wealth and power. He describes these as making innovation humane.",
+        "sourceRefs": [
+          "p164"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p197",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "The source attributes to the Holy See a warning that autonomous weapons make war more feasible and less subject to human control. It preserves armed force as a last resort in legitimate self-defense and calls for rigorous constraints and avoiding an AI arms race.",
+        "sourceRefs": [
+          "p197"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p198",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "The author rejects reducing moral judgment to calculation and prohibits entrusting lethal or otherwise irreversible decisions to artificial systems. He still allows work on values, judgment and boundaries in systems, as far as possible. These claims about conscience remain attributed.",
+        "sourceRefs": [
+          "p198"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p199",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "Three criteria remain distinct: an identifiable and verifiable chain of responsibility; time for moral judgment instead of speed as the supreme priority; and distinguishing combatants from civilians while protecting defenseless people.",
+        "sourceRefs": [
+          "p199"
+        ]
+      }
+    },
+    {
+      "paragraphId": "p200",
+      "explanation": {
+        "kind": "paraphrase",
+        "text": "War-related systems must enable reconstruction of decisions and effective, self-aware, responsible human control of lethal force. Shared international safeguards should curb the arms race and protect civilians and survival infrastructure; a nominal human button is insufficient.",
+        "sourceRefs": [
+          "p200"
+        ]
+      }
+    }
+  ],
+  "trails": [
+    {
+      "id": "worth-not-reward",
+      "title": "Why is worth not a reward?",
+      "introduction": {
+        "kind": "editorial-interpretation",
+        "text": "The source separates intrinsic worth from achievement, then asks what practical obligations follow. This two-step trail follows that reasoning from dignity to rights; understanding it does not require agreement.",
+        "sourceRefs": [
+          "p051",
+          "p052",
+          "p054",
+          "p055"
+        ]
+      },
+      "steps": [
+        {
+          "id": "intrinsic-worth",
+          "conceptId": "dignity",
+          "transition": {
+            "kind": "editorial-interpretation",
+            "text": "If worth comes before achievement, rights cannot be rewards for being useful. Continue to see how the source moves from intrinsic worth to protection.",
+            "sourceRefs": [
+              "p051",
+              "p054"
+            ]
+          }
+        },
+        {
+          "id": "rights-in-practice",
+          "conceptId": "rights",
+          "transition": {
+            "kind": "editorial-interpretation",
+            "text": "The argument now has a practical test: respect must become protection and participation, not remain a declaration. The source’s contested life-position remains visible alongside that test.",
+            "sourceRefs": [
+              "p055",
+              "p056",
+              "p057"
+            ]
+          }
+        }
+      ],
+      "ending": {
+        "kind": "editorial-interpretation",
+        "text": "The distinction is between worth that is not earned and the concrete conditions needed to respect it. You can return to a concept, inspect a source or stop here. Nothing in this trail certifies agreement or understanding.",
+        "sourceRefs": [
+          "p051",
+          "p052",
+          "p055",
+          "p056"
+        ]
+      }
+    }
+  ]
+}

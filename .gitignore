@@ -8,3 +8,5 @@ research/source-pdf.txt
 *.tgz
 __pycache__/
 *.pyc
+playwright-report/
+test-results/

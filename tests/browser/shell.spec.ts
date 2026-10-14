@@ -1,0 +1,56 @@
+import { test, expect } from '@playwright/test'
+
+for (const viewport of [{ width: 360, height: 800 }, { width: 1440, height: 1000 }]) {
+  test(`production shell ${viewport.width}`, async ({ page }, info) => {
+    await page.setViewportSize(viewport)
+    const failures: string[] = []
+    page.on('pageerror', error => failures.push(error.message))
+    page.on('requestfailed', request => failures.push(request.url()))
+    page.on('response', response => { if (response.status() >= 400) failures.push(`${response.status()} ${response.url()}`) })
+    await page.goto('./#/en/atlas')
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText('Explore the ideas in Magnifica Humanitas')
+    await page.evaluate(() => document.fonts.ready)
+    expect(await page.evaluate(() => document.fonts.check('700 32px Syne') && document.fonts.check('16px "Inter Variable"'))).toBe(true)
+    await expect(page.getByRole('link', { name: 'Human dignity', exact: true })).toBeVisible()
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
+    await page.screenshot({ path: `output/shell-${process.env.VITE_BASE === '/' ? 'root' : 'subpath'}-${viewport.width}.png`, fullPage: true })
+    await page.getByRole('link', { name: 'About', exact: true }).click()
+    await expect(page).toHaveTitle('About this reading · Magnifica Humanitas')
+    await expect(page.getByRole('heading', { level: 1 })).toBeFocused()
+    await page.reload()
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText('About this reading')
+    await page.goto('./#/en/concepts/unknown-concept')
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText('This link is unavailable')
+    await page.getByRole('link', { name: 'Explore the atlas', exact: true }).click()
+    await expect(page).toHaveURL(/#\/en\/atlas$/)
+    await page.getByLabel('Appearance').selectOption('dark')
+    await expect(page.locator('html')).toHaveAttribute('data-dyne-theme', 'dark')
+    await page.getByLabel('Appearance').selectOption('light')
+    await expect(page.locator('html')).toHaveAttribute('data-dyne-theme', 'light')
+    expect(failures).toEqual([])
+    await info.attach('network-and-runtime', { body: JSON.stringify({ failures, viewport }), contentType: 'application/json' })
+  })
+}
+
+test('root redirect, keyboard skip and unsupported locale recovery', async ({ page }) => {
+  await page.goto('./')
+  await expect(page).toHaveURL(/#\/en\/atlas$/)
+  await page.keyboard.press('Tab')
+  await expect(page.getByRole('link', { name: 'Skip to reading' })).toBeFocused()
+  await page.keyboard.press('Enter')
+  await expect(page.locator('main')).toBeFocused()
+  await page.goto('./#/it/atlas')
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('This link is unavailable')
+  await page.getByRole('link', { name: 'Explore the atlas', exact: true }).focus()
+  await page.keyboard.press('Enter')
+  await expect(page).toHaveURL(/#\/en\/atlas$/)
+})
+
+test('no-JavaScript source access', async ({ browser, baseURL }) => {
+  const context = await browser.newContext({ javaScriptEnabled: false })
+  const page = await context.newPage()
+  await page.goto(baseURL!)
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Magnifica Humanitas')
+  await expect(page.getByRole('link', { name: 'Read the full original at the Holy See' })).toHaveAttribute('href', /^https:\/\/www.vatican.va\//)
+  await context.close()
+})
