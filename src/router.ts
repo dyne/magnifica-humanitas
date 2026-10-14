@@ -11,6 +11,9 @@ import Trails from './views/Trails.vue'
 import Trail from './views/Trail.vue'
 import TrailEnd from './views/TrailEnd.vue'
 import Read from './views/Read.vue'
+import Search from './views/Search.vue'
+import Saved from './views/Saved.vue'
+import { enterLocation } from './local-state'
 import { scrollBehavior, beginNavigation } from './navigation'
 
 export const router = createRouter({
@@ -27,14 +30,13 @@ export const router = createRouter({
     { path: '/en/trails', component: Trails, meta: { title: 'Question-led trails' } },
     { path: '/en/trails/:trailId/steps/:stepId', component: Trail, meta: { title: 'Trail step' } },
     { path: '/en/trails/:trailId/end', component: TrailEnd, meta: { title: 'Trail ending' } },
-    { path: '/en/read', component: Read, meta: { title: 'Read the opening argument' } },
-    ...['search', 'saved'].map(path => ({
-      path: `/en/${path}`, component: Unavailable, meta: { title: 'Reading in preparation', planned: path },
-    })),
+    { path: '/en/read', component: Read, meta: { title: 'Read continuously' } },
+    { path: '/en/search', component: Search, meta: { title: 'Search this reading' } },
+    { path: '/en/saved', component: Saved, meta: { title: 'Saved places and recent path' } },
     { path: '/:pathMatch(.*)*', component: Unavailable, meta: { title: 'Link unavailable' } },
   ],
   scrollBehavior,
 })
-router.afterEach(to => { document.title = `${to.meta.title} · Magnifica Humanitas` })
+router.afterEach(to => { enterLocation(to); document.title = `${to.meta.title} · Magnifica Humanitas` })
 
 router.beforeEach((_to, from) => { beginNavigation(from.matched.length === 0) })

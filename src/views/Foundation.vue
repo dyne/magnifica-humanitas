@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import SavePlace from '../components/SavePlace.vue'
 import { computed, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { concept } from '../reading'
@@ -12,7 +13,7 @@ watch(current, c => { document.title = `${c?.title ? `Optional foundations · ${
 <template>
   <template v-if="current">
     <nav class="breadcrumbs" aria-label="Breadcrumb"><RouterLink to="/en/atlas">Atlas</RouterLink><RouterLink :to="`/en/concepts/${current.id}`">{{ current.title }}</RouterLink><span aria-current="page">Optional foundations</span></nav>
-    <h1 tabindex="-1">Optional theological foundations · {{ current.title }}</h1>
+    <h1 tabindex="-1">Optional theological foundations · {{ current.title }}</h1><SavePlace />
     <p>Attributed premises of Leo XIV’s argument. These are available for depth; agreement is not required.</p>
     <ProseBlock v-if="current.foundation" :block="current.foundation" :scope="`${current.id}-foundation`" />
     <p v-else>This concept has no separate theological foundation in the published reading.</p>

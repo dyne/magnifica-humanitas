@@ -2,6 +2,8 @@ import { nextTick } from 'vue'
 import type { RouterScrollBehavior } from 'vue-router'
 import type { Caller } from './reading-types'
 import { waitForContext } from './source-context'
+import { waitForSequence } from './sequence'
+import { settleLocation, available, localStatus, describeLocation, routeLocation, locationKey } from './local-state'
 let traversing = false
 let navigating = false
 let navigationVersion = 0
@@ -15,6 +17,7 @@ export function savePosition(focusId?: string, force = false) {
   history.replaceState({ ...history.state, mhReader: {
     top: Math.max(0, window.scrollY), focusId: focusId ?? (active?.id || previous?.focusId || 'page-heading'),
   } }, '')
+  settleLocation()
 }
 let scrollTimer: ReturnType<typeof setTimeout>
 window.addEventListener('scroll', () => { clearTimeout(scrollTimer); scrollTimer = setTimeout(() => savePosition(), 100) }, { passive: true })
@@ -37,9 +40,13 @@ export const scrollBehavior: RouterScrollBehavior = async (to, _from, savedPosit
   traversing = false
   await nextTick()
   if (to.path.startsWith('/en/source/') || to.path.startsWith('/en/notes/')) { await waitForContext(); await nextTick() }
+  if (to.path === '/en/read' || to.path === '/en/search') { await waitForSequence(); await nextTick() }
   await new Promise<void>(resolve => requestAnimationFrame(() => resolve()))
   if (version !== navigationVersion) return false
   navigating = false
+  // Editing an in-place query or neighborhood retains the control and scroll.
+  // History traversal still restores its recorded destination below.
+  if (!wasTraversal && to.path === _from.path && ['/en/search', '/en/atlas'].includes(to.path)) return false
   const active = document.activeElement
   // A reader may have deliberately focused a control while orientation waited.
   // Preserve that choice rather than moving focus or scroll after their action.
@@ -50,6 +57,16 @@ export const scrollBehavior: RouterScrollBehavior = async (to, _from, savedPosit
     const target = document.getElementById(restore.focusId)
     ;(target ?? heading)?.focus({ preventScroll: true })
     return { top: Math.max(0, restore.top) }
+  }
+  const resume = state?.mhResume
+  const destination = routeLocation(to)
+  if (resume && available(resume) && destination && locationKey(destination, false) === locationKey(resume, false)) {
+    const target = (resume.blockId ? document.getElementById(resume.blockId) : null) ?? heading
+    target?.focus({ preventScroll: true })
+    localStatus.value = `Returned to ${describeLocation(resume)}.`
+    await nextTick()
+    const offset = target && resume.blockId ? Math.min(resume.offset, Math.max(0, target.offsetHeight - 1)) : 0
+    return { top: Math.max(0, (target?.getBoundingClientRect().top ?? 0) + window.scrollY + offset - 16) }
   }
   if (wasTraversal && savedPosition) {
     heading?.focus({ preventScroll: true })

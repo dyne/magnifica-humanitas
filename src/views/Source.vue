@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import SavePlace from '../components/SavePlace.vue'
 import { computed, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { loadContext } from '../source-context'
@@ -29,7 +30,7 @@ watch(current, p => { document.title = `${p ? `Source context · §${p.number}` 
   <h1 id="page-heading" tabindex="-1">{{ loading ? 'Opening source context' : failed ? 'Source context could not load' : current ? `Source context · §${current.number}` : 'This link is unavailable' }}</h1>
   <template v-if="loading"><p role="status">Loading the reviewed source context.</p></template>
   <template v-else-if="failed"><p role="alert">The source context is unavailable. Retry, return to your reading, or use the full-original link below.</p><button class="dyne-button" @click="reload">Retry source context</button><ReturnLink /></template>
-  <template v-else-if="current">
+  <template v-else-if="current"><SavePlace />
     <p>Leo XIV, <cite>Magnifica Humanitas</cite>, 15 May 2026. Edition {{ edition }} · Original PDF {{ current.pages.length === 1 ? 'page' : 'pages' }} {{ current.pages.join(', ') }}.</p>
     <ProseBlock :block="current.explanation" :scope="`context-${current.paragraphId}`" />
     <section v-for="q in current.quotations" :key="`${q.paragraphId}-${q.start}`">
@@ -44,5 +45,5 @@ watch(current, p => { document.title = `${p ? `Source context · §${p.number}` 
     </section>
     <ReturnLink />
   </template>
-  <template v-else><p>The requested source item is not available in this reviewed opening edition.</p><RouterLink to="/en/atlas">Explore the atlas</RouterLink><ReturnLink /></template>
+  <template v-else><p>The requested source item is not available in this reviewed edition.</p><RouterLink to="/en/atlas">Explore the atlas</RouterLink><ReturnLink /></template>
 </template>

@@ -1,12 +1,24 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-const appearance = ref('system')
+import { ref, computed, watch, nextTick } from 'vue'
+import { useRoute } from 'vue-router'
+import { localData, setAppearance as saveAppearance, dataNotice, localStatus, storageUnavailable, retryStorage, undoSaved, undoRemoval } from './local-state'
+const route = useRoute()
+async function undoHere() {
+  const blockId = undoSaved.value?.location.blockId
+  undoRemoval()
+  await nextTick()
+  const block = blockId ? document.getElementById(blockId) : null
+  const control = block?.querySelector<HTMLElement>('.save-place button') ?? document.querySelector<HTMLElement>('main .save-place button') ?? document.querySelector<HTMLElement>('main h1')
+  control?.focus()
+}
+const appearance = computed({ get: () => localData.appearance, set: value => saveAppearance(value) })
 function setAppearance() {
   const root = document.documentElement
   const dark = appearance.value === 'dark' || (appearance.value === 'system' && matchMedia('(prefers-color-scheme: dark)').matches)
   root.dataset.dyneTheme = dark ? 'dark' : 'light'
 }
 setAppearance()
+watch(appearance, setAppearance)
 matchMedia('(prefers-color-scheme: dark)').addEventListener('change', setAppearance)
 const textSize = ref('100')
 function setTextSize() { document.documentElement.style.fontSize = `${textSize.value}%` }
@@ -29,7 +41,13 @@ const links = [['Atlas', 'atlas'], ['Search', 'search'], ['Trails', 'trails'], [
       <select id="text-size" v-model="textSize" @change="setTextSize"><option value="100">100%</option><option value="125">125%</option><option value="150">150%</option><option value="200">200%</option></select>
     </div>
   </header>
-  <main id="main" ref="main" tabindex="-1"><RouterView /></main>
+  <main id="main" ref="main" tabindex="-1">
+    <p v-if="dataNotice" role="status">{{ dataNotice }} <button @click="dataNotice = ''">Dismiss reading data notice</button></p>
+    <p class="local-status" role="status" aria-live="polite">{{ localStatus }}</p>
+    <p v-if="undoSaved && route.path !== '/en/saved'"><button @click="undoHere">Undo removal</button></p>
+    <p v-if="storageUnavailable">Reading places are temporary in this tab. <button @click="retryStorage">Retry device storage</button></p>
+    <RouterView />
+  </main>
   <footer>
     <p>An editorial reading of Leo XIV’s <cite>Magnifica Humanitas</cite>, 15 May 2026. You may understand an argument and disagree.</p>
     <p><RouterLink to="/en/about">Source and adaptation method</RouterLink> · <a href="https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html">Read the full original at the Holy See</a></p>

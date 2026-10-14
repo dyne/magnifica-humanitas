@@ -24,3 +24,7 @@ export interface ContextParagraph {
 export interface ContextNote { id: string; number: number; text: string; pages: number[]; paragraphIds: string[]; kind: string; classification: string }
 export interface ReadingContextIndex { editionId: string; paragraphs: ContextParagraph[]; notes: ContextNote[] }
 export interface Caller { route: string; label: string; focusId: string; top: number }
+export interface ReadingEntry {
+  id: string; title: string; contextId: string; placement: string; conceptIds: string[];
+  sourceRefs: string[]; explanation?: Prose; foundationContextId?: string; contextLinkLabel: string;
+}

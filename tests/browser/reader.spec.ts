@@ -115,8 +115,8 @@ test('continuous reading stable blocks and invalid links recover without substit
   await expect(page.locator('#rights-protection')).toBeFocused()
   await page.goto('./#/en/read?at=unknown-block')
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('This link is unavailable')
-  await page.getByRole('link', { name: 'Start the opening reading', exact: true }).click()
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Read the opening argument')
+  await page.getByRole('link', { name: 'Start the adapted reading', exact: true }).click()
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Read continuously')
   for (const url of ['/en/source/p246', '/en/notes/n999', '/en/relations/missing', '/en/trails/worth-not-reward/steps/missing']) {
     await page.goto(`./#${url}`)
     await expect(page.getByRole('heading', { level: 1 })).toHaveText('This link is unavailable')

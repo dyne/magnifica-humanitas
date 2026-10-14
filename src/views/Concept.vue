@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import SavePlace from '../components/SavePlace.vue'
 import { computed, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { concept } from '../reading'
@@ -12,7 +13,7 @@ watch(current, c => { document.title = `${c?.title ?? 'Link unavailable'} · Mag
 <template>
   <template v-if="current">
     <nav class="breadcrumbs" aria-label="Breadcrumb"><RouterLink to="/en/atlas">Atlas</RouterLink><span aria-current="page">{{ current.title }}</span></nav>
-    <h1 tabindex="-1">{{ current.title }}</h1>
+    <h1 tabindex="-1">{{ current.title }}</h1><SavePlace />
     <ConceptBody :concept="current" :scope="current.id" />
     <ReturnLink />
     <p><RouterLink to="/en/atlas">Return to the atlas</RouterLink> · <RouterLink to="/en/trails">Choose a trail</RouterLink></p>

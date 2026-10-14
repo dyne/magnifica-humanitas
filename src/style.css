@@ -1,7 +1,25 @@
 * { box-sizing: border-box; }
 body { margin: 0; font: 1rem/1.65 var(--dyne-font-body); }
 a { text-underline-offset: .2em; overflow-wrap: anywhere; }
-button, select { font: inherit; max-width: 100%; }
+button, select, input { font: inherit; max-width: 100%; }
+button, input { background: var(--dyne-surface); color: var(--dyne-text); border: 1px solid var(--dyne-control-border); border-radius: var(--dyne-radius-control); padding: .5rem .75rem; min-height: 44px; }
+button { cursor: pointer; }
+input { min-width: 0; width: min(100%, 30rem); caret-color: var(--dyne-focus); }
+.search-results { padding-left: 1.5rem; max-width: var(--dyne-measure); }
+.search-results li { padding-block: 1rem; border-bottom: 1px solid var(--dyne-border); }
+.search-results li > a { display: inline-block; font-size: 1.25rem; min-height: 44px; padding-block: .5rem; }
+.save-place { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; margin-block: 1rem; max-width: var(--dyne-measure); }
+.save-place span { color: var(--dyne-muted); font-size: .875rem; }
+.saved-places { padding-left: 1.25rem; max-width: var(--dyne-measure); }
+.saved-places li { padding-block: .75rem; }
+.saved-places button { margin: .5rem 0 .5rem 1rem; }
+.reflection { margin-block: 2rem; border-top: 1px solid var(--dyne-border); }
+.local-status:empty { margin: 0; }
+.neighborhood-diagram { margin-block: 1.5rem; max-width: 60rem; }
+.neighborhood-diagram summary { cursor: pointer; min-height: 44px; }
+.neighborhood-diagram svg { display: block; width: 100%; color: var(--dyne-text); }
+.neighborhood-diagram text { fill: currentColor; font: 18px var(--dyne-font-body); }
+@media (max-width: 48rem) { .neighborhood-diagram { display: none; } }
 header, main, footer { width: min(76rem, calc(100% - 2rem)); margin-inline: auto; }
 header { display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: center; padding-block: 1rem; border-bottom: 1px solid var(--dyne-border); }
 .brand { font: 700 1.25rem/1.2 var(--dyne-font-display); text-decoration: none; }

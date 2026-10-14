@@ -1,8 +1,8 @@
 <script setup lang="ts">
+import SavePlace from '../components/SavePlace.vue'
 import { computed, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { concept, trail } from '../reading'
-import { visitedTrailSteps } from '../trail-state'
 import ConceptBody from '../components/ConceptBody.vue'
 import ProseBlock from '../components/ProseBlock.vue'
 import ReadingLink from '../components/ReadingLink.vue'
@@ -14,7 +14,6 @@ const stepIndex = computed(() => currentTrail.value?.steps.findIndex(s => s.id =
 const step = computed(() => currentTrail.value?.steps[stepIndex.value])
 const current = computed(() => concept(step.value?.conceptId))
 watch(() => route.fullPath, () => {
-  if (currentTrail.value && step.value) visitedTrailSteps.add(`${currentTrail.value.id}/${step.value.id}`)
   document.title = `${current.value?.title ?? 'Link unavailable'} · Magnifica Humanitas`
 }, { immediate: true })
 const nextRoute = computed(() => {
@@ -26,7 +25,7 @@ const nextRoute = computed(() => {
 <template>
   <template v-if="currentTrail && step && current">
     <nav class="breadcrumbs" aria-label="Breadcrumb"><RouterLink to="/en/trails">Trails</RouterLink><span>{{ currentTrail.title }}</span><span aria-current="page">{{ current.title }}</span></nav>
-    <h1 tabindex="-1">{{ current.title }}</h1>
+    <h1 tabindex="-1">{{ current.title }}</h1><SavePlace />
     <p>Step {{ stepIndex + 1 }} of {{ currentTrail.steps.length }} · {{ currentTrail.title }}</p>
     <ConceptBody :concept="current" :scope="`trail-${step.id}`" />
     <h2>{{ stepIndex + 1 === currentTrail.steps.length ? 'Bring the distinction together' : 'Where the argument leads' }}</h2>
