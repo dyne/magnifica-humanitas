@@ -27,11 +27,16 @@
 - Direct build: use the Dyne theme, prototype real interactions in code and
   review running mobile pages. Recorded in `.impeccable/config.json`.
 
+## Atlas composition — confirmed
+
+The owner selected **Question regions** from the three-option atlas composition
+quiz. Human questions organize the overview; concepts remain directly available
+without a required extra selection. Groups are labelled editorial, not presented
+as the source's own taxonomy. Preserve the Dyne visual world and code-led path.
+
 ## Remaining design work
 
-Choose the concrete atlas composition during the design milestone, using the
-existing Dyne visual language and actual source passages. This is a choice
-within the confirmed atlas experience, not a reopening of product direction.
+Implement and verify the selected composition using actual source passages.
 No custom domain is specified. GitHub Pages project-subpath output is required.
 
 ## Proposed defaults, not confirmed decisions

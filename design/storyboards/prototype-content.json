@@ -1,0 +1,210 @@
+{
+  "editionId": "mh-en-owner-2026",
+  "concepts": [
+    {
+      "id": "dignity",
+      "locale": "en",
+      "title": "Human dignity",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Intrinsic human worth, in the encyclical, belongs to every person before usefulness, achievement, social recognition or moral success.",
+        "sourceRefs": [
+          "p050",
+          "p051",
+          "p052",
+          "p053",
+          "p058",
+          "p154"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Moral conduct, social conditions and experienced worth can change; ontological dignity cannot be lost. The source grounds it in divine creation and love.",
+        "sourceRefs": [
+          "p050",
+          "p051",
+          "p052",
+          "p053",
+          "p058",
+          "p154"
+        ]
+      },
+      "foundationRefs": [
+        "p050",
+        "p052",
+        "p053"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p052",
+        "start": 457,
+        "end": 512,
+        "text": "These aspects of dignity can be enhanced or diminished."
+      }
+    },
+    {
+      "id": "rights",
+      "locale": "en",
+      "title": "Human rights",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "The source treats universal and inalienable rights as concrete demands of intrinsic dignity, requiring practical respect and institutions that protect them.",
+        "sourceRefs": [
+          "p054",
+          "p055",
+          "p056",
+          "p057",
+          "p081"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Its life-from-conception-to-natural-end position, including abortion and euthanasia, is explicitly the Church's normative position; formal declarations or manipulated consensus do not establish actual protection.",
+        "sourceRefs": [
+          "p054",
+          "p055",
+          "p056",
+          "p057",
+          "p081"
+        ]
+      },
+      "foundationRefs": [
+        "p054"
+      ]
+    },
+    {
+      "id": "common-good",
+      "locale": "en",
+      "title": "Common good",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Shared social conditions enable persons and groups to flourish together; the common good gives institutional expression to the dignity of each person.",
+        "sourceRefs": [
+          "p059",
+          "p060",
+          "p061",
+          "p062",
+          "p063",
+          "p064"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "It is neither a mere sum of preferences nor permission to sacrifice a person for the whole. Contribution is within a person's abilities, and institutions must enable participation.",
+        "sourceRefs": [
+          "p059",
+          "p060",
+          "p061",
+          "p062",
+          "p063",
+          "p064"
+        ]
+      },
+      "foundationRefs": [
+        "p059"
+      ]
+    },
+    {
+      "id": "ai-governance",
+      "locale": "en",
+      "title": "Governing AI",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Designers, trainers, funders, authorizers, users and institutions bear traceable responsibilities for AI's ends, deployment, explanation, challenge and remedy.",
+        "sourceRefs": [
+          "p071",
+          "p072",
+          "p104",
+          "p105",
+          "p106",
+          "p107",
+          "p109",
+          "p164",
+          "p197",
+          "p198",
+          "p199",
+          "p200"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Alignment or a final operator alone is insufficient. Justice begins in design, affected communities need a voice, and human control must be effective in irreversible decisions.",
+        "sourceRefs": [
+          "p071",
+          "p072",
+          "p104",
+          "p105",
+          "p106",
+          "p107",
+          "p109",
+          "p164",
+          "p197",
+          "p198",
+          "p199",
+          "p200"
+        ]
+      },
+      "foundationRefs": []
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel-002",
+      "from": "dignity",
+      "to": "rights",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "The source derives rights inherent in being human from intrinsic dignity, rather than granting them as rewards for performance.",
+        "sourceRefs": [
+          "p051",
+          "p054",
+          "p055"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-003",
+      "from": "dignity",
+      "to": "common-good",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "The common good is described as the social expression of the dignity recognized in each person.",
+        "sourceRefs": [
+          "p059",
+          "p060"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-014",
+      "from": "dignity",
+      "to": "ai-governance",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "People cannot be reduced to unanswerable profiles; decisions affecting them require reasons, challenge and remedies.",
+        "sourceRefs": [
+          "p102",
+          "p103",
+          "p105",
+          "p164"
+        ]
+      },
+      "placement": "main"
+    }
+  ],
+  "quotation": {
+    "kind": "quotation",
+    "paragraphId": "p052",
+    "start": 457,
+    "end": 512,
+    "text": "These aspects of dignity can be enhanced or diminished."
+  }
+}

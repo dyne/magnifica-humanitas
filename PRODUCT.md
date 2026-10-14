@@ -33,9 +33,12 @@ and liturgical formulas are removed from the adapted experience.
 
 ## Operating Context
 
-The atlas is the primary entrance. Readers can move among concepts and explore
-their relationships. Detailed mobile navigation and secondary guided paths are
-being designed against real passages rather than placeholder content.
+The atlas is the primary entrance. Readers choose a concept, read its reasoning,
+and follow named, source-backed relationships. Search, question-led trails and
+continuous adapted reading provide other entrances. A saved place lets a reader
+stop and return without completing a task. The navigation and state contract is
+in `design/READING-CONTRACT.md`. The owner selected Question regions: editorial
+human questions organize the atlas, with direct concept links in each region.
 
 English is the first release. For each future language, use its official
 encyclical translation as the source, rather than merely translating the English
@@ -52,6 +55,14 @@ verify their alignment instead of assuming it.
 - Follow a durable Org plan and quiz the owner on consequential choices.
 - Vue 3 + TypeScript, Dyne GitHub and GitHub Pages are confirmed.
 - Build directly in code and review the running mobile pages, as confirmed.
+- Use anonymously, with no accounts, profiling, engagement tracking or live
+  generative chatbot. Explanations and search use reviewed, authored content.
+- Bookmarks, reading position and preferences stay on the reader's device.
+  Reading works when local storage fails; show when a place could not be saved.
+- Use Vue Router hash history and a configurable Vite base. Project Pages URLs
+  begin `/magnifica-humanitas/#/en/`; root hosting also works with base `/`.
+- Keep concepts, relations, paragraphs and reading blocks addressable by stable
+  IDs. A translated title never changes a saved identity.
 
 ## Brand Commitments
 
@@ -64,8 +75,10 @@ adaptation and Impeccable for product and interface design.
 
 - Owner-supplied English PDF at workspace root, 47 pages, 245 paragraphs.
 - Owner-supplied saved English text and official source URL.
-- `research/ANALYSIS.md` maps the whole argument and closely examines the
-  central distinctions; sentence-level editorial coverage remains to be done.
+- `research/ANALYSIS.md` maps the whole argument. The accepted editorial model
+  accounts for all 245 paragraphs, 18 exact mixed-passage exclusions, 27
+  concepts and 44 typed relationships. Public explanations and trail prose
+  remain to be authored and reviewed; the ledger is not the public library.
 - `../vite-theme` and https://github.com/dyne/vite-theme, current revision
   `c485943e103fc1e7a50c6f45853d190f16f57583`.
 - No real reader-usability study has yet been conducted for this site.
@@ -80,7 +93,25 @@ adaptation and Impeccable for product and interface design.
 
 ## Accessibility & Inclusion
 
-Mobile reading is a confirmed priority. The implementation proposal includes
-keyboard and screen-reader access, reflow, adjustable reading settings and
-reduced motion. Concept exploration must not depend exclusively on visual
-spatial reasoning, color, dragging or pinch gestures.
+Mobile reading is a confirmed priority. Keyboard and screen-reader access,
+reflow at 200% text, appearance settings and reduced motion are required.
+Concept exploration must not depend exclusively on visual spatial reasoning,
+color, dragging or pinch gestures. Every atlas relationship has the same
+label, explanation, source references and destination in HTML navigation.
+
+## Learning Contract
+
+Necessary distinctions and qualifications stay visible with the opening idea
+and connected reasoning. Sources, notes and optional theological foundations
+are one navigation step away, with a return to the same reading block. The
+adaptation identifies the encyclical's premises rather than supplying an
+unattributed secular proof in their place.
+
+Trails have a named question, a finite sequence and an explicit ending. Readers
+can skip a step, leave for a concept, or stop at any point. Reflections are
+optional and explain distinctions with source links; they never score belief
+or agreement. Visited and saved places are not evidence of understanding.
+
+These are implementation requirements derived from the confirmed product
+choices and repository constraints. Question regions is the confirmed composition.
+No reader testing or learning efficacy is claimed.

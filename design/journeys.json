@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "status": "development-contract",
+  "locale": "en",
+  "editionId": "mh-en-owner-2026",
+  "hosting": { "history": "hash", "projectBase": "/magnifica-humanitas/", "rootBase": "/" },
+  "walkthroughs": [
+    { "id": "first-visit", "conceptIds": ["dignity"], "sourceRefs": ["p052"], "entry": "/", "destination": "/en/concepts/dignity" },
+    { "id": "source-verification", "conceptIds": ["dignity"], "sourceRefs": ["p052"], "entry": "/en/concepts/dignity", "destination": "/en/source/p052", "quotation": { "paragraphId": "p052", "start": 457, "end": 512, "text": "These aspects of dignity can be enhanced or diminished." } },
+    { "id": "deep-dive", "conceptIds": ["dignity", "rights"], "relationId": "rel-002", "sourceRefs": ["p051", "p054", "p055"], "entry": "/en/concepts/dignity", "destination": "/en/concepts/rights" },
+    { "id": "back", "conceptIds": ["rights", "dignity"], "relationId": "rel-002", "sourceRefs": ["p052"], "entry": "/en/concepts/rights", "destination": "/en/concepts/dignity" },
+    { "id": "interruption-return", "conceptIds": ["dignity"], "sourceRefs": ["p052"], "entry": "/en/saved", "destination": "/en/concepts/dignity", "blockRole": "idea" },
+    { "id": "no-results", "conceptIds": [], "sourceRefs": [], "entry": "/en/search?q=zz-unmatched-term-zz", "destination": "/en/search?q=zz-unmatched-term-zz" },
+    { "id": "invalid-link", "conceptIds": [], "sourceRefs": [], "entry": "/en/concepts/unknown-concept", "destination": "/en/atlas", "invalidConceptId": "unknown-concept", "invalidParagraphId": "p246" },
+    { "id": "empty-saved", "conceptIds": [], "sourceRefs": [], "entry": "/en/saved", "destination": "/en/atlas" }
+  ]
+}

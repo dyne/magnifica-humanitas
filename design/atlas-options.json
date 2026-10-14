@@ -1,0 +1,64 @@
+{
+  "title": "Choose the atlas composition",
+  "question": "Three ways to explore the same source-backed concepts, within the Dyne theme. Choose the arrangement you want to read and return to.",
+  "options": [
+    {
+      "id": "junction-atlas",
+      "label": "Junction atlas",
+      "kicker": "THE ROLL",
+      "thesis": "Choose an idea, then follow one named connection at a time.",
+      "palette": ["#ffeedd", "#251e18", "#984817", "#423e8e"],
+      "materials": ["Dyne semantic surfaces", "Syne headings", "Inter prose"],
+      "viewport": "Starting concepts lead into a large still junction: Human dignity, grounds, Human rights; full reasoning follows below.",
+      "risk": "The active neighborhood is clear, but distant relationships require returning to the overview.",
+      "comp": ".impeccable/mocks/decision/junction-atlas.webp",
+      "wireframe": {"cols": 12, "rows": 16, "regions": [
+        {"label": "Atlas · Search · Saved", "x": 0, "y": 0, "w": 12, "h": 2},
+        {"label": "Choose a starting concept", "x": 0, "y": 2, "w": 12, "h": 2},
+        {"label": "Human dignity", "x": 2, "y": 4, "w": 8, "h": 3, "accent": true},
+        {"label": "grounds → Human rights", "x": 0, "y": 7, "w": 12, "h": 3},
+        {"label": "Read the reasoning · §§50–58", "x": 0, "y": 10, "w": 12, "h": 4},
+        {"label": "All concepts · Relationship list", "x": 0, "y": 14, "w": 12, "h": 2}
+      ]}
+    },
+    {
+      "id": "atlas-reader",
+      "label": "Atlas beside the reader",
+      "thesis": "Keep the concept neighborhood beside the reasoning as you explore.",
+      "palette": ["#ffeedd", "#251e18", "#984817", "#423e8e"],
+      "materials": ["Dyne semantic surfaces", "Syne headings", "Inter prose"],
+      "viewport": "Desktop places the map next to a full reader; phones open the reader full width with a compact map and named connections.",
+      "risk": "The map needs a restrained phone layout so it does not crowd the reading.",
+      "comp": ".impeccable/mocks/decision/atlas-reader.webp",
+      "wireframe": {"cols": 12, "rows": 16, "regions": [
+        {"label": "Atlas · Search · Saved", "x": 0, "y": 0, "w": 12, "h": 2},
+        {"label": "Concept neighborhood · list", "x": 0, "y": 2, "w": 12, "h": 4, "accent": true},
+        {"label": "Human dignity · Save", "x": 0, "y": 6, "w": 12, "h": 2},
+        {"label": "Idea · reasoning · distinction", "x": 0, "y": 8, "w": 12, "h": 5},
+        {"label": "grounds → Human rights · §52", "x": 0, "y": 13, "w": 12, "h": 3}
+      ]}
+    },
+    {
+      "id": "question-regions",
+      "label": "Question regions",
+      "thesis": "Enter the atlas through a human question, then explore the ideas behind it.",
+      "palette": ["#ffeedd", "#251e18", "#984817", "#423e8e"],
+      "materials": ["Dyne semantic surfaces", "Syne headings", "Inter prose"],
+      "viewport": "Questions such as What makes a person worthy? organize the overview; Human dignity opens its connected neighborhood and full reader.",
+      "risk": "The editorial groups can feel like extra navigation unless concepts remain directly available.",
+      "comp": ".impeccable/mocks/decision/question-regions.webp",
+      "wireframe": {"cols": 12, "rows": 16, "regions": [
+        {"label": "Atlas · Search · Saved", "x": 0, "y": 0, "w": 12, "h": 2},
+        {"label": "What makes a person worthy?", "x": 0, "y": 2, "w": 12, "h": 3, "accent": true},
+        {"label": "Human dignity · Human rights", "x": 0, "y": 5, "w": 12, "h": 3},
+        {"label": "Who chooses technology's goals?", "x": 0, "y": 8, "w": 12, "h": 3},
+        {"label": "AI governance · Justice", "x": 0, "y": 11, "w": 12, "h": 3},
+        {"label": "All concepts · Relationship list", "x": 0, "y": 14, "w": 12, "h": 2}
+      ]}
+    }
+  ],
+  "reroll": true,
+  "steer": true,
+  "canon": false,
+  "buildPath": {"value": "code", "toggle": true}
+}
