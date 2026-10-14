@@ -1,0 +1,786 @@
+{
+  "schemaVersion": 1,
+  "language": "it",
+  "editionId": "mh-it-official-html-2026-10-14",
+  "relations": [
+    {
+      "id": "rel-001",
+      "from": "faith-foundations",
+      "to": "dignity",
+      "type": "provides-source-foundation-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "La fonte fonda il valore intrinseco nella creazione e nell’amore divino. Questa giustificazione religiosa rimane disponibile come approfondimento facoltativo, senza essere imposta ai lettori.",
+        "sourceRefs": [
+          "p050",
+          "p052",
+          "p053"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-002",
+      "from": "dignity",
+      "to": "rights",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Il testo fa derivare i diritti dalla dignità intrinseca, non dalla prestazione: essere persone precede l’utilità e obbliga alla protezione concreta.",
+        "sourceRefs": [
+          "p051",
+          "p054",
+          "p055"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-003",
+      "from": "dignity",
+      "to": "common-good",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Il bene comune è descritto come forma sociale della dignità riconosciuta a ciascuno: la convivenza deve esprimere nelle proprie condizioni quel valore personale.",
+        "sourceRefs": [
+          "p059",
+          "p060"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-004",
+      "from": "common-good",
+      "to": "shared-goods",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "La destinazione universale dei beni è presentata come conseguenza immediata della responsabilità per il bene comune, non come un tema separato dalla vita condivisa.",
+        "sourceRefs": [
+          "p065",
+          "p066"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-005",
+      "from": "shared-goods",
+      "to": "distribution",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "La proprietà privata è riconosciuta ma subordinata alla destinazione sociale dei beni. La ricchezza accumulata viene quindi giudicata anche in base all’accesso e ai benefici che rende possibili per tutti.",
+        "sourceRefs": [
+          "p066",
+          "p067",
+          "p161",
+          "p162"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-006",
+      "from": "subsidiarity",
+      "to": "common-good",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Le istituzioni più ampie devono sostenere e coordinare l’iniziativa di persone e comunità perché possa contribuire al bene comune, senza assorbirla né abbandonarla.",
+        "sourceRefs": [
+          "p068",
+          "p069",
+          "p070"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-007",
+      "from": "subsidiarity",
+      "to": "dialogue",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Prendere decisioni vicino a chi ne subisce gli effetti richiede partecipazione nella loro formazione. Consultare soltanto dopo che tutto è definito non realizza lo stesso compito.",
+        "sourceRefs": [
+          "p070",
+          "p071",
+          "p072"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-008",
+      "from": "solidarity",
+      "to": "subsidiarity",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "La solidarietà completa l’iniziativa locale con sostegno e responsabilità verso altre comunità. La sussidiarietà non autorizza isolamento né ritiro delle istituzioni pubbliche.",
+        "sourceRefs": [
+          "p068",
+          "p069",
+          "p073",
+          "p075",
+          "p076"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-009",
+      "from": "common-good",
+      "to": "development",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Lo sviluppo integrale verifica se le condizioni sociali permettano di crescere a ogni persona e in tutte le dimensioni della vita, dando concretezza al bene comune.",
+        "sourceRefs": [
+          "p059",
+          "p060",
+          "p082",
+          "p083",
+          "p085"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-010",
+      "from": "justice",
+      "to": "development",
+      "type": "provides-test-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Un progresso che esclude comunità svantaggiate o trasferisce danni ai più vulnerabili e alle generazioni future fallisce il criterio di giustizia dello sviluppo integrale.",
+        "sourceRefs": [
+          "p079",
+          "p083",
+          "p084",
+          "p085"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-011",
+      "from": "justice",
+      "to": "ai-governance",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "La giustizia deve entrare nel progetto di dati, algoritmi e processi decisionali. Riparare soltanto dopo l’adozione non esaurisce la responsabilità di governare l’IA.",
+        "sourceRefs": [
+          "p080",
+          "p109",
+          "p164"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-012",
+      "from": "shared-goods",
+      "to": "ai-governance",
+      "type": "applies-to",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "La destinazione sociale dei beni si applica anche a brevetti, algoritmi, dati e risorse di calcolo: proprietà e accesso incidono su chi può beneficiare dell’IA.",
+        "sourceRefs": [
+          "p067",
+          "p108",
+          "p109"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-013",
+      "from": "technology-power",
+      "to": "ai-governance",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "La concentrazione del potere nelle piattaforme e nelle infrastrutture richiede tutele, controlli e confronto effettivo sui fini. La sola dichiarazione di un uso etico non rende quel potere responsabile.",
+        "sourceRefs": [
+          "p005",
+          "p071",
+          "p095",
+          "p105",
+          "p106",
+          "p107"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-014",
+      "from": "dignity",
+      "to": "ai-governance",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "La dignità esclude che una persona venga ridotta a un profilo senza risposta possibile. Decisioni che incidono sulla vita richiedono ragioni, contestazione e rimedi.",
+        "sourceRefs": [
+          "p102",
+          "p103",
+          "p105",
+          "p164"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-015",
+      "from": "ai-limits",
+      "to": "ai-governance",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "La fonte non considera l’efficacia computazionale sufficiente a rendere l’IA un soggetto moralmente responsabile. Questa posizione attribuita lascia agli esseri umani il compito di rendere conto delle decisioni.",
+        "sourceRefs": [
+          "p099",
+          "p105",
+          "p198"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-016",
+      "from": "embodiment",
+      "to": "ai-limits",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "L’autore distingue crescita personale e adattamento statistico alla luce di una vita corporea, affettiva e relazionale. Il collegamento esprime la sua antropologia, non una misura tecnica dell’intelligenza.",
+        "sourceRefs": [
+          "p099",
+          "p112",
+          "p118",
+          "p128"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-017",
+      "from": "care",
+      "to": "embodiment",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Riconoscere la finitudine deve restare compatibile con il dovere di alleviare la sofferenza. La cura impedisce di trasformare il limite in un motivo per abbandonare una persona o svalutarne la vita.",
+        "sourceRefs": [
+          "p114",
+          "p117",
+          "p118",
+          "p126"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-018",
+      "from": "care",
+      "to": "work",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "La tecnica può liberare da mansioni pericolose e gravose mentre restano protette occupazione, capacità di agire e partecipazione. Sollievo dalla fatica ed esclusione dal contributo sociale non sono lo stesso risultato.",
+        "sourceRefs": [
+          "p152",
+          "p153",
+          "p154"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-019",
+      "from": "technology-power",
+      "to": "dignity",
+      "type": "puts-in-tension",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Una visione tecnocratica può ridurre le persone a prestazioni e risorse, entrando in conflitto con il valore intrinseco. Questo contrasto non implica che ogni strumento sia dannoso.",
+        "sourceRefs": [
+          "p092",
+          "p094",
+          "p095",
+          "p112"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-020",
+      "from": "truth",
+      "to": "dialogue",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Riscontro dei fatti e parole che non umiliano sostengono una comunicazione giusta. Rendono possibile formare giudizi e dialogare con pazienza attraverso le differenze.",
+        "sourceRefs": [
+          "p132",
+          "p134",
+          "p214",
+          "p219"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-021",
+      "from": "truth",
+      "to": "education",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "In un ambiente informativo manipolabile, cercare la verità richiede studio paziente, verifica delle fonti e disciplina del pensiero: disporre di risposte rapide non equivale a comprenderle.",
+        "sourceRefs": [
+          "p137",
+          "p139",
+          "p140",
+          "p146"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-022",
+      "from": "education",
+      "to": "freedom",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "La formazione condivisa sviluppa la capacità di riconoscere manipolazioni e scegliere responsabilmente. Sostiene la libertà interiore senza lasciare alle sole persone tutto il peso delle condizioni digitali.",
+        "sourceRefs": [
+          "p142",
+          "p145",
+          "p146",
+          "p147",
+          "p238"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-023",
+      "from": "technology-power",
+      "to": "freedom",
+      "type": "puts-in-tension",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Mercati dell’attenzione e profilazione possono sfruttare vulnerabilità e produrre controllo sociale. Il testo critica queste condizioni di dominio, senza dichiarare coercitivo qualunque impiego di dati.",
+        "sourceRefs": [
+          "p136",
+          "p170",
+          "p171",
+          "p172"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-024",
+      "from": "work",
+      "to": "family",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Le condizioni del lavoro incidono sulla stabilità familiare e sulle possibilità dei giovani di costruire impegni duraturi. Il nesso richiede sostegno pubblico nelle transizioni, oltre alle scelte delle singole famiglie.",
+        "sourceRefs": [
+          "p165",
+          "p166",
+          "p167",
+          "p168",
+          "p169"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-025",
+      "from": "dignity",
+      "to": "work",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Il lavoro può esprimere dignità e partecipazione, ma non conferisce valore intrinseco. Quando l’occupazione manca o diminuisce, cittadinanza e partecipazione devono rimanere possibili.",
+        "sourceRefs": [
+          "p052",
+          "p149",
+          "p154"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-026",
+      "from": "work",
+      "to": "distribution",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Transizioni umane richiedono opportunità e sostegni equi e condivisione dei benefici dell’innovazione. Il testo non prescrive un modello unico: territori e comunità affrontano condizioni diverse.",
+        "sourceRefs": [
+          "p151",
+          "p153",
+          "p156",
+          "p161",
+          "p164"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-027",
+      "from": "distribution",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Una prosperità diffusa, inclusiva e sostenibile può contribuire alla pace. La spesa militarizzata può invece sottrarre ai poveri sanità, istruzione e servizi necessari.",
+        "sourceRefs": [
+          "p163",
+          "p204"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-028",
+      "from": "exploitation",
+      "to": "ai-governance",
+      "type": "provides-test-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Lavoro nascosto, schiavitù e pratiche estrattive sui dati verificano se l’IA sia governata per proteggere persone. Celebrare l’efficienza senza guardare le filiere lascia intatta la subordinazione.",
+        "sourceRefs": [
+          "p173",
+          "p174",
+          "p178",
+          "p179"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-029",
+      "from": "shared-goods",
+      "to": "freedom",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Restituire ai popoli il potere di decidere uso e benefici dei propri dati rende la conoscenza condivisa meno disponibile al dominio. Riconsegnare soltanto una copia dei dati non basta.",
+        "sourceRefs": [
+          "p178"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-030",
+      "from": "institutional-accountability",
+      "to": "justice",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "L’esame di sé della Chiesa richiede ascolto delle vittime, riconoscimento del danno, riparazione e prevenzione. Condivisione delle risorse e valutazione correttiva rendono concreta la giustizia istituzionale.",
+        "sourceRefs": [
+          "p086",
+          "p089",
+          "p138"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-031",
+      "from": "institutional-accountability",
+      "to": "history",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "La narrazione dello sviluppo dottrinale va letta insieme all’ammissione di schiavi posseduti, sottomissioni legittimate e condanna tardiva. La continuità rivendicata dalla fonte non cancella queste responsabilità.",
+        "sourceRefs": [
+          "p029",
+          "p045",
+          "p176",
+          "p177"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-032",
+      "from": "memory",
+      "to": "institutional-accountability",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Ricordare la complicità passata obbliga a vigilanza e prevenzione presenti. Il rammarico retrospettivo non sostituisce protezione, liberazione e riabilitazione delle vittime di oggi.",
+        "sourceRefs": [
+          "p176",
+          "p177"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-033",
+      "from": "memory",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Memoria e testimonianze resistono alla normalizzazione della violenza. Lo sguardo delle vittime orienta il grido della sofferenza alla pace e al riconoscimento, anziché alla vendetta.",
+        "sourceRefs": [
+          "p191",
+          "p216",
+          "p217",
+          "p244"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-034",
+      "from": "justice",
+      "to": "peace",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "La pace cercata dal testo nasce dalla giustizia, non dal dominio o da una semplice pausa imposta dalla forza. Il desiderio di quiete non esonera dagli obblighi verso gli altri.",
+        "sourceRefs": [
+          "p205",
+          "p215"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-035",
+      "from": "ai-governance",
+      "to": "peace",
+      "type": "applies-to",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "L’IA in guerra richiede catene identificabili di responsabilità, tempo per giudicare, distinzione dei civili e controllo umano effettivo. Restano i limiti rigorosi della difesa come ultima risorsa e il divieto di delegare decisioni letali o irreversibili.",
+        "sourceRefs": [
+          "p197",
+          "p198",
+          "p199",
+          "p200"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-036",
+      "from": "institutional-accountability",
+      "to": "ai-governance",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Rendere conto esige responsabilità visibili e decisioni controllabili e contestabili. La macchina non deve diventare il luogo in cui si dissolvono colpe, ragioni e possibilità di rimedio.",
+        "sourceRefs": [
+          "p105",
+          "p164",
+          "p199",
+          "p200"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-037",
+      "from": "dialogue",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Negoziati pazienti, garanzie verificabili e istituzioni multilaterali offrono alternative praticabili alla forza. Il confronto apre possibilità di soluzioni onorevoli, non promette risultati automatici.",
+        "sourceRefs": [
+          "p218",
+          "p219",
+          "p221",
+          "p224",
+          "p226"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-038",
+      "from": "solidarity",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "La prossimità digitale diventa futuro condiviso attraverso cura, diritti e doveri reciproci. La semplice connessione o coesistenza armata non realizza da sé una solidarietà orientata alla pace.",
+        "sourceRefs": [
+          "p186",
+          "p187"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-039",
+      "from": "hope",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Scelte quotidiane e testimonianze perseveranti sostengono la costruzione della pace. Il testo precisa che la speranza teologale non elimina magicamente i conflitti, ma muove all’azione.",
+        "sourceRefs": [
+          "p211",
+          "p212",
+          "p213"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-040",
+      "from": "faith-foundations",
+      "to": "hope",
+      "type": "provides-source-foundation-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Grazia, Incarnazione e compimento promesso sostengono la speranza della fonte. Questa premessa di fede resta facoltativa e accompagna, senza sostituirlo, l’impegno concreto nella storia.",
+        "sourceRefs": [
+          "p126",
+          "p127",
+          "p211",
+          "p242",
+          "p245"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-041",
+      "from": "faith-foundations",
+      "to": "solidarity",
+      "type": "provides-source-foundation-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "La fonte colloca la solidarietà cristiana nella comunione sacramentale: l’appartenenza a Cristo comporta unità e condivisione con gli altri, oltre alla connessione digitale.",
+        "sourceRefs": [
+          "p088",
+          "p234",
+          "p235"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-042",
+      "from": "care",
+      "to": "faith-foundations",
+      "type": "has-source-foundation-in",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "L’Incarnazione è il motivo religioso della fonte per prendersi cura della carne vulnerabile e dei volti concreti. Tale premessa è attribuita e facoltativa, distinta dagli argomenti accessibili nel percorso principale.",
+        "sourceRefs": [
+          "p231",
+          "p232",
+          "p233",
+          "p239"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-043",
+      "from": "history",
+      "to": "dialogue",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Il testo presenta una tradizione che si sviluppa nel confronto con storia, scienze, culture e dibattito competente, mantenendo la propria fedeltà al Vangelo e rispettando l’autonomia delle realtà terrene.",
+        "sourceRefs": [
+          "p020",
+          "p023",
+          "p024",
+          "p025",
+          "p027",
+          "p045"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-044",
+      "from": "hope",
+      "to": "development",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Istituzioni giuste, testimoni credibili e fedeltà quotidiane orientano il progresso tecnico verso relazioni e amore. La speranza sostiene uno sviluppo responsabile, senza garantire che ogni innovazione produca bene da sola.",
+        "sourceRefs": [
+          "p123",
+          "p124",
+          "p125",
+          "p126",
+          "p236",
+          "p241",
+          "p245"
+        ]
+      },
+      "placement": "main"
+    }
+  ]
+}

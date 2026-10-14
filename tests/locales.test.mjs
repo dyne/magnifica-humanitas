@@ -6,7 +6,7 @@ import { availableLocales, localeRegistry, primaryLanguage, resolveBrowserLocale
 const fixture = ['en', 'ar', 'pt', 'de'].map(id => ({ id }));
 
 test('only complete reviewed editions ship; official source files alone do not enable a locale', () => {
-  assert.deepEqual(availableLocales.map(locale => locale.id), ['en']);
+  assert.deepEqual(availableLocales.map(locale => locale.id), ['en', 'it']);
   assert.equal(localeRegistry.length, 10);
   for (const locale of availableLocales) assert.ok(locale.source && locale.reading && locale.messages && locale.reviewed);
   assert.ok(Object.isFrozen(localeRegistry[0]));
@@ -25,7 +25,12 @@ test('browser preferences use ordered supported primary languages and then navig
     [{ languages: ['fr', ''], language: 'zz' }, 'en'],
     [{}, 'en'],
   ]) assert.equal(resolveBrowserLocale(preferences, fixture), expected);
-  assert.equal(resolveBrowserLocale({ languages: ['ar', 'it'] }), 'en');
+  assert.equal(resolveBrowserLocale({ languages: ['ar', 'it-IT'] }), 'it');
+  assert.equal(resolveBrowserLocale({ languages: ['IT-ch', 'en-US'] }), 'it');
+  assert.equal(resolveBrowserLocale({ languages: ['en-US', 'it-IT'] }), 'en');
+  assert.equal(resolveBrowserLocale({ languages: ['fr', 'ar'] }), 'en');
+  assert.equal(resolveLocaleRoute('/en/read', { languages: ['it-IT'] }), '/en/read');
+  assert.equal(resolveLocaleRoute('/it/read?at=read-p052', { languages: ['en'] }), '/it/read?at=read-p052');
   for (const malformed of ['', ' en', 'en ', 'en_US', 'en--US', '/', undefined, 10]) assert.equal(primaryLanguage(malformed), undefined);
 });
 
