@@ -24,7 +24,7 @@ for (const width of [390, 1440]) for (const size of ['100', '200']) {
     await page.setViewportSize({ width, height: width === 390 ? 844 : 900 })
     await page.emulateMedia({ reducedMotion: 'reduce' })
     await page.goto('./#/de/atlas')
-    await expect(page.locator('#language option')).toHaveText(['English', 'Italiano', 'Deutsch'])
+    await expect(page.locator('#language option')).toHaveText(['English', 'Italiano', 'Deutsch', 'Español'])
     await page.locator('#language').focus()
     await page.keyboard.press('Tab')
     await expect(page.locator('#appearance')).toBeFocused()
@@ -92,7 +92,7 @@ for (const [preferences, expected] of [
 test('German keyboard switching preserves query, anchor, selector focus and fresh neutral defaults', async ({ page }) => {
   await page.goto('./#/en/search?q=care#stable-anchor')
   await page.locator('#language').focus()
-  await page.keyboard.press('End'); await page.keyboard.press('Enter')
+  await page.keyboard.press('d'); await page.keyboard.press('Enter')
   await expect(page).toHaveURL(/#\/de\/search\?q=care#stable-anchor$/)
   await expect(page.locator('#language')).toBeFocused()
   await expect(page.locator('h1')).toHaveText('Diese Lektüre durchsuchen')
