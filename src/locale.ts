@@ -12,6 +12,9 @@ export function applyLocaleDocument(locale: string) {
 }
 export const localePath = (path: string) => equivalentLocaleRoute(path, activeLocale.value)
 export const isolate = (value: string) => localeInfo.value.dir === 'rtl' ? `\u2068${value}\u2069` : value
-export const number = (value: number) => isolate(new Intl.NumberFormat(localeInfo.value.lang ?? activeLocale.value).format(value))
+export const number = (value: number) => {
+  const locale = localeInfo.value.lang ?? activeLocale.value
+  return isolate(new Intl.NumberFormat(locale, new Intl.Locale(locale).language === 'ar' ? { numberingSystem: 'arab' } : {}).format(value))
+}
 export const originalUrl = () => localeInfo.value.fixture ? '#fixture-source' : `https://www.vatican.va/content/leo-xiv/${activeLocale.value}/encyclicals/documents/20260515-magnifica-humanitas.html`
 export const list = (values: string[]) => new Intl.ListFormat(activeLocale.value).format(values)

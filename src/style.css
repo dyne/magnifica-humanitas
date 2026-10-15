@@ -59,11 +59,21 @@ article + article { margin-block-start: 3rem; border-block-start: 1px solid var(
 .return, .actions { margin-block-start: 2rem; }
 [tabindex='-1'] { scroll-margin-block: 1rem; }
 
-/* Latin theme fonts fall through to locally installed script fonts; no extra font download. */
+/* Arabic is shipped locally; other script fallbacks retain the theme faces. */
+@font-face {
+  font-family: "Noto Sans Arabic";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('/fonts/NotoSansArabic-variable.ttf') format('truetype');
+}
 :root { --reader-body: var(--dyne-font-body), "Noto Sans", "DejaVu Sans", Arial, sans-serif; --reader-display: var(--dyne-font-display), "Noto Sans", "DejaVu Sans", Arial, sans-serif; }
 body, button, select, input { font-family: var(--reader-body); }
 h1, h2, h3, .brand { font-family: var(--reader-display); }
-:lang(ar) { --reader-body: "Noto Sans Arabic", "Noto Naskh Arabic", "DejaVu Sans", Arial, sans-serif; --reader-display: "Noto Sans Arabic", "Noto Naskh Arabic", "DejaVu Sans", Arial, sans-serif; }
+:lang(ar) { --reader-body: "Noto Sans Arabic", var(--dyne-font-body), sans-serif; --reader-display: "Noto Sans Arabic", var(--dyne-font-display), sans-serif; }
+/* Override the theme's .dyne-site shorthand on the actual Arabic body. */
+body:lang(ar) { font-family: var(--reader-body); }
+:lang(ar) .neighborhood-diagram text { font-family: var(--reader-body); }
 :lang(ar) h1, :lang(ar) h2, :lang(ar) h3 { letter-spacing: normal; line-height: 1.5; }
 bdi, .source-identity, .sources a { unicode-bidi: isolate; }
 .source-identity { direction: ltr; }

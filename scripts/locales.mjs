@@ -1,5 +1,4 @@
 // Source acquisition alone never makes an edition available to readers.
-const pending = { source: true, reading: false, messages: false, reviewed: false };
 export const localeRegistry = Object.freeze([
   { id: 'en', autonym: 'English', dir: 'ltr', source: true, reading: true, messages: true, reviewed: true },
   { id: 'it', autonym: 'Italiano', dir: 'ltr', source: true, reading: true, messages: true, reviewed: true },
@@ -10,8 +9,7 @@ export const localeRegistry = Object.freeze([
   { id: 'pl', autonym: 'Polski', dir: 'ltr', source: true, reading: true, messages: true, reviewed: true },
   { id: 'be', autonym: 'Беларуская', dir: 'ltr', source: true, reading: true, messages: true, reviewed: true },
   { id: 'ru', autonym: 'Русский', dir: 'ltr', source: true, reading: true, messages: true, reviewed: true },
-  ...[['ar', 'العربية']]
-    .map(([id, autonym]) => ({ id, autonym, dir: id === 'ar' ? 'rtl' : 'ltr', ...pending })),
+  { id: 'ar', autonym: 'العربية', dir: 'rtl', source: true, reading: true, messages: true, reviewed: true },
 ].map(Object.freeze));
 
 export const availableLocales = localeRegistry.filter(locale => locale.source && locale.reading && locale.messages && locale.reviewed);

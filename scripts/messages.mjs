@@ -26,7 +26,7 @@ export function formatDisposition(value, messages = english) {
 
 /** Stable block IDs are identifiers, never display prose derived by splitting English words. */
 export function formatSavedBlock(blockId, concepts, locale = 'en', messages = english) {
-  const number = value => new Intl.NumberFormat(locale).format(value);
+  const number = value => new Intl.NumberFormat(locale, new Intl.Locale(locale).language === 'ar' ? { numberingSystem: 'arab' } : {}).format(value);
   if (/^read-p\d{3}$/.test(blockId)) return `§${number(Number(blockId.slice(6)))}`;
   for (const concept of concepts) {
     const suffixes = { idea: 'block.idea', distinction: 'block.distinction', connections: 'block.connections' };

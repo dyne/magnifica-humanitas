@@ -1,0 +1,388 @@
+{
+  "schemaVersion": 1,
+  "locale": "ar",
+  "status": "interface-compared-browser-and-visual-reviewed",
+  "catalogSha256": "63c2eb38a6dc5c8cbf2b7f74d6371491dee0a0ba2fcbf872f5842037f48bc93c",
+  "readingRevision": "ar-2026-10-15-reading-1",
+  "readingSha256": "1beb37b7242f6269b346a71362dda132df628d3a6e8098f38fe890c118e93509",
+  "editionId": "mh-ar-official-html-2026-10-14",
+  "catalog": {
+    "keys": 291,
+    "placeholderParity": true,
+    "authoredInterface": true,
+    "officialSourceTextCopiedOnlyFromFrozenArabicCorpus": true,
+    "scope": [
+      "route titles",
+      "About and attribution",
+      "errors and unavailable states",
+      "empty states",
+      "live notices",
+      "search and saved labels",
+      "selector and formatting",
+      "relation labels"
+    ],
+    "terminology": "Nine relation labels match the independently anchored Arabic alignment review. Arabic edition identity, dignity distinctions and descriptive subsidiarity terminology are retained. Neutral proper names and artifact identifiers remain unchanged.",
+    "counts": "Neutral count labels avoid applying one Arabic noun form to every count. Dynamic values explicitly use Arabic-Indic digits; original neutral 100%/200% size-control values remain unchanged."
+  },
+  "activation": {
+    "sourceAndContentGatesBeforeEnable": [
+      "output/arabic/interface/content-preflight.log",
+      "output/arabic/interface/source-preflight.log"
+    ],
+    "published": [
+      "en",
+      "it",
+      "de",
+      "es",
+      "fr",
+      "pt",
+      "pl",
+      "be",
+      "ru",
+      "ar"
+    ],
+    "arabicDirection": "rtl",
+    "explicitLocaleURLs": true,
+    "firstSupportedBrowserPreference": true,
+    "unsupportedFallback": "en"
+  },
+  "sharedChanges": {
+    "scripts/locales.mjs": "Enable complete ar after source/content gates; retain all prior locale states.",
+    "scripts/search.mjs": "Arabic-only normalization and explicit Arabic-Indic numeral matching; other locale policies unchanged.",
+    "scripts/messages.mjs and src/locale.ts": "Arabic-only explicit numberingSystem arab, retaining bidi isolation.",
+    "src/style.css": "Self-hosted Noto Sans Arabic for Arabic body, headings and optional SVG labels; existing logical layout retained.",
+    "public/fonts and public/licenses": "Pinned Noto Sans Arabic variable font and OFL license with attribution.",
+    "tests": "Available locale lists include Arabic; unsupported examples use ja/zh; native keyboard selection accounts for the added last option."
+  },
+  "search": {
+    "normalization": "Locale lowercase, NFC, remove tatweel U+0640 and harakat U+064B–0652/U+0670, fold أ إ آ ٱ to ا, trim and collapse whitespace.",
+    "preservedLetters": [
+      "ؤ/و",
+      "ئ/ي",
+      "ي/ى",
+      "ة/ه"
+    ],
+    "decision": "Readers may omit short vowel marks or alif hamza/madda in search. Distinct non-alif letters remain distinct; negative fixtures prevent broad letter flattening. Arabic-Indic and Persian paragraph digits resolve to the same stable paragraph ID.",
+    "evidence": [
+      "tests/arabic-interface.test.mjs",
+      "tests/browser/arabic.spec.ts"
+    ]
+  },
+  "typography": {
+    "cmap": {
+      "font": "public/fonts/NotoSansArabic-variable.ttf",
+      "family": "Noto Sans Arabic",
+      "source": "https://raw.githubusercontent.com/google/fonts/8b0a1d0f5983c89bc2b93f1b5fb55f9e252744b5/ofl/notosansarabic/NotoSansArabic%5Bwdth,wght%5D.ttf",
+      "revision": "8b0a1d0f5983c89bc2b93f1b5fb55f9e252744b5",
+      "bytes": 844676,
+      "sha256": "63111b5b2e074dd48cc67692e0a2726d86ee94c1c37fe8598257b7b4e87e869e",
+      "license": "public/licenses/Noto-Sans-Arabic-OFL.txt",
+      "licenseSha256": "07fc70bfeb985cc1a87a8587d0a0c80bab11c86c9dc3fd95b6f0cb332f983e96",
+      "reviewedArabicCodePoints": 56,
+      "missingArabicCodePoints": []
+    },
+    "paintingEvidence": "output/arabic/interface/painted-fonts.json",
+    "matrixRuns": 8,
+    "surfaceSamples": 72,
+    "headingAndBodySamples": 144,
+    "shapedGlyphAttachments": 2,
+    "diagramAttachments": 2,
+    "actualPainting": "CDP CSS.getPlatformFontsForNode confirms custom Noto Sans Arabic glyph painting in headings and body samples on every matrix surface, a vocalized source quote and SVG labels. This is stronger than computed font-family alone.",
+    "bidi": "Production html lang=ar dir=rtl; mixed-script source references use LTR bdi and identity/numeric substitutions retain FSI/PDI. Arabic↔English history transitions assert lang/dir/title."
+  },
+  "verification": {
+    "sequentialRequired": [
+      {
+        "command": "npm run check",
+        "exitStatus": 0,
+        "unit": {
+          "pass": 302,
+          "fail": 0,
+          "cancelled": 0,
+          "skipped": 0
+        },
+        "also": [
+          "vue-tsc",
+          "editorial and reading checks",
+          "production build"
+        ]
+      },
+      {
+        "command": "npm run source:check",
+        "exitStatus": 0,
+        "scope": "All ten frozen corpora; 245 paragraphs and 224 notes each, four snapshot tests and ten parser tests."
+      },
+      {
+        "command": "PLAYWRIGHT_BROWSERS_PATH=/tmp/magnifica-playwright BROWSER_EVIDENCE_DIR=output/arabic/hosting npm run test:browser:all",
+        "exitStatus": 0,
+        "root": {
+          "startTime": "2026-10-15T12:03:20.687Z",
+          "duration": 56106.381,
+          "expected": 490,
+          "skipped": 0,
+          "unexpected": 0,
+          "flaky": 0
+        },
+        "subpath": {
+          "startTime": "2026-10-15T12:04:18.742Z",
+          "duration": 55954.444,
+          "expected": 490,
+          "skipped": 0,
+          "unexpected": 0,
+          "flaky": 0
+        }
+      }
+    ],
+    "focusedArabic": {
+      "pass": 57,
+      "fail": 0,
+      "skipped": 0,
+      "log": "output/arabic/interface/focused-browser.log",
+      "note": "The final diagram test was added after this focused run; all58 Arabic tests pass in each full hosting run."
+    },
+    "rtl": {
+      "build": "MAGNIFICA_RTL_FIXTURE=1 VITE_BASE=/ npx vite build --mode locale-fixture",
+      "test": "VITE_BASE=/ PLAYWRIGHT_BROWSERS_PATH=/tmp/magnifica-playwright npx playwright test --config playwright.locale.config.ts",
+      "exitStatus": 0,
+      "stats": {
+        "startTime": "2026-10-15T12:05:52.481Z",
+        "duration": 5805.246,
+        "expected": 11,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "meaning": "Synthetic qps RTL fixture remains separate regression evidence with production Arabic enabled."
+    },
+    "detector": {
+      "findings": []
+    }
+  },
+  "browserCoverage": [
+    "all nine Arabic routes, route titles and real RTL controls",
+    "ordered regional browser defaults, language backup and explicit prior-locale URLs",
+    "keyboard selector query/anchor/focus retention and no persistent preference override",
+    "localized normalized search and empty results",
+    "saved exact paragraph, locale isolation, caller-return and source-note-return chain",
+    "exact source quotations, official Arabic HTML links, note dependencies and local n133 bibliographic-only wording",
+    "six trail endings and optional unscored reflection",
+    "eight standalone source-context meaning checks independent of main sequence",
+    "lazy loading, translated failures/retry and storage denial",
+    "failed, pending and cancelled switches preserve exact title/history/active location/last/saved/recent/visited",
+    "Arabic↔LTR switch and history lang/dir restoration",
+    "actual painted font, vocalized quote, mixed-script isolation and optional diagram label bounds"
+  ],
+  "visualReview": {
+    "method": "One batched review of actual Chromium screenshots composed into12 contact sheets, plus both full optional-diagram captures. This interface inspection is separate from paragraph/block semantic review.",
+    "routes": [
+      "Atlas",
+      "Concept",
+      "Trail",
+      "Read",
+      "Source",
+      "Note",
+      "Search",
+      "Saved",
+      "About"
+    ],
+    "bases": [
+      "/",
+      "/magnifica-humanitas/"
+    ],
+    "viewports": [
+      {
+        "width": 390,
+        "height": 844
+      },
+      {
+        "width": 1440,
+        "height": 900
+      }
+    ],
+    "textSizes": [
+      100,
+      200
+    ],
+    "routeScreenshots": 72,
+    "selectorAndDarkAboutScreenshots": 16,
+    "diagramScreenshots": 2,
+    "allScreenshots": 90,
+    "reviewedContactSheets": 12,
+    "keyboard": true,
+    "reducedMotion": true,
+    "axe": "Nine surfaces at390x844/100% at each base: zero WCAG2 A/AA and2.1 AA violations.",
+    "findings": "Connected Arabic letters and diacritics are readable without visible missing-glyph boxes. RTL alignment, controls, focus outlines and long headings remain inside the viewport. At200% phone size headings and prose wrap over more lines and require vertical scrolling. Dark About retains readable contrast. Latin edition identifiers and bibliographic names wrap within their containers. The long descriptive subsidiarity label fits inside the optional diagram; SVG and HTML labels agree.",
+    "scopeLimit": "Viewport captures and sampled painted nodes are bounded evidence, not exhaustive visual proof of every paragraph, glyph combination or interaction."
+  },
+  "failedAttempts": [
+    {
+      "scope": "Initial Arabic browser run",
+      "pass": 48,
+      "fail": 9,
+      "reason": "Real painted-font inspection found OS fallback in body text; explicit Arabic body font fixes it. Generic ar Intl used Western digits in this ICU, so Arabic-only numberingSystem arab is explicit. Also repaired migrated locale tags and waited for initial title activation."
+    },
+    {
+      "scope": "Second Arabic browser run",
+      "pass": 56,
+      "fail": 1,
+      "reason": "Mixed-script assertion selected outer ReadingLink auto bdi; scoped it to the actual inner LTR source-reference bdi."
+    },
+    {
+      "scope": "Initial focused unit and first full check",
+      "reason": "The former generic Intl ar expectation conflicted with the explicit Arabic-Indic policy; updated that assertion. Final5 interface tests and302 full unit tests pass."
+    },
+    {
+      "scope": "Font diagnostic",
+      "reason": "fc-scan emits repeated charset records for the variable font; the corrected diagnostic reads one complete charset and finds all56 required Arabic codepoints."
+    },
+    {
+      "scope": "Manual preview diagnostic",
+      "reason": "A diagnostic started without explicit VITE_BASE and timed out; restarted with VITE_BASE=/; all preview processes stopped."
+    }
+  ],
+  "warnings": [
+    "Existing Vite chunk-size warning (>500kB) remains; builds succeed.",
+    "Node NO_COLOR/FORCE_COLOR environment warnings do not fail browser tests."
+  ],
+  "limitations": [
+    "Automated structure, hashes, axe and browser assertions do not establish semantic fidelity; separate complete paragraph/block review is recorded in semantic-review.json and REVIEW.md.",
+    "No independent native-speaker proofreading, physical-device/browser diversity, screen-reader-user, learning-efficacy or publication/deployment verification is claimed.",
+    "The self-hosted variable font adds844676bytes, requested through Arabic styling; lazy locale bundles remain separately verified.",
+    "Local and uncommitted pending supervisor acceptance."
+  ],
+  "preserved": {
+    "content/editorial/ar/alignment-review.json": "cb94277f6e8e8c69ae1f5f219c8632b0e369b0ee258bc5898492c18e422ba3be",
+    "content/editorial/ar/coverage.json": "193940d176d98964985b1393ebaa3411309e3bcfd1997d9f8c7a1b3690fbd1e7",
+    "content/editorial/ar/concepts.json": "c2fc1e3806e9c3caff8d47630394aec1b52a4f210431af404d356889807d6be6",
+    "content/editorial/ar/relations.json": "65dbbb100e42c4c99313875ad165fa4355bb366d38ec6d17c4473b969aed3b59",
+    "content/editorial/ar/semantic-review.json": "2c33cea2b64f302ce87805ee04bd933df5ead466709204a6955c8326eb08b8c2"
+  },
+  "artifacts": {
+    "output/arabic/interface/check.log": "c9e6b2c6d5a1c73c971bb93dc6ede3deec34ac55282445deb81f25c7a3082d0a",
+    "output/arabic/interface/source-check.log": "776a344b52b6de9b523019555315d2f28c84119f4e59226ccf8366288fd94335",
+    "output/arabic/interface/hosting.log": "ab7d76365d644004f46fbd129bcd16b8ff2fc6fd6d1d92acd7c0e238c42c61f2",
+    "output/arabic/interface/content-preflight.log": "85fc2486da32b100ae1b30977941fb62c0ee53c350339e075f7981f72a4a1138",
+    "output/arabic/interface/source-preflight.log": "204b451757c1e1e38e948a335bfccb08ada7123f186b4e2a3c1f1c46fcd2ba17",
+    "output/arabic/interface/focused-browser.log": "5b30d40aa9db6ce9d20ee03f3a5dc11ee0e0f739f8743755c966c1a48f876047",
+    "output/arabic/interface/final-focused.log": "c49278f39a654de5403b5bdb6cfe24bcee1e85065ef227f44fcc162a951767de",
+    "output/arabic/interface/initial-browser.log": "531efe5a0d2c42fc02d3c7b5409cf3284ae60245aba25f76995a89365df8fc3b",
+    "output/arabic/interface/initial-browser-results.json": "5697cf13408295a88df1ff8c827060ca8cf4876f7a9be77833aaad4478704b59",
+    "output/arabic/interface/second-browser-results.json": "56b2ec4dd9a3bb5bbae925b95ac5c88f8c1126448b9f8bc038592213e818e793",
+    "output/arabic/interface/initial-check.log": "58ff6f9b5677aacf2bfd8e5f047d82ef50ca02dfbab579e45aef48d438f852cd",
+    "output/arabic/interface/rtl-build.log": "417e42efd25910952b038f189173781a04267dac10a6732580526d979525e70c",
+    "output/arabic/interface/rtl.log": "31e17fe560281bd12ffd3d596a82d25ed824c62291622ba10a523db07cd0a350",
+    "output/arabic/interface/rtl-results.json": "57693a36c653945fed39dd85212a1e5c0c6f1367e2b159ee3e1a008156a4741d",
+    "output/arabic/interface/font-cmap.json": "e61fcb6d5d6c78efc9cfc31a87502aeee82e7766828354bc517bf06dde3cff84",
+    "output/arabic/interface/painted-fonts.json": "b55429b0743144c0c6de6c0dfe1d40bd8698b0fe8b1e3c0e58dc6b3a27e05fc1",
+    "output/arabic/interface/impeccable-detect.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "output/arabic/hosting/browser-evidence.json": "cc9614ce72c264aff51101206c69475660ea814e1d15e522e327959195040988",
+    "output/arabic/hosting/root-browser-results.json": "a0ad405f6bdcca007125a821d86dd6367c2e3091fbec2b284d6838a7ef4aaa8e",
+    "output/arabic/hosting/subpath-browser-results.json": "4b28d3cb02be7130e971fbe5c705bf1192eeb7a6efea67366961558f49da1e18"
+  },
+  "screenshots": {
+    "output/arabic/root-1440-100-about-dark.png": "2c61eb6ca8da07aa02cddea973fdd96a6320e15b289cfca4825ebf55cd91b1ca",
+    "output/arabic/root-1440-100-about.png": "b040a956cd7dabc125fe996737fea97bf7acdf7c1a4475e6e995679400597fda",
+    "output/arabic/root-1440-100-atlas.png": "03483dee99b7b62e91bd54037ccfd6376215056547a220a2e87acd369d325fd3",
+    "output/arabic/root-1440-100-concept.png": "389b5b60320f055e7c25bbfa6789b903f18d718c834b0817184ae0b837eddec8",
+    "output/arabic/root-1440-100-note.png": "b5a204ccc34ed2a1ba117242426a58c0b0c1e767c0736da8946fe8a5c1056def",
+    "output/arabic/root-1440-100-read.png": "b5e590ef207cc11e0cd589d8d0150cbaffda4062c9bd77808059750875ec9f64",
+    "output/arabic/root-1440-100-saved.png": "ec96fb88873d9956492003d8d353e37a65f7bb3c48eac13f0495b4df1e93fc88",
+    "output/arabic/root-1440-100-search.png": "848eaadf98221f7c84f5b652a6dc06e662a7c8771c746f2b49d5f057d463f9f5",
+    "output/arabic/root-1440-100-selector.png": "182770d835cb86d75fa81dbffe5f81dcdb7a7b70fd1c9726ae7ee2ebb56d0a44",
+    "output/arabic/root-1440-100-source.png": "2717f14783b337b5feccd173a74f692e746974b815647b49178f5161fb84776b",
+    "output/arabic/root-1440-100-trail.png": "1281da95cbb6b82b5389efb6f7ec8e4e25be8c80648991e1c6f9e470c6720203",
+    "output/arabic/root-1440-200-about-dark.png": "00d15df95b21514a344fb5fd8594baf9a326036193a11ce4be0610ca1ce549e0",
+    "output/arabic/root-1440-200-about.png": "55cac82e27e8e349c3717ea956de3c9d44fa92a7b504190bb48ee10451c75663",
+    "output/arabic/root-1440-200-atlas.png": "cbfd0c365aa13e0cde6afd94bab3a084cc9876136ecdda21d3c740e407ea5883",
+    "output/arabic/root-1440-200-concept.png": "f6246e6c9029699946f0f5d357c069a8711278001deb01887e8a0db92bf9bd37",
+    "output/arabic/root-1440-200-note.png": "3ba53b69914fe0b07c02039e58e35a0e1297804df7f2ed51fdf1299a8af07d60",
+    "output/arabic/root-1440-200-read.png": "eb009ea49884762144dd6b407d135cf1502168ef908f22495e89fb8c28a65edc",
+    "output/arabic/root-1440-200-saved.png": "6014024e015e810fbd64a94b1a74319e80f776506e7643480f2b10c2bfee3a85",
+    "output/arabic/root-1440-200-search.png": "a4623cb4cd069fd03d421c2aff897931bfe606dd9f35ae58029dcaa401541756",
+    "output/arabic/root-1440-200-selector.png": "df468db503b5587657e807fdba102e29b62d37c7009fc8f591fceba817f36af8",
+    "output/arabic/root-1440-200-source.png": "e41dd71ab183853e5b1a2b92a4282e81b1a30e18156313dc128263ec0876a0d0",
+    "output/arabic/root-1440-200-trail.png": "7a30da1c48d2844383aa4073353c71b1bc2fb8ff9727060dea63dd2d303f0ca8",
+    "output/arabic/root-390-100-about-dark.png": "af1b3f1f16a87196ed93d074844834449a4e9cdbdbb5c73c121665fdc5f014bd",
+    "output/arabic/root-390-100-about.png": "204d6fa9365613adba4409e327596a129a4a642d9cedb0660a5f6adb47be25cb",
+    "output/arabic/root-390-100-atlas.png": "dc22390cd5315f8d7b6f99cec61f76557559829c7d0d56abee25ed1bf56ec037",
+    "output/arabic/root-390-100-concept.png": "c6f71c45ecc48fc1be797fc48bd20db08233d33db491fd085c1df27d0bfd3eca",
+    "output/arabic/root-390-100-note.png": "786e0b9f2ddd3694f3e7f69d16513dab949862bb60f203f8ec59fe198dd64a26",
+    "output/arabic/root-390-100-read.png": "3224c57ec07cb3aca112e28272ce9fdd9e7fa9076c8666aee50eb255999ecf42",
+    "output/arabic/root-390-100-saved.png": "e0488c84d84eccb588820bf1892359a6770602231a7fdb3de6294cc96316b510",
+    "output/arabic/root-390-100-search.png": "c1ee32508498211239b70c2d433ed08da9cf3634c901ea1fe4eeeeb5157edd99",
+    "output/arabic/root-390-100-selector.png": "61b26ea8b93cfebd379c243d999f012b38ab513ff8c4e4d63f256f74956d1a64",
+    "output/arabic/root-390-100-source.png": "aa2efb556c2fad48797807df99f17a25e0e07eb543896ebcc007750836c8544a",
+    "output/arabic/root-390-100-trail.png": "2ec8613a07d5dc88f843931530df4f1b2346b7675a2a27eb3f6c518a4d924d92",
+    "output/arabic/root-390-200-about-dark.png": "644141540b7f45872f6f164bf15ace31f8d5f4a285b949272da28db4f57edb7a",
+    "output/arabic/root-390-200-about.png": "7b655bdff0f64407316b07d4f8177a7a769563038e42e59f3bfc0805550a4f97",
+    "output/arabic/root-390-200-atlas.png": "87b46403abe2a0e5b22b3b05578f6a1f630fbcf9dcac4e1a8e91942b85fb4235",
+    "output/arabic/root-390-200-concept.png": "181b8ab17c5ff2cf0ebb5bc4cf79584892cd5de3c7015b504b95b7550e7dda23",
+    "output/arabic/root-390-200-note.png": "e8b019def4c274e1573da2f237d91b933e343957e40842d010608aaa02e2b069",
+    "output/arabic/root-390-200-read.png": "b4e64b2dfe8bd9379c4b35e145f5603b9efd241a96564a35fd9afc88a13345b8",
+    "output/arabic/root-390-200-saved.png": "12257212065909afde07c77006729ca71191f343af73b5efe7999eb340f59319",
+    "output/arabic/root-390-200-search.png": "dc3cf4fc27162a6a923e2dc8d525020fa14005c430fcfe5e4eed0e0b8057773e",
+    "output/arabic/root-390-200-selector.png": "60d6a13cb938ff604cd698aea91bd0a2f5a390e21ff015f7c905ac7bc394b5e5",
+    "output/arabic/root-390-200-source.png": "52405df2be522361eb82472c3762f2205ae923c6e4b266cbdcab15d055e96c3f",
+    "output/arabic/root-390-200-trail.png": "0fdbaef7c67808ce41e622e7eed5c6f07069d414807e46a739daa8fee1eed1c5",
+    "output/arabic/root-diagram.png": "95b3476bb687d774f7e929e8a39f4873feed7c71b0761280f51c8f3a121441b7",
+    "output/arabic/subpath-1440-100-about-dark.png": "2c61eb6ca8da07aa02cddea973fdd96a6320e15b289cfca4825ebf55cd91b1ca",
+    "output/arabic/subpath-1440-100-about.png": "b040a956cd7dabc125fe996737fea97bf7acdf7c1a4475e6e995679400597fda",
+    "output/arabic/subpath-1440-100-atlas.png": "03483dee99b7b62e91bd54037ccfd6376215056547a220a2e87acd369d325fd3",
+    "output/arabic/subpath-1440-100-concept.png": "389b5b60320f055e7c25bbfa6789b903f18d718c834b0817184ae0b837eddec8",
+    "output/arabic/subpath-1440-100-note.png": "b5a204ccc34ed2a1ba117242426a58c0b0c1e767c0736da8946fe8a5c1056def",
+    "output/arabic/subpath-1440-100-read.png": "b5e590ef207cc11e0cd589d8d0150cbaffda4062c9bd77808059750875ec9f64",
+    "output/arabic/subpath-1440-100-saved.png": "ec96fb88873d9956492003d8d353e37a65f7bb3c48eac13f0495b4df1e93fc88",
+    "output/arabic/subpath-1440-100-search.png": "848eaadf98221f7c84f5b652a6dc06e662a7c8771c746f2b49d5f057d463f9f5",
+    "output/arabic/subpath-1440-100-selector.png": "182770d835cb86d75fa81dbffe5f81dcdb7a7b70fd1c9726ae7ee2ebb56d0a44",
+    "output/arabic/subpath-1440-100-source.png": "2717f14783b337b5feccd173a74f692e746974b815647b49178f5161fb84776b",
+    "output/arabic/subpath-1440-100-trail.png": "1281da95cbb6b82b5389efb6f7ec8e4e25be8c80648991e1c6f9e470c6720203",
+    "output/arabic/subpath-1440-200-about-dark.png": "00d15df95b21514a344fb5fd8594baf9a326036193a11ce4be0610ca1ce549e0",
+    "output/arabic/subpath-1440-200-about.png": "55cac82e27e8e349c3717ea956de3c9d44fa92a7b504190bb48ee10451c75663",
+    "output/arabic/subpath-1440-200-atlas.png": "cbfd0c365aa13e0cde6afd94bab3a084cc9876136ecdda21d3c740e407ea5883",
+    "output/arabic/subpath-1440-200-concept.png": "f6246e6c9029699946f0f5d357c069a8711278001deb01887e8a0db92bf9bd37",
+    "output/arabic/subpath-1440-200-note.png": "3ba53b69914fe0b07c02039e58e35a0e1297804df7f2ed51fdf1299a8af07d60",
+    "output/arabic/subpath-1440-200-read.png": "eb009ea49884762144dd6b407d135cf1502168ef908f22495e89fb8c28a65edc",
+    "output/arabic/subpath-1440-200-saved.png": "6014024e015e810fbd64a94b1a74319e80f776506e7643480f2b10c2bfee3a85",
+    "output/arabic/subpath-1440-200-search.png": "a4623cb4cd069fd03d421c2aff897931bfe606dd9f35ae58029dcaa401541756",
+    "output/arabic/subpath-1440-200-selector.png": "373fabc3de14a80f227fe083e89dac14ed5a54f495097aac0561587f62fbf5d9",
+    "output/arabic/subpath-1440-200-source.png": "e41dd71ab183853e5b1a2b92a4282e81b1a30e18156313dc128263ec0876a0d0",
+    "output/arabic/subpath-1440-200-trail.png": "7a30da1c48d2844383aa4073353c71b1bc2fb8ff9727060dea63dd2d303f0ca8",
+    "output/arabic/subpath-390-100-about-dark.png": "af1b3f1f16a87196ed93d074844834449a4e9cdbdbb5c73c121665fdc5f014bd",
+    "output/arabic/subpath-390-100-about.png": "204d6fa9365613adba4409e327596a129a4a642d9cedb0660a5f6adb47be25cb",
+    "output/arabic/subpath-390-100-atlas.png": "90c58500fc1dcb2eceb812fdd976b0ca0cf604063cb1f8b6d27a052b48140f6c",
+    "output/arabic/subpath-390-100-concept.png": "e9ad43ab6a6eca68f556fc2cd5390d04ae2d137ebb890847643ba12674bb9b8e",
+    "output/arabic/subpath-390-100-note.png": "786e0b9f2ddd3694f3e7f69d16513dab949862bb60f203f8ec59fe198dd64a26",
+    "output/arabic/subpath-390-100-read.png": "3224c57ec07cb3aca112e28272ce9fdd9e7fa9076c8666aee50eb255999ecf42",
+    "output/arabic/subpath-390-100-saved.png": "e0488c84d84eccb588820bf1892359a6770602231a7fdb3de6294cc96316b510",
+    "output/arabic/subpath-390-100-search.png": "c1ee32508498211239b70c2d433ed08da9cf3634c901ea1fe4eeeeb5157edd99",
+    "output/arabic/subpath-390-100-selector.png": "e08f32c70c393d63bfb5c42e998f9272049d8db5520dfaf9a7f21d06bce936be",
+    "output/arabic/subpath-390-100-source.png": "aa2efb556c2fad48797807df99f17a25e0e07eb543896ebcc007750836c8544a",
+    "output/arabic/subpath-390-100-trail.png": "123bc03dcfbb359d6e2af9e3d1e43e2217842bbbd4433120a6b45c9b364aab9f",
+    "output/arabic/subpath-390-200-about-dark.png": "644141540b7f45872f6f164bf15ace31f8d5f4a285b949272da28db4f57edb7a",
+    "output/arabic/subpath-390-200-about.png": "7b655bdff0f64407316b07d4f8177a7a769563038e42e59f3bfc0805550a4f97",
+    "output/arabic/subpath-390-200-atlas.png": "87b46403abe2a0e5b22b3b05578f6a1f630fbcf9dcac4e1a8e91942b85fb4235",
+    "output/arabic/subpath-390-200-concept.png": "181b8ab17c5ff2cf0ebb5bc4cf79584892cd5de3c7015b504b95b7550e7dda23",
+    "output/arabic/subpath-390-200-note.png": "e8b019def4c274e1573da2f237d91b933e343957e40842d010608aaa02e2b069",
+    "output/arabic/subpath-390-200-read.png": "b4e64b2dfe8bd9379c4b35e145f5603b9efd241a96564a35fd9afc88a13345b8",
+    "output/arabic/subpath-390-200-saved.png": "12257212065909afde07c77006729ca71191f343af73b5efe7999eb340f59319",
+    "output/arabic/subpath-390-200-search.png": "dc3cf4fc27162a6a923e2dc8d525020fa14005c430fcfe5e4eed0e0b8057773e",
+    "output/arabic/subpath-390-200-selector.png": "60d6a13cb938ff604cd698aea91bd0a2f5a390e21ff015f7c905ac7bc394b5e5",
+    "output/arabic/subpath-390-200-source.png": "52405df2be522361eb82472c3762f2205ae923c6e4b266cbdcab15d055e96c3f",
+    "output/arabic/subpath-390-200-trail.png": "0fdbaef7c67808ce41e622e7eed5c6f07069d414807e46a739daa8fee1eed1c5",
+    "output/arabic/subpath-diagram.png": "95b3476bb687d774f7e929e8a39f4873feed7c71b0761280f51c8f3a121441b7"
+  },
+  "contactSheets": {
+    "output/arabic/interface/visual/root-100-header-dark.jpg": "bd81524ea8f0c22cbd5e0bdf6e6ec831299d94777acc82cf6f57cc9b450353e1",
+    "output/arabic/interface/visual/root-1440-100-routes.jpg": "c2af92ef547abb98cd7eaf2db0f630abb40696bdd9e8c5c8dbcdfaf41073e8fa",
+    "output/arabic/interface/visual/root-1440-200-routes.jpg": "4781deaf006132d00c27876911d3c7c201aeeead825e1f84c8c940bbf49837d4",
+    "output/arabic/interface/visual/root-200-header-dark.jpg": "f8acd22af70fe64da9260855ab43e3aeb81998a8440bd183c0fffac411f4420a",
+    "output/arabic/interface/visual/root-390-100-routes.jpg": "1428ab8cfc2c0a07540b879079aa1a0a6a2534eb547463f5de54c5f99b7e0f81",
+    "output/arabic/interface/visual/root-390-200-routes.jpg": "2895fee1ed895da55c38084ae5281df985e0189119fda762ad99eae20fdf59bc",
+    "output/arabic/interface/visual/subpath-100-header-dark.jpg": "36af3d73692c58787c60b76c40647d1756f89ae983f547682d4053b92c9f6663",
+    "output/arabic/interface/visual/subpath-1440-100-routes.jpg": "4133eb5ebf31954b2b0753995bc06c647c0a3a162adf45b43d05dc39d887eefc",
+    "output/arabic/interface/visual/subpath-1440-200-routes.jpg": "ba93995786e6fc5977cd91e2a46fa0850a00cee9a2152c0717b44a622c609ad9",
+    "output/arabic/interface/visual/subpath-200-header-dark.jpg": "02c5ca422745b026ae3d254a129b853013848579e341d24c0c0d8d5908352513",
+    "output/arabic/interface/visual/subpath-390-100-routes.jpg": "3214098579940e27b6da4c42e6ff6c78820c56c819caa006f4949100e8a662c6",
+    "output/arabic/interface/visual/subpath-390-200-routes.jpg": "b4d1cb182e2bec4f6874a75f3e428f761e2198703e79f041d9c40f4a655c26a1"
+  }
+}

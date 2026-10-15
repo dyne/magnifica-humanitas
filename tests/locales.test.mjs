@@ -6,7 +6,7 @@ import { availableLocales, localeRegistry, primaryLanguage, resolveBrowserLocale
 const fixture = ['en', 'ar', 'pt', 'de'].map(id => ({ id }));
 
 test('only complete reviewed editions ship; official source files alone do not enable a locale', () => {
-  assert.deepEqual(availableLocales.map(locale => locale.id), ['en', 'it', 'de', 'es', 'fr', 'pt', 'pl', 'be', 'ru']);
+  assert.deepEqual(availableLocales.map(locale => locale.id), ['en', 'it', 'de', 'es', 'fr', 'pt', 'pl', 'be', 'ru', 'ar']);
   assert.equal(localeRegistry.length, 10);
   for (const locale of availableLocales) assert.ok(locale.source && locale.reading && locale.messages && locale.reviewed);
   assert.ok(Object.isFrozen(localeRegistry[0]));
@@ -25,7 +25,7 @@ test('browser preferences use ordered supported primary languages and then navig
     [{ languages: ['fr', ''], language: 'zz' }, 'en'],
     [{}, 'en'],
   ]) assert.equal(resolveBrowserLocale(preferences, fixture), expected);
-  assert.equal(resolveBrowserLocale({ languages: ['ar', 'it-IT'] }), 'it');
+  assert.equal(resolveBrowserLocale({ languages: ['zh', 'it-IT'] }), 'it');
   assert.equal(resolveBrowserLocale({ languages: ['IT-ch', 'en-US'] }), 'it');
   assert.equal(resolveBrowserLocale({ languages: ['en-US', 'it-IT'] }), 'en');
   assert.equal(resolveBrowserLocale({ languages: ['fr', 'ar'] }), 'fr');
@@ -47,7 +47,7 @@ test('explicit available routes win, unsupported locales fall back and IDs remai
     ['/it/read', '/en/read'],
     ['/en/concepts/missing-id', '/en/concepts/missing-id'],
   ]) assert.equal(resolveLocaleRoute(path, browser, fixture), expected);
-  assert.equal(resolveLocaleRoute('/ar/source/p052', browser), '/en/source/p052');
+  assert.equal(resolveLocaleRoute('/zh/source/p052', browser), '/en/source/p052');
 });
 
 test('equivalent routes preserve stable IDs, queries and anchors without caller labels', () => {

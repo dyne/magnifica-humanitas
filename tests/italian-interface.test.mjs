@@ -15,8 +15,8 @@ test('Italian publication requires complete reading and all 291 translated inter
   assert.equal(Object.keys(messages).length, 291);
   const languageNeutral = new Set(['app.magnifica_humanitas', 'concept.value_magnifica_humanitas', 'block.description']);
   for (const [key, text] of Object.entries(messages)) if (!languageNeutral.has(key)) assert.notEqual(text, english[key], `untranslated ${key}`);
-  assert.deepEqual(availableLocales.map(l => l.id), ['en', 'it', 'de', 'es', 'fr', 'pt', 'pl', 'be', 'ru']);
-  for (const l of localeRegistry.filter(l => !['en', 'it', 'de', 'es', 'fr', 'pt', 'pl', 'be', 'ru'].includes(l.id))) assert.equal(l.reviewed, false);
+  assert.deepEqual(availableLocales.map(l => l.id), ['en', 'it', 'de', 'es', 'fr', 'pt', 'pl', 'be', 'ru', 'ar']);
+  for (const l of localeRegistry.filter(l => !['en', 'it', 'de', 'es', 'fr', 'pt', 'pl', 'be', 'ru', 'ar'].includes(l.id))) assert.equal(l.reviewed, false);
   assert.equal(messages['about.mh_en_owner_2026'], reading.editionId);
   assert.match(messages['about.this_is_an_english_editorial_reading_of_leo_xiv_s'], /in italiano/);
   const review = JSON.parse(readFileSync(new URL('../content/editorial/it/interface-review.json', import.meta.url)));
@@ -48,10 +48,10 @@ test('Italian search accepts accents, case and localized paragraph keywords and 
 });
 
 test('Italian browser defaults preserve preference order, explicit English and neutral-entry independence', () => {
-  assert.equal(resolveBrowserLocale({ languages: ['ar-EG', 'IT-it', 'en'] }), 'it');
+  assert.equal(resolveBrowserLocale({ languages: ['zh-CN', 'IT-it', 'en'] }), 'it');
   assert.equal(resolveBrowserLocale({ languages: ['en-GB', 'it-IT'] }), 'en');
-  assert.equal(resolveBrowserLocale({ languages: ['ar', 'zh'], language: 'it-CH' }), 'it');
-  assert.equal(resolveBrowserLocale({ languages: ['ar', 'zh'], language: 'ar' }), 'en');
+  assert.equal(resolveBrowserLocale({ languages: ['ja', 'zh'], language: 'it-CH' }), 'it');
+  assert.equal(resolveBrowserLocale({ languages: ['ja', 'zh'], language: 'ja' }), 'en');
   assert.equal(resolveLocaleRoute('/en/source/p052', { languages: ['it'] }), '/en/source/p052');
   assert.equal(resolveLocaleRoute('/search?q=dignit%C3%A0#termine', { languages: ['it-IT'] }), '/it/search?q=dignit%C3%A0#termine');
 });

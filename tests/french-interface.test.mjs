@@ -16,8 +16,8 @@ test('French publication requires complete reading and all 291 keys with exact p
   assert.equal(Object.keys(messages).length, 291);
   const neutral = new Set(['app.magnifica_humanitas', 'app.atlas', 'concept.value_magnifica_humanitas', 'block.description', 'source.page', 'source.pages', 'route.concept', 'note.source_value']);
   for (const [key, text] of Object.entries(messages)) if (!neutral.has(key)) assert.notEqual(text, english[key], key);
-  assert.deepEqual(availableLocales.map(l => l.id), ['en', 'it', 'de', 'es', 'fr', 'pt', 'pl', 'be', 'ru']);
-  for (const l of localeRegistry.filter(l => !['en', 'it', 'de', 'es', 'fr', 'pt', 'pl', 'be', 'ru'].includes(l.id))) assert.equal(l.reviewed, false);
+  assert.deepEqual(availableLocales.map(l => l.id), ['en', 'it', 'de', 'es', 'fr', 'pt', 'pl', 'be', 'ru', 'ar']);
+  for (const l of localeRegistry.filter(l => !['en', 'it', 'de', 'es', 'fr', 'pt', 'pl', 'be', 'ru', 'ar'].includes(l.id))) assert.equal(l.reviewed, false);
   assert.equal(messages['about.mh_en_owner_2026'], reading.editionId);
   assert.match(messages['about.this_is_an_english_editorial_reading_of_leo_xiv_s'], /en français/);
   const evidence = read('content/editorial/fr/interface-review.json');
@@ -48,13 +48,13 @@ test('French search handles accents, case and the localized paragraphe keyword',
 });
 
 test('French defaults use ordered regional preferences and explicit available URLs', () => {
-  assert.equal(resolveBrowserLocale({ languages: ['ar-EG', 'FR-ca', 'it'] }), 'fr');
+  assert.equal(resolveBrowserLocale({ languages: ['zh-CN', 'FR-ca', 'it'] }), 'fr');
   assert.equal(resolveBrowserLocale({ languages: ['it-IT', 'fr-FR'] }), 'it');
   assert.equal(resolveBrowserLocale({ languages: ['de-AT', 'fr-CH'] }), 'de');
   assert.equal(resolveBrowserLocale({ languages: ['es-MX', 'fr-BE'] }), 'es');
   assert.equal(resolveBrowserLocale({ languages: ['en-GB', 'fr-FR'] }), 'en');
-  assert.equal(resolveBrowserLocale({ languages: ['ar', 'zh'], language: 'fr-CA' }), 'fr');
-  assert.equal(resolveBrowserLocale({ languages: ['ar', 'zh'], language: 'ar' }), 'en');
+  assert.equal(resolveBrowserLocale({ languages: ['ja', 'zh'], language: 'fr-CA' }), 'fr');
+  assert.equal(resolveBrowserLocale({ languages: ['ja', 'zh'], language: 'ja' }), 'en');
   for (const route of ['/en/source/p052', '/it/notes/n143', '/de/concepts/dignity', '/es/about']) assert.equal(resolveLocaleRoute(route, { languages: ['fr'] }), route);
   assert.equal(resolveLocaleRoute('/search?q=%C3%A9ducation#concept', { languages: ['fr-FR'] }), '/fr/search?q=%C3%A9ducation#concept');
 });

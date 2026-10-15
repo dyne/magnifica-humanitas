@@ -45,7 +45,7 @@ test('root redirect, keyboard skip and unsupported locale recovery', async ({ pa
 
 test('locale routing retains explicit English, query, anchor and unavailable content identities', async ({ page }) => {
   await page.addInitScript(() => {
-    Object.defineProperty(navigator, 'languages', { get: () => ['ar-EG', 'it-IT'] })
+    Object.defineProperty(navigator, 'languages', { get: () => ['zh-CN', 'it-IT'] })
     Object.defineProperty(navigator, 'language', { get: () => 'pt-BR' })
     localStorage.setItem('mh-language', 'it')
   })
@@ -58,7 +58,7 @@ test('locale routing retains explicit English, query, anchor and unavailable con
   await page.goto('./#/xx/concepts/not-authored?at=stable-block#source-anchor')
   await expect(page).toHaveURL(/#\/en\/concepts\/not-authored\?at=stable-block#source-anchor$/)
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('This link is unavailable')
-  await page.goto('./#/ar/source/not-a-paragraph')
+  await page.goto('./#/zh/source/not-a-paragraph')
   await expect(page).toHaveURL(/#\/en\/source\/not-a-paragraph$/)
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('This link is unavailable')
 })

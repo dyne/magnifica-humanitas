@@ -16,8 +16,7 @@ test('Russian publication binds its complete reading and all 291 translated cata
   assert.equal(Object.keys(messages).length, 291);
   const neutral = new Set(['app.magnifica_humanitas', 'concept.value_magnifica_humanitas', 'block.description']);
   for (const [key, value] of Object.entries(messages)) if (!neutral.has(key)) assert.notEqual(value, english[key], key);
-  assert.deepEqual(availableLocales.map(l => l.id), ['en', 'it', 'de', 'es', 'fr', 'pt', 'pl', 'be', 'ru']);
-  assert.equal(localeRegistry.find(l => l.id === 'ar').reviewed, false);
+  assert.deepEqual(availableLocales.map(l => l.id), ['en', 'it', 'de', 'es', 'fr', 'pt', 'pl', 'be', 'ru', 'ar']);
   assert.equal(messages['about.mh_en_owner_2026'], reading.editionId);
   assert.match(messages['about.this_is_an_english_editorial_reading_of_leo_xiv_s'], /русское.*Льва XIV/);
   const review = read('content/editorial/ru/interface-review.json');
@@ -57,10 +56,10 @@ test('Russian search accepts canonical input and deliberately preserves й and �
 });
 
 test('Russian regional defaults obey ordered support, language backup and explicit URLs', () => {
-  assert.equal(resolveBrowserLocale({ languages: ['ar-EG', 'RU-ru', 'pl-PL'] }), 'ru');
+  assert.equal(resolveBrowserLocale({ languages: ['zh-CN', 'RU-ru', 'pl-PL'] }), 'ru');
   for (const locale of ['en-GB', 'it-IT', 'de-AT', 'es-MX', 'fr-BE', 'pt-BR', 'pl-PL', 'be-BY']) assert.equal(resolveBrowserLocale({ languages: [locale, 'ru-RU'] }), locale.split('-')[0]);
-  assert.equal(resolveBrowserLocale({ languages: ['ar', 'zh'], language: 'ru-KZ' }), 'ru');
-  assert.equal(resolveBrowserLocale({ languages: ['ar', 'zh'], language: 'ja' }), 'en');
+  assert.equal(resolveBrowserLocale({ languages: ['ja', 'zh'], language: 'ru-KZ' }), 'ru');
+  assert.equal(resolveBrowserLocale({ languages: ['ja', 'zh'], language: 'ja' }), 'en');
   for (const route of ['/en/source/p052', '/it/notes/n143', '/de/concepts/dignity', '/es/about', '/fr/concepts/dignity', '/pt/read', '/pl/saved', '/be/search']) assert.equal(resolveLocaleRoute(route, { languages: ['ru'] }), route);
   assert.equal(resolveLocaleRoute('/search?q=care#stable', { languages: ['ru-RU'] }), '/ru/search?q=care#stable');
 });

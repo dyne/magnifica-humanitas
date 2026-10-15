@@ -17,5 +17,9 @@ Locally bundled fonts: Syne, Inter and JetBrains Mono, each from Fontsource
 texts: licenses/Syne-OFL.txt, licenses/Inter-OFL.txt,
 licenses/JetBrains-Mono-OFL.txt.
 
+Arabic font: Noto Sans Arabic variable, Google Fonts revision
+8b0a1d0f5983c89bc2b93f1b5fb55f9e252744b5, SIL Open Font License 1.1.
+See licenses/Noto-Sans-Arabic-OFL.txt for copyright and full license text.
+
 No Dyne logo asset or raster illustration is shipped. The relationship diagram
 uses original SVG geometry derived from the authored content.

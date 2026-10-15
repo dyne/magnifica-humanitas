@@ -19,23 +19,26 @@ Choosing an original-work license requires a separate owner decision.
 | Syne Latin font files | `@fontsource/syne` 5.3.0, SIL OFL 1.1 |
 | Inter Latin variable font files | `@fontsource-variable/inter` 5.3.0, SIL OFL 1.1 |
 | JetBrains Mono Latin font files | `@fontsource/jetbrains-mono` 5.3.0, SIL OFL 1.1 |
+| Noto Sans Arabic variable | Google Fonts revision `8b0a1d0f5983c89bc2b93f1b5fb55f9e252744b5`, `ofl/notosansarabic/NotoSansArabic[wdth,wght].ttf`, SIL OFL 1.1 |
 | Relationship SVG | Original geometry derived from authored relation endpoints; no stock illustration |
 
-Fonts come through the locked theme dependency and are served locally. The
+Latin and Cyrillic faces come through the locked theme dependency; Arabic has
+the separately pinned source below. All are served locally. The
 theme's Dyne logo assets are not used by this site; its upstream NOTICE describes
 them without granting trademark rights or implying endorsement. No raster
 illustration or user photograph is shipped.
 
 `public/NOTICE.txt` and `public/licenses/` retain the theme MIT notice, upstream
-NOTICE and all three font OFL texts in the static artifact. When dependency
+NOTICE and all four font OFL texts in the static artifact. When dependency
 revisions change, review provenance and update these copies from the pinned
 packages. Do not remove notices while packaging `dist/`; serving only the
 HTML/JS and fonts without notices is an incomplete artifact.
 
-Script-aware layout retains the bundled Latin fonts and uses **installed system
-fonts** for Arabic and missing Cyrillic glyphs: Noto Sans Arabic/Noto Naskh Arabic,
-Noto Sans, DejaVu Sans, then platform Arial/sans-serif. These fallbacks are not
-redistributed or downloaded by the application; their availability and licenses
-belong to the host operating system. The existing bundled OFL notices remain
-unchanged. The nonshipping RTL test records Chromium's actual painted font and
-screenshots; this is environment-specific evidence, not a universal glyph guarantee.
+Arabic uses the locally served `public/fonts/NotoSansArabic-variable.ttf`,
+downloaded unchanged from the pinned Google Fonts revision above, with copyright
+and OFL terms in `public/licenses/Noto-Sans-Arabic-OFL.txt`. Latin/Cyrillic fallback
+continues through the pinned theme's Inter and Syne faces. The Cyrillic editions
+use the bundled Inter extensions; Arabic does not depend on an installed OS font.
+Production Arabic review records cmap coverage and Chromium's actual painted
+fonts separately from the historical nonshipping RTL fixture. This is bounded
+browser evidence, not a universal glyph guarantee.
