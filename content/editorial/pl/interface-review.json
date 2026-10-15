@@ -1,0 +1,605 @@
+{
+  "schemaVersion": 1,
+  "locale": "pl",
+  "editionId": "mh-pl-official-html-2026-10-14",
+  "readingRevision": "pl-2026-10-15-reading-1",
+  "reviewDate": "2026-10-15",
+  "observedAt": "2026-10-15T08:05:44.005Z",
+  "status": "interface-verified-awaiting-supervisor-review",
+  "catalogSha256": "b8f75b9f079c2ad14de8c1f3006a20cb306ff6f3ac9b01224410fc7d092e5944",
+  "readingSha256": "a96e559e48fed8c89212b4ec29286beb34a675ff87271de28f74a2e5a2c86287",
+  "semanticReviewSha256": "652c5c348a6433012fc61b35bdaef7eddb0784b92ad0e87aa90bba4d3135aa1a",
+  "catalogReview": {
+    "keys": 291,
+    "method": "All Polish public and assistive strings reviewed in sentence context against official Polish terminology and accepted alignment. Exact source quotations remain frozen; interface prose is editorial. Placeholder parity, route titles, inline About/footer grammar, neutral count labels and note dependency explanations checked.",
+    "coverage": [
+      "navigation, language, appearance and text size",
+      "route and document titles",
+      "About, attribution and method",
+      "loading, errors, retries and empty states",
+      "search, saved places, storage and live announcements",
+      "caller return, notes and source backlinks",
+      "assistive labels, block labels, formatting and relation labels"
+    ]
+  },
+  "commands": [
+    {
+      "command": "npm run check",
+      "exitStatus": 0,
+      "unitTests": 223,
+      "log": "output/polish/check.log"
+    },
+    {
+      "command": "npm run source:check",
+      "exitStatus": 0,
+      "log": "output/polish/source.log"
+    },
+    {
+      "command": "PLAYWRIGHT_BROWSERS_PATH=/tmp/magnifica-playwright BROWSER_EVIDENCE_DIR=output/polish/hosting npm run test:browser:all",
+      "exitStatus": 0,
+      "log": "output/polish/hosting.log"
+    },
+    {
+      "command": "MAGNIFICA_RTL_FIXTURE=1 VITE_BASE=/ npx vite build --mode locale-fixture",
+      "exitStatus": 0,
+      "log": "output/polish/rtl-build.log"
+    },
+    {
+      "command": "VITE_BASE=/ PLAYWRIGHT_BROWSERS_PATH=/tmp/magnifica-playwright npx playwright test --config playwright.locale.config.ts",
+      "exitStatus": 0,
+      "log": "output/polish/rtl.log"
+    }
+  ],
+  "hosting": {
+    "root": {
+      "stats": {
+        "startTime": "2026-10-15T08:03:27.333Z",
+        "duration": 48447.967,
+        "expected": 326,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "polishTests": 46,
+      "paintedSurfaceSamples": 36,
+      "fontFamilies": [
+        "Inter",
+        "Syne"
+      ],
+      "allSampledFontsCustom": true
+    },
+    "subpath": {
+      "stats": {
+        "startTime": "2026-10-15T08:04:17.344Z",
+        "duration": 48426.857,
+        "expected": 326,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "polishTests": 46,
+      "paintedSurfaceSamples": 36,
+      "fontFamilies": [
+        "Inter",
+        "Syne"
+      ],
+      "allSampledFontsCustom": true
+    }
+  },
+  "rtlFixture": {
+    "startTime": "2026-10-15T08:05:37.419Z",
+    "duration": 5628.996,
+    "expected": 11,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "matrix": {
+    "surfaces": [
+      "Atlas",
+      "Concept",
+      "Trail",
+      "Read",
+      "Source",
+      "Note",
+      "Search",
+      "Saved",
+      "About"
+    ],
+    "viewports": [
+      "390x844",
+      "1440x900"
+    ],
+    "textPercentages": [
+      100,
+      200
+    ],
+    "bases": [
+      "/",
+      "/magnifica-humanitas/"
+    ],
+    "reducedMotion": true,
+    "keyboard": "Selector tab order and focus, native controls, bookmark restoration, caller return and optional reflections.",
+    "reflowAssertions": 72,
+    "axeScans": 18,
+    "axeViolations": 0,
+    "axeScope": "WCAG 2 A/AA and 2.1 AA tags on nine surfaces at mobile 100% on both bases; bounded automated evidence.",
+    "paintedSamples": 72,
+    "paintedFonts": [
+      "Inter",
+      "Syne"
+    ]
+  },
+  "visualReview": {
+    "method": "All 72 surface captures, eight selector captures and eight dark About captures inspected via ten contact sheets. Root sheets inspected during integration; final regenerated sheets inspected on both bases. Polish accents, controls, line wrapping, source identity, inline grammar and absence of horizontal clipping checked.",
+    "corrections": "Atlas and Search headings shortened before the completed visual matrix. Actual CDP inspection identified four system fallback glyphs in Polish atlas text; added the already installed extended-Latin Inter and Syne faces. Final CDP samples require every painted font to be custom.",
+    "reportedLimitation": "At 390x844 and 200% text, the shared overflow-wrap rule splits człowieka before its final a in concept/trail headings. All letters remain visible, with no horizontal overflow or clipping. The reviewed title and shared layout were preserved; reported to supervisor for disposition.",
+    "mechanicalCatalogScan": "Impeccable detector returned no findings before final heading shortening; full checks cover the final catalog."
+  },
+  "behavior": [
+    "Ordered supported regional browser preferences and navigator.language backup; explicit URLs override preferences",
+    "Twelve equivalent route kinds preserve query/anchor identities",
+    "Polish accent/case folding including ł, akapit keyword and paragraph identities",
+    "Exact local quotation and notes, n033/n219 frozen anomalies and same-author/same-work backlinks including n163",
+    "Saving, restoration, nested source-note caller return and separate locale state",
+    "Failed, cancelled and delayed activation preserve exact title, active location, nonempty last/saved/recent/visited and history",
+    "Lazy-load failure/retry, deferred source/sequence bundles and temporary storage",
+    "All six trail endings and optional unscored reflections"
+  ],
+  "sharedChanges": {
+    "coordination": "Evidence and proposed minimal changes reported to root before edits; no explicit approval claim. All remain uncommitted for root review.",
+    "search": "Polish-only ł→l folding after normalization; other locale behavior remains unchanged.",
+    "fonts": "Three extended-Latin font faces from already pinned local packages, imported after the theme. No source, dependency version, theme token or layout change."
+  },
+  "attempts": [
+    {
+      "kind": "initial interface unit",
+      "passed": 3,
+      "failed": 1,
+      "cause": "NFD does not fold Polish ł; scoped correction added.",
+      "log": "output/polish/interface-unit.log"
+    },
+    {
+      "kind": "pre-integration unit",
+      "passed": 222,
+      "failed": 1,
+      "cause": "Same Polish ł behavior.",
+      "log": "output/polish/pre-integration-unit.log"
+    },
+    {
+      "kind": "early browser diagnostics",
+      "cause": "Short/full heading mismatch, actual extended-Latin fallback and uninitialized history focus checkpoint. Catalog/font support corrected; tests now establish the real checkpoint before comparing history.",
+      "logs": [
+        "output/polish/visual-first.log",
+        "output/polish/visual-matrix.log",
+        "output/polish/font-diagnostic.log",
+        "output/polish/pre-runtime-browser.log"
+      ]
+    },
+    {
+      "kind": "first full browser gate",
+      "passed": 325,
+      "failed": 1,
+      "cause": "Old shell unsupported-locale fixture still used newly supported pl; changed fixture to gated be.",
+      "evidence": "output/polish/attempt-1/hosting/root-browser-results.json"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "output/polish/root-1440-100-about-dark.png",
+      "sha256": "d7058ca3662819e3db4d3029e641b6c5b0361026d64ad288f6d1294b84525b27"
+    },
+    {
+      "path": "output/polish/root-1440-100-about.png",
+      "sha256": "bb717fc345add587528457f2527270470c42a2c3a41f456f24db1f6b8c4ad0ca"
+    },
+    {
+      "path": "output/polish/root-1440-100-atlas.png",
+      "sha256": "ccb3bf7b4059a631d022512c607f1287075799b67d2d7244e9996eb978218439"
+    },
+    {
+      "path": "output/polish/root-1440-100-concept.png",
+      "sha256": "01830fcf8a509077bc3c1f41e7479e27a66d37fce3f9d59b9d6124b4375316a5"
+    },
+    {
+      "path": "output/polish/root-1440-100-note.png",
+      "sha256": "65f6b858aec7a2852f6094da005b714e11101c7de4dd4892c70a62ed7f7b0f4d"
+    },
+    {
+      "path": "output/polish/root-1440-100-read.png",
+      "sha256": "29306258722b54f19213d13423103abcc22bf6b5404967a600772931ec2dad28"
+    },
+    {
+      "path": "output/polish/root-1440-100-saved.png",
+      "sha256": "7b2a346de09978d34b034976965edf46cbb9155c3edee8931ae8f9ee650f1a9f"
+    },
+    {
+      "path": "output/polish/root-1440-100-search.png",
+      "sha256": "92fb64acc3c06c77c5f60406b260f0e9c9550f0564c21e1a8d577f8a1fa34ed1"
+    },
+    {
+      "path": "output/polish/root-1440-100-selector.png",
+      "sha256": "23df701acdd4f0625b265efb138b4542ee449675da2f1a0fb1424e207442cbcb"
+    },
+    {
+      "path": "output/polish/root-1440-100-source.png",
+      "sha256": "05c01a6acf566991278b82e5ec8b25af8c95f4463949b79513008ffff6f55b6b"
+    },
+    {
+      "path": "output/polish/root-1440-100-trail.png",
+      "sha256": "6bb44ba9d6a3d68bfc5c4d79d17d90b9e5c53b7313c07d13b6d5d7096489259e"
+    },
+    {
+      "path": "output/polish/root-1440-200-about-dark.png",
+      "sha256": "152fcb912821cf67780fa683ae465ccb14901d5bfca795c410e13524e9c66233"
+    },
+    {
+      "path": "output/polish/root-1440-200-about.png",
+      "sha256": "e9bc7027ee46983fa09f0a36be1899feddae2e729221ac29bfa10e6f3141092b"
+    },
+    {
+      "path": "output/polish/root-1440-200-atlas.png",
+      "sha256": "bcf703dfb44f5066b278fb91fbe111c75d48fd5728f309d6e1d8fcf2dee617bc"
+    },
+    {
+      "path": "output/polish/root-1440-200-concept.png",
+      "sha256": "410871f886905cbd735a2b8449a789ad50d631ae8493606867d60c650806090f"
+    },
+    {
+      "path": "output/polish/root-1440-200-note.png",
+      "sha256": "81e369f8c223fbba5505f3af2a97b94584761e737a8363fb5be66302fe455f5d"
+    },
+    {
+      "path": "output/polish/root-1440-200-read.png",
+      "sha256": "e10416a570d2513c3f1250ea643beca13e3c9ff726a14fe8ce24e69d0a9a442f"
+    },
+    {
+      "path": "output/polish/root-1440-200-saved.png",
+      "sha256": "dbbcd26ff4c88530d4ff86351a059253ecfeb2dba4e5491ab6791f6fe981e2e6"
+    },
+    {
+      "path": "output/polish/root-1440-200-search.png",
+      "sha256": "f69d1624bf5fdc14d9d7eccf0f5b6f2871840a34dc25ac87fcd1445e2c8d3559"
+    },
+    {
+      "path": "output/polish/root-1440-200-selector.png",
+      "sha256": "47f81774029afd7afdb2eb991f5a94839b527443164bae4fa75d72e7fea5a6d9"
+    },
+    {
+      "path": "output/polish/root-1440-200-source.png",
+      "sha256": "5c5ec14e2863fb09b9fa5489575b0734464651c7d9a8f8f4c3dbd693b08040c8"
+    },
+    {
+      "path": "output/polish/root-1440-200-trail.png",
+      "sha256": "c4aba3231010d7068f0219cd9fc93af9e32084156fc61d4f39c83dae7657c5e2"
+    },
+    {
+      "path": "output/polish/root-390-100-about-dark.png",
+      "sha256": "377d35c0a1af375f272258612c57c20ba7a04c87d0183ba90b3f6894ef14279d"
+    },
+    {
+      "path": "output/polish/root-390-100-about.png",
+      "sha256": "33e8bacf69ffa5f6cdf13865c9ea5875ef2e5a2bcfec6d62d41090ea4b35dd41"
+    },
+    {
+      "path": "output/polish/root-390-100-atlas.png",
+      "sha256": "cb40a138b370d8c9cefcd6e54fbda35d27974203dab7b2e708d0d527c710cc40"
+    },
+    {
+      "path": "output/polish/root-390-100-concept.png",
+      "sha256": "5867cd79bfad05636730d640b5101ed306e2c1baec0edc82661e53bdef883c57"
+    },
+    {
+      "path": "output/polish/root-390-100-note.png",
+      "sha256": "bd857e8b9f1e64b4ca5034908b916d37a2e53514f566b4546d8d108a6d54b61f"
+    },
+    {
+      "path": "output/polish/root-390-100-read.png",
+      "sha256": "ed1e45b65161ec943cd560f915a6c86a2ef49a896ad6405da336d345e2301f9f"
+    },
+    {
+      "path": "output/polish/root-390-100-saved.png",
+      "sha256": "02e9bab9ee293bfdcbe66e2d59f8678f19e4e727e2dc0b9e8660f6427261b528"
+    },
+    {
+      "path": "output/polish/root-390-100-search.png",
+      "sha256": "d8b8641270941d7ec13473dc192f8eb6c8d403f27a4899083a8ae8c25fa19451"
+    },
+    {
+      "path": "output/polish/root-390-100-selector.png",
+      "sha256": "b84e202b09afcf47e6293f6d16df095d4ab472429252364b07e1fe074381aa8f"
+    },
+    {
+      "path": "output/polish/root-390-100-source.png",
+      "sha256": "d408b6aa76afcf7978ce0545fd7ac5ec4e2888366a3a8ffd42ef122b6b05030a"
+    },
+    {
+      "path": "output/polish/root-390-100-trail.png",
+      "sha256": "48c0f5359c3cff14c0e6d717dda2b12bd23eeca9f1dc3dc46534983cb23c076d"
+    },
+    {
+      "path": "output/polish/root-390-200-about-dark.png",
+      "sha256": "4f494194f171a4a418618f723221ceca8e382c83fa5ccf824a5ab2aabcd8b0ef"
+    },
+    {
+      "path": "output/polish/root-390-200-about.png",
+      "sha256": "b6ea8973a6f750766a44ccea4a2622a871c8fbd30165fb9add2417c66b23fcf5"
+    },
+    {
+      "path": "output/polish/root-390-200-atlas.png",
+      "sha256": "118a762f2a190877c9542fe0fe4d4c78a22514b4e0bf03779709cf240a206922"
+    },
+    {
+      "path": "output/polish/root-390-200-concept.png",
+      "sha256": "fc12691d4d299748301533d5087ea92e3a69f20604e22449e30f72b0706f7990"
+    },
+    {
+      "path": "output/polish/root-390-200-note.png",
+      "sha256": "3da8e72598a5b919ce5d5d42ff8176e03ee31e076974f632a9519e5fd0d60cfe"
+    },
+    {
+      "path": "output/polish/root-390-200-read.png",
+      "sha256": "83eb706906f0034d872efad27c48251475b5e1b4396155939d7b59f581076f40"
+    },
+    {
+      "path": "output/polish/root-390-200-saved.png",
+      "sha256": "c81d681a2f1ff4d66a3b8ac48b9d1b8a61e683c6c9f74389fd8365e341810f44"
+    },
+    {
+      "path": "output/polish/root-390-200-search.png",
+      "sha256": "a0e575c9e82815333e4c18ae7ac60efe149c2d0084a0ae28270d7f930dfbde9b"
+    },
+    {
+      "path": "output/polish/root-390-200-selector.png",
+      "sha256": "005b3eaf962fd006687c48bea26a8082a2fc5f5e82cba4ffa2904628e85b1fa6"
+    },
+    {
+      "path": "output/polish/root-390-200-source.png",
+      "sha256": "93372a1e2174a5dc8d59150c311e5e5ce0f02fe24328693fb8c6921ddaabd00e"
+    },
+    {
+      "path": "output/polish/root-390-200-trail.png",
+      "sha256": "b0765674c0a1b232982797a61d66967b021be5187223dfb16d60de25e628c6cc"
+    },
+    {
+      "path": "output/polish/subpath-1440-100-about-dark.png",
+      "sha256": "d7058ca3662819e3db4d3029e641b6c5b0361026d64ad288f6d1294b84525b27"
+    },
+    {
+      "path": "output/polish/subpath-1440-100-about.png",
+      "sha256": "bb717fc345add587528457f2527270470c42a2c3a41f456f24db1f6b8c4ad0ca"
+    },
+    {
+      "path": "output/polish/subpath-1440-100-atlas.png",
+      "sha256": "ccb3bf7b4059a631d022512c607f1287075799b67d2d7244e9996eb978218439"
+    },
+    {
+      "path": "output/polish/subpath-1440-100-concept.png",
+      "sha256": "01830fcf8a509077bc3c1f41e7479e27a66d37fce3f9d59b9d6124b4375316a5"
+    },
+    {
+      "path": "output/polish/subpath-1440-100-note.png",
+      "sha256": "65f6b858aec7a2852f6094da005b714e11101c7de4dd4892c70a62ed7f7b0f4d"
+    },
+    {
+      "path": "output/polish/subpath-1440-100-read.png",
+      "sha256": "29306258722b54f19213d13423103abcc22bf6b5404967a600772931ec2dad28"
+    },
+    {
+      "path": "output/polish/subpath-1440-100-saved.png",
+      "sha256": "7b2a346de09978d34b034976965edf46cbb9155c3edee8931ae8f9ee650f1a9f"
+    },
+    {
+      "path": "output/polish/subpath-1440-100-search.png",
+      "sha256": "92fb64acc3c06c77c5f60406b260f0e9c9550f0564c21e1a8d577f8a1fa34ed1"
+    },
+    {
+      "path": "output/polish/subpath-1440-100-selector.png",
+      "sha256": "23df701acdd4f0625b265efb138b4542ee449675da2f1a0fb1424e207442cbcb"
+    },
+    {
+      "path": "output/polish/subpath-1440-100-source.png",
+      "sha256": "05c01a6acf566991278b82e5ec8b25af8c95f4463949b79513008ffff6f55b6b"
+    },
+    {
+      "path": "output/polish/subpath-1440-100-trail.png",
+      "sha256": "6bb44ba9d6a3d68bfc5c4d79d17d90b9e5c53b7313c07d13b6d5d7096489259e"
+    },
+    {
+      "path": "output/polish/subpath-1440-200-about-dark.png",
+      "sha256": "152fcb912821cf67780fa683ae465ccb14901d5bfca795c410e13524e9c66233"
+    },
+    {
+      "path": "output/polish/subpath-1440-200-about.png",
+      "sha256": "e9bc7027ee46983fa09f0a36be1899feddae2e729221ac29bfa10e6f3141092b"
+    },
+    {
+      "path": "output/polish/subpath-1440-200-atlas.png",
+      "sha256": "bcf703dfb44f5066b278fb91fbe111c75d48fd5728f309d6e1d8fcf2dee617bc"
+    },
+    {
+      "path": "output/polish/subpath-1440-200-concept.png",
+      "sha256": "410871f886905cbd735a2b8449a789ad50d631ae8493606867d60c650806090f"
+    },
+    {
+      "path": "output/polish/subpath-1440-200-note.png",
+      "sha256": "81e369f8c223fbba5505f3af2a97b94584761e737a8363fb5be66302fe455f5d"
+    },
+    {
+      "path": "output/polish/subpath-1440-200-read.png",
+      "sha256": "e10416a570d2513c3f1250ea643beca13e3c9ff726a14fe8ce24e69d0a9a442f"
+    },
+    {
+      "path": "output/polish/subpath-1440-200-saved.png",
+      "sha256": "dbbcd26ff4c88530d4ff86351a059253ecfeb2dba4e5491ab6791f6fe981e2e6"
+    },
+    {
+      "path": "output/polish/subpath-1440-200-search.png",
+      "sha256": "f69d1624bf5fdc14d9d7eccf0f5b6f2871840a34dc25ac87fcd1445e2c8d3559"
+    },
+    {
+      "path": "output/polish/subpath-1440-200-selector.png",
+      "sha256": "47f81774029afd7afdb2eb991f5a94839b527443164bae4fa75d72e7fea5a6d9"
+    },
+    {
+      "path": "output/polish/subpath-1440-200-source.png",
+      "sha256": "5c5ec14e2863fb09b9fa5489575b0734464651c7d9a8f8f4c3dbd693b08040c8"
+    },
+    {
+      "path": "output/polish/subpath-1440-200-trail.png",
+      "sha256": "c4aba3231010d7068f0219cd9fc93af9e32084156fc61d4f39c83dae7657c5e2"
+    },
+    {
+      "path": "output/polish/subpath-390-100-about-dark.png",
+      "sha256": "377d35c0a1af375f272258612c57c20ba7a04c87d0183ba90b3f6894ef14279d"
+    },
+    {
+      "path": "output/polish/subpath-390-100-about.png",
+      "sha256": "33e8bacf69ffa5f6cdf13865c9ea5875ef2e5a2bcfec6d62d41090ea4b35dd41"
+    },
+    {
+      "path": "output/polish/subpath-390-100-atlas.png",
+      "sha256": "96c2d0221c53f24ec3593dfc5bd1d73f80b179bc506f017d774edfc139ae915b"
+    },
+    {
+      "path": "output/polish/subpath-390-100-concept.png",
+      "sha256": "ce6e456715c422ae920f5093a330f5736a175203009bbda5cfa1c8897195883d"
+    },
+    {
+      "path": "output/polish/subpath-390-100-note.png",
+      "sha256": "bd857e8b9f1e64b4ca5034908b916d37a2e53514f566b4546d8d108a6d54b61f"
+    },
+    {
+      "path": "output/polish/subpath-390-100-read.png",
+      "sha256": "ed1e45b65161ec943cd560f915a6c86a2ef49a896ad6405da336d345e2301f9f"
+    },
+    {
+      "path": "output/polish/subpath-390-100-saved.png",
+      "sha256": "02e9bab9ee293bfdcbe66e2d59f8678f19e4e727e2dc0b9e8660f6427261b528"
+    },
+    {
+      "path": "output/polish/subpath-390-100-search.png",
+      "sha256": "d8b8641270941d7ec13473dc192f8eb6c8d403f27a4899083a8ae8c25fa19451"
+    },
+    {
+      "path": "output/polish/subpath-390-100-selector.png",
+      "sha256": "99522576aad8fc90dba4cf4d072ac5b2dde01e02fd40fb9daa4f73233aef47cb"
+    },
+    {
+      "path": "output/polish/subpath-390-100-source.png",
+      "sha256": "d408b6aa76afcf7978ce0545fd7ac5ec4e2888366a3a8ffd42ef122b6b05030a"
+    },
+    {
+      "path": "output/polish/subpath-390-100-trail.png",
+      "sha256": "ca3ee9390c4497aa3a900aa53ad65f2f6e5b5ea6ad06a87a56553d76454af169"
+    },
+    {
+      "path": "output/polish/subpath-390-200-about-dark.png",
+      "sha256": "4f494194f171a4a418618f723221ceca8e382c83fa5ccf824a5ab2aabcd8b0ef"
+    },
+    {
+      "path": "output/polish/subpath-390-200-about.png",
+      "sha256": "b6ea8973a6f750766a44ccea4a2622a871c8fbd30165fb9add2417c66b23fcf5"
+    },
+    {
+      "path": "output/polish/subpath-390-200-atlas.png",
+      "sha256": "118a762f2a190877c9542fe0fe4d4c78a22514b4e0bf03779709cf240a206922"
+    },
+    {
+      "path": "output/polish/subpath-390-200-concept.png",
+      "sha256": "fc12691d4d299748301533d5087ea92e3a69f20604e22449e30f72b0706f7990"
+    },
+    {
+      "path": "output/polish/subpath-390-200-note.png",
+      "sha256": "3da8e72598a5b919ce5d5d42ff8176e03ee31e076974f632a9519e5fd0d60cfe"
+    },
+    {
+      "path": "output/polish/subpath-390-200-read.png",
+      "sha256": "83eb706906f0034d872efad27c48251475b5e1b4396155939d7b59f581076f40"
+    },
+    {
+      "path": "output/polish/subpath-390-200-saved.png",
+      "sha256": "c81d681a2f1ff4d66a3b8ac48b9d1b8a61e683c6c9f74389fd8365e341810f44"
+    },
+    {
+      "path": "output/polish/subpath-390-200-search.png",
+      "sha256": "a0e575c9e82815333e4c18ae7ac60efe149c2d0084a0ae28270d7f930dfbde9b"
+    },
+    {
+      "path": "output/polish/subpath-390-200-selector.png",
+      "sha256": "005b3eaf962fd006687c48bea26a8082a2fc5f5e82cba4ffa2904628e85b1fa6"
+    },
+    {
+      "path": "output/polish/subpath-390-200-source.png",
+      "sha256": "93372a1e2174a5dc8d59150c311e5e5ce0f02fe24328693fb8c6921ddaabd00e"
+    },
+    {
+      "path": "output/polish/subpath-390-200-trail.png",
+      "sha256": "b0765674c0a1b232982797a61d66967b021be5187223dfb16d60de25e628c6cc"
+    }
+  ],
+  "reviewSheets": [
+    {
+      "path": "output/polish/visual-sheets/about-dark.png",
+      "sha256": "1c913a1567a7c4cc6000b62c7f71be330e1db9bdbac9d0f50ed418d4c48032ac"
+    },
+    {
+      "path": "output/polish/visual-sheets/root-1440-100.png",
+      "sha256": "5f29735871106d8067ca279e7b1efe68263c87d707f4c198f1ff3a1b7605a8a7"
+    },
+    {
+      "path": "output/polish/visual-sheets/root-1440-200.png",
+      "sha256": "cc838a4c83a3a1c3849fbe8141e291244a4fb177f0cf45d3c8dafb653a91c2a0"
+    },
+    {
+      "path": "output/polish/visual-sheets/root-390-100.png",
+      "sha256": "28762f151c752ac0836c1ce6d3ca67bd76c828293de1b6e02e7edeccfa31ef07"
+    },
+    {
+      "path": "output/polish/visual-sheets/root-390-200.png",
+      "sha256": "44dcdd1dec38e98426ee0cafebcadea5c0bd5eecf516e8614789ecdfc1fcc8f5"
+    },
+    {
+      "path": "output/polish/visual-sheets/selector.png",
+      "sha256": "f27851386a8c924d52b23341ec1f9f59669f096b278af391e16e181c1162abc8"
+    },
+    {
+      "path": "output/polish/visual-sheets/subpath-1440-100.png",
+      "sha256": "5f29735871106d8067ca279e7b1efe68263c87d707f4c198f1ff3a1b7605a8a7"
+    },
+    {
+      "path": "output/polish/visual-sheets/subpath-1440-200.png",
+      "sha256": "cc838a4c83a3a1c3849fbe8141e291244a4fb177f0cf45d3c8dafb653a91c2a0"
+    },
+    {
+      "path": "output/polish/visual-sheets/subpath-390-100.png",
+      "sha256": "8419470027f8ab5b64ee8b2bee2f09e3dbfcaecd0ac85b24de187a5fb0727b2b"
+    },
+    {
+      "path": "output/polish/visual-sheets/subpath-390-200.png",
+      "sha256": "44dcdd1dec38e98426ee0cafebcadea5c0bd5eecf516e8614789ecdfc1fcc8f5"
+    }
+  ],
+  "evidenceHashes": {
+    "output/polish/check.log": "77e7a01bb44b1f72d46589768279e21a9f050b7c33fabdbf3f9d761ed6d13f17",
+    "output/polish/hosting.log": "8622571352415c274ac822f236996aae6e0997e516ed5854cc051be0888631f3",
+    "output/polish/hosting/browser-evidence.json": "1d9d0a311802264277c9e12e0eba3585dc55637edabaf7303983ab449c993ce7",
+    "output/polish/hosting/root-browser-results.json": "dece9e406cad18e17e6236aa9b947f4f4ffd382ab512802cac7bf25e350690f7",
+    "output/polish/hosting/root-browser.log": "f1b3308874bd40c83ea5743f9923b3c318932ad061f38cae900f8bf44fd16d7a",
+    "output/polish/hosting/root-build.log": "13bf96482d803f30751b13aef050f4ae21d19e18b28f0f9a5595912cb6f6f8f3",
+    "output/polish/hosting/subpath-browser-results.json": "f4287d37c5ca39f67d04f59eef0be63d33d62be31f44798265ce5b5d4f205945",
+    "output/polish/hosting/subpath-browser.log": "ec98f823f3968672bc2cfa19916f8b2b2a09788f987d2efc001346cb4240d261",
+    "output/polish/hosting/subpath-build.log": "df786109fdbf9bf62b2e1dcf2182f0b010bcdb8c44c8d90590a9f332cc16354d",
+    "output/polish/impeccable-detect.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "output/polish/rtl-build.log": "ffbf1b4ff80e6a4adfb4fc70bc71aeb8dc97d507b6d73ecf615aaa0017a121d2",
+    "output/polish/rtl-results.json": "4371156090aaa09b8d73588b8a97be4bde329dec29780fc96420f84e556ea6db",
+    "output/polish/rtl.log": "489fbe2b36112f4b92e7efd6437b722fcc93d9fd9d50f5a3263a39aea6092915",
+    "output/polish/source.log": "3f3095f22129c361068e52788817ae6c0ece09bb0c0292954d3ad9270ed66f41"
+  },
+  "limitations": [
+    "Chromium automation and screenshot review; no physical-device or screen-reader-user study.",
+    "No native-speaker proofreading or learning-efficacy claim.",
+    "No publication or deployment.",
+    "Narrow 200% heading word split is disclosed for supervisor disposition."
+  ]
+}

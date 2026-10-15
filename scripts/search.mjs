@@ -2,7 +2,9 @@ import { english, formatMessage } from './messages.mjs'
 export const relationLabel = (type, messages = english) => formatMessage(messages, `relation.${type}`)
 /** Search only reviewed, published adaptation; never raw originals. */
 export function normalizeQuery(value, locale = 'en') {
-  return String(value ?? '').toLocaleLowerCase(locale).normalize('NFD').replace(/\p{M}/gu, '').trim().replace(/\s+/g, ' ')
+  const normalized = String(value ?? '').toLocaleLowerCase(locale).normalize('NFD').replace(/\p{M}/gu, '')
+  // Polish ł does not decompose under NFD, unlike the language's other accents.
+  return (new Intl.Locale(locale).language === 'pl' ? normalized.replace(/ł/g, 'l') : normalized).trim().replace(/\s+/g, ' ')
 }
 export function searchPublished(library, sequence, query, { locale = 'en', messages = english } = {}) {
   const normalized = normalizeQuery(query, locale)

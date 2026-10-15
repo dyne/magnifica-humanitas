@@ -16,8 +16,8 @@ test('Portuguese publication requires complete reading and all 291 keys with exa
   assert.equal(Object.keys(messages).length, 291);
   const neutral = new Set(['app.magnifica_humanitas', 'app.atlas', 'concept.value_magnifica_humanitas', 'block.description', 'source.page', 'source.pages', 'route.concept', 'note.source_value']);
   for (const [key, text] of Object.entries(messages)) if (!neutral.has(key)) assert.notEqual(text, english[key], key);
-  assert.deepEqual(availableLocales.map(l => l.id), ['en', 'it', 'de', 'es', 'fr', 'pt']);
-  for (const l of localeRegistry.filter(l => !['en', 'it', 'de', 'es', 'fr', 'pt'].includes(l.id))) assert.equal(l.reviewed, false);
+  assert.deepEqual(availableLocales.map(l => l.id), ['en', 'it', 'de', 'es', 'fr', 'pt', 'pl']);
+  for (const l of localeRegistry.filter(l => !['en', 'it', 'de', 'es', 'fr', 'pt', 'pl'].includes(l.id))) assert.equal(l.reviewed, false);
   assert.equal(messages['about.mh_en_owner_2026'], reading.editionId);
   assert.match(messages['about.this_is_an_english_editorial_reading_of_leo_xiv_s'], /em português/);
   const evidence = read('content/editorial/pt/interface-review.json');
@@ -48,14 +48,14 @@ test('Portuguese search handles accents, case and the localized parágrafo keywo
 });
 
 test('Portuguese defaults use ordered regional preferences and explicit available URLs', () => {
-  assert.equal(resolveBrowserLocale({ languages: ['pl-PL', 'PT-br', 'it'] }), 'pt');
+  assert.equal(resolveBrowserLocale({ languages: ['be-BY', 'PT-br', 'it'] }), 'pt');
   assert.equal(resolveBrowserLocale({ languages: ['it-IT', 'pt-PT'] }), 'it');
   assert.equal(resolveBrowserLocale({ languages: ['de-AT', 'pt-AO'] }), 'de');
   assert.equal(resolveBrowserLocale({ languages: ['es-MX', 'pt-MZ'] }), 'es');
   assert.equal(resolveBrowserLocale({ languages: ['fr-FR', 'pt-PT'] }), 'fr');
   assert.equal(resolveBrowserLocale({ languages: ['en-GB', 'pt-PT'] }), 'en');
   assert.equal(resolveBrowserLocale({ languages: ['ar', 'ru'], language: 'pt-BR' }), 'pt');
-  assert.equal(resolveBrowserLocale({ languages: ['ar', 'ru'], language: 'pl' }), 'en');
+  assert.equal(resolveBrowserLocale({ languages: ['ar', 'ru'], language: 'be' }), 'en');
   for (const route of ['/en/source/p052', '/it/notes/n143', '/de/concepts/dignity', '/es/about', '/fr/concepts/dignity']) assert.equal(resolveLocaleRoute(route, { languages: ['pt'] }), route);
   assert.equal(resolveLocaleRoute('/search?q=educa%C3%A7%C3%A3o#concept', { languages: ['pt-PT'] }), '/pt/search?q=educa%C3%A7%C3%A3o#concept');
 });

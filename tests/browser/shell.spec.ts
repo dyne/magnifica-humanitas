@@ -39,7 +39,7 @@ test('root redirect, keyboard skip and unsupported locale recovery', async ({ pa
   await expect(page.getByRole('link', { name: 'Skip to reading' })).toBeFocused()
   await page.keyboard.press('Enter')
   await expect(page.locator('main')).toBeFocused()
-  await page.goto('./#/pl/atlas')
+  await page.goto('./#/be/atlas')
   await expect(page).toHaveURL(/#\/en\/atlas$/)
 })
 

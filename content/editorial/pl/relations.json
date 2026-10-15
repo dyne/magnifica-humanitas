@@ -1,0 +1,786 @@
+{
+  "schemaVersion": 1,
+  "language": "pl",
+  "editionId": "mh-pl-official-html-2026-10-14",
+  "relations": [
+    {
+      "id": "rel-001",
+      "from": "faith-foundations",
+      "to": "dignity",
+      "type": "provides-source-foundation-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Stworzenie i uprzedzająca miłość Boga uzasadniają w źródle godność niezależną od zasług. To chrześcijańska podstawa autora, odrębna od świeckiego dowodu. Można zrozumieć tę relację bez podzielania jej przesłanek.",
+        "sourceRefs": [
+          "p050",
+          "p052",
+          "p053"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-002",
+      "from": "dignity",
+      "to": "rights",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Jeśli wartość przysługuje osobie przed osiągnięciem, prawa nie mogą być nagrodą za wynik. Źródło łączy godność z powszechnymi prawami i ich konkretną ochroną, zachowując własne przypisane Kościołowi stanowiska moralne.",
+        "sourceRefs": [
+          "p051",
+          "p054",
+          "p055"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-003",
+      "from": "dignity",
+      "to": "common-good",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Uznanie godności zobowiązuje do społecznych warunków rozwoju. Dobro wspólne nadaje temu uznaniu postać relacji, instytucji i decyzji gospodarczych, których nie wyczerpuje suma prywatnych korzyści.",
+        "sourceRefs": [
+          "p059",
+          "p060"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-004",
+      "from": "common-good",
+      "to": "shared-goods",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Dobro wspólne wymaga dostępu do dóbr podtrzymujących życie. Własność pozostaje uznanym prawem, lecz nie może przekreślać przeznaczenia tych dóbr dla wszystkich i przyszłych pokoleń.",
+        "sourceRefs": [
+          "p065",
+          "p066"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-005",
+      "from": "shared-goods",
+      "to": "distribution",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Powszechne przeznaczenie ogranicza sposób posiadania i dzielenia korzyści. Sprawiedliwy podział nie jest dopiero późniejszym dodatkiem: dotyczy też reguł produkcji i dostępu do technologii.",
+        "sourceRefs": [
+          "p066",
+          "p067",
+          "p161",
+          "p162"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-006",
+      "from": "subsidiarity",
+      "to": "common-good",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Pomocniczość wspiera wspólne dobro przez wolną inicjatywę bliską ludziom. Potrzebuje pomocy i koordynacji wyższych instytucji; nie uzasadnia ich wycofania ani pozostawienia słabszych bez warunków działania.",
+        "sourceRefs": [
+          "p068",
+          "p069",
+          "p070"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-007",
+      "from": "subsidiarity",
+      "to": "dialogue",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Odpowiedzialność bliskich wspólnot wymaga głosu przed decyzją. Dialog dotyczy danych, usług i standardów platform, a nie tylko wyjaśnienia zainteresowanym rozstrzygnięcia już podjętego gdzie indziej.",
+        "sourceRefs": [
+          "p070",
+          "p071",
+          "p072"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-008",
+      "from": "solidarity",
+      "to": "subsidiarity",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Solidarność chroni pomocniczość przed zamknięciem we własnym interesie. Pomocniczość z kolei zapobiega opiekuńczości odbierającej udział: wspólne i lokalne zobowiązania wzajemnie się ograniczają oraz wspierają.",
+        "sourceRefs": [
+          "p068",
+          "p069",
+          "p073",
+          "p075",
+          "p076"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-009",
+      "from": "common-good",
+      "to": "development",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Rozwój każdej osoby i narodów potrzebuje wspólnych warunków, nie wyłącznie prywatnego wzrostu. Dobro wspólne nadaje mu kierunek obejmujący relacje, uczestnictwo i przyszłość innych.",
+        "sourceRefs": [
+          "p059",
+          "p060",
+          "p082",
+          "p083",
+          "p085"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-010",
+      "from": "justice",
+      "to": "development",
+      "type": "provides-test-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Sprawiedliwość sprawdza rozwój przez los wykluczonych i rozkład kosztów. Nie można uznać postępu jednych za wystarczający, gdy utrwala on podrzędność innych albo niszczy środowisko i przyszłe możliwości.",
+        "sourceRefs": [
+          "p079",
+          "p083",
+          "p084",
+          "p085"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-011",
+      "from": "justice",
+      "to": "ai-governance",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Cyfrowa sprawiedliwość wymaga reguł projektu, nadzoru i odwołania. Ochrona przed dyskryminacją i redukowaniem osoby do profilu musi kształtować system wcześniej, zamiast ograniczać się do naprawy po szkodzie.",
+        "sourceRefs": [
+          "p080",
+          "p109",
+          "p164"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-012",
+      "from": "shared-goods",
+      "to": "ai-governance",
+      "type": "applies-to",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Dane, algorytmy i platformy należą do współczesnej kwestii dóbr. Dlatego zarządzanie AI potrzebuje dostępu, wspólnotowego udziału i regulacji własności, a nie wyłącznie decyzji nielicznych posiadaczy infrastruktury.",
+        "sourceRefs": [
+          "p067",
+          "p108",
+          "p109"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-013",
+      "from": "technology-power",
+      "to": "ai-governance",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Władza techniczna tworzy warunki cudzych decyzji, więc wymaga prawa, kontroli i rozliczalności. Samo techniczne dostosowanie nie wystarcza: trzeba też móc dyskutować priorytety podmiotów posiadających zasoby.",
+        "sourceRefs": [
+          "p005",
+          "p071",
+          "p095",
+          "p105",
+          "p106",
+          "p107"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-014",
+      "from": "dignity",
+      "to": "ai-governance",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Godność ogranicza dopuszczalne decyzje systemu. Pozorna bezstronność nie uzasadnia niepodważalnego wykluczenia, a osoba potrzebuje wyjaśnienia, możliwości sprzeciwu i kogoś odpowiadającego za skutki.",
+        "sourceRefs": [
+          "p102",
+          "p103",
+          "p105",
+          "p164"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-015",
+      "from": "ai-limits",
+      "to": "ai-governance",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Rozróżnienie obliczeń i moralnej odpowiedzialności uzasadnia w źródle ludzki nadzór. Antropologiczne twierdzenia autora nie oddają maszynie prawa do rozstrzygnięć śmiercionośnych ani nie usuwają obowiązku przypisania decyzji ludziom.",
+        "sourceRefs": [
+          "p099",
+          "p105",
+          "p198"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-016",
+      "from": "embodiment",
+      "to": "ai-limits",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Cielesność, doświadczenie i skończoność pozwalają źródłu odróżniać człowieka od skutecznego przetwarzania danych. Nie oznacza to odmowy technicznej pomocy ani sprowadzenia całej osoby do samego ograniczenia.",
+        "sourceRefs": [
+          "p099",
+          "p112",
+          "p118",
+          "p128"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-017",
+      "from": "care",
+      "to": "embodiment",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Troska doprecyzowuje przyjęcie skończoności: obowiązek ulgi w cierpieniu pozostaje. Można używać narzędzi i rozwijać możliwości, nie uznając słabszego życia za mniej warte ochrony.",
+        "sourceRefs": [
+          "p114",
+          "p117",
+          "p118",
+          "p126"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-018",
+      "from": "care",
+      "to": "work",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Troska wspiera pracę przez pożądane uwalnianie od niebezpiecznych i uciążliwych zadań. Taka pomoc powinna chronić udział i ludzkie cele, również gdy warunki pracy zmieniają się nierówno.",
+        "sourceRefs": [
+          "p152",
+          "p153",
+          "p154"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-019",
+      "from": "technology-power",
+      "to": "dignity",
+      "type": "puts-in-tension",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Gdy techniczna potęga czyni wydajność miarą wartości, pozostaje w napięciu z niezbywalną godnością. Nie jest to sprzeczność każdej technologii z osobą, lecz krytyka porządku, który użytecznością usprawiedliwia odrzucenie.",
+        "sourceRefs": [
+          "p092",
+          "p094",
+          "p095",
+          "p112"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-020",
+      "from": "truth",
+      "to": "dialogue",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Wspólne sprawdzanie faktów i słowa odrzucające upokorzenie umożliwiają rzeczywisty dialog. Rozmowa bez prawdy łatwo staje się narzędziem wpływu zamiast drogą godzenia różnic.",
+        "sourceRefs": [
+          "p132",
+          "p134",
+          "p214",
+          "p219"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-021",
+      "from": "truth",
+      "to": "education",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Ekologia prawdy wymaga cierpliwego uczenia się, weryfikacji i integracji wiedzy. Natychmiastowa odpowiedź nie zastępuje rozumienia ani zdolności stawiania pytań, które dojrzewają przez czas.",
+        "sourceRefs": [
+          "p137",
+          "p139",
+          "p140",
+          "p146"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-022",
+      "from": "education",
+      "to": "freedom",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Wychowanie wzmacnia wolność, gdy rozwija uwagę, krytycyzm i świadome korzystanie z narzędzi. Potrzebuje wspólnych instytucjonalnych zabezpieczeń oraz formacji dorosłych, nie tylko indywidualnej samokontroli młodych.",
+        "sourceRefs": [
+          "p142",
+          "p145",
+          "p146",
+          "p147",
+          "p238"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-023",
+      "from": "technology-power",
+      "to": "freedom",
+      "type": "puts-in-tension",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Platformy mogą kształtować pragnienia, widoczność i zachowania bez jawnego przymusu. Ta władza pozostaje w napięciu z wolnością, kiedy wykorzystuje słabość albo zamyka możliwość krytycznego osądu i sprzeciwu.",
+        "sourceRefs": [
+          "p136",
+          "p170",
+          "p171",
+          "p172"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-024",
+      "from": "work",
+      "to": "family",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Godna, stabilna praca wspiera możliwość budowania więzi i przyszłości rodzin. Niestabilność oraz niedostępne szkolenia dotyczą więc nie tylko dochodu, lecz warunków zobowiązań młodych i rytmu życia.",
+        "sourceRefs": [
+          "p165",
+          "p166",
+          "p167",
+          "p168",
+          "p169"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-025",
+      "from": "dignity",
+      "to": "work",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Praca może wyrażać istniejącą godność, ale jej nie ustanawia. Jej utrata wymaga ochrony udziału i odpowiedzi społecznej, zamiast uznania bezrobotnego za człowieka o mniejszej wartości.",
+        "sourceRefs": [
+          "p052",
+          "p149",
+          "p154"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-026",
+      "from": "work",
+      "to": "distribution",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Transformacje pracy rozdzielają koszty i korzyści nierówno. Dostęp do szkoleń, ochrony i podstawowych dóbr wymaga sprawiedliwych reguł, a nie jedynie oczekiwania, że wzrost sam wynagrodzi wszystkich.",
+        "sourceRefs": [
+          "p151",
+          "p153",
+          "p156",
+          "p161",
+          "p164"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-027",
+      "from": "distribution",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Powszechny, włączający i trwały dobrobyt może wspierać pokój. Przenoszenie środków na zbrojenia kosztem zdrowia i edukacji najuboższych podważa natomiast jego materialne i społeczne podstawy.",
+        "sourceRefs": [
+          "p163",
+          "p204"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-028",
+      "from": "exploitation",
+      "to": "ai-governance",
+      "type": "provides-test-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Los niewidzialnych pracowników i kontrolowanych populacji sprawdza etykę zarządzania AI. Transparentne dostawy, due diligence i zdolność decydowania o danych są częścią ochrony godności, nie poboczną sprawą.",
+        "sourceRefs": [
+          "p173",
+          "p174",
+          "p178",
+          "p179"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-029",
+      "from": "shared-goods",
+      "to": "freedom",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Oddanie narodom danych wraz z władzą wyboru zastosowań wspiera wolność. Same kopie nie usuwają zależności od podmiotów, które nadal określają cele i korzyści.",
+        "sourceRefs": [
+          "p178"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-030",
+      "from": "institutional-accountability",
+      "to": "justice",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Rozliczalność wymaga sprawiedliwości wobec pokrzywdzonych. W Kościele oznacza słuchanie ofiar, ujawnianie prawdy, naprawę i zapobieganie, a nie tylko publiczny opis własnych procedur.",
+        "sourceRefs": [
+          "p086",
+          "p089",
+          "p138"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-031",
+      "from": "institutional-accountability",
+      "to": "history",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Przyznane opóźnienia i współudział ograniczają triumfalną opowieść o rozwoju nauczania. Deklarowana ciągłość godności musi być opowiadana razem z niewolnictwem i dzisiejszą odpowiedzialnością, nie zamiast nich.",
+        "sourceRefs": [
+          "p029",
+          "p045",
+          "p176",
+          "p177"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-032",
+      "from": "memory",
+      "to": "institutional-accountability",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Pamięć kościelnego współudziału wspiera obecne rozliczanie instytucji. Powinna prowadzić do ochrony, wyzwolenia i rehabilitacji ludzi, aby przeprosiny nie zastąpiły zmiany praktyki.",
+        "sourceRefs": [
+          "p176",
+          "p177"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-033",
+      "from": "memory",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Pamięć wojen i perspektywa ofiar utrudniają oswojenie przemocy jako zwykłego narzędzia. Wysłuchanie ma wzmacniać ochronę i pokój, a nie służyć usprawiedliwianiu odwetu.",
+        "sourceRefs": [
+          "p191",
+          "p216",
+          "p217",
+          "p244"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-034",
+      "from": "justice",
+      "to": "peace",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Sprawiedliwość nadaje pokojowi treść większą niż cisza między konfliktami. Bez zmiany krzywdzących relacji samo pragnienie spokoju może utrwalać przemoc i dominację.",
+        "sourceRefs": [
+          "p205",
+          "p215"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-035",
+      "from": "ai-governance",
+      "to": "peace",
+      "type": "applies-to",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Wojna jest szczególnie wymagającym zastosowaniem zasad zarządzania AI. Potrzebuje rygorystycznych granic delegacji, czasu oceny, identyfikowalnej odpowiedzialności i ochrony niewalczących.",
+        "sourceRefs": [
+          "p197",
+          "p198",
+          "p199",
+          "p200"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-036",
+      "from": "institutional-accountability",
+      "to": "ai-governance",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Rozliczalność wspiera nadzór przez wskazanie osób, uzasadnienie i możliwość odtworzenia decyzji. Wysokie ryzyko nie pozwala zastąpić rzeczywistej kontroli człowieka samym zatwierdzeniem wyniku maszyny.",
+        "sourceRefs": [
+          "p105",
+          "p164",
+          "p199",
+          "p200"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-037",
+      "from": "dialogue",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Dialog służy pokojowi jako droga negocjacji, gwarancji i reformy instytucji. Zdrowy realizm szuka osiągalnego rozwiązania także z niewygodnym rozmówcą, zamiast ogłaszać przemoc jedyną możliwością.",
+        "sourceRefs": [
+          "p218",
+          "p219",
+          "p221",
+          "p224",
+          "p226"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-038",
+      "from": "solidarity",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Solidarność przemienia rosnącą współzależność w świadomą odpowiedzialność. Instytucje braterstwa mogą nadać wspólny kierunek światu połączonemu sieciami, lecz nadal podatnemu na zbrojną rywalizację.",
+        "sourceRefs": [
+          "p186",
+          "p187"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-039",
+      "from": "hope",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Nadzieja wspiera pokój przez wytrwałość w odpowiedzialnych decyzjach. Źródło nie obiecuje magicznego końca konfliktu; zachęca do możliwego wkładu mimo nierównego wpływu i braku spektakularnego sukcesu.",
+        "sourceRefs": [
+          "p211",
+          "p212",
+          "p213"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-040",
+      "from": "faith-foundations",
+      "to": "hope",
+      "type": "provides-source-foundation-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Łaska i obietnica daru wspólnego miasta uzasadniają w źródle nadzieję na przemianę. Jest to chrześcijańskie wyjaśnienie, odrębne od technicznego samowzmocnienia i bez gwarancji automatycznego postępu.",
+        "sourceRefs": [
+          "p126",
+          "p127",
+          "p211",
+          "p242",
+          "p245"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-041",
+      "from": "faith-foundations",
+      "to": "solidarity",
+      "type": "provides-source-foundation-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Sakramentalna jedność jest dla autora źródłem chrześcijańskiej solidarności. Członkostwo ma rodzić dzielenie się i głos wykluczonych; nie ogranicza się do prywatnej pobożności lub recytowanej odpowiedzi.",
+        "sourceRefs": [
+          "p088",
+          "p234",
+          "p235"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-042",
+      "from": "care",
+      "to": "faith-foundations",
+      "type": "has-source-foundation-in",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Źródło wiąże troskę o ludzką kruchość z przyjęciem ciała przez Boga i religijną godnością każdego ciała. Ta opcjonalna podstawa wyjaśnia argument autora, zachowując praktyczną potrzebę bliskości i relacji.",
+        "sourceRefs": [
+          "p231",
+          "p232",
+          "p233",
+          "p239"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-043",
+      "from": "history",
+      "to": "dialogue",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Historia nauczania pokazuje wartość autonomii spraw ziemskich, spotkania z naukami i wspólnego rozeznania. Przyznanie różnych perspektyw i dawnych błędów wspiera dialog zamiast roszczenia do posiadania wszystkich odpowiedzi.",
+        "sourceRefs": [
+          "p020",
+          "p023",
+          "p024",
+          "p025",
+          "p027",
+          "p045"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-044",
+      "from": "hope",
+      "to": "development",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Kruche osiągnięcia i świadkowie dobra podtrzymują możliwość rozwoju. Nadzieja wymaga zorganizowanej pracy i codziennego dzielenia, bez których sama obietnica lepszego świata nie zmienia warunków życia.",
+        "sourceRefs": [
+          "p123",
+          "p124",
+          "p125",
+          "p126",
+          "p236",
+          "p241",
+          "p245"
+        ]
+      },
+      "placement": "main"
+    }
+  ]
+}
