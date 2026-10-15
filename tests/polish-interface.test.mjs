@@ -16,8 +16,8 @@ test('Polish publication requires complete reading and 291 localized keys with e
   assert.equal(Object.keys(messages).length, 291);
   const neutral = new Set(['app.magnifica_humanitas', 'app.atlas', 'concept.value_magnifica_humanitas', 'block.description']);
   for (const [key, text] of Object.entries(messages)) if (!neutral.has(key)) assert.notEqual(text, english[key], key);
-  assert.deepEqual(availableLocales.map(l => l.id), ['en', 'it', 'de', 'es', 'fr', 'pt', 'pl']);
-  for (const l of localeRegistry.filter(l => !['en', 'it', 'de', 'es', 'fr', 'pt', 'pl'].includes(l.id))) assert.equal(l.reviewed, false);
+  assert.deepEqual(availableLocales.map(l => l.id), ['en', 'it', 'de', 'es', 'fr', 'pt', 'pl', 'be']);
+  for (const l of localeRegistry.filter(l => !['en', 'it', 'de', 'es', 'fr', 'pt', 'pl', 'be'].includes(l.id))) assert.equal(l.reviewed, false);
   assert.equal(messages['about.mh_en_owner_2026'], reading.editionId);
   assert.match(messages['about.this_is_an_english_editorial_reading_of_leo_xiv_s'], /polskie opracowanie.*Leona XIV/);
   const evidence = read('content/editorial/pl/interface-review.json');
@@ -53,10 +53,10 @@ test('Polish search folds accents and case and recognizes akapit and stable para
 });
 
 test('Polish browser defaults preserve ordered regional preferences and explicit language URLs', () => {
-  assert.equal(resolveBrowserLocale({ languages: ['be-BY', 'PL-pl', 'it'] }), 'pl');
+  assert.equal(resolveBrowserLocale({ languages: ['ar-EG', 'PL-pl', 'it'] }), 'pl');
   for (const locale of ['en-GB', 'it-IT', 'de-AT', 'es-MX', 'fr-FR', 'pt-BR']) assert.equal(resolveBrowserLocale({ languages: [locale, 'pl-PL'] }), locale.split('-')[0]);
   assert.equal(resolveBrowserLocale({ languages: ['ar', 'ru'], language: 'pl-PL' }), 'pl');
-  assert.equal(resolveBrowserLocale({ languages: ['ar', 'ru'], language: 'be' }), 'en');
+  assert.equal(resolveBrowserLocale({ languages: ['ar', 'ru'], language: 'ar' }), 'en');
   for (const route of ['/en/source/p052', '/it/notes/n143', '/de/concepts/dignity', '/es/about', '/fr/concepts/dignity', '/pt/read']) assert.equal(resolveLocaleRoute(route, { languages: ['pl'] }), route);
   assert.equal(resolveLocaleRoute('/search?q=godno%C5%9B%C4%87#concept', { languages: ['pl-PL'] }), '/pl/search?q=godno%C5%9B%C4%87#concept');
 });
