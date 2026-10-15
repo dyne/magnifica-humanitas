@@ -1,0 +1,543 @@
+{
+  "schemaVersion": 1,
+  "locale": "be",
+  "editionId": "mh-be-official-html-2026-10-14",
+  "readingRevision": "be-2026-10-15-reading-2",
+  "reviewDate": "2026-10-15",
+  "observedAt": "2026-10-15T09:41:28.602461+00:00",
+  "status": "interface-verified-awaiting-supervisor-review",
+  "catalogSha256": "b69dab089aab678bcd56d99d9b16c3962fe73e1d56b8e6a188cf4216e907ec7f",
+  "readingSha256": "075783ca583b02e8aaac0f3d16e8358dc39000357dffd1e8d4c56ed53c27da24",
+  "semanticReviewSha256": "df87379e4b052308a42399bd11fa1c4f36cfa8657655a1e2c995d212578c4c1f",
+  "catalogReview": {
+    "keys": 291,
+    "method": "Every public and assistive catalog entry reviewed in context against accepted Belarusian terminology. Interface prose is editorial; exact quotations remain frozen. Placeholder parity, document titles, About attribution, errors, empty states, live messages, neutral count grammar, source callers, note dependencies and all relation labels checked.",
+    "sourceAnomalies": "The §215 Psalm alternative number [84] and frozen n084 backlink remain intact; explanatory prose identifies Augustine n191. Same-author n066/n067/n201 and closing-Benedict n163 dependency are preserved."
+  },
+  "commands": [
+    {
+      "command": "npm run check",
+      "exitStatus": 0,
+      "log": "output/belarusian/interface/check.log",
+      "sha256": "db5d5c465a15c5e7b5ec00c7350a9e9f0c2142cb87cecb40d64666c60a5de1fa",
+      "unitTests": 252
+    },
+    {
+      "command": "npm run source:check",
+      "exitStatus": 0,
+      "log": "output/belarusian/interface/source-check.log",
+      "sha256": "906ec5155d55515942e195fed4551387a653d31cd946577d2e7be27d9faed5c0"
+    },
+    {
+      "command": "PLAYWRIGHT_BROWSERS_PATH=/tmp/magnifica-playwright BROWSER_EVIDENCE_DIR=output/belarusian/hosting npm run test:browser:all",
+      "exitStatus": 0,
+      "log": "output/belarusian/interface/browser-all.log",
+      "sha256": "520c424119b0672f9f638c3b7843b0e06d28ccec1cde06c2bcba42ebf9bb2b80"
+    },
+    {
+      "command": "MAGNIFICA_RTL_FIXTURE=1 VITE_BASE=/ npx vite build --mode locale-fixture",
+      "exitStatus": 0,
+      "log": "output/belarusian/interface/rtl-build-final.log",
+      "sha256": "76fa296e0bba8fa99ae12ba7ca91116b6c258fa623247a7e206c373e64213bd0"
+    },
+    {
+      "command": "VITE_BASE=/ PLAYWRIGHT_BROWSERS_PATH=/tmp/magnifica-playwright npx playwright test --config playwright.locale.config.ts",
+      "exitStatus": 0,
+      "log": "output/belarusian/interface/rtl-browser-corrected.log",
+      "sha256": "9c718d318b9edeb5725189e63543453d3be0e9457916055164abadf1558f3af5"
+    }
+  ],
+  "hosting": {
+    "root": {
+      "stats": {
+        "startTime": "2026-10-15T09:34:07.981Z",
+        "duration": 51793.076,
+        "expected": 378,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "belarusianTests": 52,
+      "matrixSurfaceSamples": 36,
+      "dedicatedLetterSamples": 1,
+      "paintedFontFamilies": [
+        "Inter"
+      ],
+      "allPaintedFontsCustom": true,
+      "results": "output/belarusian/hosting/root-browser-results.json",
+      "sha256": "dc85f2993c895267b292538f16aea09e817b52f4ecd89f129265f2a9095314db"
+    },
+    "subpath": {
+      "stats": {
+        "startTime": "2026-10-15T09:35:01.451Z",
+        "duration": 51865.06,
+        "expected": 378,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "belarusianTests": 52,
+      "matrixSurfaceSamples": 36,
+      "dedicatedLetterSamples": 1,
+      "paintedFontFamilies": [
+        "Inter"
+      ],
+      "allPaintedFontsCustom": true,
+      "results": "output/belarusian/hosting/subpath-browser-results.json",
+      "sha256": "ad39e766db5df38d65340ad4eddf23d8069f5604e5371542b33cb4146d925d82"
+    }
+  },
+  "isolatedRtl": {
+    "stats": {
+      "startTime": "2026-10-15T09:40:32.954Z",
+      "duration": 12912.048999999999,
+      "expected": 11,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "results": "output/locale-fixture-results.json",
+    "sha256": "f95d41472e7ed099112d347ce80bf3e21ccb8a10010d67d855c10e0d0e007a30",
+    "productSourceChanges": false
+  },
+  "fontReview": {
+    "reason": "Installed Syne Latin assets lack Cyrillic. An initial html-only custom-property override was ineffective because descendant :lang(be) inherited the older declaration. The final override follows that rule in style.css and uses the installed Inter Cyrillic variable face.",
+    "coverageEvidence": "output/belarusian/interface/installed-font-coverage.json",
+    "coverageSha256": "12b0c1e88f8f177c0de37478a5159124fb689d627413e19634a819ddc91f3754",
+    "method": "fc-scan reads actual installed font cmap; Chromium CDP CSS.getPlatformFontsForNode confirms actual custom Inter painting in heading/body on 72 matrix surfaces and two dedicated paragraphs containing ў and і. CSS declarations alone are not the evidence.",
+    "coveredLetters": "БеларускаяЎўІіЁё",
+    "newDependency": false
+  },
+  "automatedCoverage": [
+    "Nine routes Atlas Concept Trail Read Source Note Search Saved About at 390×844 and 1440×900, text 100% and 200%, root and subpath, reduced motion",
+    "Keyboard selector/focus and equivalent route/query/anchor preservation; explicit URLs and ordered regional defaults",
+    "Localized Cyrillic search, canonical equivalence, distinct ў/у, ё/е, й/и and і/и",
+    "Bookmarks, caller return and source-note relationships including §215 anomaly",
+    "Pending, cancelled and failed switches preserve exact titles, history, last place, saved, recent and visited state",
+    "Standalone built source-context explanations p052/p118/p176/p244",
+    "Nine base phone surfaces with axe checks at each hosting base; actual painted fonts; no horizontal overflow; dark About"
+  ],
+  "visualReview": {
+    "method": "All eight nine-route contact sheets plus four selector/dark About sheets inspected; original mobile 200% Atlas and Concept images also inspected. Contact sheets preserve original aspect ratios with white padding. Automated screenshots and human visual inspection are separate evidence.",
+    "result": "Readable Cyrillic with no missing glyph boxes, clipped labels or horizontal overflow in reviewed captures. Keyboard focus visible. Dark About and selectors legible.",
+    "narrowTextWrapping": "At 390px and 200% text, shared overflow-wrap:anywhere can split long Belarusian headings within words (Atlas, Read and Saved). All letters remain visible; vertical scrolling is expected. Shared layout was preserved.",
+    "screenshots": [
+      {
+        "path": "output/belarusian/root-1440-100-about-dark.png",
+        "sha256": "4f2de6b1da37675779093957a36795a8897da43424e0f912c4aacba70ff5414a"
+      },
+      {
+        "path": "output/belarusian/root-1440-100-about.png",
+        "sha256": "ba693416dbec0bd83b54e72fdc950de09ebccda4f55297a3c4046b018afe528c"
+      },
+      {
+        "path": "output/belarusian/root-1440-100-atlas.png",
+        "sha256": "b0d64e38453e0860779369514f90b731f440544c5ae02c885b89a0ae0536e553"
+      },
+      {
+        "path": "output/belarusian/root-1440-100-concept.png",
+        "sha256": "66fee8cfb5c62b55193966eb6149909f35fefd6d9bc3e2d6a42775c9ac36c701"
+      },
+      {
+        "path": "output/belarusian/root-1440-100-note.png",
+        "sha256": "9f248692ca136945cda48fc8cf664499f15630d38e87064b3f7dd0490c333c2a"
+      },
+      {
+        "path": "output/belarusian/root-1440-100-read.png",
+        "sha256": "18abdd52847e77a60d8e48e44cf66aaf6ba261aee6d46830090118cbf5c23fd3"
+      },
+      {
+        "path": "output/belarusian/root-1440-100-saved.png",
+        "sha256": "a0069ab94a36e887854e6d66b923f24f05cdd738ff7532acc16b1bb3d612f4c8"
+      },
+      {
+        "path": "output/belarusian/root-1440-100-search.png",
+        "sha256": "bba0dfdee9d2e744bc3360d9454e7c40fd5a65e7f4aa9dc4876943ab38151292"
+      },
+      {
+        "path": "output/belarusian/root-1440-100-selector.png",
+        "sha256": "e95bc85a7355687a8bb8b39af39be3ca9bb0d8c34d951c9f122229a8023d3f32"
+      },
+      {
+        "path": "output/belarusian/root-1440-100-source.png",
+        "sha256": "c594db9140a1ef4d12d10997d49af2a4a59194e6fe55035f0465bc46373472a2"
+      },
+      {
+        "path": "output/belarusian/root-1440-100-trail.png",
+        "sha256": "cbbe34b4a72870b86cc726bbdc23dd61f1ad2680ea1bacd113beaf24ca59cbd4"
+      },
+      {
+        "path": "output/belarusian/root-1440-200-about-dark.png",
+        "sha256": "9941222af7b0efbb2d5f2b0f9476e1262f3395b62393ec46ca4c2aab087ea4f7"
+      },
+      {
+        "path": "output/belarusian/root-1440-200-about.png",
+        "sha256": "96ce30c5071a9e240b69567613429e8f677163842f3121bd868abf5d1d027047"
+      },
+      {
+        "path": "output/belarusian/root-1440-200-atlas.png",
+        "sha256": "b9ea52a95dd8b985ec5dc2367c859f81e95c769afa91c97cd34a5bac2ff2b4e0"
+      },
+      {
+        "path": "output/belarusian/root-1440-200-concept.png",
+        "sha256": "77913c858d171d0e04683f69031ef7e9b2d27652b053b6ab0fa4c8f400df3937"
+      },
+      {
+        "path": "output/belarusian/root-1440-200-note.png",
+        "sha256": "07717211e9296fa3ec49b7df8a59eef0c69701ae511db277dde30fb65f924ec6"
+      },
+      {
+        "path": "output/belarusian/root-1440-200-read.png",
+        "sha256": "d561c7ac8812b69e03629f029406ef1ac2c4b335599989f9fa5b1bb5b3fe9896"
+      },
+      {
+        "path": "output/belarusian/root-1440-200-saved.png",
+        "sha256": "dcd723b7904036e847c0cb101bee797ca8111f7d11aecf2c3b18f4b07f48c99c"
+      },
+      {
+        "path": "output/belarusian/root-1440-200-search.png",
+        "sha256": "6d1ef99e3a9763cba309983872c54a9a95c64e9662393deda137b37ee838599e"
+      },
+      {
+        "path": "output/belarusian/root-1440-200-selector.png",
+        "sha256": "1eb5a18b92eaca4dadc313fe6bb6dfc53879b9c95f05709879f27d53fded949a"
+      },
+      {
+        "path": "output/belarusian/root-1440-200-source.png",
+        "sha256": "5b87f966f4ddbcdb66208127465f0c8993dae96f1236df1faea98e30acd755e5"
+      },
+      {
+        "path": "output/belarusian/root-1440-200-trail.png",
+        "sha256": "9c850fc2d1140dd63ceaa05f196344893e21ea5ff2b1e2316017f9826aed1b70"
+      },
+      {
+        "path": "output/belarusian/root-390-100-about-dark.png",
+        "sha256": "c1c9ca43033cb8e5ce1551f3d439a92f60ac2cca1c5311505d6aa7b0363d2d95"
+      },
+      {
+        "path": "output/belarusian/root-390-100-about.png",
+        "sha256": "309094ab79293669eacc9673816bf2b39965df000fc201c86601076e1453ed26"
+      },
+      {
+        "path": "output/belarusian/root-390-100-atlas.png",
+        "sha256": "b7d1eb0adfffbb269f2935357b5c43d17713298b9cad10289b036389cbc47d88"
+      },
+      {
+        "path": "output/belarusian/root-390-100-concept.png",
+        "sha256": "731d72a0fd1d6109479267027d90186ad3f3c489da8a29c21b9ed0db82d50dad"
+      },
+      {
+        "path": "output/belarusian/root-390-100-note.png",
+        "sha256": "f87d208c52dc1c55767c931b8cc6ae4d7ebcc7bfd37beccf9089eca4dcb93075"
+      },
+      {
+        "path": "output/belarusian/root-390-100-read.png",
+        "sha256": "db67e714ae7813c5fbd1b0ddf6989922001ef881d9d58bd40b2b5fdfd22ad3f3"
+      },
+      {
+        "path": "output/belarusian/root-390-100-saved.png",
+        "sha256": "708f1de5a8a30b752803b1ac4b426280fcf0d3f22804e0fae0c2cb5d2cc7a34e"
+      },
+      {
+        "path": "output/belarusian/root-390-100-search.png",
+        "sha256": "9db075c679952ad8c081b95eff15296ed72ce61edb768fe9354a99fe0c7a827a"
+      },
+      {
+        "path": "output/belarusian/root-390-100-selector.png",
+        "sha256": "45697030f9394d50c78e1b9b9f505ffe0c3fd8baa625af90386da2a795f4815a"
+      },
+      {
+        "path": "output/belarusian/root-390-100-source.png",
+        "sha256": "f6abacf037a1bcc1ef9e9a39e0b84c2e5a8c74b3de9ff23758f19a42a2150dfc"
+      },
+      {
+        "path": "output/belarusian/root-390-100-trail.png",
+        "sha256": "df24306b89af6e692e0894ed204916cc50c61832f55eba1a5e6d08dcfd65ef36"
+      },
+      {
+        "path": "output/belarusian/root-390-200-about-dark.png",
+        "sha256": "147ded9fee19407aa1bd639d54f17724dcbb0163b8cea6c44e3e2fff23689c80"
+      },
+      {
+        "path": "output/belarusian/root-390-200-about.png",
+        "sha256": "98312e51f78b9d0433b48f816c0ba8c5eef9eba12d5ac91445c4b470cdceb0f3"
+      },
+      {
+        "path": "output/belarusian/root-390-200-atlas.png",
+        "sha256": "8bdb20d6295577414e2a2cd99f33787503fa69ab253d0c158b7065504277ca42"
+      },
+      {
+        "path": "output/belarusian/root-390-200-concept.png",
+        "sha256": "b8ffbe0d976931ece1ba446e010d0d249da4f9e7dea9c5973f9980a37d825ced"
+      },
+      {
+        "path": "output/belarusian/root-390-200-note.png",
+        "sha256": "5cad669bbca154752fc7167b3e9f231b29b6afd35f3523e47ef0c4ece2f3bbe1"
+      },
+      {
+        "path": "output/belarusian/root-390-200-read.png",
+        "sha256": "ad3d506af358b6ea097354cd44b19ad4b699e644f9977886e358511aa7906218"
+      },
+      {
+        "path": "output/belarusian/root-390-200-saved.png",
+        "sha256": "3f592b80a8f778588f4e525cba06f6de373ae764f2e80b62d0fa46c90dafdd1c"
+      },
+      {
+        "path": "output/belarusian/root-390-200-search.png",
+        "sha256": "e8fab2ecea6eccc317d270339d347eedcd924165c6febc9b3da63fe7dc149f94"
+      },
+      {
+        "path": "output/belarusian/root-390-200-selector.png",
+        "sha256": "7bd1ad77bf3587ae3abe491deba39d7a1cb1ba076753205d1e4f042fe244d605"
+      },
+      {
+        "path": "output/belarusian/root-390-200-source.png",
+        "sha256": "307902ec6864b70dfd165fe5e9cb95a6789602f2be108c4834146440173e8067"
+      },
+      {
+        "path": "output/belarusian/root-390-200-trail.png",
+        "sha256": "9e9f785bf802724850a45f22a82cdc4ff415f0a0b55e5480865c231d77813a16"
+      },
+      {
+        "path": "output/belarusian/subpath-1440-100-about-dark.png",
+        "sha256": "4f2de6b1da37675779093957a36795a8897da43424e0f912c4aacba70ff5414a"
+      },
+      {
+        "path": "output/belarusian/subpath-1440-100-about.png",
+        "sha256": "ba693416dbec0bd83b54e72fdc950de09ebccda4f55297a3c4046b018afe528c"
+      },
+      {
+        "path": "output/belarusian/subpath-1440-100-atlas.png",
+        "sha256": "26a6647033929a218025e55e8e9ab0360ad246facb398ad892d912c7ae21bc35"
+      },
+      {
+        "path": "output/belarusian/subpath-1440-100-concept.png",
+        "sha256": "a41d9b2de75bae19c026baa8c1a77a55460bfab9cff88779f340aaaeec0418c1"
+      },
+      {
+        "path": "output/belarusian/subpath-1440-100-note.png",
+        "sha256": "9f248692ca136945cda48fc8cf664499f15630d38e87064b3f7dd0490c333c2a"
+      },
+      {
+        "path": "output/belarusian/subpath-1440-100-read.png",
+        "sha256": "18abdd52847e77a60d8e48e44cf66aaf6ba261aee6d46830090118cbf5c23fd3"
+      },
+      {
+        "path": "output/belarusian/subpath-1440-100-saved.png",
+        "sha256": "a0069ab94a36e887854e6d66b923f24f05cdd738ff7532acc16b1bb3d612f4c8"
+      },
+      {
+        "path": "output/belarusian/subpath-1440-100-search.png",
+        "sha256": "bba0dfdee9d2e744bc3360d9454e7c40fd5a65e7f4aa9dc4876943ab38151292"
+      },
+      {
+        "path": "output/belarusian/subpath-1440-100-selector.png",
+        "sha256": "5e4888cbb71a66ebed2d2687595d85e0af616e5aa87824367542278284330f1d"
+      },
+      {
+        "path": "output/belarusian/subpath-1440-100-source.png",
+        "sha256": "c594db9140a1ef4d12d10997d49af2a4a59194e6fe55035f0465bc46373472a2"
+      },
+      {
+        "path": "output/belarusian/subpath-1440-100-trail.png",
+        "sha256": "cbbe34b4a72870b86cc726bbdc23dd61f1ad2680ea1bacd113beaf24ca59cbd4"
+      },
+      {
+        "path": "output/belarusian/subpath-1440-200-about-dark.png",
+        "sha256": "9941222af7b0efbb2d5f2b0f9476e1262f3395b62393ec46ca4c2aab087ea4f7"
+      },
+      {
+        "path": "output/belarusian/subpath-1440-200-about.png",
+        "sha256": "96ce30c5071a9e240b69567613429e8f677163842f3121bd868abf5d1d027047"
+      },
+      {
+        "path": "output/belarusian/subpath-1440-200-atlas.png",
+        "sha256": "b9ea52a95dd8b985ec5dc2367c859f81e95c769afa91c97cd34a5bac2ff2b4e0"
+      },
+      {
+        "path": "output/belarusian/subpath-1440-200-concept.png",
+        "sha256": "77913c858d171d0e04683f69031ef7e9b2d27652b053b6ab0fa4c8f400df3937"
+      },
+      {
+        "path": "output/belarusian/subpath-1440-200-note.png",
+        "sha256": "07717211e9296fa3ec49b7df8a59eef0c69701ae511db277dde30fb65f924ec6"
+      },
+      {
+        "path": "output/belarusian/subpath-1440-200-read.png",
+        "sha256": "d561c7ac8812b69e03629f029406ef1ac2c4b335599989f9fa5b1bb5b3fe9896"
+      },
+      {
+        "path": "output/belarusian/subpath-1440-200-saved.png",
+        "sha256": "dcd723b7904036e847c0cb101bee797ca8111f7d11aecf2c3b18f4b07f48c99c"
+      },
+      {
+        "path": "output/belarusian/subpath-1440-200-search.png",
+        "sha256": "6d1ef99e3a9763cba309983872c54a9a95c64e9662393deda137b37ee838599e"
+      },
+      {
+        "path": "output/belarusian/subpath-1440-200-selector.png",
+        "sha256": "1eb5a18b92eaca4dadc313fe6bb6dfc53879b9c95f05709879f27d53fded949a"
+      },
+      {
+        "path": "output/belarusian/subpath-1440-200-source.png",
+        "sha256": "5b87f966f4ddbcdb66208127465f0c8993dae96f1236df1faea98e30acd755e5"
+      },
+      {
+        "path": "output/belarusian/subpath-1440-200-trail.png",
+        "sha256": "9c850fc2d1140dd63ceaa05f196344893e21ea5ff2b1e2316017f9826aed1b70"
+      },
+      {
+        "path": "output/belarusian/subpath-390-100-about-dark.png",
+        "sha256": "c1c9ca43033cb8e5ce1551f3d439a92f60ac2cca1c5311505d6aa7b0363d2d95"
+      },
+      {
+        "path": "output/belarusian/subpath-390-100-about.png",
+        "sha256": "309094ab79293669eacc9673816bf2b39965df000fc201c86601076e1453ed26"
+      },
+      {
+        "path": "output/belarusian/subpath-390-100-atlas.png",
+        "sha256": "b7d1eb0adfffbb269f2935357b5c43d17713298b9cad10289b036389cbc47d88"
+      },
+      {
+        "path": "output/belarusian/subpath-390-100-concept.png",
+        "sha256": "731d72a0fd1d6109479267027d90186ad3f3c489da8a29c21b9ed0db82d50dad"
+      },
+      {
+        "path": "output/belarusian/subpath-390-100-note.png",
+        "sha256": "f87d208c52dc1c55767c931b8cc6ae4d7ebcc7bfd37beccf9089eca4dcb93075"
+      },
+      {
+        "path": "output/belarusian/subpath-390-100-read.png",
+        "sha256": "db67e714ae7813c5fbd1b0ddf6989922001ef881d9d58bd40b2b5fdfd22ad3f3"
+      },
+      {
+        "path": "output/belarusian/subpath-390-100-saved.png",
+        "sha256": "708f1de5a8a30b752803b1ac4b426280fcf0d3f22804e0fae0c2cb5d2cc7a34e"
+      },
+      {
+        "path": "output/belarusian/subpath-390-100-search.png",
+        "sha256": "9db075c679952ad8c081b95eff15296ed72ce61edb768fe9354a99fe0c7a827a"
+      },
+      {
+        "path": "output/belarusian/subpath-390-100-selector.png",
+        "sha256": "45697030f9394d50c78e1b9b9f505ffe0c3fd8baa625af90386da2a795f4815a"
+      },
+      {
+        "path": "output/belarusian/subpath-390-100-source.png",
+        "sha256": "f6abacf037a1bcc1ef9e9a39e0b84c2e5a8c74b3de9ff23758f19a42a2150dfc"
+      },
+      {
+        "path": "output/belarusian/subpath-390-100-trail.png",
+        "sha256": "df24306b89af6e692e0894ed204916cc50c61832f55eba1a5e6d08dcfd65ef36"
+      },
+      {
+        "path": "output/belarusian/subpath-390-200-about-dark.png",
+        "sha256": "147ded9fee19407aa1bd639d54f17724dcbb0163b8cea6c44e3e2fff23689c80"
+      },
+      {
+        "path": "output/belarusian/subpath-390-200-about.png",
+        "sha256": "98312e51f78b9d0433b48f816c0ba8c5eef9eba12d5ac91445c4b470cdceb0f3"
+      },
+      {
+        "path": "output/belarusian/subpath-390-200-atlas.png",
+        "sha256": "8bdb20d6295577414e2a2cd99f33787503fa69ab253d0c158b7065504277ca42"
+      },
+      {
+        "path": "output/belarusian/subpath-390-200-concept.png",
+        "sha256": "b8ffbe0d976931ece1ba446e010d0d249da4f9e7dea9c5973f9980a37d825ced"
+      },
+      {
+        "path": "output/belarusian/subpath-390-200-note.png",
+        "sha256": "5cad669bbca154752fc7167b3e9f231b29b6afd35f3523e47ef0c4ece2f3bbe1"
+      },
+      {
+        "path": "output/belarusian/subpath-390-200-read.png",
+        "sha256": "ad3d506af358b6ea097354cd44b19ad4b699e644f9977886e358511aa7906218"
+      },
+      {
+        "path": "output/belarusian/subpath-390-200-saved.png",
+        "sha256": "3f592b80a8f778588f4e525cba06f6de373ae764f2e80b62d0fa46c90dafdd1c"
+      },
+      {
+        "path": "output/belarusian/subpath-390-200-search.png",
+        "sha256": "e8fab2ecea6eccc317d270339d347eedcd924165c6febc9b3da63fe7dc149f94"
+      },
+      {
+        "path": "output/belarusian/subpath-390-200-selector.png",
+        "sha256": "7bd1ad77bf3587ae3abe491deba39d7a1cb1ba076753205d1e4f042fe244d605"
+      },
+      {
+        "path": "output/belarusian/subpath-390-200-source.png",
+        "sha256": "307902ec6864b70dfd165fe5e9cb95a6789602f2be108c4834146440173e8067"
+      },
+      {
+        "path": "output/belarusian/subpath-390-200-trail.png",
+        "sha256": "9e9f785bf802724850a45f22a82cdc4ff415f0a0b55e5480865c231d77813a16"
+      }
+    ],
+    "contactSheets": [
+      {
+        "path": "output/belarusian/interface/contact-sheets/root-1440-100.jpg",
+        "sha256": "7afc4ad223b9da005a9e6dcaac894e11f058a05ddd681f2fbe901da4021c564a"
+      },
+      {
+        "path": "output/belarusian/interface/contact-sheets/root-1440-200.jpg",
+        "sha256": "66efa03b3ca1f4fcac1c83ecef5619e54bdd72245d0532b12673edd44d088773"
+      },
+      {
+        "path": "output/belarusian/interface/contact-sheets/root-390-100.jpg",
+        "sha256": "9857c645440eb2efd6ea660ee829cd78f187ca64ba4b5ce0d58a9adf42299559"
+      },
+      {
+        "path": "output/belarusian/interface/contact-sheets/root-390-200.jpg",
+        "sha256": "44d2aa9a566327e6a4af32460dbb068ef2d13bd1680f8c64e000ebd5bd465f32"
+      },
+      {
+        "path": "output/belarusian/interface/contact-sheets/root-about-dark.jpg",
+        "sha256": "e34daab4043012ea9f78bbd124c254c598fbdf72d59adefe643a91ca8ae66041"
+      },
+      {
+        "path": "output/belarusian/interface/contact-sheets/root-selector.jpg",
+        "sha256": "64c420189e3bc71909e804116eafcfa593460b6500ac04640cb5e22862889024"
+      },
+      {
+        "path": "output/belarusian/interface/contact-sheets/subpath-1440-100.jpg",
+        "sha256": "aa9c70e11433f7684db12877d45c03df2dd24acf92dfd3634a35d79c479393b9"
+      },
+      {
+        "path": "output/belarusian/interface/contact-sheets/subpath-1440-200.jpg",
+        "sha256": "176f2b6f50115599086e4c0db55065b62b8ac96c0592c9124834014fa6c811ed"
+      },
+      {
+        "path": "output/belarusian/interface/contact-sheets/subpath-390-100.jpg",
+        "sha256": "339d4eedc393164abf99cb625e4a00ef05bc22afaa4cbb8e0e8ebb8d16110ddb"
+      },
+      {
+        "path": "output/belarusian/interface/contact-sheets/subpath-390-200.jpg",
+        "sha256": "442ca2a8af19293ea7fcd6e54c6f4f9e6fe5e1ad3c8f0b034fef7db6a9574c08"
+      },
+      {
+        "path": "output/belarusian/interface/contact-sheets/subpath-about-dark.jpg",
+        "sha256": "add3de8ca21aa7b57c7780f52c76339175c63f0849b906d08a3a394f90eeec76"
+      },
+      {
+        "path": "output/belarusian/interface/contact-sheets/subpath-selector.jpg",
+        "sha256": "6a428ffe520b8fd43ef23b4d4452f4a6dda0224dbb3001c75ba5bcab17d58ad0"
+      }
+    ]
+  },
+  "diagnostics": {
+    "resolved": [
+      "Initial copied browser fixture assumptions were updated to Belarusian prose and reading data. Availability fixtures now include be and use ar/ru for unsupported cases.",
+      "Initial isolated fixture runs used inconsistent preview base settings and one overlapping server; final explicit VITE_BASE=/ build and test passed. No RTL source edits."
+    ],
+    "impeccable": "Detector reports only the existing Inter overused-font warning (exit 2). Keeping installed licensed Inter is justified by pinned typography and actual Cyrillic coverage; no functional defect was reported.",
+    "detectorReport": "output/belarusian/interface/impeccable-detect.json"
+  },
+  "limitations": [
+    "Browser evidence is desktop headless Chromium emulation, not physical-device testing.",
+    "Visual inspection and source comparison do not constitute independent native-speaker proofreading.",
+    "No screen-reader user study or learning-outcome/publication-readiness claim.",
+    "Viewport screenshots cover visible surfaces; full semantic coverage rests on separate reading and alignment evidence."
+  ]
+}
