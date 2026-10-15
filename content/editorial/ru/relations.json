@@ -1,0 +1,786 @@
+{
+  "schemaVersion": 1,
+  "language": "ru",
+  "editionId": "mh-ru-official-html-2026-10-14",
+  "relations": [
+    {
+      "id": "rel-001",
+      "from": "faith-foundations",
+      "to": "dignity",
+      "type": "provides-source-foundation-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "В источнике создание и Божия любовь объясняют достоинство, не зависящее от заслуг или обстоятельств. Эта связь дает христианское основание автора; понимание ее не требует от читателя принятия веры.",
+        "sourceRefs": [
+          "p050",
+          "p052",
+          "p053"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-002",
+      "from": "dignity",
+      "to": "rights",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Права принадлежат личности потому, что она уже имеет достоинство, а не потому, что заслужила защиту результатами. Поэтому их провозглашение должно сопровождаться практическими гарантиями для каждого.",
+        "sourceRefs": [
+          "p051",
+          "p054",
+          "p055"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-003",
+      "from": "dignity",
+      "to": "common-good",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Уважение каждого имеет общественную форму: условия совместной жизни должны помогать людям и группам развиваться. Общее благо нельзя оценивать одной суммой выгод, оставляя исключенных за пределами расчета.",
+        "sourceRefs": [
+          "p059",
+          "p060"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-004",
+      "from": "common-good",
+      "to": "shared-goods",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Если совместные условия предназначены всем, доступ к поддерживающим жизнь благам не может быть привилегией немногих. Из общего блага автор выводит всеобщее предназначение и социальный предел признанного права собственности.",
+        "sourceRefs": [
+          "p065",
+          "p066"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-005",
+      "from": "shared-goods",
+      "to": "distribution",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Распределение оценивается не только по количеству произведенного: важны доступ к знаниям и технологиям и социальная функция владения. Признанная собственность остается подчиненной общему предназначению, а справедливость действует также внутри производства.",
+        "sourceRefs": [
+          "p066",
+          "p067",
+          "p161",
+          "p162"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-006",
+      "from": "subsidiarity",
+      "to": "common-good",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Поддержанные люди, семьи и объединения могут вносить самостоятельный вклад в общее благо. Государство координирует и защищает их возможности без постоянной подмены; отказ от вмешательства сам по себе этой поддержки не дает.",
+        "sourceRefs": [
+          "p068",
+          "p069",
+          "p070"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-007",
+      "from": "subsidiarity",
+      "to": "dialogue",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Близость решений к людям требует голоса до их принятия. При цифровой власти это означает участие в правилах, проверку, доступ и обжалование, а не один разговор после решения платформы.",
+        "sourceRefs": [
+          "p070",
+          "p071",
+          "p072"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-008",
+      "from": "solidarity",
+      "to": "subsidiarity",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Субсидиарность без солидарности защищает частный интерес, солидарность без нее превращается в опеку. Уважение местной самостоятельности должно сочетаться с ответственностью перед другими народами, слабыми и будущими поколениями.",
+        "sourceRefs": [
+          "p068",
+          "p069",
+          "p073",
+          "p075",
+          "p076"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-009",
+      "from": "common-good",
+      "to": "development",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Общее благо дает развитию меру шире накопления: люди и народы должны возрастать во всех измерениях. Техника оценивается по достоинству и участию, а не отделяется от них как самостоятельная цель.",
+        "sourceRefs": [
+          "p059",
+          "p060",
+          "p082",
+          "p083",
+          "p085"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-010",
+      "from": "justice",
+      "to": "development",
+      "type": "provides-test-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Развитие проверяется судьбой исключенных и экологическими последствиями. Если выгода одних сохраняет зависимость других или разрушает будущие условия жизни, технический и экономический рост недостаточен.",
+        "sourceRefs": [
+          "p079",
+          "p083",
+          "p084",
+          "p085"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-011",
+      "from": "justice",
+      "to": "ai-governance",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Справедливость в цифровой среде требует участия и надзора, устраняющих дискриминацию. Она должна определять проектирование заранее; исправление после внедрения не заменяет справедливых исходных правил и доступа.",
+        "sourceRefs": [
+          "p080",
+          "p109",
+          "p164"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-012",
+      "from": "shared-goods",
+      "to": "ai-governance",
+      "type": "applies-to",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Всеобщее предназначение распространяется на платформы, данные, алгоритмы и образование. Поэтому управление ИИ касается совместного пользования и голоса общин, а не только частного права приобрести инструмент.",
+        "sourceRefs": [
+          "p067",
+          "p108",
+          "p109"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-013",
+      "from": "technology-power",
+      "to": "ai-governance",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Концентрированная власть над инфраструктурой и правилами требует прозрачной ответственности и общественного обсуждения. Этика не ограничивается благими намерениями владельцев: нужны закон, независимый контроль и возможность оспаривать цели.",
+        "sourceRefs": [
+          "p005",
+          "p071",
+          "p095",
+          "p105",
+          "p106",
+          "p107"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-014",
+      "from": "dignity",
+      "to": "ai-governance",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Человека нельзя свести к окончательному профилю, закрывающему доступ к работе или услуге. Достоинство требует понятного и оспоримого решения, ответственности и исправления ущерба, включая шанс на изменение человека.",
+        "sourceRefs": [
+          "p102",
+          "p103",
+          "p105",
+          "p164"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-015",
+      "from": "ai-limits",
+      "to": "ai-governance",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Авторское различение вычисления и совести объясняет, почему ответственность нельзя отдать системе. Приписанная источнику позиция о пределах ИИ сосуществует с полезностью средств, но особенно ограничивает делегирование необратимого решения.",
+        "sourceRefs": [
+          "p099",
+          "p105",
+          "p198"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-016",
+      "from": "embodiment",
+      "to": "ai-limits",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Телесность, отношения и конечность не измеряются вычислительной скоростью. В источнике они ограничивают уподобление человека ИИ и оставляют место личному изменению, которое не равно статистической корректировке.",
+        "sourceRefs": [
+          "p099",
+          "p112",
+          "p118",
+          "p128"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-017",
+      "from": "care",
+      "to": "embodiment",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Принятие ограниченности не является отказом от помощи. Русский источник требует стремиться устранить страдание и поддерживает полезную технику, если сохраняются свобода, отношения и человеческая ценность, а не обещается неуязвимость.",
+        "sourceRefs": [
+          "p114",
+          "p117",
+          "p118",
+          "p126"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-018",
+      "from": "care",
+      "to": "work",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Технологическая забота может освобождать от опасных задач, но переход должен сохранять занятость и общественное участие. Облегчение работы не оправдывает превращения работников в заменимые издержки.",
+        "sourceRefs": [
+          "p152",
+          "p153",
+          "p154"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-019",
+      "from": "technology-power",
+      "to": "dignity",
+      "type": "puts-in-tension",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Когда эффективность и контроль становятся единственной мерой, личность превращается в функцию для результата. Эта напряженность касается целей и устройства технической власти, а не означает, что всякий инструмент неизбежно унижает человека.",
+        "sourceRefs": [
+          "p092",
+          "p094",
+          "p095",
+          "p112"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-020",
+      "from": "truth",
+      "to": "dialogue",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Диалог нуждается в честном отношении к фактам и языке без разжигания ненависти. Общее стремление к истине позволяет обсуждать различия, не отказываясь от обличения несправедливости или голоса пострадавших.",
+        "sourceRefs": [
+          "p132",
+          "p134",
+          "p214",
+          "p219"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-021",
+      "from": "truth",
+      "to": "education",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Проверка фактов и понимание сложности требуют образования, терпения и внимания. Быстрый ответ не заменяет способности спрашивать, связывать знания и аргументировать; удобство становится проблемой, если лишает человека этой работы.",
+        "sourceRefs": [
+          "p137",
+          "p139",
+          "p140",
+          "p146"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-022",
+      "from": "education",
+      "to": "freedom",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Критическое и творческое обучение укрепляет самостоятельное суждение. Ему нужны поддержка семей и преподавателей, институциональные гарантии и общее время, а не только оснащение устройствами или обязанность ученика справиться одному.",
+        "sourceRefs": [
+          "p142",
+          "p145",
+          "p146",
+          "p147",
+          "p238"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-023",
+      "from": "technology-power",
+      "to": "freedom",
+      "type": "puts-in-tension",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Управление видимостью, захват внимания и профилирование способны направлять поведение без прямого запрета. Свобода поэтому нуждается в оценке архитектуры среды и ответственности тех, кто извлекает выгоду из уязвимости.",
+        "sourceRefs": [
+          "p136",
+          "p170",
+          "p171",
+          "p172"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-024",
+      "from": "work",
+      "to": "family",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Качество и устойчивость труда влияют на семейные отношения, образование и способность молодежи строить будущее. Поддержка семьи требует общественных условий, включая равновесие труда, услуг и отдыха в местном тексте.",
+        "sourceRefs": [
+          "p165",
+          "p166",
+          "p167",
+          "p168",
+          "p169"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-025",
+      "from": "dignity",
+      "to": "work",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Работа выражает и развивает человеческую жизнь, но не создает ее фундаментальное достоинство. Потеря занятости не лишает ценности и не должна лишать гражданского участия, даже если работа остается важнейшим общественным благом.",
+        "sourceRefs": [
+          "p052",
+          "p149",
+          "p154"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-026",
+      "from": "work",
+      "to": "distribution",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Неравномерные трудовые переходы требуют распределять доступ к обучению, инфраструктуре и защите, а не оставлять цену адаптации работнику. Экстренная помощь и новые правила труда решают разные, взаимосвязанные задачи.",
+        "sourceRefs": [
+          "p151",
+          "p153",
+          "p156",
+          "p161",
+          "p164"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-027",
+      "from": "distribution",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Всеобщее, включающее и устойчивое процветание может укреплять мир; концентрация выгоды и военные расходы за счет здоровья и образования бедных его подрывают. Перераспределение связано с целями развития, а не одной компенсацией после конфликта.",
+        "sourceRefs": [
+          "p163",
+          "p204"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-028",
+      "from": "exploitation",
+      "to": "ai-governance",
+      "type": "provides-test-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Условия скрытой работы и контроль данных проверяют обещание полезного ИИ. Прозрачность поставок, должная осмотрительность и противодействие вербовке жертв необходимы, чтобы удобство не опиралось на эксплуатацию.",
+        "sourceRefs": [
+          "p173",
+          "p174",
+          "p178",
+          "p179"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-029",
+      "from": "shared-goods",
+      "to": "freedom",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Общность данных не исчерпывается их копированием. Возвращение народам возможности решать, кем и ради кого используется их информация, расширяет свободу и ограничивает новые колониальные отношения.",
+        "sourceRefs": [
+          "p178"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-030",
+      "from": "institutional-accountability",
+      "to": "justice",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Подотчетность требует признать ущерб, возместить его и предотвращать повторение. В отношении Церкви прозрачные заявления недостаточны без внимания к жертвам и изменения структур, которые поддерживали злоупотребления.",
+        "sourceRefs": [
+          "p086",
+          "p089",
+          "p138"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-031",
+      "from": "institutional-accountability",
+      "to": "history",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Исторический рассказ о развитии учения ограничен признанием его институциональных провалов. Владение рабами, узаконивание и задержка осуждения должны сохраняться рядом с заявленной преемственностью достоинства.",
+        "sourceRefs": [
+          "p029",
+          "p045",
+          "p176",
+          "p177"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-032",
+      "from": "memory",
+      "to": "institutional-accountability",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Память о собственной вине делает сегодняшнее предупреждение эксплуатации обязательным. Она поддерживает конкретные защиту, освобождение и реабилитацию, а не только просьбу о прощении за прошлое.",
+        "sourceRefs": [
+          "p176",
+          "p177"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-033",
+      "from": "memory",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Живое свидетельство о войне и взгляды жертв помогают сопротивляться ее нормализации. Их место в информации и образовании должно направлять к миру, не становиться поводом для возмездия.",
+        "sourceRefs": [
+          "p191",
+          "p216",
+          "p217",
+          "p244"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-034",
+      "from": "justice",
+      "to": "peace",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Не всякое отсутствие боя является достойным миром. Источник связывает его с действиями справедливости и уважением к другому; стабильность любой ценой не исчерпывает этого нравственного требования.",
+        "sourceRefs": [
+          "p205",
+          "p215"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-035",
+      "from": "ai-governance",
+      "to": "peace",
+      "type": "applies-to",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Военное применение испытывает управление ИИ необратимостью последствий. Нужны строгое условие крайней законной обороны, запрет делегирования летальных решений, время суждения, гражданская защита и действенный человеческий контроль.",
+        "sourceRefs": [
+          "p197",
+          "p198",
+          "p199",
+          "p200"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-036",
+      "from": "institutional-accountability",
+      "to": "ai-governance",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Понятность, проверка, обжалование и восстановимость решений делают ответственность практической. На войне и в экономике нельзя заменить их видимой фигурой оператора или утверждением, что виновата машина.",
+        "sourceRefs": [
+          "p105",
+          "p164",
+          "p199",
+          "p200"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-037",
+      "from": "dialogue",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Переговоры и дипломатия ищут достижимые пути между искажением фактов и капитуляцией перед силой. Надежные институты и глубокие реформы поддерживают эту работу, не гарантируя успеха каждого разговора.",
+        "sourceRefs": [
+          "p218",
+          "p219",
+          "p221",
+          "p224",
+          "p226"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-038",
+      "from": "solidarity",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Сознательная солидарность превращает вынужденную взаимозависимость в общие права, обязанности и заботу. Тогда цифровая близость может служить миру, а не только быстрее распространять соперничество.",
+        "sourceRefs": [
+          "p186",
+          "p187"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-039",
+      "from": "hope",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Надежда поддерживает сопротивление злу и посильную работу в настоящем. Она не обещает управлять всеми обстоятельствами и не снимает особых обязанностей тех, кто распоряжается большей властью.",
+        "sourceRefs": [
+          "p211",
+          "p212",
+          "p213"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-040",
+      "from": "faith-foundations",
+      "to": "hope",
+      "type": "provides-source-foundation-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Вера в благодать, Божий дар и открытый народам город дает источнику основание надежды. Это христианское обещание, отличное от технического самоулучшения или гарантии неизбежного общественного прогресса.",
+        "sourceRefs": [
+          "p126",
+          "p127",
+          "p211",
+          "p242",
+          "p245"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-041",
+      "from": "faith-foundations",
+      "to": "solidarity",
+      "type": "provides-source-foundation-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Евхаристическое единство автор считает источником христианской солидарности. Обрядовые ответы исключены из адаптации, но принадлежность, общение в благах, справедливость и голос бедных сохраняют богословскую связь.",
+        "sourceRefs": [
+          "p088",
+          "p234",
+          "p235"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-042",
+      "from": "care",
+      "to": "faith-foundations",
+      "type": "has-source-foundation-in",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "В источнике забота получает основание во Воплощении и достоинстве уязвимого тела. Этот религиозный аргумент ведет к близости детей, пожилых и жертв и не заменяет конкретной помощи.",
+        "sourceRefs": [
+          "p231",
+          "p232",
+          "p233",
+          "p239"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-043",
+      "from": "history",
+      "to": "dialogue",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Историческое развитие учения требует слушать науки, культуры и разные голоса при уважении автономии общества. Собственная традиция не оправдывает монополии на истину или отказа от местного опыта.",
+        "sourceRefs": [
+          "p020",
+          "p023",
+          "p024",
+          "p025",
+          "p027",
+          "p045"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-044",
+      "from": "hope",
+      "to": "development",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Хрупкие институты и настойчивые свидетели показывают возможность другого развития. Повседневное деление, образование и восстановление общин поддерживают эту возможность без обещания автоматического улучшения от новой технологии.",
+        "sourceRefs": [
+          "p123",
+          "p124",
+          "p125",
+          "p126",
+          "p236",
+          "p241",
+          "p245"
+        ]
+      },
+      "placement": "main"
+    }
+  ]
+}

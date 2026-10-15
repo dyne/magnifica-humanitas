@@ -24,7 +24,7 @@ for (const width of [390, 1440]) for (const size of ['100', '200']) {
     await page.setViewportSize({ width, height: width === 390 ? 844 : 900 })
     await page.emulateMedia({ reducedMotion: 'reduce' })
     await page.goto('./#/it/atlas')
-    await expect(page.locator('#language option')).toHaveText(['English', 'Italiano', 'Deutsch', 'Español', 'Français', 'Português', 'Polski', 'Беларуская'])
+    await expect(page.locator('#language option')).toHaveText(['English', 'Italiano', 'Deutsch', 'Español', 'Français', 'Português', 'Polski', 'Беларуская', 'Русский'])
     await page.locator('#language').focus()
     await page.keyboard.press('Tab')
     await expect(page.locator('#appearance')).toBeFocused()
@@ -73,7 +73,7 @@ for (const width of [390, 1440]) for (const size of ['100', '200']) {
 }
 
 for (const [preferences, expected] of [
-  [['ar-EG', 'it-IT', 'en-US'], 'it'], [['IT-ch', 'en'], 'it'], [['en-GB', 'it-IT'], 'en'], [['ar', 'ru-RU'], 'en'],
+  [['ar-EG', 'it-IT', 'en-US'], 'it'], [['IT-ch', 'en'], 'it'], [['en-GB', 'it-IT'], 'en'], [['ar', 'zh-CN'], 'en'],
 ] as const) {
   test(`browser defaults ${preferences.join(',')} choose ${expected}; explicit English remains stable`, async ({ page }) => {
     await page.addInitScript(languages => {

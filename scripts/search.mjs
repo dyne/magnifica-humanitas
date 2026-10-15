@@ -4,8 +4,10 @@ export const relationLabel = (type, messages = english) => formatMessage(message
 export function normalizeQuery(value, locale = 'en') {
   const language = new Intl.Locale(locale).language
   const lower = String(value ?? '').toLocaleLowerCase(locale)
-  // Belarusian ў/у, й/и and ё/е are distinct letters, not disposable accents.
-  const normalized = language === 'be' ? lower.normalize('NFC') : lower.normalize('NFD').replace(/\p{M}/gu, '')
+  // Preserve meaningful Cyrillic letters: Belarusian ў/у and Russian й/и,
+  // ё/е must not collapse through generic accent stripping. NFC also accepts
+  // canonically decomposed input without changing those distinctions.
+  const normalized = ['be', 'ru'].includes(language) ? lower.normalize('NFC') : lower.normalize('NFD').replace(/\p{M}/gu, '')
   // Polish ł does not decompose under NFD, unlike the language's other accents.
   return (language === 'pl' ? normalized.replace(/ł/g, 'l') : normalized).trim().replace(/\s+/g, ' ')
 }
