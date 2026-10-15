@@ -11,7 +11,7 @@ import ReturnLink from '../components/ReturnLink.vue'
 import Unavailable from './Unavailable.vue'
 const route = useRoute()
 const current = computed(() => relation(route.params.relationId))
-watch(current, r => { document.title = msg('concept.value_magnifica_humanitas', { value1: r ? `${concept(r.from)?.title} ${relationLabel(r.type)} ${concept(r.to)?.title}` : msg('route.link_unavailable') }) }, { immediate: true })
+watch([current, () => route.fullPath], ([r]) => { document.title = msg('concept.value_magnifica_humanitas', { value1: r ? `${concept(r.from)?.title} ${relationLabel(r.type)} ${concept(r.to)?.title}` : msg('route.link_unavailable') }) }, { immediate: true, flush: 'post' })
 </script>
 <template>
   <template v-if="current">

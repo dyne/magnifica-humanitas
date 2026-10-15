@@ -26,7 +26,7 @@ function reload() { void load() }
 watch(() => [route.params.noteId, activeLocale.value], load, { immediate: true })
 const current = computed(() => index.value?.notes.find(n => n.id === route.params.noteId))
 const previous = computed(() => current.value?.previousNoteId ? index.value?.notes.find(n => n.id === current.value!.previousNoteId) : activeLocale.value === 'en' && current.value && /^(Cf\. )?ibid\./i.test(current.value.text) ? index.value?.notes.find(n => n.number === current.value!.number - 1) : undefined)
-watch(current, n => { document.title = msg('concept.value_magnifica_humanitas', { value1: n ? msg('source.source_note_value', { value1: n.number }) : msg('route.source_note') }) }, { immediate: true })
+watch([current, () => route.fullPath], ([n]) => { document.title = msg('concept.value_magnifica_humanitas', { value1: n ? msg('source.source_note_value', { value1: n.number }) : msg('route.source_note') }) }, { immediate: true, flush: 'post' })
 </script>
 <template>
   <nav class="breadcrumbs" :aria-label="msg('about.breadcrumb')"><RouterLink :to="localePath('/atlas')">{{ msg('app.atlas') }}</RouterLink><span aria-current="page">{{ msg('note.source_note') }}</span></nav>

@@ -17,7 +17,7 @@ import Saved from './views/Saved.vue'
 import { activateReading, cancelReadingActivation } from './reading'
 import { initializeReadingState, localStatus } from './local-state'
 import { t, type MessageKey } from './messages'
-import { resolveLocaleRoute } from '../scripts/locales.mjs'
+import { resolveLocaleRoute, routeLocale } from '../scripts/locales.mjs'
 import { enterLocation } from './local-state'
 import { scrollBehavior, beginNavigation, cancelNavigation } from './navigation'
 
@@ -62,7 +62,8 @@ router.afterEach((to, _from, failure) => {
 router.beforeEach(async (to, from) => {
   const destination = resolveLocaleRoute(to.fullPath, navigator, locales)
   if (destination !== to.fullPath) return destination
-  const locale = String(to.params.locale ?? 'en')
+  // Catch-all routes have no :locale param, but still belong to their URL edition.
+  const locale = routeLocale(to.fullPath) ?? 'en'
   const token = beginNavigation(from.matched.length === 0)
   navigationTokens.set(to, token)
   try {

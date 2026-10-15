@@ -4,18 +4,18 @@ const baseKind = process.env.VITE_BASE === '/' ? 'root' : 'subpath'
 
 test('all Question regions concepts and directed relationships have keyboard destinations', async ({ page }) => {
   await page.goto('./#/en/atlas')
-  expect(await page.locator('.regions .concept-links a').count()).toBe(27)
+  await expect(page.locator('.regions .concept-links a')).toHaveCount(27)
   for (const c of reading.concepts) await expect(page.locator(`#atlas-${c.id}`)).toHaveAttribute('href', new RegExp(`/en/concepts/${c.id}$`))
-  expect(await page.locator('.relationships > li').count()).toBe(44)
+  await expect(page.locator('.relationships > li')).toHaveCount(44)
   for (const r of reading.relations) {
     await expect(page.locator(`#atlas-relation-${r.id}`)).toHaveAttribute('href', new RegExp(`/en/relations/${r.id}$`))
     if (r.placement === 'optional-foundations') await expect(page.locator(`[data-relation="${r.id}"]`)).toContainText('Optional theological foundations')
   }
   await page.getByLabel('Focus on a concept').selectOption('dignity')
   const edges = reading.relations.filter(r => r.from === 'dignity' || r.to === 'dignity')
-  expect(await page.locator('.relationships > li').count()).toBe(edges.length)
+  await expect(page.locator('.relationships > li')).toHaveCount(edges.length)
   const diagram = page.locator('svg a')
-  expect(await diagram.count()).toBe(edges.length)
+  await expect(diagram).toHaveCount(edges.length)
   for (const r of edges) {
     expect(await page.locator(`svg a[data-relation="${r.id}"]`).getAttribute('href')).toBe(await page.locator(`#atlas-relation-${r.id}`).getAttribute('href'))
     await expect(page.locator(`svg a[data-relation="${r.id}"]`)).toHaveAttribute('tabindex', '-1')

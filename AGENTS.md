@@ -7,12 +7,21 @@ content/editorial/CONTRACT.md, research/ANALYSIS.md,
 research/EXPERIENCE.md and research/DECISIONS.md before making product choices.
 Do not treat proposed choices as owner decisions. The active plan is supplied
 by the supervisor; use that exact workspace-local path and its state machine.
+The current local reading includes English, Italian, German, Spanish, French,
+Portuguese, Polish, Belarusian, Russian and Arabic. Local verification does not
+establish that the multilingual revision has been published.
 
 ## Source and editorial fidelity
 
 - Preserve the owner's source files at workspace root. Source paragraphs are
   numbered 1–245. Refer to paragraphs, not extraction line numbers or guessed
   web anchors.
+- English retains its owner-PDF authority. Each additional language uses its
+  frozen official Vatican HTML, local corpus and alignment/review records;
+  never model-translate an official quotation or reuse English span offsets.
+  Belarusian's linked PDF is English; Arabic HTML avoids PDF bidi artifacts.
+  Preserve recorded edition defects and note differences rather than repairing
+  frozen sources. Source contexts render independently of the main adaptation.
 - The saved text has mojibake. PDF extraction is cleaner but has running
   headers, page breaks, footnotes and headings that need structural handling.
   A regex splitting on paragraph numbers alone is not a finished parser.
@@ -83,6 +92,17 @@ are required for those separate checks. Build/test does not require an external
 PDF. The hosting runner rebuilds sequentially: do not run a concurrent build.
 Document observable results and environment; automated checks do not establish
 learning efficacy or comprehensive accessibility.
+
+For multilingual release evidence, run `node scripts/audit-release.mjs dist`
+after the production gates. It checks current content/review/source bindings,
+the actual artifact's forty locale chunks, fonts and notices, with its default
+generated report under `output/release/`. The shared language matrix and release
+layout/loading checks run within the production browser suite. Retain the
+isolated nonshipping RTL regression suite when changing activation or history;
+its build requires `MAGNIFICA_RTL_FIXTURE=1 VITE_BASE=/` and `--mode locale-fixture`.
+See verification/LANGUAGE-MATRIX.md and verification/MULTILINGUAL-RELEASE.md.
+Historical pending-review fields in accepted records are not current workflow
+state. Do not rewrite them or claim native-speaker proofreading from hashes.
 
 docs/ATTRIBUTION.md and public/NOTICE.txt keep source copyright, theme MIT and
 font OFL notices separate. No license for original code/commentary has been

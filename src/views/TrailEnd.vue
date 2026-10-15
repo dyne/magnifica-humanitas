@@ -13,7 +13,7 @@ import Unavailable from './Unavailable.vue'
 const route = useRoute()
 const current = computed(() => trail(route.params.trailId))
 const visited = computed(() => current.value?.steps.filter(s => wasVisited('trail', current.value!.id, s.id)) ?? [])
-watch(current, t => { document.title = msg('concept.value_magnifica_humanitas', { value1: t ? msg('trailend.trail_ending_value', { value1: t.title }) : msg('route.link_unavailable') }) }, { immediate: true })
+watch([current, () => route.fullPath], ([t]) => { document.title = msg('concept.value_magnifica_humanitas', { value1: t ? msg('trailend.trail_ending_value', { value1: t.title }) : msg('route.link_unavailable') }) }, { immediate: true, flush: 'post' })
 </script>
 <template>
   <template v-if="current">

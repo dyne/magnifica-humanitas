@@ -24,16 +24,19 @@ export const localData = reactive(newReadingState('', ''))
 export const storageUnavailable = ref(false)
 export const dataNotice = ref('')
 let stateLocale = ''
+// Failed writes must survive edition changes for the lifetime of this tab.
+const temporaryStates = new Map<string, string>()
 const storageKey = () => activeLocale.value === 'en' ? STORAGE_KEY : `${STORAGE_KEY}-${activeLocale.value}`
 export function initializeReadingState() {
   if (stateLocale === activeLocale.value) return
   catalog = createCatalog()
   stateLocale = activeLocale.value
   try {
-    const initial = decodeReadingState(localStorage.getItem(storageKey()), revision, edition, catalog, activeLocale.value, messages.value)
+    const temporary = temporaryStates.get(stateLocale)
+    const initial = decodeReadingState(temporary ?? localStorage.getItem(storageKey()), revision, edition, catalog, activeLocale.value, messages.value)
     Object.assign(localData, initial.state)
-    dataNotice.value = initial.notice
-    storageUnavailable.value = false
+    dataNotice.value = temporary ? t('state.temporary') : initial.notice
+    storageUnavailable.value = temporary !== undefined
   } catch {
     Object.assign(localData, newReadingState(revision, edition, activeLocale.value))
     storageUnavailable.value = true
@@ -51,8 +54,11 @@ export { locationKey }
 export const locationRoute = (location: ReaderLocation) => savedLocationRoute(location, activeLocale.value)
 const blocksFor = (location: ReaderLocation) => catalog[location.kind]?.find(entry => entry.id === location.entityId && (location.kind !== 'trail' || entry.steps?.includes(location.stepId ?? '')))?.blocks ?? []
 function persist() {
+  const raw = JSON.stringify(localData)
+  temporaryStates.set(activeLocale.value, raw)
   try {
-    localStorage.setItem(storageKey(), JSON.stringify(localData))
+    localStorage.setItem(storageKey(), raw)
+    temporaryStates.delete(activeLocale.value)
     storageUnavailable.value = false
     return true
   } catch {
@@ -157,8 +163,8 @@ export function clearLocalData() {
   undoSaved.value = null
   dataNotice.value = ''
   activeLocation.value = null
-  try { localStorage.removeItem(storageKey()); storageUnavailable.value = false; localStatus.value = t('state.cleared') }
-  catch { storageUnavailable.value = true; localStatus.value = t('state.cleared_temporary') }
+  try { localStorage.removeItem(storageKey()); temporaryStates.delete(activeLocale.value); storageUnavailable.value = false; localStatus.value = t('state.cleared') }
+  catch { temporaryStates.set(activeLocale.value, JSON.stringify(localData)); storageUnavailable.value = true; localStatus.value = t('state.cleared_temporary') }
 }
 export function wasVisited(kind: ReaderLocation['kind'], entityId: string, stepId?: string) {
   return localData.visited.some(item => item.kind === kind && item.entityId === entityId && item.stepId === stepId)

@@ -10,7 +10,7 @@ import ReturnLink from '../components/ReturnLink.vue'
 import Unavailable from './Unavailable.vue'
 const route = useRoute()
 const current = computed(() => concept(route.params.conceptId))
-watch(current, c => { document.title = msg('concept.value_magnifica_humanitas', { value1: c?.title ? msg('foundation.optional_foundations_value', { value1: c.title }) : msg('route.link_unavailable') }) }, { immediate: true })
+watch([current, () => route.fullPath], ([c]) => { document.title = msg('concept.value_magnifica_humanitas', { value1: c?.title ? msg('foundation.optional_foundations_value', { value1: c.title }) : msg('route.link_unavailable') }) }, { immediate: true, flush: 'post' })
 </script>
 <template>
   <template v-if="current">

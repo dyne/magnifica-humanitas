@@ -17,7 +17,7 @@ const step = computed(() => currentTrail.value?.steps[stepIndex.value])
 const current = computed(() => concept(step.value?.conceptId))
 watch(() => route.fullPath, () => {
   document.title = msg('concept.value_magnifica_humanitas', { value1: current.value?.title ?? msg('route.link_unavailable') })
-}, { immediate: true })
+}, { immediate: true, flush: 'post' })
 const nextRoute = computed(() => {
   const t = currentTrail.value!
   const next = t.steps[stepIndex.value + 1]

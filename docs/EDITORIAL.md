@@ -44,6 +44,32 @@ that edition. Translated labels must not alter stable identities or silently mix
 English source and another language's interpretation. Revisit font subsets,
 layout and actual language-specific browser cases.
 
+The current local release contains ten complete readings: `en`, `it`, `de`,
+`es`, `fr`, `pt`, `pl`, `be`, `ru` and `ar`. `be` means Belarusian. The nine
+localized adaptations and interfaces were agent-authored and compared with
+their own official editions; this is not independent native-speaker
+proofreading. Exact source quotations remain copied contiguous local spans.
+No runtime translation or generated-answer service supplies public content.
+
+For a localized edit, read its three records in `content/editorial/<locale>/`:
+`alignment-review.json` (terminology, source coverage, exclusions and notes),
+`semantic-review.json` (public blocks and source comparisons), and
+`interface-review.json` (catalog, browser and visual evidence). Renew the
+relevant hashes, comparison and deliberate reading revision after a material
+change. Compare each standalone Source explanation separately; the main
+sequence, placement rationale and optional foundations cannot fill a missing
+qualification in that view. Preserve the official differences recorded there,
+including note classifications and same-work/same-author dependencies.
+
+Some records retain the pending-supervisor status from their authoring stage
+and the locale set enabled at that time. Those are historical witnesses;
+acceptance is recorded by the supervised workflow. Do not rewrite accepted
+records to pretend they were independently proofread or reviewed again.
+`node scripts/audit-release.mjs dist` checks current file/hash bindings and
+artifact contents without granting semantic approval. The integration and
+release evidence is in [LANGUAGE-MATRIX](../verification/LANGUAGE-MATRIX.md)
+and [MULTILINGUAL-RELEASE](../verification/MULTILINGUAL-RELEASE.md).
+
 Re-ingestion is a separate operation with an explicitly supplied matching owner
 PDF, Poppler version and checksum, documented in
 [content/source/README.md](../content/source/README.md). Normal installation and

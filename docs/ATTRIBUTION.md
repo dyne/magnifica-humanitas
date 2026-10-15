@@ -6,6 +6,11 @@ Editrice Vaticana. The [source README](../content/source/README.md) records
 corpus provenance, immutable inputs, extraction and edition differences. The
 [full original](https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html)
 is clearly distinguished from this independent editorial reading.
+The additional Arabic, Belarusian, German, Spanish, French, Italian, Polish,
+Portuguese and Russian readings use their official Vatican HTML editions,
+frozen on 14 October 2026 with provenance and copyright in their local source
+manifests. The same source copyright applies to those texts and snapshots;
+their availability does not grant a source-text license or official endorsement.
 
 Source text/snapshots, original code, editorial explanations and third-party
 assets have separate rights. No license for original project code/commentary has
