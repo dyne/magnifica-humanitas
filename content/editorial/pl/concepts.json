@@ -1,0 +1,1268 @@
+{
+  "schemaVersion": 1,
+  "language": "pl",
+  "editionId": "mh-pl-official-html-2026-10-14",
+  "concepts": [
+    {
+      "id": "dignity",
+      "locale": "pl",
+      "title": "Godność człowieka",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Według źródła wartość człowieka poprzedza osiągnięcia, przydatność, społeczne uznanie i moralną zasługę.",
+        "sourceRefs": [
+          "p050",
+          "p051",
+          "p052",
+          "p053",
+          "p058",
+          "p154"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Moralna, społeczna i egzystencjalna godność mogą się zmieniać; ontologiczna pozostaje niezbywalna. Praca ją wyraża, lecz jej nie tworzy. Autor uzasadnia tę podstawową wartość stworzeniem i miłością Boga.",
+        "sourceRefs": [
+          "p050",
+          "p051",
+          "p052",
+          "p053",
+          "p058",
+          "p154"
+        ]
+      },
+      "foundationRefs": [
+        "p050",
+        "p052",
+        "p053"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p052",
+        "start": 609,
+        "end": 629,
+        "text": "godność ontologiczna"
+      }
+    },
+    {
+      "id": "rights",
+      "locale": "pl",
+      "title": "Prawa człowieka",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Prawa człowieka są w źródle praktycznym i historycznym wyrazem przyrodzonej godności każdej osoby.",
+        "sourceRefs": [
+          "p054",
+          "p055",
+          "p056",
+          "p057",
+          "p081"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Ogłoszenie praw nie zapewnia jeszcze ich przestrzegania. Źródło zachowuje konkretne stanowiska moralne, w tym ochronę życia od poczęcia do naturalnego kresu; przypisujemy je autorowi, nie wymagając zgody odbiorcy.",
+        "sourceRefs": [
+          "p054",
+          "p055",
+          "p056",
+          "p057",
+          "p081"
+        ]
+      },
+      "foundationRefs": [
+        "p054"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p055",
+        "start": 127,
+        "end": 151,
+        "text": "powszechne i niezbywalne"
+      }
+    },
+    {
+      "id": "common-good",
+      "locale": "pl",
+      "title": "Dobro wspólne",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Dobro wspólne obejmuje relacje i warunki, dzięki którym osoby oraz grupy mogą rozwijać się razem.",
+        "sourceRefs": [
+          "p059",
+          "p060",
+          "p061",
+          "p062",
+          "p063",
+          "p064"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Nie jest sumą prywatnych korzyści ani wygodą większości. Musi uwzględniać słabszych, godzenie interesów i szacunek dla różnic między narodami.",
+        "sourceRefs": [
+          "p059",
+          "p060",
+          "p061",
+          "p062",
+          "p063",
+          "p064"
+        ]
+      },
+      "foundationRefs": [
+        "p059"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p060",
+        "start": 53,
+        "end": 89,
+        "text": "suma tych warunków życia społecznego"
+      }
+    },
+    {
+      "id": "shared-goods",
+      "locale": "pl",
+      "title": "Powszechne przeznaczenie dóbr",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Dobra podtrzymujące życie mają według źródła służyć wszystkim; dotyczy to również wiedzy, kultury, danych i infrastruktury cyfrowej.",
+        "sourceRefs": [
+          "p065",
+          "p066",
+          "p067",
+          "p108",
+          "p178"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Źródło uznaje prywatną własność, ale podporządkowuje ją społecznemu celowi. Dostęp nie wyczerpuje sprawiedliwości: potrzebna jest także możliwość współdecydowania o użyciu wspólnych zasobów.",
+        "sourceRefs": [
+          "p065",
+          "p066",
+          "p067",
+          "p108",
+          "p178"
+        ]
+      },
+      "foundationRefs": [
+        "p065",
+        "p066"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p065",
+        "start": 82,
+        "end": 113,
+        "text": "powszechnego przeznaczenia dóbr"
+      }
+    },
+    {
+      "id": "subsidiarity",
+      "locale": "pl",
+      "title": "Pomocniczość",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Pomocniczość chroni odpowiedzialne działanie osób i wspólnot, a większe instytucje zobowiązuje do jego wspierania oraz koordynowania.",
+        "sourceRefs": [
+          "p068",
+          "p069",
+          "p070",
+          "p071",
+          "p072",
+          "p087"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Nie oznacza wycofania państwa ani prostego przekazania zadań bez środków. Wyższy poziom może być także platformą gospodarczą, a udział musi poprzedzać ustalenie rozwiązań.",
+        "sourceRefs": [
+          "p068",
+          "p069",
+          "p070",
+          "p071",
+          "p072",
+          "p087"
+        ]
+      },
+      "foundationRefs": [],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p069",
+        "start": 619,
+        "end": 677,
+        "text": "Pomocniczość nie usprawiedliwia więc wycofania się państwa"
+      }
+    },
+    {
+      "id": "solidarity",
+      "locale": "pl",
+      "title": "Solidarność",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Solidarność jest świadomym przyjęciem odpowiedzialności za innych w świecie faktycznie współzależnych losów.",
+        "sourceRefs": [
+          "p073",
+          "p074",
+          "p075",
+          "p076",
+          "p088",
+          "p187"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Łączność cyfrowa nie staje się automatycznie solidarnością. Jest ona zasadą porządku społecznego i praktykowaną cnotą; musi chronić także odpowiedzialny udział wspólnot.",
+        "sourceRefs": [
+          "p073",
+          "p074",
+          "p075",
+          "p076",
+          "p088",
+          "p187"
+        ]
+      },
+      "foundationRefs": [
+        "p073",
+        "p088",
+        "p234"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p074",
+        "start": 409,
+        "end": 426,
+        "text": "świadomym wyborem"
+      }
+    },
+    {
+      "id": "justice",
+      "locale": "pl",
+      "title": "Sprawiedliwość społeczna",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Sprawiedliwość społeczna ocenia, czy instytucje i relacje umożliwiają wszystkim godne życie, oraz wymaga naprawy skutków krzywdy.",
+        "sourceRefs": [
+          "p077",
+          "p078",
+          "p079",
+          "p080",
+          "p081",
+          "p109",
+          "p162",
+          "p215",
+          "p244"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Nie sprowadza się do indywidualnej dobroci ani późniejszego podziału dochodów. Musi zapobiegać strukturalnemu wykluczeniu, przywracać głos poszkodowanych i kształtować projektowanie.",
+        "sourceRefs": [
+          "p077",
+          "p078",
+          "p079",
+          "p080",
+          "p081",
+          "p109",
+          "p162",
+          "p215",
+          "p244"
+        ]
+      },
+      "foundationRefs": [
+        "p077",
+        "p079",
+        "p244"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p079",
+        "start": 610,
+        "end": 629,
+        "text": "wymiaru naprawczego"
+      }
+    },
+    {
+      "id": "development",
+      "locale": "pl",
+      "title": "Integralny rozwój człowieka",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Integralny rozwój obejmuje każdą osobę, wszystkie narody i wszystkie wymiary życia, wraz z ekologią oraz przyszłymi pokoleniami.",
+        "sourceRefs": [
+          "p082",
+          "p083",
+          "p084",
+          "p085",
+          "p129",
+          "p159",
+          "p180"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Większa konsumpcja lub sprawność nie wystarczają. Rozwój wymaga minimalnych warunków, udziału i respektowania różnych sposobów życia; nie może przerzucać kosztów na słabszych.",
+        "sourceRefs": [
+          "p082",
+          "p083",
+          "p084",
+          "p085",
+          "p129",
+          "p159",
+          "p180"
+        ]
+      },
+      "foundationRefs": [
+        "p126",
+        "p129"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p082",
+        "start": 161,
+        "end": 197,
+        "text": "każdego człowieka i całego człowieka"
+      }
+    },
+    {
+      "id": "institutional-accountability",
+      "locale": "pl",
+      "title": "Rozliczalność",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Rozliczalność pozwala wskazać, kto ma wyjaśnić decyzję, poddać ją kontroli i zakwestionowaniu oraz naprawić wynikającą z niej szkodę.",
+        "sourceRefs": [
+          "p086",
+          "p087",
+          "p089",
+          "p105",
+          "p138",
+          "p176",
+          "p177",
+          "p200"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Sama ogólna odpowiedzialność lub nominalny nadzór nie wystarczają. Potrzebne są rzeczywisty udział, rozpoznawalny łańcuch decyzji i zastosowanie wymagań także do własnej instytucji.",
+        "sourceRefs": [
+          "p086",
+          "p087",
+          "p089",
+          "p105",
+          "p138",
+          "p176",
+          "p177",
+          "p200"
+        ]
+      },
+      "foundationRefs": [
+        "p086",
+        "p089",
+        "p176"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p086",
+        "start": 733,
+        "end": 747,
+        "text": "rozliczalności"
+      }
+    },
+    {
+      "id": "technology-power",
+      "locale": "pl",
+      "title": "Władza technologiczna",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Władza technologiczna kształtuje możliwości działania przez infrastrukturę, dane, kryteria projektowania i widoczność treści.",
+        "sourceRefs": [
+          "p004",
+          "p005",
+          "p009",
+          "p092",
+          "p093",
+          "p094",
+          "p095",
+          "p104",
+          "p136"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Technologia może pomagać, lecz jej konkretna konstrukcja nie jest neutralna. Krytyka technokratycznego panowania dotyczy celów i koncentracji władzy, nie odrzucenia nauki.",
+        "sourceRefs": [
+          "p004",
+          "p005",
+          "p009",
+          "p092",
+          "p093",
+          "p094",
+          "p095",
+          "p104",
+          "p136"
+        ]
+      },
+      "foundationRefs": [],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p092",
+        "start": 70,
+        "end": 99,
+        "text": "paradygmatu technokratycznego"
+      }
+    },
+    {
+      "id": "ai-limits",
+      "locale": "pl",
+      "title": "Inteligencja ludzka i sztuczna",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Źródło rozróżnia skuteczne obliczenia AI od ludzkiego doświadczenia, rozumienia, relacji i odpowiedzialności moralnej.",
+        "sourceRefs": [
+          "p097",
+          "p098",
+          "p099",
+          "p100",
+          "p116",
+          "p128",
+          "p198",
+          "p233"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Kategoryczne twierdzenia o braku doświadczenia i świadomości moralnej należą do Leona XIV, nie są naukowym konsensusem stwierdzonym przez opracowanie. Źródło równocześnie uznaje konkretne korzyści AI i ostrzega przed szybką dezaktualizacją jej opisu.",
+        "sourceRefs": [
+          "p097",
+          "p098",
+          "p099",
+          "p100",
+          "p116",
+          "p128",
+          "p198",
+          "p233"
+        ]
+      },
+      "foundationRefs": [
+        "p128",
+        "p233"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p099",
+        "start": 671,
+        "end": 708,
+        "text": "Nie mają również świadomości moralnej"
+      }
+    },
+    {
+      "id": "ai-governance",
+      "locale": "pl",
+      "title": "Projektowanie i zarządzanie AI",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Zarządzanie AI obejmuje cele, projekt, wdrożenie, kontrolę i odwołanie oraz udział ludzi dotkniętych skutkami.",
+        "sourceRefs": [
+          "p071",
+          "p072",
+          "p104",
+          "p105",
+          "p106",
+          "p107",
+          "p109",
+          "p164",
+          "p197",
+          "p198",
+          "p199",
+          "p200"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Dostosowanie modelu do wartości nie rozstrzyga, kto wartości wybrał. Sprawiedliwość ma kształtować projekt wcześniej; odwołanie po decyzji i udział w ustalaniu standardów są potrzebnymi, różnymi zadaniami.",
+        "sourceRefs": [
+          "p071",
+          "p072",
+          "p104",
+          "p105",
+          "p106",
+          "p107",
+          "p109",
+          "p164",
+          "p197",
+          "p198",
+          "p199",
+          "p200"
+        ]
+      },
+      "foundationRefs": [],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p109",
+        "start": 1044,
+        "end": 1063,
+        "text": "warunkiem uprzednim"
+      }
+    },
+    {
+      "id": "embodiment",
+      "locale": "pl",
+      "title": "Ciało i skończoność",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Człowiek jest istotą cielesną, skończoną i podatną na zranienie, której pełni nie wyczerpuje sprawność.",
+        "sourceRefs": [
+          "p099",
+          "p112",
+          "p113",
+          "p116",
+          "p117",
+          "p118",
+          "p120",
+          "p122",
+          "p232",
+          "p239"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Przyjęcie skończoności nie oznacza odmowy leczenia. Źródło nakazuje szukać ulgi w cierpieniu i odróżnia pomoc techniczną od wizji wartościującej życie według wydajności.",
+        "sourceRefs": [
+          "p099",
+          "p112",
+          "p113",
+          "p116",
+          "p117",
+          "p118",
+          "p120",
+          "p122",
+          "p232",
+          "p239"
+        ]
+      },
+      "foundationRefs": [
+        "p118",
+        "p127",
+        "p232",
+        "p239"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p118",
+        "start": 710,
+        "end": 741,
+        "text": "naszą konstytutywną skończoność"
+      }
+    },
+    {
+      "id": "care",
+      "locale": "pl",
+      "title": "Troska i bliskość",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Troska uznaje drugiego człowieka za osobę wymagającą uwagi, bliskości i odpowiedzialnej relacji.",
+        "sourceRefs": [
+          "p114",
+          "p117",
+          "p118",
+          "p119",
+          "p126",
+          "p152",
+          "p231",
+          "p239"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Sprawne wykonanie zadania nie zastępuje relacji ani wolności. Technologia może wspierać opiekę i usuwać ciężar, lecz nie uzasadnia wartościowania słabszych jako mniej godnych.",
+        "sourceRefs": [
+          "p114",
+          "p117",
+          "p118",
+          "p119",
+          "p126",
+          "p152",
+          "p231",
+          "p239"
+        ]
+      },
+      "foundationRefs": [
+        "p119",
+        "p126",
+        "p231",
+        "p239"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p114",
+        "start": 155,
+        "end": 186,
+        "text": "Zdolność troski jedni o drugich"
+      }
+    },
+    {
+      "id": "truth",
+      "locale": "pl",
+      "title": "Prawda i komunikacja",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Prawda w komunikacji wymaga wspólnego sprawdzania rzeczywistości, wiarygodnych źródeł i relacji zaufania.",
+        "sourceRefs": [
+          "p132",
+          "p134",
+          "p135",
+          "p136",
+          "p137",
+          "p138",
+          "p214",
+          "p237"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Widoczność i popularność nie czynią twierdzenia prawdziwym. Weryfikacja racjonalna nie znika w relacjach, a religijna prawda objawiona nie zastępuje sprawdzania faktów.",
+        "sourceRefs": [
+          "p132",
+          "p134",
+          "p135",
+          "p136",
+          "p137",
+          "p138",
+          "p214",
+          "p237"
+        ]
+      },
+      "foundationRefs": [
+        "p237"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p137",
+        "start": 166,
+        "end": 193,
+        "text": "prawda jest dobrem wspólnym"
+      }
+    },
+    {
+      "id": "education",
+      "locale": "pl",
+      "title": "Wychowanie i edukacja",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Wychowanie rozwija rozumienie, zdolność pytań i odpowiedzialny wybór poprzez czas, wysiłek oraz wiarygodne relacje.",
+        "sourceRefs": [
+          "p139",
+          "p140",
+          "p141",
+          "p142",
+          "p143",
+          "p144",
+          "p145",
+          "p146",
+          "p147",
+          "p238"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Dostęp do natychmiastowej odpowiedzi nie daje jeszcze mądrości. Trzeba uczyć także rezygnowania z AI, chronić małoletnich i zachować przypisane źródłu prawa rodziców do wyboru formacji.",
+        "sourceRefs": [
+          "p139",
+          "p140",
+          "p141",
+          "p142",
+          "p143",
+          "p144",
+          "p145",
+          "p146",
+          "p147",
+          "p238"
+        ]
+      },
+      "foundationRefs": [
+        "p238"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p140",
+        "start": 341,
+        "end": 386,
+        "text": "kiedy i w jakich celach nie należy jej używać"
+      }
+    },
+    {
+      "id": "work",
+      "locale": "pl",
+      "title": "Godność pracy",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Praca pozwala rozwijać zdolności, utrzymywać życie, budować relacje i wnosić wkład we wspólnotę.",
+        "sourceRefs": [
+          "p148",
+          "p149",
+          "p150",
+          "p151",
+          "p152",
+          "p153",
+          "p154",
+          "p156",
+          "p157"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Podstawowa godność nie zależy od zatrudnienia. Pomoc kryzysowa bywa konieczna, usuwanie niebezpiecznych zadań jest pożądane, a uczestnictwo i obywatelstwo wymagają ochrony również bez pracy.",
+        "sourceRefs": [
+          "p148",
+          "p149",
+          "p150",
+          "p151",
+          "p152",
+          "p153",
+          "p154",
+          "p156",
+          "p157"
+        ]
+      },
+      "foundationRefs": [
+        "p148"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p149",
+        "start": 53,
+        "end": 91,
+        "text": "wyraża i pomnaża godność naszego życia"
+      }
+    },
+    {
+      "id": "distribution",
+      "locale": "pl",
+      "title": "Sprawiedliwość gospodarcza i podział dóbr",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Sprawiedliwość gospodarcza dotyczy dostępu do dóbr, podziału korzyści i kosztów oraz reguł tworzenia bogactwa.",
+        "sourceRefs": [
+          "p158",
+          "p159",
+          "p160",
+          "p161",
+          "p162",
+          "p163",
+          "p164"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Redystrybucja pozostaje potrzebna, ale nie naprawi wszystkiego po fakcie. Trzeba oceniać finansowanie i produkcję, a miarą postępu nie może być sam PKB.",
+        "sourceRefs": [
+          "p158",
+          "p159",
+          "p160",
+          "p161",
+          "p162",
+          "p163",
+          "p164"
+        ]
+      },
+      "foundationRefs": [],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p162",
+        "start": 514,
+        "end": 554,
+        "text": "wszystkich faz działalności gospodarczej"
+      }
+    },
+    {
+      "id": "family",
+      "locale": "pl",
+      "title": "Rodziny i przyszłość",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Źródło traktuje rodzinę jako podstawową wspólnotę rozwoju osoby, której przyszłość zależy od warunków społecznych i pracy.",
+        "sourceRefs": [
+          "p165",
+          "p166",
+          "p167",
+          "p168",
+          "p169"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Autor określa rodzinę jako opartą na trwałym związku mężczyzny i kobiety. To konkretne stanowisko źródła, którego zrozumienie nie wymaga zgody. Argument wiąże jej przyszłość z prawem, kulturą i warunkami materialnymi.",
+        "sourceRefs": [
+          "p165",
+          "p166",
+          "p167",
+          "p168",
+          "p169"
+        ]
+      },
+      "foundationRefs": [],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p165",
+        "start": 54,
+        "end": 89,
+        "text": "trwałym związku mężczyzny i kobiety"
+      }
+    },
+    {
+      "id": "freedom",
+      "locale": "pl",
+      "title": "Wolność i sprawczość",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Wolność obejmuje rzeczywistą zdolność osądu i działania, zależną także od uwagi, instytucji i kontroli nad danymi.",
+        "sourceRefs": [
+          "p128",
+          "p136",
+          "p146",
+          "p154",
+          "p170",
+          "p171",
+          "p172",
+          "p178"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Formalny wybór nie wystarcza przy profilowaniu, manipulacji lub braku odwołania. Wewnętrzna praca nad uwagą wymaga publicznych zabezpieczeń, a nie zastąpienia ich osobistą dyscypliną.",
+        "sourceRefs": [
+          "p128",
+          "p136",
+          "p146",
+          "p154",
+          "p170",
+          "p171",
+          "p172",
+          "p178"
+        ]
+      },
+      "foundationRefs": [
+        "p128"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p171",
+        "start": 1096,
+        "end": 1120,
+        "text": "możliwości odwołania się"
+      }
+    },
+    {
+      "id": "exploitation",
+      "locale": "pl",
+      "title": "Niewidzialna praca i wyzysk",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Niewidzialny wyzysk wiąże wygodę cyfrowych usług z ludzką pracą, zasobami i relacjami zależności ukrytymi przed użytkownikiem.",
+        "sourceRefs": [
+          "p101",
+          "p173",
+          "p174",
+          "p175",
+          "p176",
+          "p177",
+          "p178",
+          "p179",
+          "p240"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Praca przy danych, wydobycie, handel ludźmi i przejęcie danych populacji są różnymi zjawiskami. Ich związki nie pozwalają zlać ich w jeden slogan ani pominąć historycznego współudziału Kościoła.",
+        "sourceRefs": [
+          "p101",
+          "p173",
+          "p174",
+          "p175",
+          "p176",
+          "p177",
+          "p178",
+          "p179",
+          "p240"
+        ]
+      },
+      "foundationRefs": [
+        "p176",
+        "p177",
+        "p240"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p173",
+        "start": 439,
+        "end": 475,
+        "text": "cichej pracy milionów istot ludzkich"
+      }
+    },
+    {
+      "id": "peace",
+      "locale": "pl",
+      "title": "Pokój wobec dominacji",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Pokój jest wspólnym ładem sprawiedliwości, ochrony i odpowiedzialności, a nie jedynie przerwą między konfliktami.",
+        "sourceRefs": [
+          "p182",
+          "p186",
+          "p197",
+          "p198",
+          "p199",
+          "p200",
+          "p205",
+          "p212",
+          "p215",
+          "p218",
+          "p224",
+          "p228"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Źródło zachowuje najściślejsze prawo do uprawnionej obrony i siłę jako ostateczność. Odrzuca delegowanie decyzji śmiercionośnych oraz nieodwracalnych i wymaga rzeczywistej kontroli, czasu osądu oraz ochrony cywilów.",
+        "sourceRefs": [
+          "p182",
+          "p186",
+          "p197",
+          "p198",
+          "p199",
+          "p200",
+          "p205",
+          "p212",
+          "p215",
+          "p218",
+          "p224",
+          "p228"
+        ]
+      },
+      "foundationRefs": [
+        "p227",
+        "p228"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p218",
+        "start": 13,
+        "end": 30,
+        "text": "zdrowego realizmu"
+      }
+    },
+    {
+      "id": "memory",
+      "locale": "pl",
+      "title": "Pamięć i perspektywa ofiar",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Pamięć pozwala ujmować historię przez świadectwo cierpiących oraz rozpoznawać dawne mechanizmy w nowych formach przemocy.",
+        "sourceRefs": [
+          "p121",
+          "p122",
+          "p123",
+          "p124",
+          "p176",
+          "p191",
+          "p216",
+          "p217",
+          "p244"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Opis historyczny i pamięć doświadczenia są potrzebne, lecz nie tożsame. Pamięć ofiar ma pobudzać sprawiedliwość i ochronę, a nie legitymizować odwet lub zastępować rzetelne sprawdzanie faktów.",
+        "sourceRefs": [
+          "p121",
+          "p122",
+          "p123",
+          "p124",
+          "p176",
+          "p191",
+          "p216",
+          "p217",
+          "p244"
+        ]
+      },
+      "foundationRefs": [
+        "p121",
+        "p244"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p217",
+        "start": 61,
+        "end": 87,
+        "text": "spojrzeniu i głosowi ofiar"
+      }
+    },
+    {
+      "id": "dialogue",
+      "locale": "pl",
+      "title": "Dialog i uczestnictwo",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Dialog łączy słuchanie i wymianę argumentów z rzeczywistym uczestnictwem w kształtowaniu wspólnych decyzji.",
+        "sourceRefs": [
+          "p002",
+          "p023",
+          "p070",
+          "p071",
+          "p072",
+          "p107",
+          "p218",
+          "p219",
+          "p220",
+          "p221",
+          "p223",
+          "p224"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Nie jest wymogiem jednomyślności ani aprobaty wszystkich działań partnera. Potrzebuje prawdy, instytucji i ochrony słabszych; w niektórych konfliktach nie wolno udawać neutralności wobec krzywdy.",
+        "sourceRefs": [
+          "p002",
+          "p023",
+          "p070",
+          "p071",
+          "p072",
+          "p107",
+          "p218",
+          "p219",
+          "p220",
+          "p221",
+          "p223",
+          "p224"
+        ]
+      },
+      "foundationRefs": [
+        "p002",
+        "p223"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p221",
+        "start": 91,
+        "end": 109,
+        "text": "kultury negocjacji"
+      }
+    },
+    {
+      "id": "hope",
+      "locale": "pl",
+      "title": "Nadzieja i konkretna odpowiedzialność",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Nadzieja podtrzymuje odpowiedzialne działanie mimo porażek, nierównej siły i braku gwarancji poprawy.",
+        "sourceRefs": [
+          "p123",
+          "p124",
+          "p125",
+          "p126",
+          "p211",
+          "p212",
+          "p236",
+          "p241",
+          "p243",
+          "p245"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Nie jest automatycznym postępem ani magicznym usunięciem konfliktu. Źródło odróżnia własną teologiczną podstawę od praktycznego obowiązku każdego w jego rzeczywistym zakresie działania.",
+        "sourceRefs": [
+          "p123",
+          "p124",
+          "p125",
+          "p126",
+          "p211",
+          "p212",
+          "p236",
+          "p241",
+          "p243",
+          "p245"
+        ]
+      },
+      "foundationRefs": [
+        "p125",
+        "p126",
+        "p211",
+        "p243",
+        "p245"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p212",
+        "start": 528,
+        "end": 570,
+        "text": "nikt nie jest pozbawiony odpowiedzialności"
+      }
+    },
+    {
+      "id": "faith-foundations",
+      "locale": "pl",
+      "title": "Podstawy teologiczne",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Chrześcijańskie przesłanki źródła wyjaśniają jego wizję godności, relacji, solidarności i nadziei.",
+        "sourceRefs": [
+          "p001",
+          "p011",
+          "p048",
+          "p049",
+          "p050",
+          "p052",
+          "p088",
+          "p127",
+          "p128",
+          "p231",
+          "p232",
+          "p233",
+          "p234",
+          "p235",
+          "p242",
+          "p243",
+          "p244",
+          "p245"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Podstawa teologiczna nie jest ozdobą ani tym samym co dowód świecki. Można zrozumieć argument, nie podzielając wiary; przesłanki religijne współistnieją z konkretnymi obowiązkami społecznymi i krytyką kościelnych instytucji.",
+        "sourceRefs": [
+          "p001",
+          "p011",
+          "p048",
+          "p049",
+          "p050",
+          "p052",
+          "p088",
+          "p127",
+          "p128",
+          "p231",
+          "p232",
+          "p233",
+          "p234",
+          "p235",
+          "p242",
+          "p243",
+          "p244",
+          "p245"
+        ]
+      },
+      "foundationRefs": [
+        "p001",
+        "p011",
+        "p048",
+        "p049",
+        "p050",
+        "p052",
+        "p088",
+        "p127",
+        "p128",
+        "p231",
+        "p232",
+        "p233",
+        "p234",
+        "p235",
+        "p242",
+        "p243",
+        "p244",
+        "p245"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p127",
+        "start": 403,
+        "end": 414,
+        "text": "daru Bożego"
+      }
+    },
+    {
+      "id": "history",
+      "locale": "pl",
+      "title": "Rozwój nauki społecznej",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Nauka społeczna rozwija się w odpowiedzi na historyczne pytania, zachowując deklarowaną przez źródło ciągłość podstawowych zasad.",
+        "sourceRefs": [
+          "p017",
+          "p020",
+          "p021",
+          "p023",
+          "p027",
+          "p029",
+          "p030",
+          "p031",
+          "p032",
+          "p033",
+          "p034",
+          "p035",
+          "p037",
+          "p038",
+          "p039",
+          "p040",
+          "p041",
+          "p042",
+          "p043",
+          "p044",
+          "p045",
+          "p176"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Ta historia nie jest zawsze linearna ani wolna od błędów instytucji. Źródło uznaje zmianę akcentów i perspektywy oraz własny współudział, nie przedstawia kompletnego niezależnego podręcznika historii.",
+        "sourceRefs": [
+          "p017",
+          "p020",
+          "p021",
+          "p023",
+          "p027",
+          "p029",
+          "p030",
+          "p031",
+          "p032",
+          "p033",
+          "p034",
+          "p035",
+          "p037",
+          "p038",
+          "p039",
+          "p040",
+          "p041",
+          "p042",
+          "p043",
+          "p044",
+          "p045",
+          "p176"
+        ]
+      },
+      "foundationRefs": [
+        "p017",
+        "p020",
+        "p021",
+        "p023",
+        "p027",
+        "p029",
+        "p033",
+        "p034",
+        "p042",
+        "p044",
+        "p045",
+        "p176"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p045",
+        "start": 650,
+        "end": 669,
+        "text": "nie zawsze linearny"
+      }
+    }
+  ]
+}

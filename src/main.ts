@@ -1,6 +1,7 @@
 import { t } from './messages'
 import { createApp } from 'vue'
 import '@dyne/vite-theme/style.css'
+import './polish-fonts.css'
 import './style.css'
 import App from './App.vue'
 import { router } from './router'

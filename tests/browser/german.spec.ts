@@ -24,7 +24,7 @@ for (const width of [390, 1440]) for (const size of ['100', '200']) {
     await page.setViewportSize({ width, height: width === 390 ? 844 : 900 })
     await page.emulateMedia({ reducedMotion: 'reduce' })
     await page.goto('./#/de/atlas')
-    await expect(page.locator('#language option')).toHaveText(['English', 'Italiano', 'Deutsch', 'Español', 'Français', 'Português'])
+    await expect(page.locator('#language option')).toHaveText(['English', 'Italiano', 'Deutsch', 'Español', 'Français', 'Português', 'Polski'])
     await page.locator('#language').focus()
     await page.keyboard.press('Tab')
     await expect(page.locator('#appearance')).toBeFocused()
@@ -73,7 +73,7 @@ for (const width of [390, 1440]) for (const size of ['100', '200']) {
 }
 
 for (const [preferences, expected] of [
-  [['pl-PL', 'de-DE', 'it-IT'], 'de'], [['DE-ch', 'en'], 'de'], [['it-IT', 'de-DE'], 'it'], [['en-GB', 'de-DE'], 'en'], [['ar', 'ru-RU'], 'en'],
+  [['be-BY', 'de-DE', 'it-IT'], 'de'], [['DE-ch', 'en'], 'de'], [['it-IT', 'de-DE'], 'it'], [['en-GB', 'de-DE'], 'en'], [['ar', 'ru-RU'], 'en'],
 ] as const) {
   test(`browser defaults ${preferences.join(',')} choose ${expected}; explicit English remains stable`, async ({ page }) => {
     await page.addInitScript(languages => {
@@ -309,7 +309,7 @@ test('German substantive Arendt note and spaced bibliographic references keep th
 
 test('German navigator.language backup and explicit Italian entry remain independent', async ({ page }) => {
   await page.addInitScript(() => {
-    Object.defineProperty(navigator, 'languages', { get: () => ['pl-PL', 'ru'] })
+    Object.defineProperty(navigator, 'languages', { get: () => ['be-BY', 'ru'] })
     Object.defineProperty(navigator, 'language', { get: () => 'de-AT' })
   })
   await page.goto('./')
