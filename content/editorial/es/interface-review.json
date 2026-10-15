@@ -1,0 +1,1783 @@
+{
+  "schemaVersion": 1,
+  "locale": "es",
+  "editionId": "mh-es-official-html-2026-10-14",
+  "reviewDate": "2026-10-15",
+  "readingRevision": "es-2026-10-15-reading-1",
+  "catalogPath": "content/messages/es.json",
+  "catalogSha256": "5ff2bc6c9d414a448f63004f489165c397f3d78e91994c9a32f93e8ea0725952",
+  "catalogKeys": 291,
+  "status": "integrated-verification-complete-awaiting-supervisor-review",
+  "method": "Reviewed all public and assistive catalog values for meaning, official Spanish terms, placeholders and composition around inline titles/links. The L5.2 reading and frozen sources are unchanged. Actual Chromium captures were inspected on both hosting bases at phone/desktop sizes and 100/200 percent text. Automated accessibility, keyboard and painted-font checks are bounded evidence, not native-speaker, comprehensive accessibility or reader-study proof.",
+  "enabledLocalesAtReview": [
+    "en",
+    "it",
+    "de",
+    "es"
+  ],
+  "otherLocalesRemainUnavailable": true,
+  "catalogReview": [
+    "Navigation, selector, appearance, text size and local-data notices",
+    "Route/document titles, About, attribution, source-edition labels and source method",
+    "Search, accent folding, paragraph keyword, empty/loading/error/retry states",
+    "Saved locations, resume, caller return, remove/undo/reset and live announcements",
+    "Concepts, relations, optional foundations, six trails, endings and voluntary reflection",
+    "All nine relation labels equal the reviewed Spanish alignment map; enum and saved-block formatting localized"
+  ],
+  "gatesSequential": [
+    {
+      "command": "npm run check",
+      "exitStatus": 0,
+      "unitTestsPassed": 144,
+      "log": "output/spanish/check.log",
+      "logSha256": "02c069c1f8560bf85147c6ecd6a393bffa17b4b335e3e17456a2c63bb68d371a"
+    },
+    {
+      "command": "npm run source:check",
+      "exitStatus": 0,
+      "sourceEditions": 10,
+      "paragraphsPerEdition": 245,
+      "notesPerEdition": 224,
+      "log": "output/spanish/source-check.log",
+      "logSha256": "eb4ce60eb22cf2ad09888c528c2bc9c629576c55da0b9d707609cf594ba7ca89"
+    },
+    {
+      "command": "PLAYWRIGHT_BROWSERS_PATH=/tmp/magnifica-playwright BROWSER_EVIDENCE_DIR=output/spanish/hosting npm run test:browser:all",
+      "exitStatus": 0,
+      "log": "output/spanish/browser-all.log",
+      "logSha256": "e32ad244d328b092d02521a0638fc706f616b5e81e6e983af5e03f2affaeba71"
+    }
+  ],
+  "browserReports": [
+    {
+      "base": "/",
+      "path": "output/spanish/hosting/root-browser-results.json",
+      "sha256": "1bb06776258ec8217c6c75fae0e994fcd32d3adcbae6149b2182e0c728ff0515",
+      "stats": {
+        "startTime": "2026-10-15T00:16:34.117Z",
+        "duration": 35501.218,
+        "expected": 193,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "spanishCases": 42
+    },
+    {
+      "base": "/magnifica-humanitas/",
+      "path": "output/spanish/hosting/subpath-browser-results.json",
+      "sha256": "08643146f1450c11a19324c43d54288127b50c9289e8709ab0e76f7d0673c523",
+      "stats": {
+        "startTime": "2026-10-15T00:17:10.910Z",
+        "duration": 35601.267,
+        "expected": 193,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "spanishCases": 42
+    }
+  ],
+  "hostingBuildEvidence": {
+    "path": "output/spanish/hosting/browser-evidence.json",
+    "sha256": "dc6273c3859a977a3025a67ee00b30ccf298c1144bb6861e5eaf5f0866dfb1ee"
+  },
+  "isolatedRtlFixture": {
+    "commands": [
+      "MAGNIFICA_RTL_FIXTURE=1 VITE_BASE=/ npx vite build --mode locale-fixture",
+      "VITE_BASE=/ PLAYWRIGHT_BROWSERS_PATH=/tmp/magnifica-playwright npx playwright test --config playwright.locale.config.ts"
+    ],
+    "exitStatus": 0,
+    "stats": {
+      "startTime": "2026-10-15T00:18:17.076Z",
+      "duration": 5660.588,
+      "expected": 11,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "report": "output/spanish/rtl-fixture-results.json",
+    "sha256": "224d56855850bc9dc1cb30877c9c40956761d64819aca2eb8e5c5ffb8c2aac44",
+    "buildLogSha256": "8a465810c437bfa8f35fb44e4e4ecb107835b0ab50bb939659b8ff15551ff4c4",
+    "browserLogSha256": "261961d1bac9c353822d2fb50c46beb26b3b2155ffc24fd1881c95dd6ea1f4d3"
+  },
+  "browserCoverage": [
+    "42 Spanish cases per base, plus accepted English/Italian/German regressions",
+    "Nine surfaces: Atlas, Concept, Trail, Read, Source, Note, Search, Saved and About",
+    "390x844 and 1440x900 viewports at 100/200 percent text; keyboard selector, focus/return and reduced motion",
+    "Ordered regional browser preferences, navigator.language fallback and explicit locale URLs",
+    "Stable route/query/anchor switching; local source/note links, bibliographic n143 and ibíd. dependencies",
+    "Saved paragraph restoration and isolated storage; failed/cancelled activation preserves exact title and last/recent/visited/nonempty saved fields",
+    "Localized search, empty/error/loading/retry states, temporary storage, reflections and deferred resources"
+  ],
+  "visualEvidence": {
+    "surfaceScreenshots": 72,
+    "selectorScreenshots": 8,
+    "darkAboutScreenshots": 8,
+    "screenshots": [
+      {
+        "path": "output/spanish/root-1440-100-about-dark.png",
+        "sha256": "4768a68736d0aec5dbb64a6069b546d86d6f0858945b1dfaa2dd62ce6a3569c8"
+      },
+      {
+        "path": "output/spanish/root-1440-100-about.png",
+        "sha256": "9daa56d617670b1a81a7b0dc466883a0e5bbeae733b74e13e74bf7b1663eeefb"
+      },
+      {
+        "path": "output/spanish/root-1440-100-atlas.png",
+        "sha256": "7b4ab7df591efca3d9a0011c324dd703e7ee8dbe03c4e8221e645d51bb1ece91"
+      },
+      {
+        "path": "output/spanish/root-1440-100-concept.png",
+        "sha256": "297ba32e8840fd0ef2106e003a29636dec545e5002de01e90e00eb7c6e05f2be"
+      },
+      {
+        "path": "output/spanish/root-1440-100-note.png",
+        "sha256": "18916ea105d4397d465684d5a9ca71057301120812bbde0924ae1983ebda27f2"
+      },
+      {
+        "path": "output/spanish/root-1440-100-read.png",
+        "sha256": "9be4f51758f2760217b1336efdeffe5ff0d7d6cac4bfbceeaa1e6b990e479d73"
+      },
+      {
+        "path": "output/spanish/root-1440-100-saved.png",
+        "sha256": "e776d03277c50410e420b8894b3e6e2119af0e1ba28e83a5cfe8f42b2c912ae3"
+      },
+      {
+        "path": "output/spanish/root-1440-100-search.png",
+        "sha256": "8841b0b51dfd6d6a81b5ca9855e1d146596614aeb90d44835d0f5387fa8de4da"
+      },
+      {
+        "path": "output/spanish/root-1440-100-selector.png",
+        "sha256": "41e2512dc2a9d9e65109d411bbb9c5b736619be116b918ef906480114ade6559"
+      },
+      {
+        "path": "output/spanish/root-1440-100-source.png",
+        "sha256": "4cee90105084450b66f7ad5b8329697935bffa30ea615242c29b2cf77d67a682"
+      },
+      {
+        "path": "output/spanish/root-1440-100-trail.png",
+        "sha256": "4093d5c91aef8f40cf8717908d1fda719d5e56fcd92b5535e1d63f4eebeb18ee"
+      },
+      {
+        "path": "output/spanish/root-1440-200-about-dark.png",
+        "sha256": "b9efd9cdf07d16992323befa0eb0e297808c92d843d3d866bf899c068a68067a"
+      },
+      {
+        "path": "output/spanish/root-1440-200-about.png",
+        "sha256": "2155f236f1abaed16897fa9c86db97ce6d0d05b6ac3cbb87657079ff3fd81e75"
+      },
+      {
+        "path": "output/spanish/root-1440-200-atlas.png",
+        "sha256": "94d84790527d705a9c0b192e056c6a38663e8c7967a8bb1465c5f8569a84ea02"
+      },
+      {
+        "path": "output/spanish/root-1440-200-concept.png",
+        "sha256": "d1a2e8c24320c6f9fa358e2423053091abd0762735d2fc74f5e51ab2264b3db5"
+      },
+      {
+        "path": "output/spanish/root-1440-200-note.png",
+        "sha256": "ff2a31249a5471520c336486e3c103e147fc96c91e3a106a769a9b5b9e11969f"
+      },
+      {
+        "path": "output/spanish/root-1440-200-read.png",
+        "sha256": "834c61461ace34894c28d947c8d77d0392796e26c3e1267743670fc39b00eef3"
+      },
+      {
+        "path": "output/spanish/root-1440-200-saved.png",
+        "sha256": "dd2208831a88be877b7d142251331a381fde3eaa1c9c9c7c05fd84375e728103"
+      },
+      {
+        "path": "output/spanish/root-1440-200-search.png",
+        "sha256": "0995f53562be99f5770c9b0152b12fc65150ab5edc6e4f2119e72a0fc6c42c84"
+      },
+      {
+        "path": "output/spanish/root-1440-200-selector.png",
+        "sha256": "5147a2419628de23f2cedf411bab1ed435b4c963a2fd09a5158130750bf4c439"
+      },
+      {
+        "path": "output/spanish/root-1440-200-source.png",
+        "sha256": "3d6d058ca59972059606701998483c8e79f2fc0864616fe7c9379980068663dc"
+      },
+      {
+        "path": "output/spanish/root-1440-200-trail.png",
+        "sha256": "7ac16d0d8597b3e8ea37c2a55d3e4272fb4fad310178815cccc148524b96a0b2"
+      },
+      {
+        "path": "output/spanish/root-390-100-about-dark.png",
+        "sha256": "a1c5d81e7aaff149410d2fec0445082272bb7d14cae82f12fe95f2e2323defa0"
+      },
+      {
+        "path": "output/spanish/root-390-100-about.png",
+        "sha256": "be4e63041cde25b2184a58a67f65be192fa9432f2207eb1e523e5a9ab7d32073"
+      },
+      {
+        "path": "output/spanish/root-390-100-atlas.png",
+        "sha256": "abfff87065e66de80c314f84922a443cf200617ea9784af41f62292e2d54db88"
+      },
+      {
+        "path": "output/spanish/root-390-100-concept.png",
+        "sha256": "18e7b79d40452fb0b485d8268ff98b3502ef73de48d244730ccf65d5375f53f1"
+      },
+      {
+        "path": "output/spanish/root-390-100-note.png",
+        "sha256": "672ea9f8a6194a9d92b182c206ba978e8fb9d024ce48bffdcb14ac363353aee5"
+      },
+      {
+        "path": "output/spanish/root-390-100-read.png",
+        "sha256": "f290f1343d48e31aae316adf239e5ce5cd571a08cd3f626aea5216fe37a3e91f"
+      },
+      {
+        "path": "output/spanish/root-390-100-saved.png",
+        "sha256": "8bb57d0067e9a88c581f15ae741832b3a82ba3535a99a3e591fe1a8008166f0c"
+      },
+      {
+        "path": "output/spanish/root-390-100-search.png",
+        "sha256": "b45d85aa2c5763a8b897df6d0669a39b8bb1c5bdd78174886449c1bb23f60a4b"
+      },
+      {
+        "path": "output/spanish/root-390-100-selector.png",
+        "sha256": "7ed82ae71c1c6649946c80e9574ca25347fb451c03f2c7006811f1e50d4f244d"
+      },
+      {
+        "path": "output/spanish/root-390-100-source.png",
+        "sha256": "2519e2e813bd733277747869bc1fa57ce684ac52b5a4c63346af8a93331263e5"
+      },
+      {
+        "path": "output/spanish/root-390-100-trail.png",
+        "sha256": "636103e6355ec6cb660810425c1258d5deb0f1979f63992ee1b3edfe09e00886"
+      },
+      {
+        "path": "output/spanish/root-390-200-about-dark.png",
+        "sha256": "b2a9f5296230486fb5691213478a69886ac8f42bc3f6159aadd762c64a85d326"
+      },
+      {
+        "path": "output/spanish/root-390-200-about.png",
+        "sha256": "69caf2de04a63227537eebdceaca655f9d4f9a92a8112fce353665114fc338e5"
+      },
+      {
+        "path": "output/spanish/root-390-200-atlas.png",
+        "sha256": "e732dd12ed649e490bbc8e5037628f1a9c5cc529a6d896e06b8f8c51cfab5d0a"
+      },
+      {
+        "path": "output/spanish/root-390-200-concept.png",
+        "sha256": "fa59d93d858f3627174f9a5d6264a7ddcf5a65fbd8d668f4f1ed04f2335889f5"
+      },
+      {
+        "path": "output/spanish/root-390-200-note.png",
+        "sha256": "e0e5c1fa1044caa1ecb2b5dc83b0e461c7715fa1da0edab458f48549d7f43094"
+      },
+      {
+        "path": "output/spanish/root-390-200-read.png",
+        "sha256": "68b908ff6e5cd80d251227de8a761b84ccdd30eff5192993d9ac67b0fa067034"
+      },
+      {
+        "path": "output/spanish/root-390-200-saved.png",
+        "sha256": "5f488f74ba3922b49d983d9647d0126e3227a347f9c967e1f416c4337dc009e7"
+      },
+      {
+        "path": "output/spanish/root-390-200-search.png",
+        "sha256": "823aa5c4bf40715b3a2529504bd41adec7beb6a3ec921e27784a5e98fe40a4dd"
+      },
+      {
+        "path": "output/spanish/root-390-200-selector.png",
+        "sha256": "051e6f0c2a3a172bff3d18f57a3d6ac81aad3024c25785428be55f26ef084db1"
+      },
+      {
+        "path": "output/spanish/root-390-200-source.png",
+        "sha256": "291b3a44d411dd354534cd0cf992f7eae2f3afd7be81adb4deb332e0358db160"
+      },
+      {
+        "path": "output/spanish/root-390-200-trail.png",
+        "sha256": "8217f018304725fb546e7b41dc63a6d1460532e0cf70b027fb42783ca52080ab"
+      },
+      {
+        "path": "output/spanish/subpath-1440-100-about-dark.png",
+        "sha256": "4768a68736d0aec5dbb64a6069b546d86d6f0858945b1dfaa2dd62ce6a3569c8"
+      },
+      {
+        "path": "output/spanish/subpath-1440-100-about.png",
+        "sha256": "9daa56d617670b1a81a7b0dc466883a0e5bbeae733b74e13e74bf7b1663eeefb"
+      },
+      {
+        "path": "output/spanish/subpath-1440-100-atlas.png",
+        "sha256": "7b4ab7df591efca3d9a0011c324dd703e7ee8dbe03c4e8221e645d51bb1ece91"
+      },
+      {
+        "path": "output/spanish/subpath-1440-100-concept.png",
+        "sha256": "297ba32e8840fd0ef2106e003a29636dec545e5002de01e90e00eb7c6e05f2be"
+      },
+      {
+        "path": "output/spanish/subpath-1440-100-note.png",
+        "sha256": "18916ea105d4397d465684d5a9ca71057301120812bbde0924ae1983ebda27f2"
+      },
+      {
+        "path": "output/spanish/subpath-1440-100-read.png",
+        "sha256": "9be4f51758f2760217b1336efdeffe5ff0d7d6cac4bfbceeaa1e6b990e479d73"
+      },
+      {
+        "path": "output/spanish/subpath-1440-100-saved.png",
+        "sha256": "e776d03277c50410e420b8894b3e6e2119af0e1ba28e83a5cfe8f42b2c912ae3"
+      },
+      {
+        "path": "output/spanish/subpath-1440-100-search.png",
+        "sha256": "8841b0b51dfd6d6a81b5ca9855e1d146596614aeb90d44835d0f5387fa8de4da"
+      },
+      {
+        "path": "output/spanish/subpath-1440-100-selector.png",
+        "sha256": "41e2512dc2a9d9e65109d411bbb9c5b736619be116b918ef906480114ade6559"
+      },
+      {
+        "path": "output/spanish/subpath-1440-100-source.png",
+        "sha256": "4cee90105084450b66f7ad5b8329697935bffa30ea615242c29b2cf77d67a682"
+      },
+      {
+        "path": "output/spanish/subpath-1440-100-trail.png",
+        "sha256": "4093d5c91aef8f40cf8717908d1fda719d5e56fcd92b5535e1d63f4eebeb18ee"
+      },
+      {
+        "path": "output/spanish/subpath-1440-200-about-dark.png",
+        "sha256": "b9efd9cdf07d16992323befa0eb0e297808c92d843d3d866bf899c068a68067a"
+      },
+      {
+        "path": "output/spanish/subpath-1440-200-about.png",
+        "sha256": "2155f236f1abaed16897fa9c86db97ce6d0d05b6ac3cbb87657079ff3fd81e75"
+      },
+      {
+        "path": "output/spanish/subpath-1440-200-atlas.png",
+        "sha256": "94d84790527d705a9c0b192e056c6a38663e8c7967a8bb1465c5f8569a84ea02"
+      },
+      {
+        "path": "output/spanish/subpath-1440-200-concept.png",
+        "sha256": "d1a2e8c24320c6f9fa358e2423053091abd0762735d2fc74f5e51ab2264b3db5"
+      },
+      {
+        "path": "output/spanish/subpath-1440-200-note.png",
+        "sha256": "ff2a31249a5471520c336486e3c103e147fc96c91e3a106a769a9b5b9e11969f"
+      },
+      {
+        "path": "output/spanish/subpath-1440-200-read.png",
+        "sha256": "834c61461ace34894c28d947c8d77d0392796e26c3e1267743670fc39b00eef3"
+      },
+      {
+        "path": "output/spanish/subpath-1440-200-saved.png",
+        "sha256": "dd2208831a88be877b7d142251331a381fde3eaa1c9c9c7c05fd84375e728103"
+      },
+      {
+        "path": "output/spanish/subpath-1440-200-search.png",
+        "sha256": "0995f53562be99f5770c9b0152b12fc65150ab5edc6e4f2119e72a0fc6c42c84"
+      },
+      {
+        "path": "output/spanish/subpath-1440-200-selector.png",
+        "sha256": "5147a2419628de23f2cedf411bab1ed435b4c963a2fd09a5158130750bf4c439"
+      },
+      {
+        "path": "output/spanish/subpath-1440-200-source.png",
+        "sha256": "3d6d058ca59972059606701998483c8e79f2fc0864616fe7c9379980068663dc"
+      },
+      {
+        "path": "output/spanish/subpath-1440-200-trail.png",
+        "sha256": "7ac16d0d8597b3e8ea37c2a55d3e4272fb4fad310178815cccc148524b96a0b2"
+      },
+      {
+        "path": "output/spanish/subpath-390-100-about-dark.png",
+        "sha256": "a1c5d81e7aaff149410d2fec0445082272bb7d14cae82f12fe95f2e2323defa0"
+      },
+      {
+        "path": "output/spanish/subpath-390-100-about.png",
+        "sha256": "be4e63041cde25b2184a58a67f65be192fa9432f2207eb1e523e5a9ab7d32073"
+      },
+      {
+        "path": "output/spanish/subpath-390-100-atlas.png",
+        "sha256": "fdd090fb9fb71cab0c2d71da866dd6e6d0ee08393ec961ed0699e39af8d37425"
+      },
+      {
+        "path": "output/spanish/subpath-390-100-concept.png",
+        "sha256": "3cb0c47abd15a9c019af9e5e38591f7aea1d110eb134e1c45719a3cc31c05241"
+      },
+      {
+        "path": "output/spanish/subpath-390-100-note.png",
+        "sha256": "672ea9f8a6194a9d92b182c206ba978e8fb9d024ce48bffdcb14ac363353aee5"
+      },
+      {
+        "path": "output/spanish/subpath-390-100-read.png",
+        "sha256": "f290f1343d48e31aae316adf239e5ce5cd571a08cd3f626aea5216fe37a3e91f"
+      },
+      {
+        "path": "output/spanish/subpath-390-100-saved.png",
+        "sha256": "8bb57d0067e9a88c581f15ae741832b3a82ba3535a99a3e591fe1a8008166f0c"
+      },
+      {
+        "path": "output/spanish/subpath-390-100-search.png",
+        "sha256": "b45d85aa2c5763a8b897df6d0669a39b8bb1c5bdd78174886449c1bb23f60a4b"
+      },
+      {
+        "path": "output/spanish/subpath-390-100-selector.png",
+        "sha256": "7ed82ae71c1c6649946c80e9574ca25347fb451c03f2c7006811f1e50d4f244d"
+      },
+      {
+        "path": "output/spanish/subpath-390-100-source.png",
+        "sha256": "2519e2e813bd733277747869bc1fa57ce684ac52b5a4c63346af8a93331263e5"
+      },
+      {
+        "path": "output/spanish/subpath-390-100-trail.png",
+        "sha256": "14f809679d9a33981e75553e3f29c4e43f5ee72da4ef705563eaf75a95350c3b"
+      },
+      {
+        "path": "output/spanish/subpath-390-200-about-dark.png",
+        "sha256": "b2a9f5296230486fb5691213478a69886ac8f42bc3f6159aadd762c64a85d326"
+      },
+      {
+        "path": "output/spanish/subpath-390-200-about.png",
+        "sha256": "69caf2de04a63227537eebdceaca655f9d4f9a92a8112fce353665114fc338e5"
+      },
+      {
+        "path": "output/spanish/subpath-390-200-atlas.png",
+        "sha256": "e732dd12ed649e490bbc8e5037628f1a9c5cc529a6d896e06b8f8c51cfab5d0a"
+      },
+      {
+        "path": "output/spanish/subpath-390-200-concept.png",
+        "sha256": "fa59d93d858f3627174f9a5d6264a7ddcf5a65fbd8d668f4f1ed04f2335889f5"
+      },
+      {
+        "path": "output/spanish/subpath-390-200-note.png",
+        "sha256": "e0e5c1fa1044caa1ecb2b5dc83b0e461c7715fa1da0edab458f48549d7f43094"
+      },
+      {
+        "path": "output/spanish/subpath-390-200-read.png",
+        "sha256": "68b908ff6e5cd80d251227de8a761b84ccdd30eff5192993d9ac67b0fa067034"
+      },
+      {
+        "path": "output/spanish/subpath-390-200-saved.png",
+        "sha256": "5f488f74ba3922b49d983d9647d0126e3227a347f9c967e1f416c4337dc009e7"
+      },
+      {
+        "path": "output/spanish/subpath-390-200-search.png",
+        "sha256": "823aa5c4bf40715b3a2529504bd41adec7beb6a3ec921e27784a5e98fe40a4dd"
+      },
+      {
+        "path": "output/spanish/subpath-390-200-selector.png",
+        "sha256": "051e6f0c2a3a172bff3d18f57a3d6ac81aad3024c25785428be55f26ef084db1"
+      },
+      {
+        "path": "output/spanish/subpath-390-200-source.png",
+        "sha256": "291b3a44d411dd354534cd0cf992f7eae2f3afd7be81adb4deb332e0358db160"
+      },
+      {
+        "path": "output/spanish/subpath-390-200-trail.png",
+        "sha256": "8217f018304725fb546e7b41dc63a6d1460532e0cf70b027fb42783ca52080ab"
+      }
+    ],
+    "reviewSheets": [
+      {
+        "path": "output/spanish/1440-about-dark-review-sheet.jpg",
+        "sha256": "6514d16679efe79d04ea1d4419e4555f69ad53f138a1de2020847a298f72c471"
+      },
+      {
+        "path": "output/spanish/1440-selector-review-sheet.jpg",
+        "sha256": "becc5771b594b162349c82ea6325750238687c3737df6c14de36fcf124569261"
+      },
+      {
+        "path": "output/spanish/390-about-dark-review-sheet.jpg",
+        "sha256": "067002aff46f1b9ee18ed0f8e298c511d75cea24dcdf4dea6762eca0d27ac4c8"
+      },
+      {
+        "path": "output/spanish/390-selector-review-sheet.jpg",
+        "sha256": "f8d7d7487bb34de57af9eb61694cccf432967e168b8f8ec2a38319c07318b425"
+      },
+      {
+        "path": "output/spanish/root-1440-100-review-sheet.jpg",
+        "sha256": "6a8082e70e05877734fc659bdbee2cc4029d93ffb1542edff4ed8dfdab1cfb07"
+      },
+      {
+        "path": "output/spanish/root-1440-200-review-sheet.jpg",
+        "sha256": "b5d9377075bf21d794d832e140f9507aca0cb1b3a6857c8952e23a79606bba71"
+      },
+      {
+        "path": "output/spanish/root-390-100-review-sheet.jpg",
+        "sha256": "ac395e7031e2be89ac3246a1bab6b3dd6cc5dc0d9eb47db6df96a2e516ba5d5a"
+      },
+      {
+        "path": "output/spanish/root-390-200-review-sheet.jpg",
+        "sha256": "c20e1cf4136ee322b9d4069072e9e81e6416e76997e7d763db9ef592739e3c72"
+      },
+      {
+        "path": "output/spanish/subpath-1440-100-review-sheet.jpg",
+        "sha256": "6a8082e70e05877734fc659bdbee2cc4029d93ffb1542edff4ed8dfdab1cfb07"
+      },
+      {
+        "path": "output/spanish/subpath-1440-200-review-sheet.jpg",
+        "sha256": "b5d9377075bf21d794d832e140f9507aca0cb1b3a6857c8952e23a79606bba71"
+      },
+      {
+        "path": "output/spanish/subpath-390-100-review-sheet.jpg",
+        "sha256": "49540c69de402079c4484702d975f8917cbfd183e264ec1ebbe3384acc95a9d4"
+      },
+      {
+        "path": "output/spanish/subpath-390-200-review-sheet.jpg",
+        "sha256": "c20e1cf4136ee322b9d4069072e9e81e6416e76997e7d763db9ef592739e3c72"
+      }
+    ],
+    "paintedFontChecks": [
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 390 text 100",
+        "surface": "atlas",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 18
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 40
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 390 text 100",
+        "surface": "concept",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 15
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 38
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 390 text 100",
+        "surface": "trail",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 15
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 54
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 390 text 100",
+        "surface": "read",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 16
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 228
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 390 text 100",
+        "surface": "source",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 26
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 53
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 390 text 100",
+        "surface": "note",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 21
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 53
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 390 text 100",
+        "surface": "search",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 21
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 201
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 390 text 100",
+        "surface": "saved",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 18
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 152
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 390 text 100",
+        "surface": "about",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 21
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 192
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 390 text 200",
+        "surface": "atlas",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 17
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 39
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 390 text 200",
+        "surface": "concept",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 14
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 37
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 390 text 200",
+        "surface": "trail",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 14
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 53
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 390 text 200",
+        "surface": "read",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 15
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 220
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 390 text 200",
+        "surface": "source",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 24
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 53
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 390 text 200",
+        "surface": "note",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 19
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 53
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 390 text 200",
+        "surface": "search",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 20
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 194
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 390 text 200",
+        "surface": "saved",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 16
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 147
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 390 text 200",
+        "surface": "about",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 20
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 187
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 1440 text 100",
+        "surface": "atlas",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 18
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 41
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 1440 text 100",
+        "surface": "concept",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 15
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 38
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 1440 text 100",
+        "surface": "trail",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 15
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 55
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 1440 text 100",
+        "surface": "read",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 16
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 231
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 1440 text 100",
+        "surface": "source",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 27
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 54
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 1440 text 100",
+        "surface": "note",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 21
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 54
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 1440 text 100",
+        "surface": "search",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 22
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 203
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 1440 text 100",
+        "surface": "saved",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 18
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 154
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 1440 text 100",
+        "surface": "about",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 22
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 194
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 1440 text 200",
+        "surface": "atlas",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 18
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 41
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 1440 text 200",
+        "surface": "concept",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 15
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 38
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 1440 text 200",
+        "surface": "trail",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 15
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 55
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 1440 text 200",
+        "surface": "read",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 16
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 231
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 1440 text 200",
+        "surface": "source",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 27
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 54
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 1440 text 200",
+        "surface": "note",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 21
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 54
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 1440 text 200",
+        "surface": "search",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 22
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 203
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 1440 text 200",
+        "surface": "saved",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 18
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 154
+          }
+        ]
+      },
+      {
+        "base": "root",
+        "test": "Spanish nine-surface review 1440 text 200",
+        "surface": "about",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 22
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 194
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 390 text 100",
+        "surface": "atlas",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 18
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 40
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 390 text 100",
+        "surface": "concept",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 15
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 38
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 390 text 100",
+        "surface": "trail",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 15
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 54
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 390 text 100",
+        "surface": "read",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 16
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 228
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 390 text 100",
+        "surface": "source",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 26
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 53
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 390 text 100",
+        "surface": "note",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 21
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 53
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 390 text 100",
+        "surface": "search",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 21
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 201
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 390 text 100",
+        "surface": "saved",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 18
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 152
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 390 text 100",
+        "surface": "about",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 21
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 192
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 390 text 200",
+        "surface": "atlas",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 17
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 39
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 390 text 200",
+        "surface": "concept",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 14
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 37
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 390 text 200",
+        "surface": "trail",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 14
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 53
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 390 text 200",
+        "surface": "read",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 15
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 220
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 390 text 200",
+        "surface": "source",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 24
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 53
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 390 text 200",
+        "surface": "note",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 19
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 53
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 390 text 200",
+        "surface": "search",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 20
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 194
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 390 text 200",
+        "surface": "saved",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 16
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 147
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 390 text 200",
+        "surface": "about",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 20
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 187
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 1440 text 100",
+        "surface": "atlas",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 18
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 41
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 1440 text 100",
+        "surface": "concept",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 15
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 38
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 1440 text 100",
+        "surface": "trail",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 15
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 55
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 1440 text 100",
+        "surface": "read",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 16
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 231
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 1440 text 100",
+        "surface": "source",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 27
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 54
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 1440 text 100",
+        "surface": "note",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 21
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 54
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 1440 text 100",
+        "surface": "search",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 22
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 203
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 1440 text 100",
+        "surface": "saved",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 18
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 154
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 1440 text 100",
+        "surface": "about",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 22
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 194
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 1440 text 200",
+        "surface": "atlas",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 18
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 41
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 1440 text 200",
+        "surface": "concept",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 15
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 38
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 1440 text 200",
+        "surface": "trail",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 15
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 55
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 1440 text 200",
+        "surface": "read",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 16
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 231
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 1440 text 200",
+        "surface": "source",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 27
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 54
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 1440 text 200",
+        "surface": "note",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 21
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 54
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 1440 text 200",
+        "surface": "search",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 22
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 203
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 1440 text 200",
+        "surface": "saved",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 18
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 154
+          }
+        ]
+      },
+      {
+        "base": "subpath",
+        "test": "Spanish nine-surface review 1440 text 200",
+        "surface": "about",
+        "heading": [
+          {
+            "family": "Syne",
+            "glyphs": 22
+          }
+        ],
+        "body": [
+          {
+            "family": "Inter",
+            "glyphs": 194
+          }
+        ]
+      }
+    ],
+    "accessibilityScans": 18,
+    "accessibilityTags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21aa"
+    ],
+    "accessibilityViolations": 0,
+    "overflowChecks": 72,
+    "overflowFailures": 0,
+    "review": "Inspected all 72 surface captures, eight header captures and eight dark About captures via 12 sheets. Accents, punctuation, long labels and focus were visible. A single local Saved heading correction was confirmed in the second bounded pass."
+  },
+  "boundedPolish": {
+    "change": "Shortened the Saved page and route title to Lugares de lectura after narrow 200% text split guardados within a word. No CSS or runtime changes.",
+    "impeccableDetectorFindings": 0,
+    "detectorOutput": "output/spanish/impeccable-detector.json",
+    "detectorTiming": "One mechanical scan before the final heading shortening; final catalog checked by full gates and visual confirmation."
+  },
+  "recoverableFailure": {
+    "attempt": 1,
+    "rootStats": {
+      "startTime": "2026-10-15T00:09:02.680Z",
+      "duration": 35699.668,
+      "expected": 192,
+      "skipped": 0,
+      "unexpected": 1,
+      "flaky": 0
+    },
+    "report": "output/spanish/attempt-1/root-browser-results.json",
+    "sha256": "92d48764f70ac6cd8a5f4db019642b3d49564a1890f1be24f0831c02a7daeacf",
+    "reason": "Existing German keyboard test needed adaptation for a fourth selector option. Repeated ordinal arrows activated Italian during remount; native typeahead d selects Deutsch. Only the test changed; all 42 Spanish cases passed in that initial root run. Subpath did not run on the failed attempt."
+  },
+  "limitations": [
+    "Chromium automation and viewport screenshots, not physical-device, screen-reader-user, native-speaker or learning-efficacy studies.",
+    "Axe coverage is bounded to the selected tags and surfaces; it does not prove comprehensive accessibility.",
+    "Generated reports, logs, screenshots and fixture outputs are review evidence outside commit scope; no publication or deployment is claimed."
+  ]
+}

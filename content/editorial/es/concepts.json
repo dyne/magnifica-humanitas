@@ -1,0 +1,1268 @@
+{
+  "schemaVersion": 1,
+  "language": "es",
+  "editionId": "mh-es-official-html-2026-10-14",
+  "concepts": [
+    {
+      "id": "dignity",
+      "locale": "es",
+      "title": "Dignidad humana",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "La encíclica atribuye a toda persona un valor que precede a utilidad, rendimiento, reconocimiento y mérito moral.",
+        "sourceRefs": [
+          "p050",
+          "p051",
+          "p052",
+          "p053",
+          "p058",
+          "p154"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "La dignidad moral, social y existencial puede variar; la ontológica no se pierde. El trabajo puede expresarla, pero no la concede. La creación y el amor de Dios son la fundamentación que ofrece la fuente.",
+        "sourceRefs": [
+          "p050",
+          "p051",
+          "p052",
+          "p053",
+          "p058",
+          "p154"
+        ]
+      },
+      "foundationRefs": [
+        "p050",
+        "p052",
+        "p053"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p052",
+        "start": 667,
+        "end": 686,
+        "text": "dignidad ontológica"
+      }
+    },
+    {
+      "id": "rights",
+      "locale": "es",
+      "title": "Derechos humanos",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Los derechos expresan históricamente una dignidad humana que ninguna autoridad puede negar de forma arbitraria.",
+        "sourceRefs": [
+          "p054",
+          "p055",
+          "p056",
+          "p057",
+          "p081"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Proclamarlos no asegura su cumplimiento. La fuente incluye posiciones de la Iglesia sobre vida, aborto y eutanasia y exige protección efectiva; atribuirlas permite comprender el argumento sin exigir acuerdo.",
+        "sourceRefs": [
+          "p054",
+          "p055",
+          "p056",
+          "p057",
+          "p081"
+        ]
+      },
+      "foundationRefs": [
+        "p054"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p055",
+        "start": 124,
+        "end": 150,
+        "text": "universales e inalienables"
+      }
+    },
+    {
+      "id": "common-good",
+      "locale": "es",
+      "title": "Bien común",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "El bien común es una vida social compartida cuyas condiciones y relaciones permiten realizarse a personas y comunidades.",
+        "sourceRefs": [
+          "p059",
+          "p060",
+          "p061",
+          "p062",
+          "p063",
+          "p064"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "No equivale a sumar preferencias o beneficios privados. Requiere autoridad justa, participación y atención a quienes tienen menos poder, también entre naciones.",
+        "sourceRefs": [
+          "p059",
+          "p060",
+          "p061",
+          "p062",
+          "p063",
+          "p064"
+        ]
+      },
+      "foundationRefs": [
+        "p059"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p060",
+        "start": 67,
+        "end": 111,
+        "text": "el conjunto de condiciones de la vida social"
+      }
+    },
+    {
+      "id": "shared-goods",
+      "locale": "es",
+      "title": "Destino universal de los bienes",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Los bienes materiales, culturales y digitales deben sostener la vida de todos y de futuras generaciones, según el principio del destino universal.",
+        "sourceRefs": [
+          "p065",
+          "p066",
+          "p067",
+          "p108",
+          "p178"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "La propiedad privada tiene un derecho reconocido y una función social subordinada a ese destino. El texto no prescribe una licencia de software concreta ni convierte cualquier uso abierto en justicia suficiente.",
+        "sourceRefs": [
+          "p065",
+          "p066",
+          "p067",
+          "p108",
+          "p178"
+        ]
+      },
+      "foundationRefs": [
+        "p065",
+        "p066"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p065",
+        "start": 95,
+        "end": 126,
+        "text": "destino universal de los bienes"
+      }
+    },
+    {
+      "id": "subsidiarity",
+      "locale": "es",
+      "title": "Subsidiariedad",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "La subsidiariedad protege la iniciativa de personas y comunidades y exige apoyo de instancias superiores sin absorción permanente de sus tareas.",
+        "sourceRefs": [
+          "p068",
+          "p069",
+          "p070",
+          "p071",
+          "p072",
+          "p087"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "No justifica el desinterés estatal. También limita poder corporativo y requiere coordinación, protección y participación antes de que decisiones y estándares queden fijados.",
+        "sourceRefs": [
+          "p068",
+          "p069",
+          "p070",
+          "p071",
+          "p072",
+          "p087"
+        ]
+      },
+      "foundationRefs": [],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p069",
+        "start": 607,
+        "end": 662,
+        "text": "La subsidiariedad no justifica el desinterés del Estado"
+      }
+    },
+    {
+      "id": "solidarity",
+      "locale": "es",
+      "title": "Solidaridad",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "La solidaridad transforma la interdependencia en responsabilidad elegida por el bien de otros y de la comunidad.",
+        "sourceRefs": [
+          "p073",
+          "p074",
+          "p075",
+          "p076",
+          "p088",
+          "p187"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Conectividad y dependencia de hecho no bastan. Es principio institucional y virtud practicada; necesita subsidiariedad para evitar asistencia que anule la capacidad de actuar.",
+        "sourceRefs": [
+          "p073",
+          "p074",
+          "p075",
+          "p076",
+          "p088",
+          "p187"
+        ]
+      },
+      "foundationRefs": [
+        "p073",
+        "p088",
+        "p234"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p074",
+        "start": 414,
+        "end": 437,
+        "text": "una decisión consciente"
+      }
+    },
+    {
+      "id": "justice",
+      "locale": "es",
+      "title": "Justicia social",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "La justicia social exige estructuras que permitan vivir dignamente y reparación de relaciones y daños producidos por exclusión.",
+        "sourceRefs": [
+          "p077",
+          "p078",
+          "p079",
+          "p080",
+          "p081",
+          "p109",
+          "p162",
+          "p215",
+          "p244"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "No se limita a repartir ingresos después de producir ni a corregir malas intenciones. Atiende a quienes sufren y debe orientar diseño, economía e instituciones, incluida la propia Iglesia.",
+        "sourceRefs": [
+          "p077",
+          "p078",
+          "p079",
+          "p080",
+          "p081",
+          "p109",
+          "p162",
+          "p215",
+          "p244"
+        ]
+      },
+      "foundationRefs": [
+        "p077",
+        "p079",
+        "p244"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p079",
+        "start": 580,
+        "end": 600,
+        "text": "dimensión reparadora"
+      }
+    },
+    {
+      "id": "development",
+      "locale": "es",
+      "title": "Desarrollo humano integral",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "El desarrollo humano integral comprende todas las dimensiones de cada persona y pueblo, con responsabilidad por ambiente y generaciones futuras.",
+        "sourceRefs": [
+          "p082",
+          "p083",
+          "p084",
+          "p085",
+          "p129",
+          "p159",
+          "p180"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Más consumo o capacidad técnica no demuestra desarrollo. La fuente reconoce dimensiones espirituales, culturales y relacionales y rechaza bienestar que descarga sus costes sobre otros.",
+        "sourceRefs": [
+          "p082",
+          "p083",
+          "p084",
+          "p085",
+          "p129",
+          "p159",
+          "p180"
+        ]
+      },
+      "foundationRefs": [
+        "p126",
+        "p129"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p082",
+        "start": 491,
+        "end": 517,
+        "text": "desarrollo humano integral"
+      }
+    },
+    {
+      "id": "institutional-accountability",
+      "locale": "es",
+      "title": "Rendición de cuentas",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Rendir cuentas significa identificar quién debe justificar decisiones, permitir su control y cuestionamiento y responder por los daños.",
+        "sourceRefs": [
+          "p086",
+          "p087",
+          "p089",
+          "p105",
+          "p138",
+          "p176",
+          "p177",
+          "p200"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "No es una ética genérica ni la presencia nominal de un supervisor. La responsabilidad debe recorrer diseño y uso y aplicarse también al funcionamiento de instituciones que exigen justicia a otras.",
+        "sourceRefs": [
+          "p086",
+          "p087",
+          "p089",
+          "p105",
+          "p138",
+          "p176",
+          "p177",
+          "p200"
+        ]
+      },
+      "foundationRefs": [
+        "p086",
+        "p089",
+        "p176"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p105",
+        "start": 590,
+        "end": 604,
+        "text": "rendir cuentas"
+      }
+    },
+    {
+      "id": "technology-power",
+      "locale": "es",
+      "title": "Poder tecnológico",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "El poder tecnológico configura condiciones de acceso, visibilidad y decisión; sus fines no quedan determinados por la capacidad de sus medios.",
+        "sourceRefs": [
+          "p004",
+          "p005",
+          "p009",
+          "p092",
+          "p093",
+          "p094",
+          "p095",
+          "p104",
+          "p136"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "La crítica al paradigma tecnocrático no rechaza ciencia o técnica. Cuestiona que eficiencia, control y lucro decidan por sí solos qué personas y bienes cuentan.",
+        "sourceRefs": [
+          "p004",
+          "p005",
+          "p009",
+          "p092",
+          "p093",
+          "p094",
+          "p095",
+          "p104",
+          "p136"
+        ]
+      },
+      "foundationRefs": [],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p092",
+        "start": 90,
+        "end": 112,
+        "text": "paradigma tecnocrático"
+      }
+    },
+    {
+      "id": "ai-limits",
+      "locale": "es",
+      "title": "Inteligencia humana e inteligencia artificial",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "La fuente distingue las capacidades eficaces de sistemas de IA de la experiencia, comprensión y responsabilidad moral que atribuye a las personas.",
+        "sourceRefs": [
+          "p097",
+          "p098",
+          "p099",
+          "p100",
+          "p116",
+          "p128",
+          "p198",
+          "p233"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Sus afirmaciones categóricas sobre experiencia y conciencia son posiciones antropológicas del autor, no un consenso científico certificado. Él limita el alcance de su tratamiento y advierte que las descripciones técnicas envejecen rápidamente.",
+        "sourceRefs": [
+          "p097",
+          "p098",
+          "p099",
+          "p100",
+          "p116",
+          "p128",
+          "p198",
+          "p233"
+        ]
+      },
+      "foundationRefs": [
+        "p128",
+        "p233"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p099",
+        "start": 448,
+        "end": 474,
+        "text": "inteligencias artificiales"
+      }
+    },
+    {
+      "id": "ai-governance",
+      "locale": "es",
+      "title": "Diseño y gobierno de la IA",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "El gobierno de la IA implica examinar diseño, valores, propiedad, participación y responsabilidades para orientarla al bien común.",
+        "sourceRefs": [
+          "p071",
+          "p072",
+          "p104",
+          "p105",
+          "p106",
+          "p107",
+          "p109",
+          "p164",
+          "p197",
+          "p198",
+          "p199",
+          "p200"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "La alineación técnica no permite que unos pocos decidan qué valores deben regir. La justicia empieza en el diseño; las reparaciones posteriores y la vigilancia siguen siendo necesarias, pero no bastan solas.",
+        "sourceRefs": [
+          "p071",
+          "p072",
+          "p104",
+          "p105",
+          "p106",
+          "p107",
+          "p109",
+          "p164",
+          "p197",
+          "p198",
+          "p199",
+          "p200"
+        ]
+      },
+      "foundationRefs": [],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p109",
+        "start": 1062,
+        "end": 1121,
+        "text": "una condición que se debe poner en práctica desde su diseño"
+      }
+    },
+    {
+      "id": "embodiment",
+      "locale": "es",
+      "title": "Cuerpo y finitud",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "La humanidad vive corporalmente en relaciones, tiempo y límites que no se reducen a rendimiento optimizable.",
+        "sourceRefs": [
+          "p099",
+          "p112",
+          "p113",
+          "p116",
+          "p117",
+          "p118",
+          "p120",
+          "p122",
+          "p232",
+          "p239"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Reconocer finitud no exige rechazar tratamiento ni sufrimiento evitable. La fuente distingue corrientes de mejora diversas y cuestiona las visiones que jerarquizan vidas por utilidad, no toda asistencia técnica.",
+        "sourceRefs": [
+          "p099",
+          "p112",
+          "p113",
+          "p116",
+          "p117",
+          "p118",
+          "p120",
+          "p122",
+          "p232",
+          "p239"
+        ]
+      },
+      "foundationRefs": [
+        "p118",
+        "p127",
+        "p232",
+        "p239"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p118",
+        "start": 672,
+        "end": 692,
+        "text": "finitud constitutiva"
+      }
+    },
+    {
+      "id": "care",
+      "locale": "es",
+      "title": "Cuidado y cercanía humana",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Cuidar es reconocer a otra persona como sujeto digno de atención, relación y decisiones, no como una función que organizar.",
+        "sourceRefs": [
+          "p114",
+          "p117",
+          "p118",
+          "p119",
+          "p126",
+          "p152",
+          "p231",
+          "p239"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "La técnica puede apoyar cuidados y aliviar cargas, manteniendo libertad y juicio humanos. La vulnerabilidad no debe idealizarse como obligación de sufrir ni la presencia física confundirse con rechazo de todo encuentro digital.",
+        "sourceRefs": [
+          "p114",
+          "p117",
+          "p118",
+          "p119",
+          "p126",
+          "p152",
+          "p231",
+          "p239"
+        ]
+      },
+      "foundationRefs": [
+        "p119",
+        "p126",
+        "p231",
+        "p239"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p114",
+        "start": 678,
+        "end": 706,
+        "text": "cuidado mutuo entre personas"
+      }
+    },
+    {
+      "id": "truth",
+      "locale": "es",
+      "title": "Verdad y comunicación",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "La verdad de los hechos es un bien común que requiere verificación, argumentación responsable y relaciones de confianza.",
+        "sourceRefs": [
+          "p132",
+          "p134",
+          "p135",
+          "p136",
+          "p137",
+          "p138",
+          "p214",
+          "p237"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Visibilidad o poder no hacen verdadera una afirmación. El desacuerdo político no equivale a falsedad; las instituciones deben afrontar hechos incómodos y proteger condiciones para examinarlos.",
+        "sourceRefs": [
+          "p132",
+          "p134",
+          "p135",
+          "p136",
+          "p137",
+          "p138",
+          "p214",
+          "p237"
+        ]
+      },
+      "foundationRefs": [
+        "p237"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p137",
+        "start": 123,
+        "end": 149,
+        "text": "la verdad es un bien común"
+      }
+    },
+    {
+      "id": "education",
+      "locale": "es",
+      "title": "Educación",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Educar permite preguntar, comprender, relacionar conocimientos y formar juicio mediante tiempo compartido y vínculos fiables.",
+        "sourceRefs": [
+          "p139",
+          "p140",
+          "p141",
+          "p142",
+          "p143",
+          "p144",
+          "p145",
+          "p146",
+          "p147",
+          "p238"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Respuestas rápidas no sustituyen comprensión. Decidir cuándo no usar IA forma parte del aprendizaje; familias, escuelas, proveedores e instituciones tienen responsabilidades distintas y complementarias.",
+        "sourceRefs": [
+          "p139",
+          "p140",
+          "p141",
+          "p142",
+          "p143",
+          "p144",
+          "p145",
+          "p146",
+          "p147",
+          "p238"
+        ]
+      },
+      "foundationRefs": [
+        "p238"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p140",
+        "start": 46,
+        "end": 65,
+        "text": "tiempo para madurar"
+      }
+    },
+    {
+      "id": "work",
+      "locale": "es",
+      "title": "Dignidad del trabajo",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "El trabajo permite expresión, cooperación y participación, además de aportar ingresos y sostener hogares.",
+        "sourceRefs": [
+          "p148",
+          "p149",
+          "p150",
+          "p151",
+          "p152",
+          "p153",
+          "p154",
+          "p156",
+          "p157"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "El valor intrínseco no se gana trabajando. La ayuda de emergencia puede ser necesaria, aliviar tareas peligrosas es deseable y la participación social debe mantenerse incluso cuando falta empleo.",
+        "sourceRefs": [
+          "p148",
+          "p149",
+          "p150",
+          "p151",
+          "p152",
+          "p153",
+          "p154",
+          "p156",
+          "p157"
+        ]
+      },
+      "foundationRefs": [
+        "p148"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p149",
+        "start": 68,
+        "end": 116,
+        "text": "expresa y acrecienta la dignidad de nuestra vida"
+      }
+    },
+    {
+      "id": "distribution",
+      "locale": "es",
+      "title": "Justicia económica y distribución",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "La justicia económica se refiere a condiciones de producción, acceso, financiación y distribución de los beneficios y cargas comunes.",
+        "sourceRefs": [
+          "p158",
+          "p159",
+          "p160",
+          "p161",
+          "p162",
+          "p163",
+          "p164"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "La redistribución es necesaria sin absolver procesos injustos. El crédito al servicio del desarrollo conserva una función social; PIB y rentabilidad no miden por sí solos la calidad humana de la economía.",
+        "sourceRefs": [
+          "p158",
+          "p159",
+          "p160",
+          "p161",
+          "p162",
+          "p163",
+          "p164"
+        ]
+      },
+      "foundationRefs": [],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p162",
+        "start": 516,
+        "end": 557,
+        "text": "todas las fases de la actividad económica"
+      }
+    },
+    {
+      "id": "family",
+      "locale": "es",
+      "title": "Familias y futuro",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "La fuente presenta a la familia como bien social primario cuyo futuro depende también de empleo, cuidados y estabilidad.",
+        "sourceRefs": [
+          "p165",
+          "p166",
+          "p167",
+          "p168",
+          "p169"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Se expone la concepción normativa de León XIV: unión estable entre un hombre y una mujer y comunidad natural con derechos originales. Su atribución evita convertirla en consenso universal o cambiar silenciosamente su alcance.",
+        "sourceRefs": [
+          "p165",
+          "p166",
+          "p167",
+          "p168",
+          "p169"
+        ]
+      },
+      "foundationRefs": [],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p165",
+        "start": 50,
+        "end": 94,
+        "text": "la unión estable entre un hombre y una mujer"
+      }
+    },
+    {
+      "id": "freedom",
+      "locale": "es",
+      "title": "Libertad y capacidad de decidir",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "La libertad necesita capacidad interior para juzgar y condiciones públicas que permitan decidir sin manipulación o subordinación.",
+        "sourceRefs": [
+          "p128",
+          "p136",
+          "p146",
+          "p154",
+          "p170",
+          "p171",
+          "p172",
+          "p178"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "No basta la ausencia de prohibición formal. Diseño de plataformas, perfilado y acceso desigual pueden limitar agencia; transparencia, recursos y decisiones colectivas complementan educación y sobriedad personal.",
+        "sourceRefs": [
+          "p128",
+          "p136",
+          "p146",
+          "p154",
+          "p170",
+          "p171",
+          "p172",
+          "p178"
+        ]
+      },
+      "foundationRefs": [
+        "p128"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p171",
+        "start": 1020,
+        "end": 1035,
+        "text": "vías de recurso"
+      }
+    },
+    {
+      "id": "exploitation",
+      "locale": "es",
+      "title": "Trabajo invisible y explotación",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "La economía digital depende de trabajo, materiales e infraestructuras cuyos costes humanos pueden permanecer ocultos.",
+        "sourceRefs": [
+          "p101",
+          "p173",
+          "p174",
+          "p175",
+          "p176",
+          "p177",
+          "p178",
+          "p179",
+          "p240"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Etiquetado, moderación, extracción, trata y colonialismo de datos son mecanismos distintos, aunque relacionados. Condenar esclavitud pasada exige prevenir abusos presentes sin borrar la complicidad institucional reconocida por la Iglesia.",
+        "sourceRefs": [
+          "p101",
+          "p173",
+          "p174",
+          "p175",
+          "p176",
+          "p177",
+          "p178",
+          "p179",
+          "p240"
+        ]
+      },
+      "foundationRefs": [
+        "p176",
+        "p177",
+        "p240"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p173",
+        "start": 466,
+        "end": 484,
+        "text": "trabajo silencioso"
+      }
+    },
+    {
+      "id": "peace",
+      "locale": "es",
+      "title": "Paz frente al dominio",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "La paz es una convivencia justa que necesita cuidado, instituciones, responsabilidad y alternativas reales al dominio.",
+        "sourceRefs": [
+          "p182",
+          "p186",
+          "p197",
+          "p198",
+          "p199",
+          "p200",
+          "p205",
+          "p212",
+          "p215",
+          "p218",
+          "p224",
+          "p228"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "No equivale a ausencia de conflicto a cualquier precio. La fuente mantiene legítima defensa en sentido estricto y fuerza como último recurso, rechaza delegación letal y exige protección civil y control humano efectivo.",
+        "sourceRefs": [
+          "p182",
+          "p186",
+          "p197",
+          "p198",
+          "p199",
+          "p200",
+          "p205",
+          "p212",
+          "p215",
+          "p218",
+          "p224",
+          "p228"
+        ]
+      },
+      "foundationRefs": [
+        "p227",
+        "p228"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p218",
+        "start": 820,
+        "end": 891,
+        "text": "instituciones creíbles, garantías verificables, negociaciones pacientes"
+      }
+    },
+    {
+      "id": "memory",
+      "locale": "es",
+      "title": "Memoria y mirada de las víctimas",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "La memoria reconoce experiencias de víctimas y permite juzgar el presente sin normalizar violencia ni esconder complicidades.",
+        "sourceRefs": [
+          "p121",
+          "p122",
+          "p123",
+          "p124",
+          "p176",
+          "p191",
+          "p216",
+          "p217",
+          "p244"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Historia y testimonio se complementan y no son idénticos. Dar voz al sufrimiento debe abrir prevención y paz, no legitimar revancha ni sustituir la comprobación de hechos actuales.",
+        "sourceRefs": [
+          "p121",
+          "p122",
+          "p123",
+          "p124",
+          "p176",
+          "p191",
+          "p216",
+          "p217",
+          "p244"
+        ]
+      },
+      "foundationRefs": [
+        "p121",
+        "p244"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p217",
+        "start": 52,
+        "end": 88,
+        "text": "la mirada y a la voz de las víctimas"
+      }
+    },
+    {
+      "id": "dialogue",
+      "locale": "es",
+      "title": "Diálogo y participación",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "El diálogo construye relaciones y decisiones comunes mediante escucha, participación y negociación paciente.",
+        "sourceRefs": [
+          "p002",
+          "p023",
+          "p070",
+          "p071",
+          "p072",
+          "p107",
+          "p218",
+          "p219",
+          "p220",
+          "p221",
+          "p223",
+          "p224"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Consultar después de fijar prioridades no equivale a decidir juntos. Negociar tampoco exige indiferencia ante ataques a civiles; acuerdos e instituciones necesitan garantías y no ofrecen éxito automático.",
+        "sourceRefs": [
+          "p002",
+          "p023",
+          "p070",
+          "p071",
+          "p072",
+          "p107",
+          "p218",
+          "p219",
+          "p220",
+          "p221",
+          "p223",
+          "p224"
+        ]
+      },
+      "foundationRefs": [
+        "p002",
+        "p223"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p221",
+        "start": 78,
+        "end": 103,
+        "text": "cultura de la negociación"
+      }
+    },
+    {
+      "id": "hope",
+      "locale": "es",
+      "title": "Esperanza y responsabilidad concreta",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "La esperanza sostiene posibilidades de actuar y reconstruir aun cuando el poder y las heridas parezcan cerrarlas.",
+        "sourceRefs": [
+          "p123",
+          "p124",
+          "p125",
+          "p126",
+          "p211",
+          "p212",
+          "p236",
+          "p241",
+          "p243",
+          "p245"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "No promete progreso inevitable ni distribuye igual poder a todos. Los compromisos cotidianos complementan tareas institucionales; la esperanza teológica de la fuente permanece atribuida, sin hacerse previsión técnica.",
+        "sourceRefs": [
+          "p123",
+          "p124",
+          "p125",
+          "p126",
+          "p211",
+          "p212",
+          "p236",
+          "p241",
+          "p243",
+          "p245"
+        ]
+      },
+      "foundationRefs": [
+        "p125",
+        "p126",
+        "p211",
+        "p243",
+        "p245"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p212",
+        "start": 268,
+        "end": 298,
+        "text": "no todos tienen el mismo poder"
+      }
+    },
+    {
+      "id": "faith-foundations",
+      "locale": "es",
+      "title": "Fundamentos teológicos",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "Creación, Encarnación, Trinidad, gracia y comunión sacramental son fundamentos explícitos del argumento cristiano de la encíclica.",
+        "sourceRefs": [
+          "p001",
+          "p011",
+          "p048",
+          "p049",
+          "p050",
+          "p052",
+          "p088",
+          "p127",
+          "p128",
+          "p231",
+          "p232",
+          "p233",
+          "p234",
+          "p235",
+          "p242",
+          "p243",
+          "p244",
+          "p245"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Son premisas religiosas opcionales para la lectura, no pruebas seculares sustituidas ni afirmaciones científicas. Comprender sus consecuencias sociales no requiere profesar la fe de la fuente.",
+        "sourceRefs": [
+          "p001",
+          "p011",
+          "p048",
+          "p049",
+          "p050",
+          "p052",
+          "p088",
+          "p127",
+          "p128",
+          "p231",
+          "p232",
+          "p233",
+          "p234",
+          "p235",
+          "p242",
+          "p243",
+          "p244",
+          "p245"
+        ]
+      },
+      "foundationRefs": [
+        "p001",
+        "p011",
+        "p048",
+        "p049",
+        "p050",
+        "p052",
+        "p088",
+        "p127",
+        "p128",
+        "p231",
+        "p232",
+        "p233",
+        "p234",
+        "p235",
+        "p242",
+        "p243",
+        "p244",
+        "p245"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p127",
+        "start": 853,
+        "end": 874,
+        "text": "el Infinito que se da"
+      }
+    },
+    {
+      "id": "history",
+      "locale": "es",
+      "title": "Una doctrina social en desarrollo",
+      "definition": {
+        "kind": "paraphrase",
+        "text": "La doctrina social se presenta como una tradición que desarrolla principios al escuchar transformaciones históricas.",
+        "sourceRefs": [
+          "p017",
+          "p020",
+          "p021",
+          "p023",
+          "p027",
+          "p029",
+          "p030",
+          "p031",
+          "p032",
+          "p033",
+          "p034",
+          "p035",
+          "p037",
+          "p038",
+          "p039",
+          "p040",
+          "p041",
+          "p042",
+          "p043",
+          "p044",
+          "p045",
+          "p176"
+        ]
+      },
+      "necessaryDistinction": {
+        "kind": "editorial-interpretation",
+        "text": "Continuidad no significa ausencia de cambios o fallos. El propio autor reconoce complicidades y tardanzas; su recorrido es una interpretación histórica que debe poder examinarse críticamente.",
+        "sourceRefs": [
+          "p017",
+          "p020",
+          "p021",
+          "p023",
+          "p027",
+          "p029",
+          "p030",
+          "p031",
+          "p032",
+          "p033",
+          "p034",
+          "p035",
+          "p037",
+          "p038",
+          "p039",
+          "p040",
+          "p041",
+          "p042",
+          "p043",
+          "p044",
+          "p045",
+          "p176"
+        ]
+      },
+      "foundationRefs": [
+        "p017",
+        "p020",
+        "p021",
+        "p023",
+        "p027",
+        "p029",
+        "p033",
+        "p034",
+        "p042",
+        "p044",
+        "p045",
+        "p176"
+      ],
+      "sourceQuotation": {
+        "kind": "quotation",
+        "paragraphId": "p045",
+        "start": 740,
+        "end": 764,
+        "text": "aunque no siempre lineal"
+      }
+    }
+  ]
+}
