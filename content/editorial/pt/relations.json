@@ -1,0 +1,786 @@
+{
+  "schemaVersion": 1,
+  "language": "pt",
+  "editionId": "mh-pt-official-html-2026-10-14",
+  "relations": [
+    {
+      "id": "rel-001",
+      "from": "faith-foundations",
+      "to": "dignity",
+      "type": "provides-source-foundation-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "A fonte funda a dignidade na criação e no amor de Deus. Essa razão cristã antecede mérito e desempenho: falha moral e exclusão não eliminam o valor da pessoa. A ligação apresenta a justificação do autor, sem exigir que o leitor a partilhe.",
+        "sourceRefs": [
+          "p050",
+          "p052",
+          "p053"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-002",
+      "from": "dignity",
+      "to": "rights",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Os direitos pertencem à pessoa pela sua dignidade, não pelo que produz. Essa origem exige proteção prática e jurídica. A fonte inclui aí a sua posição sobre o direito à vida, explicitamente atribuída à Igreja.",
+        "sourceRefs": [
+          "p051",
+          "p054",
+          "p055"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-003",
+      "from": "dignity",
+      "to": "common-good",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Reconhecer valor inalienável a cada pessoa exige organizar a convivência de outra maneira. O bem comum dá forma social à dignidade, ultrapassando a simples soma de vantagens particulares sem apagar indivíduos.",
+        "sourceRefs": [
+          "p059",
+          "p060"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-004",
+      "from": "common-good",
+      "to": "shared-goods",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Se as condições comuns devem permitir vida digna a todos, os bens que a sustentam não podem servir apenas alguns. A propriedade reconhecida pelo texto permanece subordinada à destinação universal.",
+        "sourceRefs": [
+          "p065",
+          "p066"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-005",
+      "from": "shared-goods",
+      "to": "distribution",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "A função social da propriedade inclui acesso e partilha, também de dados e plataformas. A justiça económica precisa de prevenir exclusões e custos ambientais e de atuar na produção, além de redistribuir resultados.",
+        "sourceRefs": [
+          "p066",
+          "p067",
+          "p161",
+          "p162"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-006",
+      "from": "subsidiarity",
+      "to": "common-good",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "O bem comum cresce quando pessoas e comunidades podem agir com apoio. A subsidiariedade limita absorção por instâncias superiores e exige que estas protejam e coordenem capacidades, em vez de abandonarem quem tem menos poder.",
+        "sourceRefs": [
+          "p068",
+          "p069",
+          "p070"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-007",
+      "from": "subsidiarity",
+      "to": "dialogue",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Decidir perto de quem é afetado exige escuta com consequências. No ambiente digital, transparência, recurso e participação permitem que comunidades contribuam para regras ainda em construção, não apenas recebam escolhas fechadas.",
+        "sourceRefs": [
+          "p070",
+          "p071",
+          "p072"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-008",
+      "from": "solidarity",
+      "to": "subsidiarity",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "A subsidiariedade não deve proteger interesses particulares à custa dos outros. A solidariedade alarga o horizonte aos vulneráveis, aos povos e às gerações futuras; o apoio público sustenta essa responsabilidade sem suprimir iniciativa.",
+        "sourceRefs": [
+          "p068",
+          "p069",
+          "p073",
+          "p075",
+          "p076"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-009",
+      "from": "common-good",
+      "to": "development",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Desenvolvimento integral concretiza o bem comum ao ligar condições partilhadas e crescimento de todas as dimensões da vida. O teste abrange povos, relações e participação, e não só acumulação individual.",
+        "sourceRefs": [
+          "p059",
+          "p060",
+          "p082",
+          "p083",
+          "p085"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-010",
+      "from": "justice",
+      "to": "development",
+      "type": "provides-test-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "A justiça testa quem beneficia e quem suporta danos do desenvolvimento. Reparar exclusões, proteger ecossistemas e não transferir custos aos vulneráveis são condições do progresso, não compensações opcionais.",
+        "sourceRefs": [
+          "p079",
+          "p083",
+          "p084",
+          "p085"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-011",
+      "from": "justice",
+      "to": "ai-governance",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Uma ordem digital justa precisa de regras e instituições que previnam vigilância, discriminação e exclusão. A governação deve começar no projeto e garantir decisões contestáveis, acesso e equidade.",
+        "sourceRefs": [
+          "p080",
+          "p109",
+          "p164"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-012",
+      "from": "shared-goods",
+      "to": "ai-governance",
+      "type": "applies-to",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "A destinação universal chega aos dados, algoritmos e infraestruturas. A governação precisa de discutir propriedade, acesso e formas comuns de gestão, para que concentração técnica não determine sozinha quem participa.",
+        "sourceRefs": [
+          "p067",
+          "p108",
+          "p109"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-013",
+      "from": "technology-power",
+      "to": "ai-governance",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "O poder de plataformas e empresas sobre oportunidades exige responsabilidades claras, supervisão e debate político. Transparência é necessária, mas não substitui a discussão pública dos valores e das regras que os sistemas incorporam.",
+        "sourceRefs": [
+          "p005",
+          "p071",
+          "p095",
+          "p105",
+          "p106",
+          "p107"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-014",
+      "from": "dignity",
+      "to": "ai-governance",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "A dignidade limita decisões que reduzem uma pessoa a um perfil sem possibilidade de mudança. A governação deve manter quem responde, como contestar e como reparar, em vez de aceitar exclusão apresentada como neutra.",
+        "sourceRefs": [
+          "p102",
+          "p103",
+          "p105",
+          "p164"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-015",
+      "from": "ai-limits",
+      "to": "ai-governance",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Na visão da fonte, capacidade de cálculo não é consciência moral. Essa distinção impede usar a IA como destino final da responsabilidade, particularmente em decisões letais ou irreversíveis; pessoas continuam a ter de responder.",
+        "sourceRefs": [
+          "p099",
+          "p105",
+          "p198"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-016",
+      "from": "embodiment",
+      "to": "ai-limits",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "A experiência humana envolve corpo, afeto, vulnerabilidade e transformação em relações. O texto usa essa diferença para limitar a equiparação entre inteligência humana e cálculo, sem negar utilidade técnica ou o dever de aliviar sofrimento.",
+        "sourceRefs": [
+          "p099",
+          "p112",
+          "p118",
+          "p128"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-017",
+      "from": "care",
+      "to": "embodiment",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Acolher a finitude não significa deixar alguém sofrer sem ajuda. O cuidado qualifica o argumento sobre limites: a tecnologia pode aliviar dor e apoiar relações, sem classificar vidas frágeis como inferiores.",
+        "sourceRefs": [
+          "p114",
+          "p117",
+          "p118",
+          "p126"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-018",
+      "from": "care",
+      "to": "work",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "A tecnologia pode libertar de tarefas perigosas ou repetitivas e apoiar a atividade humana. Esse ganho precisa de preservar participação e responder a transições desiguais, não apenas reduzir custos e empregos.",
+        "sourceRefs": [
+          "p152",
+          "p153",
+          "p154"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-019",
+      "from": "technology-power",
+      "to": "dignity",
+      "type": "puts-in-tension",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "O paradigma tecnocrático entra em tensão com dignidade quando desempenho e domínio se tornam medidas do valor. A concentração de infraestruturas pode reforçar essa redução, mesmo que instrumentos particulares tragam benefícios.",
+        "sourceRefs": [
+          "p092",
+          "p094",
+          "p095",
+          "p112"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-020",
+      "from": "truth",
+      "to": "dialogue",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "A procura partilhada dos factos sustenta confiança para dialogar. Palavras que dizem a verdade e denunciam injustiça podem desarmar relações; ouvir e negociar não exige abandonar a verificação nem ocultar danos.",
+        "sourceRefs": [
+          "p132",
+          "p134",
+          "p214",
+          "p219"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-021",
+      "from": "truth",
+      "to": "education",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Reconhecer manipulação exige tempo para aprender, comparar fontes e relacionar saberes. A educação sustenta uma ecologia da comunicação ao formar perguntas e discernimento, em vez de oferecer apenas respostas mais rápidas.",
+        "sourceRefs": [
+          "p137",
+          "p139",
+          "p140",
+          "p146"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-022",
+      "from": "education",
+      "to": "freedom",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "A formação crítica ajuda a reconhecer riscos e escolher usos, incluindo momentos sem IA. Precisa de professores preparados, apoio às famílias e relações de confiança; assim pode sustentar liberdade em vez de simples adaptação passiva.",
+        "sourceRefs": [
+          "p142",
+          "p145",
+          "p146",
+          "p147",
+          "p238"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-023",
+      "from": "technology-power",
+      "to": "freedom",
+      "type": "puts-in-tension",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "A captura de atenção e a arquitetura da visibilidade podem reduzir liberdade prática e produzir autocensura. A fonte critica a transformação da pessoa em objeto manipulável, exigindo limites públicos ao poder tecnológico.",
+        "sourceRefs": [
+          "p136",
+          "p170",
+          "p171",
+          "p172"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-024",
+      "from": "work",
+      "to": "family",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Trabalho digno e tempo humano favorecem estabilidade familiar e perspetivas juvenis. O texto liga apoio público, formação e redes sociais a esse futuro, mantendo atribuída a sua definição específica de família.",
+        "sourceRefs": [
+          "p165",
+          "p166",
+          "p167",
+          "p168",
+          "p169"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-025",
+      "from": "dignity",
+      "to": "work",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "O trabalho exprime dignidade, mas não a confere. A sua perda pede proteção e participação, sem diminuir valor humano. As diferenças entre conduta, condições, perceção de si e dignidade ontológica impedem julgar pessoas pela produtividade.",
+        "sourceRefs": [
+          "p052",
+          "p149",
+          "p154"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-026",
+      "from": "work",
+      "to": "distribution",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "As transições laborais distribuem custos e oportunidades de forma desigual. Requalificação, proteção social, acesso aos benefícios e participação dos trabalhadores precisam de escolhas económicas e públicas, para que adaptação não recaia apenas sobre indivíduos.",
+        "sourceRefs": [
+          "p151",
+          "p153",
+          "p156",
+          "p161",
+          "p164"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-027",
+      "from": "distribution",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Prosperidade partilhada pode apoiar paz quando é inclusiva e sustentável. Inversamente, recursos desviados de saúde e educação para armamento fazem pobres suportar custos que enfraquecem essa base social.",
+        "sourceRefs": [
+          "p163",
+          "p204"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-028",
+      "from": "exploitation",
+      "to": "ai-governance",
+      "type": "provides-test-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "O trabalho oculto, o tráfico e a extração colonial de dados testam se a governação serve a dignidade. Cadeias transparentes, diligência preventiva e poder das comunidades sobre informação são respostas concretas, além de promessas de eficiência.",
+        "sourceRefs": [
+          "p173",
+          "p174",
+          "p178",
+          "p179"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-029",
+      "from": "shared-goods",
+      "to": "freedom",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Acesso aos dados não é apenas receber informação. Para recuperar liberdade perante extração colonial, os povos devem poder decidir como os seus dados serão usados, por quem e em benefício de quem.",
+        "sourceRefs": [
+          "p178"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-030",
+      "from": "institutional-accountability",
+      "to": "justice",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Prestar contas exige justiça para quem sofreu danos. Na Igreja, transparência e avaliação devem incluir escuta de vítimas, reparação e prevenção; comunicar melhor sem enfrentar abusos não satisfaz o compromisso.",
+        "sourceRefs": [
+          "p086",
+          "p089",
+          "p138"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-031",
+      "from": "institutional-accountability",
+      "to": "history",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Uma história de desenvolvimento doutrinal precisa de reconhecer atrasos e cumplicidade. A admissão da escravatura impede narrar continuidade como ausência de falhas. Responsabilidade presente inclui mudar práticas e prevenir repetição.",
+        "sourceRefs": [
+          "p029",
+          "p045",
+          "p176",
+          "p177"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-032",
+      "from": "memory",
+      "to": "institutional-accountability",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Recordar a participação da Igreja na escravatura sustenta o dever de denunciar tráfico e apoiar proteção e reabilitação. Memória não é só homenagem ao passado: identifica responsabilidades que pedem ação hoje.",
+        "sourceRefs": [
+          "p176",
+          "p177"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-033",
+      "from": "memory",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Escutar vítimas e preservar memória dos conflitos dificulta normalizar violência. O olhar de quem sofre, incluindo crianças e deslocados, deve servir paz e reconhecimento, em vez de alimentar novos inimigos.",
+        "sourceRefs": [
+          "p191",
+          "p216",
+          "p217",
+          "p244"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-034",
+      "from": "justice",
+      "to": "peace",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "A paz defendida pela fonte nasce da justiça, e não apenas de equilíbrio de forças. Respeitar pessoas e reparar relações dá-lhe fundamento; uma ausência de combate obtida à custa das vítimas não realiza essa paz.",
+        "sourceRefs": [
+          "p205",
+          "p215"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-035",
+      "from": "ai-governance",
+      "to": "peace",
+      "type": "applies-to",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Na guerra, governação da IA significa limites rigorosos: último recurso em legítima defesa, não delegação letal, responsabilidade rastreável, tempo moral e proteção de civis. Valores no projeto podem ajudar sem legitimar violência automática.",
+        "sourceRefs": [
+          "p197",
+          "p198",
+          "p199",
+          "p200"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-036",
+      "from": "institutional-accountability",
+      "to": "ai-governance",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Responsabilização torna decisões compreensíveis e contestáveis e impede que culpas desapareçam na máquina. Na IA civil e militar, essa exigência precisa de pessoas identificáveis e capacidade real de corrigir e reconstruir processos.",
+        "sourceRefs": [
+          "p105",
+          "p164",
+          "p199",
+          "p200"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-037",
+      "from": "dialogue",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Negociação paciente, garantias verificáveis e instituições credíveis tornam paz uma possibilidade prática. O diálogo com interlocutores difíceis e o multilateralismo reformado enfrentam conflitos sem os apresentar como destino inevitável.",
+        "sourceRefs": [
+          "p218",
+          "p219",
+          "p221",
+          "p224",
+          "p226"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-038",
+      "from": "solidarity",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "A interdependência criada por redes pode tornar-se solidariedade escolhida. Quando direitos, deveres e fraternidade ganham forma institucional, o texto vê um caminho da coexistência armada para um destino comum.",
+        "sourceRefs": [
+          "p186",
+          "p187"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-039",
+      "from": "hope",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "A esperança pode sustentar perseverança em tarefas pequenas e públicas sem negar desigualdade de poder. O texto liga resistência ao mal e responsabilidade no próprio âmbito, em vez de prometer solução mágica dos conflitos.",
+        "sourceRefs": [
+          "p211",
+          "p212",
+          "p213"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-040",
+      "from": "faith-foundations",
+      "to": "hope",
+      "type": "provides-source-foundation-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Graça e promessa de renovação fundamentam a esperança cristã apresentada. A cidade aberta de Apocalipse e a fidelidade quotidiana situam a ação numa plenitude recebida, distinta de previsão de progresso técnico ou histórico.",
+        "sourceRefs": [
+          "p126",
+          "p127",
+          "p211",
+          "p242",
+          "p245"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-041",
+      "from": "faith-foundations",
+      "to": "solidarity",
+      "type": "provides-source-foundation-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "A fonte entende comunhão sacramental como pertença que exige partilha e justiça. A união com Cristo liga os fiéis entre si, levando a preservar laços e dar voz a quem fica invisível na economia.",
+        "sourceRefs": [
+          "p088",
+          "p234",
+          "p235"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-042",
+      "from": "care",
+      "to": "faith-foundations",
+      "type": "has-source-foundation-in",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "O cuidado encontra na Encarnação e no valor religioso do corpo uma fundamentação cristã específica. Aproximar-se da fragilidade exige atenção e relações autênticas; essa razão teológica não substitui gestos concretos de presença.",
+        "sourceRefs": [
+          "p231",
+          "p232",
+          "p233",
+          "p239"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-043",
+      "from": "history",
+      "to": "dialogue",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "A história apresentada combina autonomia terrena, saberes humanos e aprendizagem da Igreja. Reconhecer intolerância e verdade partilhada ajuda a compreender diálogo como método de discernimento, e não apenas estratégia de comunicação.",
+        "sourceRefs": [
+          "p020",
+          "p023",
+          "p024",
+          "p025",
+          "p027",
+          "p045"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-044",
+      "from": "hope",
+      "to": "development",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Instituições justas e testemunhos mostram possibilidades frágeis de mudança. A esperança leva a organizar trabalho, cuidar e partilhar no quotidiano. Essa ação pode orientar desenvolvimento humano sem tornar o futuro garantido.",
+        "sourceRefs": [
+          "p123",
+          "p124",
+          "p125",
+          "p126",
+          "p236",
+          "p241",
+          "p245"
+        ]
+      },
+      "placement": "main"
+    }
+  ]
+}

@@ -16,8 +16,8 @@ test('French publication requires complete reading and all 291 keys with exact p
   assert.equal(Object.keys(messages).length, 291);
   const neutral = new Set(['app.magnifica_humanitas', 'app.atlas', 'concept.value_magnifica_humanitas', 'block.description', 'source.page', 'source.pages', 'route.concept', 'note.source_value']);
   for (const [key, text] of Object.entries(messages)) if (!neutral.has(key)) assert.notEqual(text, english[key], key);
-  assert.deepEqual(availableLocales.map(l => l.id), ['en', 'it', 'de', 'es', 'fr']);
-  for (const l of localeRegistry.filter(l => !['en', 'it', 'de', 'es', 'fr'].includes(l.id))) assert.equal(l.reviewed, false);
+  assert.deepEqual(availableLocales.map(l => l.id), ['en', 'it', 'de', 'es', 'fr', 'pt']);
+  for (const l of localeRegistry.filter(l => !['en', 'it', 'de', 'es', 'fr', 'pt'].includes(l.id))) assert.equal(l.reviewed, false);
   assert.equal(messages['about.mh_en_owner_2026'], reading.editionId);
   assert.match(messages['about.this_is_an_english_editorial_reading_of_leo_xiv_s'], /en français/);
   const evidence = read('content/editorial/fr/interface-review.json');
