@@ -5,7 +5,8 @@ export const localeRegistry = Object.freeze([
   { id: 'it', autonym: 'Italiano', dir: 'ltr', source: true, reading: true, messages: true, reviewed: true },
   { id: 'de', autonym: 'Deutsch', dir: 'ltr', source: true, reading: true, messages: true, reviewed: true },
   { id: 'es', autonym: 'Español', dir: 'ltr', source: true, reading: true, messages: true, reviewed: true },
-  ...[['ar', 'العربية'], ['be', 'Беларуская'], ['fr', 'Français'], ['pl', 'Polski'], ['pt', 'Português'], ['ru', 'Русский']]
+  { id: 'fr', autonym: 'Français', dir: 'ltr', source: true, reading: true, messages: true, reviewed: true },
+  ...[['ar', 'العربية'], ['be', 'Беларуская'], ['pl', 'Polski'], ['pt', 'Português'], ['ru', 'Русский']]
     .map(([id, autonym]) => ({ id, autonym, dir: id === 'ar' ? 'rtl' : 'ltr', ...pending })),
 ].map(Object.freeze));
 

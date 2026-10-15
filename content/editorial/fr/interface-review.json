@@ -1,0 +1,1931 @@
+{
+  "schemaVersion": 1,
+  "locale": "fr",
+  "editionId": "mh-fr-official-html-2026-10-14",
+  "reviewDate": "2026-10-15",
+  "readingRevision": "fr-2026-10-15-reading-1",
+  "catalogPath": "content/messages/fr.json",
+  "catalogSha256": "13a4f9e54446425907fff86c40e028628b56b52099438a44cba88559c745d55a",
+  "catalogKeys": 291,
+  "status": "integrated-verification-complete-awaiting-supervisor-review",
+  "method": "Reviewed every public and assistive catalog value for French meaning, official terms, placeholders and composition around inline titles and links. French L6.2 content and all frozen sources are unchanged. Inspected actual Chromium viewport captures on both bases, at phone and desktop sizes and 100/200 percent text. These are bounded visual, accessibility, keyboard and painted-font checks, not native-speaker, comprehensive accessibility or reader-study proof.",
+  "enabledLocalesAtReview": [
+    "en",
+    "it",
+    "de",
+    "es",
+    "fr"
+  ],
+  "otherLocalesRemainUnavailable": true,
+  "catalogReview": [
+    "Navigation, selector, appearance, text size, source method and local-data notices",
+    "Route/document titles, About, source attribution, edition labels and copyright distinction",
+    "Search accent/case handling, paragraphe keyword and empty/loading/failure/retry wording",
+    "Saved positions, resume, caller return, removal/undo/reset and live announcements",
+    "Concepts, optional foundations, all nine relation labels, trails/endings/reflections",
+    "French numeric formatting and dynamic disposition/saved-block labels"
+  ],
+  "gatesSequential": [
+    {
+      "command": "npm run check",
+      "exitStatus": 0,
+      "unitTestsPassed": 170,
+      "log": "output/french/check.log",
+      "logSha256": "9ef1a19824c5556b5abde073ded547855fe677d4e4d969d600f0b0986d18bdbf"
+    },
+    {
+      "command": "npm run source:check",
+      "exitStatus": 0,
+      "sourceEditions": 10,
+      "paragraphsPerEdition": 245,
+      "notesPerEdition": 224,
+      "log": "output/french/source-check.log",
+      "logSha256": "ce6cfd4008eaaac22c5b4a54b6a9476754cea3c0535322140b692dcaa3aae5d7"
+    },
+    {
+      "command": "PLAYWRIGHT_BROWSERS_PATH=/tmp/magnifica-playwright BROWSER_EVIDENCE_DIR=output/french/hosting npm run test:browser:all",
+      "exitStatus": 0,
+      "log": "output/french/browser-all.log",
+      "logSha256": "4fbdd142301e49da5d236c4c7223d75fad51768426edbf7ec3ee5d8df91d999f"
+    }
+  ],
+  "browserReports": [
+    {
+      "base": "/",
+      "path": "output/french/hosting/root-browser-results.json",
+      "sha256": "c1af41da9899bd872efefb5e4c8dd3448b4034d0095643f1f5a348626290b8ad",
+      "stats": {
+        "startTime": "2026-10-15T05:46:14.270Z",
+        "duration": 68876.13799999999,
+        "expected": 236,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "frenchCases": 43
+    },
+    {
+      "base": "/magnifica-humanitas/",
+      "path": "output/french/hosting/subpath-browser-results.json",
+      "sha256": "98b3f3ee213ba4b94ab03ef7d046081563e52c37fcb7115bbd34d5c5db617126",
+      "stats": {
+        "startTime": "2026-10-15T05:47:24.672Z",
+        "duration": 39743.240000000005,
+        "expected": 236,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "frenchCases": 43
+    }
+  ],
+  "hostingBuildEvidence": {
+    "path": "output/french/hosting/browser-evidence.json",
+    "sha256": "cd61ae3bb2b6acac4062dfd07380175e58bd5363d5c3ac50e93bd6661b619e6d"
+  },
+  "isolatedRtlFixture": {
+    "commands": [
+      "MAGNIFICA_RTL_FIXTURE=1 VITE_BASE=/ npx vite build --mode locale-fixture",
+      "VITE_BASE=/ PLAYWRIGHT_BROWSERS_PATH=/tmp/magnifica-playwright npx playwright test --config playwright.locale.config.ts"
+    ],
+    "exitStatus": 0,
+    "stats": {
+      "startTime": "2026-10-15T05:48:44.503Z",
+      "duration": 5590.147,
+      "expected": 11,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "report": {
+      "path": "output/french/rtl-fixture-results.json",
+      "sha256": "568d7e528d854529d551401fc61a5d5d582caa3ac7d3b6fc832141c813b7b5d8"
+    },
+    "buildLogSha256": "ca89a64991fea83e5b4b7aef4014afc798f18b16a2fcc2cbe830eb034969b088",
+    "browserLogSha256": "0177c709bb10a057a980f9c95da44b3bce23168e96cb5abd8931bdbb07a353fb"
+  },
+  "browserCoverage": [
+    "43 French cases at each base, plus accepted English/Italian/German/Spanish regressions",
+    "Nine surfaces: Atlas, Concept, Trail, Read, Source, Note, Search, Saved and About",
+    "390x844 and 1440x900, 100/200 percent text, reduced motion and keyboard focus",
+    "Ordered regional preferences and navigator.language fallback; explicit en/it/de/es URLs override French preferences",
+    "Twelve equivalent routes retain query/anchor bytes; switching removes stale caller labels",
+    "Saved paragraph and caller restoration, source/note backlinks, French official URLs, local n143 and ibid. dependencies",
+    "Failed and cancelled activation preserves exact title and last/recent/visited/nonempty saved fields",
+    "Localized search, missing/empty/error/retry states, temporary storage, optional reflections and deferred resources"
+  ],
+  "visualEvidence": {
+    "surfaceScreenshots": 72,
+    "selectorScreenshots": 8,
+    "darkAboutScreenshots": 8,
+    "screenshots": [
+      {
+        "path": "output/french/root-1440-100-about-dark.png",
+        "sha256": "210738aa1335633289c25a5bc077a73c4fc5d43d160e8315235ab3eb49d42520"
+      },
+      {
+        "path": "output/french/root-1440-100-about.png",
+        "sha256": "d5716aeef98121eab73d6120421bb361ee7d467adcb044c181e7dbc29ad7da9f"
+      },
+      {
+        "path": "output/french/root-1440-100-atlas.png",
+        "sha256": "184b10cd68cda3985e37bf6ea766971f38f1573da586e04dd57b5fd28b27b847"
+      },
+      {
+        "path": "output/french/root-1440-100-concept.png",
+        "sha256": "2a805f1d5e7f6c5f30b7fb5b6fdfd5d8f10eb3bd831637ed98e58bb108545f41"
+      },
+      {
+        "path": "output/french/root-1440-100-note.png",
+        "sha256": "0d70862fea6130a1ec2c06b0ef8fe2dfa1feb6e7d706efc79cceb3ab90664ef0"
+      },
+      {
+        "path": "output/french/root-1440-100-read.png",
+        "sha256": "65e20094912ec5d70bee1bcefdf5434dd85e34e06446e414d0e5f33ff5cf1417"
+      },
+      {
+        "path": "output/french/root-1440-100-saved.png",
+        "sha256": "4f896b45739278fdc3b72f5f2110cdfd1c78a7f3b92bd554e32a670f13a501d6"
+      },
+      {
+        "path": "output/french/root-1440-100-search.png",
+        "sha256": "ce4b6c5e6e89b5958690fad999994d4656304d796bd4f897d2521aa6698d6c17"
+      },
+      {
+        "path": "output/french/root-1440-100-selector.png",
+        "sha256": "4ad1328ea99b986a64cca9b9fd5aa565548991f0ea291ff6a4749bc7e25fa01f"
+      },
+      {
+        "path": "output/french/root-1440-100-source.png",
+        "sha256": "2128e9604e2cbb41e7ca9f5cbc17b6a01183def4f588e2edb298c97c8fd15964"
+      },
+      {
+        "path": "output/french/root-1440-100-trail.png",
+        "sha256": "92fb8489839f9deae98a8fb74c984d84e948b958672715d70d51e8da80391f6d"
+      },
+      {
+        "path": "output/french/root-1440-200-about-dark.png",
+        "sha256": "747d4282d6ada7a120ce453f1ce1fe645ef7c923701fc3aa9bbf3e304f935887"
+      },
+      {
+        "path": "output/french/root-1440-200-about.png",
+        "sha256": "8b74ea00e059f5f2926c1f7563b5bfa807536e66f9676a03d21c2ac36cc11f00"
+      },
+      {
+        "path": "output/french/root-1440-200-atlas.png",
+        "sha256": "75245040d45b50beef49d7dd8a4f5a36b2e3fedcd323758e65d893617895bef7"
+      },
+      {
+        "path": "output/french/root-1440-200-concept.png",
+        "sha256": "0074cf8b0de1eaa367a20fc64fff775748645f086af86bec713d932c595c1ba6"
+      },
+      {
+        "path": "output/french/root-1440-200-note.png",
+        "sha256": "140901c55f40ab117544fe332504c871ddb8c454a751b5578e447aa98d46bb36"
+      },
+      {
+        "path": "output/french/root-1440-200-read.png",
+        "sha256": "66daab37b93601cafca25a78fbba8271ee9a2de3e6778d9abaaf7577c4a7bc96"
+      },
+      {
+        "path": "output/french/root-1440-200-saved.png",
+        "sha256": "a2babce21a61b9e192e9bcacc72e38501cffc5b9168aa91f87e07d5b5dbb2c85"
+      },
+      {
+        "path": "output/french/root-1440-200-search.png",
+        "sha256": "90de0cb44d71ada894082d6220e7a17ff88e7fb2175b2a664e735540f7a083fe"
+      },
+      {
+        "path": "output/french/root-1440-200-selector.png",
+        "sha256": "a8f1d4784c102da5a4f30fa63c2488b2ecc9fb4573be53c3b29bc7aeda6e9604"
+      },
+      {
+        "path": "output/french/root-1440-200-source.png",
+        "sha256": "89aeb248fb590975991972dede34ec42c7cb02ae23053583e969de86dd0a3f6c"
+      },
+      {
+        "path": "output/french/root-1440-200-trail.png",
+        "sha256": "d9a1556b508837c9be64700c050e112825905f152b4e8bc037657596527f0025"
+      },
+      {
+        "path": "output/french/root-390-100-about-dark.png",
+        "sha256": "7edfcbf7058bb3ffc49adade844cf46f0ec72841e0d2755781a2b2c9c55d3ef5"
+      },
+      {
+        "path": "output/french/root-390-100-about.png",
+        "sha256": "40e5524ba330ee5f33fbeb5974a3d64a914f56ecb6e826e13a3bcdb3d6d61c4c"
+      },
+      {
+        "path": "output/french/root-390-100-atlas.png",
+        "sha256": "44ce1304584c664a0f7bb49640af0e0cdbfde004c5e3198c4e58701239a74f65"
+      },
+      {
+        "path": "output/french/root-390-100-concept.png",
+        "sha256": "21e02446ae74a16a044559437df79f94f92563625b24068546cb94369936d8b8"
+      },
+      {
+        "path": "output/french/root-390-100-note.png",
+        "sha256": "b0c79fe721a0bcd851d31725b182645a9bac62ee6faa2f6b2045a30de02b2b57"
+      },
+      {
+        "path": "output/french/root-390-100-read.png",
+        "sha256": "9112b1290f058abab101df00cf479a9b88338607876c2999b83d79d0f214315c"
+      },
+      {
+        "path": "output/french/root-390-100-saved.png",
+        "sha256": "c45fb30591ec70acb4c9b101050e79d60735772a5b4e2bc993c111d630e95b90"
+      },
+      {
+        "path": "output/french/root-390-100-search.png",
+        "sha256": "2293564059be7d1adc026404ba8e973a6196911b898095198fe1edf5292968e2"
+      },
+      {
+        "path": "output/french/root-390-100-selector.png",
+        "sha256": "742946004db4b6f07ace7693f47cc1be6e7e4c890c511653c630a1782b8d8d04"
+      },
+      {
+        "path": "output/french/root-390-100-source.png",
+        "sha256": "372e541e321e620e17563c247a88e07db26455b8af6a0d687d8c296d266bce1e"
+      },
+      {
+        "path": "output/french/root-390-100-trail.png",
+        "sha256": "78661a6dd8db89503bad606765cd8448b90fdc97b5c85ece656fddcf57896eaa"
+      },
+      {
+        "path": "output/french/root-390-200-about-dark.png",
+        "sha256": "345c14baf865ab3a9bacf2d71544014af3c6d5aba323041f09c7ea30c255d8d2"
+      },
+      {
+        "path": "output/french/root-390-200-about.png",
+        "sha256": "e543f7810c9d9c57ec49a7d4f8e5c79d09609bc92668e454b7082d78a25f6910"
+      },
+      {
+        "path": "output/french/root-390-200-atlas.png",
+        "sha256": "29ef7fc89bfff3204f3aaae4feb5032bd899b5f080fd9286ae07883d0c3ebfcd"
+      },
+      {
+        "path": "output/french/root-390-200-concept.png",
+        "sha256": "ecf1e23d0015ca1f75ee52177434b2efeab823e8ceb81025b0f9c0fe6dc99b0c"
+      },
+      {
+        "path": "output/french/root-390-200-note.png",
+        "sha256": "2abfce6900ed3b5113f5abedc629ba12c66179821b5c5ae3fcc8efb37482852e"
+      },
+      {
+        "path": "output/french/root-390-200-read.png",
+        "sha256": "7b370752d9370e7bb211ff3188003dc9d53187a3c8b6d55e96549375fcaa62f1"
+      },
+      {
+        "path": "output/french/root-390-200-saved.png",
+        "sha256": "161083807870f2e4ac5092fe7b63f15f85d470ff2d8f7fa9c37914467031b74d"
+      },
+      {
+        "path": "output/french/root-390-200-search.png",
+        "sha256": "4d42bc2c1e30f1e47e346177371471047f8a0f6da58f3b70db1581c9d3366141"
+      },
+      {
+        "path": "output/french/root-390-200-selector.png",
+        "sha256": "d0bd93081d2b47548626fbc7eaf9413726bfc6a1e9eb86b00b570eda0556bbae"
+      },
+      {
+        "path": "output/french/root-390-200-source.png",
+        "sha256": "b64d46d0c07b16d2c5717cdedffa8d6d09a243be2bdb03fa4b0b8154e291cac1"
+      },
+      {
+        "path": "output/french/root-390-200-trail.png",
+        "sha256": "8e42c3bee99a96f1c7076a83cb486f2787c99bcdd44c48d9010e0549a5a1931f"
+      },
+      {
+        "path": "output/french/subpath-1440-100-about-dark.png",
+        "sha256": "210738aa1335633289c25a5bc077a73c4fc5d43d160e8315235ab3eb49d42520"
+      },
+      {
+        "path": "output/french/subpath-1440-100-about.png",
+        "sha256": "d5716aeef98121eab73d6120421bb361ee7d467adcb044c181e7dbc29ad7da9f"
+      },
+      {
+        "path": "output/french/subpath-1440-100-atlas.png",
+        "sha256": "184b10cd68cda3985e37bf6ea766971f38f1573da586e04dd57b5fd28b27b847"
+      },
+      {
+        "path": "output/french/subpath-1440-100-concept.png",
+        "sha256": "2a805f1d5e7f6c5f30b7fb5b6fdfd5d8f10eb3bd831637ed98e58bb108545f41"
+      },
+      {
+        "path": "output/french/subpath-1440-100-note.png",
+        "sha256": "0d70862fea6130a1ec2c06b0ef8fe2dfa1feb6e7d706efc79cceb3ab90664ef0"
+      },
+      {
+        "path": "output/french/subpath-1440-100-read.png",
+        "sha256": "65e20094912ec5d70bee1bcefdf5434dd85e34e06446e414d0e5f33ff5cf1417"
+      },
+      {
+        "path": "output/french/subpath-1440-100-saved.png",
+        "sha256": "4f896b45739278fdc3b72f5f2110cdfd1c78a7f3b92bd554e32a670f13a501d6"
+      },
+      {
+        "path": "output/french/subpath-1440-100-search.png",
+        "sha256": "ce4b6c5e6e89b5958690fad999994d4656304d796bd4f897d2521aa6698d6c17"
+      },
+      {
+        "path": "output/french/subpath-1440-100-selector.png",
+        "sha256": "4ad1328ea99b986a64cca9b9fd5aa565548991f0ea291ff6a4749bc7e25fa01f"
+      },
+      {
+        "path": "output/french/subpath-1440-100-source.png",
+        "sha256": "2128e9604e2cbb41e7ca9f5cbc17b6a01183def4f588e2edb298c97c8fd15964"
+      },
+      {
+        "path": "output/french/subpath-1440-100-trail.png",
+        "sha256": "92fb8489839f9deae98a8fb74c984d84e948b958672715d70d51e8da80391f6d"
+      },
+      {
+        "path": "output/french/subpath-1440-200-about-dark.png",
+        "sha256": "747d4282d6ada7a120ce453f1ce1fe645ef7c923701fc3aa9bbf3e304f935887"
+      },
+      {
+        "path": "output/french/subpath-1440-200-about.png",
+        "sha256": "8b74ea00e059f5f2926c1f7563b5bfa807536e66f9676a03d21c2ac36cc11f00"
+      },
+      {
+        "path": "output/french/subpath-1440-200-atlas.png",
+        "sha256": "75245040d45b50beef49d7dd8a4f5a36b2e3fedcd323758e65d893617895bef7"
+      },
+      {
+        "path": "output/french/subpath-1440-200-concept.png",
+        "sha256": "0074cf8b0de1eaa367a20fc64fff775748645f086af86bec713d932c595c1ba6"
+      },
+      {
+        "path": "output/french/subpath-1440-200-note.png",
+        "sha256": "140901c55f40ab117544fe332504c871ddb8c454a751b5578e447aa98d46bb36"
+      },
+      {
+        "path": "output/french/subpath-1440-200-read.png",
+        "sha256": "66daab37b93601cafca25a78fbba8271ee9a2de3e6778d9abaaf7577c4a7bc96"
+      },
+      {
+        "path": "output/french/subpath-1440-200-saved.png",
+        "sha256": "a2babce21a61b9e192e9bcacc72e38501cffc5b9168aa91f87e07d5b5dbb2c85"
+      },
+      {
+        "path": "output/french/subpath-1440-200-search.png",
+        "sha256": "90de0cb44d71ada894082d6220e7a17ff88e7fb2175b2a664e735540f7a083fe"
+      },
+      {
+        "path": "output/french/subpath-1440-200-selector.png",
+        "sha256": "a8f1d4784c102da5a4f30fa63c2488b2ecc9fb4573be53c3b29bc7aeda6e9604"
+      },
+      {
+        "path": "output/french/subpath-1440-200-source.png",
+        "sha256": "89aeb248fb590975991972dede34ec42c7cb02ae23053583e969de86dd0a3f6c"
+      },
+      {
+        "path": "output/french/subpath-1440-200-trail.png",
+        "sha256": "d9a1556b508837c9be64700c050e112825905f152b4e8bc037657596527f0025"
+      },
+      {
+        "path": "output/french/subpath-390-100-about-dark.png",
+        "sha256": "7edfcbf7058bb3ffc49adade844cf46f0ec72841e0d2755781a2b2c9c55d3ef5"
+      },
+      {
+        "path": "output/french/subpath-390-100-about.png",
+        "sha256": "40e5524ba330ee5f33fbeb5974a3d64a914f56ecb6e826e13a3bcdb3d6d61c4c"
+      },
+      {
+        "path": "output/french/subpath-390-100-atlas.png",
+        "sha256": "44ce1304584c664a0f7bb49640af0e0cdbfde004c5e3198c4e58701239a74f65"
+      },
+      {
+        "path": "output/french/subpath-390-100-concept.png",
+        "sha256": "21e02446ae74a16a044559437df79f94f92563625b24068546cb94369936d8b8"
+      },
+      {
+        "path": "output/french/subpath-390-100-note.png",
+        "sha256": "b0c79fe721a0bcd851d31725b182645a9bac62ee6faa2f6b2045a30de02b2b57"
+      },
+      {
+        "path": "output/french/subpath-390-100-read.png",
+        "sha256": "9112b1290f058abab101df00cf479a9b88338607876c2999b83d79d0f214315c"
+      },
+      {
+        "path": "output/french/subpath-390-100-saved.png",
+        "sha256": "c45fb30591ec70acb4c9b101050e79d60735772a5b4e2bc993c111d630e95b90"
+      },
+      {
+        "path": "output/french/subpath-390-100-search.png",
+        "sha256": "2293564059be7d1adc026404ba8e973a6196911b898095198fe1edf5292968e2"
+      },
+      {
+        "path": "output/french/subpath-390-100-selector.png",
+        "sha256": "742946004db4b6f07ace7693f47cc1be6e7e4c890c511653c630a1782b8d8d04"
+      },
+      {
+        "path": "output/french/subpath-390-100-source.png",
+        "sha256": "372e541e321e620e17563c247a88e07db26455b8af6a0d687d8c296d266bce1e"
+      },
+      {
+        "path": "output/french/subpath-390-100-trail.png",
+        "sha256": "78661a6dd8db89503bad606765cd8448b90fdc97b5c85ece656fddcf57896eaa"
+      },
+      {
+        "path": "output/french/subpath-390-200-about-dark.png",
+        "sha256": "345c14baf865ab3a9bacf2d71544014af3c6d5aba323041f09c7ea30c255d8d2"
+      },
+      {
+        "path": "output/french/subpath-390-200-about.png",
+        "sha256": "e543f7810c9d9c57ec49a7d4f8e5c79d09609bc92668e454b7082d78a25f6910"
+      },
+      {
+        "path": "output/french/subpath-390-200-atlas.png",
+        "sha256": "29ef7fc89bfff3204f3aaae4feb5032bd899b5f080fd9286ae07883d0c3ebfcd"
+      },
+      {
+        "path": "output/french/subpath-390-200-concept.png",
+        "sha256": "ecf1e23d0015ca1f75ee52177434b2efeab823e8ceb81025b0f9c0fe6dc99b0c"
+      },
+      {
+        "path": "output/french/subpath-390-200-note.png",
+        "sha256": "2abfce6900ed3b5113f5abedc629ba12c66179821b5c5ae3fcc8efb37482852e"
+      },
+      {
+        "path": "output/french/subpath-390-200-read.png",
+        "sha256": "7b370752d9370e7bb211ff3188003dc9d53187a3c8b6d55e96549375fcaa62f1"
+      },
+      {
+        "path": "output/french/subpath-390-200-saved.png",
+        "sha256": "161083807870f2e4ac5092fe7b63f15f85d470ff2d8f7fa9c37914467031b74d"
+      },
+      {
+        "path": "output/french/subpath-390-200-search.png",
+        "sha256": "4d42bc2c1e30f1e47e346177371471047f8a0f6da58f3b70db1581c9d3366141"
+      },
+      {
+        "path": "output/french/subpath-390-200-selector.png",
+        "sha256": "d0bd93081d2b47548626fbc7eaf9413726bfc6a1e9eb86b00b570eda0556bbae"
+      },
+      {
+        "path": "output/french/subpath-390-200-source.png",
+        "sha256": "b64d46d0c07b16d2c5717cdedffa8d6d09a243be2bdb03fa4b0b8154e291cac1"
+      },
+      {
+        "path": "output/french/subpath-390-200-trail.png",
+        "sha256": "8e42c3bee99a96f1c7076a83cb486f2787c99bcdd44c48d9010e0549a5a1931f"
+      }
+    ],
+    "reviewSheets": [
+      {
+        "path": "output/french/review-about-dark-1440.png",
+        "sha256": "baa72b4dadeaa6aa1230a4d4eeccd331544346361ee683ece6da1880f1f51a85"
+      },
+      {
+        "path": "output/french/review-about-dark-390.png",
+        "sha256": "0dbc9bafd9d7a077e4151382b7bc1dfda0b4762a7a0869b11c08286750fdcde9"
+      },
+      {
+        "path": "output/french/review-root-1440-100.png",
+        "sha256": "4a8f10674edc652b02576e5ce0d670d76893e16284cf54f2c340e00f198a0d53"
+      },
+      {
+        "path": "output/french/review-root-1440-200.png",
+        "sha256": "b726485855128d926b2251f71feed6bd82597ab3ef3ff2ccd1adc48672e95271"
+      },
+      {
+        "path": "output/french/review-root-390-100.png",
+        "sha256": "599678a1c6cb15ba06508b098cbd641439f1db29ff353c2302c2ec41240a793a"
+      },
+      {
+        "path": "output/french/review-root-390-200.png",
+        "sha256": "cefceae70d2ee254b5cbbc43292b0dbae68bd731fe388cde8c8a44f92afc2886"
+      },
+      {
+        "path": "output/french/review-selector-1440.png",
+        "sha256": "bd87e35b01fd950d820b048753ca1ef794e5a5bbc2bb427e5c5c4b8f0cdab7c6"
+      },
+      {
+        "path": "output/french/review-selector-390.png",
+        "sha256": "16914fcab78c516c38bff426b57acf032d89c62c44fd1f6b6b1e8131f710d15a"
+      },
+      {
+        "path": "output/french/review-subpath-1440-100.png",
+        "sha256": "d59c06133aa0406c1ea2f22eb050abf6c705c856c7a4e8bd890ae92ba3b88973"
+      },
+      {
+        "path": "output/french/review-subpath-1440-200.png",
+        "sha256": "38012823b6cc95f3756a3fd75e870cdf5c2f39e7b33b3b0a744fd9e486e223b2"
+      },
+      {
+        "path": "output/french/review-subpath-390-100.png",
+        "sha256": "bcf1c6b7ab7b38d51bc1ca7ae78226ef15262b6b5a2e73310c018eed1e62b5f9"
+      },
+      {
+        "path": "output/french/review-subpath-390-200.png",
+        "sha256": "1180ad3f3802ff5faf977ca87d11f52f412e6d98b3f58899f3985c5f09e255e5"
+      }
+    ],
+    "paintedFonts": [
+      {
+        "base": "/",
+        "case": "French nine-surface review 390 text 100",
+        "surfaces": {
+          "atlas": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 41
+              }
+            ]
+          },
+          "concept": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 15
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 37
+              }
+            ]
+          },
+          "trail": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 15
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 73
+              }
+            ]
+          },
+          "read": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 16
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 233
+              }
+            ]
+          },
+          "source": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 26
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 56
+              }
+            ]
+          },
+          "note": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 21
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 56
+              }
+            ]
+          },
+          "search": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 8
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 206
+              }
+            ]
+          },
+          "saved": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 174
+              }
+            ]
+          },
+          "about": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 24
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 187
+              }
+            ]
+          }
+        }
+      },
+      {
+        "base": "/",
+        "case": "French nine-surface review 390 text 200",
+        "surfaces": {
+          "atlas": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 17
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 40
+              }
+            ]
+          },
+          "concept": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 14
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 36
+              }
+            ]
+          },
+          "trail": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 14
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 70
+              }
+            ]
+          },
+          "read": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 15
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 226
+              }
+            ]
+          },
+          "source": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 24
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 56
+              }
+            ]
+          },
+          "note": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 19
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 56
+              }
+            ]
+          },
+          "search": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 8
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 199
+              }
+            ]
+          },
+          "saved": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 16
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 167
+              }
+            ]
+          },
+          "about": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 23
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 180
+              }
+            ]
+          }
+        }
+      },
+      {
+        "base": "/",
+        "case": "French nine-surface review 1440 text 100",
+        "surfaces": {
+          "atlas": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 42
+              }
+            ]
+          },
+          "concept": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 15
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 37
+              }
+            ]
+          },
+          "trail": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 15
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 74
+              }
+            ]
+          },
+          "read": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 16
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 236
+              }
+            ]
+          },
+          "source": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 27
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 57
+              }
+            ]
+          },
+          "note": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 21
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 57
+              }
+            ]
+          },
+          "search": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 8
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 208
+              }
+            ]
+          },
+          "saved": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 175
+              }
+            ]
+          },
+          "about": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 25
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 188
+              }
+            ]
+          }
+        }
+      },
+      {
+        "base": "/",
+        "case": "French nine-surface review 1440 text 200",
+        "surfaces": {
+          "atlas": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 42
+              }
+            ]
+          },
+          "concept": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 15
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 37
+              }
+            ]
+          },
+          "trail": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 15
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 74
+              }
+            ]
+          },
+          "read": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 16
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 236
+              }
+            ]
+          },
+          "source": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 27
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 57
+              }
+            ]
+          },
+          "note": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 21
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 57
+              }
+            ]
+          },
+          "search": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 8
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 208
+              }
+            ]
+          },
+          "saved": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 175
+              }
+            ]
+          },
+          "about": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 25
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 188
+              }
+            ]
+          }
+        }
+      },
+      {
+        "base": "/magnifica-humanitas/",
+        "case": "French nine-surface review 390 text 100",
+        "surfaces": {
+          "atlas": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 41
+              }
+            ]
+          },
+          "concept": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 15
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 37
+              }
+            ]
+          },
+          "trail": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 15
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 73
+              }
+            ]
+          },
+          "read": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 16
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 233
+              }
+            ]
+          },
+          "source": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 26
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 56
+              }
+            ]
+          },
+          "note": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 21
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 56
+              }
+            ]
+          },
+          "search": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 8
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 206
+              }
+            ]
+          },
+          "saved": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 174
+              }
+            ]
+          },
+          "about": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 24
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 187
+              }
+            ]
+          }
+        }
+      },
+      {
+        "base": "/magnifica-humanitas/",
+        "case": "French nine-surface review 390 text 200",
+        "surfaces": {
+          "atlas": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 17
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 40
+              }
+            ]
+          },
+          "concept": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 14
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 36
+              }
+            ]
+          },
+          "trail": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 14
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 70
+              }
+            ]
+          },
+          "read": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 15
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 226
+              }
+            ]
+          },
+          "source": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 24
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 56
+              }
+            ]
+          },
+          "note": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 19
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 56
+              }
+            ]
+          },
+          "search": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 8
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 199
+              }
+            ]
+          },
+          "saved": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 16
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 167
+              }
+            ]
+          },
+          "about": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 23
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 180
+              }
+            ]
+          }
+        }
+      },
+      {
+        "base": "/magnifica-humanitas/",
+        "case": "French nine-surface review 1440 text 100",
+        "surfaces": {
+          "atlas": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 42
+              }
+            ]
+          },
+          "concept": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 15
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 37
+              }
+            ]
+          },
+          "trail": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 15
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 74
+              }
+            ]
+          },
+          "read": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 16
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 236
+              }
+            ]
+          },
+          "source": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 27
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 57
+              }
+            ]
+          },
+          "note": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 21
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 57
+              }
+            ]
+          },
+          "search": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 8
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 208
+              }
+            ]
+          },
+          "saved": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 175
+              }
+            ]
+          },
+          "about": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 25
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 188
+              }
+            ]
+          }
+        }
+      },
+      {
+        "base": "/magnifica-humanitas/",
+        "case": "French nine-surface review 1440 text 200",
+        "surfaces": {
+          "atlas": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 42
+              }
+            ]
+          },
+          "concept": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 15
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 37
+              }
+            ]
+          },
+          "trail": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 15
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 74
+              }
+            ]
+          },
+          "read": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 16
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 236
+              }
+            ]
+          },
+          "source": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 27
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 57
+              }
+            ]
+          },
+          "note": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 21
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 57
+              }
+            ]
+          },
+          "search": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 8
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 208
+              }
+            ]
+          },
+          "saved": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 175
+              }
+            ]
+          },
+          "about": {
+            "heading": [
+              {
+                "familyName": "Syne",
+                "postScriptName": "Syne-Bold",
+                "isCustomFont": true,
+                "glyphCount": 25
+              }
+            ],
+            "body": [
+              {
+                "familyName": "Inter",
+                "postScriptName": "Inter-Regular",
+                "isCustomFont": true,
+                "glyphCount": 188
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "fallbackFontsInSample": [],
+    "automatedAccessibility": {
+      "scans": 18,
+      "tags": [
+        "wcag2a",
+        "wcag2aa",
+        "wcag21aa"
+      ],
+      "violations": 0
+    },
+    "horizontalOverflowAssertions": 72
+  },
+  "boundedPolish": {
+    "change": "Shortened French Atlas heading to Explorer les idées and Search heading/title to Chercher after the narrow 200 percent captures split Magnifica/Humanitas and Rechercher within words. No CSS or runtime logic changed.",
+    "impeccableDetectorFindings": 0,
+    "detectorOutput": "output/french/impeccable-detector.json",
+    "detectorTiming": "One scan before the heading shortening; final wording checked by complete gates and the bounded visual confirmation."
+  },
+  "recoverableFailures": [
+    {
+      "attempt": 1,
+      "report": {
+        "path": "output/french/attempt-1/root-browser-results.json",
+        "sha256": "91ad91fd8677cc94d7b0f3cf8aec80bb24ef622bac8eb6d75753a322ece58a46"
+      },
+      "stats": {
+        "startTime": "2026-10-15T05:42:02.920Z",
+        "duration": 49377.735,
+        "expected": 230,
+        "skipped": 0,
+        "unexpected": 6,
+        "flaky": 0
+      },
+      "reason": "Five new tests expected a short Atlas heading, while the initial French catalog used its full title. The existing unsupported-fr shell probe became an available route and now uses still-unavailable pl. Corrected expectations, no runtime repair; subpath did not run after this failed root attempt."
+    },
+    {
+      "scope": "First French interface unit attempt",
+      "passed": 3,
+      "failed": 1,
+      "reason": "The translation-difference assertion lacked the legitimate French/English cognate Source {value1}; added it to explicit neutral-key exceptions. No production wording changed for that assertion.",
+      "log": {
+        "path": "output/french/attempt-1/interface-focused.log",
+        "sha256": "d35d178b84ce10361de8b9cb35e5d867565d99d4147fd49c9eea4ca02dc4d3d0"
+      }
+    }
+  ],
+  "limitations": [
+    "Chromium viewport automation, not physical-device, screen-reader-user, native-speaker or reader-efficacy studies.",
+    "Axe scans and sampled painted nodes do not establish comprehensive accessibility or every possible glyph.",
+    "Generated reports, logs, screenshots and fixture outputs remain review evidence outside commit scope; no deployment or publication is claimed."
+  ],
+  "focusedInterfaceTest": {
+    "command": "node --test tests/french-interface.test.mjs",
+    "exitStatus": 0,
+    "passed": 4,
+    "failed": 0,
+    "skipped": 0,
+    "log": "output/french/interface-focused-final.log",
+    "logSha256": "e3ca6558d8790fad345399361c0d1c20058f37947eb03a1fafb3d1d45a76e4eb"
+  }
+}

@@ -1,0 +1,786 @@
+{
+  "schemaVersion": 1,
+  "language": "fr",
+  "editionId": "mh-fr-official-html-2026-10-14",
+  "relations": [
+    {
+      "id": "rel-001",
+      "from": "faith-foundations",
+      "to": "dignity",
+      "type": "provides-source-foundation-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "La source fonde la dignité dans la création et l’amour de Dieu. Cette justification chrétienne précède les mérites : échec moral et exclusion ne peuvent donc supprimer la valeur de la personne.",
+        "sourceRefs": [
+          "p050",
+          "p052",
+          "p053"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-002",
+      "from": "dignity",
+      "to": "rights",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Des droits sont dus aux personnes du fait même de leur dignité. Ils doivent avoir des effets pratiques et juridiques, notamment selon la position de l’Église sur la vie ; leur reconnaissance ne dépend pas du rendement individuel.",
+        "sourceRefs": [
+          "p051",
+          "p054",
+          "p055"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-003",
+      "from": "dignity",
+      "to": "common-good",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Reconnaître une valeur inaliénable à chacun oblige à organiser la vie commune. Le bien commun donne une forme sociale à cette reconnaissance, au-delà de l’addition d’avantages particuliers.",
+        "sourceRefs": [
+          "p059",
+          "p060"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-004",
+      "from": "common-good",
+      "to": "shared-goods",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Les conditions d’une vie commune digne dépendent de l’accès aux biens. La propriété privée a un sens, mais sa fonction doit rester subordonnée à une destination qui n’exclut personne.",
+        "sourceRefs": [
+          "p065",
+          "p066"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-005",
+      "from": "shared-goods",
+      "to": "distribution",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Le droit de propriété n’épuise pas la justice économique. Accès aux technologies, protection contre le gaspillage et le pillage, et justice dans la production complètent la répartition des richesses après leur création.",
+        "sourceRefs": [
+          "p066",
+          "p067",
+          "p161",
+          "p162"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-006",
+      "from": "subsidiarity",
+      "to": "common-good",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Une communauté contribue au bien commun lorsqu’elle dispose d’une capacité réelle d’initiative. Les niveaux supérieurs doivent la soutenir et la coordonner sans l’absorber ni se retirer des protections nécessaires.",
+        "sourceRefs": [
+          "p068",
+          "p069",
+          "p070"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-007",
+      "from": "subsidiarity",
+      "to": "dialogue",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "La subsidiarité demande que les personnes puissent participer à l’élaboration des choix. Face aux plateformes, transparence, recours et garanties publiques doivent empêcher que la consultation ne survienne seulement après une décision fixée ailleurs.",
+        "sourceRefs": [
+          "p070",
+          "p071",
+          "p072"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-008",
+      "from": "solidarity",
+      "to": "subsidiarity",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Sans solidarité, la subsidiarité peut servir des intérêts particuliers ; sans capacité d’agir, la solidarité peut devenir un assistanat. Leurs obligations se complètent, notamment envers les personnes vulnérables et les générations futures.",
+        "sourceRefs": [
+          "p068",
+          "p069",
+          "p073",
+          "p075",
+          "p076"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-009",
+      "from": "common-good",
+      "to": "development",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Le développement intégral rend concrètes les conditions sociales du bien commun. Il concerne toutes les dimensions des personnes et des peuples, plutôt qu’une simple augmentation de consommation ou de puissance technique.",
+        "sourceRefs": [
+          "p059",
+          "p060",
+          "p082",
+          "p083",
+          "p085"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-010",
+      "from": "justice",
+      "to": "development",
+      "type": "provides-test-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Les effets d’un développement sur les exclus, les écosystèmes et les générations suivantes en révèlent la qualité humaine. Une croissance qui leur impose ses coûts ne satisfait pas l’exigence de justice.",
+        "sourceRefs": [
+          "p079",
+          "p083",
+          "p084",
+          "p085"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-011",
+      "from": "justice",
+      "to": "ai-governance",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "La justice numérique exige des choix sur l’accès, la discrimination et le contrôle des systèmes. Elle doit orienter la conception de l’IA, avec décisions contestables et protections effectives, plutôt que devenir une réparation tardive.",
+        "sourceRefs": [
+          "p080",
+          "p109",
+          "p164"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-012",
+      "from": "shared-goods",
+      "to": "ai-governance",
+      "type": "applies-to",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Données, algorithmes et infrastructures entrent dans la question des biens destinés à tous. Leur gestion demande des accès et des formes communes ou collectives, sans laisser quelques propriétaires définir seuls les possibilités des autres.",
+        "sourceRefs": [
+          "p067",
+          "p108",
+          "p109"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-013",
+      "from": "technology-power",
+      "to": "ai-governance",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "La puissance de ceux qui maîtrisent infrastructures et données appelle des règles et des institutions capables d’en répondre. Contrôle indépendant, attribution des responsabilités et débat sur les valeurs évitent que les moyens techniques tiennent lieu de légitimité.",
+        "sourceRefs": [
+          "p005",
+          "p071",
+          "p095",
+          "p105",
+          "p106",
+          "p107"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-014",
+      "from": "dignity",
+      "to": "ai-governance",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Une personne ne peut être réduite à un profil qui ferme ses possibilités sans appel. Gouverner l’IA selon la dignité implique des décisions compréhensibles, un responsable identifiable et des recours avec réparation.",
+        "sourceRefs": [
+          "p102",
+          "p103",
+          "p105",
+          "p164"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-015",
+      "from": "ai-limits",
+      "to": "ai-governance",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Le texte distingue calcul efficace et conscience morale. Cette distinction attribuée à l’auteur renforce l’exigence de responsabilités humaines, particulièrement pour les décisions mortelles ou irréversibles ; elle ne nie pas les usages utiles des outils.",
+        "sourceRefs": [
+          "p099",
+          "p105",
+          "p198"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-016",
+      "from": "embodiment",
+      "to": "ai-limits",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "L’expérience humaine comprend corps, limites et relations ; la performance de calcul n’en est pas une mesure suffisante. Le texte refuse qu’une anticipation statistique épuise l’avenir d’une personne ou rende sa vulnérabilité moins digne.",
+        "sourceRefs": [
+          "p099",
+          "p112",
+          "p118",
+          "p128"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-017",
+      "from": "care",
+      "to": "embodiment",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "L’attention aux limites doit rester une attention aux personnes. Soulager la souffrance et accueillir les possibilités techniques du soin vont avec la reconnaissance d’une vie relationnelle, sans transformer la finitude en raison de refuser les traitements.",
+        "sourceRefs": [
+          "p114",
+          "p117",
+          "p118",
+          "p126"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-018",
+      "from": "care",
+      "to": "work",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Des technologies peuvent diminuer des tâches dangereuses ou pénibles. Cette aide ne justifie pas un abandon des personnes : transitions adaptées et participation sociale doivent accompagner les changements du travail.",
+        "sourceRefs": [
+          "p152",
+          "p153",
+          "p154"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-019",
+      "from": "technology-power",
+      "to": "dignity",
+      "type": "puts-in-tension",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Le pouvoir technique entre en tension avec la dignité lorsqu’il fait de l’efficacité ou de la maîtrise la mesure des vies. La source critique cette orientation, tout en reconnaissant des capacités qui peuvent servir les personnes.",
+        "sourceRefs": [
+          "p092",
+          "p094",
+          "p095",
+          "p112"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-020",
+      "from": "truth",
+      "to": "dialogue",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Vérification, honnêteté et confiance rendent le dialogue possible au-delà des rapports de force. Les mots peuvent aussi désarmer une opposition, sans exiger de cacher les faits ou de taire une injustice.",
+        "sourceRefs": [
+          "p132",
+          "p134",
+          "p214",
+          "p219"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-021",
+      "from": "truth",
+      "to": "education",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "La recherche du vrai s’apprend par le temps, la confrontation et l’intégration des savoirs. Une communication juste demande donc une éducation qui protège l’attention et le désir de comprendre plutôt qu’un simple accès rapide aux réponses.",
+        "sourceRefs": [
+          "p137",
+          "p139",
+          "p140",
+          "p146"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-022",
+      "from": "education",
+      "to": "freedom",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Formation critique, relations de confiance et soutien collectif aux familles donnent des conditions à la liberté. Elles aident à reconnaître les manipulations et à choisir les usages du numérique plutôt qu’à les subir.",
+        "sourceRefs": [
+          "p142",
+          "p145",
+          "p146",
+          "p147",
+          "p238"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-023",
+      "from": "technology-power",
+      "to": "freedom",
+      "type": "puts-in-tension",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Captation de l’attention, profilage et architecture de la visibilité peuvent orienter les comportements sans interdiction visible. La liberté requiert alors des limites et du contrôle sur les pouvoirs techniques, autant qu’une volonté individuelle.",
+        "sourceRefs": [
+          "p136",
+          "p170",
+          "p171",
+          "p172"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-024",
+      "from": "work",
+      "to": "family",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Emploi, revenu et rythmes de vie rendent possibles des projets familiaux et l’avenir des jeunes. Le texte attribue à la famille un rôle social selon sa définition propre, et demande des protections face à la précarité.",
+        "sourceRefs": [
+          "p165",
+          "p166",
+          "p167",
+          "p168",
+          "p169"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-025",
+      "from": "dignity",
+      "to": "work",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Le travail peut exprimer la dignité, mais il ne la produit pas. La valeur intrinsèque demeure en dehors de l’emploi ; les aides nécessaires et la participation sociale des personnes sans travail doivent rester possibles.",
+        "sourceRefs": [
+          "p052",
+          "p149",
+          "p154"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-026",
+      "from": "work",
+      "to": "distribution",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Les transformations du travail redistribuent revenus, risques et possibilités de formation. Des protections publiques, une répartition juste des bénéfices et des investissements accessibles sont nécessaires pour ne pas reporter tout le coût sur les individus.",
+        "sourceRefs": [
+          "p151",
+          "p153",
+          "p156",
+          "p161",
+          "p164"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-027",
+      "from": "distribution",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Une prospérité partagée peut soutenir la paix, tandis que l’armement retire parfois aux plus pauvres des ressources de santé et d’éducation. La répartition des moyens participe ainsi aux conditions d’un avenir moins violent.",
+        "sourceRefs": [
+          "p163",
+          "p204"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-028",
+      "from": "exploitation",
+      "to": "ai-governance",
+      "type": "provides-test-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Le travail invisible, la traite et l’extraction de données révèlent si la gouvernance de l’IA protège réellement les personnes. Transparence des filières et pouvoir des communautés mettent à l’épreuve les promesses abstraites d’émancipation.",
+        "sourceRefs": [
+          "p173",
+          "p174",
+          "p178",
+          "p179"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-029",
+      "from": "shared-goods",
+      "to": "freedom",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Partager la connaissance ne suffit pas sans partager la possibilité de décider. Le texte demande que les peuples puissent choisir les usages et les bénéficiaires de leurs données, afin que celles-ci ne deviennent pas un levier de domination.",
+        "sourceRefs": [
+          "p178"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-030",
+      "from": "institutional-accountability",
+      "to": "justice",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Rendre compte exige de reconnaître les préjudices et de corriger les structures. Dans l’Église aussi, transparence, écoute des victimes, réparation et prévention donnent une réalité à une responsabilité qui resterait sinon nominale.",
+        "sourceRefs": [
+          "p086",
+          "p089",
+          "p138"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-031",
+      "from": "institutional-accountability",
+      "to": "history",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Le récit d’une tradition cohérente doit aussi regarder ses fautes. Possession d’esclaves, légitimation et condamnation tardive de l’esclavage, reconnus par la source, obligent à distinguer conviction de dignité et pratique historique des institutions.",
+        "sourceRefs": [
+          "p029",
+          "p045",
+          "p176",
+          "p177"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-032",
+      "from": "memory",
+      "to": "institutional-accountability",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "La mémoire de la complicité de l’Église empêche de réduire le pardon à un regret sans suite. Elle appelle à des actions présentes de prévention, protection, libération et réhabilitation des victimes de traite.",
+        "sourceRefs": [
+          "p176",
+          "p177"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-033",
+      "from": "memory",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Écouter les victimes et garder la mémoire des violences aide à ne pas normaliser la guerre. Ce regard vise reconnaissance et prévention ; il ne doit pas nourrir un nouveau conflit ou un désir de vengeance.",
+        "sourceRefs": [
+          "p191",
+          "p216",
+          "p217",
+          "p244"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-034",
+      "from": "justice",
+      "to": "peace",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "La paix véritable est plus qu’une pause dans les combats. Elle demande des relations et des institutions justes ; le texte la décrit comme un fruit possible de la justice et de la charité, sans promettre un résultat automatique.",
+        "sourceRefs": [
+          "p205",
+          "p215"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-035",
+      "from": "ai-governance",
+      "to": "peace",
+      "type": "applies-to",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Les exigences de gouvernance prennent une portée extrême dans la guerre. Non-délégation de l’irréversible, chaîne vérifiable, temps de jugement, protection des civils et contrôle humain effectif doivent rester associés.",
+        "sourceRefs": [
+          "p197",
+          "p198",
+          "p199",
+          "p200"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-036",
+      "from": "institutional-accountability",
+      "to": "ai-governance",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Une gouvernance responsable laisse des décisions compréhensibles, contestables et reconstituables. En économie comme dans les usages militaires, ces moyens empêchent que l’opacité fasse disparaître ceux qui doivent répondre des conséquences.",
+        "sourceRefs": [
+          "p105",
+          "p164",
+          "p199",
+          "p200"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-037",
+      "from": "dialogue",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Négociation patiente, garanties vérifiables et institutions crédibles offrent des voies de paix. Le dialogue inclut des interlocuteurs difficiles et la réforme du multilatéralisme ; il ne se résume pas à des paroles conciliantes.",
+        "sourceRefs": [
+          "p218",
+          "p219",
+          "p221",
+          "p224",
+          "p226"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-038",
+      "from": "solidarity",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "La solidarité transforme la proximité mondiale en responsabilité voulue. Donner une forme institutionnelle à la fraternité aide à passer d’une coexistence armée à un destin commun avec droits et devoirs partagés.",
+        "sourceRefs": [
+          "p186",
+          "p187"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-039",
+      "from": "hope",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "L’espérance soutient la persévérance contre la résignation à la violence. Elle donne une place aux responsabilités quotidiennes tout en reconnaissant que les gouvernants et les institutions possèdent des pouvoirs différents.",
+        "sourceRefs": [
+          "p211",
+          "p212",
+          "p213"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-040",
+      "from": "faith-foundations",
+      "to": "hope",
+      "type": "provides-source-foundation-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "La grâce, le Royaume et la promesse d’une cité ouverte fondent l’espérance chrétienne de la source. Cette justification reste optionnelle et distincte d’une assurance que l’histoire ou la technologie s’amélioreront seules.",
+        "sourceRefs": [
+          "p126",
+          "p127",
+          "p211",
+          "p242",
+          "p245"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-041",
+      "from": "faith-foundations",
+      "to": "solidarity",
+      "type": "provides-source-foundation-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Le texte situe la solidarité chrétienne dans la communion sacramentelle. L’unité reçue dans l’Eucharistie oblige au partage et à l’attention aux pauvres, plutôt qu’à une dévotion exclusivement individuelle.",
+        "sourceRefs": [
+          "p088",
+          "p234",
+          "p235"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-042",
+      "from": "care",
+      "to": "faith-foundations",
+      "type": "has-source-foundation-in",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "La source relie la proximité et le soin à l’Incarnation : Dieu rejoint une chair vulnérable. Ce fondement théologique donne une raison chrétienne de reconnaître les corps et les vies fragiles, sans être exigé comme croyance du lecteur.",
+        "sourceRefs": [
+          "p231",
+          "p232",
+          "p233",
+          "p239"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-043",
+      "from": "history",
+      "to": "dialogue",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "La tradition se développe en reconnaissant l’autonomie des savoirs et en écoutant des situations différentes. Le dialogue nourrit son discernement, tandis que le souvenir des intolérances limite une présence fondée sur la possession du pouvoir.",
+        "sourceRefs": [
+          "p020",
+          "p023",
+          "p024",
+          "p025",
+          "p027",
+          "p045"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-044",
+      "from": "hope",
+      "to": "development",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "Des institutions protectrices et des fidélités ordinaires montrent des possibilités fragiles de changement. L’espérance encourage à reconstruire avec d’autres, sans se réfugier dans l’attente ni confondre possibilités et progrès garanti.",
+        "sourceRefs": [
+          "p123",
+          "p124",
+          "p125",
+          "p126",
+          "p236",
+          "p241",
+          "p245"
+        ]
+      },
+      "placement": "main"
+    }
+  ]
+}
