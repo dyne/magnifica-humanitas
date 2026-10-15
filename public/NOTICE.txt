@@ -5,6 +5,12 @@ mh-en-owner-2026. Copyright © Dicastery for Communication – Libreria Editrice
 Vaticana. Source quotations and notes retain that separate notice. Full original:
 https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html
 
+Additional source editions: official Vatican Arabic, Belarusian, German,
+Spanish, French, Italian, Polish, Portuguese and Russian HTML, frozen on
+14 October 2026. Their text and snapshots retain the same Vatican copyright.
+Each localized reading links to its full official original. Source acquisition
+does not grant a source-text license or make this adaptation official.
+
 Original editorial explanations, fictional scenarios and application code are
 distinct from the source. No license for original project code/commentary has
 been selected; this notice grants no blanket license or official endorsement.

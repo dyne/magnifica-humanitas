@@ -187,3 +187,26 @@ against the corpus. Negative fixtures reject missing/duplicate paragraphs,
 changed/missing headings, dangling notes, damaged note boundaries, Unicode
 corruption and malformed markup. These are structural fidelity checks; they do
 not claim native-speaker proofreading or semantic review of adaptations.
+
+## Current multilingual release evidence
+
+All ten source editions now have complete local adaptations and interfaces.
+Their quotations remain exact spans from their own frozen corpus. The nine
+localized alignment, semantic and interface records live under
+`content/editorial/<locale>/`; their hashes identify the compared inputs, not
+independent native-speaker approval. English retains its original Markdown
+review documents and owner-PDF authority. Source reproduction remains offline.
+
+Run `node scripts/audit-release.mjs dist` after the sequential release gates to
+verify source snapshot hashes, current reading/review bindings, locale chunks,
+font provenance and byte-identical notices in the actual static artifact.
+It also verifies the owner's original PDF/text hashes when those workspace
+files are present; a clean clone does not require those external originals.
+The report is generated under `output/release/`. See
+[multilingual release evidence](../../verification/MULTILINGUAL-RELEASE.md)
+for the browser/visual scope and publication status.
+
+Preserve the edition-specific witnesses, including Belarusian's English linked
+PDF and extra §215 note-84 reference, Arabic's empty §66 anchor and source note
+133's bibliographic classification, and Polish note-anchor defects. These are
+not reasons to substitute another edition or silently repair official text.

@@ -26,7 +26,7 @@ async function load() {
 function reload() { void load() }
 watch(() => [route.params.paragraphId, activeLocale.value], load, { immediate: true })
 const current = computed(() => index.value?.paragraphs.find(p => p.paragraphId === route.params.paragraphId))
-watch(current, p => { document.title = msg('concept.value_magnifica_humanitas', { value1: p ? msg('source.source_context_value', { value1: p.number }) : msg('route.source_context') }) }, { immediate: true })
+watch([current, () => route.fullPath], ([p]) => { document.title = msg('concept.value_magnifica_humanitas', { value1: p ? msg('source.source_context_value', { value1: p.number }) : msg('route.source_context') }) }, { immediate: true, flush: 'post' })
 </script>
 <template>
   <nav class="breadcrumbs" :aria-label="msg('about.breadcrumb')"><RouterLink :to="localePath('/atlas')">{{ msg('app.atlas') }}</RouterLink><span aria-current="page">{{ msg('source.source_context') }}</span></nav>

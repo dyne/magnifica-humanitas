@@ -98,8 +98,9 @@ metadata, complete ancillary records and UTF-16 note-reference coordinates.
 HTML editions have empty `pages` arrays; source block IDs supply provenance.
 Local heading IDs and section contexts belong to the edition; alignment to
 English chapter-heading groups does not imply identical heading block counts.
-These source corpora provide inputs for future localized editorial content;
-they do not themselves certify or enable a translated public experience.
+All ten editions now have complete public readings and interface catalogs.
+The source corpora alone do not certify or enable a translated experience;
+the local editorial models and review records remain separate requirements.
 
 ## Localized authoring and publication
 
@@ -152,3 +153,17 @@ revision migration. Other editions use `mh-reading-v1-<locale>` with their own
 edition/revision, isolating progress and unavailable destinations. Navigation
 and saved URLs are generated for the active locale; stored places retain stable
 identities and never store localized labels. Storage does not select a language.
+Failed writes retain a separate temporary snapshot for each edition in the
+current tab, including after switching away and back. Successful retry persists
+that snapshot; clearing discards its saved/recent/visited state. Temporary
+snapshots do not survive a page reload. Supported locale prefixes also govern
+unknown-route errors, where the catch-all route has no `:locale` parameter.
+
+Each non-English edition has `alignment-review.json`, `semantic-review.json`
+and `interface-review.json` under its editorial directory. The records bind
+source HTML, editorial inputs, public reading/revision and message catalog by
+hash. Their historical pending-status text is not live acceptance state.
+English retains its Markdown semantic/trail review documents and original
+schema. `scripts/audit-release.mjs` validates all ten current models, checks
+these bindings and inventories the built artifact; its JSON output is generated
+evidence, not authored content or proof of semantic fidelity.
