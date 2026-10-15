@@ -24,7 +24,7 @@ for (const width of [390, 1440]) for (const size of ['100', '200']) {
     await page.setViewportSize({ width, height: width === 390 ? 844 : 900 })
     await page.emulateMedia({ reducedMotion: 'reduce' })
     await page.goto('./#/ru/atlas')
-    await expect(page.locator('#language option')).toHaveText(['English', 'Italiano', 'Deutsch', 'Español', 'Français', 'Português', 'Polski', 'Беларуская', 'Русский'])
+    await expect(page.locator('#language option')).toHaveText(['English', 'Italiano', 'Deutsch', 'Español', 'Français', 'Português', 'Polski', 'Беларуская', 'Русский', 'العربية'])
     await page.locator('#language').focus()
     await page.keyboard.press('Tab')
     await expect(page.locator('#appearance')).toBeFocused()
@@ -75,7 +75,7 @@ for (const width of [390, 1440]) for (const size of ['100', '200']) {
 }
 
 for (const [preferences, expected] of [
-  [['ar-EG', 'ru-RU', 'it-IT'], 'ru'], [['RU-ru', 'en'], 'ru'], [['it-IT', 'ru-RU'], 'it'], [['de-AT', 'ru-RU'], 'de'], [['es-MX', 'ru-RU'], 'es'], [['en-GB', 'ru-RU'], 'en'], [['fr-FR', 'ru-RU'], 'fr'], [['pt-BR', 'ru-RU'], 'pt'], [['be-BY', 'ru-RU'], 'be'], [['ar', 'zh-CN'], 'en'],
+  [['zh-CN', 'ru-RU', 'it-IT'], 'ru'], [['RU-ru', 'en'], 'ru'], [['it-IT', 'ru-RU'], 'it'], [['de-AT', 'ru-RU'], 'de'], [['es-MX', 'ru-RU'], 'es'], [['en-GB', 'ru-RU'], 'en'], [['fr-FR', 'ru-RU'], 'fr'], [['pt-BR', 'ru-RU'], 'pt'], [['be-BY', 'ru-RU'], 'be'], [['ja', 'zh-CN'], 'en'],
 ] as const) {
   test(`browser defaults ${preferences.join(',')} choose ${expected}; explicit English remains stable`, async ({ page }) => {
     await page.addInitScript(languages => {
@@ -94,7 +94,7 @@ for (const [preferences, expected] of [
 test('Russian keyboard switching preserves query, anchor, selector focus and fresh neutral defaults', async ({ page }) => {
   await page.goto('./#/en/search?q=care#stable-anchor')
   await page.locator('#language').focus()
-  await page.keyboard.press('End'); await page.keyboard.press('Enter')
+  await page.keyboard.press('Space'); await page.keyboard.press('End'); await page.keyboard.press('ArrowUp'); await page.keyboard.press('Enter')
   await expect(page).toHaveURL(/#\/ru\/search\?q=care#stable-anchor$/)
   await expect(page.locator('#language')).toBeFocused()
   await expect(page.locator('h1')).toHaveText('Поиск по этому прочтению')
@@ -335,7 +335,7 @@ for (const route of [
 
 test('Russian navigator.language backup and explicit existing editions remain independent', async ({ page }) => {
   await page.addInitScript(() => {
-    Object.defineProperty(navigator, 'languages', { get: () => ['ar-EG', 'zh'] })
+    Object.defineProperty(navigator, 'languages', { get: () => ['zh-CN', 'zh'] })
     Object.defineProperty(navigator, 'language', { get: () => 'ru-RU' })
   })
   await page.goto('./')

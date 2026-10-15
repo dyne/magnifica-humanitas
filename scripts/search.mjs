@@ -4,6 +4,11 @@ export const relationLabel = (type, messages = english) => formatMessage(message
 export function normalizeQuery(value, locale = 'en') {
   const language = new Intl.Locale(locale).language
   const lower = String(value ?? '').toLocaleLowerCase(locale)
+  // Arabic readers commonly omit vocalization and stretching. Fold only alif
+  // variants; preserve seated hamza (ؤ/ئ), yeh/alif maqsura (ي/ى), and ta marbuta.
+  if (language === 'ar') return lower.normalize('NFC')
+    .replace(/[\u0640\u064B-\u0652\u0670]/gu, '').replace(/[أإآٱ]/gu, 'ا')
+    .trim().replace(/\s+/gu, ' ')
   // Preserve meaningful Cyrillic letters: Belarusian ў/у and Russian й/и,
   // ё/е must not collapse through generic accent stripping. NFC also accepts
   // canonically decomposed input without changing those distinctions.
@@ -14,9 +19,10 @@ export function normalizeQuery(value, locale = 'en') {
 export function searchPublished(library, sequence, query, { locale = 'en', messages = english } = {}) {
   const normalized = normalizeQuery(query, locale)
   const label = key => formatMessage(messages, key)
-  const numeral = value => new Intl.NumberFormat(locale).format(value)
+  const numberOptions = new Intl.Locale(locale).language === 'ar' ? { numberingSystem: 'arab' } : {}
+  const numeral = value => new Intl.NumberFormat(locale, numberOptions).format(value)
   if (!normalized) return []
-  const digits = new Map(Array.from({ length: 10 }, (_, i) => [new Intl.NumberFormat(locale, { useGrouping: false }).format(i), String(i)]))
+  const digits = new Map(Array.from({ length: 10 }, (_, i) => [new Intl.NumberFormat(locale, { ...numberOptions, useGrouping: false }).format(i), String(i)]))
   for (let i = 0; i < 10; i++) { digits.set(String.fromCharCode(0x660 + i), String(i)); digits.set(String.fromCharCode(0x6f0 + i), String(i)) }
   const numeric = [...normalized].map(char => digits.get(char) ?? char).join('')
   const keyword = normalizeQuery(label('search.paragraph_keyword'), locale)

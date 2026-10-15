@@ -24,7 +24,7 @@ for (const width of [390, 1440]) for (const size of ['100', '200']) {
     await page.setViewportSize({ width, height: width === 390 ? 844 : 900 })
     await page.emulateMedia({ reducedMotion: 'reduce' })
     await page.goto('./#/pl/atlas')
-    await expect(page.locator('#language option')).toHaveText(['English', 'Italiano', 'Deutsch', 'Español', 'Français', 'Português', 'Polski', 'Беларуская', 'Русский'])
+    await expect(page.locator('#language option')).toHaveText(['English', 'Italiano', 'Deutsch', 'Español', 'Français', 'Português', 'Polski', 'Беларуская', 'Русский', 'العربية'])
     await page.locator('#language').focus()
     await page.keyboard.press('Tab')
     await expect(page.locator('#appearance')).toBeFocused()
@@ -75,7 +75,7 @@ for (const width of [390, 1440]) for (const size of ['100', '200']) {
 }
 
 for (const [preferences, expected] of [
-  [['ar-EG', 'pl-PL', 'it-IT'], 'pl'], [['PL-pl', 'en'], 'pl'], [['it-IT', 'pl-PL'], 'it'], [['de-AT', 'pl-PL'], 'de'], [['es-MX', 'pl-PL'], 'es'], [['en-GB', 'pl-PL'], 'en'], [['fr-FR', 'pl-PL'], 'fr'], [['pt-BR', 'pl-PL'], 'pt'], [['ar', 'zh-CN'], 'en'],
+  [['zh-CN', 'pl-PL', 'it-IT'], 'pl'], [['PL-pl', 'en'], 'pl'], [['it-IT', 'pl-PL'], 'it'], [['de-AT', 'pl-PL'], 'de'], [['es-MX', 'pl-PL'], 'es'], [['en-GB', 'pl-PL'], 'en'], [['fr-FR', 'pl-PL'], 'fr'], [['pt-BR', 'pl-PL'], 'pt'], [['ja', 'zh-CN'], 'en'],
 ] as const) {
   test(`browser defaults ${preferences.join(',')} choose ${expected}; explicit English remains stable`, async ({ page }) => {
     await page.addInitScript(languages => {
@@ -362,7 +362,7 @@ test('Polish bibliographic Arendt note and ibid. references keep their local edi
 
 test('Polish navigator.language backup and explicit existing editions remain independent', async ({ page }) => {
   await page.addInitScript(() => {
-    Object.defineProperty(navigator, 'languages', { get: () => ['ar-EG', 'zh'] })
+    Object.defineProperty(navigator, 'languages', { get: () => ['zh-CN', 'zh'] })
     Object.defineProperty(navigator, 'language', { get: () => 'pl-PL' })
   })
   await page.goto('./')

@@ -1,6 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { copyFileSync, mkdirSync, mkdtempSync, readFileSync, rmSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+import { pathToFileURL } from 'node:url';
 import { createLocaleLoader } from '../scripts/locale-loader.mjs';
 import { english, validateMessages, formatMessage } from '../scripts/messages.mjs';
 import { loadReadingInputs, validateReading, buildReadingIndex } from '../scripts/reading-content.mjs';
@@ -57,8 +60,20 @@ test('stale activation failure cannot replace a newer successful edition', async
   assert.equal(await stale, false); assert.deepEqual(published, ['en']);
 });
 
-test('missing localized authoring fails closed and source validation binds to the active edition', () => {
-  assert.throws(() => loadReadingInputs('ar'), /ENOENT/);
+test('missing localized authoring fails closed and source validation binds to the active edition', async () => {
+  // Every declared locale can acquire authored files. Exercise absence in an
+  // isolated project so the regression survives completion of those editions.
+  const fixture = mkdtempSync(join(tmpdir(), 'mh-missing-authoring-'));
+  try {
+    mkdirSync(join(fixture, 'scripts'));
+    for (const name of ['reading-content.mjs', 'validate-editorial.mjs', 'locales.mjs']) {
+      copyFileSync(new URL(`../scripts/${name}`, import.meta.url), join(fixture, 'scripts', name));
+    }
+    const isolated = await import(pathToFileURL(join(fixture, 'scripts', 'reading-content.mjs')).href);
+    assert.throws(() => isolated.loadReadingInputs('ar'), /ENOENT/);
+  } finally {
+    rmSync(fixture, { recursive: true, force: true });
+  }
   assert.throws(() => loadReadingInputs('../en'), /Unknown locale/);
   const inputs = loadReadingInputs();
   assert.deepEqual(validateReading(inputs), []);
@@ -76,7 +91,7 @@ test('search uses selected locale labels, routes, number formatting and normaliz
   const messages = { ...english, 'search.paragraph': 'فقرة', 'search.paragraph_keyword': 'فقرة' };
   const results = searchPublished(reading, reading.readingSequence, 'فقرة ٥٢', { locale: 'ar', messages });
   assert.equal(results.length, 1); assert.equal(results[0].type, 'فقرة');
-  assert.match(results[0].to, /^\/ar\/read\?/); assert.ok(results[0].title.includes(new Intl.NumberFormat('ar').format(52)));
+  assert.match(results[0].to, /^\/ar\/read\?/); assert.ok(results[0].title.includes(new Intl.NumberFormat('ar', { numberingSystem: 'arab' }).format(52)));
   assert.equal(normalizeQuery('İ', 'tr'), 'i');
 });
 

@@ -1,0 +1,786 @@
+{
+  "schemaVersion": 1,
+  "language": "ar",
+  "editionId": "mh-ar-official-html-2026-10-14",
+  "relations": [
+    {
+      "id": "rel-001",
+      "from": "faith-foundations",
+      "to": "dignity",
+      "type": "provides-source-foundation-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "الخلق ومحبة الله يفسّران في المصدر كرامة لا تتوقف على الاستحقاق أو الظرف. هذه علاقة تأسيس مسيحيّ اختيارية، لا دليلًا يشترط من القارئ اعتناق الإيمان لفهم الحقوق.",
+        "sourceRefs": [
+          "p050",
+          "p052",
+          "p053"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-002",
+      "from": "dignity",
+      "to": "rights",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "إذا سبقت القيمة الإنجاز، فالحقوق تخصّ كلّ إنسان وليست مكافأة للكفاءة. يقدّم الكاتب إعلانها وحمايتها العملية تعبيرًا تاريخيًّا عن كرامة قائمة، لا منحًا مشروطًا من الأقوى.",
+        "sourceRefs": [
+          "p051",
+          "p054",
+          "p055"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-003",
+      "from": "dignity",
+      "to": "common-good",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "الاعتراف بكرامة الجميع يغيّر شروط التعايش والاقتصاد والسياسة. الخير العام هو الصورة الاجتماعية لذلك، ولا يتحقق بجمع مصالح أشخاص يعمل كلّ منهم لنفسه فقط.",
+        "sourceRefs": [
+          "p059",
+          "p060"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-004",
+      "from": "common-good",
+      "to": "shared-goods",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "خير المجتمع يحتاج إلى خيرات تسند حياة الجميع. يعترف المصدر بالملكية لكنه يخضعها للغاية الشاملة، فتُفحص إدارتها بحسب نفعها المشترك لا حقّ صاحبها وحده.",
+        "sourceRefs": [
+          "p065",
+          "p066"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-005",
+      "from": "shared-goods",
+      "to": "distribution",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "لا يكفي تصحيح التوزيع بعد الاحتكار: تُسأل الملكية والوصول إلى التقنية والثقافة منذ البداية. الضرائب ضرورية، لكن العدل أيضًا في التمويل والإنتاج واختيار المستفيدين.",
+        "sourceRefs": [
+          "p066",
+          "p067",
+          "p161",
+          "p162"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-006",
+      "from": "subsidiarity",
+      "to": "common-good",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "تخدم المبادرات القريبة الخير العام حين تحميها المؤسسات الأعلى وتنسّقها بدل امتصاصها. لا يبرّر ذلك لامبالاة الدولة؛ الدعم شرط مشاركة لا نقيض لها.",
+        "sourceRefs": [
+          "p068",
+          "p069",
+          "p070"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-007",
+      "from": "subsidiarity",
+      "to": "dialogue",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "المشاركة الفعلية تتطلب أن يُسمع المعنيون أثناء بناء القرار لا بعد إتمامه. يشمل الحوار قوة الشركات والمنصات، مع قواعد عادلة وتدقيق وطعن وضمانات عامة.",
+        "sourceRefs": [
+          "p070",
+          "p071",
+          "p072"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-008",
+      "from": "solidarity",
+      "to": "subsidiarity",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "يحمي التضامن اللامركزية والتكامل من الانغلاق على مصالح ضيقة، فيما يحميان التضامن من إعانة تترك المتلقّي بلا مسؤولية. لا يُضحّى بقرار الجماعة أو بواجبها تجاه غيرها.",
+        "sourceRefs": [
+          "p068",
+          "p069",
+          "p073",
+          "p075",
+          "p076"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-009",
+      "from": "common-good",
+      "to": "development",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "شروط الخير المشترك تتيح نموّ الأشخاص والشعوب كاملة. لا يقاس التكامل بتكديس الخيرات إذا استُبعد الناس أو نُقلت كلفة النموّ إلى غيرهم والبيئة والمستقبل.",
+        "sourceRefs": [
+          "p059",
+          "p060",
+          "p082",
+          "p083",
+          "p085"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-010",
+      "from": "justice",
+      "to": "development",
+      "type": "provides-test-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "يختبر العدل التنمية من خبرة من يحملون التكاليف: هل تُصلَح الروابط وتُتاح الضروريات وتحترم الشعوب والبيئة؟ زيادة القدرة أو الناتج وحدها لا تجيب عن ذلك.",
+        "sourceRefs": [
+          "p079",
+          "p083",
+          "p084",
+          "p085"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-011",
+      "from": "justice",
+      "to": "ai-governance",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "منع الإقصاء والتمييز الخوارزميّ يطلب إدارة تشمل تصميم النظام لا تعويضًا لاحقًا فقط. يلزم قرار مفهوم قابل للطعن، وفرص وصول وإنصاف في السياسات.",
+        "sourceRefs": [
+          "p080",
+          "p109",
+          "p164"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-012",
+      "from": "shared-goods",
+      "to": "ai-governance",
+      "type": "applies-to",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "الغاية الشاملة تشمل البيانات والخوارزميات والبنى، لا المواد وحدها. إدارة الذكاء الاصطناعيّ تُسأل عن الوصول والتنشئة والمشاركة وملكية بيانات نتجت من مساهمات كثيرة.",
+        "sourceRefs": [
+          "p067",
+          "p108",
+          "p109"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-013",
+      "from": "technology-power",
+      "to": "ai-governance",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "تركّز المنصات والبيانات يخلق سلطة عامة الأثر حتى إن كانت خاصة الملكية. يقتضي ذلك مساءلة وقانونًا ورقابة ومشاركة في القيم، بدل الاكتفاء بدعوة المستخدم لحسن الاستعمال.",
+        "sourceRefs": [
+          "p005",
+          "p071",
+          "p095",
+          "p105",
+          "p106",
+          "p107"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-014",
+      "from": "dignity",
+      "to": "ai-governance",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "كرامة الشخص تحدّ تصنيفه الآليّ كملفّ نهائيّ بلا رجوع. يجب بقاء مسؤول يبرّر القرار ويتيح الاعتراض والإصلاح، خصوصًا في العمل والائتمان والخدمات والسمعة.",
+        "sourceRefs": [
+          "p102",
+          "p103",
+          "p105",
+          "p164"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-015",
+      "from": "ai-limits",
+      "to": "ai-governance",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "قد تكون الحسابات فعالة دون أن تكون عند الكاتب ضميرًا أو حكمًا مسؤولًا. لذلك لا تُنقل السلطة الأخلاقية إلى النظام، ولا يُفوّض القرار المميت أو غير القابل للرجوع.",
+        "sourceRefs": [
+          "p099",
+          "p105",
+          "p198"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-016",
+      "from": "embodiment",
+      "to": "ai-limits",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "تُفهم حدود الذكاء الاصطناعيّ في المصدر بمقابلة الحساب مع حياة جسديّة وعلاقات وحرية وتحول. هذه حجته المنسوبة إليه، لا إعلان إجماع علميّ على جميع صور الآلات الممكنة.",
+        "sourceRefs": [
+          "p099",
+          "p112",
+          "p118",
+          "p128"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-017",
+      "from": "care",
+      "to": "embodiment",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "قبول المحدودية لا يساوي ترك المتألم: يوجب المصدر السعي لإزالة الألم ويقبل التقنية التي تساعد مع حفظ العلاقة. العناية تقي تفسير الجسد والحدود من تمجيد المعاناة أو رفض العلاج.",
+        "sourceRefs": [
+          "p114",
+          "p117",
+          "p118",
+          "p126"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-018",
+      "from": "care",
+      "to": "work",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "تخفيف العمل الشاقّ والخطر مرغوب حين يخدم الشخص. لا يجوز أن يتحوّل الدعم إلى إقصاء يزيل فرص التعبير والعلاقات والمساهمة، فتظلّ الرعاية والانتقال العادل متلازمين.",
+        "sourceRefs": [
+          "p152",
+          "p153",
+          "p154"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-019",
+      "from": "technology-power",
+      "to": "dignity",
+      "type": "puts-in-tension",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "إذا حدّدت الكفاءة والربح وحدهما غايات التقنية، صارت حياة الأضعف أقلّ اعتبارًا. يضع هذا منطق القوة في توتر مع كرامة تسبق الإنتاج، لا مع كلّ استعمال نافع للأدوات.",
+        "sourceRefs": [
+          "p092",
+          "p094",
+          "p095",
+          "p112"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-020",
+      "from": "truth",
+      "to": "dialogue",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "يتطلّب الحوار وقائع يمكن فحصها وثقة وحجّة، لا خطابًا يصنع عدوًّا ويحرّض. قول الحقّ لا يعني السكوت عن الظلم؛ يمكن نزع سلاح الكلام مع إسماع الضحايا.",
+        "sourceRefs": [
+          "p132",
+          "p134",
+          "p214",
+          "p219"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-021",
+      "from": "truth",
+      "to": "education",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "البحث عن الحقيقة يحتاج عادات تربوية من صبر وقراءة ومقارنة وربط للمعارف. الإجابة السريعة قد تفيد، لكنها لا تستبدل ممارسة السؤال أو الوقت اللازم لنضج الحكم.",
+        "sourceRefs": [
+          "p137",
+          "p139",
+          "p140",
+          "p146"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-022",
+      "from": "education",
+      "to": "freedom",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "تقوّي التربية الحرية حين تتيح التمييز لا التلقّي السلبيّ. تحتاج معلمين مؤهّلين وحماية مشتركة وتحالفات تساند الأسرة؛ مسؤولية الشاب لا تلغي مسؤولية المؤسسات.",
+        "sourceRefs": [
+          "p142",
+          "p145",
+          "p146",
+          "p147",
+          "p238"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-023",
+      "from": "technology-power",
+      "to": "freedom",
+      "type": "puts-in-tension",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "قد يصمم اقتصاد الانتباه الضعف ويرسم التصنيف الخوارزميّ ما يُرى وما يُخفى. حين تفلت هذه القوة من الشفافية والطعن، تتقلص الحرية حتى دون منع صريح.",
+        "sourceRefs": [
+          "p136",
+          "p170",
+          "p171",
+          "p172"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-024",
+      "from": "work",
+      "to": "family",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "يدعم العمل المستقرّ الكريم قدرة الأسرة والشباب على التخطيط والعلاقات. يلزم توازن العمل والخدمات والراحة والتنشئة؛ يظلّ تعريف الأسرة موقفًا منسوبًا للمصدر، لا اختبار قبول لهذا الارتباط.",
+        "sourceRefs": [
+          "p165",
+          "p166",
+          "p167",
+          "p168",
+          "p169"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-025",
+      "from": "dignity",
+      "to": "work",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "يعبّر العمل عن الكرامة وينمّي خبرة الحياة، لكنه لا يخلق القيمة الجوهرية. قد تلزم إعانة عاجلة، ويجب حماية المشاركة والمواطنة حتى حين لا يستطيع الشخص العمل أو يفقده.",
+        "sourceRefs": [
+          "p052",
+          "p149",
+          "p154"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-026",
+      "from": "work",
+      "to": "distribution",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "تفاوت التحوّلات لا يُعالج بدفع كلفة التكيّف إلى العامل الأضعف وحده. يلزم تكوين ومشاركة وحماية وفرص جديدة وتوزيع إنصاف للمكاسب، مع استجابات وطنية ومحلية مختلفة.",
+        "sourceRefs": [
+          "p151",
+          "p153",
+          "p156",
+          "p161",
+          "p164"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-027",
+      "from": "distribution",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "الازدهار الواسع الشامل والمستدام قد يدعم السلام، بينما يستنزف التسلّح الصحة والتعليم والخدمات ويحمل الفقراء الكلفة. لا يضمن نموّ إجماليّ وحده عدلًا أو استقرارًا.",
+        "sourceRefs": [
+          "p163",
+          "p204"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-028",
+      "from": "exploitation",
+      "to": "ai-governance",
+      "type": "provides-test-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "يكشف العمل الخفيّ والاستخراج والاتجار هل تحترم حوكمة الذكاء الاصطناعيّ البشر فعلًا. الواجهة الفعالة لا تبرئ سلسلة استغلال، فتُطلب الشفافية والعناية الواجبة والوقاية.",
+        "sourceRefs": [
+          "p173",
+          "p174",
+          "p178",
+          "p179"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-029",
+      "from": "shared-goods",
+      "to": "freedom",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "ردّ البيانات لا يحمي الحرية إذا بقي قرار استخدامها لدى آخرين. تتطلب الغاية المشتركة أن تملك الشعوب قولًا في كيف يستخدم من بياناتها ولصالح من، بدل استعمار رقميّ جديد.",
+        "sourceRefs": [
+          "p178"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-030",
+      "from": "institutional-accountability",
+      "to": "justice",
+      "type": "requires",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "تقتضي مساءلة المؤسسة إنصاف الضحايا والاعتراف بالضرر والتعويض والوقاية، لا شفافية اسمية فقط. يطبّق الكاتب هذا على الكنيسة نفسها ويمنع انتظار الصحفيين ليجبروها على الحقيقة.",
+        "sourceRefs": [
+          "p086",
+          "p089",
+          "p138"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-031",
+      "from": "institutional-accountability",
+      "to": "history",
+      "type": "qualifies",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "يقيّد نقد المؤسسة رواية تاريخها: لا تمحو استمرارية مبادئ الكرامة امتلاك العبيد وتشريع إخضاعهم وتأخّر الإدانة. وضع الماضي في سياقه لا يحوّل الاعتراف إلى تبرئة.",
+        "sourceRefs": [
+          "p029",
+          "p045",
+          "p176",
+          "p177"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-032",
+      "from": "memory",
+      "to": "institutional-accountability",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "تجعل ذاكرة التواطؤ الحاضر قابلًا للمحاسبة: ما الذي تغيّر في الوقاية والحماية والتحرير وإعادة التأهيل؟ الاعتذار مهمّ لكنه لا يغني عن تصحيح الممارسة الحالية.",
+        "sourceRefs": [
+          "p176",
+          "p177"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-033",
+      "from": "memory",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "يحمي سماع الضحايا والذاكرة الحيّة من تطبيع الحرب وتجريد الآخرين إلى أرقام. غايتهما اعتراف وسلام لا انتقام؛ تبقى الأرملة واليتيم والغريب والطفل الجريح والمنفيّ واللاجئ مرئيين.",
+        "sourceRefs": [
+          "p191",
+          "p216",
+          "p217",
+          "p244"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-034",
+      "from": "justice",
+      "to": "peace",
+      "type": "grounds",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "السلام الحقيقيّ يولد من العدل لا من إسكات الصراع بأيّ ثمن. يجمع الكاتب بين المبدأ والأمثلة العملية في معاملة الآخر، بدل فصل الأمن عن حقوق البشر وكرامتهم.",
+        "sourceRefs": [
+          "p205",
+          "p215"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-035",
+      "from": "ai-governance",
+      "to": "peace",
+      "type": "applies-to",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "تُطبَّق إدارة الذكاء الاصطناعيّ على الحرب بأشدّ القيود: دفاع مشروع كملاذ أخير، وعدم تفويض الموت والقرارات النهائية، مع وقت للحكم ومسؤولية محددة ومدنيين محميين ورقابة فعلية واعية.",
+        "sourceRefs": [
+          "p197",
+          "p198",
+          "p199",
+          "p200"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-036",
+      "from": "institutional-accountability",
+      "to": "ai-governance",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "تتبع المساءلة مراحل التصميم والتدريب والإذن والتنفيذ وتتيح إعادة بناء القرار والطعن والإصلاح. وجود موظّف يوافق في آخر مسار معتم لا يثبت مسؤولية أو سيطرة حقيقية.",
+        "sourceRefs": [
+          "p105",
+          "p164",
+          "p199",
+          "p200"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-037",
+      "from": "dialogue",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "يخدم الحوار السلام حين يصير تفاوضًا صبورًا وضمانات ومؤسسات ووقاية، حتى مع أطراف مزعجة. الواقعية تحدد المصالح والقيود لإيجاد خطوات ممكنة، لا لتبرير العنف كقدر.",
+        "sourceRefs": [
+          "p218",
+          "p219",
+          "p221",
+          "p224",
+          "p226"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-038",
+      "from": "solidarity",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "لا يكفي ترابط الشعوب الرقميّ والاقتصاديّ. تحويله إلى مسؤولية وتضامن مختار قد ينشئ حقوقًا وواجبات مشتركة، ويمنح حضارة المحبة شكلًا سياسيًّا يتجاوز تعايشًا مسلحًا.",
+        "sourceRefs": [
+          "p186",
+          "p187"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-039",
+      "from": "hope",
+      "to": "peace",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "يدعم الرجاء مقاومة الشرّ في مجال كلّ شخص دون إنكار تفاوت النفوذ. الأمانات اليومية قد تحفظ حياة مشتركة، لكنها لا تثبت أنّ الصراع سينتهي أو تعفي أصحاب الحكم من واجباتهم.",
+        "sourceRefs": [
+          "p211",
+          "p212",
+          "p213"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-040",
+      "from": "faith-foundations",
+      "to": "hope",
+      "type": "provides-source-foundation-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "يؤسّس الكاتب رجاءه في النعمة والمسيح والمدينة الموعودة. هذا سياق إيمانيّ اختياريّ يمنح عمله أفقًا، لا ضمان نجاح تقنيّ أو مصير تاريخيّ يتحسن تلقائيًّا.",
+        "sourceRefs": [
+          "p126",
+          "p127",
+          "p211",
+          "p242",
+          "p245"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-041",
+      "from": "faith-foundations",
+      "to": "solidarity",
+      "type": "provides-source-foundation-for",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "تعلّل الشركة والأسرار في المصدر تضامن المسيحيين؛ الاتحاد بالمسيح يتضمن اتحادهم بغيرهم. تبقى النتائج عدلًا ومشاركة وصوتًا للمهمش، لا ممارسة خاصة تغني عن الفعل.",
+        "sourceRefs": [
+          "p088",
+          "p234",
+          "p235"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-042",
+      "from": "care",
+      "to": "faith-foundations",
+      "type": "has-source-foundation-in",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "يرى الكاتب في جسد المسيح الضعيف وفي التجسّد أساسًا للعناية بالجسد والآخر. تُعرض هذه العلاقة الدينية منفصلة دون محو حاجات الصغار والمسنّين والضحايا أو الرعاية العملية.",
+        "sourceRefs": [
+          "p231",
+          "p232",
+          "p233",
+          "p239"
+        ]
+      },
+      "placement": "optional-foundations"
+    },
+    {
+      "id": "rel-043",
+      "from": "history",
+      "to": "dialogue",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "يفسّر تاريخ التعليم لماذا يحتاج إلى الإصغاء للعلوم والثقافات والأوضاع بدل جواب واحد جامد. الحقيقة المعروضة بلا إكراه وتعدّد الرؤى يدعمان حوارًا لا ادعاء احتكار السلطة.",
+        "sourceRefs": [
+          "p020",
+          "p023",
+          "p024",
+          "p025",
+          "p027",
+          "p045"
+        ]
+      },
+      "placement": "main"
+    },
+    {
+      "id": "rel-044",
+      "from": "hope",
+      "to": "development",
+      "type": "supports",
+      "directed": true,
+      "explanation": {
+        "kind": "editorial-interpretation",
+        "text": "تحتاج التنمية أشخاصًا ومؤسسات تحافظ على مكاسب هشّة وتعمل في الورش والمدارس والرعاية. الرجاء يشجّع المثابرة والمشاركة اليومية، ولا يستبدلها بوعد أن يحلّ الابتكار كلّ التفاوت تلقائيًّا.",
+        "sourceRefs": [
+          "p123",
+          "p124",
+          "p125",
+          "p126",
+          "p236",
+          "p241",
+          "p245"
+        ]
+      },
+      "placement": "main"
+    }
+  ]
+}
