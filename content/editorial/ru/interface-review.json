@@ -1,0 +1,368 @@
+{
+  "schemaVersion": 1,
+  "locale": "ru",
+  "status": "interface-compared-browser-and-visual-reviewed",
+  "catalogSha256": "371079fc822997a10329896fd06910bef3a8a9baf229072bdb12c6284cf985c5",
+  "readingRevision": "ru-2026-10-15-reading-1",
+  "readingSha256": "739f7097451bb5e49f755aba37a98edfecf8115c0149c394e69276ae674f482a",
+  "editionId": "mh-ru-official-html-2026-10-14",
+  "catalog": {
+    "keys": 291,
+    "placeholderParity": true,
+    "authoredInterface": true,
+    "officialSourceTextCopiedOnlyFromFrozenRussianCorpus": true,
+    "scope": [
+      "route titles",
+      "About and attribution",
+      "errors and unavailable states",
+      "empty states",
+      "live notices",
+      "search and saved labels",
+      "selector and formatting",
+      "relation labels"
+    ],
+    "terminology": "All nine relation labels match the independently anchored Russian alignment review. Neutral proper names and artifact identifiers remain unchanged.",
+    "counts": "Neutral count labels avoid an incorrect shared singular/plural form; Intl.NumberFormat(ru) retains nonbreaking grouped digits."
+  },
+  "activation": {
+    "sourceAndContentGatesBeforeEnable": [
+      "output/russian/interface-source-preflight.log",
+      "output/russian/interface-preflight.log"
+    ],
+    "published": [
+      "en",
+      "it",
+      "de",
+      "es",
+      "fr",
+      "pt",
+      "pl",
+      "be",
+      "ru"
+    ],
+    "arabic": "gated; isolated RTL fixture only"
+  },
+  "sharedChanges": {
+    "scripts/locales.mjs": "Publish ru after preflight; all existing locale states retained.",
+    "scripts/search.mjs": "Russian NFC normalization preserves distinct й/и and ё/е, including canonically decomposed input; other locales retain their prior behavior.",
+    "src/style.css": "Extend the existing Inter display override to :lang(ru), because installed Syne has no Cyrillic glyphs. Existing font assets/imports and layout retained.",
+    "tests": "Update available-selector expectations and unsupported-locale fixtures; Belarusian keyboard selection opens native select before End/ArrowUp/Enter."
+  },
+  "search": {
+    "normalization": "NFC after locale lowercase, trimmed and collapsed whitespace",
+    "preservedLetters": [
+      "й/и",
+      "ё/е"
+    ],
+    "decision": "Both are Russian alphabet letters and distinguish words (e.g. всё/все and мой/мои). No inferred е-for-ё synonym expansion is introduced. A reader must type the letter used in the indexed editorial text; canonically equivalent decomposed input matches.",
+    "evidence": [
+      "tests/russian-interface.test.mjs",
+      "tests/browser/russian.spec.ts"
+    ]
+  },
+  "typography": {
+    "cmap": [
+      {
+        "path": "node_modules/@fontsource-variable/inter/files/inter-cyrillic-wght-normal.woff2",
+        "russianLetters": 66,
+        "coveredRussianLetters": 66,
+        "missingRussianLetters": ""
+      },
+      {
+        "path": "node_modules/@fontsource/syne/files/syne-latin-700-normal.woff2",
+        "russianLetters": 66,
+        "coveredRussianLetters": 0,
+        "missingRussianLetters": "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя"
+      }
+    ],
+    "paintingEvidence": "output/russian/interface/painted-fonts.json",
+    "matrixRuns": 8,
+    "surfaceSamples": 72,
+    "headingAndBodySamples": 144,
+    "actualRussianLetters": "Dedicated §112 browser case checks both й and ё in the rendered source context using custom Inter, not computed font-family alone.",
+    "noNewFontAsset": true,
+    "paintedFamily": "Inter",
+    "noncustomSamples": 0
+  },
+  "verification": {
+    "sequentialRequired": [
+      {
+        "command": "npm run check",
+        "exitStatus": 0,
+        "unit": {
+          "pass": 277,
+          "fail": 0,
+          "cancelled": 0,
+          "skipped": 0
+        },
+        "also": [
+          "vue-tsc",
+          "editorial and reading checks",
+          "production build"
+        ]
+      },
+      {
+        "command": "npm run source:check",
+        "exitStatus": 0,
+        "scope": "All ten frozen corpora; 245 paragraphs and 224 notes each, four snapshot tests and ten parser tests."
+      },
+      {
+        "command": "PLAYWRIGHT_BROWSERS_PATH=/tmp/magnifica-playwright BROWSER_EVIDENCE_DIR=output/russian/hosting npm run test:browser:all",
+        "exitStatus": 0,
+        "root": {
+          "startTime": "2026-10-15T10:52:23.949Z",
+          "duration": 53417.099,
+          "expected": 432,
+          "skipped": 0,
+          "unexpected": 0,
+          "flaky": 0
+        },
+        "subpath": {
+          "startTime": "2026-10-15T10:53:19.190Z",
+          "duration": 53460.666,
+          "expected": 432,
+          "skipped": 0,
+          "unexpected": 0,
+          "flaky": 0
+        }
+      }
+    ],
+    "focusedRussian": {
+      "command": "VITE_BASE=/ PLAYWRIGHT_BROWSERS_PATH=/tmp/magnifica-playwright npx playwright test tests/browser/russian.spec.ts",
+      "pass": 54,
+      "fail": 0,
+      "skipped": 0,
+      "log": "output/russian/interface/focused-browser.log"
+    },
+    "rtl": {
+      "build": "MAGNIFICA_RTL_FIXTURE=1 VITE_BASE=/ npx vite build --mode locale-fixture",
+      "test": "VITE_BASE=/ PLAYWRIGHT_BROWSERS_PATH=/tmp/magnifica-playwright npx playwright test --config playwright.locale.config.ts",
+      "exitStatus": 0,
+      "stats": {
+        "startTime": "2026-10-15T10:54:30.253Z",
+        "duration": 5669.054,
+        "expected": 11,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "detector": {
+      "command": "/home/gestalt-dyne/.agents/skills/impeccable/scripts/impeccable detect --json src/style.css content/messages/ru.json",
+      "findings": []
+    },
+    "focusedUnit": {
+      "command": "node --test tests/russian-alignment.test.mjs tests/russian-reading.test.mjs tests/russian-interface.test.mjs",
+      "pass": 25,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "log": "output/russian/interface/final-focused-unit.log"
+    }
+  },
+  "browserCoverage": [
+    "ordered regional browser defaults, language backup and explicit URLs",
+    "keyboard selector query/anchor retention and no persistent preference override",
+    "localized search, canonical Cyrillic input and unavailable/empty results",
+    "saved exact paragraph, locale isolation and caller-return chain",
+    "Russian exact source quotes, official links, note backlinks, n133 translator caveat, n217 internal references and §215/n191 distinction",
+    "six trail endings and optional unscored reflection",
+    "standalone context meaning independently of main sequence",
+    "lazy loading, translated failures/retry and storage denial",
+    "failed, pending and cancelled switches preserve exact title/history/last/saved/recent/visited"
+  ],
+  "visualReview": {
+    "method": "One batched review of actual Chromium route screenshots and contact sheets, with desktop and phone together; source/corpus semantic review remains distinct from this interface inspection.",
+    "routes": [
+      "Atlas",
+      "Concept",
+      "Trail",
+      "Read",
+      "Source",
+      "Note",
+      "Search",
+      "Saved",
+      "About"
+    ],
+    "bases": [
+      "/",
+      "/magnifica-humanitas/"
+    ],
+    "viewports": [
+      {
+        "width": 390,
+        "height": 844
+      },
+      {
+        "width": 1440,
+        "height": 900
+      }
+    ],
+    "textSizes": [
+      100,
+      200
+    ],
+    "routeScreenshots": 72,
+    "selectorAndDarkAboutScreenshots": 16,
+    "allScreenshots": 88,
+    "contactSheets": "output/russian/interface/visual/",
+    "keyboard": true,
+    "reducedMotion": true,
+    "axe": "All nine surfaces at 390x844/100% at each base; zero WCAG 2 A/AA and 2.1 AA violations.",
+    "findings": "Cyrillic is visibly painted without missing glyph boxes. No horizontal clipping or overflow in the matrix; focus outlines, controls and headings remain visible. At 200% phone size long headings wrap within words under the existing shared overflow-wrap rule; scrolling is necessary and remains available. Light and dark About and header controls retain readable contrast.",
+    "scopeLimit": "Screenshots are viewport captures, not exhaustive visual proof for every paragraph or interaction."
+  },
+  "failedAttempts": [
+    {
+      "scope": "Initial Russian-only browser run",
+      "pass": 52,
+      "fail": 2,
+      "reason": "Two exact-text locators matched both the top-level context and placement rationale in §§198/215. Scoped assertions to the top-level main paragraph; no content changed."
+    },
+    {
+      "scope": "First full root hosting browser run",
+      "pass": 430,
+      "fail": 2,
+      "reason": "Legacy shell treated newly enabled ru as unsupported, and Belarusian End/ArrowUp used a closed native select with immediate changes. Unsupported fixture now zh; native menu explicitly opens before keyboard navigation."
+    },
+    {
+      "scope": "First keyboard fixture correction",
+      "pass": 1,
+      "fail": 1,
+      "reason": "Waiting for ru activation before ArrowUp still depended on the closed-select native menu state. Explicit Space/End/ArrowUp/Enter passes both focused fixture cases."
+    },
+    {
+      "scope": "Font diagnostic",
+      "reason": "Initial diagnostic guessed the absent @fontsource-variable/syne path; inspected the actual installed @fontsource/syne face and reran."
+    },
+    {
+      "scope": "Contact sheet composition",
+      "reason": "Pillow and pip were unavailable; composed existing screenshots with installed Chromium/Playwright instead. No application changes or skipped visual review."
+    },
+    {
+      "scope": "Final new-file whitespace wrapper",
+      "reason": "The initial wrapper treated the normal git diff --no-index exit status 1 for added content as an error despite empty whitespace diagnostics. The corrected wrapper accepts 0/1 only with empty stdout/stderr; all intended new files and protected/artifact hashes passed. No file correction was required."
+    }
+  ],
+  "warnings": [
+    "Existing Vite chunk-size warning (>500 kB) remains; no build error.",
+    "Node NO_COLOR/FORCE_COLOR environment warnings do not fail browser tests."
+  ],
+  "limitations": [
+    "Automated structure, source hashes, axe and browser assertions do not establish semantic fidelity; separate paragraph/block review is recorded in semantic-review.json and REVIEW.md.",
+    "No independent native-speaker proofreading, physical-device/browser diversity, screen-reader-user, learning-efficacy or publication/deployment verification is claimed.",
+    "This work is local and uncommitted pending supervisor acceptance."
+  ],
+  "artifacts": {
+    "output/russian/interface/check.log": "35c164c0e6af66a1133d30e8231e6657ea4cdb53833d4f368fbe72c60cc9c43f",
+    "output/russian/interface/source-check.log": "7e2101444bdeeff74014304367a4e69b286a04fa7085e3b00121b7313e176cf8",
+    "output/russian/interface/hosting.log": "1c3606e4af922a16cd4c8591060bfb28c25c57c7a1d0e9924027c00511df9661",
+    "output/russian/interface/focused-browser.log": "97f58138ba25e5af363dad2f96acd69db44bb3935f01d2420c14f2aca26f9d7a",
+    "output/russian/interface/initial-browser.log": "91de817407345b5a4012ac0af18189c051a5a3e1afe78b10640ac68353c0e803",
+    "output/russian/interface/initial-browser-results.json": "589e78f6f47ced13b98ec10f6bd83cd7cd5d6e0af29d2e50014a77efd5eb83ff",
+    "output/russian/interface/initial-hosting-root-results.json": "843d23de2f544d0e91146078b935945ed2afae5b8270657ab88e9cac0591b590",
+    "output/russian/interface/initial-hosting-root.log": "fc0a0690c0f076cae5cba7e40353ded0b0155788e096a560458075df985a6ec5",
+    "output/russian/interface/registry-fixture-browser.log": "f106f66ce096bf09144ce632adcfbd78c4b027ac50bb24b018829cf4f3bbcbe2",
+    "output/russian/interface/registry-fixture-browser-final.log": "2e4aa8bdd4223f3e992d5dd9e306f74da0ca693e70c7a43c1abee29f79c02914",
+    "output/russian/interface/rtl-build.log": "1f53eb09a813a91fded608e566cdaa00f0b9b0648c522c5d03ca5bf668116fa6",
+    "output/russian/interface/rtl.log": "c5db043d68bd64ca3709c96d70e9f5abe7d74538b6ab37a711ea56b127725cd5",
+    "output/russian/interface/rtl-results.json": "1610c2a9f8f94dc1065fb3c2954d5c898cd2f53b240d497adc7b98d12d1ab9af",
+    "output/russian/interface/font-cmap.json": "c3da7078d6ac997b20514954a5f0c0d96e83e369ace57298cc343ae9ef36b041",
+    "output/russian/interface/painted-fonts.json": "014eb2b80c5312073b09afd4c9362255008c5d95062f1d515a01dde48a4c407b",
+    "output/russian/interface/impeccable-detect.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "output/russian/hosting/browser-evidence.json": "b3590a5fb8f2756a55ff067cb79410cc1bed2c0efaace3b115b8cad0565664c0",
+    "output/russian/hosting/root-browser-results.json": "25c031877b458c9aed76281f267dfa28ba2b5b4266a60e57ec0d76c8b8b9adfe",
+    "output/russian/hosting/subpath-browser-results.json": "a367a23f3225a0dea89a666c2b2ce2bb49630f903b9f3c29fe1179dc6b8874f0",
+    "output/russian/interface/final-focused-unit.log": "9b68582c110c9a35ac386a437838774f11028e6df4e2492f2325eedbf84a73a1"
+  },
+  "screenshots": {
+    "output/russian/root-1440-100-about-dark.png": "1d1190c1a09df4ab28a4744921b2b018efbad44e397a5ff82a2f34cf2b3b345b",
+    "output/russian/root-1440-100-about.png": "e612ac73db5883424c68617ca2b09663d6f5e5bbbacac4fa0684afc89a5277f3",
+    "output/russian/root-1440-100-atlas.png": "dce96f40c75b76db45fac3015e13e0eca1d786de30612707fe50ef7ca375124a",
+    "output/russian/root-1440-100-concept.png": "736849bcfd7bbabb1a1acbd15894c3d5c8319ee412e91bcaff86a9881d0f935b",
+    "output/russian/root-1440-100-note.png": "0d5b0b3825e159574e01c11fbe3e4187d480a6d598ac8d912a91e65190f85249",
+    "output/russian/root-1440-100-read.png": "94b47ca9aca258ce03e063253cf03c0f86de2afe1245feaebb63e2adabff3aa1",
+    "output/russian/root-1440-100-saved.png": "448c971d8f419177944738e8511345290595755269a266190481a610b757cf2a",
+    "output/russian/root-1440-100-search.png": "79f20ecb32fe35bfe3567577d8101679ebb3702c27b283f3fe0f20b01681d9c7",
+    "output/russian/root-1440-100-selector.png": "7f293f25414d0ba43c98fd2d122f17d4be768b000b65807c1e610a2866a6761e",
+    "output/russian/root-1440-100-source.png": "eec9165d9496cf6556751548c04e60061fee314cac087791c2a913109c17838f",
+    "output/russian/root-1440-100-trail.png": "c327ef7e053e7b63ec753ac0d6146f34cca797ea69f37fb244776f8e4944b7cd",
+    "output/russian/root-1440-200-about-dark.png": "96b844587e0583dcf23b6063a6c5710fea63c0e50164a7c3d350dfe5bfb08620",
+    "output/russian/root-1440-200-about.png": "7dd7cb5eb68259d983055c3288d68549efa657fa6bb65d55020a985a6311d034",
+    "output/russian/root-1440-200-atlas.png": "ee85016abf6c611fdaa42bac48b283ebe556c5072c08be728c9879a01e4a9efb",
+    "output/russian/root-1440-200-concept.png": "5391198b01196fa7efab9a89ed7bdac506c7846d49c9bbf8291ccb0757952e94",
+    "output/russian/root-1440-200-note.png": "d71a23ddeb7e903b229b7861f3fcff5a5fa8b5218370bc499d136123aa694f5d",
+    "output/russian/root-1440-200-read.png": "d845e72a7a29dd2e4a902c9ec99dd7a88758acfe0a4aca265daf96bddbff6360",
+    "output/russian/root-1440-200-saved.png": "89a4cd2cee6b67d21f944a4a0f9af3a9ae0210f805b840c09d30b8db77d8f5f5",
+    "output/russian/root-1440-200-search.png": "da6265b7d54cf1ac52c146c38b979d9db89db3fe36cdb4c6c4375dce3bc425af",
+    "output/russian/root-1440-200-selector.png": "9cd34cb2a2c03652def0795d3084d2b9c7dee3ed0e697fdeb30e864bf5e8baac",
+    "output/russian/root-1440-200-source.png": "5f0a2d1429731ee27c6c030eadb3b1a2c0e1314d4fcf9af44761223794b8d004",
+    "output/russian/root-1440-200-trail.png": "67e0c69b76b73f05106f24f8acf3167c663f50fed34f83dfa2d958dda9bd7bd7",
+    "output/russian/root-390-100-about-dark.png": "e097decc08a9d0a589fff773a8f36c3361cc7c4d1f3d4057a94f5d8cabd2c6d1",
+    "output/russian/root-390-100-about.png": "c10f2d60424d6e55d0adc77901218c9e4eed9c0bcd287ff66c5a59660feea457",
+    "output/russian/root-390-100-atlas.png": "79b2c237ac741f61aa10e1877901e4b3540e48a0e16b42d4149e9a2646075c9d",
+    "output/russian/root-390-100-concept.png": "33e7cca29f5379148de75bbd884d49409a070e72ade29cc2f47b0ba4b34ef941",
+    "output/russian/root-390-100-note.png": "f5ffd22293d013ec9ca1029dd562dfe560a3d5aab6a883233dda20e72e325569",
+    "output/russian/root-390-100-read.png": "4dbcb5b4dc18521cbc1f699b747b3b988d15c9d4c1ba68d9466a626131d36406",
+    "output/russian/root-390-100-saved.png": "57bcd9845110dec1897b3575e3f83b07148b72508cd93e3b20c84648c7a09fc7",
+    "output/russian/root-390-100-search.png": "6eac72a759a07dde5521b6430bb0e06e4ba6c374b28df154a2a5bbb40f15d019",
+    "output/russian/root-390-100-selector.png": "41b36675808bf79bf680157db93903195838ae7b01eb9bd61deb01c7c163cd45",
+    "output/russian/root-390-100-source.png": "dfd3877874c012a2231906190186ef0fb347afb49da285bc863c3edeb85027dd",
+    "output/russian/root-390-100-trail.png": "90611e2e92f7f56530e87b742a60ccf5403b60872911296a746c316392087eef",
+    "output/russian/root-390-200-about-dark.png": "8f6bbed26c363fc440a6f68a0fdf5944dfbaaf73470f529ab7f440bf8f962657",
+    "output/russian/root-390-200-about.png": "1b532a54eadd7aa0ff3afe803a92afac0759cf106b933d04e33e15adfeaa8baf",
+    "output/russian/root-390-200-atlas.png": "dc8294864591e4db933bec15bdc1b91be2f8d3857c057dc8a5cb392f23084fe2",
+    "output/russian/root-390-200-concept.png": "dab49028a849e51fd5143efcb576b5f084ce3a012b5ca5e6301eb5f7790eec7e",
+    "output/russian/root-390-200-note.png": "76a5be1a64d53c03ceb07080a7b7379019ff4d5e1453dc00c3dddf62420f1532",
+    "output/russian/root-390-200-read.png": "80fb10b869363a1be26be68fdea071b7c1e11d80a83965b438fd3f1e464de750",
+    "output/russian/root-390-200-saved.png": "02c10fba3fdb9ca9e66703f786f0b37b4e639df70a4c2e2abafd9fddb130b9ef",
+    "output/russian/root-390-200-search.png": "673eb3ea111516aa7cb9116fc127e0ce8d6e958960ce3216622004660fc862bc",
+    "output/russian/root-390-200-selector.png": "78066bd1801169e066b1697ad0d6956a0e04d6eca59c4bcba549aab34628cc43",
+    "output/russian/root-390-200-source.png": "b8a17b86c5b3d82c0f534930a8e20f9ae04f499bf5126b95e4dd906bf8c44c62",
+    "output/russian/root-390-200-trail.png": "6cb675d4cf685289da83de7b42a66811eb8d979989777968f309edd9248a11af",
+    "output/russian/subpath-1440-100-about-dark.png": "1d1190c1a09df4ab28a4744921b2b018efbad44e397a5ff82a2f34cf2b3b345b",
+    "output/russian/subpath-1440-100-about.png": "e612ac73db5883424c68617ca2b09663d6f5e5bbbacac4fa0684afc89a5277f3",
+    "output/russian/subpath-1440-100-atlas.png": "7622bdf79543d5f0f9b3209f7ba1c9d84d774aca3057a050a0fbe7d34b686f1d",
+    "output/russian/subpath-1440-100-concept.png": "4332ffdc0820701b3f9bbfd840244ff92d9d9f86c197c319abb176257f856d22",
+    "output/russian/subpath-1440-100-note.png": "0d5b0b3825e159574e01c11fbe3e4187d480a6d598ac8d912a91e65190f85249",
+    "output/russian/subpath-1440-100-read.png": "94b47ca9aca258ce03e063253cf03c0f86de2afe1245feaebb63e2adabff3aa1",
+    "output/russian/subpath-1440-100-saved.png": "448c971d8f419177944738e8511345290595755269a266190481a610b757cf2a",
+    "output/russian/subpath-1440-100-search.png": "79f20ecb32fe35bfe3567577d8101679ebb3702c27b283f3fe0f20b01681d9c7",
+    "output/russian/subpath-1440-100-selector.png": "99ae6cb9ae7ffa1c340fa18eed751c27afc94041dfe19ab673bd79db8a03cad6",
+    "output/russian/subpath-1440-100-source.png": "eec9165d9496cf6556751548c04e60061fee314cac087791c2a913109c17838f",
+    "output/russian/subpath-1440-100-trail.png": "c327ef7e053e7b63ec753ac0d6146f34cca797ea69f37fb244776f8e4944b7cd",
+    "output/russian/subpath-1440-200-about-dark.png": "96b844587e0583dcf23b6063a6c5710fea63c0e50164a7c3d350dfe5bfb08620",
+    "output/russian/subpath-1440-200-about.png": "7dd7cb5eb68259d983055c3288d68549efa657fa6bb65d55020a985a6311d034",
+    "output/russian/subpath-1440-200-atlas.png": "ee85016abf6c611fdaa42bac48b283ebe556c5072c08be728c9879a01e4a9efb",
+    "output/russian/subpath-1440-200-concept.png": "5391198b01196fa7efab9a89ed7bdac506c7846d49c9bbf8291ccb0757952e94",
+    "output/russian/subpath-1440-200-note.png": "d71a23ddeb7e903b229b7861f3fcff5a5fa8b5218370bc499d136123aa694f5d",
+    "output/russian/subpath-1440-200-read.png": "d845e72a7a29dd2e4a902c9ec99dd7a88758acfe0a4aca265daf96bddbff6360",
+    "output/russian/subpath-1440-200-saved.png": "89a4cd2cee6b67d21f944a4a0f9af3a9ae0210f805b840c09d30b8db77d8f5f5",
+    "output/russian/subpath-1440-200-search.png": "da6265b7d54cf1ac52c146c38b979d9db89db3fe36cdb4c6c4375dce3bc425af",
+    "output/russian/subpath-1440-200-selector.png": "9cd34cb2a2c03652def0795d3084d2b9c7dee3ed0e697fdeb30e864bf5e8baac",
+    "output/russian/subpath-1440-200-source.png": "5f0a2d1429731ee27c6c030eadb3b1a2c0e1314d4fcf9af44761223794b8d004",
+    "output/russian/subpath-1440-200-trail.png": "67e0c69b76b73f05106f24f8acf3167c663f50fed34f83dfa2d958dda9bd7bd7",
+    "output/russian/subpath-390-100-about-dark.png": "e097decc08a9d0a589fff773a8f36c3361cc7c4d1f3d4057a94f5d8cabd2c6d1",
+    "output/russian/subpath-390-100-about.png": "c10f2d60424d6e55d0adc77901218c9e4eed9c0bcd287ff66c5a59660feea457",
+    "output/russian/subpath-390-100-atlas.png": "79b2c237ac741f61aa10e1877901e4b3540e48a0e16b42d4149e9a2646075c9d",
+    "output/russian/subpath-390-100-concept.png": "33e7cca29f5379148de75bbd884d49409a070e72ade29cc2f47b0ba4b34ef941",
+    "output/russian/subpath-390-100-note.png": "f5ffd22293d013ec9ca1029dd562dfe560a3d5aab6a883233dda20e72e325569",
+    "output/russian/subpath-390-100-read.png": "4dbcb5b4dc18521cbc1f699b747b3b988d15c9d4c1ba68d9466a626131d36406",
+    "output/russian/subpath-390-100-saved.png": "57bcd9845110dec1897b3575e3f83b07148b72508cd93e3b20c84648c7a09fc7",
+    "output/russian/subpath-390-100-search.png": "6eac72a759a07dde5521b6430bb0e06e4ba6c374b28df154a2a5bbb40f15d019",
+    "output/russian/subpath-390-100-selector.png": "41b36675808bf79bf680157db93903195838ae7b01eb9bd61deb01c7c163cd45",
+    "output/russian/subpath-390-100-source.png": "dfd3877874c012a2231906190186ef0fb347afb49da285bc863c3edeb85027dd",
+    "output/russian/subpath-390-100-trail.png": "90611e2e92f7f56530e87b742a60ccf5403b60872911296a746c316392087eef",
+    "output/russian/subpath-390-200-about-dark.png": "8f6bbed26c363fc440a6f68a0fdf5944dfbaaf73470f529ab7f440bf8f962657",
+    "output/russian/subpath-390-200-about.png": "1b532a54eadd7aa0ff3afe803a92afac0759cf106b933d04e33e15adfeaa8baf",
+    "output/russian/subpath-390-200-atlas.png": "dc8294864591e4db933bec15bdc1b91be2f8d3857c057dc8a5cb392f23084fe2",
+    "output/russian/subpath-390-200-concept.png": "dab49028a849e51fd5143efcb576b5f084ce3a012b5ca5e6301eb5f7790eec7e",
+    "output/russian/subpath-390-200-note.png": "76a5be1a64d53c03ceb07080a7b7379019ff4d5e1453dc00c3dddf62420f1532",
+    "output/russian/subpath-390-200-read.png": "80fb10b869363a1be26be68fdea071b7c1e11d80a83965b438fd3f1e464de750",
+    "output/russian/subpath-390-200-saved.png": "02c10fba3fdb9ca9e66703f786f0b37b4e639df70a4c2e2abafd9fddb130b9ef",
+    "output/russian/subpath-390-200-search.png": "673eb3ea111516aa7cb9116fc127e0ce8d6e958960ce3216622004660fc862bc",
+    "output/russian/subpath-390-200-selector.png": "78066bd1801169e066b1697ad0d6956a0e04d6eca59c4bcba549aab34628cc43",
+    "output/russian/subpath-390-200-source.png": "b8a17b86c5b3d82c0f534930a8e20f9ae04f499bf5126b95e4dd906bf8c44c62",
+    "output/russian/subpath-390-200-trail.png": "6cb675d4cf685289da83de7b42a66811eb8d979989777968f309edd9248a11af"
+  }
+}

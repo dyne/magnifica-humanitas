@@ -75,5 +75,5 @@ header > *, .appearance > * { min-inline-size: 0; }
 
 :lang(be), :lang(ru) { --reader-body: "Inter Variable", "Noto Sans", "DejaVu Sans", Arial, sans-serif; --reader-display: "Syne", "Noto Sans", "DejaVu Sans", Arial, sans-serif; }
 
-/* Syne has no Cyrillic face; use the installed Inter glyphs for Belarusian. */
-:lang(be) { --reader-display: "Inter Variable", sans-serif; }
+/* Syne has no Cyrillic face; use the installed Inter glyphs for both editions. */
+:lang(be), :lang(ru) { --reader-display: "Inter Variable", sans-serif; }

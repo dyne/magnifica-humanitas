@@ -16,8 +16,8 @@ test('Belarusian publication binds complete reading and all291 catalog keys with
   assert.equal(Object.keys(messages).length, 291);
   const neutral = new Set(['app.magnifica_humanitas', 'concept.value_magnifica_humanitas', 'block.description']);
   for (const [key, value] of Object.entries(messages)) if (!neutral.has(key)) assert.notEqual(value, english[key], key);
-  assert.deepEqual(availableLocales.map(l => l.id), ['en', 'it', 'de', 'es', 'fr', 'pt', 'pl', 'be']);
-  for (const l of localeRegistry.filter(l => ['ar', 'ru'].includes(l.id))) assert.equal(l.reviewed, false);
+  assert.deepEqual(availableLocales.map(l => l.id), ['en', 'it', 'de', 'es', 'fr', 'pt', 'pl', 'be', 'ru']);
+  for (const l of localeRegistry.filter(l => ['ar', 'zh'].includes(l.id))) assert.equal(l.reviewed, false);
   assert.equal(messages['about.mh_en_owner_2026'], reading.editionId);
   assert.match(messages['about.this_is_an_english_editorial_reading_of_leo_xiv_s'], /беларускае.*Льва XIV/);
   const review = read('content/editorial/be/interface-review.json');
@@ -55,8 +55,8 @@ test('Belarusian search normalizes canonically without conflating its distinct C
 test('Belarusian regional browser defaults respect first-supported order and explicit routes', () => {
   assert.equal(resolveBrowserLocale({ languages: ['ar-EG', 'BE-by', 'pl-PL'] }), 'be');
   for (const locale of ['en-GB', 'it-IT', 'de-AT', 'es-MX', 'fr-BE', 'pt-BR', 'pl-PL']) assert.equal(resolveBrowserLocale({ languages: [locale, 'be-BY'] }), locale.split('-')[0]);
-  assert.equal(resolveBrowserLocale({ languages: ['ar', 'ru'], language: 'be-BY' }), 'be');
-  assert.equal(resolveBrowserLocale({ languages: ['ar', 'ru'], language: 'zh' }), 'en');
+  assert.equal(resolveBrowserLocale({ languages: ['ar', 'zh'], language: 'be-BY' }), 'be');
+  assert.equal(resolveBrowserLocale({ languages: ['ar', 'zh'], language: 'zh' }), 'en');
   for (const route of ['/en/source/p052', '/it/notes/n143', '/de/concepts/dignity', '/es/about', '/fr/concepts/dignity', '/pt/read', '/pl/saved']) assert.equal(resolveLocaleRoute(route, { languages: ['be'] }), route);
   assert.equal(resolveLocaleRoute('/search?q=care#stable', { languages: ['be-BY'] }), '/be/search?q=care#stable');
 });
